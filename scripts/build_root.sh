@@ -33,6 +33,46 @@ mkdir -p "$OUT_DIR"
 # timeout(1), so use coreutils' when present and a watchdog otherwise.
 FETCH_LIMIT_SECONDS="${FETCH_LIMIT_SECONDS:-1200}"
 
+prefetch_gnu_source() {
+  local formula="$1" metadata direct_url expected cache_path partial actual
+
+  # ftpmirror.gnu.org is a redirector and intermittently returns 502 or selects a
+  # mirror that never answers GitHub-hosted runners. Prefer GNU's own archive for
+  # these sources, then let `brew fetch` verify and consume the populated cache.
+  metadata="$(brew info --json=v2 "$formula")"
+  direct_url="$(printf '%s' "$metadata" | python3 -c '
+import json, sys
+url = json.load(sys.stdin)["formulae"][0]["urls"]["stable"]["url"]
+if url.startswith("https://ftpmirror.gnu.org/gnu/"):
+    print(url.replace("https://ftpmirror.gnu.org", "https://ftp.gnu.org", 1))
+')"
+  [ -n "$direct_url" ] || return 0
+
+  expected="$(printf '%s' "$metadata" | python3 -c '
+import json, sys
+print(json.load(sys.stdin)["formulae"][0]["urls"]["stable"]["checksum"])
+')"
+  cache_path="$(brew --cache --build-from-source "$formula")"
+  partial="${cache_path}.partial.$$"
+  mkdir -p "$(dirname "$cache_path")"
+
+  echo "    prefetching GNU source directly: $direct_url"
+  if ! curl --fail --location --connect-timeout 15 --max-time 300 --retry 2 \
+      --output "$partial" "$direct_url"; then
+    echo "    direct GNU prefetch failed; falling back to brew fetch" >&2
+    rm -f "$partial"
+    return 0
+  fi
+
+  actual="$(shasum -a 256 "$partial" | cut -d' ' -f1)"
+  if [ "$actual" != "$expected" ]; then
+    echo "    direct GNU source checksum mismatch; refusing cached file" >&2
+    rm -f "$partial"
+    return 1
+  fi
+  mv "$partial" "$cache_path"
+}
+
 fetch_with_limit() {
   local limit="$1" formula="$2"
   if command -v gtimeout >/dev/null 2>&1; then
@@ -74,6 +114,9 @@ for formula in $TODO; do
     echo "    already installed; removing so it can be rebuilt for bottling"
     brew uninstall --ignore-dependencies --force "$formula"
   fi
+
+  prefetch_gnu_source "$formula"
+
   # Download sources first, under a hard wall-clock limit.
   #
   # This loop previously had no time bound and nearly destroyed a whole run: gmp's
