@@ -1,0 +1,126 @@
+{
+  "pandoc": {
+    "formula": {
+      "name": "pandoc",
+      "pkg_version": "3.11",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pandoc.rb",
+      "tap_git_path": "Formula/p/pandoc.rb",
+      "tap_git_revision": "dcd910835f0ef1ff06a5e06a83c7b29c1c507a3d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Swiss-army knife of markup format conversion",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://pandoc.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-08T15:58:02Z",
+      "tags": {
+        "sequoia": {
+          "filename": "pandoc-3.11.sequoia.bottle.tar.gz",
+          "local_filename": "pandoc--3.11.sequoia.bottle.tar.gz",
+          "sha256": "03ee120b69e7e8f3f4c86678d3137a04b60cf87e68d577054fde7c6cb98fbd82",
+          "tab": {
+            "homebrew_version": "6.0.18",
+            "changed_files": [],
+            "source_modified_time": 1787963455,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pandoc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-pandoc-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/pandoc"
+          ],
+          "all_files": [
+            ".brew/pandoc.rb",
+            "AUTHORS.md",
+            "COPYING.md",
+            "COPYRIGHT",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/pandoc",
+            "changelog.md",
+            "etc/bash_completion.d/pandoc",
+            "sbom.spdx.json",
+            "share/man/man1/pandoc.1"
+          ],
+          "installed_size": 181521771
+        }
+      }
+    }
+  }
+}
