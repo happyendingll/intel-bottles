@@ -24,6 +24,7 @@ set -euo pipefail
 : "${BOTTLE_DIR:?BOTTLE_DIR must be set}"
 : "${RELEASE_TAG:?RELEASE_TAG must be set}"
 : "${BOTTLES_REPO:?BOTTLES_REPO must be set}"
+: "${EXPECTED_BOTTLE_TAG:?EXPECTED_BOTTLE_TAG must be set}"
 : "${STAGE:=bottles}"
 
 STAGING="$BOTTLE_DIR/.staged"
@@ -47,8 +48,12 @@ for json in "$BOTTLE_DIR"/*.bottle.json "$BOTTLE_DIR"/*/*.bottle.json; do
   expected="$(python3 -c '
 import json, sys
 d = json.load(open(sys.argv[1]))
-print(next(iter(next(iter(d.values()))["bottle"]["tags"].values()))["sha256"])
-' "$json")"
+tags = next(iter(d.values()))["bottle"]["tags"]
+expected_tag = sys.argv[2]
+if set(tags) != {expected_tag}:
+    raise SystemExit(f"expected only bottle tag {expected_tag!r}, got {sorted(tags)!r}")
+print(tags[expected_tag]["sha256"])
+' "$json" "$EXPECTED_BOTTLE_TAG")"
   actual="$(shasum -a 256 "$tarball" | cut -d" " -f1)"
 
   if [ "$expected" != "$actual" ]; then

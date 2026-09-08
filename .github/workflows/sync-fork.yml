@@ -1,6 +1,6 @@
 name: sync fork
 
-# Keeps fabiomanz/homebrew-core equal to upstream plus our bottle blocks.
+# Keeps the repository owner's homebrew-core fork equal to upstream plus our bottle blocks.
 # Runs daily so new formula versions arrive; anything whose version moved loses its stale
 # bottle here and gets picked up by the next build run.
 
@@ -18,10 +18,10 @@ permissions:
 
 jobs:
   sync:
-    runs-on: macos-26-intel
+    runs-on: macos-15-intel
     env:
-      FORK_REPO: fabiomanz/homebrew-core
-      HOMEBREW_CORE_GIT_REMOTE: https://github.com/fabiomanz/homebrew-core
+      FORK_REPO: ${{ github.repository_owner }}/homebrew-core
+      HOMEBREW_CORE_GIT_REMOTE: https://github.com/${{ github.repository_owner }}/homebrew-core
       HOMEBREW_NO_INSTALL_FROM_API: 1
       HOMEBREW_NO_ANALYTICS: 1
       HOMEBREW_NO_ASK: 1

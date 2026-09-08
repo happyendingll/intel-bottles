@@ -25,11 +25,12 @@ on:
         required: true
 
 env:
-  BOTTLE_ROOT_URL: https://github.com/fabiomanz/intel-bottles/releases/download/bottles
+  BOTTLE_ROOT_URL: https://github.com/${{ github.repository }}/releases/download/bottles
+  EXPECTED_BOTTLE_TAG: sequoia
   RELEASE_TAG: bottles
-  BOTTLES_REPO: fabiomanz/intel-bottles
-  FORK_REPO: fabiomanz/homebrew-core
-  HOMEBREW_CORE_GIT_REMOTE: https://github.com/fabiomanz/homebrew-core
+  BOTTLES_REPO: ${{ github.repository }}
+  FORK_REPO: ${{ github.repository_owner }}/homebrew-core
+  HOMEBREW_CORE_GIT_REMOTE: https://github.com/${{ github.repository_owner }}/homebrew-core
   HOMEBREW_NO_INSTALL_FROM_API: 1
   HOMEBREW_NO_ANALYTICS: 1
   HOMEBREW_NO_ASK: 1
@@ -42,7 +43,7 @@ jobs:
   build:
     # Each matrix entry carries its own runner, so qtwebengine can go to a self-hosted
     # Intel machine (no 6-hour ceiling) while everything else stays on GitHub's free
-    # macos-26-intel. See runners.json.
+    # macos-15-intel. See runners.json.
     name: ${{ inputs.stage }} / ${{ matrix.entry.formula }}
     runs-on: ${{ matrix.entry.labels }}
     timeout-minutes: ${{ matrix.entry.timeout }}
@@ -71,7 +72,12 @@ jobs:
           brew update || echo 'WARNING: brew update failed, continuing with the tap as-is'
           echo "core tap: $(brew --repo homebrew/core)"
           git -C "$(brew --repo homebrew/core)" remote -v
-          echo "bottle tag: $(brew ruby -e 'puts Utils::Bottles.tag')"
+          actual_tag="$(brew ruby -e 'puts Utils::Bottles.tag')"
+          echo "bottle tag: $actual_tag"
+          if [ "$actual_tag" != "$EXPECTED_BOTTLE_TAG" ]; then
+            echo "ERROR: expected bottle tag $EXPECTED_BOTTLE_TAG, got $actual_tag" >&2
+            exit 1
+          fi
 
       - name: Build and bottle
         env:
@@ -91,7 +97,7 @@ jobs:
     name: publish ${{ inputs.stage }}
     needs: build
     if: always()
-    runs-on: macos-26-intel
+    runs-on: macos-15-intel
     permissions:
       contents: write
     steps:
@@ -133,8 +139,8 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          if ls bottles/*.bottle.json >/dev/null 2>&1; then
-            cp bottles/*.bottle.json manifest/
+          if ls bottles/.staged/*.bottle.json >/dev/null 2>&1; then
+            cp bottles/.staged/*.bottle.json manifest/
             git add manifest/
             if [ -n "$(git status --porcelain)" ]; then
               git commit -m "manifest: ${{ inputs.stage }} ($(date -u +%Y-%m-%d))"

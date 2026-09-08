@@ -1,6 +1,6 @@
 name: build bottles
 
-# Builds Intel (x86_64) bottles on GitHub's macos-26-intel runner and publishes them for a
+# Builds Intel (x86_64) bottles on GitHub's macos-15-intel runner and publishes them for a
 # forked homebrew-core to point at.
 #
 # Work is scheduled in waves by dependency depth. Ordering matters a lot: when everything
@@ -30,7 +30,7 @@ permissions:
 jobs:
   plan:
     name: plan
-    runs-on: macos-26-intel
+    runs-on: macos-15-intel
     outputs:
       wave0: ${{ steps.plan.outputs.wave0 }}
       wave1: ${{ steps.plan.outputs.wave1 }}
@@ -39,7 +39,7 @@ jobs:
       wave4: ${{ steps.plan.outputs.wave4 }}
       missing_count: ${{ steps.plan.outputs.missing_count }}
     env:
-      HOMEBREW_CORE_GIT_REMOTE: https://github.com/fabiomanz/homebrew-core
+      HOMEBREW_CORE_GIT_REMOTE: https://github.com/${{ github.repository_owner }}/homebrew-core
       HOMEBREW_NO_INSTALL_FROM_API: 1
       HOMEBREW_NO_ANALYTICS: 1
       HOMEBREW_NO_ASK: 1

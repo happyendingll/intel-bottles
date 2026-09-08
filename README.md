@@ -7,19 +7,15 @@ through a fork of `homebrew-core`.
 
 Homebrew moved Intel macOS to **Tier 3 in September 2026**: no CI, no new bottles. Support is
 removed entirely in September 2027. The newest Intel bottles upstream are tagged `sonoma`
-(macOS 14), so on macOS 26 every formula that has had a version bump since then compiles from
+(macOS 14), so on macOS 15 every formula that has had a version bump since then compiles from
 source — 72 of 368 installed formulae on the machine this was built for.
 
-MacPorts cannot fill the gap either: its Tahoe x86_64 builder does not exist
-([#73230](https://trac.macports.org/ticket/73230) — their build host can't run Tahoe natively).
-Nix drops `x86_64-darwin` binaries at the end of 2026.
+GitHub still offers **`macos-15-intel`**, its final x86_64 runner image, planned to remain
+available **until August 2027**. It is free and unmetered on public repos. Homebrew dropped
+Intel over maintainer burden, not hardware availability. So we build our own.
 
-But GitHub still offers **`macos-26-intel`**, a GA standard runner (4 cores, 14 GB RAM, and in
-practice ~160 GB free disk -- the 14 GB in GitHub's docs is not what the runner actually has),
-free and unmetered on public repos, **until August 2027**. Homebrew dropped Intel over
-maintainer burden, not hardware availability. So we build our own.
-
-Bottles built there are tagged `tahoe` — an exact match for macOS 26 Intel.
+Bottles built there are tagged `sequoia` — an exact match for macOS 15 Intel. CI verifies this
+tag before publishing so a mismatched runner cannot contaminate the fork.
 
 ## How it works
 
@@ -60,13 +56,14 @@ via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works,
 | `scripts/publish.sh` | Merges DSL into the fork, uploads release assets |
 | `scripts/apply_manifest.py` | Splits the manifest into still-valid vs stale |
 | `scripts/sync_fork.sh` | Rebuilds the fork as upstream + our blocks |
-| `manifest/` | `*.bottle.json` — the source of truth for re-applying blocks |
+| `manifest/` | Active `*.bottle.json` files — the source of truth for re-applying blocks |
+| `manifest/archive/` | Inactive manifests retained from earlier target systems |
 
 ## Runner assignment
 
 `runners.json` decides which machine builds which formula. Everything uses the free
-GitHub-hosted `macos-26-intel` unless listed under `assign`. Today only `qtwebengine` is
-assigned elsewhere, because it cannot finish inside GitHub's hard 6-hour job ceiling.
+GitHub-hosted `macos-15-intel` unless listed under `assign`. The current assignment map is
+empty; `qtwebengine` is excluded because it cannot finish inside GitHub's hard 6-hour ceiling.
 
 ```json
 "assign": { "qtwebengine": "selfhosted" }
@@ -76,9 +73,10 @@ Moving a formula between runners is a one-line edit there; nothing else needs ch
 
 ### Self-hosted runner
 
-Register an Intel Mac with the labels `self-hosted, macOS, X64` (Settings -> Actions ->
-Runners). The `selfhosted` profile gives it a 48-hour timeout, since self-hosted jobs are
-not bound by the 6-hour limit.
+Register an Intel Mac running macOS 15 with the labels `self-hosted, macOS, X64` (Settings ->
+Actions -> Runners). The `selfhosted` profile gives it a 48-hour timeout, since self-hosted
+jobs are not bound by the 6-hour limit. A different macOS release will be rejected by the
+`sequoia` bottle-tag check.
 
 **Security note:** GitHub advises against self-hosted runners on public repositories,
 because a fork's pull request could otherwise run arbitrary code on your machine. That
@@ -88,19 +86,22 @@ repo private (which costs runner minutes for the GitHub-hosted jobs).
 
 ## Setup
 
-1. **Fork homebrew-core** to `fabiomanz/homebrew-core` (keep the default branch `main`).
-2. **Create this repo** as `fabiomanz/intel-bottles`, **public** — standard runners are only
+1. **Fork homebrew-core** to `<your-github-user>/homebrew-core` (keep the default branch `main`).
+2. **Create this repo** as `<your-github-user>/intel-bottles`, **public** — standard runners are only
    free on public repos.
 3. **Add a secret `FORK_TOKEN`**: a fine-grained PAT with `contents: write` on
-   `fabiomanz/homebrew-core`. Used to push rebuilt bottle blocks.
+   `<your-github-user>/homebrew-core`. Used to push rebuilt bottle blocks.
 4. Run the **build bottles** workflow. First run is the expensive one; later runs only pick up
    what upstream has bumped.
+
+When changing the target macOS version, run **sync fork** once before **build bottles**. This
+removes bottle blocks from the previous target before planning the new build.
 
 ## Client setup (the Intel Mac)
 
 ```sh
 export HOMEBREW_NO_INSTALL_FROM_API=1
-export HOMEBREW_CORE_GIT_REMOTE=https://github.com/fabiomanz/homebrew-core
+export HOMEBREW_CORE_GIT_REMOTE=https://github.com/<your-github-user>/homebrew-core
 brew update
 ```
 
@@ -110,7 +111,7 @@ Trade-off: this swaps the fast JSON API for a full local `homebrew-core` git che
 ### Verify
 
 ```sh
-brew info --json=v2 tmux | jq '.formulae[0].bottle.stable.files'   # expect a "tahoe" entry
+brew info --json=v2 tmux | jq '.formulae[0].bottle.stable.files'   # expect a "sequoia" entry
 brew reinstall tmux 2>&1 | grep -E 'Pouring|Building'             # expect "Pouring"
 jq .poured_from_bottle /usr/local/Cellar/tmux/*/INSTALL_RECEIPT.json
 ```
@@ -124,11 +125,11 @@ jq .poured_from_bottle /usr/local/Cellar/tmux/*/INSTALL_RECEIPT.json
   pinned to stage 1 with `allow_failure: true` so it cannot take the run down. `qt`, `pyside`
   and `qtwebview` depend on it and stay unbottled with it. The only real options are a larger
   runner (more cores; billed even on public repos) or a self-hosted Intel runner.
-- **One `root_url` per bottle block.** Merging our `tahoe` bottle into a formula that still has
+- **One `root_url` per bottle block.** Merging our `sequoia` bottle into a formula that still has
   upstream's `sonoma` bottle rewrites the block's single `root_url` to ours. Harmless here —
-  an exact tag match wins, so macOS 26 Intel always picks `tahoe` — but that block's older tags
+  an exact tag match wins, so macOS 15 Intel always picks `sequoia` — but that block's older tags
   would not resolve on an older machine.
 - **Three formulae are out of scope**, being outside `homebrew-core`: `packer` (hashicorp/tap),
   `ttab` (mklement0/ttab), and `valgrind` (a `HEAD` build, which cannot be bottled at all).
-- **August 2027**: `macos-15-intel` and `macos-26-intel` are the last x86_64 images GitHub will
-  offer. After that this pipeline needs a self-hosted Intel runner.
+- **August 2027**: `macos-15-intel` is planned to be the last x86_64 image GitHub will offer.
+  After that this pipeline needs a self-hosted Intel runner.
