@@ -32,11 +32,12 @@ jobs:
       - name: Point Homebrew at the fork
         run: |
           brew tap homebrew/core 2>/dev/null || true
-          # Non-fatal. Steps run under `bash -e`, and a non-zero `brew update`
-          # killed qttasktree before build_root.sh ever ran -- 46 minutes spent
-          # without attempting a single build. A stale tap is far better than a
-          # lost job; the plan job already decided what needs building.
-          brew update || echo 'WARNING: brew update failed, continuing with the tap as-is'
+          core_repo="$(brew --repo homebrew/core)"
+          git -C "$core_repo" remote set-url origin "$HOMEBREW_CORE_GIT_REMOTE"
+          git -C "$core_repo" fetch --quiet origin main
+          # The runner image may ship local tap changes. Never let brew update stash/pop
+          # them into our fork: that left rustup.rb with unresolved conflict markers.
+          git -C "$core_repo" checkout -q -f -B main origin/main
 
       - name: Authenticate the fork remote
         run: |
