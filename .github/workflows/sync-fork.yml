@@ -30,14 +30,7 @@ jobs:
       - uses: actions/checkout@v4
 
       - name: Point Homebrew at the fork
-        run: |
-          brew tap homebrew/core 2>/dev/null || true
-          core_repo="$(brew --repo homebrew/core)"
-          git -C "$core_repo" remote set-url origin "$HOMEBREW_CORE_GIT_REMOTE"
-          git -C "$core_repo" fetch --quiet origin main
-          # The runner image may ship local tap changes. Never let brew update stash/pop
-          # them into our fork: that left rustup.rb with unresolved conflict markers.
-          git -C "$core_repo" checkout -q -f -B main origin/main
+        run: ./scripts/prepare_homebrew.sh
 
       - name: Authenticate the fork remote
         run: |

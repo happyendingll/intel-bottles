@@ -64,12 +64,7 @@ jobs:
 
       - name: Point Homebrew at the fork
         run: |
-          brew tap homebrew/core 2>/dev/null || true
-          core_repo="$(brew --repo homebrew/core)"
-          git -C "$core_repo" remote set-url origin "$HOMEBREW_CORE_GIT_REMOTE"
-          git -C "$core_repo" fetch --quiet origin main
-          git -C "$core_repo" checkout -q -f -B main origin/main
-          echo "core tap: $(brew --repo homebrew/core)"
+          ./scripts/prepare_homebrew.sh
           git -C "$(brew --repo homebrew/core)" remote -v
           actual_tag="$(brew ruby -e 'puts Utils::Bottles.tag')"
           echo "bottle tag: $actual_tag"
@@ -112,12 +107,7 @@ jobs:
           merge-multiple: false
 
       - name: Point Homebrew at the fork
-        run: |
-          brew tap homebrew/core 2>/dev/null || true
-          core_repo="$(brew --repo homebrew/core)"
-          git -C "$core_repo" remote set-url origin "$HOMEBREW_CORE_GIT_REMOTE"
-          git -C "$core_repo" fetch --quiet origin main
-          git -C "$core_repo" checkout -q -f -B main origin/main
+        run: ./scripts/prepare_homebrew.sh
 
       - name: Authenticate the fork remote
         run: |
