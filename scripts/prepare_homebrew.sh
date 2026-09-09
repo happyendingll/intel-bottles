@@ -14,8 +14,13 @@ fi
 # Update brew itself without `brew update`, whose stash/pop of local tap changes can
 # leave formulae containing unresolved conflict markers.
 BREW_REPO="$(brew --repository)"
-git -C "$BREW_REPO" fetch --quiet origin stable
-git -C "$BREW_REPO" checkout -q -f -B stable origin/stable
+git -C "$BREW_REPO" fetch --quiet --force --tags origin
+LATEST_BREW_TAG="$(git -C "$BREW_REPO" tag --list --sort=-version:refname | sed -n '1p')"
+if [ -z "$LATEST_BREW_TAG" ]; then
+  echo "could not determine the latest Homebrew release tag" >&2
+  exit 1
+fi
+git -C "$BREW_REPO" checkout -q -f -B stable "refs/tags/$LATEST_BREW_TAG"
 
 brew tap homebrew/core 2>/dev/null || true
 CORE_REPO="$(brew --repo homebrew/core)"
@@ -23,5 +28,5 @@ git -C "$CORE_REPO" remote set-url origin "$HOMEBREW_CORE_GIT_REMOTE"
 git -C "$CORE_REPO" fetch --quiet origin main
 git -C "$CORE_REPO" checkout -q -f -B main origin/main
 
-echo "Homebrew: $(brew --version | head -1) ($(git -C "$BREW_REPO" rev-parse --short HEAD))"
+echo "Homebrew: $(brew --version | sed -n '1p') ($(git -C "$BREW_REPO" rev-parse --short HEAD))"
 echo "core tap: $CORE_REPO ($(git -C "$CORE_REPO" rev-parse --short HEAD))"
