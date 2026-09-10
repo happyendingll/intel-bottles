@@ -18,7 +18,7 @@ on:
   schedule:
     # Daily, ~74 min after sync-fork, so anything upstream bumped is bottled within a day.
     # The plan job is cheap and schedules nothing when nothing has changed.
-    - cron: "37 5 * * *"
+    - cron: "37 15 * * *"
 
 concurrency:
   group: build-bottles

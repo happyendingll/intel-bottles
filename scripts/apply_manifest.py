@@ -1,21 +1,16 @@
 #!/usr/bin/env python3
-"""Plan how to rebuild the fork as: upstream, held back to what we have bottles for.
+"""Plan how to rebuild the fork as upstream plus matching bottle blocks.
 
-The fork is never hand-edited. It is hard-reset onto upstream and this plan is replayed,
+The fork is never hand-edited. It is rebuilt from upstream and this plan is replayed,
 so merge conflicts are structurally impossible.
 
-VERSION HOLD: when upstream bumps a formula past the version we hold a bottle for, we do
-NOT let that new version through. Doing so would leave the formula with no usable bottle
-until CI catches up, and a `brew upgrade` in that window compiles it on the local machine
--- exactly what this project exists to avoid. Instead the formula file is restored to the
-revision we bottled (recorded by `brew bottle --json` as tap_git_revision/tap_git_path)
-and our bottle block is re-applied. The machine therefore only ever sees versions that
-have a bottle, and picks up the new version a day later once CI has built one.
+VERSION REFRESH: when upstream bumps a formula past the version in the manifest, its stale
+bottle block is deliberately not re-applied. The upstream formula therefore remains in the
+fork without our bottle and is picked up by the following build-bottles plan. A successful
+build writes the new bottle block back to the fork.
 
-Emits a tab-separated plan on stdout:
-    RESTORE <revision> <path> <name> <held_version> <upstream_version>
-    APPLY   <json_path>
-Restores must be applied before the APPLY merges.
+Emits one tab-separated instruction per still-current manifest on stdout:
+    APPLY <json_path>
 """
 
 import json
@@ -65,20 +60,10 @@ def main() -> None:
         else:
             dropped.append((entry["name"], "bottled before revisions were recorded"))
 
-    for entry, now in held:
-        print(
-            "\t".join(
-                [
-                    "RESTORE",
-                    entry["revision"],
-                    entry["path"],
-                    entry["name"],
-                    entry["version"],
-                    now,
-                ]
-            )
-        )
-    for entry in current + [e for e, _ in held]:
+    # A held entry describes a stale manifest. Do not restore its old formula and do not
+    # re-apply its old bottle: leaving upstream's version in the fork is what makes the
+    # next build plan see that a new bottle is required.
+    for entry in current:
         print(f"APPLY\t{entry['json']}")
 
     print(
