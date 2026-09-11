@@ -128,6 +128,24 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if ls bottles/.staged/*.bottle.json >/dev/null 2>&1; then
+            for new in bottles/.staged/*.bottle.json; do
+              base="$(basename "$new")"
+              formula="${base%%--*}"
+              tag="${base%.bottle.json}"
+              tag="${tag##*.}"
+              archive="manifest/archive/$tag"
+              mkdir -p "$archive"
+              for old in manifest/"$formula"--*.bottle.json; do
+                [ -e "$old" ] || continue
+                [ "$(basename "$old")" = "$base" ] && continue
+                destination="$archive/$(basename "$old")"
+                if [ -e "$destination" ]; then
+                  echo "refusing to overwrite archived manifest: $destination" >&2
+                  exit 1
+                fi
+                mv "$old" "$destination"
+              done
+            done
             cp bottles/.staged/*.bottle.json manifest/
             git add manifest/
             if [ -n "$(git status --porcelain)" ]; then
