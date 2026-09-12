@@ -1,0 +1,88 @@
+name: audit Intel bottle coverage
+
+# One-off, read-only inventory of official homebrew-core on macOS 15 Intel.
+# This deliberately points at upstream rather than the fork, so our own bottles do not
+# make the official coverage look better than it is.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    runs-on: macos-15-intel
+    timeout-minutes: 120
+    env:
+      HOMEBREW_CORE_GIT_REMOTE: https://github.com/Homebrew/homebrew-core
+      HOMEBREW_NO_INSTALL_FROM_API: 1
+      HOMEBREW_NO_ANALYTICS: 1
+      HOMEBREW_NO_ASK: 1
+      HOMEBREW_NO_ENV_HINTS: 1
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Prepare official homebrew-core
+        run: ./scripts/prepare_homebrew.sh
+
+      - name: Audit Formula.bottled?
+        env:
+          HOMEBREW_AUDIT_DIR: ${{ github.workspace }}/audit
+        run: |
+          mkdir -p "$HOMEBREW_AUDIT_DIR"
+          brew ruby -e '
+            audit_dir = ENV.fetch("HOMEBREW_AUDIT_DIR")
+            tag = Utils::Bottles.tag.to_s
+            abort "expected sequoia bottle tag, got #{tag}" unless tag == "sequoia"
+
+            bottled = File.open(File.join(audit_dir, "bottled.txt"), "w")
+            needs = File.open(File.join(audit_dir, "needs-bottle.txt"), "w")
+            errors = File.open(File.join(audit_dir, "errors.tsv"), "w")
+
+            formulae = Formula.all(eval_all: true).sort_by(&:name)
+            formulae.each_with_index do |formula, index|
+              begin
+                (formula.bottled? ? bottled : needs).puts(formula.name)
+              rescue StandardError => e
+                message = e.message.gsub(/[\r\n]+/, " ")
+                errors.puts "#{formula.name}\t#{e.class}\t#{message}"
+              end
+              warn "checked #{index + 1}/#{formulae.length}" if ((index + 1) % 250).zero?
+            end
+
+            [bottled, needs, errors].each(&:close)
+          '
+
+      - name: Summarize
+        run: |
+          bottled="$(wc -l < audit/bottled.txt | tr -d " ")"
+          needs="$(wc -l < audit/needs-bottle.txt | tr -d " ")"
+          errors="$(wc -l < audit/errors.tsv | tr -d " ")"
+          total=$((bottled + needs + errors))
+          coverage="$(awk -v have="$bottled" -v all="$total" 'BEGIN { printf "%.2f", 100 * have / all }')"
+          core_repo="$(brew --repo homebrew/core)"
+          core_revision="$(git -C "$core_repo" rev-parse HEAD)"
+
+          {
+            echo "## Official Intel macOS 15 bottle coverage"
+            echo
+            echo "- Bottle tag: \`$(brew ruby -e 'puts Utils::Bottles.tag')\`"
+            echo "- homebrew-core: \`$core_revision\`"
+            echo "- Formulae checked: **$total**"
+            echo "- Usable bottle: **$bottled** ($coverage%)"
+            echo "- Needs source build: **$needs**"
+            echo "- Inspection errors: **$errors**"
+          } >> "$GITHUB_STEP_SUMMARY"
+
+          printf 'formulae_checked=%s\nbottled=%s\nneeds_bottle=%s\nerrors=%s\ncoverage_percent=%s\nhomebrew_core=%s\n' \
+            "$total" "$bottled" "$needs" "$errors" "$coverage" "$core_revision" \
+            > audit/summary.txt
+          cat audit/summary.txt
+
+      - name: Upload audit lists
+        uses: actions/upload-artifact@v4
+        with:
+          name: intel-macos-15-bottle-audit
+          path: audit/
+          retention-days: 30
