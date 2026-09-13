@@ -1,0 +1,90 @@
+{
+  "libomp": {
+    "formula": {
+      "name": "libomp",
+      "pkg_version": "23.1.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libomp.rb",
+      "tap_git_path": "Formula/lib/libomp.rb",
+      "tap_git_revision": "d5e88977b7416cac2b51cc7c0f6e05bfb0eea4a5",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "LLVM's OpenMP runtime library",
+      "license": "MIT",
+      "homepage": "https://openmp.llvm.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-13T09:47:35Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libomp-23.1.1.sequoia.bottle.tar.gz",
+          "local_filename": "libomp--23.1.1.sequoia.bottle.tar.gz",
+          "sha256": "f9006339f8009a14348931dfb50532f9b6962968266db7a3108178588bf8b703",
+          "tab": {
+            "homebrew_version": "7.0.0",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libomp.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788786089,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libomp-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libomp.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.TXT",
+            "README.md",
+            "include/omp-tools.h",
+            "include/omp.h",
+            "include/ompt.h",
+            "include/ompx.h",
+            "lib/libomp.a",
+            "lib/libomp.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1822121
+        }
+      }
+    }
+  }
+}
