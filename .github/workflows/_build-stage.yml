@@ -19,15 +19,19 @@ on:
         description: Let a failing formula pass the stage (used for the heavy roots)
         type: boolean
         default: false
+      release_tag:
+        description: GitHub Release that receives this stage's bottles
+        type: string
+        default: bottles
     secrets:
       FORK_TOKEN:
         description: PAT with contents:write on the homebrew-core fork
         required: true
 
 env:
-  BOTTLE_ROOT_URL: https://github.com/${{ github.repository }}/releases/download/bottles
+  BOTTLE_ROOT_URL: https://github.com/${{ github.repository }}/releases/download/${{ inputs.release_tag }}
   EXPECTED_BOTTLE_TAG: sequoia
-  RELEASE_TAG: bottles
+  RELEASE_TAG: ${{ inputs.release_tag }}
   BOTTLES_REPO: ${{ github.repository }}
   FORK_REPO: ${{ github.repository_owner }}/homebrew-core
   HOMEBREW_CORE_GIT_REMOTE: https://github.com/${{ github.repository_owner }}/homebrew-core

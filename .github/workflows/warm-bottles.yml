@@ -1,0 +1,118 @@
+name: warm optional bottles
+
+# Phase-one rollout: manual only. After a one-formula and a five-formula validation this
+# workflow will be chained to the scheduled build-bottles workflow.
+
+on:
+  workflow_dispatch:
+    inputs:
+      formulae:
+        description: Space-separated catalog formulae to test instead of the daily selection
+        required: false
+        type: string
+      limit:
+        description: Maximum number of optional root formulae to prewarm
+        required: true
+        default: 10
+        type: number
+
+concurrency:
+  group: warm-bottles
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  plan:
+    name: plan optional catalog
+    runs-on: macos-15-intel
+    outputs:
+      wave0: ${{ steps.plan.outputs.wave0 }}
+      wave1: ${{ steps.plan.outputs.wave1 }}
+      wave2: ${{ steps.plan.outputs.wave2 }}
+      wave3: ${{ steps.plan.outputs.wave3 }}
+      wave4: ${{ steps.plan.outputs.wave4 }}
+    env:
+      HOMEBREW_CORE_GIT_REMOTE: https://github.com/${{ github.repository_owner }}/homebrew-core
+      HOMEBREW_NO_INSTALL_FROM_API: 1
+      HOMEBREW_NO_ANALYTICS: 1
+      HOMEBREW_NO_ASK: 1
+      HOMEBREW_NO_ENV_HINTS: 1
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Point Homebrew at the fork
+        run: ./scripts/prepare_homebrew.sh
+
+      - name: Select optional Formulae
+        id: plan
+        env:
+          OVERRIDE: ${{ inputs.formulae }}
+          WARM_LIMIT: ${{ inputs.limit }}
+        run: python3 scripts/plan_catalog.py
+
+  wave0:
+    name: wave 0
+    needs: plan
+    if: needs.plan.outputs.wave0 != '[]' && needs.plan.outputs.wave0 != ''
+    uses: ./.github/workflows/_build-stage.yml
+    with:
+      formulae: ${{ needs.plan.outputs.wave0 }}
+      stage: warm-wave0
+      release_tag: bottles-warm-1
+      allow_failure: true
+    secrets:
+      FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
+
+  wave1:
+    name: wave 1
+    needs: [plan, wave0]
+    if: always() && needs.plan.outputs.wave1 != '[]' && needs.plan.outputs.wave1 != ''
+    uses: ./.github/workflows/_build-stage.yml
+    with:
+      formulae: ${{ needs.plan.outputs.wave1 }}
+      stage: warm-wave1
+      release_tag: bottles-warm-1
+      allow_failure: true
+    secrets:
+      FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
+
+  wave2:
+    name: wave 2
+    needs: [plan, wave1]
+    if: always() && needs.plan.outputs.wave2 != '[]' && needs.plan.outputs.wave2 != ''
+    uses: ./.github/workflows/_build-stage.yml
+    with:
+      formulae: ${{ needs.plan.outputs.wave2 }}
+      stage: warm-wave2
+      release_tag: bottles-warm-1
+      allow_failure: true
+    secrets:
+      FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
+
+  wave3:
+    name: wave 3
+    needs: [plan, wave2]
+    if: always() && needs.plan.outputs.wave3 != '[]' && needs.plan.outputs.wave3 != ''
+    uses: ./.github/workflows/_build-stage.yml
+    with:
+      formulae: ${{ needs.plan.outputs.wave3 }}
+      stage: warm-wave3
+      release_tag: bottles-warm-1
+      allow_failure: true
+    secrets:
+      FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
+
+  wave4:
+    name: wave 4
+    needs: [plan, wave3]
+    if: always() && needs.plan.outputs.wave4 != '[]' && needs.plan.outputs.wave4 != ''
+    uses: ./.github/workflows/_build-stage.yml
+    with:
+      formulae: ${{ needs.plan.outputs.wave4 }}
+      stage: warm-wave4
+      release_tag: bottles-warm-1
+      allow_failure: true
+    secrets:
+      FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
