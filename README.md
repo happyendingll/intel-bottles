@@ -68,7 +68,7 @@ via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works,
 | `heavy.txt` | Forced into stage 1: expensive or risky |
 | `scripts/generate_catalog.py` | Generates only compatible, missing, prewarm-suitable candidates |
 | `scripts/plan_targets.py` | Picks what needs building, splits into stages |
-| `scripts/plan_catalog.py` | Selects up to 10 missing optional roots and dependency waves |
+| `scripts/plan_catalog.py` | Selects up to 100 missing optional roots and dependency waves |
 | `scripts/filter_unbottled.py` | Order-preserving "which of these lack a bottle here" |
 | `scripts/build_root.sh` | Builds + bottles one root and its unbottled chain |
 | `scripts/publish.sh` | Merges DSL into the fork, uploads release assets |

@@ -14,7 +14,7 @@ on:
       limit:
         description: Maximum number of optional root formulae to prewarm
         required: true
-        default: 10
+        default: 100
         type: number
   workflow_run:
     workflows: ["build bottles"]
@@ -57,7 +57,7 @@ jobs:
         id: plan
         env:
           OVERRIDE: ${{ inputs.formulae }}
-          WARM_LIMIT: ${{ inputs.limit || 10 }}
+          WARM_LIMIT: ${{ inputs.limit || 100 }}
         run: python3 scripts/plan_catalog.py
 
   wave0:

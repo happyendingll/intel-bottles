@@ -41,11 +41,11 @@ def dependencies(formulae: list[str]) -> dict[str, set[str]]:
 
 def main() -> None:
     try:
-        limit = int(os.environ.get("WARM_LIMIT", "10"))
+        limit = int(os.environ.get("WARM_LIMIT", "100"))
     except ValueError:
         sys.exit("WARM_LIMIT must be an integer")
-    if not 1 <= limit <= 50:
-        sys.exit("WARM_LIMIT must be between 1 and 50")
+    if not 1 <= limit <= 100:
+        sys.exit("WARM_LIMIT must be between 1 and 100")
 
     override = os.environ.get("OVERRIDE", "").split()
     catalog = unique(override or read_list(REPO / "catalog.txt"))
