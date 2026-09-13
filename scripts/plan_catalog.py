@@ -15,6 +15,8 @@ from datetime import datetime, timezone
 import brewinfo
 from plan_targets import REPO, emit, levels, read_list
 
+WARM_TIMEOUT_MINUTES = 60
+
 
 def unique(items: list[str]) -> list[str]:
     return list(dict.fromkeys(items))
@@ -61,7 +63,7 @@ def main() -> None:
         f"{len(needs)} need a bottle"
     )
     if not needs:
-        emit({}, [])
+        emit({}, [], timeout_cap=WARM_TIMEOUT_MINUTES)
         return
 
     all_deps = dependencies(needs)
@@ -95,7 +97,7 @@ def main() -> None:
     waves: dict[int, list[str]] = {}
     for name in selected:
         waves.setdefault(depth.get(name, 0), []).append(name)
-    emit(waves, selected)
+    emit(waves, selected, timeout_cap=WARM_TIMEOUT_MINUTES)
 
 
 if __name__ == "__main__":

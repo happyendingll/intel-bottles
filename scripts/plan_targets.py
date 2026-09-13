@@ -73,15 +73,18 @@ def dependency_map(formulae: list[str]) -> dict[str, set[str]]:
     return deps
 
 
-def runner_for(name: str) -> dict:
+def runner_for(name: str, timeout_cap: int | None = None) -> dict:
     """Matrix entry for a formula: which runner builds it, and its timeout."""
     config = json.loads((REPO / "runners.json").read_text())
     profile_name = config.get("assign", {}).get(name, "default")
     profile = config["profiles"][profile_name]
+    timeout = profile["timeout"]
+    if timeout_cap is not None:
+        timeout = min(timeout, timeout_cap)
     return {
         "formula": name,
         "labels": profile["labels"],
-        "timeout": profile["timeout"],
+        "timeout": timeout,
         "profile": profile_name,
     }
 
@@ -133,7 +136,11 @@ def main() -> None:
     emit(waves, missing)
 
 
-def emit(waves: dict[int, list[str]], missing: list[str]) -> None:
+def emit(
+    waves: dict[int, list[str]],
+    missing: list[str],
+    timeout_cap: int | None = None,
+) -> None:
     lines = [f"{len(missing)} formulae need a bottle, in {len(waves)} wave(s)"]
     for index in range(MAX_WAVES):
         names = sorted(waves.get(index, []))
@@ -147,7 +154,9 @@ def emit(waves: dict[int, list[str]], missing: list[str]) -> None:
     if github_output:
         with open(github_output, "a") as fh:
             for index in range(MAX_WAVES):
-                entries = [runner_for(n) for n in sorted(waves.get(index, []))]
+                entries = [
+                    runner_for(n, timeout_cap) for n in sorted(waves.get(index, []))
+                ]
                 fh.write(f"wave{index}={json.dumps(entries)}\n")
             fh.write(f"missing_count={len(missing)}\n")
     step_summary = os.environ.get("GITHUB_STEP_SUMMARY")
