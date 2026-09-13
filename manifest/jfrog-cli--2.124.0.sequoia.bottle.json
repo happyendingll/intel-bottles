@@ -1,0 +1,90 @@
+{
+  "jfrog-cli": {
+    "formula": {
+      "name": "jfrog-cli",
+      "pkg_version": "2.124.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/j/jfrog-cli.rb",
+      "tap_git_path": "Formula/j/jfrog-cli.rb",
+      "tap_git_revision": "2bf64aac2a4c461b3df391883f51018b69daedae",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Command-line interface for JFrog products",
+      "license": "Apache-2.0",
+      "homepage": "https://docs.jfrog.com/integrations/docs/jfrog-cli"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-13T12:48:08Z",
+      "tags": {
+        "sequoia": {
+          "filename": "jfrog-cli-2.124.0.sequoia.bottle.tar.gz",
+          "local_filename": "jfrog-cli--2.124.0.sequoia.bottle.tar.gz",
+          "sha256": "8052625a90191f565ab2973f77e46d4edaa2dbc8eba8c2838358ab556a9b96e0",
+          "tab": {
+            "homebrew_version": "7.0.0",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788788182,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-jfrog-cli-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/jf",
+            "bin/jfrog"
+          ],
+          "all_files": [
+            ".brew/jfrog-cli.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/jf",
+            "bin/jfrog",
+            "etc/bash_completion.d/jf",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/jf.fish",
+            "share/zsh/site-functions/_jf"
+          ],
+          "installed_size": 64071882
+        }
+      }
+    }
+  }
+}
