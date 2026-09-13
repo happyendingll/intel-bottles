@@ -1,7 +1,8 @@
 name: warm optional bottles
 
-# Phase-one rollout: manual only. After a one-formula and a five-formula validation this
-# workflow will be chained to the scheduled build-bottles workflow.
+# Optional prewarming starts only after the scheduled target build has completed, so
+# targets.txt always has first claim on the Intel runners. Manual runs remain available
+# for small, explicit validation batches.
 
 on:
   workflow_dispatch:
@@ -15,6 +16,9 @@ on:
         required: true
         default: 10
         type: number
+  workflow_run:
+    workflows: ["build bottles"]
+    types: [completed]
 
 concurrency:
   group: warm-bottles
@@ -26,6 +30,10 @@ permissions:
 jobs:
   plan:
     name: plan optional catalog
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      (github.event.workflow_run.conclusion == 'success' &&
+       github.event.workflow_run.event == 'schedule')
     runs-on: macos-15-intel
     outputs:
       wave0: ${{ steps.plan.outputs.wave0 }}
@@ -49,7 +57,7 @@ jobs:
         id: plan
         env:
           OVERRIDE: ${{ inputs.formulae }}
-          WARM_LIMIT: ${{ inputs.limit }}
+          WARM_LIMIT: ${{ inputs.limit || 10 }}
         run: python3 scripts/plan_catalog.py
 
   wave0:

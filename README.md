@@ -20,11 +20,13 @@ tag before publishing so a mismatched runner cannot contaminate the fork.
 ## How it works
 
 ```
-  plan            reads targets.txt, asks brew which formulae have no usable
-   │              bottle, groups them into root build targets
-   ├─ stage 1     shared + expensive roots (qtbase, openssl@3, qtwebengine, gcc …)
-   │              built, bottled, published
-   └─ stage 2     everything else — pours stage 1's output instead of rebuilding it
+  sync fork       updates the homebrew-core fork while preserving valid bottle blocks
+   │
+   ├─ targets     build bottles reads targets.txt and publishes missing bottles in
+   │              dependency-ordered waves; this is always the highest-priority work
+   │
+   └─ prewarm     after a scheduled target build completes, warm optional bottles picks
+                  at most 10 missing entries from catalog.txt and builds them in waves
 ```
 
 **Why roots, not one job per formula.** `brew install --build-bottle X` does *not* propagate
@@ -34,10 +36,22 @@ installed with `--build-bottle`"*. So each job walks its root's chain in topolog
 (`brew deps -n --include-build`) and explicitly builds only what still needs a bottle. One job
 covers a whole subtree, and 72 formulae collapse to ~37 jobs.
 
-**Why two stages.** Within a job the Cellar is shared, but across matrix jobs it is not.
-Publishing the widely-shared roots first means stage 2 pours them. The planner auto-promotes
-anything ≥5 other unbottled formulae depend on, so `qtbase` lands in stage 1 without being
-listed anywhere.
+**Why dependency waves.** Within a job the Cellar is shared, but across matrix jobs it is not.
+Publishing widely shared roots in an earlier wave means later jobs pour them instead of
+rebuilding them. The target planner auto-promotes anything at least five other unbottled
+formulae depend on, so `qtbase` lands in an early wave without being listed anywhere.
+
+**Optional prewarming.** `catalog.txt` is a generated, lower-priority pool for Formulae that
+may be useful later but are not installed targets. The manual `generate prewarm catalog`
+workflow ranks Homebrew's 365-day install-on-request data, but writes only Formulae that are
+compatible with macOS 15 Intel, currently need a bottle, and pass the cost and installation
+policy in `heavy.txt` and `catalog-policy.json`. Heavy Formula families and projects that prefer
+their own optimized macOS binary therefore never enter the catalog.
+
+A scheduled prewarm starts only after the scheduled `build bottles` run completes and caps the
+batch at 10 roots. Its date-based ordering changes daily, so one repeatedly failing package
+cannot starve the rest of the catalog. Prewarmed assets use the separate `bottles-warm-1`
+Release; their bottle blocks are merged into the same `homebrew-core` fork.
 
 **Consumption.** Bottle tarballs go to a rolling GitHub Release; `brew bottle --merge --write`
 writes the matching `bottle do` blocks into a fork of `homebrew-core`, which the Mac points at
@@ -49,8 +63,12 @@ via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works,
 | Path | Role |
 |---|---|
 | `targets.txt` | Formulae to keep bottled (all installed core formulae) |
+| `catalog.txt` | Lower-priority Formulae to prewarm in bounded daily batches |
+| `catalog-policy.json` | Curated exclusions for upstream-binary-first and costly builds |
 | `heavy.txt` | Forced into stage 1: expensive or risky |
+| `scripts/generate_catalog.py` | Generates only compatible, missing, prewarm-suitable candidates |
 | `scripts/plan_targets.py` | Picks what needs building, splits into stages |
+| `scripts/plan_catalog.py` | Selects up to 10 missing optional roots and dependency waves |
 | `scripts/filter_unbottled.py` | Order-preserving "which of these lack a bottle here" |
 | `scripts/build_root.sh` | Builds + bottles one root and its unbottled chain |
 | `scripts/publish.sh` | Merges DSL into the fork, uploads release assets |

@@ -1,0 +1,23 @@
+{
+  "heavy_formulae": {
+    "emacs": "Large application build; install on demand if it is actually needed.",
+    "erlang": "Large language runtime build; install on demand if it is actually needed.",
+    "grpc": "Large C++ build; keep it out of the bounded speculative queue.",
+    "mysql": "Large database server build; keep it out of the bounded speculative queue.",
+    "opencv": "Large optional computer-vision build; keep it demand-driven.",
+    "php": "Large language runtime build; install on demand if it is actually needed.",
+    "qemu": "Large emulator build; keep it demand-driven."
+  },
+  "exclude": {
+    "mise": {
+      "category": "prefer-upstream-binary",
+      "reason": "Upstream recommends mise.run on macOS; its official binary is more optimized than the Homebrew build.",
+      "source": "https://mise.jdx.dev/installing-mise.html"
+    },
+    "rustup": {
+      "category": "prefer-upstream-binary",
+      "reason": "Bootstrap tool with an official macOS installer; do not spend the Homebrew source-build budget on it.",
+      "source": "https://rustup.rs/"
+    }
+  }
+}

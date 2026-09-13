@@ -1,0 +1,60 @@
+name: generate prewarm catalog
+
+# Manual maintenance entry point. Generation and bottle classification run together on
+# the target platform, so catalog.txt never contains a post-generation audit backlog.
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: Number of recommended Formulae to keep in catalog.txt
+        required: true
+        default: 100
+        type: number
+      scan_limit:
+        description: Number of popular Formulae to inspect before filling the catalog
+        required: true
+        default: 1500
+        type: number
+
+concurrency:
+  group: generate-prewarm-catalog
+  cancel-in-progress: false
+
+permissions:
+  contents: write
+
+jobs:
+  generate:
+    runs-on: macos-15-intel
+    env:
+      HOMEBREW_CORE_GIT_REMOTE: https://github.com/${{ github.repository_owner }}/homebrew-core
+      HOMEBREW_NO_INSTALL_FROM_API: 1
+      HOMEBREW_NO_ANALYTICS: 1
+      HOMEBREW_NO_ASK: 1
+      HOMEBREW_NO_ENV_HINTS: 1
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Point Homebrew at the fork
+        run: ./scripts/prepare_homebrew.sh
+
+      - name: Generate recommended catalog
+        run: >-
+          python3 scripts/generate_catalog.py
+          --limit '${{ inputs.limit }}'
+          --scan-limit '${{ inputs.scan_limit }}'
+          --write
+
+      - name: Commit catalog when changed
+        run: |
+          git add catalog.txt
+          if git diff --cached --quiet; then
+            echo "catalog.txt is already current"
+            exit 0
+          fi
+          git config user.name github-actions[bot]
+          git config user.email 41898282+github-actions[bot]@users.noreply.github.com
+          git commit -m "Refresh recommended prewarm catalog"
+          git pull --rebase origin main
+          git push origin HEAD:main
