@@ -1,0 +1,103 @@
+{
+  "zola": {
+    "formula": {
+      "name": "zola",
+      "pkg_version": "0.23.6",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/z/zola.rb",
+      "tap_git_path": "Formula/z/zola.rb",
+      "tap_git_revision": "86930ca5e81cb9a36c6b2ae413596289ef2d004d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Fast static site generator in a single binary with everything built-in",
+      "license": "EUPL-1.2",
+      "homepage": "https://www.getzola.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T12:51:43Z",
+      "tags": {
+        "sequoia": {
+          "filename": "zola-0.23.6.sequoia.bottle.tar.gz",
+          "local_filename": "zola--0.23.6.sequoia.bottle.tar.gz",
+          "sha256": "e96f5548e887076bd676a5334d1e1c7226707a9a5e208a21a6e6d3612d4dd049",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/zola"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789249984,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "oniguruma",
+                "version": "6.9.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.9.10",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-zola-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/zola"
+          ],
+          "all_files": [
+            ".brew/zola.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "LICENSE-MIT",
+            "README.md",
+            "bin/zola",
+            "etc/bash_completion.d/zola",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/zola.fish",
+            "share/zsh/site-functions/_zola"
+          ],
+          "installed_size": 47275148
+        }
+      }
+    }
+  }
+}

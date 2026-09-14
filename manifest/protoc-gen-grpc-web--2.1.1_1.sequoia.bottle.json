@@ -1,0 +1,144 @@
+{
+  "protoc-gen-grpc-web": {
+    "formula": {
+      "name": "protoc-gen-grpc-web",
+      "pkg_version": "2.1.1_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/protoc-gen-grpc-web.rb",
+      "tap_git_path": "Formula/p/protoc-gen-grpc-web.rb",
+      "tap_git_revision": "86930ca5e81cb9a36c6b2ae413596289ef2d004d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Protoc plugin that generates code for gRPC-Web clients",
+      "license": "Apache-2.0",
+      "homepage": "https://grpc.io"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T12:11:48Z",
+      "tags": {
+        "sequoia": {
+          "filename": "protoc-gen-grpc-web-2.1.1_1.sequoia.bottle.tar.gz",
+          "local_filename": "protoc-gen-grpc-web--2.1.1_1.sequoia.bottle.tar.gz",
+          "sha256": "d9cb0888fdc2eb8d012b1c03b8fe537b1d8b6aeda883c6fc96d99daab6710fe4",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/protoc-gen-grpc-web"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787805060,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "protobuf",
+                "version": "36.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "36.1",
+                "declared_directly": true,
+                "compatibility_version": 6
+              },
+              {
+                "full_name": "protoc-gen-js",
+                "version": "4.0.2",
+                "revision": 8,
+                "pkg_version": "4.0.2_8",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-protobuf-36.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "name": "protobuf",
+                "versionInfo": "36.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13dee552679936df9044ceadddb97cf54bd3ee5a26ad6b51b502ebae8b91818b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf@36.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-protoc-gen-grpc-web"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-protoc-gen-grpc-web-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/protoc-gen-grpc-web"
+          ],
+          "all_files": [
+            ".brew/protoc-gen-grpc-web.rb",
+            "AUTHORS",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/protoc-gen-grpc-web",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 336743
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "goimports": {
+    "formula": {
+      "name": "goimports",
+      "pkg_version": "0.50.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/goimports.rb",
+      "tap_git_path": "Formula/g/goimports.rb",
+      "tap_git_revision": "86930ca5e81cb9a36c6b2ae413596289ef2d004d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Go formatter that additionally inserts import statements",
+      "license": "BSD-3-Clause",
+      "homepage": "https://pkg.go.dev/golang.org/x/tools/cmd/goimports"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-14T11:38:08Z",
+      "tags": {
+        "sequoia": {
+          "filename": "goimports-0.50.0.sequoia.bottle.tar.gz",
+          "local_filename": "goimports--0.50.0.sequoia.bottle.tar.gz",
+          "sha256": "fcc57edaa30bb445aec93b6f3ebf0aba4f4643104fe3bca1d630ff18091b9f48",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788897596,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "go",
+                "version": "1.27.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.27.1",
+                "declared_directly": true,
+                "compatibility_version": 11
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-go-1.27.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-go-1.27.1",
+                "name": "go",
+                "versionInfo": "1.27.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/go-1.27.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9bc05424baa2836f05b1636e2368a7cc478a5ea1493b17d03f01a446dcb08e87"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/go@1.27.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-go-1.27.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-goimports"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-goimports-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/goimports"
+          ],
+          "all_files": [
+            ".brew/goimports.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/goimports",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 6565991
+        }
+      }
+    }
+  }
+}
