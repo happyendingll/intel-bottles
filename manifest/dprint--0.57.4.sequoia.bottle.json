@@ -1,0 +1,129 @@
+{
+  "dprint": {
+    "formula": {
+      "name": "dprint",
+      "pkg_version": "0.57.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dprint.rb",
+      "tap_git_path": "Formula/d/dprint.rb",
+      "tap_git_revision": "ac4f863aa2e18294591221fbbae699617ae97bd2",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Pluggable and configurable code formatting platform written in Rust",
+      "license": "MIT",
+      "homepage": "https://dprint.dev/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-14T05:08:23Z",
+      "tags": {
+        "sequoia": {
+          "filename": "dprint-0.57.4.sequoia.bottle.tar.gz",
+          "local_filename": "dprint--0.57.4.sequoia.bottle.tar.gz",
+          "sha256": "54429bb2498b1e82db7790b7441af9888d5c5b5687b7176b0814c2c672139d23",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788644061,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6b958311e9568372a79c5dafcd91e16d2deb19a079b69c6861307ac27644b534"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dprint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-dprint-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/dprint"
+          ],
+          "all_files": [
+            ".brew/dprint.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/dprint",
+            "etc/bash_completion.d/dprint",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/dprint.fish",
+            "share/zsh/site-functions/_dprint"
+          ],
+          "installed_size": 29784018
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,249 @@
+{
+  "libtorrent-rakshasa": {
+    "formula": {
+      "name": "libtorrent-rakshasa",
+      "pkg_version": "0.16.22",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libtorrent-rakshasa.rb",
+      "tap_git_path": "Formula/lib/libtorrent-rakshasa.rb",
+      "tap_git_revision": "ac4f863aa2e18294591221fbbae699617ae97bd2",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "BitTorrent library with a focus on high performance",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://github.com/rakshasa/libtorrent"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T08:10:04Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libtorrent-rakshasa-0.16.22.sequoia.bottle.tar.gz",
+          "local_filename": "libtorrent-rakshasa--0.16.22.sequoia.bottle.tar.gz",
+          "sha256": "3501629729b3169b229ea795049c0da5bd5f7e7a85331cfc56bf597f4da45763",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/pkgconfig/libtorrent.pc"
+            ],
+            "linkage_files": [
+              "lib/libtorrent.50.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788334794,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libtorrent-rakshasa"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libtorrent-rakshasa"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libtorrent-rakshasa-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libtorrent-rakshasa.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "include/torrent/bitfield.h",
+            "include/torrent/common.h",
+            "include/torrent/data/block.h",
+            "include/torrent/data/block_list.h",
+            "include/torrent/data/block_transfer.h",
+            "include/torrent/data/chunk_utils.h",
+            "include/torrent/data/download_data.h",
+            "include/torrent/data/file.h",
+            "include/torrent/data/file_list.h",
+            "include/torrent/data/file_list_iterator.h",
+            "include/torrent/data/file_manager.h",
+            "include/torrent/data/file_utils.h",
+            "include/torrent/data/piece.h",
+            "include/torrent/data/transfer_list.h",
+            "include/torrent/download/choke_group.h",
+            "include/torrent/download/choke_queue.h",
+            "include/torrent/download/download_manager.h",
+            "include/torrent/download/group_entry.h",
+            "include/torrent/download/resource_manager.h",
+            "include/torrent/download/types.h",
+            "include/torrent/download.h",
+            "include/torrent/download_info.h",
+            "include/torrent/exceptions.h",
+            "include/torrent/hash_string.h",
+            "include/torrent/net/address_info.h",
+            "include/torrent/net/connection_state.h",
+            "include/torrent/net/fd.h",
+            "include/torrent/net/http_get.h",
+            "include/torrent/net/http_stack.h",
+            "include/torrent/net/resolver.h",
+            "include/torrent/net/socket_address.h",
+            "include/torrent/net/socket_address_key.h",
+            "include/torrent/net/types.h",
+            "include/torrent/object.h",
+            "include/torrent/object_raw_bencode.h",
+            "include/torrent/object_static_map.h",
+            "include/torrent/object_stream.h",
+            "include/torrent/path.h",
+            "include/torrent/peer/choke_status.h",
+            "include/torrent/peer/client_info.h",
+            "include/torrent/peer/client_list.h",
+            "include/torrent/peer/connection_list.h",
+            "include/torrent/peer/peer.h",
+            "include/torrent/peer/peer_info.h",
+            "include/torrent/peer/peer_list.h",
+            "include/torrent/rate.h",
+            "include/torrent/runtime/client_config.h",
+            "include/torrent/runtime/memory_manager.h",
+            "include/torrent/runtime/network_config.h",
+            "include/torrent/runtime/network_manager.h",
+            "include/torrent/runtime/proxy_manager.h",
+            "include/torrent/runtime/runtime.h",
+            "include/torrent/runtime/socket_manager.h",
+            "include/torrent/system/callbacks.h",
+            "include/torrent/system/common.h",
+            "include/torrent/system/event.h",
+            "include/torrent/system/poll.h",
+            "include/torrent/system/scheduler.h",
+            "include/torrent/system/spawn_process.h",
+            "include/torrent/system/thread.h",
+            "include/torrent/system/types.h",
+            "include/torrent/throttle.h",
+            "include/torrent/torrent.h",
+            "include/torrent/tracker/dht_controller.h",
+            "include/torrent/tracker/manager.h",
+            "include/torrent/tracker/tracker.h",
+            "include/torrent/tracker/tracker_state.h",
+            "include/torrent/tracker/wrappers.h",
+            "include/torrent/types/string_utf8.h",
+            "include/torrent/utils/chrono.h",
+            "include/torrent/utils/directory_events.h",
+            "include/torrent/utils/extents.h",
+            "include/torrent/utils/file_stat.h",
+            "include/torrent/utils/log.h",
+            "include/torrent/utils/log_buffer.h",
+            "include/torrent/utils/option_strings.h",
+            "include/torrent/utils/random.h",
+            "include/torrent/utils/ranges.h",
+            "include/torrent/utils/resume.h",
+            "include/torrent/utils/string_manip.h",
+            "include/torrent/utils/unordered_vector.h",
+            "include/torrent/utils/uri_parser.h",
+            "lib/libtorrent.50.dylib",
+            "lib/libtorrent.dylib",
+            "lib/pkgconfig/libtorrent.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 2218634
+        }
+      }
+    }
+  }
+}

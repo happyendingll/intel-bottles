@@ -1,0 +1,197 @@
+{
+  "litehtml": {
+    "formula": {
+      "name": "litehtml",
+      "pkg_version": "0.10_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/l/litehtml.rb",
+      "tap_git_path": "Formula/l/litehtml.rb",
+      "tap_git_revision": "ac4f863aa2e18294591221fbbae699617ae97bd2",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Fast and lightweight HTML/CSS rendering engine",
+      "license": "BSD-3-Clause",
+      "homepage": "http://www.litehtml.com/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T06:14:10Z",
+      "tags": {
+        "sequoia": {
+          "filename": "litehtml-0.10_1.sequoia.bottle.tar.gz",
+          "local_filename": "litehtml--0.10_1.sequoia.bottle.tar.gz",
+          "sha256": "cba2d515d02daace4c1c8fe080f98ad19cdd58d0b4f9b6bb063fd7dec6cb666c",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/liblitehtml.0.0.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1781385071,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gumbo-parser",
+                "version": "0.14.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.14.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gumbo-parser-0.14.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gumbo-parser-0.14.0",
+                "name": "gumbo-parser",
+                "versionInfo": "0.14.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/gumbo-parser-0.14.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c604cf41f4c656e5c87713efcb0447dd76b147e065908807e64bbaa95310bb3f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gumbo-parser@0.14.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gumbo-parser-0.14.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-litehtml"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-litehtml-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/litehtml.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/litehtml/background.h",
+            "include/litehtml/borders.h",
+            "include/litehtml/codepoint.h",
+            "include/litehtml/css_length.h",
+            "include/litehtml/css_margins.h",
+            "include/litehtml/css_offsets.h",
+            "include/litehtml/css_parser.h",
+            "include/litehtml/css_position.h",
+            "include/litehtml/css_properties.h",
+            "include/litehtml/css_selector.h",
+            "include/litehtml/css_tokenizer.h",
+            "include/litehtml/document.h",
+            "include/litehtml/document_container.h",
+            "include/litehtml/el_anchor.h",
+            "include/litehtml/el_base.h",
+            "include/litehtml/el_before_after.h",
+            "include/litehtml/el_body.h",
+            "include/litehtml/el_break.h",
+            "include/litehtml/el_cdata.h",
+            "include/litehtml/el_comment.h",
+            "include/litehtml/el_div.h",
+            "include/litehtml/el_font.h",
+            "include/litehtml/el_image.h",
+            "include/litehtml/el_link.h",
+            "include/litehtml/el_para.h",
+            "include/litehtml/el_script.h",
+            "include/litehtml/el_space.h",
+            "include/litehtml/el_style.h",
+            "include/litehtml/el_table.h",
+            "include/litehtml/el_td.h",
+            "include/litehtml/el_text.h",
+            "include/litehtml/el_title.h",
+            "include/litehtml/el_tr.h",
+            "include/litehtml/element.h",
+            "include/litehtml/encodings.h",
+            "include/litehtml/flex_item.h",
+            "include/litehtml/flex_line.h",
+            "include/litehtml/font_description.h",
+            "include/litehtml/formatting_context.h",
+            "include/litehtml/gradient.h",
+            "include/litehtml/html.h",
+            "include/litehtml/html_microsyntaxes.h",
+            "include/litehtml/html_tag.h",
+            "include/litehtml/iterators.h",
+            "include/litehtml/line_box.h",
+            "include/litehtml/litehtml.h",
+            "include/litehtml/master_css.h",
+            "include/litehtml/media_query.h",
+            "include/litehtml/num_cvt.h",
+            "include/litehtml/os_types.h",
+            "include/litehtml/render_block.h",
+            "include/litehtml/render_block_context.h",
+            "include/litehtml/render_flex.h",
+            "include/litehtml/render_image.h",
+            "include/litehtml/render_inline.h",
+            "include/litehtml/render_inline_context.h",
+            "include/litehtml/render_item.h",
+            "include/litehtml/render_table.h",
+            "include/litehtml/scroll_view.h",
+            "include/litehtml/string_id.h",
+            "include/litehtml/style.h",
+            "include/litehtml/stylesheet.h",
+            "include/litehtml/table.h",
+            "include/litehtml/types.h",
+            "include/litehtml/url.h",
+            "include/litehtml/url_path.h",
+            "include/litehtml/utf8_strings.h",
+            "include/litehtml/web_color.h",
+            "lib/cmake/litehtml/litehtmlConfig.cmake",
+            "lib/cmake/litehtml/litehtmlTargets-release.cmake",
+            "lib/cmake/litehtml/litehtmlTargets.cmake",
+            "lib/liblitehtml.0.0.0.dylib",
+            "lib/liblitehtml.0.dylib",
+            "lib/liblitehtml.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1561516
+        }
+      }
+    }
+  }
+}
