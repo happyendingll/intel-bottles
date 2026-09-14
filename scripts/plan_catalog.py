@@ -53,6 +53,8 @@ def main() -> None:
     catalog = unique(override or read_list(REPO / "catalog.txt"))
     targets = set(read_list(REPO / "targets.txt"))
     excluded = set(read_list(REPO / "exclude.txt"))
+    if not override:
+        excluded.update(read_list(REPO / "prewarm-failures.txt"))
     candidates = [name for name in catalog if name not in targets and name not in excluded]
 
     needs, bottled, missing = brewinfo.classify(candidates)

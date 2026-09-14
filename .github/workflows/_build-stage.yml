@@ -97,6 +97,7 @@ jobs:
     if: always()
     runs-on: macos-15-intel
     permissions:
+      actions: read
       contents: write
     steps:
       - uses: actions/checkout@v4
@@ -157,4 +158,23 @@ jobs:
               git pull --rebase --autostash
               git push
             fi
+          fi
+
+      - name: Record prewarm failures
+        if: always() && startsWith(inputs.stage, 'warm-')
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          STAGE: ${{ inputs.stage }}
+        run: |
+          gh api --paginate --slurp \
+            "/repos/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}/jobs?per_page=100" \
+            > "$RUNNER_TEMP/prewarm-jobs.json"
+          python3 scripts/update_prewarm_failures.py \
+            --stage "$STAGE" \
+            --jobs-json "$RUNNER_TEMP/prewarm-jobs.json"
+          git add prewarm-failures.txt
+          if ! git diff --cached --quiet; then
+            git commit -m "prewarm failures: $STAGE ($(date -u +%Y-%m-%d))"
+            git pull --rebase --autostash
+            git push
           fi

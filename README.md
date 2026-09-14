@@ -65,6 +65,7 @@ via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works,
 | `targets.txt` | Formulae to keep bottled (all installed core formulae) |
 | `catalog.txt` | Lower-priority Formulae to prewarm in bounded daily batches |
 | `catalog-policy.json` | Curated exclusions for upstream-binary-first and costly builds |
+| `prewarm-failures.txt` | Failed/timed-out optional builds quarantined from future catalogs |
 | `heavy.txt` | Forced into stage 1: expensive or risky |
 | `scripts/generate_catalog.py` | Generates only compatible, missing, prewarm-suitable candidates |
 | `scripts/plan_targets.py` | Picks what needs building, splits into stages |

@@ -122,6 +122,7 @@ def main() -> None:
     policy_excluded = set(policy.get("exclude", {}))
     targets = set(read_list(REPO / "targets.txt"))
     excluded = set(read_list(REPO / "exclude.txt"))
+    prewarm_failures = set(read_list(REPO / "prewarm-failures.txt"))
     heavyweight_families = set(read_list(REPO / "heavy.txt")) | set(
         policy.get("heavy_formulae", {})
     )
@@ -138,6 +139,8 @@ def main() -> None:
             reason = policy["exclude"][name]["category"]
         elif name in excluded:
             reason = "excluded"
+        elif name in prewarm_failures:
+            reason = "previous prewarm failure"
         elif in_family(name, heavyweight_families):
             reason = "heavyweight"
         if reason:
@@ -156,7 +159,9 @@ def main() -> None:
     for name in compatible:
         if name in missing or name not in needs:
             continue
-        blockers = dependency_closure(name, formulae) & (excluded | policy_excluded | costly_missing)
+        blockers = dependency_closure(name, formulae) & (
+            excluded | prewarm_failures | policy_excluded | costly_missing
+        )
         if blockers:
             rejected[name] = "blocked by " + ", ".join(sorted(blockers))
             continue
