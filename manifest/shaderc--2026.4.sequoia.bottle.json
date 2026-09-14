@@ -1,0 +1,106 @@
+{
+  "shaderc": {
+    "formula": {
+      "name": "shaderc",
+      "pkg_version": "2026.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/shaderc.rb",
+      "tap_git_path": "Formula/s/shaderc.rb",
+      "tap_git_revision": "974faef5154b044c67235f44f5d431a412e16bd4",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Collection of tools, libraries, and tests for Vulkan shader compilation",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/google/shaderc"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T10:22:50Z",
+      "tags": {
+        "sequoia": {
+          "filename": "shaderc-2026.4.sequoia.bottle.tar.gz",
+          "local_filename": "shaderc--2026.4.sequoia.bottle.tar.gz",
+          "sha256": "181c0f057e01ecbe47f1018364a378a8fe0a469df80422f9a32816e0d9acaabc",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/pkgconfig/shaderc.pc",
+              "lib/pkgconfig/shaderc_combined.pc",
+              "lib/pkgconfig/shaderc_static.pc"
+            ],
+            "linkage_files": [
+              "lib/libshaderc_shared.1.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789152999,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-shaderc-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/glslc"
+          ],
+          "all_files": [
+            ".brew/shaderc.rb",
+            "AUTHORS",
+            "CHANGES",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/glslc",
+            "include/shaderc/env.h",
+            "include/shaderc/shaderc.h",
+            "include/shaderc/shaderc.hpp",
+            "include/shaderc/status.h",
+            "include/shaderc/visibility.h",
+            "lib/libshaderc.a",
+            "lib/libshaderc_combined.a",
+            "lib/libshaderc_shared.1.dylib",
+            "lib/libshaderc_shared.dylib",
+            "lib/pkgconfig/shaderc.pc",
+            "lib/pkgconfig/shaderc_combined.pc",
+            "lib/pkgconfig/shaderc_static.pc",
+            "license-checker.cfg",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 34775699
+        }
+      }
+    }
+  }
+}

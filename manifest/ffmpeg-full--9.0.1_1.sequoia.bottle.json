@@ -1,0 +1,1982 @@
+{
+  "ffmpeg-full": {
+    "formula": {
+      "name": "ffmpeg-full",
+      "pkg_version": "9.0.1_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/ffmpeg-full.rb",
+      "tap_git_path": "Formula/f/ffmpeg-full.rb",
+      "tap_git_revision": "974faef5154b044c67235f44f5d431a412e16bd4",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Play, record, convert, and stream many audio and video codecs",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://ffmpeg.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-14T10:32:08Z",
+      "tags": {
+        "sequoia": {
+          "filename": "ffmpeg-full-9.0.1_1.sequoia.bottle.tar.gz",
+          "local_filename": "ffmpeg-full--9.0.1_1.sequoia.bottle.tar.gz",
+          "sha256": "59bf1a0d9499759eea6cc7b98ef2a7b40c7c0f6d49f6e9e4e89d99f2ad0e974a",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/pkgconfig/libavcodec.pc",
+              "lib/pkgconfig/libavdevice.pc",
+              "lib/pkgconfig/libavfilter.pc",
+              "lib/pkgconfig/libavformat.pc",
+              "lib/pkgconfig/libavutil.pc",
+              "lib/pkgconfig/libswresample.pc",
+              "lib/pkgconfig/libswscale.pc"
+            ],
+            "linkage_files": [
+              "bin/aviocat",
+              "bin/crypto_bench",
+              "bin/enc_recon_frame_test",
+              "bin/enum_options",
+              "bin/ffescape",
+              "bin/ffeval",
+              "bin/ffhash",
+              "bin/ffmpeg",
+              "bin/ffplay",
+              "bin/ffprobe",
+              "bin/fourcc2pixfmt",
+              "bin/graph2dot",
+              "bin/ismindex",
+              "bin/pktdumper",
+              "bin/probetest",
+              "bin/scale_slice_test",
+              "bin/seek_print",
+              "bin/sidxindex",
+              "bin/uncoded_frame",
+              "bin/venc_data_dump",
+              "bin/zmqsend",
+              "lib/libavcodec.63.1.101.dylib",
+              "lib/libavdevice.63.1.101.dylib",
+              "lib/libavfilter.12.1.101.dylib",
+              "lib/libavformat.63.1.101.dylib",
+              "lib/libavutil.61.1.101.dylib",
+              "lib/libswresample.7.1.101.dylib",
+              "lib/libswscale.10.1.101.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/ffmpeg",
+              "bin/ffplay",
+              "bin/ffprobe"
+            ],
+            "source_modified_time": 1786505734,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libvmaf",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "aom",
+                "version": "3.15.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.15.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "aribb24",
+                "version": "1.0.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.4",
+                "declared_directly": true
+              },
+              {
+                "full_name": "dav1d",
+                "version": "1.5.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "frei0r",
+                "version": "3.5.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.5.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libomp",
+                "version": "23.1.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ggml",
+                "version": "0.23.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.23.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.13",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.8.13_2",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.88.3",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2.88.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.4",
+                "revision": 0,
+                "bottle_rebuild": 2,
+                "pkg_version": "1.18.4",
+                "declared_directly": false
+              },
+              {
+                "full_name": "graphite2",
+                "version": "1.3.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.15",
+                "declared_directly": false
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "harfbuzz",
+                "version": "14.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "14.4.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "giflib",
+                "version": "6.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.1.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "highway",
+                "version": "1.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "imath",
+                "version": "3.2.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "webp",
+                "version": "1.6.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtiff",
+                "version": "4.7.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.7.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "little-cms2",
+                "version": "2.19.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.19.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libdeflate",
+                "version": "1.26",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.26",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openjph",
+                "version": "0.31.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.31.0",
+                "declared_directly": false,
+                "compatibility_version": 6
+              },
+              {
+                "full_name": "openexr",
+                "version": "3.4.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.15",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jpeg-xl",
+                "version": "0.12.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.12.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "mpg123",
+                "version": "1.33.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.33.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lame",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "fribidi",
+                "version": "1.0.16",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.16",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunibreak",
+                "version": "7.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "7.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libass",
+                "version": "0.17.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.17.5",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libudfread",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libbluray",
+                "version": "1.5.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "shaderc",
+                "version": "2026.4",
+                "revision": 0,
+                "pkg_version": "2026.4",
+                "declared_directly": false
+              },
+              {
+                "full_name": "vulkan-headers",
+                "version": "1.4.357.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.357.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "vulkan-loader",
+                "version": "1.4.357.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.357.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libplacebo",
+                "version": "7.360.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "7.360.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cjson",
+                "version": "1.7.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.7.19",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libmicrohttpd",
+                "version": "1.0.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.10",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "librist",
+                "version": "0.2.20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.2.20",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libsoxr",
+                "version": "0.1.3",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.1.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libssh",
+                "version": "0.12.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.12.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libvidstab",
+                "version": "1.1.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libogg",
+                "version": "1.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libvorbis",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.3.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libvpx",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.17.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "opencore-amr",
+                "version": "0.1.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.1.6",
+                "declared_directly": true
+              },
+              {
+                "full_name": "openjpeg",
+                "version": "2.5.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.5.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "opus",
+                "version": "1.6.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qrencode",
+                "version": "4.1.1",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.1.1_1",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "rav1e",
+                "version": "0.8.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.8.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libsamplerate",
+                "version": "0.2.2",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.2.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "flac",
+                "version": "1.5.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libsndfile",
+                "version": "1.2.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.2_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "rubberband",
+                "version": "4.0.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "sdl3",
+                "version": "3.4.16",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.16",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sdl2-compat",
+                "version": "2.32.72",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.32.72",
+                "declared_directly": true
+              },
+              {
+                "full_name": "snappy",
+                "version": "1.2.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "speex",
+                "version": "1.2.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "srt",
+                "version": "1.5.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "svt-av1",
+                "version": "4.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.2.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "leptonica",
+                "version": "1.87.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.87.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libb2",
+                "version": "0.98.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.98.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libarchive",
+                "version": "3.8.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.8.9",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libdatrie",
+                "version": "0.2.14",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.2.14",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libthai",
+                "version": "0.1.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.1.30",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pango",
+                "version": "1.58.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.58.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "tesseract",
+                "version": "5.5.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.5.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "theora",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "llama.cpp",
+                "version": "0.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "whisper.cpp",
+                "version": "1.9.4",
+                "revision": 0,
+                "pkg_version": "1.9.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "x264",
+                "version": "r3222",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "r3222",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "x265",
+                "version": "4.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.3",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "xvid",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.3.7",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libsodium",
+                "version": "1.0.22",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.22",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zeromq",
+                "version": "4.3.5",
+                "revision": 2,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.3.5_2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zimg",
+                "version": "3.0.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/ffmpeg",
+              "string": "/usr/local/Cellar/ffmpeg-full/9.0.1_1/share/ffmpeg",
+              "offset": 317616
+            },
+            {
+              "path": "bin/ffprobe",
+              "string": "/usr/local/Cellar/ffmpeg-full/9.0.1_1/share/ffmpeg",
+              "offset": 181501
+            },
+            {
+              "path": "bin/ffplay",
+              "string": "/usr/local/Cellar/ffmpeg-full/9.0.1_1/share/ffmpeg",
+              "offset": 170342
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-aom-3.15.0",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+              "SPDXRef-Package-SPDXRef-ggml-0.23.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+              "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+              "SPDXRef-Package-SPDXRef-vulkan-headers-1.4.357.0",
+              "SPDXRef-Package-SPDXRef-vulkan-loader-1.4.357.0",
+              "SPDXRef-Package-SPDXRef-librist-0.2.20",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+              "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+              "SPDXRef-Package-SPDXRef-tesseract-5.5.3",
+              "SPDXRef-Package-SPDXRef-llama.cpp-0.4.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.15.0",
+                "name": "aom",
+                "versionInfo": "3.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/aom-3.15.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "94fc9708f79797e7aa401eebc1b1ecb81792e75d45ffc016c5f6b6a43d39b784"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aom@3.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "name": "libomp",
+                "versionInfo": "23.1.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libomp-23.1.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f9006339f8009a14348931dfb50532f9b6962968266db7a3108178588bf8b703"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libomp@23.1.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ggml-0.23.0",
+                "name": "ggml",
+                "versionInfo": "0.23.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/ggml-0.23.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "346df9b3737ef8a43fb699f77bd0145411b8b132417362e191f6ccaed9f0e7e7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ggml@0.23.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.48.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "089df9911d09192beee2b9e49201bf1906d6e414bba1d4185982c5ac9d695feb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ab6e54c4ceaa0b1535994c00b64471b2b5f531b8267ef1ae27f399e3e1c0f587"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6b958311e9568372a79c5dafcd91e16d2deb19a079b69c6861307ac27644b534"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "name": "libtiff",
+                "versionInfo": "4.7.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libtiff",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libtiff-4.7.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "59c1a9823cdf63e5acb5c81c8a069be461be8768bd5d866bd47ee15053756f53"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtiff@4.7.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "name": "little-cms2",
+                "versionInfo": "2.19.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/little-cms2-2.19.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3c8e8dc49c3067141aa5d264c5ee9af2b2f0fc5b3905915fe629cd79ac2bfd57"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/little-cms2@2.19.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-vulkan-headers-1.4.357.0",
+                "name": "vulkan-headers",
+                "versionInfo": "1.4.357.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/vulkan-headers/blobs/sha256:d6fd30c40b9637003108d90c1de3b929b2e0c6f4eb99d463a4b5484680a9cf47",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d6fd30c40b9637003108d90c1de3b929b2e0c6f4eb99d463a4b5484680a9cf47"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/vulkan-headers@1.4.357.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-vulkan-loader-1.4.357.0",
+                "name": "vulkan-loader",
+                "versionInfo": "1.4.357.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/vulkan-loader/blobs/sha256:25dd0dabe2f62b4790ec5b0f200a562bd9abef2d5a88401a7211eadf52ddee77",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "25dd0dabe2f62b4790ec5b0f200a562bd9abef2d5a88401a7211eadf52ddee77"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/vulkan-loader@1.4.357.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-librist-0.2.20",
+                "name": "librist",
+                "versionInfo": "0.2.20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/librist-0.2.20.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5a9796061174407ffa53b32c68e1d751e6deb5db716e8fabde945ce3de65822d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/librist@0.2.20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "name": "sdl3",
+                "versionInfo": "3.4.16",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/sdl3-3.4.16.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9dc29b325dcf7a0acfacd6fb415251792750b219a5db765624514ddc185f438d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl3@3.4.16",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "name": "sdl2-compat",
+                "versionInfo": "2.32.72",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/sdl2-compat-2.32.72.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "95416aee23feb0d1bc449a7112554d787af252beed7753dbedbd603d4ebd517c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl2-compat@2.32.72",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-tesseract-5.5.3",
+                "name": "tesseract",
+                "versionInfo": "5.5.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/tesseract-5.5.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8c19405c2836e608f720a0a9f0bd6088034a4b67f2b8324804d9e1471379049e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/tesseract@5.5.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-llama.cpp-0.4.0",
+                "name": "llama.cpp",
+                "versionInfo": "0.4.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/llama.cpp-0.4.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2a4daed0d29da86d2be0e964d07bfa5e58d9f692a3b2b1c225abe1075169faa9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/llama.cpp@0.4.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.15.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ggml-0.23.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-vulkan-headers-1.4.357.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-vulkan-loader-1.4.357.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-librist-0.2.20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-tesseract-5.5.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-llama.cpp-0.4.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ffmpeg-full"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-ffmpeg-full-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/check_arm_indent.sh",
+            "bin/general_assembly.pl",
+            "bin/pktdumper",
+            "bin/ffhash",
+            "bin/ffmpeg",
+            "bin/zmqsend",
+            "bin/compare-cvelists.sh",
+            "bin/clean-diff",
+            "bin/merge-all-source-plugins",
+            "bin/fourcc2pixfmt",
+            "bin/update-checkasm.sh",
+            "bin/check_commit_msg.sh",
+            "bin/seek_print",
+            "bin/venc_data_dump",
+            "bin/enc_recon_frame_test",
+            "bin/normalize.py",
+            "bin/sidxindex",
+            "bin/make_chlayout_test",
+            "bin/crypto_bench",
+            "bin/scale_slice_test",
+            "bin/source2c",
+            "bin/unwrap-diff",
+            "bin/gen-rc",
+            "bin/plotframes",
+            "bin/zmqshell.py",
+            "bin/patcheck",
+            "bin/murge",
+            "bin/missing_codec_desc",
+            "bin/ffprobe",
+            "bin/dvd2concat",
+            "bin/aviocat",
+            "bin/cws2fws",
+            "bin/target_dec_fate.sh",
+            "bin/qt-faststart",
+            "bin/trasher",
+            "bin/graph2dot",
+            "bin/indent_arm_assembly.pl",
+            "bin/ffescape",
+            "bin/enum_options",
+            "bin/ismindex",
+            "bin/ffplay",
+            "bin/uncoded_frame",
+            "bin/bisect-create",
+            "bin/loudnorm.rb",
+            "bin/probetest",
+            "bin/ffeval"
+          ],
+          "all_files": [
+            ".brew/ffmpeg-full.rb",
+            "COPYING.GPLv2",
+            "COPYING.GPLv3",
+            "COPYING.LGPLv2.1",
+            "COPYING.LGPLv3",
+            "Changelog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/aviocat",
+            "bin/bisect-create",
+            "bin/check_arm_indent.sh",
+            "bin/check_commit_msg.sh",
+            "bin/clean-diff",
+            "bin/compare-cvelists.sh",
+            "bin/crypto_bench",
+            "bin/cws2fws",
+            "bin/dvd2concat",
+            "bin/enc_recon_frame_test",
+            "bin/enum_options",
+            "bin/ffescape",
+            "bin/ffeval",
+            "bin/ffhash",
+            "bin/ffmpeg",
+            "bin/ffplay",
+            "bin/ffprobe",
+            "bin/fourcc2pixfmt",
+            "bin/gen-rc",
+            "bin/general_assembly.pl",
+            "bin/graph2dot",
+            "bin/indent_arm_assembly.pl",
+            "bin/ismindex",
+            "bin/loudnorm.rb",
+            "bin/make_chlayout_test",
+            "bin/merge-all-source-plugins",
+            "bin/missing_codec_desc",
+            "bin/murge",
+            "bin/normalize.py",
+            "bin/patcheck",
+            "bin/pktdumper",
+            "bin/plotframes",
+            "bin/probetest",
+            "bin/qt-faststart",
+            "bin/scale_slice_test",
+            "bin/seek_print",
+            "bin/sidxindex",
+            "bin/source2c",
+            "bin/target_dec_fate.sh",
+            "bin/trasher",
+            "bin/uncoded_frame",
+            "bin/unwrap-diff",
+            "bin/update-checkasm.sh",
+            "bin/venc_data_dump",
+            "bin/zmqsend",
+            "bin/zmqshell.py",
+            "include/libavcodec/ac3_parser.h",
+            "include/libavcodec/adts_parser.h",
+            "include/libavcodec/avcodec.h",
+            "include/libavcodec/avdct.h",
+            "include/libavcodec/bsf.h",
+            "include/libavcodec/codec.h",
+            "include/libavcodec/codec_desc.h",
+            "include/libavcodec/codec_id.h",
+            "include/libavcodec/codec_par.h",
+            "include/libavcodec/d3d11va.h",
+            "include/libavcodec/defs.h",
+            "include/libavcodec/dirac.h",
+            "include/libavcodec/dv_profile.h",
+            "include/libavcodec/dxva2.h",
+            "include/libavcodec/exif.h",
+            "include/libavcodec/jni.h",
+            "include/libavcodec/mediacodec.h",
+            "include/libavcodec/packet.h",
+            "include/libavcodec/qsv.h",
+            "include/libavcodec/smpte_436m.h",
+            "include/libavcodec/vdpau.h",
+            "include/libavcodec/version.h",
+            "include/libavcodec/version_major.h",
+            "include/libavcodec/videotoolbox.h",
+            "include/libavcodec/vorbis_parser.h",
+            "include/libavdevice/avdevice.h",
+            "include/libavdevice/version.h",
+            "include/libavdevice/version_major.h",
+            "include/libavfilter/avfilter.h",
+            "include/libavfilter/buffersink.h",
+            "include/libavfilter/buffersrc.h",
+            "include/libavfilter/version.h",
+            "include/libavfilter/version_major.h",
+            "include/libavformat/avformat.h",
+            "include/libavformat/avio.h",
+            "include/libavformat/version.h",
+            "include/libavformat/version_major.h",
+            "include/libavutil/adler32.h",
+            "include/libavutil/aes.h",
+            "include/libavutil/aes_ctr.h",
+            "include/libavutil/ambient_viewing_environment.h",
+            "include/libavutil/attributes.h",
+            "include/libavutil/audio_fifo.h",
+            "include/libavutil/avassert.h",
+            "include/libavutil/avconfig.h",
+            "include/libavutil/avstring.h",
+            "include/libavutil/avutil.h",
+            "include/libavutil/base64.h",
+            "include/libavutil/blowfish.h",
+            "include/libavutil/bprint.h",
+            "include/libavutil/bswap.h",
+            "include/libavutil/buffer.h",
+            "include/libavutil/camellia.h",
+            "include/libavutil/cast5.h",
+            "include/libavutil/channel_layout.h",
+            "include/libavutil/common.h",
+            "include/libavutil/container_fifo.h",
+            "include/libavutil/cpu.h",
+            "include/libavutil/crc.h",
+            "include/libavutil/csp.h",
+            "include/libavutil/des.h",
+            "include/libavutil/detection_bbox.h",
+            "include/libavutil/dict.h",
+            "include/libavutil/display.h",
+            "include/libavutil/dovi_meta.h",
+            "include/libavutil/downmix_info.h",
+            "include/libavutil/encryption_info.h",
+            "include/libavutil/error.h",
+            "include/libavutil/eval.h",
+            "include/libavutil/executor.h",
+            "include/libavutil/ffversion.h",
+            "include/libavutil/fifo.h",
+            "include/libavutil/file.h",
+            "include/libavutil/film_grain_params.h",
+            "include/libavutil/frame.h",
+            "include/libavutil/hash.h",
+            "include/libavutil/hdr_dynamic_metadata.h",
+            "include/libavutil/hdr_dynamic_vivid_metadata.h",
+            "include/libavutil/hmac.h",
+            "include/libavutil/hwcontext.h",
+            "include/libavutil/hwcontext_amf.h",
+            "include/libavutil/hwcontext_cuda.h",
+            "include/libavutil/hwcontext_d3d11va.h",
+            "include/libavutil/hwcontext_d3d12va.h",
+            "include/libavutil/hwcontext_drm.h",
+            "include/libavutil/hwcontext_dxva2.h",
+            "include/libavutil/hwcontext_mediacodec.h",
+            "include/libavutil/hwcontext_oh.h",
+            "include/libavutil/hwcontext_opencl.h",
+            "include/libavutil/hwcontext_qsv.h",
+            "include/libavutil/hwcontext_vaapi.h",
+            "include/libavutil/hwcontext_vdpau.h",
+            "include/libavutil/hwcontext_videotoolbox.h",
+            "include/libavutil/hwcontext_vulkan.h",
+            "include/libavutil/iamf.h",
+            "include/libavutil/imgutils.h",
+            "include/libavutil/intfloat.h",
+            "include/libavutil/intreadwrite.h",
+            "include/libavutil/lfg.h",
+            "include/libavutil/log.h",
+            "include/libavutil/lzo.h",
+            "include/libavutil/macros.h",
+            "include/libavutil/mastering_display_metadata.h",
+            "include/libavutil/mathematics.h",
+            "include/libavutil/md5.h",
+            "include/libavutil/mem.h",
+            "include/libavutil/motion_vector.h",
+            "include/libavutil/murmur3.h",
+            "include/libavutil/opt.h",
+            "include/libavutil/parseutils.h",
+            "include/libavutil/pixdesc.h",
+            "include/libavutil/pixelutils.h",
+            "include/libavutil/pixfmt.h",
+            "include/libavutil/random_seed.h",
+            "include/libavutil/rational.h",
+            "include/libavutil/raw_color_params.h",
+            "include/libavutil/rc4.h",
+            "include/libavutil/refstruct.h",
+            "include/libavutil/replaygain.h",
+            "include/libavutil/ripemd.h",
+            "include/libavutil/samplefmt.h",
+            "include/libavutil/sha.h",
+            "include/libavutil/sha512.h",
+            "include/libavutil/spherical.h",
+            "include/libavutil/stereo3d.h",
+            "include/libavutil/tdrdi.h",
+            "include/libavutil/tea.h",
+            "include/libavutil/threadmessage.h",
+            "include/libavutil/time.h",
+            "include/libavutil/timecode.h",
+            "include/libavutil/timestamp.h",
+            "include/libavutil/tree.h",
+            "include/libavutil/twofish.h",
+            "include/libavutil/tx.h",
+            "include/libavutil/uuid.h",
+            "include/libavutil/version.h",
+            "include/libavutil/video_enc_params.h",
+            "include/libavutil/video_hint.h",
+            "include/libavutil/xtea.h",
+            "include/libswresample/swresample.h",
+            "include/libswresample/version.h",
+            "include/libswresample/version_major.h",
+            "include/libswscale/swscale.h",
+            "include/libswscale/version.h",
+            "include/libswscale/version_major.h",
+            "lib/libavcodec.63.1.101.dylib",
+            "lib/libavcodec.63.dylib",
+            "lib/libavcodec.a",
+            "lib/libavcodec.dylib",
+            "lib/libavdevice.63.1.101.dylib",
+            "lib/libavdevice.63.dylib",
+            "lib/libavdevice.a",
+            "lib/libavdevice.dylib",
+            "lib/libavfilter.12.1.101.dylib",
+            "lib/libavfilter.12.dylib",
+            "lib/libavfilter.a",
+            "lib/libavfilter.dylib",
+            "lib/libavformat.63.1.101.dylib",
+            "lib/libavformat.63.dylib",
+            "lib/libavformat.a",
+            "lib/libavformat.dylib",
+            "lib/libavutil.61.1.101.dylib",
+            "lib/libavutil.61.dylib",
+            "lib/libavutil.a",
+            "lib/libavutil.dylib",
+            "lib/libswresample.7.1.101.dylib",
+            "lib/libswresample.7.dylib",
+            "lib/libswresample.a",
+            "lib/libswresample.dylib",
+            "lib/libswscale.10.1.101.dylib",
+            "lib/libswscale.10.dylib",
+            "lib/libswscale.a",
+            "lib/libswscale.dylib",
+            "lib/pkgconfig/libavcodec.pc",
+            "lib/pkgconfig/libavdevice.pc",
+            "lib/pkgconfig/libavfilter.pc",
+            "lib/pkgconfig/libavformat.pc",
+            "lib/pkgconfig/libavutil.pc",
+            "lib/pkgconfig/libswresample.pc",
+            "lib/pkgconfig/libswscale.pc",
+            "sbom.spdx.json",
+            "share/ffmpeg/examples/Makefile",
+            "share/ffmpeg/examples/README",
+            "share/ffmpeg/examples/avio_http_serve_files.c",
+            "share/ffmpeg/examples/avio_list_dir.c",
+            "share/ffmpeg/examples/avio_read_callback.c",
+            "share/ffmpeg/examples/decode_audio.c",
+            "share/ffmpeg/examples/decode_filter_audio.c",
+            "share/ffmpeg/examples/decode_filter_video.c",
+            "share/ffmpeg/examples/decode_video.c",
+            "share/ffmpeg/examples/demux_decode.c",
+            "share/ffmpeg/examples/encode_audio.c",
+            "share/ffmpeg/examples/encode_video.c",
+            "share/ffmpeg/examples/extract_mvs.c",
+            "share/ffmpeg/examples/filter_audio.c",
+            "share/ffmpeg/examples/hw_decode.c",
+            "share/ffmpeg/examples/mux.c",
+            "share/ffmpeg/examples/qsv_decode.c",
+            "share/ffmpeg/examples/qsv_transcode.c",
+            "share/ffmpeg/examples/remux.c",
+            "share/ffmpeg/examples/resample_audio.c",
+            "share/ffmpeg/examples/scale_video.c",
+            "share/ffmpeg/examples/show_metadata.c",
+            "share/ffmpeg/examples/transcode.c",
+            "share/ffmpeg/examples/transcode_aac.c",
+            "share/ffmpeg/examples/vaapi_encode.c",
+            "share/ffmpeg/examples/vaapi_transcode.c",
+            "share/ffmpeg/ffprobe.xsd",
+            "share/ffmpeg/libvpx-1080p.ffpreset",
+            "share/ffmpeg/libvpx-1080p50_60.ffpreset",
+            "share/ffmpeg/libvpx-360p.ffpreset",
+            "share/ffmpeg/libvpx-720p.ffpreset",
+            "share/ffmpeg/libvpx-720p50_60.ffpreset",
+            "share/ffmpeg-full/python/tf_sess_config.py",
+            "share/man/man1/ffmpeg-all.1",
+            "share/man/man1/ffmpeg-bitstream-filters.1",
+            "share/man/man1/ffmpeg-codecs.1",
+            "share/man/man1/ffmpeg-devices.1",
+            "share/man/man1/ffmpeg-filters.1",
+            "share/man/man1/ffmpeg-formats.1",
+            "share/man/man1/ffmpeg-protocols.1",
+            "share/man/man1/ffmpeg-resampler.1",
+            "share/man/man1/ffmpeg-scaler.1",
+            "share/man/man1/ffmpeg-utils.1",
+            "share/man/man1/ffmpeg.1",
+            "share/man/man1/ffplay-all.1",
+            "share/man/man1/ffplay.1",
+            "share/man/man1/ffprobe-all.1",
+            "share/man/man1/ffprobe.1",
+            "share/man/man3/libavcodec.3",
+            "share/man/man3/libavdevice.3",
+            "share/man/man3/libavfilter.3",
+            "share/man/man3/libavformat.3",
+            "share/man/man3/libavutil.3",
+            "share/man/man3/libswresample.3",
+            "share/man/man3/libswscale.3"
+          ],
+          "installed_size": 61926377
+        }
+      }
+    }
+  }
+}
