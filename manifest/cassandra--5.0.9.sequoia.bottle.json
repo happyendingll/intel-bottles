@@ -1,0 +1,1326 @@
+{
+  "cassandra": {
+    "formula": {
+      "name": "cassandra",
+      "pkg_version": "5.0.9",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cassandra.rb",
+      "tap_git_path": "Formula/c/cassandra.rb",
+      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Eventually consistent, distributed key-value store",
+      "license": "Apache-2.0",
+      "homepage": "https://cassandra.apache.org"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T13:35:34Z",
+      "tags": {
+        "sequoia": {
+          "filename": "cassandra-5.0.9.sequoia.bottle.tar.gz",
+          "local_filename": "cassandra--5.0.9.sequoia.bottle.tar.gz",
+          "sha256": "5074754566f8b2fedc29995a9139bcace79b328231e3db35e099e3889758d8c3",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "bin/auditlogviewer",
+              "bin/cassandra",
+              "bin/cassandra-stress",
+              "bin/compaction-stress",
+              "bin/cqlsh",
+              "bin/cqlsh.py",
+              "bin/debug-cql",
+              "bin/fqltool",
+              "bin/generatetokens",
+              "bin/hash_password",
+              "bin/jmxtool",
+              "bin/nodetool",
+              "bin/sstabledump",
+              "bin/sstableexpiredblockers",
+              "bin/sstablelevelreset",
+              "bin/sstableloader",
+              "bin/sstablemetadata",
+              "bin/sstableofflinerelevel",
+              "bin/sstablepartitions",
+              "bin/sstablerepairedset",
+              "bin/sstablescrub",
+              "bin/sstablesplit",
+              "bin/sstableupgrade",
+              "bin/sstableutil",
+              "bin/sstableverify",
+              "libexec/bin/cassandra",
+              "libexec/bin/cqlsh.py",
+              "libexec/bin/debug-cql",
+              "libexec/bin/nodetool",
+              "libexec/bin/sstableloader",
+              "libexec/bin/sstablescrub",
+              "libexec/bin/sstableupgrade",
+              "libexec/bin/sstableutil",
+              "libexec/bin/sstableverify",
+              "libexec/vendor/bin/geomet",
+              ".bottle/etc/cassandra/cassandra.yaml",
+              "libexec/vendor/pyvenv.cfg",
+              "sh.brew.cassandra.plist",
+              "sh.brew.cassandra.service",
+              "share/cassandra/cassandra-tools.in.sh",
+              "share/cassandra/cassandra.in.sh"
+            ],
+            "linkage_files": [
+              "libexec/vendor/lib/python3.13/site-packages/cassandra/io/libevwrapper.cpython-313-darwin.so"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1785236327,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libev",
+                "version": "4.33",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.33",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "giflib",
+                "version": "6.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.1.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fontconfig",
+                "version": "2.18.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.18.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.88.3",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2.88.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xorgproto",
+                "version": "2025.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxrender",
+                "version": "0.9.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cairo",
+                "version": "1.18.4",
+                "revision": 0,
+                "bottle_rebuild": 2,
+                "pkg_version": "1.18.4",
+                "declared_directly": false
+              },
+              {
+                "full_name": "graphite2",
+                "version": "1.3.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.15",
+                "declared_directly": false
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "harfbuzz",
+                "version": "14.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "14.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "webp",
+                "version": "1.6.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtiff",
+                "version": "4.7.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.7.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "little-cms2",
+                "version": "2.19.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.19.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openjdk@17",
+                "version": "17.0.20.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "17.0.20.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.13",
+                "version": "3.13.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.13.15",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+              "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-readline-8.3.3",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-python@3.13-3.13.15",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.48.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "089df9911d09192beee2b9e49201bf1906d6e414bba1d4185982c5ac9d695feb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ab6e54c4ceaa0b1535994c00b64471b2b5f531b8267ef1ae27f399e3e1c0f587"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6b958311e9568372a79c5dafcd91e16d2deb19a079b69c6861307ac27644b534"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "name": "libtiff",
+                "versionInfo": "4.7.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libtiff",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libtiff-4.7.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "59c1a9823cdf63e5acb5c81c8a069be461be8768bd5d866bd47ee15053756f53"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtiff@4.7.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "name": "little-cms2",
+                "versionInfo": "2.19.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/little-cms2-2.19.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3c8e8dc49c3067141aa5d264c5ee9af2b2f0fc5b3905915fe629cd79ac2bfd57"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/little-cms2@2.19.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "name": "readline",
+                "versionInfo": "8.3.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.13-3.13.15",
+                "name": "python@3.13",
+                "versionInfo": "3.13.15",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.13/blobs/sha256:f2d7049c87cba28e4dce89c45bd3566ccf51441cad33c19e9e67525c603c1453",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f2d7049c87cba28e4dce89c45bd3566ccf51441cad33c19e9e67525c603c1453"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.13@3.13.15",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.13-3.13.15",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cassandra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-cassandra-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/sstablesplit",
+            "bin/sstablescrub",
+            "bin/fqltool",
+            "bin/nodetool",
+            "bin/sstableverify",
+            "bin/compaction-stress",
+            "bin/sstablerepairedset",
+            "bin/jmxtool",
+            "bin/cqlsh.py",
+            "bin/auditlogviewer",
+            "bin/generatetokens",
+            "bin/cassandra-stress",
+            "bin/sstablemetadata",
+            "bin/sstablepartitions",
+            "bin/cassandra",
+            "bin/sstableupgrade",
+            "bin/sstablelevelreset",
+            "bin/debug-cql",
+            "bin/sstableloader",
+            "bin/cqlsh",
+            "bin/sstabledump",
+            "bin/sstableutil",
+            "bin/sstableexpiredblockers",
+            "bin/hash_password",
+            "bin/sstableofflinerelevel"
+          ],
+          "all_files": [
+            ".bottle/etc/cassandra/README.txt",
+            ".bottle/etc/cassandra/cassandra-env.sh",
+            ".bottle/etc/cassandra/cassandra-jaas.config",
+            ".bottle/etc/cassandra/cassandra-rackdc.properties",
+            ".bottle/etc/cassandra/cassandra-topology.properties.example",
+            ".bottle/etc/cassandra/cassandra.yaml",
+            ".bottle/etc/cassandra/cassandra_latest.yaml",
+            ".bottle/etc/cassandra/commitlog_archiving.properties",
+            ".bottle/etc/cassandra/cqlshrc.sample",
+            ".bottle/etc/cassandra/credentials.sample",
+            ".bottle/etc/cassandra/hotspot_compiler",
+            ".bottle/etc/cassandra/jvm-clients.options",
+            ".bottle/etc/cassandra/jvm-server.options",
+            ".bottle/etc/cassandra/jvm11-clients.options",
+            ".bottle/etc/cassandra/jvm11-server.options",
+            ".bottle/etc/cassandra/jvm17-clients.options",
+            ".bottle/etc/cassandra/jvm17-server.options",
+            ".bottle/etc/cassandra/logback-tools.xml",
+            ".bottle/etc/cassandra/logback.xml",
+            ".bottle/etc/cassandra/triggers/README.txt",
+            ".brew/cassandra.rb",
+            "CHANGES.txt",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "NEWS.txt",
+            "NOTICE.txt",
+            "bin/auditlogviewer",
+            "bin/cassandra",
+            "bin/cassandra-stress",
+            "bin/compaction-stress",
+            "bin/cqlsh",
+            "bin/cqlsh.py",
+            "bin/debug-cql",
+            "bin/fqltool",
+            "bin/generatetokens",
+            "bin/hash_password",
+            "bin/jmxtool",
+            "bin/nodetool",
+            "bin/sstabledump",
+            "bin/sstableexpiredblockers",
+            "bin/sstablelevelreset",
+            "bin/sstableloader",
+            "bin/sstablemetadata",
+            "bin/sstableofflinerelevel",
+            "bin/sstablepartitions",
+            "bin/sstablerepairedset",
+            "bin/sstablescrub",
+            "bin/sstablesplit",
+            "bin/sstableupgrade",
+            "bin/sstableutil",
+            "bin/sstableverify",
+            "libexec/CASSANDRA-14092.txt",
+            "libexec/HdrHistogram-2.1.12.jar",
+            "libexec/ST4-4.0.8.jar",
+            "libexec/affinity-3.23.3.jar",
+            "libexec/agrona-1.17.1.jar",
+            "libexec/airline-0.8.jar",
+            "libexec/antlr-runtime-3.5.2.jar",
+            "libexec/apache-cassandra-5.0.9.jar",
+            "libexec/asm-9.4.jar",
+            "libexec/big-math-2.3.0.jar",
+            "libexec/bin/cassandra",
+            "libexec/bin/cqlsh",
+            "libexec/bin/cqlsh.py",
+            "libexec/bin/debug-cql",
+            "libexec/bin/nodetool",
+            "libexec/bin/sstableloader",
+            "libexec/bin/sstablescrub",
+            "libexec/bin/sstableupgrade",
+            "libexec/bin/sstableutil",
+            "libexec/bin/sstableverify",
+            "libexec/caffeine-3.1.8.jar",
+            "libexec/cassandra-driver-core-3.12.1-shaded.jar",
+            "libexec/chronicle-bytes-2.23.33.jar",
+            "libexec/chronicle-core-2.23.36.jar",
+            "libexec/chronicle-queue-5.23.37.jar",
+            "libexec/chronicle-threads-2.23.25.jar",
+            "libexec/chronicle-wire-2.23.39.jar",
+            "libexec/commons-cli-1.5.0.jar",
+            "libexec/commons-lang3-3.18.0.jar",
+            "libexec/commons-math3-3.2.jar",
+            "libexec/concurrent-trees-2.4.0.jar",
+            "libexec/ecj-3.33.0.jar",
+            "libexec/failureaccess-1.0.1.jar",
+            "libexec/guava-32.0.1-jre.jar",
+            "libexec/high-scale-lib-1.0.6.jar",
+            "libexec/hppc-0.8.1.jar",
+            "libexec/ipaddress-5.3.3.jar",
+            "libexec/j2objc-annotations-1.3.jar",
+            "libexec/jackson-annotations-2.19.2.jar",
+            "libexec/jackson-core-2.19.2.jar",
+            "libexec/jackson-databind-2.19.2.jar",
+            "libexec/jackson-datatype-jsr310-2.19.2.jar",
+            "libexec/jamm-0.4.0.jar",
+            "libexec/javax.inject-1.jar",
+            "libexec/jbcrypt-0.4.jar",
+            "libexec/jcl-over-slf4j-2.0.17.jar",
+            "libexec/jcommander-1.30.jar",
+            "libexec/jctools-core-3.1.0.jar",
+            "libexec/jffi-1.3.11-native.jar",
+            "libexec/jffi-1.3.11.jar",
+            "libexec/jna-5.13.0.jar",
+            "libexec/jna-platform-5.13.0.jar",
+            "libexec/jnr-a64asm-1.0.0.jar",
+            "libexec/jnr-constants-0.10.4.jar",
+            "libexec/jnr-ffi-2.2.13.jar",
+            "libexec/jnr-x86asm-1.0.2.jar",
+            "libexec/jsr305-2.0.2.jar",
+            "libexec/jvector-1.0.2.jar",
+            "libexec/jvm-attach-api-1.5.jar",
+            "libexec/log4j-over-slf4j-2.0.17.jar",
+            "libexec/logback-classic-1.5.18.jar",
+            "libexec/logback-core-1.5.18.jar",
+            "libexec/lucene-analysis-common-9.7.0.jar",
+            "libexec/lucene-core-9.7.0.jar",
+            "libexec/lz4-java-1.10.1.jar",
+            "libexec/metrics-core-4.2.28.jar",
+            "libexec/metrics-jvm-4.2.19.jar",
+            "libexec/metrics-logback-4.2.19.jar",
+            "libexec/mxdump-0.14.jar",
+            "libexec/netty-all-4.1.130.Final.jar",
+            "libexec/netty-buffer-4.1.130.Final.jar",
+            "libexec/netty-codec-4.1.130.Final.jar",
+            "libexec/netty-common-4.1.130.Final.jar",
+            "libexec/netty-handler-4.1.130.Final.jar",
+            "libexec/netty-handler-proxy-4.1.130.Final.jar",
+            "libexec/netty-handler-ssl-ocsp-4.1.130.Final.jar",
+            "libexec/netty-resolver-4.1.130.Final.jar",
+            "libexec/netty-tcnative-boringssl-static-2.0.70.Final-linux-aarch_64.jar",
+            "libexec/netty-tcnative-boringssl-static-2.0.70.Final-linux-x86_64.jar",
+            "libexec/netty-tcnative-boringssl-static-2.0.70.Final-osx-aarch_64.jar",
+            "libexec/netty-tcnative-boringssl-static-2.0.70.Final-osx-x86_64.jar",
+            "libexec/netty-tcnative-boringssl-static-2.0.70.Final.jar",
+            "libexec/netty-tcnative-classes-2.0.70.Final.jar",
+            "libexec/netty-transport-4.1.130.Final.jar",
+            "libexec/netty-transport-classes-epoll-4.1.130.Final.jar",
+            "libexec/netty-transport-classes-kqueue-4.1.130.Final.jar",
+            "libexec/netty-transport-native-epoll-4.1.130.Final-linux-aarch_64.jar",
+            "libexec/netty-transport-native-epoll-4.1.130.Final-linux-x86_64.jar",
+            "libexec/netty-transport-native-epoll-4.1.130.Final.jar",
+            "libexec/netty-transport-native-unix-common-4.1.130.Final.jar",
+            "libexec/ohc-core-0.5.1.jar",
+            "libexec/ohc-core-j8-0.5.1.jar",
+            "libexec/posix-2.24ea4.jar",
+            "libexec/psjava-0.1.19.jar",
+            "libexec/pylib/README.asc",
+            "libexec/pylib/cassandra-cqlsh-tests.sh",
+            "libexec/pylib/cqlshlib/__init__.py",
+            "libexec/pylib/cqlshlib/authproviderhandling.py",
+            "libexec/pylib/cqlshlib/copyutil.py",
+            "libexec/pylib/cqlshlib/cql3handling.py",
+            "libexec/pylib/cqlshlib/cqlhandling.py",
+            "libexec/pylib/cqlshlib/cqlshhandling.py",
+            "libexec/pylib/cqlshlib/cqlshmain.py",
+            "libexec/pylib/cqlshlib/displaying.py",
+            "libexec/pylib/cqlshlib/formatting.py",
+            "libexec/pylib/cqlshlib/helptopics.py",
+            "libexec/pylib/cqlshlib/pylexotron.py",
+            "libexec/pylib/cqlshlib/saferscanner.py",
+            "libexec/pylib/cqlshlib/serverversion.py",
+            "libexec/pylib/cqlshlib/sslhandling.py",
+            "libexec/pylib/cqlshlib/test/__init__.py",
+            "libexec/pylib/cqlshlib/test/ansi_colors.py",
+            "libexec/pylib/cqlshlib/test/basecase.py",
+            "libexec/pylib/cqlshlib/test/cassconnect.py",
+            "libexec/pylib/cqlshlib/test/run_cqlsh.py",
+            "libexec/pylib/cqlshlib/test/test_authproviderhandling.py",
+            "libexec/pylib/cqlshlib/test/test_authproviderhandling_config/complex_auth_provider",
+            "libexec/pylib/cqlshlib/test/test_authproviderhandling_config/complex_auth_provider_creds",
+            "libexec/pylib/cqlshlib/test/test_authproviderhandling_config/complex_auth_provider_with_pass",
+            "libexec/pylib/cqlshlib/test/test_authproviderhandling_config/empty_example",
+            "libexec/pylib/cqlshlib/test/test_authproviderhandling_config/full_plain_text_example",
+            "libexec/pylib/cqlshlib/test/test_authproviderhandling_config/illegal_example",
+            "libexec/pylib/cqlshlib/test/test_authproviderhandling_config/no_classname_example",
+            "libexec/pylib/cqlshlib/test/test_authproviderhandling_config/partial_example",
+            "libexec/pylib/cqlshlib/test/test_authproviderhandling_config/plain_text_full_creds",
+            "libexec/pylib/cqlshlib/test/test_authproviderhandling_config/plain_text_partial_creds",
+            "libexec/pylib/cqlshlib/test/test_authproviderhandling_config/plain_text_partial_example",
+            "libexec/pylib/cqlshlib/test/test_constants.py",
+            "libexec/pylib/cqlshlib/test/test_copyutil.py",
+            "libexec/pylib/cqlshlib/test/test_cql_parsing.py",
+            "libexec/pylib/cqlshlib/test/test_cqlsh_completion.py",
+            "libexec/pylib/cqlshlib/test/test_cqlsh_output.py",
+            "libexec/pylib/cqlshlib/test/test_keyspace_init.cql",
+            "libexec/pylib/cqlshlib/test/test_unicode.py",
+            "libexec/pylib/cqlshlib/test/winpty.py",
+            "libexec/pylib/cqlshlib/tracing.py",
+            "libexec/pylib/cqlshlib/util.py",
+            "libexec/pylib/requirements.txt",
+            "libexec/pylib/setup.py",
+            "libexec/semver4j-3.1.0.jar",
+            "libexec/sigar-1.6.4.jar",
+            "libexec/sjk-cli-0.14.jar",
+            "libexec/sjk-core-0.14.jar",
+            "libexec/sjk-json-0.14.jar",
+            "libexec/sjk-stacktrace-0.14.jar",
+            "libexec/slf4j-api-2.0.17.jar",
+            "libexec/snakeyaml-2.1.jar",
+            "libexec/snappy-java-1.1.10.4.jar",
+            "libexec/stream-2.5.2.jar",
+            "libexec/tools/fqltool.jar",
+            "libexec/tools/stress.jar",
+            "libexec/vendor/.gitignore",
+            "libexec/vendor/bin/geomet",
+            "libexec/vendor/bin/python",
+            "libexec/vendor/bin/python3",
+            "libexec/vendor/bin/python3.13",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/auth.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/buffer.pxd",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/bytesio.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/bytesio.pxd",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/bytesio.pyx",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cluster.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cluster.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cmurmur3.c",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cmurmur3.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/column_encryption/_policies.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/column_encryption/policies.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/concurrent.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/concurrent.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/connection.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/connection.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqlengine/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqlengine/columns.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqlengine/connection.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqlengine/functions.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqlengine/management.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqlengine/models.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqlengine/named.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqlengine/operators.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqlengine/query.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqlengine/statements.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqlengine/usertype.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqltypes.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cqltypes.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cython_deps.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cython_marshal.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cython_marshal.pyx",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cython_utils.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cython_utils.pxd",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/cython_utils.pyx",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/cloud/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/graph/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/graph/fluent/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/graph/fluent/_predicates.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/graph/fluent/_query.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/graph/fluent/_serializers.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/graph/fluent/predicates.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/graph/fluent/query.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/graph/fluent/serializers.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/graph/graphson.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/graph/query.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/graph/types.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/insights/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/insights/registry.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/insights/reporter.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/insights/serializers.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/datastax/insights/util.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/deserializers.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/deserializers.pxd",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/deserializers.pyx",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/encoder.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/graph/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/graph/graphson.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/graph/query.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/graph/types.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/io/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/io/asyncioreactor.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/io/asyncorereactor.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/io/eventletreactor.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/io/geventreactor.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/io/libevreactor.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/io/libevwrapper.c",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/io/libevwrapper.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/io/twistedreactor.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/ioutils.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/ioutils.pyx",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/marshal.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/metadata.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/metadata.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/metrics.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/murmur3.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/numpyFlags.h",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/numpy_parser.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/numpy_parser.pyx",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/obj_parser.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/obj_parser.pyx",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/parsing.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/parsing.pxd",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/parsing.pyx",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/policies.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/pool.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/pool.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/protocol.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/protocol.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/query.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/query.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/row_parser.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/row_parser.pyx",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/segment.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/timestamps.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/tuple.pxd",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/type_codes.pxd",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/type_codes.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/util.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra/util.py",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra_driver-3.30.1.dist-info/INSTALLER",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra_driver-3.30.1.dist-info/METADATA",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra_driver-3.30.1.dist-info/REQUESTED",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra_driver-3.30.1.dist-info/WHEEL",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra_driver-3.30.1.dist-info/licenses/LICENSE",
+            "libexec/vendor/lib/python3.13/site-packages/cassandra_driver-3.30.1.dist-info/top_level.txt",
+            "libexec/vendor/lib/python3.13/site-packages/click/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/_compat.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/_termui_impl.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/_textwrap.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/_utils.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/_winconsole.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/core.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/decorators.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/exceptions.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/formatting.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/globals.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/parser.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/py.typed",
+            "libexec/vendor/lib/python3.13/site-packages/click/shell_completion.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/termui.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/testing.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/types.py",
+            "libexec/vendor/lib/python3.13/site-packages/click/utils.py",
+            "libexec/vendor/lib/python3.13/site-packages/click-8.4.2.dist-info/INSTALLER",
+            "libexec/vendor/lib/python3.13/site-packages/click-8.4.2.dist-info/METADATA",
+            "libexec/vendor/lib/python3.13/site-packages/click-8.4.2.dist-info/REQUESTED",
+            "libexec/vendor/lib/python3.13/site-packages/click-8.4.2.dist-info/WHEEL",
+            "libexec/vendor/lib/python3.13/site-packages/click-8.4.2.dist-info/licenses/LICENSE.txt",
+            "libexec/vendor/lib/python3.13/site-packages/deprecated/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/deprecated/classic.py",
+            "libexec/vendor/lib/python3.13/site-packages/deprecated/params.py",
+            "libexec/vendor/lib/python3.13/site-packages/deprecated/sphinx.py",
+            "libexec/vendor/lib/python3.13/site-packages/deprecated-1.3.1.dist-info/INSTALLER",
+            "libexec/vendor/lib/python3.13/site-packages/deprecated-1.3.1.dist-info/METADATA",
+            "libexec/vendor/lib/python3.13/site-packages/deprecated-1.3.1.dist-info/REQUESTED",
+            "libexec/vendor/lib/python3.13/site-packages/deprecated-1.3.1.dist-info/WHEEL",
+            "libexec/vendor/lib/python3.13/site-packages/deprecated-1.3.1.dist-info/licenses/LICENSE.rst",
+            "libexec/vendor/lib/python3.13/site-packages/deprecated-1.3.1.dist-info/top_level.txt",
+            "libexec/vendor/lib/python3.13/site-packages/geomet/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/geomet/esri.py",
+            "libexec/vendor/lib/python3.13/site-packages/geomet/geopackage.py",
+            "libexec/vendor/lib/python3.13/site-packages/geomet/tool.py",
+            "libexec/vendor/lib/python3.13/site-packages/geomet/util.py",
+            "libexec/vendor/lib/python3.13/site-packages/geomet/wkb.py",
+            "libexec/vendor/lib/python3.13/site-packages/geomet/wkt.py",
+            "libexec/vendor/lib/python3.13/site-packages/geomet-1.1.0.dist-info/INSTALLER",
+            "libexec/vendor/lib/python3.13/site-packages/geomet-1.1.0.dist-info/METADATA",
+            "libexec/vendor/lib/python3.13/site-packages/geomet-1.1.0.dist-info/REQUESTED",
+            "libexec/vendor/lib/python3.13/site-packages/geomet-1.1.0.dist-info/WHEEL",
+            "libexec/vendor/lib/python3.13/site-packages/geomet-1.1.0.dist-info/entry_points.txt",
+            "libexec/vendor/lib/python3.13/site-packages/geomet-1.1.0.dist-info/licenses/AUTHORS.txt",
+            "libexec/vendor/lib/python3.13/site-packages/geomet-1.1.0.dist-info/licenses/LICENSE",
+            "libexec/vendor/lib/python3.13/site-packages/geomet-1.1.0.dist-info/top_level.txt",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/_clip.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/_constants.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/_wcswidth.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/_wcwidth.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/_width.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/align.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/bisearch.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/control_codes.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/escape_sequences.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/grapheme.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/hyperlink.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/py.typed",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/sgr_state.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_ambiguous.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_27e0693f.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_3d4826b8.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_45d92e98.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_4cdf59ce.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_50bf0759.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_529fbb4a.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_5bfac390.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_813fee16.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_8589765c.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_8f94b404.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_970dbe10.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_c0a2cdbf.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_c2157f7e.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_c3db41c0.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_da9ceb0a.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_e08bd75e.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_e22030f3.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_fcc05a0f.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_known_fd9d4c44.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_grapheme_overrides/_registry.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_mc.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_overrides.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_term_programs.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_vs15.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_vs16.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_wide.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/table_zero.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/text_sizing.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/textwrap.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/unicode_versions.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth/wcwidth.py",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth-0.8.2.dist-info/INSTALLER",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth-0.8.2.dist-info/METADATA",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth-0.8.2.dist-info/REQUESTED",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth-0.8.2.dist-info/WHEEL",
+            "libexec/vendor/lib/python3.13/site-packages/wcwidth-0.8.2.dist-info/licenses/LICENSE",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/__init__.py",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/__wrapt__.py",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/_wrappers.c",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/_wrappers.cpython-313-darwin.so",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/arguments.py",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/caching.py",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/decorators.py",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/importer.py",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/patches.py",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/proxies.py",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/signature.py",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/synchronization.py",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/weakrefs.py",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt/wrappers.py",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt-2.3.0.dist-info/INSTALLER",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt-2.3.0.dist-info/METADATA",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt-2.3.0.dist-info/REQUESTED",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt-2.3.0.dist-info/WHEEL",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt-2.3.0.dist-info/licenses/LICENSE",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt-2.3.0.dist-info/top_level.txt",
+            "libexec/vendor/lib/python3.13/site-packages/wrapt-stubs/__init__.pyi",
+            "libexec/vendor/pyvenv.cfg",
+            "libexec/zstd-jni-1.5.7-2.jar",
+            "sbom.spdx.json",
+            "sh.brew.cassandra.plist",
+            "sh.brew.cassandra.service",
+            "share/cassandra/cassandra-tools.in.sh",
+            "share/cassandra/cassandra.in.sh",
+            "share/cassandra/stop-server"
+          ],
+          "installed_size": 81796823
+        }
+      }
+    }
+  }
+}

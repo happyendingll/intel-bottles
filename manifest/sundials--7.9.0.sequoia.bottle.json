@@ -1,0 +1,858 @@
+{
+  "sundials": {
+    "formula": {
+      "name": "sundials",
+      "pkg_version": "7.9.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sundials.rb",
+      "tap_git_path": "Formula/s/sundials.rb",
+      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Nonlinear and differential/algebraic equations solver",
+      "license": "BSD-3-Clause",
+      "homepage": "https://computing.llnl.gov/projects/sundials"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T16:45:35Z",
+      "tags": {
+        "sequoia": {
+          "filename": "sundials-7.9.0.sequoia.bottle.tar.gz",
+          "local_filename": "sundials--7.9.0.sequoia.bottle.tar.gz",
+          "sha256": "1bdd3d16ad4661b5556dd6f9d9623621de5dbb118fd4649ea36697a7c9259e99",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/cmake/sundials/SUNDIALSConfig.cmake",
+              "lib/cmake/sundials/SUNDIALSTargets-release.cmake"
+            ],
+            "linkage_files": [
+              "lib/libsundials_arkode.6.9.0.dylib",
+              "lib/libsundials_core.7.9.0.dylib",
+              "lib/libsundials_cvode.7.9.0.dylib",
+              "lib/libsundials_cvodes.7.9.0.dylib",
+              "lib/libsundials_ida.7.9.0.dylib",
+              "lib/libsundials_idas.6.9.0.dylib",
+              "lib/libsundials_kinsol.7.9.0.dylib",
+              "lib/libsundials_nvecmanyvector.7.9.0.dylib",
+              "lib/libsundials_nvecmpimanyvector.7.9.0.dylib",
+              "lib/libsundials_nvecmpiplusx.7.9.0.dylib",
+              "lib/libsundials_nvecparallel.7.9.0.dylib",
+              "lib/libsundials_nvecserial.7.9.0.dylib",
+              "lib/libsundials_sundomeigestarnoldi.1.4.0.dylib",
+              "lib/libsundials_sundomeigestpower.1.4.0.dylib",
+              "lib/libsundials_sunlinsolband.5.9.0.dylib",
+              "lib/libsundials_sunlinsoldense.5.9.0.dylib",
+              "lib/libsundials_sunlinsolklu.5.9.0.dylib",
+              "lib/libsundials_sunlinsollapackband.5.9.0.dylib",
+              "lib/libsundials_sunlinsollapackdense.5.9.0.dylib",
+              "lib/libsundials_sunlinsolpcg.5.9.0.dylib",
+              "lib/libsundials_sunlinsolspbcgs.5.9.0.dylib",
+              "lib/libsundials_sunlinsolspfgmr.5.9.0.dylib",
+              "lib/libsundials_sunlinsolspgmr.5.9.0.dylib",
+              "lib/libsundials_sunlinsolsptfqmr.5.9.0.dylib",
+              "lib/libsundials_sunmatrixband.5.9.0.dylib",
+              "lib/libsundials_sunmatrixdense.5.9.0.dylib",
+              "lib/libsundials_sunmatrixsparse.5.9.0.dylib",
+              "lib/libsundials_sunnonlinsolauto.4.9.0.dylib",
+              "lib/libsundials_sunnonlinsolfixedpoint.4.9.0.dylib",
+              "lib/libsundials_sunnonlinsolnewton.4.9.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788465719,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "isl",
+                "version": "0.28",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.28",
+                "declared_directly": false
+              },
+              {
+                "full_name": "mpfr",
+                "version": "4.2.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.2.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libmpc",
+                "version": "1.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gcc",
+                "version": "16.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "16.2.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "hwloc",
+                "version": "2.14.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libevent",
+                "version": "2.1.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pmix",
+                "version": "6.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "prrte",
+                "version": "4.1.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.1.0_1",
+                "declared_directly": false
+              },
+              {
+                "full_name": "open-mpi",
+                "version": "5.0.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.0.10",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libomp",
+                "version": "23.1.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openblas",
+                "version": "0.3.34",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.3.34",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "suite-sparse",
+                "version": "7.14.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "7.14.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-isl-0.28",
+              "SPDXRef-Package-SPDXRef-mpfr-4.2.2",
+              "SPDXRef-Package-SPDXRef-libmpc-1.4.1",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-gcc-16.2.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-isl-0.28",
+                "name": "isl",
+                "versionInfo": "0.28",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/isl/blobs/sha256:dca49213f0e9bccffe590c7477de4455a0dfbb65ab542854b1c1f52abfa10213",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "dca49213f0e9bccffe590c7477de4455a0dfbb65ab542854b1c1f52abfa10213"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/isl@0.28",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpfr-4.2.2",
+                "name": "mpfr",
+                "versionInfo": "4.2.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/mpfr/blobs/sha256:ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpfr@4.2.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libmpc-1.4.1",
+                "name": "libmpc",
+                "versionInfo": "1.4.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/libmpc/blobs/sha256:6c035aa0556baf634ceda0edc4415b6f03d675568873b6ffec4b8c6146639f44",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6c035aa0556baf634ceda0edc4415b6f03d675568873b6ffec4b8c6146639f44"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libmpc@1.4.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6b958311e9568372a79c5dafcd91e16d2deb19a079b69c6861307ac27644b534"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gcc-16.2.0",
+                "name": "gcc",
+                "versionInfo": "16.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later WITH GCC-exception-3.1",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gcc-16.2.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "927eeebb4f263103ae248ea2350e3f48211b747d3ea96e74a798b89a661eda77"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gcc@16.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "name": "libomp",
+                "versionInfo": "23.1.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libomp-23.1.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f9006339f8009a14348931dfb50532f9b6962968266db7a3108178588bf8b703"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libomp@23.1.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sundials"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-isl-0.28",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sundials"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpfr-4.2.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sundials"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libmpc-1.4.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sundials"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sundials"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sundials"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sundials"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gcc-16.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sundials"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sundials"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sundials"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sundials"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-sundials-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/sundials.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NOTICE",
+            "README.md",
+            "include/arkode/arkode.h",
+            "include/arkode/arkode.hpp",
+            "include/arkode/arkode_arkstep.h",
+            "include/arkode/arkode_arkstep.hpp",
+            "include/arkode/arkode_arkstep_deprecated.h",
+            "include/arkode/arkode_bandpre.h",
+            "include/arkode/arkode_bbdpre.h",
+            "include/arkode/arkode_butcher.h",
+            "include/arkode/arkode_butcher_dirk.h",
+            "include/arkode/arkode_butcher_erk.h",
+            "include/arkode/arkode_erkstep.h",
+            "include/arkode/arkode_erkstep.hpp",
+            "include/arkode/arkode_erkstep_deprecated.h",
+            "include/arkode/arkode_forcingstep.h",
+            "include/arkode/arkode_forcingstep.hpp",
+            "include/arkode/arkode_ls.h",
+            "include/arkode/arkode_lsrkstep.h",
+            "include/arkode/arkode_lsrkstep.hpp",
+            "include/arkode/arkode_mristep.h",
+            "include/arkode/arkode_mristep.hpp",
+            "include/arkode/arkode_mristep_deprecated.h",
+            "include/arkode/arkode_splittingstep.h",
+            "include/arkode/arkode_splittingstep.hpp",
+            "include/arkode/arkode_sprk.h",
+            "include/arkode/arkode_sprkstep.h",
+            "include/arkode/arkode_sprkstep.hpp",
+            "include/arkode/arkode_sprkstep_deprecated.h",
+            "include/cvode/cvode.h",
+            "include/cvode/cvode.hpp",
+            "include/cvode/cvode_bandpre.h",
+            "include/cvode/cvode_bbdpre.h",
+            "include/cvode/cvode_diag.h",
+            "include/cvode/cvode_ls.h",
+            "include/cvode/cvode_proj.h",
+            "include/cvodes/cvodes.h",
+            "include/cvodes/cvodes.hpp",
+            "include/cvodes/cvodes_bandpre.h",
+            "include/cvodes/cvodes_bbdpre.h",
+            "include/cvodes/cvodes_diag.h",
+            "include/cvodes/cvodes_ls.h",
+            "include/cvodes/cvodes_proj.h",
+            "include/ida/ida.h",
+            "include/ida/ida.hpp",
+            "include/ida/ida_bbdpre.h",
+            "include/ida/ida_ls.h",
+            "include/idas/idas.h",
+            "include/idas/idas.hpp",
+            "include/idas/idas_bbdpre.h",
+            "include/idas/idas_ls.h",
+            "include/kinsol/kinsol.h",
+            "include/kinsol/kinsol.hpp",
+            "include/kinsol/kinsol_bbdpre.h",
+            "include/kinsol/kinsol_ls.h",
+            "include/nvector/nvector_manyvector.h",
+            "include/nvector/nvector_mpimanyvector.h",
+            "include/nvector/nvector_mpiplusx.h",
+            "include/nvector/nvector_parallel.h",
+            "include/nvector/nvector_serial.h",
+            "include/sunadaptcontroller/sunadaptcontroller_imexgus.h",
+            "include/sunadaptcontroller/sunadaptcontroller_mrihtol.h",
+            "include/sunadaptcontroller/sunadaptcontroller_soderlind.h",
+            "include/sunadjointcheckpointscheme/sunadjointcheckpointscheme_fixed.h",
+            "include/sunadjointcheckpointscheme/sundials_adjointcheckpointscheme.h",
+            "include/sunadjointcheckpointscheme/sundials_adjointstepper.h",
+            "include/sundials/LICENSE",
+            "include/sundials/NOTICE",
+            "include/sundials/priv/sundials_context_impl.h",
+            "include/sundials/priv/sundials_errors_impl.h",
+            "include/sundials/priv/sundials_logger_macros.h",
+            "include/sundials/priv/sundials_mpi_errors_impl.h",
+            "include/sundials/sundials_adaptcontroller.h",
+            "include/sundials/sundials_adaptcontroller.hpp",
+            "include/sundials/sundials_adjointcheckpointscheme.h",
+            "include/sundials/sundials_adjointcheckpointscheme.hpp",
+            "include/sundials/sundials_adjointstepper.h",
+            "include/sundials/sundials_adjointstepper.hpp",
+            "include/sundials/sundials_band.h",
+            "include/sundials/sundials_base.hpp",
+            "include/sundials/sundials_classview.hpp",
+            "include/sundials/sundials_config.h",
+            "include/sundials/sundials_context.h",
+            "include/sundials/sundials_context.hpp",
+            "include/sundials/sundials_convertibleto.hpp",
+            "include/sundials/sundials_core.h",
+            "include/sundials/sundials_core.hpp",
+            "include/sundials/sundials_dense.h",
+            "include/sundials/sundials_direct.h",
+            "include/sundials/sundials_domeigestimator.h",
+            "include/sundials/sundials_domeigestimator.hpp",
+            "include/sundials/sundials_errors.h",
+            "include/sundials/sundials_export.h",
+            "include/sundials/sundials_futils.h",
+            "include/sundials/sundials_iterative.h",
+            "include/sundials/sundials_linearsolver.h",
+            "include/sundials/sundials_linearsolver.hpp",
+            "include/sundials/sundials_logger.h",
+            "include/sundials/sundials_logger.hpp",
+            "include/sundials/sundials_math.h",
+            "include/sundials/sundials_matrix.h",
+            "include/sundials/sundials_matrix.hpp",
+            "include/sundials/sundials_memory.h",
+            "include/sundials/sundials_memory.hpp",
+            "include/sundials/sundials_mpi_errors.h",
+            "include/sundials/sundials_mpi_types.h",
+            "include/sundials/sundials_nonlinearsolver.h",
+            "include/sundials/sundials_nonlinearsolver.hpp",
+            "include/sundials/sundials_nvector.h",
+            "include/sundials/sundials_nvector.hpp",
+            "include/sundials/sundials_profiler.h",
+            "include/sundials/sundials_profiler.hpp",
+            "include/sundials/sundials_stepper.h",
+            "include/sundials/sundials_stepper.hpp",
+            "include/sundials/sundials_types.h",
+            "include/sundials/sundials_types_deprecated.h",
+            "include/sundials/sundials_version.h",
+            "include/sundomeigest/sundomeigest_arnoldi.h",
+            "include/sundomeigest/sundomeigest_power.h",
+            "include/sunlinsol/sunlinsol_band.h",
+            "include/sunlinsol/sunlinsol_dense.h",
+            "include/sunlinsol/sunlinsol_klu.h",
+            "include/sunlinsol/sunlinsol_lapackband.h",
+            "include/sunlinsol/sunlinsol_lapackdense.h",
+            "include/sunlinsol/sunlinsol_pcg.h",
+            "include/sunlinsol/sunlinsol_spbcgs.h",
+            "include/sunlinsol/sunlinsol_spfgmr.h",
+            "include/sunlinsol/sunlinsol_spgmr.h",
+            "include/sunlinsol/sunlinsol_sptfqmr.h",
+            "include/sunmatrix/sunmatrix_band.h",
+            "include/sunmatrix/sunmatrix_dense.h",
+            "include/sunmatrix/sunmatrix_sparse.h",
+            "include/sunmemory/sunmemory_system.h",
+            "include/sunnonlinsol/sunnonlinsol_auto.h",
+            "include/sunnonlinsol/sunnonlinsol_fixedpoint.h",
+            "include/sunnonlinsol/sunnonlinsol_newton.h",
+            "lib/cmake/sundials/SUNDIALSConfig.cmake",
+            "lib/cmake/sundials/SUNDIALSConfigVersion.cmake",
+            "lib/cmake/sundials/SUNDIALSTargets-release.cmake",
+            "lib/cmake/sundials/SUNDIALSTargets.cmake",
+            "lib/libsundials_arkode.6.9.0.dylib",
+            "lib/libsundials_arkode.6.dylib",
+            "lib/libsundials_arkode.a",
+            "lib/libsundials_arkode.dylib",
+            "lib/libsundials_core.7.9.0.dylib",
+            "lib/libsundials_core.7.dylib",
+            "lib/libsundials_core.a",
+            "lib/libsundials_core.dylib",
+            "lib/libsundials_cvode.7.9.0.dylib",
+            "lib/libsundials_cvode.7.dylib",
+            "lib/libsundials_cvode.a",
+            "lib/libsundials_cvode.dylib",
+            "lib/libsundials_cvodes.7.9.0.dylib",
+            "lib/libsundials_cvodes.7.dylib",
+            "lib/libsundials_cvodes.a",
+            "lib/libsundials_cvodes.dylib",
+            "lib/libsundials_ida.7.9.0.dylib",
+            "lib/libsundials_ida.7.dylib",
+            "lib/libsundials_ida.a",
+            "lib/libsundials_ida.dylib",
+            "lib/libsundials_idas.6.9.0.dylib",
+            "lib/libsundials_idas.6.dylib",
+            "lib/libsundials_idas.a",
+            "lib/libsundials_idas.dylib",
+            "lib/libsundials_kinsol.7.9.0.dylib",
+            "lib/libsundials_kinsol.7.dylib",
+            "lib/libsundials_kinsol.a",
+            "lib/libsundials_kinsol.dylib",
+            "lib/libsundials_nvecmanyvector.7.9.0.dylib",
+            "lib/libsundials_nvecmanyvector.7.dylib",
+            "lib/libsundials_nvecmanyvector.a",
+            "lib/libsundials_nvecmanyvector.dylib",
+            "lib/libsundials_nvecmpimanyvector.7.9.0.dylib",
+            "lib/libsundials_nvecmpimanyvector.7.dylib",
+            "lib/libsundials_nvecmpimanyvector.a",
+            "lib/libsundials_nvecmpimanyvector.dylib",
+            "lib/libsundials_nvecmpiplusx.7.9.0.dylib",
+            "lib/libsundials_nvecmpiplusx.7.dylib",
+            "lib/libsundials_nvecmpiplusx.a",
+            "lib/libsundials_nvecmpiplusx.dylib",
+            "lib/libsundials_nvecparallel.7.9.0.dylib",
+            "lib/libsundials_nvecparallel.7.dylib",
+            "lib/libsundials_nvecparallel.a",
+            "lib/libsundials_nvecparallel.dylib",
+            "lib/libsundials_nvecserial.7.9.0.dylib",
+            "lib/libsundials_nvecserial.7.dylib",
+            "lib/libsundials_nvecserial.a",
+            "lib/libsundials_nvecserial.dylib",
+            "lib/libsundials_sundomeigestarnoldi.1.4.0.dylib",
+            "lib/libsundials_sundomeigestarnoldi.1.dylib",
+            "lib/libsundials_sundomeigestarnoldi.a",
+            "lib/libsundials_sundomeigestarnoldi.dylib",
+            "lib/libsundials_sundomeigestpower.1.4.0.dylib",
+            "lib/libsundials_sundomeigestpower.1.dylib",
+            "lib/libsundials_sundomeigestpower.a",
+            "lib/libsundials_sundomeigestpower.dylib",
+            "lib/libsundials_sunlinsolband.5.9.0.dylib",
+            "lib/libsundials_sunlinsolband.5.dylib",
+            "lib/libsundials_sunlinsolband.a",
+            "lib/libsundials_sunlinsolband.dylib",
+            "lib/libsundials_sunlinsoldense.5.9.0.dylib",
+            "lib/libsundials_sunlinsoldense.5.dylib",
+            "lib/libsundials_sunlinsoldense.a",
+            "lib/libsundials_sunlinsoldense.dylib",
+            "lib/libsundials_sunlinsolklu.5.9.0.dylib",
+            "lib/libsundials_sunlinsolklu.5.dylib",
+            "lib/libsundials_sunlinsolklu.a",
+            "lib/libsundials_sunlinsolklu.dylib",
+            "lib/libsundials_sunlinsollapackband.5.9.0.dylib",
+            "lib/libsundials_sunlinsollapackband.5.dylib",
+            "lib/libsundials_sunlinsollapackband.a",
+            "lib/libsundials_sunlinsollapackband.dylib",
+            "lib/libsundials_sunlinsollapackdense.5.9.0.dylib",
+            "lib/libsundials_sunlinsollapackdense.5.dylib",
+            "lib/libsundials_sunlinsollapackdense.a",
+            "lib/libsundials_sunlinsollapackdense.dylib",
+            "lib/libsundials_sunlinsolpcg.5.9.0.dylib",
+            "lib/libsundials_sunlinsolpcg.5.dylib",
+            "lib/libsundials_sunlinsolpcg.a",
+            "lib/libsundials_sunlinsolpcg.dylib",
+            "lib/libsundials_sunlinsolspbcgs.5.9.0.dylib",
+            "lib/libsundials_sunlinsolspbcgs.5.dylib",
+            "lib/libsundials_sunlinsolspbcgs.a",
+            "lib/libsundials_sunlinsolspbcgs.dylib",
+            "lib/libsundials_sunlinsolspfgmr.5.9.0.dylib",
+            "lib/libsundials_sunlinsolspfgmr.5.dylib",
+            "lib/libsundials_sunlinsolspfgmr.a",
+            "lib/libsundials_sunlinsolspfgmr.dylib",
+            "lib/libsundials_sunlinsolspgmr.5.9.0.dylib",
+            "lib/libsundials_sunlinsolspgmr.5.dylib",
+            "lib/libsundials_sunlinsolspgmr.a",
+            "lib/libsundials_sunlinsolspgmr.dylib",
+            "lib/libsundials_sunlinsolsptfqmr.5.9.0.dylib",
+            "lib/libsundials_sunlinsolsptfqmr.5.dylib",
+            "lib/libsundials_sunlinsolsptfqmr.a",
+            "lib/libsundials_sunlinsolsptfqmr.dylib",
+            "lib/libsundials_sunmatrixband.5.9.0.dylib",
+            "lib/libsundials_sunmatrixband.5.dylib",
+            "lib/libsundials_sunmatrixband.a",
+            "lib/libsundials_sunmatrixband.dylib",
+            "lib/libsundials_sunmatrixdense.5.9.0.dylib",
+            "lib/libsundials_sunmatrixdense.5.dylib",
+            "lib/libsundials_sunmatrixdense.a",
+            "lib/libsundials_sunmatrixdense.dylib",
+            "lib/libsundials_sunmatrixsparse.5.9.0.dylib",
+            "lib/libsundials_sunmatrixsparse.5.dylib",
+            "lib/libsundials_sunmatrixsparse.a",
+            "lib/libsundials_sunmatrixsparse.dylib",
+            "lib/libsundials_sunnonlinsolauto.4.9.0.dylib",
+            "lib/libsundials_sunnonlinsolauto.4.dylib",
+            "lib/libsundials_sunnonlinsolauto.a",
+            "lib/libsundials_sunnonlinsolauto.dylib",
+            "lib/libsundials_sunnonlinsolfixedpoint.4.9.0.dylib",
+            "lib/libsundials_sunnonlinsolfixedpoint.4.dylib",
+            "lib/libsundials_sunnonlinsolfixedpoint.a",
+            "lib/libsundials_sunnonlinsolfixedpoint.dylib",
+            "lib/libsundials_sunnonlinsolnewton.4.9.0.dylib",
+            "lib/libsundials_sunnonlinsolnewton.4.dylib",
+            "lib/libsundials_sunnonlinsolnewton.a",
+            "lib/libsundials_sunnonlinsolnewton.dylib",
+            "sbom.spdx.json",
+            "share/sundials/examples/test_nvector.c",
+            "share/sundials/examples/test_nvector.h",
+            "share/sundials/examples/test_nvector_serial.c"
+          ],
+          "installed_size": 6075706
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,124 @@
+{
+  "gosec": {
+    "formula": {
+      "name": "gosec",
+      "pkg_version": "2.29.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gosec.rb",
+      "tap_git_path": "Formula/g/gosec.rb",
+      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Golang security checker",
+      "license": "Apache-2.0",
+      "homepage": "https://securego.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-14T14:40:11Z",
+      "tags": {
+        "sequoia": {
+          "filename": "gosec-2.29.0.sequoia.bottle.tar.gz",
+          "local_filename": "gosec--2.29.0.sequoia.bottle.tar.gz",
+          "sha256": "0d145f1dbd0ddddd5e698f9792615271810c50ae1f471f2a8f9b87f3c960fa38",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787647058,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "go",
+                "version": "1.27.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.27.1",
+                "declared_directly": true,
+                "compatibility_version": 11
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-go-1.27.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-go-1.27.1",
+                "name": "go",
+                "versionInfo": "1.27.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/go-1.27.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9bc05424baa2836f05b1636e2368a7cc478a5ea1493b17d03f01a446dcb08e87"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/go@1.27.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-go-1.27.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gosec"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-gosec-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/gosec"
+          ],
+          "all_files": [
+            ".brew/gosec.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "README.md",
+            "bin/gosec",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 49993439
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,736 @@
+{
+  "botan": {
+    "formula": {
+      "name": "botan",
+      "pkg_version": "3.13.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/b/botan.rb",
+      "tap_git_path": "Formula/b/botan.rb",
+      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Cryptographic algorithms and formats library in C++",
+      "license": "BSD-2-Clause",
+      "homepage": "https://botan.randombit.net/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-14T13:29:46Z",
+      "tags": {
+        "sequoia": {
+          "filename": "botan-3.13.0.sequoia.bottle.tar.gz",
+          "local_filename": "botan--3.13.0.sequoia.bottle.tar.gz",
+          "sha256": "2c4d3c6559abd9eea8e72584d54a402ffb8a116dab217f66834e293e66aff5eb",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/cmake/Botan-3.13.0/botan-config.cmake",
+              "lib/pkgconfig/botan-3.pc"
+            ],
+            "linkage_files": [
+              "bin/botan",
+              "lib/libbotan-3.13.13.0.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/botan"
+            ],
+            "source_modified_time": 1786615892,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.14",
+                "version": "3.14.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.14.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/botan",
+              "string": "/usr/local/Cellar/botan/3.13.0",
+              "offset": 491531
+            },
+            {
+              "path": "bin/botan",
+              "string": "/usr/local/Cellar/botan/3.13.0/lib",
+              "offset": 491646
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-readline-8.3.3",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "name": "readline",
+                "versionInfo": "8.3.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6b958311e9568372a79c5dafcd91e16d2deb19a079b69c6861307ac27644b534"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "name": "python@3.14",
+                "versionInfo": "3.14.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-botan"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-botan"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-botan"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-botan"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-botan"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-botan"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-botan"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-botan"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-botan"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-botan-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/botan"
+          ],
+          "all_files": [
+            ".brew/botan.rb",
+            "INSTALL_RECEIPT.json",
+            "bin/botan",
+            "include/botan-3/botan/aead.h",
+            "include/botan-3/botan/allocator.h",
+            "include/botan-3/botan/api.h",
+            "include/botan-3/botan/argon2.h",
+            "include/botan-3/botan/argon2fmt.h",
+            "include/botan-3/botan/asn1_obj.h",
+            "include/botan-3/botan/asn1_print.h",
+            "include/botan-3/botan/asn1_time.h",
+            "include/botan-3/botan/assert.h",
+            "include/botan-3/botan/auto_rng.h",
+            "include/botan-3/botan/base32.h",
+            "include/botan-3/botan/base58.h",
+            "include/botan-3/botan/base64.h",
+            "include/botan-3/botan/bcrypt.h",
+            "include/botan-3/botan/bcrypt_pbkdf.h",
+            "include/botan-3/botan/ber_dec.h",
+            "include/botan-3/botan/bigint.h",
+            "include/botan-3/botan/block_cipher.h",
+            "include/botan-3/botan/buf_comp.h",
+            "include/botan-3/botan/build.h",
+            "include/botan-3/botan/bzip2.h",
+            "include/botan-3/botan/certstor.h",
+            "include/botan-3/botan/certstor_flatfile.h",
+            "include/botan-3/botan/certstor_macos.h",
+            "include/botan-3/botan/certstor_sql.h",
+            "include/botan-3/botan/certstor_sqlite.h",
+            "include/botan-3/botan/certstor_system.h",
+            "include/botan-3/botan/chacha_rng.h",
+            "include/botan-3/botan/cipher_mode.h",
+            "include/botan-3/botan/cmce.h",
+            "include/botan-3/botan/cmce_parameter_set.h",
+            "include/botan-3/botan/compiler.h",
+            "include/botan-3/botan/compression.h",
+            "include/botan-3/botan/concepts.h",
+            "include/botan-3/botan/credentials_manager.h",
+            "include/botan-3/botan/cryptobox.h",
+            "include/botan-3/botan/curve25519.h",
+            "include/botan-3/botan/curve_gfp.h",
+            "include/botan-3/botan/data_snk.h",
+            "include/botan-3/botan/data_src.h",
+            "include/botan-3/botan/database.h",
+            "include/botan-3/botan/der_enc.h",
+            "include/botan-3/botan/dh.h",
+            "include/botan-3/botan/dilithium.h",
+            "include/botan-3/botan/dl_group.h",
+            "include/botan-3/botan/dlies.h",
+            "include/botan-3/botan/dns_name.h",
+            "include/botan-3/botan/dsa.h",
+            "include/botan-3/botan/ec_apoint.h",
+            "include/botan-3/botan/ec_group.h",
+            "include/botan-3/botan/ec_point.h",
+            "include/botan-3/botan/ec_point_format.h",
+            "include/botan-3/botan/ec_scalar.h",
+            "include/botan-3/botan/ecc_key.h",
+            "include/botan-3/botan/ecdh.h",
+            "include/botan-3/botan/ecdsa.h",
+            "include/botan-3/botan/ecgdsa.h",
+            "include/botan-3/botan/ecies.h",
+            "include/botan-3/botan/eckcdsa.h",
+            "include/botan-3/botan/ed25519.h",
+            "include/botan-3/botan/ed448.h",
+            "include/botan-3/botan/elgamal.h",
+            "include/botan-3/botan/email.h",
+            "include/botan-3/botan/entropy_src.h",
+            "include/botan-3/botan/exceptn.h",
+            "include/botan-3/botan/fd_unix.h",
+            "include/botan-3/botan/ffi.h",
+            "include/botan-3/botan/filter.h",
+            "include/botan-3/botan/filters.h",
+            "include/botan-3/botan/fpe_fe1.h",
+            "include/botan-3/botan/frodo_mode.h",
+            "include/botan-3/botan/frodokem.h",
+            "include/botan-3/botan/gost_3410.h",
+            "include/botan-3/botan/hash.h",
+            "include/botan-3/botan/hex.h",
+            "include/botan-3/botan/hmac_drbg.h",
+            "include/botan-3/botan/hss_lms.h",
+            "include/botan-3/botan/ipv4_address.h",
+            "include/botan-3/botan/ipv6_address.h",
+            "include/botan-3/botan/kdf.h",
+            "include/botan-3/botan/kyber.h",
+            "include/botan-3/botan/mac.h",
+            "include/botan-3/botan/mceliece.h",
+            "include/botan-3/botan/mem_ops.h",
+            "include/botan-3/botan/ml_dsa.h",
+            "include/botan-3/botan/ml_kem.h",
+            "include/botan-3/botan/mutex.h",
+            "include/botan-3/botan/nist_keywrap.h",
+            "include/botan-3/botan/numthry.h",
+            "include/botan-3/botan/ocsp.h",
+            "include/botan-3/botan/oids.h",
+            "include/botan-3/botan/otp.h",
+            "include/botan-3/botan/p11.h",
+            "include/botan-3/botan/p11_ecc_key.h",
+            "include/botan-3/botan/p11_ecdh.h",
+            "include/botan-3/botan/p11_ecdsa.h",
+            "include/botan-3/botan/p11_mechanism.h",
+            "include/botan-3/botan/p11_object.h",
+            "include/botan-3/botan/p11_randomgenerator.h",
+            "include/botan-3/botan/p11_rsa.h",
+            "include/botan-3/botan/p11_types.h",
+            "include/botan-3/botan/p11_x509.h",
+            "include/botan-3/botan/passhash9.h",
+            "include/botan-3/botan/pbkdf.h",
+            "include/botan-3/botan/pbkdf2.h",
+            "include/botan-3/botan/pem.h",
+            "include/botan-3/botan/pgp_s2k.h",
+            "include/botan-3/botan/pipe.h",
+            "include/botan-3/botan/pk_algs.h",
+            "include/botan-3/botan/pk_keys.h",
+            "include/botan-3/botan/pk_ops.h",
+            "include/botan-3/botan/pk_ops_fwd.h",
+            "include/botan-3/botan/pkcs10.h",
+            "include/botan-3/botan/pkcs11.h",
+            "include/botan-3/botan/pkcs12.h",
+            "include/botan-3/botan/pkcs8.h",
+            "include/botan-3/botan/pkix_enums.h",
+            "include/botan-3/botan/pkix_types.h",
+            "include/botan-3/botan/processor_rng.h",
+            "include/botan-3/botan/psk_db.h",
+            "include/botan-3/botan/pss_params.h",
+            "include/botan-3/botan/pubkey.h",
+            "include/botan-3/botan/pwdhash.h",
+            "include/botan-3/botan/range_concepts.h",
+            "include/botan-3/botan/reducer.h",
+            "include/botan-3/botan/rfc3394.h",
+            "include/botan-3/botan/rfc4880.h",
+            "include/botan-3/botan/rng.h",
+            "include/botan-3/botan/roughtime.h",
+            "include/botan-3/botan/rsa.h",
+            "include/botan-3/botan/scrypt.h",
+            "include/botan-3/botan/secmem.h",
+            "include/botan-3/botan/slh_dsa.h",
+            "include/botan-3/botan/sm2.h",
+            "include/botan-3/botan/sodium.h",
+            "include/botan-3/botan/sp_parameters.h",
+            "include/botan-3/botan/spake2p.h",
+            "include/botan-3/botan/sphincsplus.h",
+            "include/botan-3/botan/sqlite3.h",
+            "include/botan-3/botan/srp6.h",
+            "include/botan-3/botan/stateful_rng.h",
+            "include/botan-3/botan/stream_cipher.h",
+            "include/botan-3/botan/strong_type.h",
+            "include/botan-3/botan/sym_algo.h",
+            "include/botan-3/botan/symkey.h",
+            "include/botan-3/botan/system_rng.h",
+            "include/botan-3/botan/tls.h",
+            "include/botan-3/botan/tls_alert.h",
+            "include/botan-3/botan/tls_algos.h",
+            "include/botan-3/botan/tls_callbacks.h",
+            "include/botan-3/botan/tls_channel.h",
+            "include/botan-3/botan/tls_ciphersuite.h",
+            "include/botan-3/botan/tls_client.h",
+            "include/botan-3/botan/tls_exceptn.h",
+            "include/botan-3/botan/tls_extensions.h",
+            "include/botan-3/botan/tls_extensions_12.h",
+            "include/botan-3/botan/tls_extensions_13.h",
+            "include/botan-3/botan/tls_external_psk.h",
+            "include/botan-3/botan/tls_handshake_msg.h",
+            "include/botan-3/botan/tls_magic.h",
+            "include/botan-3/botan/tls_messages.h",
+            "include/botan-3/botan/tls_messages_12.h",
+            "include/botan-3/botan/tls_messages_13.h",
+            "include/botan-3/botan/tls_policy.h",
+            "include/botan-3/botan/tls_psk_13.h",
+            "include/botan-3/botan/tls_psk_identity_13.h",
+            "include/botan-3/botan/tls_server.h",
+            "include/botan-3/botan/tls_server_info.h",
+            "include/botan-3/botan/tls_session.h",
+            "include/botan-3/botan/tls_session_id.h",
+            "include/botan-3/botan/tls_session_manager.h",
+            "include/botan-3/botan/tls_session_manager_hybrid.h",
+            "include/botan-3/botan/tls_session_manager_memory.h",
+            "include/botan-3/botan/tls_session_manager_noop.h",
+            "include/botan-3/botan/tls_session_manager_sql.h",
+            "include/botan-3/botan/tls_session_manager_sqlite.h",
+            "include/botan-3/botan/tls_session_manager_stateless.h",
+            "include/botan-3/botan/tls_signature_scheme.h",
+            "include/botan-3/botan/tls_version.h",
+            "include/botan-3/botan/tss.h",
+            "include/botan-3/botan/types.h",
+            "include/botan-3/botan/uri.h",
+            "include/botan-3/botan/uuid.h",
+            "include/botan-3/botan/version.h",
+            "include/botan-3/botan/x25519.h",
+            "include/botan-3/botan/x448.h",
+            "include/botan-3/botan/x509_ca.h",
+            "include/botan-3/botan/x509_crl.h",
+            "include/botan-3/botan/x509_ext.h",
+            "include/botan-3/botan/x509_key.h",
+            "include/botan-3/botan/x509_obj.h",
+            "include/botan-3/botan/x509cert.h",
+            "include/botan-3/botan/x509path.h",
+            "include/botan-3/botan/x509self.h",
+            "include/botan-3/botan/xmss.h",
+            "include/botan-3/botan/xmss_parameters.h",
+            "include/botan-3/botan/xof.h",
+            "include/botan-3/botan/zfec.h",
+            "include/botan-3/botan/zlib.h",
+            "lib/cmake/Botan-3.13.0/botan-config-version.cmake",
+            "lib/cmake/Botan-3.13.0/botan-config.cmake",
+            "lib/libbotan-3.13.13.0.dylib",
+            "lib/libbotan-3.13.dylib",
+            "lib/libbotan-3.a",
+            "lib/libbotan-3.dylib",
+            "lib/pkgconfig/botan-3.pc",
+            "lib/python3.14/site-packages/botan3.py",
+            "license.txt",
+            "news.rst",
+            "readme.rst",
+            "sbom.spdx.json",
+            "share/doc/botan-3.13.0/authors.txt",
+            "share/doc/botan-3.13.0/handbook/abi.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/bigint.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/block_cipher.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/cipher_modes.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/compression.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/contents.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/credentials_manager.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/cryptobox.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/ec_group.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/ecc.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/encoding.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/env_vars.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/ffi.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/filters.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/footguns.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/fpe.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/hash.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/kdf.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/keywrap.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/message_auth_codes.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/names.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/otp.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/passhash.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/pbkdf.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/pkcs11.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/pkcs12.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/providers.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/psk_db.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/pubkey.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/python.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/rng.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/roughtime.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/secmem.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/sodium.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/spake2p.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/srp.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/stream_ciphers.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/tls.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/tpm.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/tss.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/versions.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/x509.rst",
+            "share/doc/botan-3.13.0/handbook/api_ref/zfec.rst",
+            "share/doc/botan-3.13.0/handbook/authors.txt",
+            "share/doc/botan-3.13.0/handbook/building.rst",
+            "share/doc/botan-3.13.0/handbook/cli.rst",
+            "share/doc/botan-3.13.0/handbook/contents.rst",
+            "share/doc/botan-3.13.0/handbook/credits.rst",
+            "share/doc/botan-3.13.0/handbook/deprecated.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/configure.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/contents.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/continuous_integration.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/contributing.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/fuzzing.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/mistakes.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/next_major.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/oids.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/os.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/pcurves.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/reading_list.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/release_process.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/test_framework.rst",
+            "share/doc/botan-3.13.0/handbook/dev_ref/todo.rst",
+            "share/doc/botan-3.13.0/handbook/goals.rst",
+            "share/doc/botan-3.13.0/handbook/hardware_acceleration.rst",
+            "share/doc/botan-3.13.0/handbook/index.rst",
+            "share/doc/botan-3.13.0/handbook/migration_guide.rst",
+            "share/doc/botan-3.13.0/handbook/news_2x.rst",
+            "share/doc/botan-3.13.0/handbook/old_news.rst",
+            "share/doc/botan-3.13.0/handbook/openssl_migration_guide.rst",
+            "share/doc/botan-3.13.0/handbook/packaging.rst",
+            "share/doc/botan-3.13.0/handbook/pgpkey.txt",
+            "share/doc/botan-3.13.0/handbook/roadmap.rst",
+            "share/doc/botan-3.13.0/handbook/security.rst",
+            "share/doc/botan-3.13.0/handbook/sem_ver.rst",
+            "share/doc/botan-3.13.0/handbook/side_channels.rst",
+            "share/doc/botan-3.13.0/handbook/support.rst",
+            "share/doc/botan-3.13.0/handbook/threat_model.rst",
+            "share/doc/botan-3.13.0/license.txt",
+            "share/doc/botan-3.13.0/news.txt",
+            "share/doc/botan-3.13.0/pgpkey.txt"
+          ],
+          "installed_size": 33111789
+        }
+      }
+    }
+  }
+}

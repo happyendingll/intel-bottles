@@ -1,0 +1,113 @@
+{
+  "picotool": {
+    "formula": {
+      "name": "picotool",
+      "pkg_version": "2.3.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/picotool.rb",
+      "tap_git_path": "Formula/p/picotool.rb",
+      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Tool for interacting with RP2040/RP2350 devices and binaries",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/raspberrypi/picotool"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-14T15:55:53Z",
+      "tags": {
+        "sequoia": {
+          "filename": "picotool-2.3.1.sequoia.bottle.tar.gz",
+          "local_filename": "picotool--2.3.1.sequoia.bottle.tar.gz",
+          "sha256": "7bc59a2862c073a8ff98ccd1da5a00f85936c1340b72fbfff16484f4f3a8cd37",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/picotool"
+            ],
+            "binary_relocation_files": [
+              "bin/picotool"
+            ],
+            "source_modified_time": 1788568684,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libusb",
+                "version": "1.0.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.30",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/picotool",
+              "string": "/usr/local/Cellar/picotool/2.3.1/share/picotool/",
+              "offset": 918659
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-picotool-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/picotool"
+          ],
+          "all_files": [
+            ".brew/picotool.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.TXT",
+            "README.md",
+            "bin/picotool",
+            "lib/cmake/picotool/picotoolConfig.cmake",
+            "lib/cmake/picotool/picotoolConfigVersion.cmake",
+            "lib/cmake/picotool/picotoolTargets-release.cmake",
+            "lib/cmake/picotool/picotoolTargets.cmake",
+            "sbom.spdx.json",
+            "share/picotool/enc_bootloader.elf",
+            "share/picotool/enc_bootloader_mbedtls.elf",
+            "share/picotool/rp2350_otp_contents.json",
+            "share/picotool/xip_ram_perms.elf"
+          ],
+          "installed_size": 3068311
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,373 @@
+{
+  "coturn": {
+    "formula": {
+      "name": "coturn",
+      "pkg_version": "4.18.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/coturn.rb",
+      "tap_git_path": "Formula/c/coturn.rb",
+      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Free open source implementation of TURN and STUN Server",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/coturn/coturn"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T13:33:04Z",
+      "tags": {
+        "sequoia": {
+          "filename": "coturn-4.18.0.sequoia.bottle.tar.gz",
+          "local_filename": "coturn--4.18.0.sequoia.bottle.tar.gz",
+          "sha256": "6b078da824353c68f785bf94d5a8ef0790a31944c78685025c39f0c404db73fc",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "sh.brew.coturn.plist",
+              "sh.brew.coturn.service"
+            ],
+            "linkage_files": [
+              "bin/turnadmin",
+              "bin/turnserver",
+              "bin/turnutils_natdiscovery",
+              "bin/turnutils_oauth",
+              "bin/turnutils_peer",
+              "bin/turnutils_stunclient",
+              "bin/turnutils_uclient"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788821121,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "hiredis",
+                "version": "1.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.1",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libevent",
+                "version": "2.1.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.13",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "krb5",
+                "version": "1.22.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.22.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpq",
+                "version": "18.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "18.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-readline-8.3.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "name": "readline",
+                "versionInfo": "8.3.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-coturn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-coturn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-coturn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-coturn-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/turnutils_stunclient",
+            "bin/turnserver",
+            "bin/turnutils_peer",
+            "bin/turnutils_natdiscovery",
+            "bin/turnadmin",
+            "bin/turnutils_oauth",
+            "bin/turnutils_uclient"
+          ],
+          "all_files": [
+            ".bottle/var/db/turndb",
+            ".brew/coturn.rb",
+            "AUTHORS.md",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/turnadmin",
+            "bin/turnserver",
+            "bin/turnutils_natdiscovery",
+            "bin/turnutils_oauth",
+            "bin/turnutils_peer",
+            "bin/turnutils_stunclient",
+            "bin/turnutils_uclient",
+            "etc/turnserver.conf.default",
+            "include/turn/client/TurnMsgLib.h",
+            "include/turn/client/ns_turn_ioaddr.h",
+            "include/turn/client/ns_turn_msg.h",
+            "include/turn/client/ns_turn_msg_addr.h",
+            "include/turn/client/ns_turn_msg_defs.h",
+            "include/turn/client/ns_turn_msg_defs_experimental.h",
+            "include/turn/ns_turn_defs.h",
+            "lib/libturnclient.a",
+            "sbom.spdx.json",
+            "sh.brew.coturn.plist",
+            "sh.brew.coturn.service",
+            "share/doc/coturn/INSTALL",
+            "share/doc/coturn/LICENSE",
+            "share/doc/coturn/README.turnadmin",
+            "share/doc/coturn/README.turnserver",
+            "share/doc/coturn/README.turnutils",
+            "share/doc/coturn/postinstall.txt",
+            "share/examples/turnserver/etc/cacert.pem",
+            "share/examples/turnserver/etc/coturn.service",
+            "share/examples/turnserver/etc/turn_client_cert.pem",
+            "share/examples/turnserver/etc/turn_client_pkey.pem",
+            "share/examples/turnserver/etc/turn_server_cert.pem",
+            "share/examples/turnserver/etc/turn_server_pkey.pem",
+            "share/examples/turnserver/etc/turnserver.conf",
+            "share/examples/turnserver/scripts/basic/dos_attack.sh",
+            "share/examples/turnserver/scripts/basic/relay.sh",
+            "share/examples/turnserver/scripts/basic/tcp_client.sh",
+            "share/examples/turnserver/scripts/basic/tcp_client_c2c_tcp_relay.sh",
+            "share/examples/turnserver/scripts/basic/udp_c2c_client.sh",
+            "share/examples/turnserver/scripts/basic/udp_client.sh",
+            "share/examples/turnserver/scripts/loadbalance/master_relay.sh",
+            "share/examples/turnserver/scripts/loadbalance/slave_relay_1.sh",
+            "share/examples/turnserver/scripts/loadbalance/slave_relay_2.sh",
+            "share/examples/turnserver/scripts/loadbalance/tcp_c2c_tcp_relay.sh",
+            "share/examples/turnserver/scripts/loadbalance/udp_c2c.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_dos_attack.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_dtls_client.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_dtls_client_cert.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_relay.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_relay_cert.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_sctp_client.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_tcp_client.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_tcp_client_c2c_tcp_relay.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_tls_client.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_tls_client_c2c_tcp_relay.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_tls_client_cert.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_udp_c2c.sh",
+            "share/examples/turnserver/scripts/longtermsecure/secure_udp_client.sh",
+            "share/examples/turnserver/scripts/longtermsecuredb/secure_relay_with_db_mongo.sh",
+            "share/examples/turnserver/scripts/longtermsecuredb/secure_relay_with_db_mysql.sh",
+            "share/examples/turnserver/scripts/longtermsecuredb/secure_relay_with_db_mysql_ssl.sh",
+            "share/examples/turnserver/scripts/longtermsecuredb/secure_relay_with_db_psql.sh",
+            "share/examples/turnserver/scripts/longtermsecuredb/secure_relay_with_db_redis.sh",
+            "share/examples/turnserver/scripts/longtermsecuredb/secure_relay_with_db_sqlite.sh",
+            "share/examples/turnserver/scripts/mobile/mobile_dtls_client.sh",
+            "share/examples/turnserver/scripts/mobile/mobile_relay.sh",
+            "share/examples/turnserver/scripts/mobile/mobile_tcp_client.sh",
+            "share/examples/turnserver/scripts/mobile/mobile_tls_client_c2c_tcp_relay.sh",
+            "share/examples/turnserver/scripts/mobile/mobile_udp_client.sh",
+            "share/examples/turnserver/scripts/mobility_quota_flood.py",
+            "share/examples/turnserver/scripts/mobility_resume_flood.py",
+            "share/examples/turnserver/scripts/oauth.sh",
+            "share/examples/turnserver/scripts/pack.sh",
+            "share/examples/turnserver/scripts/peer.sh",
+            "share/examples/turnserver/scripts/readme.txt",
+            "share/examples/turnserver/scripts/restapi/secure_relay_secret.sh",
+            "share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_mongo.sh",
+            "share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_mysql.sh",
+            "share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_psql.sh",
+            "share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_redis.sh",
+            "share/examples/turnserver/scripts/restapi/secure_relay_secret_with_db_sqlite.sh",
+            "share/examples/turnserver/scripts/restapi/secure_udp_client_with_secret.sh",
+            "share/examples/turnserver/scripts/restapi/shared_secret_maintainer.pl",
+            "share/examples/turnserver/scripts/selfloadbalance/secure_dos_attack.sh",
+            "share/examples/turnserver/scripts/selfloadbalance/secure_relay.sh",
+            "share/examples/turnserver/scripts/stateless_binding_probe.py",
+            "share/examples/turnserver/scripts/stateless_nonce_forged_mi.py",
+            "share/man/man/man1/coturn.1",
+            "share/man/man/man1/turnadmin.1",
+            "share/man/man/man1/turnserver.1",
+            "share/man/man/man1/turnutils.1",
+            "share/man/man/man1/turnutils_natdiscovery.1",
+            "share/man/man/man1/turnutils_oauth.1",
+            "share/man/man/man1/turnutils_peer.1",
+            "share/man/man/man1/turnutils_stunclient.1",
+            "share/man/man/man1/turnutils_uclient.1",
+            "share/man/man1/coturn.1",
+            "share/man/man1/turnadmin.1",
+            "share/man/man1/turnserver.1",
+            "share/man/man1/turnutils.1",
+            "share/man/man1/turnutils_natdiscovery.1",
+            "share/man/man1/turnutils_oauth.1",
+            "share/man/man1/turnutils_peer.1",
+            "share/man/man1/turnutils_stunclient.1",
+            "share/man/man1/turnutils_uclient.1",
+            "share/turnserver/schema.mongo.sh",
+            "share/turnserver/schema.sql",
+            "share/turnserver/schema.stats.redis",
+            "share/turnserver/schema.userdb.redis",
+            "share/turnserver/testmongosetup.sh",
+            "share/turnserver/testredisdbsetup.sh",
+            "share/turnserver/testsqldbsetup.sql"
+          ],
+          "installed_size": 2619087
+        }
+      }
+    }
+  }
+}

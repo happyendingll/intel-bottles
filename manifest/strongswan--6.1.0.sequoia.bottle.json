@@ -1,0 +1,379 @@
+{
+  "strongswan": {
+    "formula": {
+      "name": "strongswan",
+      "pkg_version": "6.1.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/strongswan.rb",
+      "tap_git_path": "Formula/s/strongswan.rb",
+      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "VPN based on IPsec",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://www.strongswan.org"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-14T16:43:19Z",
+      "tags": {
+        "sequoia": {
+          "filename": "strongswan-6.1.0.sequoia.bottle.tar.gz",
+          "local_filename": "strongswan--6.1.0.sequoia.bottle.tar.gz",
+          "sha256": "c5a337baf89d6c38932aac040fb3f76af033231d50975698ea8f81f9b04583d8",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "bin/ipsec",
+              "libexec/ipsec/_updown",
+              "share/man/man5/strongswan.conf.5"
+            ],
+            "linkage_files": [
+              "bin/charon-cmd",
+              "bin/pki",
+              "bin/swanctl",
+              "lib/ipsec/libcharon.0.dylib",
+              "lib/ipsec/libstrongswan.0.dylib",
+              "lib/ipsec/libtls.0.dylib",
+              "lib/ipsec/libvici.0.dylib",
+              "lib/ipsec/plugins/libstrongswan-eap-peap.so",
+              "lib/ipsec/plugins/libstrongswan-openssl.so",
+              "libexec/ipsec/charon",
+              "libexec/ipsec/starter",
+              "libexec/ipsec/stroke"
+            ],
+            "binary_relocation_files": [
+              "lib/ipsec/libstrongswan.0.dylib",
+              "libexec/ipsec/starter"
+            ],
+            "source_modified_time": 1788677995,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "libexec/ipsec/starter",
+              "string": "/usr/local/Cellar/strongswan/6.1.0/libexec/ipsec/charon",
+              "offset": 38581
+            },
+            {
+              "path": "lib/ipsec/libstrongswan.0.dylib",
+              "string": "/usr/local/Cellar/strongswan/6.1.0/lib/ipsec/plugins",
+              "offset": 259410
+            },
+            {
+              "path": "lib/ipsec/libstrongswan.0.dylib",
+              "string": "/usr/local/etc/strongswan.conf",
+              "offset": 236970
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-strongswan"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-strongswan"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-strongswan-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/swanctl",
+            "bin/ipsec",
+            "bin/charon-cmd",
+            "bin/pki"
+          ],
+          "all_files": [
+            ".bottle/etc/ipsec.conf",
+            ".bottle/etc/ipsec.secrets",
+            ".bottle/etc/strongswan.conf",
+            ".bottle/etc/strongswan.d/charon/constraints.conf",
+            ".bottle/etc/strongswan.d/charon/counters.conf",
+            ".bottle/etc/strongswan.d/charon/curl.conf",
+            ".bottle/etc/strongswan.d/charon/curve25519.conf",
+            ".bottle/etc/strongswan.d/charon/eap-gtc.conf",
+            ".bottle/etc/strongswan.d/charon/eap-identity.conf",
+            ".bottle/etc/strongswan.d/charon/eap-md5.conf",
+            ".bottle/etc/strongswan.d/charon/eap-mschapv2.conf",
+            ".bottle/etc/strongswan.d/charon/eap-peap.conf",
+            ".bottle/etc/strongswan.d/charon/kdf.conf",
+            ".bottle/etc/strongswan.d/charon/kernel-pfkey.conf",
+            ".bottle/etc/strongswan.d/charon/kernel-pfroute.conf",
+            ".bottle/etc/strongswan.d/charon/nonce.conf",
+            ".bottle/etc/strongswan.d/charon/openssl.conf",
+            ".bottle/etc/strongswan.d/charon/osx-attr.conf",
+            ".bottle/etc/strongswan.d/charon/pem.conf",
+            ".bottle/etc/strongswan.d/charon/pgp.conf",
+            ".bottle/etc/strongswan.d/charon/pkcs1.conf",
+            ".bottle/etc/strongswan.d/charon/pkcs11.conf",
+            ".bottle/etc/strongswan.d/charon/pkcs8.conf",
+            ".bottle/etc/strongswan.d/charon/pubkey.conf",
+            ".bottle/etc/strongswan.d/charon/revocation.conf",
+            ".bottle/etc/strongswan.d/charon/socket-default.conf",
+            ".bottle/etc/strongswan.d/charon/sshkey.conf",
+            ".bottle/etc/strongswan.d/charon/stroke.conf",
+            ".bottle/etc/strongswan.d/charon/unity.conf",
+            ".bottle/etc/strongswan.d/charon/updown.conf",
+            ".bottle/etc/strongswan.d/charon/vici.conf",
+            ".bottle/etc/strongswan.d/charon/x509.conf",
+            ".bottle/etc/strongswan.d/charon/xauth-generic.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/constraints.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/curl.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/curve25519.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/eap-gtc.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/eap-identity.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/eap-md5.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/eap-mschapv2.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/eap-peap.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/kdf.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/kernel-pfkey.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/kernel-pfroute.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/nonce.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/openssl.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/osx-attr.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/pem.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/pkcs1.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/pkcs11.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/pkcs8.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/pubkey.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/revocation.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/socket-default.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/sshkey.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/x509.conf",
+            ".bottle/etc/strongswan.d/charon-cmd/xauth-generic.conf",
+            ".bottle/etc/strongswan.d/charon-cmd.conf",
+            ".bottle/etc/strongswan.d/charon-logging.conf",
+            ".bottle/etc/strongswan.d/charon.conf",
+            ".bottle/etc/strongswan.d/iptfs.conf",
+            ".bottle/etc/strongswan.d/pki.conf",
+            ".bottle/etc/strongswan.d/starter.conf",
+            ".bottle/etc/strongswan.d/swanctl.conf",
+            ".bottle/etc/swanctl/swanctl.conf",
+            ".brew/strongswan.rb",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NEWS",
+            "README",
+            "TODO",
+            "bin/charon-cmd",
+            "bin/ipsec",
+            "bin/pki",
+            "bin/swanctl",
+            "lib/ipsec/libcharon.0.dylib",
+            "lib/ipsec/libcharon.dylib",
+            "lib/ipsec/libstrongswan.0.dylib",
+            "lib/ipsec/libstrongswan.dylib",
+            "lib/ipsec/libtls.0.dylib",
+            "lib/ipsec/libtls.dylib",
+            "lib/ipsec/libvici.0.dylib",
+            "lib/ipsec/libvici.dylib",
+            "lib/ipsec/plugins/libstrongswan-constraints.so",
+            "lib/ipsec/plugins/libstrongswan-counters.so",
+            "lib/ipsec/plugins/libstrongswan-curl.so",
+            "lib/ipsec/plugins/libstrongswan-curve25519.so",
+            "lib/ipsec/plugins/libstrongswan-eap-gtc.so",
+            "lib/ipsec/plugins/libstrongswan-eap-identity.so",
+            "lib/ipsec/plugins/libstrongswan-eap-md5.so",
+            "lib/ipsec/plugins/libstrongswan-eap-mschapv2.so",
+            "lib/ipsec/plugins/libstrongswan-eap-peap.so",
+            "lib/ipsec/plugins/libstrongswan-kdf.so",
+            "lib/ipsec/plugins/libstrongswan-kernel-pfkey.so",
+            "lib/ipsec/plugins/libstrongswan-kernel-pfroute.so",
+            "lib/ipsec/plugins/libstrongswan-nonce.so",
+            "lib/ipsec/plugins/libstrongswan-openssl.so",
+            "lib/ipsec/plugins/libstrongswan-osx-attr.so",
+            "lib/ipsec/plugins/libstrongswan-pem.so",
+            "lib/ipsec/plugins/libstrongswan-pgp.so",
+            "lib/ipsec/plugins/libstrongswan-pkcs1.so",
+            "lib/ipsec/plugins/libstrongswan-pkcs11.so",
+            "lib/ipsec/plugins/libstrongswan-pkcs8.so",
+            "lib/ipsec/plugins/libstrongswan-pubkey.so",
+            "lib/ipsec/plugins/libstrongswan-revocation.so",
+            "lib/ipsec/plugins/libstrongswan-socket-default.so",
+            "lib/ipsec/plugins/libstrongswan-sshkey.so",
+            "lib/ipsec/plugins/libstrongswan-stroke.so",
+            "lib/ipsec/plugins/libstrongswan-unity.so",
+            "lib/ipsec/plugins/libstrongswan-updown.so",
+            "lib/ipsec/plugins/libstrongswan-vici.so",
+            "lib/ipsec/plugins/libstrongswan-x509.so",
+            "lib/ipsec/plugins/libstrongswan-xauth-generic.so",
+            "libexec/ipsec/_updown",
+            "libexec/ipsec/charon",
+            "libexec/ipsec/starter",
+            "libexec/ipsec/stroke",
+            "sbom.spdx.json",
+            "share/man/man1/pki---acert.1",
+            "share/man/man1/pki---dn.1",
+            "share/man/man1/pki---est.1",
+            "share/man/man1/pki---estca.1",
+            "share/man/man1/pki---gen.1",
+            "share/man/man1/pki---issue.1",
+            "share/man/man1/pki---keyid.1",
+            "share/man/man1/pki---ocsp.1",
+            "share/man/man1/pki---pkcs7.1",
+            "share/man/man1/pki---print.1",
+            "share/man/man1/pki---pub.1",
+            "share/man/man1/pki---req.1",
+            "share/man/man1/pki---scep.1",
+            "share/man/man1/pki---scepca.1",
+            "share/man/man1/pki---self.1",
+            "share/man/man1/pki---signcrl.1",
+            "share/man/man1/pki---verify.1",
+            "share/man/man1/pki.1",
+            "share/man/man5/ipsec.conf.5",
+            "share/man/man5/ipsec.secrets.5",
+            "share/man/man5/strongswan.conf.5",
+            "share/man/man5/swanctl.conf.5",
+            "share/man/man8/charon-cmd.8",
+            "share/man/man8/ipsec.8",
+            "share/man/man8/swanctl.8",
+            "share/strongswan/templates/config/plugins/-n.conf",
+            "share/strongswan/templates/config/plugins/constraints.conf",
+            "share/strongswan/templates/config/plugins/counters.conf",
+            "share/strongswan/templates/config/plugins/curl.conf",
+            "share/strongswan/templates/config/plugins/curve25519.conf",
+            "share/strongswan/templates/config/plugins/eap-gtc.conf",
+            "share/strongswan/templates/config/plugins/eap-identity.conf",
+            "share/strongswan/templates/config/plugins/eap-md5.conf",
+            "share/strongswan/templates/config/plugins/eap-mschapv2.conf",
+            "share/strongswan/templates/config/plugins/eap-peap.conf",
+            "share/strongswan/templates/config/plugins/kdf.conf",
+            "share/strongswan/templates/config/plugins/kernel-pfkey.conf",
+            "share/strongswan/templates/config/plugins/kernel-pfroute.conf",
+            "share/strongswan/templates/config/plugins/nonce.conf",
+            "share/strongswan/templates/config/plugins/openssl.conf",
+            "share/strongswan/templates/config/plugins/osx-attr.conf",
+            "share/strongswan/templates/config/plugins/pem.conf",
+            "share/strongswan/templates/config/plugins/pgp.conf",
+            "share/strongswan/templates/config/plugins/pkcs1.conf",
+            "share/strongswan/templates/config/plugins/pkcs11.conf",
+            "share/strongswan/templates/config/plugins/pkcs8.conf",
+            "share/strongswan/templates/config/plugins/pubkey.conf",
+            "share/strongswan/templates/config/plugins/revocation.conf",
+            "share/strongswan/templates/config/plugins/socket-default.conf",
+            "share/strongswan/templates/config/plugins/sshkey.conf",
+            "share/strongswan/templates/config/plugins/stroke.conf",
+            "share/strongswan/templates/config/plugins/unity.conf",
+            "share/strongswan/templates/config/plugins/updown.conf",
+            "share/strongswan/templates/config/plugins/vici.conf",
+            "share/strongswan/templates/config/plugins/x509.conf",
+            "share/strongswan/templates/config/plugins/xauth-generic.conf",
+            "share/strongswan/templates/config/strongswan.conf",
+            "share/strongswan/templates/config/strongswan.d/charon-cmd.conf",
+            "share/strongswan/templates/config/strongswan.d/charon-logging.conf",
+            "share/strongswan/templates/config/strongswan.d/charon.conf",
+            "share/strongswan/templates/config/strongswan.d/iptfs.conf",
+            "share/strongswan/templates/config/strongswan.d/pki.conf",
+            "share/strongswan/templates/config/strongswan.d/starter.conf",
+            "share/strongswan/templates/config/strongswan.d/swanctl.conf"
+          ],
+          "installed_size": 3217597
+        }
+      }
+    }
+  }
+}

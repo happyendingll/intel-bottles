@@ -1,0 +1,89 @@
+{
+  "calicoctl": {
+    "formula": {
+      "name": "calicoctl",
+      "pkg_version": "3.32.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/calicoctl.rb",
+      "tap_git_path": "Formula/c/calicoctl.rb",
+      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Calico CLI tool",
+      "license": "Apache-2.0",
+      "homepage": "https://www.tigera.io/project-calico/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-14T13:23:58Z",
+      "tags": {
+        "sequoia": {
+          "filename": "calicoctl-3.32.2.sequoia.bottle.tar.gz",
+          "local_filename": "calicoctl--3.32.2.sequoia.bottle.tar.gz",
+          "sha256": "68930da79b787b56d771efdf8c1369648fb0babb55ef9b5c29af9da61d575e6f",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788107292,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "source": {
+              "scm_revision": "db255c554b929afd73552fd3ac81d691107a1607"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-calicoctl-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/calicoctl"
+          ],
+          "all_files": [
+            ".brew/calicoctl.rb",
+            "AUTHORS.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/calicoctl",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 67390499
+        }
+      }
+    }
+  }
+}

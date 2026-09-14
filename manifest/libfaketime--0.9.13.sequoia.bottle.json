@@ -1,0 +1,178 @@
+{
+  "libfaketime": {
+    "formula": {
+      "name": "libfaketime",
+      "pkg_version": "0.9.13",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libfaketime.rb",
+      "tap_git_path": "Formula/lib/libfaketime.rb",
+      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Report faked system time to programs",
+      "license": "GPL-2.0-only",
+      "homepage": "https://github.com/wolfcw/libfaketime"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-14T14:56:08Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libfaketime-0.9.13.sequoia.bottle.tar.gz",
+          "local_filename": "libfaketime--0.9.13.sequoia.bottle.tar.gz",
+          "sha256": "73a3ad752912c925652ecc36448fcccb5c53d060d53978e00a173ce0b1d1bd10",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/faketime/libfaketime.1.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/faketime"
+            ],
+            "source_modified_time": 1788178966,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "coreutils",
+                "version": "9.11",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "9.11",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/faketime",
+              "string": "/usr/local/Cellar/libfaketime/0.9.13/lib/faketime/libfaketime.1.dylib",
+              "offset": 8269
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-coreutils-9.11",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-coreutils-9.11",
+                "name": "coreutils",
+                "versionInfo": "9.11",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/coreutils/blobs/sha256:dc73c410c602bd1a311d70d3ba5a196d768ff0c89c64dd9db0635b8df52249f2",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "dc73c410c602bd1a311d70d3ba5a196d768ff0c89c64dd9db0635b8df52249f2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/coreutils@9.11",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libfaketime"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-coreutils-9.11",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libfaketime"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libfaketime-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/faketime"
+          ],
+          "all_files": [
+            ".brew/libfaketime.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "TODO",
+            "bin/faketime",
+            "lib/faketime/libfaketime.1.dylib",
+            "sbom.spdx.json",
+            "share/doc/faketime/NEWS",
+            "share/doc/faketime/README",
+            "share/man/man1/faketime.1.gz"
+          ],
+          "installed_size": 213073
+        }
+      }
+    }
+  }
+}

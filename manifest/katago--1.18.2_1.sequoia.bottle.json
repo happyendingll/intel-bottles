@@ -1,0 +1,239 @@
+{
+  "katago": {
+    "formula": {
+      "name": "katago",
+      "pkg_version": "1.18.2_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/k/katago.rb",
+      "tap_git_path": "Formula/k/katago.rb",
+      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Neural Network Go engine with no human-provided knowledge",
+      "license": "MIT AND CC0-1.0",
+      "homepage": "https://katagotraining.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T14:52:36Z",
+      "tags": {
+        "sequoia": {
+          "filename": "katago-1.18.2_1.sequoia.bottle.tar.gz",
+          "local_filename": "katago--1.18.2_1.sequoia.bottle.tar.gz",
+          "sha256": "a4400edba7d8d0994a883d99bd736244bd30a1867e40c0495964ad9821c064d8",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/katago"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788052634,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libzip",
+                "version": "1.11.4",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.11.4_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6b958311e9568372a79c5dafcd91e16d2deb19a079b69c6861307ac27644b534"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-katago"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-katago"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-katago"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-katago-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/katago"
+          ],
+          "all_files": [
+            ".brew/katago.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/katago",
+            "sbom.spdx.json",
+            "share/katago/configs/analysis_example.cfg",
+            "share/katago/configs/book/genbook7jp.cfg",
+            "share/katago/configs/book/genbook7tt.cfg",
+            "share/katago/configs/contribute_example.cfg",
+            "share/katago/configs/gtp_example.cfg",
+            "share/katago/configs/gtp_human5k_example.cfg",
+            "share/katago/configs/gtp_human9d_search_example.cfg",
+            "share/katago/configs/match_example.cfg",
+            "share/katago/configs/misc/datamining1.cfg",
+            "share/katago/configs/misc/datamining4.cfg",
+            "share/katago/configs/task_example.cfg",
+            "share/katago/configs/training/README.md",
+            "share/katago/configs/training/gatekeeper1.cfg",
+            "share/katago/configs/training/gatekeeper1_maxsize9.cfg",
+            "share/katago/configs/training/gatekeeper2a.cfg",
+            "share/katago/configs/training/gatekeeper2b.cfg",
+            "share/katago/configs/training/gatekeeper2bfaster.cfg",
+            "share/katago/configs/training/gatekeeper2c.cfg",
+            "share/katago/configs/training/selfplay1.cfg",
+            "share/katago/configs/training/selfplay1_maxsize9.cfg",
+            "share/katago/configs/training/selfplay2.cfg",
+            "share/katago/configs/training/selfplay8a.cfg",
+            "share/katago/configs/training/selfplay8b.cfg",
+            "share/katago/configs/training/selfplay8b20.cfg",
+            "share/katago/configs/training/selfplay8mainb18.cfg",
+            "share/katago/configs/training/selfplay8midrun.cfg",
+            "share/katago/g170-b40c256x2-s5095420928-d1229425124.bin.gz",
+            "share/katago/g170e-b20c256x2-s5303129600-d1228401921.bin.gz",
+            "share/katago/kata1-b18c384nbt-s9996604416-d4316597426.bin.gz"
+          ],
+          "installed_size": 366799225
+        }
+      }
+    }
+  }
+}
