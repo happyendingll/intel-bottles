@@ -3,6 +3,7 @@
 
 import argparse
 import json
+from datetime import datetime
 from pathlib import Path
 from typing import Any
 
@@ -10,6 +11,7 @@ from plan_targets import REPO, read_list
 
 FAILURES = REPO / "prewarm-failures.txt"
 FAILED_CONCLUSIONS = {"failure", "timed_out"}
+TIMEOUT_SECONDS = 60 * 60
 
 
 def jobs_from(payload: Any) -> list[dict[str, Any]]:
@@ -20,6 +22,18 @@ def jobs_from(payload: Any) -> list[dict[str, Any]]:
         if isinstance(page, dict):
             jobs.extend(job for job in page.get("jobs", []) if isinstance(job, dict))
     return jobs
+
+
+def elapsed_seconds(job: dict[str, Any]) -> float:
+    """Return wall-clock job duration, or zero for incomplete/invalid timestamps."""
+    try:
+        started = datetime.fromisoformat(str(job["started_at"]).replace("Z", "+00:00"))
+        completed = datetime.fromisoformat(
+            str(job["completed_at"]).replace("Z", "+00:00")
+        )
+    except (KeyError, TypeError, ValueError):
+        return 0
+    return max(0, (completed - started).total_seconds())
 
 
 def main() -> None:
@@ -40,7 +54,9 @@ def main() -> None:
         conclusion = job.get("conclusion")
         if conclusion == "success":
             succeeded.add(formula)
-        elif conclusion in FAILED_CONCLUSIONS:
+        elif conclusion in FAILED_CONCLUSIONS or (
+            conclusion == "cancelled" and elapsed_seconds(job) >= TIMEOUT_SECONDS
+        ):
             failed.add(formula)
 
     quarantined = set(read_list(FAILURES))
