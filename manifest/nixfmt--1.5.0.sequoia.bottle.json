@@ -1,0 +1,127 @@
+{
+  "nixfmt": {
+    "formula": {
+      "name": "nixfmt",
+      "pkg_version": "1.5.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/n/nixfmt.rb",
+      "tap_git_path": "Formula/n/nixfmt.rb",
+      "tap_git_revision": "b96c013e81808bbe2bccaa831c8769fe165b7ec1",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Command-line tool to format Nix language code",
+      "license": "MPL-2.0",
+      "homepage": "https://github.com/NixOS/nixfmt"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T19:50:10Z",
+      "tags": {
+        "sequoia": {
+          "filename": "nixfmt-1.5.0.sequoia.bottle.tar.gz",
+          "local_filename": "nixfmt--1.5.0.sequoia.bottle.tar.gz",
+          "sha256": "5f20c0cecc14262833ea63b5d6a83de7ad15687cbe6ec6ba29f5ce604909ef48",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/nixfmt"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789085497,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-nixfmt"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-nixfmt-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/nixfmt"
+          ],
+          "all_files": [
+            ".brew/nixfmt.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/nixfmt",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 7644881
+        }
+      }
+    }
+  }
+}

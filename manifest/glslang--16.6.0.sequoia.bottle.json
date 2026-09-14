@@ -1,0 +1,197 @@
+{
+  "glslang": {
+    "formula": {
+      "name": "glslang",
+      "pkg_version": "16.6.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/glslang.rb",
+      "tap_git_path": "Formula/g/glslang.rb",
+      "tap_git_revision": "b96c013e81808bbe2bccaa831c8769fe165b7ec1",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "OpenGL and OpenGL ES reference compiler for shading languages",
+      "license": "BSD-3-Clause AND GPL-3.0-or-later AND MIT AND Apache-2.0",
+      "homepage": "https://www.khronos.org/opengles/sdk/Reference-Compiler/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T19:43:25Z",
+      "tags": {
+        "sequoia": {
+          "filename": "glslang-16.6.0.sequoia.bottle.tar.gz",
+          "local_filename": "glslang--16.6.0.sequoia.bottle.tar.gz",
+          "sha256": "206699ed10d9d5f4c94e87bf8727d57fc2b38ff414d3699c9b368dd363fc6e8a",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/glslang",
+              "lib/libSPIRV.16.6.0.dylib",
+              "lib/libglslang-default-resource-limits.16.6.0.dylib",
+              "lib/libglslang.16.6.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789148303,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "spirv-headers",
+                "version": "1.4.357.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.357.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "spirv-tools",
+                "version": "1.4.357.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.357.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-spirv-headers-1.4.357.0",
+              "SPDXRef-Package-SPDXRef-spirv-tools-1.4.357.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-spirv-headers-1.4.357.0",
+                "name": "spirv-headers",
+                "versionInfo": "1.4.357.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/spirv-headers/blobs/sha256:eac59c62ed2b1ed63d112a6574dc0caa15530c08c2a6ad44429d08bfc51ec4ba",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "eac59c62ed2b1ed63d112a6574dc0caa15530c08c2a6ad44429d08bfc51ec4ba"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/spirv-headers@1.4.357.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-spirv-tools-1.4.357.0",
+                "name": "spirv-tools",
+                "versionInfo": "1.4.357.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/spirv-tools/blobs/sha256:1b24b6eb9d0a13ffe266f4e690b33abee1d83eb649636b7ed180fba023d3af8f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1b24b6eb9d0a13ffe266f4e690b33abee1d83eb649636b7ed180fba023d3af8f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/spirv-tools@1.4.357.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-spirv-headers-1.4.357.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-glslang"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-spirv-tools-1.4.357.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-glslang"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-glslang-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/glslang",
+            "bin/glslangValidator"
+          ],
+          "all_files": [
+            ".brew/glslang.rb",
+            "CHANGES.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "README.md",
+            "bin/glslang",
+            "bin/glslangValidator",
+            "include/glslang/Include/ResourceLimits.h",
+            "include/glslang/Include/glslang_c_interface.h",
+            "include/glslang/Include/glslang_c_shader_types.h",
+            "include/glslang/Include/visibility.h",
+            "include/glslang/MachineIndependent/Versions.h",
+            "include/glslang/Public/ResourceLimits.h",
+            "include/glslang/Public/ShaderLang.h",
+            "include/glslang/Public/resource_limits_c.h",
+            "include/glslang/SPIRV/GlslangToSpv.h",
+            "include/glslang/SPIRV/Logger.h",
+            "include/glslang/SPIRV/SpvTools.h",
+            "include/glslang/SPIRV/disassemble.h",
+            "include/glslang/SPIRV/spirv.hpp11",
+            "include/glslang/build_info.h",
+            "lib/cmake/glslang/glslang-config-version.cmake",
+            "lib/cmake/glslang/glslang-config.cmake",
+            "lib/cmake/glslang/glslang-targets-release.cmake",
+            "lib/cmake/glslang/glslang-targets.cmake",
+            "lib/libSPIRV.16.6.0.dylib",
+            "lib/libSPIRV.16.dylib",
+            "lib/libSPIRV.dylib",
+            "lib/libglslang-default-resource-limits.16.6.0.dylib",
+            "lib/libglslang-default-resource-limits.16.dylib",
+            "lib/libglslang-default-resource-limits.dylib",
+            "lib/libglslang.16.6.0.dylib",
+            "lib/libglslang.16.dylib",
+            "lib/libglslang.dylib",
+            "license-checker.cfg",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 3189029
+        }
+      }
+    }
+  }
+}

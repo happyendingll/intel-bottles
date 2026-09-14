@@ -1,0 +1,475 @@
+{
+  "sysbench": {
+    "formula": {
+      "name": "sysbench",
+      "pkg_version": "1.0.20_7",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sysbench.rb",
+      "tap_git_path": "Formula/s/sysbench.rb",
+      "tap_git_revision": "b96c013e81808bbe2bccaa831c8769fe165b7ec1",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "System performance benchmark tool",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://github.com/akopytov/sysbench"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T21:10:17Z",
+      "tags": {
+        "sequoia": {
+          "filename": "sysbench-1.0.20_7.sequoia.bottle.tar.gz",
+          "local_filename": "sysbench--1.0.20_7.sequoia.bottle.tar.gz",
+          "sha256": "fecc4ffc897872065621262d98534f8d9507f5f0fa932e217cbc051b818ef301",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "share/sysbench/tests/test_run.sh"
+            ],
+            "linkage_files": [
+              "bin/sysbench"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1587743507,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "krb5",
+                "version": "1.22.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.22.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpq",
+                "version": "18.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "18.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "luajit",
+                "version": "2.1.1788856981",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.1788856981",
+                "declared_directly": true,
+                "compatibility_version": 30
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mariadb-connector-c",
+                "version": "3.4.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.9",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-readline-8.3.3",
+              "SPDXRef-Package-SPDXRef-luajit-2.1.1788856981",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "name": "readline",
+                "versionInfo": "8.3.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-luajit-2.1.1788856981",
+                "name": "luajit",
+                "versionInfo": "2.1.1788856981",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/luajit-2.1.1788856981.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b76ac90f46b617eb05f8900688c70e0bd96de56d146ca748b4f00ec7b3687dbf"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/luajit@2.1.1788856981",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sysbench"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sysbench"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sysbench"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-luajit-2.1.1788856981",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sysbench"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sysbench"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sysbench"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sysbench"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-sysbench-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/sysbench"
+          ],
+          "all_files": [
+            ".brew/sysbench.rb",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/sysbench",
+            "sbom.spdx.json",
+            "share/doc/sysbench/manual.html",
+            "share/sysbench/bulk_insert.lua",
+            "share/sysbench/oltp_common.lua",
+            "share/sysbench/oltp_delete.lua",
+            "share/sysbench/oltp_insert.lua",
+            "share/sysbench/oltp_point_select.lua",
+            "share/sysbench/oltp_read_only.lua",
+            "share/sysbench/oltp_read_write.lua",
+            "share/sysbench/oltp_update_index.lua",
+            "share/sysbench/oltp_update_non_index.lua",
+            "share/sysbench/oltp_write_only.lua",
+            "share/sysbench/select_random_points.lua",
+            "share/sysbench/select_random_ranges.lua",
+            "share/sysbench/tests/include/api_sql_common.sh",
+            "share/sysbench/tests/include/config.sh",
+            "share/sysbench/tests/include/drv_common.sh",
+            "share/sysbench/tests/include/inspect.lua",
+            "share/sysbench/tests/include/mysql_common.sh",
+            "share/sysbench/tests/include/oltp_legacy/bulk_insert.lua",
+            "share/sysbench/tests/include/oltp_legacy/common.lua",
+            "share/sysbench/tests/include/oltp_legacy/delete.lua",
+            "share/sysbench/tests/include/oltp_legacy/insert.lua",
+            "share/sysbench/tests/include/oltp_legacy/oltp.lua",
+            "share/sysbench/tests/include/oltp_legacy/oltp_simple.lua",
+            "share/sysbench/tests/include/oltp_legacy/parallel_prepare.lua",
+            "share/sysbench/tests/include/oltp_legacy/select.lua",
+            "share/sysbench/tests/include/oltp_legacy/select_random_points.lua",
+            "share/sysbench/tests/include/oltp_legacy/select_random_ranges.lua",
+            "share/sysbench/tests/include/oltp_legacy/update_index.lua",
+            "share/sysbench/tests/include/oltp_legacy/update_non_index.lua",
+            "share/sysbench/tests/include/pgsql_common.sh",
+            "share/sysbench/tests/include/script_bulk_insert_common.sh",
+            "share/sysbench/tests/include/script_oltp_common.sh",
+            "share/sysbench/tests/include/script_oltp_legacy_common.sh",
+            "share/sysbench/tests/include/script_select_random_common.sh",
+            "share/sysbench/tests/include/script_select_random_legacy_common.sh",
+            "share/sysbench/tests/t/1st.t",
+            "share/sysbench/tests/t/api_basic.t",
+            "share/sysbench/tests/t/api_histogram.t",
+            "share/sysbench/tests/t/api_legacy_basic.t",
+            "share/sysbench/tests/t/api_legacy_rand.t",
+            "share/sysbench/tests/t/api_legacy_sql.t",
+            "share/sysbench/tests/t/api_rand.t",
+            "share/sysbench/tests/t/api_reports.t",
+            "share/sysbench/tests/t/api_sql_mysql.t",
+            "share/sysbench/tests/t/api_sql_pgsql.t",
+            "share/sysbench/tests/t/cmd_cleanup.t",
+            "share/sysbench/tests/t/cmd_help.t",
+            "share/sysbench/tests/t/cmd_prepare.t",
+            "share/sysbench/tests/t/cmd_run.t",
+            "share/sysbench/tests/t/cmdline.t",
+            "share/sysbench/tests/t/commands.t",
+            "share/sysbench/tests/t/drivers.t",
+            "share/sysbench/tests/t/drv_mysql.t",
+            "share/sysbench/tests/t/drv_pgsql.t",
+            "share/sysbench/tests/t/help_drv_mysql.t",
+            "share/sysbench/tests/t/help_drv_pgsql.t",
+            "share/sysbench/tests/t/opt_help.t",
+            "share/sysbench/tests/t/opt_histogram.t",
+            "share/sysbench/tests/t/opt_rate.t",
+            "share/sysbench/tests/t/opt_report_checkpoints.t",
+            "share/sysbench/tests/t/opt_report_interval.t",
+            "share/sysbench/tests/t/opt_version.t",
+            "share/sysbench/tests/t/script_bulk_insert_mysql.t",
+            "share/sysbench/tests/t/script_bulk_insert_pgsql.t",
+            "share/sysbench/tests/t/script_oltp_delete_mysql.t",
+            "share/sysbench/tests/t/script_oltp_delete_pgsql.t",
+            "share/sysbench/tests/t/script_oltp_help.t",
+            "share/sysbench/tests/t/script_oltp_insert_mysql.t",
+            "share/sysbench/tests/t/script_oltp_insert_pgsql.t",
+            "share/sysbench/tests/t/script_oltp_point_select_mysql.t",
+            "share/sysbench/tests/t/script_oltp_point_select_pgsql.t",
+            "share/sysbench/tests/t/script_oltp_read_write_mysql.t",
+            "share/sysbench/tests/t/script_oltp_read_write_pgsql.t",
+            "share/sysbench/tests/t/script_select_random_mysql.t",
+            "share/sysbench/tests/t/script_select_random_pgsql.t",
+            "share/sysbench/tests/t/test_cpu.t",
+            "share/sysbench/tests/t/test_fileio.t",
+            "share/sysbench/tests/t/test_memory.t",
+            "share/sysbench/tests/t/test_mutex.t",
+            "share/sysbench/tests/t/test_threads.t",
+            "share/sysbench/tests/t/tests.t",
+            "share/sysbench/tests/test_run.sh"
+          ],
+          "installed_size": 555796
+        }
+      }
+    }
+  }
+}

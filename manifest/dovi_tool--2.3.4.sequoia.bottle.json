@@ -1,0 +1,187 @@
+{
+  "dovi_tool": {
+    "formula": {
+      "name": "dovi_tool",
+      "pkg_version": "2.3.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dovi_tool.rb",
+      "tap_git_path": "Formula/d/dovi_tool.rb",
+      "tap_git_revision": "a8bb3cd4f371652015257defa9a17cb42e7bac90",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "CLI tool for Dolby Vision metadata on video streams",
+      "license": "MIT",
+      "homepage": "https://github.com/quietvoid/dovi_tool/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T18:30:05Z",
+      "tags": {
+        "sequoia": {
+          "filename": "dovi_tool-2.3.4.sequoia.bottle.tar.gz",
+          "local_filename": "dovi_tool--2.3.4.sequoia.bottle.tar.gz",
+          "sha256": "8538d0e2cbdde15b3a94fec6d5fbc2fdf8f7b860108ae35a423a4f2cd5cf6a44",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/pkgconfig/dovi.pc"
+            ],
+            "linkage_files": [
+              "lib/libdovi.3.4.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788997732,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-dovi_tool-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/dovi_tool"
+          ],
+          "all_files": [
+            ".brew/dovi_tool.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/dovi_tool",
+            "include/libdovi/rpu_parser.h",
+            "lib/libdovi.3.4.0.dylib",
+            "lib/libdovi.3.dylib",
+            "lib/libdovi.a",
+            "lib/libdovi.dylib",
+            "lib/pkgconfig/dovi.pc",
+            "sbom.spdx.json",
+            "share/dovi_tool/assets/NotoSans-Regular.ttf",
+            "share/dovi_tool/assets/av1-rpu/fel_orig.bin",
+            "share/dovi_tool/assets/av1-rpu/p5-01-ref.bin",
+            "share/dovi_tool/assets/av1-rpu/p5-01.bin",
+            "share/dovi_tool/assets/av1-rpu/p84-01-ref.bin",
+            "share/dovi_tool/assets/av1-rpu/p84-01.bin",
+            "share/dovi_tool/assets/editor_examples/active_area.json",
+            "share/dovi_tool/assets/editor_examples/active_area_all.json",
+            "share/dovi_tool/assets/editor_examples/crop.json",
+            "share/dovi_tool/assets/editor_examples/duplicate.json",
+            "share/dovi_tool/assets/editor_examples/fel_to_p81_encode.json",
+            "share/dovi_tool/assets/editor_examples/l9_and_l11.json",
+            "share/dovi_tool/assets/editor_examples/level6_metadata.json",
+            "share/dovi_tool/assets/editor_examples/levels.json",
+            "share/dovi_tool/assets/editor_examples/mode.json",
+            "share/dovi_tool/assets/editor_examples/p5_to_p81.json",
+            "share/dovi_tool/assets/editor_examples/remove.json",
+            "share/dovi_tool/assets/editor_examples/remove_cmv4.json",
+            "share/dovi_tool/assets/editor_examples/scene_cuts.json",
+            "share/dovi_tool/assets/editor_examples/source_rpu.json",
+            "share/dovi_tool/assets/generator_examples/default_cmv29.json",
+            "share/dovi_tool/assets/generator_examples/default_cmv40.json",
+            "share/dovi_tool/assets/generator_examples/full_example.json",
+            "share/dovi_tool/assets/generator_examples/l1_cmv29.json",
+            "share/dovi_tool/assets/generator_examples/l1_cmv29_override_avg_cmv40.json",
+            "share/dovi_tool/assets/generator_examples/l1_cmv40.json",
+            "share/dovi_tool/assets/generator_examples/no_duration.json",
+            "share/dovi_tool/assets/hevc_tests/no_aud_bl.hevc",
+            "share/dovi_tool/assets/hevc_tests/no_aud_injected.hevc",
+            "share/dovi_tool/assets/hevc_tests/no_aud_muxed.hevc",
+            "share/dovi_tool/assets/hevc_tests/regular.hevc",
+            "share/dovi_tool/assets/hevc_tests/regular.mkv",
+            "share/dovi_tool/assets/hevc_tests/regular_bl_start_code_4.hevc",
+            "share/dovi_tool/assets/hevc_tests/regular_bl_start_code_4_shorter.hevc",
+            "share/dovi_tool/assets/hevc_tests/regular_convert_annexb.hevc",
+            "share/dovi_tool/assets/hevc_tests/regular_demux_bl_annexb.hevc",
+            "share/dovi_tool/assets/hevc_tests/regular_inject_annexb.hevc",
+            "share/dovi_tool/assets/hevc_tests/regular_rpu.bin",
+            "share/dovi_tool/assets/hevc_tests/regular_rpu_mel.bin",
+            "share/dovi_tool/assets/hevc_tests/regular_start_code_4.hevc",
+            "share/dovi_tool/assets/hevc_tests/regular_start_code_4_muxed_el.hevc",
+            "share/dovi_tool/assets/hevc_tests/regular_start_code_4_muxed_el_removed_eos.hevc",
+            "share/dovi_tool/assets/hevc_tests/regular_start_code_4_shorter_muxed_el.hevc",
+            "share/dovi_tool/assets/hevc_tests/sei-double-3byte-case.hevc",
+            "share/dovi_tool/assets/hevc_tests/sei-double-3byte-start-code-4.hevc",
+            "share/dovi_tool/assets/hevc_tests/sei-suffix-muxed-rpu.hevc",
+            "share/dovi_tool/assets/tests/cmv2_9.xml",
+            "share/dovi_tool/assets/tests/cmv2_9_xml_with_l5_rpu.bin",
+            "share/dovi_tool/assets/tests/cmv40_full_rpu.bin",
+            "share/dovi_tool/assets/tests/cmv4_0_2.xml",
+            "share/dovi_tool/assets/tests/cmv4_0_2_custom_displays.xml",
+            "share/dovi_tool/assets/tests/cmv4_0_2_custom_displays_xml_rpu.bin",
+            "share/dovi_tool/assets/tests/cmv4_0_2_xml_rpu.bin",
+            "share/dovi_tool/assets/tests/cmv4_0_2_xml_with_l5_rpu.bin",
+            "share/dovi_tool/assets/tests/cmv4_2_510_xml_rpu.bin",
+            "share/dovi_tool/assets/tests/cmv4_2_xml_510.xml",
+            "share/dovi_tool/assets/tests/data_before_crc32.bin",
+            "share/dovi_tool/assets/tests/empty_dmv1_blocks.bin",
+            "share/dovi_tool/assets/tests/eof_rpu.bin",
+            "share/dovi_tool/assets/tests/fel_orig.bin",
+            "share/dovi_tool/assets/tests/fel_rpu.bin",
+            "share/dovi_tool/assets/tests/fel_to_81.bin",
+            "share/dovi_tool/assets/tests/fel_to_mel.bin",
+            "share/dovi_tool/assets/tests/fix_se_write.bin",
+            "share/dovi_tool/assets/tests/hdr10plus_metadata.json",
+            "share/dovi_tool/assets/tests/level253-ext-metadata.bin",
+            "share/dovi_tool/assets/tests/level6_decimals.xml",
+            "share/dovi_tool/assets/tests/mel_orig.bin",
+            "share/dovi_tool/assets/tests/mel_rpu.bin",
+            "share/dovi_tool/assets/tests/mel_to_81.bin",
+            "share/dovi_tool/assets/tests/mel_to_mel.bin",
+            "share/dovi_tool/assets/tests/mel_variable_l8_length13.bin",
+            "share/dovi_tool/assets/tests/p8_001_end_crc32.bin",
+            "share/dovi_tool/assets/tests/poly_coef_int_logic.bin",
+            "share/dovi_tool/assets/tests/profile20_apple.bin",
+            "share/dovi_tool/assets/tests/profile4.bin",
+            "share/dovi_tool/assets/tests/profile5-02.bin",
+            "share/dovi_tool/assets/tests/profile5.bin",
+            "share/dovi_tool/assets/tests/profile8.bin",
+            "share/dovi_tool/assets/tests/profile84.bin",
+            "share/dovi_tool/assets/tests/profile8_from_profile5-02.bin",
+            "share/dovi_tool/assets/tests/source_p5_to_p8_001_end_crc32.bin",
+            "share/dovi_tool/assets/tests/source_rpu_replaced_fel_orig.bin",
+            "share/dovi_tool/assets/tests/st2094_10_level3.bin",
+            "share/dovi_tool/assets/tests/trailing_bytes_rpu.bin",
+            "share/dovi_tool/assets/tests/unordered_l8_blocks.bin",
+            "share/dovi_tool/examples/capi_rpu_file.c",
+            "share/dovi_tool/examples/capi_single_rpu.c",
+            "share/dovi_tool/examples/helpers.h",
+            "share/dovi_tool/examples/simple_edit.cpp"
+          ],
+          "installed_size": 15209010
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,447 @@
+{
+  "appstream": {
+    "formula": {
+      "name": "appstream",
+      "pkg_version": "1.2.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/appstream.rb",
+      "tap_git_path": "Formula/a/appstream.rb",
+      "tap_git_revision": "a8bb3cd4f371652015257defa9a17cb42e7bac90",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Tools and libraries to work with AppStream metadata",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://www.freedesktop.org/wiki/Distributions/AppStream/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-14T18:11:46Z",
+      "tags": {
+        "sequoia": {
+          "filename": "appstream-1.2.0.sequoia.bottle.tar.gz",
+          "local_filename": "appstream--1.2.0.sequoia.bottle.tar.gz",
+          "sha256": "671752519b68dd18ab2efc008fec18f12c3cdc6902e21d354a18e345f2e9dc76",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/pkgconfig/appstream.pc",
+              "share/installed-tests/appstream/metainfo-validate.test"
+            ],
+            "linkage_files": [
+              "bin/appstreamcli",
+              "lib/libappstream.5.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/appstreamcli",
+              "lib/libappstream.5.dylib"
+            ],
+            "source_modified_time": 1787964928,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.88.3",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2.88.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libfyaml",
+                "version": "0.9.6",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.9.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxmlb",
+                "version": "0.3.29",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.3.29",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/appstreamcli",
+              "string": "/usr/local/Cellar/appstream/1.2.0/share/locale",
+              "offset": 51009
+            },
+            {
+              "path": "lib/libappstream.5.dylib",
+              "string": "/usr/local/Cellar/appstream/1.2.0/share/appstream/appstream.conf",
+              "offset": 346176
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.48.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "089df9911d09192beee2b9e49201bf1906d6e414bba1d4185982c5ac9d695feb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6b958311e9568372a79c5dafcd91e16d2deb19a079b69c6861307ac27644b534"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-appstream"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-appstream"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-appstream"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-appstream"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-appstream"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-appstream-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/appstreamcli"
+          ],
+          "all_files": [
+            ".brew/appstream.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "bin/appstreamcli",
+            "include/appstream/appstream.h",
+            "include/appstream/as-agreement-section.h",
+            "include/appstream/as-agreement.h",
+            "include/appstream/as-artifact.h",
+            "include/appstream/as-branding.h",
+            "include/appstream/as-bundle.h",
+            "include/appstream/as-category-gi.h",
+            "include/appstream/as-category.h",
+            "include/appstream/as-checksum.h",
+            "include/appstream/as-component-box.h",
+            "include/appstream/as-component.h",
+            "include/appstream/as-content-rating.h",
+            "include/appstream/as-context.h",
+            "include/appstream/as-developer.h",
+            "include/appstream/as-enum-types.h",
+            "include/appstream/as-icon.h",
+            "include/appstream/as-image.h",
+            "include/appstream/as-issue.h",
+            "include/appstream/as-launchable.h",
+            "include/appstream/as-macros.h",
+            "include/appstream/as-metadata.h",
+            "include/appstream/as-pool.h",
+            "include/appstream/as-provided.h",
+            "include/appstream/as-reference.h",
+            "include/appstream/as-relation-check-result.h",
+            "include/appstream/as-relation.h",
+            "include/appstream/as-release-list.h",
+            "include/appstream/as-release.h",
+            "include/appstream/as-review.h",
+            "include/appstream/as-reviews-client.h",
+            "include/appstream/as-screenshot.h",
+            "include/appstream/as-spdx.h",
+            "include/appstream/as-suggested.h",
+            "include/appstream/as-system-info.h",
+            "include/appstream/as-translation.h",
+            "include/appstream/as-utils.h",
+            "include/appstream/as-validator-issue.h",
+            "include/appstream/as-validator.h",
+            "include/appstream/as-vercmp.h",
+            "include/appstream/as-version.h",
+            "include/appstream/as-video.h",
+            "lib/girepository-1.0/AppStream-1.0.typelib",
+            "lib/libappstream.5.dylib",
+            "lib/libappstream.dylib",
+            "lib/pkgconfig/appstream.pc",
+            "sbom.spdx.json",
+            "share/appstream/appstream.conf",
+            "share/gettext/its/metainfo.its",
+            "share/gettext/its/metainfo.loc",
+            "share/gir-1.0/AppStream-1.0.gir",
+            "share/installed-tests/appstream/metainfo-validate.test",
+            "share/locale/ain/LC_MESSAGES/appstream.mo",
+            "share/locale/ar/LC_MESSAGES/appstream.mo",
+            "share/locale/bg/LC_MESSAGES/appstream.mo",
+            "share/locale/bn/LC_MESSAGES/appstream.mo",
+            "share/locale/bn_BD/LC_MESSAGES/appstream.mo",
+            "share/locale/ca/LC_MESSAGES/appstream.mo",
+            "share/locale/ckb/LC_MESSAGES/appstream.mo",
+            "share/locale/cs/LC_MESSAGES/appstream.mo",
+            "share/locale/da/LC_MESSAGES/appstream.mo",
+            "share/locale/de/LC_MESSAGES/appstream.mo",
+            "share/locale/en_GB/LC_MESSAGES/appstream.mo",
+            "share/locale/eo/LC_MESSAGES/appstream.mo",
+            "share/locale/es/LC_MESSAGES/appstream.mo",
+            "share/locale/et/LC_MESSAGES/appstream.mo",
+            "share/locale/eu/LC_MESSAGES/appstream.mo",
+            "share/locale/fi/LC_MESSAGES/appstream.mo",
+            "share/locale/fr/LC_MESSAGES/appstream.mo",
+            "share/locale/gd/LC_MESSAGES/appstream.mo",
+            "share/locale/gl/LC_MESSAGES/appstream.mo",
+            "share/locale/he/LC_MESSAGES/appstream.mo",
+            "share/locale/hi/LC_MESSAGES/appstream.mo",
+            "share/locale/hr/LC_MESSAGES/appstream.mo",
+            "share/locale/hu/LC_MESSAGES/appstream.mo",
+            "share/locale/ia/LC_MESSAGES/appstream.mo",
+            "share/locale/id/LC_MESSAGES/appstream.mo",
+            "share/locale/it/LC_MESSAGES/appstream.mo",
+            "share/locale/ja/LC_MESSAGES/appstream.mo",
+            "share/locale/ka/LC_MESSAGES/appstream.mo",
+            "share/locale/kk/LC_MESSAGES/appstream.mo",
+            "share/locale/ko/LC_MESSAGES/appstream.mo",
+            "share/locale/kw/LC_MESSAGES/appstream.mo",
+            "share/locale/lt/LC_MESSAGES/appstream.mo",
+            "share/locale/nb/LC_MESSAGES/appstream.mo",
+            "share/locale/nl/LC_MESSAGES/appstream.mo",
+            "share/locale/oc/LC_MESSAGES/appstream.mo",
+            "share/locale/pl/LC_MESSAGES/appstream.mo",
+            "share/locale/pt/LC_MESSAGES/appstream.mo",
+            "share/locale/pt_BR/LC_MESSAGES/appstream.mo",
+            "share/locale/ro/LC_MESSAGES/appstream.mo",
+            "share/locale/rom/LC_MESSAGES/appstream.mo",
+            "share/locale/ru/LC_MESSAGES/appstream.mo",
+            "share/locale/sk/LC_MESSAGES/appstream.mo",
+            "share/locale/sl/LC_MESSAGES/appstream.mo",
+            "share/locale/sr/LC_MESSAGES/appstream.mo",
+            "share/locale/sr@latin/LC_MESSAGES/appstream.mo",
+            "share/locale/sv/LC_MESSAGES/appstream.mo",
+            "share/locale/ta/LC_MESSAGES/appstream.mo",
+            "share/locale/th/LC_MESSAGES/appstream.mo",
+            "share/locale/tr/LC_MESSAGES/appstream.mo",
+            "share/locale/uk/LC_MESSAGES/appstream.mo",
+            "share/locale/zh_CN/LC_MESSAGES/appstream.mo",
+            "share/locale/zh_TW/LC_MESSAGES/appstream.mo",
+            "share/man/man1/appstreamcli.1",
+            "share/metainfo/org.freedesktop.appstream.cli.metainfo.xml",
+            "share/vala/vapi/appstream.deps",
+            "share/vala/vapi/appstream.vapi"
+          ],
+          "installed_size": 6536841
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,462 @@
+{
+  "mongo-c-driver": {
+    "formula": {
+      "name": "mongo-c-driver",
+      "pkg_version": "2.5.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mongo-c-driver.rb",
+      "tap_git_path": "Formula/m/mongo-c-driver.rb",
+      "tap_git_revision": "b96c013e81808bbe2bccaa831c8769fe165b7ec1",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "C driver for MongoDB",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/mongodb/mongo-c-driver"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T19:36:58Z",
+      "tags": {
+        "sequoia": {
+          "filename": "mongo-c-driver-2.5.3.sequoia.bottle.tar.gz",
+          "local_filename": "mongo-c-driver--2.5.3.sequoia.bottle.tar.gz",
+          "sha256": "633899c34e3617d5ec45bb6659a5485ed56a4efe940c4a4c54a0dacc25956981",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "share/mongo-c-driver/2.5.3/uninstall.sh",
+              "lib/cmake/mongoc-2.5.3/mongoc-targets.cmake",
+              "lib/pkgconfig/bson2-static.pc",
+              "lib/pkgconfig/bson2.pc",
+              "lib/pkgconfig/mongoc2-static.pc",
+              "lib/pkgconfig/mongoc2.pc"
+            ],
+            "linkage_files": [
+              "lib/libbson2.2.5.3.dylib",
+              "lib/libmongoc2.2.5.3.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789043371,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mongo-c-driver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mongo-c-driver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mongo-c-driver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mongo-c-driver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mongo-c-driver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-mongo-c-driver-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/mongo-c-driver.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.rst",
+            "include/bson-2.5.3/bson/bson-bcon.h",
+            "include/bson-2.5.3/bson/bson-clock.h",
+            "include/bson-2.5.3/bson/bson-context.h",
+            "include/bson-2.5.3/bson/bson-decimal128.h",
+            "include/bson-2.5.3/bson/bson-endian.h",
+            "include/bson-2.5.3/bson/bson-iter.h",
+            "include/bson-2.5.3/bson/bson-json.h",
+            "include/bson-2.5.3/bson/bson-keys.h",
+            "include/bson-2.5.3/bson/bson-oid.h",
+            "include/bson-2.5.3/bson/bson-prelude.h",
+            "include/bson-2.5.3/bson/bson-reader.h",
+            "include/bson-2.5.3/bson/bson-string.h",
+            "include/bson-2.5.3/bson/bson-types.h",
+            "include/bson-2.5.3/bson/bson-utf8.h",
+            "include/bson-2.5.3/bson/bson-value.h",
+            "include/bson-2.5.3/bson/bson-vector.h",
+            "include/bson-2.5.3/bson/bson-version-functions.h",
+            "include/bson-2.5.3/bson/bson-writer.h",
+            "include/bson-2.5.3/bson/bson.h",
+            "include/bson-2.5.3/bson/bson_t.h",
+            "include/bson-2.5.3/bson/compat.h",
+            "include/bson-2.5.3/bson/config.h",
+            "include/bson-2.5.3/bson/error.h",
+            "include/bson-2.5.3/bson/macros.h",
+            "include/bson-2.5.3/bson/memory.h",
+            "include/bson-2.5.3/bson/version.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-apm.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-bulk-operation.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-bulkwrite.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-change-stream.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-client-pool.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-client-session.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-client-side-encryption.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-client.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-collection.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-config.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-cursor.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-database.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-error.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-find-and-modify.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-flags.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-gridfs-bucket.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-gridfs-file-list.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-gridfs-file-page.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-gridfs-file.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-gridfs.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-handshake.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-host-list.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-init.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-iovec.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-log.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-macros.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-oidc-callback.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-opcode.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-optional.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-prelude.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-rand.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-read-concern.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-read-prefs.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-server-api.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-server-description.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-sleep.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-socket.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-ssl.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-stream-buffered.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-stream-file.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-stream-gridfs.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-stream-socket.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-stream-tls-openssl.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-stream-tls.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-stream.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-structured-log.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-topology-description.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-uri.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-version-functions.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-version.h",
+            "include/mongoc-2.5.3/mongoc/mongoc-write-concern.h",
+            "include/mongoc-2.5.3/mongoc/mongoc.h",
+            "lib/cmake/bson-2.5.3/00-mongo-platform-targets.cmake",
+            "lib/cmake/bson-2.5.3/bsonConfig.cmake",
+            "lib/cmake/bson-2.5.3/bsonConfigVersion.cmake",
+            "lib/cmake/bson-2.5.3/bson_shared-targets-release.cmake",
+            "lib/cmake/bson-2.5.3/bson_shared-targets.cmake",
+            "lib/cmake/bson-2.5.3/bson_static-targets-release.cmake",
+            "lib/cmake/bson-2.5.3/bson_static-targets.cmake",
+            "lib/cmake/mongoc-2.5.3/3rdParty/FindSASL2.cmake",
+            "lib/cmake/mongoc-2.5.3/mongoc-targets-release.cmake",
+            "lib/cmake/mongoc-2.5.3/mongoc-targets.cmake",
+            "lib/cmake/mongoc-2.5.3/mongocConfig.cmake",
+            "lib/cmake/mongoc-2.5.3/mongocConfigVersion.cmake",
+            "lib/libbson2.2.5.3.dylib",
+            "lib/libbson2.2.dylib",
+            "lib/libbson2.a",
+            "lib/libbson2.dylib",
+            "lib/libmongoc2.2.5.3.dylib",
+            "lib/libmongoc2.2.dylib",
+            "lib/libmongoc2.a",
+            "lib/libmongoc2.dylib",
+            "lib/pkgconfig/bson2-static.pc",
+            "lib/pkgconfig/bson2.pc",
+            "lib/pkgconfig/mongoc2-static.pc",
+            "lib/pkgconfig/mongoc2.pc",
+            "sbom.spdx.json",
+            "share/mongo-c-driver/2.5.3/COPYING",
+            "share/mongo-c-driver/2.5.3/NEWS",
+            "share/mongo-c-driver/2.5.3/README.rst",
+            "share/mongo-c-driver/2.5.3/THIRD_PARTY_NOTICES",
+            "share/mongo-c-driver/2.5.3/uninstall.sh",
+            "share/mongo-c-driver/libbson/examples/bcon-col-view.c",
+            "share/mongo-c-driver/libbson/examples/bcon-speed.c",
+            "share/mongo-c-driver/libbson/examples/bson-check-depth.c",
+            "share/mongo-c-driver/libbson/examples/bson-metrics.c",
+            "share/mongo-c-driver/libbson/examples/bson-streaming-reader.c",
+            "share/mongo-c-driver/libbson/examples/bson-to-json.c",
+            "share/mongo-c-driver/libbson/examples/bson-validate.c",
+            "share/mongo-c-driver/libbson/examples/cmake/find_package/CMakeLists.txt",
+            "share/mongo-c-driver/libbson/examples/cmake/find_package_static/CMakeLists.txt",
+            "share/mongo-c-driver/libbson/examples/compile-with-pkg-config-static.sh",
+            "share/mongo-c-driver/libbson/examples/compile-with-pkg-config.sh",
+            "share/mongo-c-driver/libbson/examples/creating.c",
+            "share/mongo-c-driver/libbson/examples/extended-json.c",
+            "share/mongo-c-driver/libbson/examples/hello_bson.c",
+            "share/mongo-c-driver/libbson/examples/json-to-bson.c",
+            "share/mongo-c-driver/libmongoc/examples/aggregation/aggregation1.c",
+            "share/mongo-c-driver/libmongoc/examples/basic_aggregation/basic-aggregation.c",
+            "share/mongo-c-driver/libmongoc/examples/basic_aggregation/constants.c",
+            "share/mongo-c-driver/libmongoc/examples/basic_aggregation/distinct.c",
+            "share/mongo-c-driver/libmongoc/examples/basic_aggregation/map-reduce-advanced.c",
+            "share/mongo-c-driver/libmongoc/examples/basic_aggregation/map-reduce-basic.c",
+            "share/mongo-c-driver/libmongoc/examples/bulk/bulk-collation.c",
+            "share/mongo-c-driver/libmongoc/examples/bulk/bulk1.c",
+            "share/mongo-c-driver/libmongoc/examples/bulk/bulk2.c",
+            "share/mongo-c-driver/libmongoc/examples/bulk/bulk3.c",
+            "share/mongo-c-driver/libmongoc/examples/bulk/bulk4.c",
+            "share/mongo-c-driver/libmongoc/examples/bulk/bulk5.c",
+            "share/mongo-c-driver/libmongoc/examples/bulk/bulk6.c",
+            "share/mongo-c-driver/libmongoc/examples/client-side-encryption-auto-decryption.c",
+            "share/mongo-c-driver/libmongoc/examples/client-side-encryption-doc-snippets.c",
+            "share/mongo-c-driver/libmongoc/examples/client-side-encryption-explicit.c",
+            "share/mongo-c-driver/libmongoc/examples/client-side-encryption-schema-map.c",
+            "share/mongo-c-driver/libmongoc/examples/client-side-encryption-server-schema.c",
+            "share/mongo-c-driver/libmongoc/examples/cmake/find_package/CMakeLists.txt",
+            "share/mongo-c-driver/libmongoc/examples/cmake/find_package_static/CMakeLists.txt",
+            "share/mongo-c-driver/libmongoc/examples/cmake/vcpkg/CMakeLists.txt",
+            "share/mongo-c-driver/libmongoc/examples/cmake/vcpkg/Makefile",
+            "share/mongo-c-driver/libmongoc/examples/cmake/vcpkg/app.c",
+            "share/mongo-c-driver/libmongoc/examples/common_operations/common-operations.c",
+            "share/mongo-c-driver/libmongoc/examples/common_operations/explain.c",
+            "share/mongo-c-driver/libmongoc/examples/compile-with-pkg-config-static.sh",
+            "share/mongo-c-driver/libmongoc/examples/compile-with-pkg-config.sh",
+            "share/mongo-c-driver/libmongoc/examples/doc-common-insert.c",
+            "share/mongo-c-driver/libmongoc/examples/example-bulkwrite.c",
+            "share/mongo-c-driver/libmongoc/examples/example-client.c",
+            "share/mongo-c-driver/libmongoc/examples/example-collection-command.c",
+            "share/mongo-c-driver/libmongoc/examples/example-collection-watch.c",
+            "share/mongo-c-driver/libmongoc/examples/example-command-monitoring.c",
+            "share/mongo-c-driver/libmongoc/examples/example-command-with-opts.c",
+            "share/mongo-c-driver/libmongoc/examples/example-gridfs-bucket.c",
+            "share/mongo-c-driver/libmongoc/examples/example-gridfs.c",
+            "share/mongo-c-driver/libmongoc/examples/example-manage-collection-indexes.c",
+            "share/mongo-c-driver/libmongoc/examples/example-manage-search-indexes.c",
+            "share/mongo-c-driver/libmongoc/examples/example-pool.c",
+            "share/mongo-c-driver/libmongoc/examples/example-resume.c",
+            "share/mongo-c-driver/libmongoc/examples/example-scram.c",
+            "share/mongo-c-driver/libmongoc/examples/example-sdam-monitoring.c",
+            "share/mongo-c-driver/libmongoc/examples/example-session.c",
+            "share/mongo-c-driver/libmongoc/examples/example-start-at-optime.c",
+            "share/mongo-c-driver/libmongoc/examples/example-structured-log.c",
+            "share/mongo-c-driver/libmongoc/examples/example-transaction.c",
+            "share/mongo-c-driver/libmongoc/examples/example-update.c",
+            "share/mongo-c-driver/libmongoc/examples/example-with-transaction-cb.c",
+            "share/mongo-c-driver/libmongoc/examples/find-and-modify.c",
+            "share/mongo-c-driver/libmongoc/examples/find_and_modify_with_opts/fam.c",
+            "share/mongo-c-driver/libmongoc/examples/hello_mongoc.c",
+            "share/mongo-c-driver/libmongoc/examples/mongoc-dump.c",
+            "share/mongo-c-driver/libmongoc/examples/mongoc-ping.c",
+            "share/mongo-c-driver/libmongoc/examples/mongoc-tail.c",
+            "share/mongo-c-driver/libmongoc/examples/parse_handshake_cfg.py",
+            "share/mongo-c-driver/libmongoc/examples/tutorial/appending.c",
+            "share/mongo-c-driver/libmongoc/examples/tutorial/executing.c"
+          ],
+          "installed_size": 5306957
+        }
+      }
+    }
+  }
+}

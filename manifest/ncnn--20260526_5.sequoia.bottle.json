@@ -1,0 +1,324 @@
+{
+  "ncnn": {
+    "formula": {
+      "name": "ncnn",
+      "pkg_version": "20260526_5",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/n/ncnn.rb",
+      "tap_git_path": "Formula/n/ncnn.rb",
+      "tap_git_revision": "b96c013e81808bbe2bccaa831c8769fe165b7ec1",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "High-performance neural network inference framework",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/Tencent/ncnn"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-14T19:48:46Z",
+      "tags": {
+        "sequoia": {
+          "filename": "ncnn-20260526_5.sequoia.bottle.tar.gz",
+          "local_filename": "ncnn--20260526_5.sequoia.bottle.tar.gz",
+          "sha256": "e155ba7002309d4173748cac9c6af478a0c0bcc980d12d427a6226563a4cb906",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/cmake/ncnn/ncnn.cmake",
+              "lib/cmake/ncnn/ncnnConfig.cmake"
+            ],
+            "linkage_files": [
+              "bin/caffe2ncnn",
+              "bin/ncnn2int8",
+              "bin/ncnn2mem",
+              "bin/ncnn2table",
+              "bin/ncnnoptimize",
+              "lib/libncnn.1.0.26.05.26.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1779795027,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "spirv-headers",
+                "version": "1.4.357.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.357.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "spirv-tools",
+                "version": "1.4.357.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.357.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glslang",
+                "version": "16.6.0",
+                "revision": 0,
+                "pkg_version": "16.6.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "protobuf",
+                "version": "36.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "36.1",
+                "declared_directly": true,
+                "compatibility_version": 6
+              },
+              {
+                "full_name": "libomp",
+                "version": "23.1.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "molten-vk",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-spirv-headers-1.4.357.0",
+              "SPDXRef-Package-SPDXRef-spirv-tools-1.4.357.0",
+              "SPDXRef-Package-SPDXRef-protobuf-36.1",
+              "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-spirv-headers-1.4.357.0",
+                "name": "spirv-headers",
+                "versionInfo": "1.4.357.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/spirv-headers/blobs/sha256:eac59c62ed2b1ed63d112a6574dc0caa15530c08c2a6ad44429d08bfc51ec4ba",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "eac59c62ed2b1ed63d112a6574dc0caa15530c08c2a6ad44429d08bfc51ec4ba"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/spirv-headers@1.4.357.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-spirv-tools-1.4.357.0",
+                "name": "spirv-tools",
+                "versionInfo": "1.4.357.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/spirv-tools/blobs/sha256:1b24b6eb9d0a13ffe266f4e690b33abee1d83eb649636b7ed180fba023d3af8f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1b24b6eb9d0a13ffe266f4e690b33abee1d83eb649636b7ed180fba023d3af8f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/spirv-tools@1.4.357.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "name": "protobuf",
+                "versionInfo": "36.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "13dee552679936df9044ceadddb97cf54bd3ee5a26ad6b51b502ebae8b91818b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf@36.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "name": "libomp",
+                "versionInfo": "23.1.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libomp-23.1.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f9006339f8009a14348931dfb50532f9b6962968266db7a3108178588bf8b703"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libomp@23.1.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-spirv-headers-1.4.357.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ncnn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-spirv-tools-1.4.357.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ncnn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ncnn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ncnn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-ncnn-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/caffe2ncnn",
+            "bin/ncnn2table",
+            "bin/ncnn2mem",
+            "bin/ncnnoptimize",
+            "bin/mxnet2ncnn",
+            "bin/ncnnmerge",
+            "bin/ncnn2int8",
+            "bin/darknet2ncnn"
+          ],
+          "all_files": [
+            ".brew/ncnn.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "README.md",
+            "bin/caffe2ncnn",
+            "bin/darknet2ncnn",
+            "bin/mxnet2ncnn",
+            "bin/ncnn2int8",
+            "bin/ncnn2mem",
+            "bin/ncnn2table",
+            "bin/ncnnmerge",
+            "bin/ncnnoptimize",
+            "include/ncnn/allocator.h",
+            "include/ncnn/benchmark.h",
+            "include/ncnn/blob.h",
+            "include/ncnn/c_api.h",
+            "include/ncnn/command.h",
+            "include/ncnn/cpu.h",
+            "include/ncnn/datareader.h",
+            "include/ncnn/expression.h",
+            "include/ncnn/gpu.h",
+            "include/ncnn/layer.h",
+            "include/ncnn/layer_shader_type.h",
+            "include/ncnn/layer_shader_type_enum.h",
+            "include/ncnn/layer_type.h",
+            "include/ncnn/layer_type_enum.h",
+            "include/ncnn/mat.h",
+            "include/ncnn/modelbin.h",
+            "include/ncnn/ncnn_export.h",
+            "include/ncnn/net.h",
+            "include/ncnn/option.h",
+            "include/ncnn/paramdict.h",
+            "include/ncnn/pipeline.h",
+            "include/ncnn/pipelinecache.h",
+            "include/ncnn/platform.h",
+            "include/ncnn/simplemath.h",
+            "include/ncnn/simpleocv.h",
+            "include/ncnn/simpleomp.h",
+            "include/ncnn/simplestl.h",
+            "include/ncnn/simplevk.h",
+            "include/ncnn/vulkan_header_fix.h",
+            "lib/cmake/ncnn/ncnn-release.cmake",
+            "lib/cmake/ncnn/ncnn.cmake",
+            "lib/cmake/ncnn/ncnnConfig.cmake",
+            "lib/cmake/ncnn/ncnnConfigVersion.cmake",
+            "lib/libncnn.1.0.26.05.26.dylib",
+            "lib/libncnn.1.dylib",
+            "lib/libncnn.dylib",
+            "lib/pkgconfig/ncnn.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 12269222
+        }
+      }
+    }
+  }
+}
