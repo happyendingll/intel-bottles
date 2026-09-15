@@ -1,0 +1,147 @@
+{
+  "sqlcipher": {
+    "formula": {
+      "name": "sqlcipher",
+      "pkg_version": "4.19.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sqlcipher.rb",
+      "tap_git_path": "Formula/s/sqlcipher.rb",
+      "tap_git_revision": "94ea6174db6d0fba5fbdbf82315ca7ec63ba3149",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "SQLite extension providing 256-bit AES encryption",
+      "license": "BSD-3-Clause AND blessing",
+      "homepage": "https://www.zetetic.net/sqlcipher/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-15T03:26:35Z",
+      "tags": {
+        "sequoia": {
+          "filename": "sqlcipher-4.19.0.sequoia.bottle.tar.gz",
+          "local_filename": "sqlcipher--4.19.0.sequoia.bottle.tar.gz",
+          "sha256": "264c834dd39329f8e5f281a283612e613375ace5e10eb8f8d8ef29ae4d926169",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/pkgconfig/sqlcipher.pc"
+            ],
+            "linkage_files": [
+              "bin/sqlcipher",
+              "lib/libsqlcipher.3.53.4.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788705527,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sqlcipher"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-sqlcipher-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/sqlcipher"
+          ],
+          "all_files": [
+            ".brew/sqlcipher.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "LICENSE.txt",
+            "README.md",
+            "bin/sqlcipher",
+            "include/sqlcipher/sqlite3.h",
+            "include/sqlcipher/sqlite3ext.h",
+            "lib/libsqlcipher.0.dylib",
+            "lib/libsqlcipher.3.53.4.dylib",
+            "lib/libsqlcipher.a",
+            "lib/libsqlcipher.dylib",
+            "lib/pkgconfig/sqlcipher.pc",
+            "sbom.spdx.json",
+            "share/man/man1/sqlcipher.1"
+          ],
+          "installed_size": 5138187
+        }
+      }
+    }
+  }
+}

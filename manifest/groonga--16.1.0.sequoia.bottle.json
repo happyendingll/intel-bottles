@@ -1,0 +1,473 @@
+{
+  "groonga": {
+    "formula": {
+      "name": "groonga",
+      "pkg_version": "16.1.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/groonga.rb",
+      "tap_git_path": "Formula/g/groonga.rb",
+      "tap_git_revision": "94ea6174db6d0fba5fbdbf82315ca7ec63ba3149",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Fulltext search engine and column store",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://groonga.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-15T01:59:03Z",
+      "tags": {
+        "sequoia": {
+          "filename": "groonga-16.1.0.sequoia.bottle.tar.gz",
+          "local_filename": "groonga--16.1.0.sequoia.bottle.tar.gz",
+          "sha256": "6e9fb5669c5868a5c491f1733f85f7260a89d30d649a992ed56572f43c9b3b3b",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/cmake/Groonga/GroongaConfig.cmake",
+              "lib/cmake/Groonga/GroongaTargets.cmake",
+              "lib/pkgconfig/groonga.pc"
+            ],
+            "linkage_files": [
+              "bin/groonga",
+              "bin/groonga-suggest-create-dataset",
+              "lib/groonga/plugins/functions/binary.so",
+              "lib/groonga/plugins/functions/index_column.so",
+              "lib/groonga/plugins/functions/math.so",
+              "lib/groonga/plugins/functions/number.so",
+              "lib/groonga/plugins/functions/string.so",
+              "lib/groonga/plugins/functions/time.so",
+              "lib/groonga/plugins/functions/vector.so",
+              "lib/groonga/plugins/normalizers/mysql.so",
+              "lib/groonga/plugins/query_expanders/tsv.so",
+              "lib/groonga/plugins/suggest/suggest.so",
+              "lib/groonga/plugins/token_filters/stop_word.so",
+              "lib/groonga/plugins/tokenizers/mecab.so",
+              "lib/libgroonga.0.0.0.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/groonga",
+              "lib/libgroonga.0.0.0.dylib"
+            ],
+            "source_modified_time": 1787928658,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "mecab",
+                "version": "0.996",
+                "revision": 0,
+                "bottle_rebuild": 6,
+                "pkg_version": "0.996",
+                "declared_directly": true
+              },
+              {
+                "full_name": "mecab-ipadic",
+                "version": "2.7.0-20070801",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2.7.0-20070801",
+                "declared_directly": true
+              },
+              {
+                "full_name": "msgpack",
+                "version": "7.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "7.0.2",
+                "declared_directly": true
+              },
+              {
+                "full_name": "onigmo",
+                "version": "6.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.2.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "simdjson",
+                "version": "4.6.11",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.6.11",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/groonga",
+              "string": "/usr/local/Cellar/groonga/16.1.0/share/groonga/html/admin",
+              "offset": 45660
+            },
+            {
+              "path": "lib/libgroonga.0.0.0.dylib",
+              "string": "/usr/local/Cellar/groonga/16.1.0/lib/groonga/plugins",
+              "offset": 4297926
+            },
+            {
+              "path": "bin/groonga",
+              "string": "/usr/local/etc/groonga/groonga.conf",
+              "offset": 45623
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-simdjson-4.6.11",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-4.6.11",
+                "name": "simdjson",
+                "versionInfo": "4.6.11",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/simdjson-4.6.11.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "14c32ecda8222ea75ecdbbe42be53514ef1be53377bba6fdd606bde0f97e4e41"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/simdjson@4.6.11",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-groonga"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-4.6.11",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-groonga"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-groonga"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-groonga"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-groonga-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/groonga-suggest-create-dataset",
+            "bin/groonga"
+          ],
+          "all_files": [
+            ".bottle/etc/groonga/groonga.conf",
+            ".bottle/etc/groonga/synonyms.tsv",
+            ".brew/groonga.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/groonga",
+            "bin/groonga-suggest-create-dataset",
+            "include/groonga/groonga/accessor.h",
+            "include/groonga/groonga/aggregator.h",
+            "include/groonga/groonga/applier.h",
+            "include/groonga/groonga/array.h",
+            "include/groonga/groonga/arrow.h",
+            "include/groonga/groonga/arrow.hpp",
+            "include/groonga/groonga/build_option.h",
+            "include/groonga/groonga/bulk.hpp",
+            "include/groonga/groonga/cache.h",
+            "include/groonga/groonga/cast.h",
+            "include/groonga/groonga/column.h",
+            "include/groonga/groonga/command.h",
+            "include/groonga/groonga/command_arguments.hpp",
+            "include/groonga/groonga/config.h",
+            "include/groonga/groonga/dat.h",
+            "include/groonga/groonga/db.h",
+            "include/groonga/groonga/distance.h",
+            "include/groonga/groonga/dump.h",
+            "include/groonga/groonga/error.h",
+            "include/groonga/groonga/expr.h",
+            "include/groonga/groonga/extractor.h",
+            "include/groonga/groonga/file_reader.h",
+            "include/groonga/groonga/float.h",
+            "include/groonga/groonga/geo.h",
+            "include/groonga/groonga/groonga.h",
+            "include/groonga/groonga/h3.h",
+            "include/groonga/groonga/hash.h",
+            "include/groonga/groonga/highlighter.h",
+            "include/groonga/groonga/id.h",
+            "include/groonga/groonga/ii.h",
+            "include/groonga/groonga/index_column.h",
+            "include/groonga/groonga/json.h",
+            "include/groonga/groonga/language_model.h",
+            "include/groonga/groonga/memory.h",
+            "include/groonga/groonga/memory_map.h",
+            "include/groonga/groonga/msgpack.h",
+            "include/groonga/groonga/nfkc.h",
+            "include/groonga/groonga/normalizer.h",
+            "include/groonga/groonga/obj.h",
+            "include/groonga/groonga/operator.h",
+            "include/groonga/groonga/option.h",
+            "include/groonga/groonga/output.h",
+            "include/groonga/groonga/output_columns.h",
+            "include/groonga/groonga/pat.h",
+            "include/groonga/groonga/plugin.h",
+            "include/groonga/groonga/portability.h",
+            "include/groonga/groonga/posting.h",
+            "include/groonga/groonga/proc.h",
+            "include/groonga/groonga/progress.h",
+            "include/groonga/groonga/raw_string.h",
+            "include/groonga/groonga/request_canceler.h",
+            "include/groonga/groonga/request_timer.h",
+            "include/groonga/groonga/result_set.h",
+            "include/groonga/groonga/scorer.h",
+            "include/groonga/groonga/selector.h",
+            "include/groonga/groonga/smart_obj.hpp",
+            "include/groonga/groonga/sorter.h",
+            "include/groonga/groonga/string.h",
+            "include/groonga/groonga/table.h",
+            "include/groonga/groonga/table_module.h",
+            "include/groonga/groonga/thread.h",
+            "include/groonga/groonga/time.h",
+            "include/groonga/groonga/token.h",
+            "include/groonga/groonga/token_cursor.h",
+            "include/groonga/groonga/token_filter.h",
+            "include/groonga/groonga/token_metadata.h",
+            "include/groonga/groonga/tokenizer.h",
+            "include/groonga/groonga/tokenizer_query_deprecated.h",
+            "include/groonga/groonga/type.h",
+            "include/groonga/groonga/util.h",
+            "include/groonga/groonga/vector.h",
+            "include/groonga/groonga/version.h",
+            "include/groonga/groonga/wal.h",
+            "include/groonga/groonga/window_function.h",
+            "include/groonga/groonga/window_function_executor.h",
+            "include/groonga/groonga/windows.h",
+            "include/groonga/groonga/windows_event_logger.h",
+            "include/groonga/groonga.h",
+            "include/groonga/groonga.hpp",
+            "lib/cmake/Groonga/FindGroongamsgpackc.cmake",
+            "lib/cmake/Groonga/GroongaConfig.cmake",
+            "lib/cmake/Groonga/GroongaConfigVersion.cmake",
+            "lib/cmake/Groonga/GroongaTargets-release.cmake",
+            "lib/cmake/Groonga/GroongaTargets.cmake",
+            "lib/groonga/plugins/functions/binary.so",
+            "lib/groonga/plugins/functions/index_column.so",
+            "lib/groonga/plugins/functions/math.so",
+            "lib/groonga/plugins/functions/number.so",
+            "lib/groonga/plugins/functions/string.so",
+            "lib/groonga/plugins/functions/time.so",
+            "lib/groonga/plugins/functions/vector.so",
+            "lib/groonga/plugins/normalizers/mysql.so",
+            "lib/groonga/plugins/query_expanders/tsv.so",
+            "lib/groonga/plugins/suggest/suggest.so",
+            "lib/groonga/plugins/token_filters/stop_word.so",
+            "lib/groonga/plugins/tokenizers/mecab.so",
+            "lib/libgroonga.0.0.0.dylib",
+            "lib/libgroonga.0.dylib",
+            "lib/libgroonga.dylib",
+            "lib/pkgconfig/groonga-normalizer-mysql.pc",
+            "lib/pkgconfig/groonga.pc",
+            "sbom.spdx.json",
+            "share/doc/groonga-normalizer-mysql/groonga-normalizer-mysql/README.md",
+            "share/doc/groonga-normalizer-mysql/groonga-normalizer-mysql/lgpl-2.0.txt",
+            "share/groonga/COPYING",
+            "share/groonga/README.md",
+            "share/groonga/html/admin/assets/flot-4.2.1/CHANGELOG.md",
+            "share/groonga/html/admin/assets/flot-4.2.1/LICENSE.txt",
+            "share/groonga/html/admin/assets/flot-4.2.1/README.md",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.canvaswrapper.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.colorhelpers.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.axislabels.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.browser.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.categories.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.composeImages.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.crosshair.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.drawSeries.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.errorbars.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.fillbetween.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.flatdata.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.hover.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.image.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.legend.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.logaxis.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.navigate.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.pie.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.resize.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.saturated.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.selection.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.stack.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.symbol.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.threshold.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.time.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.touch.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.touchNavigate.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.flot.uiConstants.js",
+            "share/groonga/html/admin/assets/flot-4.2.1/source/jquery.js",
+            "share/groonga/html/admin/assets/groonga-admin.css",
+            "share/groonga/html/admin/assets/groonga-admin.ja.js",
+            "share/groonga/html/admin/assets/groonga-admin.js",
+            "share/groonga/html/admin/assets/groonga.png",
+            "share/groonga/html/admin/assets/groonga.svg",
+            "share/groonga/html/admin/assets/jquery-3.5.1.js",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/AUTHORS.txt",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/LICENSE.txt",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/images/ui-icons_444444_256x240.png",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/images/ui-icons_555555_256x240.png",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/images/ui-icons_777620_256x240.png",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/images/ui-icons_777777_256x240.png",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/images/ui-icons_cc0000_256x240.png",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/images/ui-icons_ffffff_256x240.png",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/jquery-ui.css",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/jquery-ui.js",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/jquery-ui.structure.css",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/jquery-ui.theme.css",
+            "share/groonga/html/admin/assets/jquery-ui-1.12.1/package.json",
+            "share/groonga/html/admin/favicon.ico",
+            "share/groonga/html/admin/favicon.png",
+            "share/groonga/html/admin/favicon.svg",
+            "share/groonga/html/admin/index.html",
+            "share/groonga/html/admin/index.ja.html"
+          ],
+          "installed_size": 21649889
+        }
+      }
+    }
+  }
+}
