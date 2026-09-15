@@ -1,0 +1,258 @@
+{
+  "ortp": {
+    "formula": {
+      "name": "ortp",
+      "pkg_version": "5.5.21",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/ortp.rb",
+      "tap_git_path": "Formula/o/ortp.rb",
+      "tap_git_revision": "1a884d5147df986d7754d336a8e7c750468797fa",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Real-time transport protocol (RTP, RFC3550) library",
+      "license": "AGPL-3.0-or-later AND GPL-3.0-or-later",
+      "homepage": "https://linphone.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-15T12:09:21Z",
+      "tags": {
+        "sequoia": {
+          "filename": "ortp-5.5.21.sequoia.bottle.tar.gz",
+          "local_filename": "ortp--5.5.21.sequoia.bottle.tar.gz",
+          "sha256": "1993fcbde6b59798db95fd04299b26d984f170337cd4673391c79f47272b59d2",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/pkgconfig/bctoolbox.pc",
+              "lib/pkgconfig/ortp.pc"
+            ],
+            "linkage_files": [
+              "Frameworks/bctoolbox.framework/Versions/A/bctoolbox",
+              "Frameworks/ortp.framework/Versions/A/ortp"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789135001,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ortp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ortp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-ortp-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/ortp.rb",
+            "CHANGELOG.md",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/charconv.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/compiler.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/crypto.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/crypto.hh",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/defs.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/exception.hh",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/ios_utils.hh",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/list.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/logging.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/map.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/ownership.hh",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/param_string.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/parser.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/port.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/regex.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/utils.hh",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/vconnect.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/vfs.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/vfs_encrypted.hh",
+            "Frameworks/bctoolbox.framework/Versions/A/Headers/vfs_standard.h",
+            "Frameworks/bctoolbox.framework/Versions/A/Resources/Info.plist",
+            "Frameworks/bctoolbox.framework/Versions/A/bctoolbox",
+            "Frameworks/bctoolbox.framework/bctoolbox",
+            "Frameworks/ortp.framework/Versions/A/Headers/event.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/logging.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/nack.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/ortp.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/payloadtype.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/port.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/rtcp.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/rtp.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/rtpprofile.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/rtpsession.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/rtpsignaltable.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/sessionset.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/str_utils.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/telephonyevents.h",
+            "Frameworks/ortp.framework/Versions/A/Headers/utils.h",
+            "Frameworks/ortp.framework/Versions/A/Resources/Info.plist",
+            "Frameworks/ortp.framework/Versions/A/ortp",
+            "Frameworks/ortp.framework/ortp",
+            "INSTALL_RECEIPT.json",
+            "LICENSE-bctoolbox.txt",
+            "LICENSE.txt",
+            "README.md",
+            "include/bctoolbox/charconv.h",
+            "include/bctoolbox/compiler.h",
+            "include/bctoolbox/crypto.h",
+            "include/bctoolbox/crypto.hh",
+            "include/bctoolbox/defs.h",
+            "include/bctoolbox/exception.hh",
+            "include/bctoolbox/ios_utils.hh",
+            "include/bctoolbox/list.h",
+            "include/bctoolbox/logging.h",
+            "include/bctoolbox/map.h",
+            "include/bctoolbox/ownership.hh",
+            "include/bctoolbox/param_string.h",
+            "include/bctoolbox/parser.h",
+            "include/bctoolbox/port.h",
+            "include/bctoolbox/regex.h",
+            "include/bctoolbox/utils.hh",
+            "include/bctoolbox/vconnect.h",
+            "include/bctoolbox/vfs.h",
+            "include/bctoolbox/vfs_encrypted.hh",
+            "include/bctoolbox/vfs_standard.h",
+            "include/ortp/event.h",
+            "include/ortp/logging.h",
+            "include/ortp/nack.h",
+            "include/ortp/ortp.h",
+            "include/ortp/payloadtype.h",
+            "include/ortp/port.h",
+            "include/ortp/rtcp.h",
+            "include/ortp/rtp.h",
+            "include/ortp/rtpprofile.h",
+            "include/ortp/rtpsession.h",
+            "include/ortp/rtpsignaltable.h",
+            "include/ortp/sessionset.h",
+            "include/ortp/str_utils.h",
+            "include/ortp/telephonyevents.h",
+            "include/ortp/utils.h",
+            "lib/pkgconfig/bctoolbox.pc",
+            "lib/pkgconfig/ortp.pc",
+            "sbom.spdx.json",
+            "share/BCToolbox/cmake/BCGitVersion.cmake",
+            "share/BCToolbox/cmake/BCToolboxCMakeUtils.cmake",
+            "share/BCToolbox/cmake/BCToolboxConfig.cmake",
+            "share/BCToolbox/cmake/BCToolboxConfigVersion.cmake",
+            "share/BCToolbox/cmake/BCToolboxTargets-release.cmake",
+            "share/BCToolbox/cmake/BCToolboxTargets.cmake",
+            "share/BCToolbox/cmake/ConfigureSpecfile.cmake",
+            "share/BCToolbox/cmake/MakeArchive.cmake",
+            "share/BCToolbox/cmake/gitversion.h.in",
+            "share/Ortp/cmake/OrtpConfig.cmake",
+            "share/Ortp/cmake/OrtpConfigVersion.cmake",
+            "share/Ortp/cmake/OrtpTargets-release.cmake",
+            "share/Ortp/cmake/OrtpTargets.cmake"
+          ],
+          "installed_size": 1425261
+        }
+      }
+    }
+  }
+}

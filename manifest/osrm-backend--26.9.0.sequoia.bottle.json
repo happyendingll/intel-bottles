@@ -1,0 +1,408 @@
+{
+  "osrm-backend": {
+    "formula": {
+      "name": "osrm-backend",
+      "pkg_version": "26.9.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/osrm-backend.rb",
+      "tap_git_path": "Formula/o/osrm-backend.rb",
+      "tap_git_revision": "1a884d5147df986d7754d336a8e7c750468797fa",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "High performance routing engine",
+      "license": "BSD-2-Clause",
+      "homepage": "https://project-osrm.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-15T12:14:33Z",
+      "tags": {
+        "sequoia": {
+          "filename": "osrm-backend-26.9.0.sequoia.bottle.tar.gz",
+          "local_filename": "osrm-backend--26.9.0.sequoia.bottle.tar.gz",
+          "sha256": "6811987b41106a101cb6d03e64dc7473f77d88cc62db7dd449b6ee2a770489f5",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/pkgconfig/libosrm.pc"
+            ],
+            "linkage_files": [
+              "bin/osrm-components",
+              "bin/osrm-contract",
+              "bin/osrm-customize",
+              "bin/osrm-datastore",
+              "bin/osrm-extract",
+              "bin/osrm-io-benchmark",
+              "bin/osrm-partition",
+              "bin/osrm-routed"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788290370,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "boost",
+                "version": "1.92.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.92.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libb2",
+                "version": "0.98.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.98.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libarchive",
+                "version": "3.8.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.8.9",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lua",
+                "version": "5.5.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.5.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "hwloc",
+                "version": "2.14.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "tbb",
+                "version": "2023.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2023.1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-osrm-backend"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-osrm-backend"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-osrm-backend"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-osrm-backend-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/osrm-datastore",
+            "bin/osrm-partition",
+            "bin/osrm-customize",
+            "bin/osrm-routed",
+            "bin/osrm-extract",
+            "bin/osrm-components",
+            "bin/osrm-contract",
+            "bin/osrm-io-benchmark"
+          ],
+          "all_files": [
+            ".brew/osrm-backend.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.TXT",
+            "README.md",
+            "bin/osrm-components",
+            "bin/osrm-contract",
+            "bin/osrm-customize",
+            "bin/osrm-datastore",
+            "bin/osrm-extract",
+            "bin/osrm-io-benchmark",
+            "bin/osrm-partition",
+            "bin/osrm-routed",
+            "include/osrm/approach.hpp",
+            "include/osrm/bearing.hpp",
+            "include/osrm/contractor/contractor.hpp",
+            "include/osrm/contractor/contractor_config.hpp",
+            "include/osrm/contractor.hpp",
+            "include/osrm/contractor_config.hpp",
+            "include/osrm/coordinate.hpp",
+            "include/osrm/customizer.hpp",
+            "include/osrm/customizer_config.hpp",
+            "include/osrm/datasets.hpp",
+            "include/osrm/engine/api/base_parameters.hpp",
+            "include/osrm/engine/api/base_result.hpp",
+            "include/osrm/engine/api/match_parameters.hpp",
+            "include/osrm/engine/api/nearest_parameters.hpp",
+            "include/osrm/engine/api/route_parameters.hpp",
+            "include/osrm/engine/api/table_parameters.hpp",
+            "include/osrm/engine/api/tile_parameters.hpp",
+            "include/osrm/engine/api/trip_parameters.hpp",
+            "include/osrm/engine/approach.hpp",
+            "include/osrm/engine/bearing.hpp",
+            "include/osrm/engine/engine_config.hpp",
+            "include/osrm/engine/hint.hpp",
+            "include/osrm/engine/phantom_node.hpp",
+            "include/osrm/engine/status.hpp",
+            "include/osrm/engine_config.hpp",
+            "include/osrm/error_codes.hpp",
+            "include/osrm/exception.hpp",
+            "include/osrm/extractor/extractor.hpp",
+            "include/osrm/extractor/extractor_config.hpp",
+            "include/osrm/extractor/io_config.hpp",
+            "include/osrm/extractor/travel_mode.hpp",
+            "include/osrm/extractor.hpp",
+            "include/osrm/extractor_config.hpp",
+            "include/osrm/json_container.hpp",
+            "include/osrm/match_parameters.hpp",
+            "include/osrm/nearest_parameters.hpp",
+            "include/osrm/osrm.hpp",
+            "include/osrm/osrm_fwd.hpp",
+            "include/osrm/partitioner/partitioner.hpp",
+            "include/osrm/partitioner/partitioner_config.hpp",
+            "include/osrm/partitioner.hpp",
+            "include/osrm/partitioner_config.hpp",
+            "include/osrm/route_parameters.hpp",
+            "include/osrm/status.hpp",
+            "include/osrm/storage/io_config.hpp",
+            "include/osrm/storage/storage.hpp",
+            "include/osrm/storage/storage_config.hpp",
+            "include/osrm/storage_config.hpp",
+            "include/osrm/table_parameters.hpp",
+            "include/osrm/tile_parameters.hpp",
+            "include/osrm/trip_parameters.hpp",
+            "include/osrm/util/alias.hpp",
+            "include/osrm/util/bearing.hpp",
+            "include/osrm/util/coordinate.hpp",
+            "include/osrm/util/exception.hpp",
+            "include/osrm/util/json_container.hpp",
+            "include/osrm/util/typedefs.hpp",
+            "lib/libosrm.a",
+            "lib/libosrm_contract.a",
+            "lib/libosrm_customize.a",
+            "lib/libosrm_extract.a",
+            "lib/libosrm_partition.a",
+            "lib/libosrm_store.a",
+            "lib/libosrm_update.a",
+            "lib/pkgconfig/libosrm.pc",
+            "sbom.spdx.json",
+            "share/osrm/data/driving_side.geojson",
+            "share/osrm/data/maxheight.geojson",
+            "share/osrm/profiles/bicycle.lua",
+            "share/osrm/profiles/car.lua",
+            "share/osrm/profiles/debug_example.lua",
+            "share/osrm/profiles/debug_way.lua",
+            "share/osrm/profiles/examples/postgis.lua",
+            "share/osrm/profiles/foot.lua",
+            "share/osrm/profiles/foot_area.lua",
+            "share/osrm/profiles/lib/access.lua",
+            "share/osrm/profiles/lib/destination.lua",
+            "share/osrm/profiles/lib/guidance.lua",
+            "share/osrm/profiles/lib/maxspeed.lua",
+            "share/osrm/profiles/lib/measure.lua",
+            "share/osrm/profiles/lib/obstacles.lua",
+            "share/osrm/profiles/lib/pprint.lua",
+            "share/osrm/profiles/lib/profile_debugger.lua",
+            "share/osrm/profiles/lib/relations.lua",
+            "share/osrm/profiles/lib/sequence.lua",
+            "share/osrm/profiles/lib/set.lua",
+            "share/osrm/profiles/lib/tags.lua",
+            "share/osrm/profiles/lib/traffic_signal.lua",
+            "share/osrm/profiles/lib/utils.lua",
+            "share/osrm/profiles/lib/way_handlers.lua",
+            "share/osrm/profiles/rasterbot.lua",
+            "share/osrm/profiles/rasterbotinterp.lua",
+            "share/osrm/profiles/test.lua",
+            "share/osrm/profiles/testbot.lua",
+            "share/osrm/profiles/turnbot.lua",
+            "share/osrm-backend/profiles/bicycle.lua",
+            "share/osrm-backend/profiles/car.lua",
+            "share/osrm-backend/profiles/debug_example.lua",
+            "share/osrm-backend/profiles/debug_way.lua",
+            "share/osrm-backend/profiles/examples/postgis.lua",
+            "share/osrm-backend/profiles/foot.lua",
+            "share/osrm-backend/profiles/foot_area.lua",
+            "share/osrm-backend/profiles/lib/access.lua",
+            "share/osrm-backend/profiles/lib/destination.lua",
+            "share/osrm-backend/profiles/lib/guidance.lua",
+            "share/osrm-backend/profiles/lib/maxspeed.lua",
+            "share/osrm-backend/profiles/lib/measure.lua",
+            "share/osrm-backend/profiles/lib/obstacles.lua",
+            "share/osrm-backend/profiles/lib/pprint.lua",
+            "share/osrm-backend/profiles/lib/profile_debugger.lua",
+            "share/osrm-backend/profiles/lib/relations.lua",
+            "share/osrm-backend/profiles/lib/sequence.lua",
+            "share/osrm-backend/profiles/lib/set.lua",
+            "share/osrm-backend/profiles/lib/tags.lua",
+            "share/osrm-backend/profiles/lib/traffic_signal.lua",
+            "share/osrm-backend/profiles/lib/utils.lua",
+            "share/osrm-backend/profiles/lib/way_handlers.lua",
+            "share/osrm-backend/profiles/rasterbot.lua",
+            "share/osrm-backend/profiles/rasterbotinterp.lua",
+            "share/osrm-backend/profiles/test.lua",
+            "share/osrm-backend/profiles/testbot.lua",
+            "share/osrm-backend/profiles/turnbot.lua"
+          ],
+          "installed_size": 60962624
+        }
+      }
+    }
+  }
+}

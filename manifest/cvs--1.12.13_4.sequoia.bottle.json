@@ -1,0 +1,179 @@
+{
+  "cvs": {
+    "formula": {
+      "name": "cvs",
+      "pkg_version": "1.12.13_4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cvs.rb",
+      "tap_git_path": "Formula/c/cvs.rb",
+      "tap_git_revision": "1a884d5147df986d7754d336a8e7c750468797fa",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Version control system",
+      "license": "GPL-2.0-or-later AND LGPL-2.0-or-later",
+      "homepage": "https://www.nongnu.org/cvs/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-15T10:25:26Z",
+      "tags": {
+        "sequoia": {
+          "filename": "cvs-1.12.13_4.sequoia.bottle.tar.gz",
+          "local_filename": "cvs--1.12.13_4.sequoia.bottle.tar.gz",
+          "sha256": "ad72e17ad5b27812ee629153ebae3c5c06f4057d72c737bb18df7de2e175d700",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/cvs"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1128347020,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cvs"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-cvs-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/rcs2log",
+            "bin/cvsbug",
+            "bin/cvs"
+          ],
+          "all_files": [
+            ".brew/cvs.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYING.LIB",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "TODO",
+            "bin/cvs",
+            "bin/cvsbug",
+            "bin/rcs2log",
+            "sbom.spdx.json",
+            "share/cvs/contrib/README",
+            "share/cvs/contrib/clmerge",
+            "share/cvs/contrib/cln_hist",
+            "share/cvs/contrib/commit_prep",
+            "share/cvs/contrib/cvs2vendor",
+            "share/cvs/contrib/cvs_acls",
+            "share/cvs/contrib/debug_check_log",
+            "share/cvs/contrib/intro.doc",
+            "share/cvs/contrib/log",
+            "share/cvs/contrib/log_accum",
+            "share/cvs/contrib/mfpipe",
+            "share/cvs/contrib/newcvsroot",
+            "share/cvs/contrib/pvcs2rcs",
+            "share/cvs/contrib/rcs-5.7-commitid.patch",
+            "share/cvs/contrib/rcs-to-cvs",
+            "share/cvs/contrib/rcs2log",
+            "share/cvs/contrib/rcslock",
+            "share/cvs/contrib/sandbox_status",
+            "share/cvs/contrib/sccs2rcs",
+            "share/cvs/contrib/validate_repo",
+            "share/info/cvs.info",
+            "share/info/cvs.info-1",
+            "share/info/cvs.info-2",
+            "share/info/cvsclient.info",
+            "share/man/man1/cvs.1",
+            "share/man/man5/cvs.5",
+            "share/man/man8/cvsbug.8"
+          ],
+          "installed_size": 2164967
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "libtirpc": {
+    "formula": {
+      "name": "libtirpc",
+      "pkg_version": "1.3.8",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libtirpc.rb",
+      "tap_git_path": "Formula/lib/libtirpc.rb",
+      "tap_git_revision": "1a884d5147df986d7754d336a8e7c750468797fa",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Port of Sun's Transport-Independent RPC library to Linux",
+      "license": "BSD-3-Clause",
+      "homepage": "https://sourceforge.net/projects/libtirpc/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-15T11:45:02Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libtirpc-1.3.8.sequoia.bottle.tar.gz",
+          "local_filename": "libtirpc--1.3.8.sequoia.bottle.tar.gz",
+          "sha256": "5923589372060b0df7aab6cba79188cf442573ef5775540a9c06b72ede50dd85",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/pkgconfig/libtirpc.pc"
+            ],
+            "linkage_files": [
+              "lib/libtirpc.3.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789308339,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "krb5",
+                "version": "1.22.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.22.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libtirpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libtirpc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libtirpc-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libtirpc.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "TODO",
+            "etc/bindresvport.blacklist",
+            "etc/netconfig",
+            "include/tirpc/netconfig.h",
+            "include/tirpc/rpc/auth.h",
+            "include/tirpc/rpc/auth_des.h",
+            "include/tirpc/rpc/auth_gss.h",
+            "include/tirpc/rpc/auth_unix.h",
+            "include/tirpc/rpc/clnt.h",
+            "include/tirpc/rpc/clnt_soc.h",
+            "include/tirpc/rpc/clnt_stat.h",
+            "include/tirpc/rpc/des.h",
+            "include/tirpc/rpc/des_crypt.h",
+            "include/tirpc/rpc/key_prot.h",
+            "include/tirpc/rpc/nettype.h",
+            "include/tirpc/rpc/pmap_clnt.h",
+            "include/tirpc/rpc/pmap_prot.h",
+            "include/tirpc/rpc/pmap_rmt.h",
+            "include/tirpc/rpc/raw.h",
+            "include/tirpc/rpc/rpc.h",
+            "include/tirpc/rpc/rpc_com.h",
+            "include/tirpc/rpc/rpc_msg.h",
+            "include/tirpc/rpc/rpcb_clnt.h",
+            "include/tirpc/rpc/rpcb_prot.h",
+            "include/tirpc/rpc/rpcb_prot.x",
+            "include/tirpc/rpc/rpcent.h",
+            "include/tirpc/rpc/rpcsec_gss.h",
+            "include/tirpc/rpc/svc.h",
+            "include/tirpc/rpc/svc_auth.h",
+            "include/tirpc/rpc/svc_auth_gss.h",
+            "include/tirpc/rpc/svc_dg.h",
+            "include/tirpc/rpc/svc_mt.h",
+            "include/tirpc/rpc/svc_soc.h",
+            "include/tirpc/rpc/types.h",
+            "include/tirpc/rpc/xdr.h",
+            "include/tirpc/rpcsvc/crypt.h",
+            "include/tirpc/rpcsvc/crypt.x",
+            "lib/libtirpc.3.dylib",
+            "lib/libtirpc.a",
+            "lib/libtirpc.dylib",
+            "lib/pkgconfig/libtirpc.pc",
+            "sbom.spdx.json",
+            "share/man/man3/bindresvport.3t",
+            "share/man/man3/des_crypt.3t",
+            "share/man/man3/getnetconfig.3t",
+            "share/man/man3/getnetpath.3t",
+            "share/man/man3/getrpcent.3t",
+            "share/man/man3/getrpcport.3t",
+            "share/man/man3/rpc.3t",
+            "share/man/man3/rpc_clnt_auth.3t",
+            "share/man/man3/rpc_clnt_calls.3t",
+            "share/man/man3/rpc_clnt_create.3t",
+            "share/man/man3/rpc_gss_get_error.3t",
+            "share/man/man3/rpc_gss_get_mech_info.3t",
+            "share/man/man3/rpc_gss_get_mechanisms.3t",
+            "share/man/man3/rpc_gss_get_principal_name.3t",
+            "share/man/man3/rpc_gss_get_versions.3t",
+            "share/man/man3/rpc_gss_getcred.3t",
+            "share/man/man3/rpc_gss_is_installed.3t",
+            "share/man/man3/rpc_gss_max_data_length.3t",
+            "share/man/man3/rpc_gss_mech_to_oid.3t",
+            "share/man/man3/rpc_gss_qop_to_num.3t",
+            "share/man/man3/rpc_gss_seccreate.3t",
+            "share/man/man3/rpc_gss_set_callback.3t",
+            "share/man/man3/rpc_gss_set_defaults.3t",
+            "share/man/man3/rpc_gss_set_svc_name.3t",
+            "share/man/man3/rpc_gss_svc_max_data_length.3t",
+            "share/man/man3/rpc_secure.3t",
+            "share/man/man3/rpc_soc.3t",
+            "share/man/man3/rpc_svc_calls.3t",
+            "share/man/man3/rpc_svc_create.3t",
+            "share/man/man3/rpc_svc_err.3t",
+            "share/man/man3/rpc_svc_reg.3t",
+            "share/man/man3/rpc_xdr.3t",
+            "share/man/man3/rpcbind.3t",
+            "share/man/man3/rpcsec_gss.3t",
+            "share/man/man3/rtime.3t",
+            "share/man/man5/netconfig.5"
+          ],
+          "installed_size": 829208
+        }
+      }
+    }
+  }
+}

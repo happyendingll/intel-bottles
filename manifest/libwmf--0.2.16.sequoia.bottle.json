@@ -1,0 +1,248 @@
+{
+  "libwmf": {
+    "formula": {
+      "name": "libwmf",
+      "pkg_version": "0.2.16",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libwmf.rb",
+      "tap_git_path": "Formula/lib/libwmf.rb",
+      "tap_git_revision": "1a884d5147df986d7754d336a8e7c750468797fa",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Library for converting WMF (Window Metafile Format) files",
+      "license": "LGPL-2.1-or-later AND GD",
+      "homepage": "https://github.com/caolanm/libwmf"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-15T11:46:18Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libwmf-0.2.16.sequoia.bottle.tar.gz",
+          "local_filename": "libwmf--0.2.16.sequoia.bottle.tar.gz",
+          "sha256": "f7940bd98530414193af68f7c8cc4986845c6c794399068827184b4c5f35c222",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "bin/libwmf-fontmap",
+              "lib/pkgconfig/libwmf.pc",
+              "share/libwmf/fonts/fontmap"
+            ],
+            "linkage_files": [
+              "bin/wmf2eps",
+              "bin/wmf2fig",
+              "bin/wmf2gd",
+              "bin/wmf2svg",
+              "lib/libwmf-0.2.7.dylib",
+              "lib/libwmflite-0.2.7.dylib"
+            ],
+            "binary_relocation_files": [
+              "lib/libwmf-0.2.7.dylib",
+              "lib/libwmf.a"
+            ],
+            "source_modified_time": 1788538872,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gd",
+                "version": "2.3.3",
+                "revision": 6,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.3_6",
+                "declared_directly": false
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/libwmf-0.2.7.dylib",
+              "string": "/usr/local/Cellar/libwmf/0.2.16/share/libwmf/fonts/fontmap",
+              "offset": 72225
+            },
+            {
+              "path": "lib/libwmf-0.2.7.dylib",
+              "string": "/usr/local/Cellar/libwmf/0.2.16/share/libwmf/fonts",
+              "offset": 74403
+            },
+            {
+              "path": "lib/libwmf.a",
+              "string": "/usr/local/Cellar/libwmf/0.2.16/share/libwmf/fonts/fontmap",
+              "offset": 12465
+            },
+            {
+              "path": "lib/libwmf.a",
+              "string": "/usr/local/Cellar/libwmf/0.2.16/share/libwmf/fonts",
+              "offset": 25926
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ab6e54c4ceaa0b1535994c00b64471b2b5f531b8267ef1ae27f399e3e1c0f587"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libwmf"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libwmf-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/wmf2fig",
+            "bin/wmf2gd",
+            "bin/libwmf-fontmap",
+            "bin/wmf2svg",
+            "bin/wmf2eps",
+            "bin/libwmf-config"
+          ],
+          "all_files": [
+            ".brew/libwmf.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "TODO",
+            "bin/libwmf-config",
+            "bin/libwmf-fontmap",
+            "bin/wmf2eps",
+            "bin/wmf2fig",
+            "bin/wmf2gd",
+            "bin/wmf2svg",
+            "include/libwmf/api.h",
+            "include/libwmf/canvas.h",
+            "include/libwmf/color.h",
+            "include/libwmf/defs.h",
+            "include/libwmf/eps.h",
+            "include/libwmf/fig.h",
+            "include/libwmf/font.h",
+            "include/libwmf/foreign.h",
+            "include/libwmf/fund.h",
+            "include/libwmf/gd.h",
+            "include/libwmf/ipa.h",
+            "include/libwmf/macro.h",
+            "include/libwmf/svg.h",
+            "include/libwmf/types.h",
+            "include/libwmf/x.h",
+            "lib/libwmf-0.2.7.dylib",
+            "lib/libwmf.a",
+            "lib/libwmf.dylib",
+            "lib/libwmflite-0.2.7.dylib",
+            "lib/libwmflite.a",
+            "lib/libwmflite.dylib",
+            "lib/pkgconfig/libwmf.pc",
+            "sbom.spdx.json",
+            "share/libwmf/fonts/NimbusMonoPS-Bold.afm",
+            "share/libwmf/fonts/NimbusMonoPS-Bold.t1",
+            "share/libwmf/fonts/NimbusMonoPS-BoldItalic.afm",
+            "share/libwmf/fonts/NimbusMonoPS-BoldItalic.t1",
+            "share/libwmf/fonts/NimbusMonoPS-Italic.afm",
+            "share/libwmf/fonts/NimbusMonoPS-Italic.t1",
+            "share/libwmf/fonts/NimbusMonoPS-Regular.afm",
+            "share/libwmf/fonts/NimbusMonoPS-Regular.t1",
+            "share/libwmf/fonts/NimbusRoman-Bold.afm",
+            "share/libwmf/fonts/NimbusRoman-Bold.t1",
+            "share/libwmf/fonts/NimbusRoman-BoldItalic.afm",
+            "share/libwmf/fonts/NimbusRoman-BoldItalic.t1",
+            "share/libwmf/fonts/NimbusRoman-Italic.afm",
+            "share/libwmf/fonts/NimbusRoman-Italic.t1",
+            "share/libwmf/fonts/NimbusRoman-Regular.afm",
+            "share/libwmf/fonts/NimbusRoman-Regular.t1",
+            "share/libwmf/fonts/NimbusSans-Bold.afm",
+            "share/libwmf/fonts/NimbusSans-Bold.t1",
+            "share/libwmf/fonts/NimbusSans-BoldItalic.afm",
+            "share/libwmf/fonts/NimbusSans-BoldItalic.t1",
+            "share/libwmf/fonts/NimbusSans-Italic.afm",
+            "share/libwmf/fonts/NimbusSans-Italic.t1",
+            "share/libwmf/fonts/NimbusSans-Regular.afm",
+            "share/libwmf/fonts/NimbusSans-Regular.t1",
+            "share/libwmf/fonts/StandardSymbolsPS.afm",
+            "share/libwmf/fonts/StandardSymbolsPS.t1",
+            "share/libwmf/fonts/fontmap"
+          ],
+          "installed_size": 3443326
+        }
+      }
+    }
+  }
+}

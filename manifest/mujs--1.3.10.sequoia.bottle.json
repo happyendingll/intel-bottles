@@ -1,0 +1,96 @@
+{
+  "mujs": {
+    "formula": {
+      "name": "mujs",
+      "pkg_version": "1.3.10",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mujs.rb",
+      "tap_git_path": "Formula/m/mujs.rb",
+      "tap_git_revision": "1a884d5147df986d7754d336a8e7c750468797fa",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Embeddable Javascript interpreter",
+      "license": "ISC",
+      "homepage": "https://www.mujs.com/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-15T11:55:42Z",
+      "tags": {
+        "sequoia": {
+          "filename": "mujs-1.3.10.sequoia.bottle.tar.gz",
+          "local_filename": "mujs--1.3.10.sequoia.bottle.tar.gz",
+          "sha256": "2dbb8528ef942adf2f57efec599a0fc404df1e3389734be6a58fad2408ef4d04",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "lib/pkgconfig/mujs.pc"
+            ],
+            "linkage_files": [
+              "lib/libmujs.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1786449688,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-mujs-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/mujs",
+            "bin/mujs-pp"
+          ],
+          "all_files": [
+            ".brew/mujs.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/mujs",
+            "bin/mujs-pp",
+            "include/mujs.h",
+            "lib/libmujs.a",
+            "lib/libmujs.dylib",
+            "lib/pkgconfig/mujs.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1115295
+        }
+      }
+    }
+  }
+}

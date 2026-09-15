@@ -1,0 +1,100 @@
+{
+  "shimmy": {
+    "formula": {
+      "name": "shimmy",
+      "pkg_version": "2.6.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/shimmy.rb",
+      "tap_git_path": "Formula/s/shimmy.rb",
+      "tap_git_revision": "1a884d5147df986d7754d336a8e7c750468797fa",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Small local inference server with OpenAI-compatible GGUF endpoints",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/Michael-A-Kuykendall/shimmy"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-15T12:50:21Z",
+      "tags": {
+        "sequoia": {
+          "filename": "shimmy-2.6.4.sequoia.bottle.tar.gz",
+          "local_filename": "shimmy--2.6.4.sequoia.bottle.tar.gz",
+          "sha256": "3bc0fce4e8b2f947e801a95127f0dc15786d4a722e588b277040f92b2538db27",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "sh.brew.shimmy.plist",
+              "sh.brew.shimmy.service"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788129595,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-shimmy-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/create_test_safetensors",
+            "bin/shimmy",
+            "bin/test_real_safetensors",
+            "bin/create_realistic_safetensors"
+          ],
+          "all_files": [
+            ".brew/shimmy.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NOTICE",
+            "README.md",
+            "bin/create_realistic_safetensors",
+            "bin/create_test_safetensors",
+            "bin/shimmy",
+            "bin/test_real_safetensors",
+            "sbom.spdx.json",
+            "sh.brew.shimmy.plist",
+            "sh.brew.shimmy.service"
+          ],
+          "installed_size": 8790209
+        }
+      }
+    }
+  }
+}
