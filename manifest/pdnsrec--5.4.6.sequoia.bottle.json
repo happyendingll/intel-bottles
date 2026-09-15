@@ -1,0 +1,321 @@
+{
+  "pdnsrec": {
+    "formula": {
+      "name": "pdnsrec",
+      "pkg_version": "5.4.6",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pdnsrec.rb",
+      "tap_git_path": "Formula/p/pdnsrec.rb",
+      "tap_git_revision": "9b24807165a97fb4687fac8dac216313f975ac1a",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Non-authoritative/recursing DNS server",
+      "license": "GPL-2.0-only",
+      "homepage": "https://www.powerdns.com/powerdns-recursor"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-15T16:48:13Z",
+      "tags": {
+        "sequoia": {
+          "filename": "pdnsrec-5.4.6.sequoia.bottle.tar.gz",
+          "local_filename": "pdnsrec--5.4.6.sequoia.bottle.tar.gz",
+          "sha256": "9841db0eca064d5b2977733bfb4ed83df8c54478761ac72b465ecc697225430b",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              ".bottle/etc/powerdns/recursor.yml-dist"
+            ],
+            "linkage_files": [
+              "bin/rec_control",
+              "sbin/pdns_recursor"
+            ],
+            "binary_relocation_files": [
+              "sbin/pdns_recursor"
+            ],
+            "source_modified_time": 1788339715,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "boost",
+                "version": "1.92.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.92.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "lua",
+                "version": "5.5.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.5.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "sbin/pdns_recursor",
+              "string": "\" '--sysconfdir=/usr/local/etc/powerdns' '--disable-silent-rules' '--with-boost=/usr/local/opt/boost' '--with-libcrypto=/usr/local/opt/openssl@3' '--with-lua' '--without-net-snmp' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/pdnsrec/5.4.6' '--libdir=/usr/local/Cellar/pdnsrec/5.4.6/lib' 'CC=clang' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@78/lib/pkgconfig:/usr/local/opt/xz/lib/pkgconfig:/usr/local/opt/lz4/lib/pkgconfig:/usr/local/opt/zstd/lib/pkgconfig:/usr/local/opt/lua/lib/pkgconfig:/usr/local/opt/openssl@3/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'\"",
+              "offset": 9653854
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pdnsrec"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pdnsrec"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pdnsrec"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pdnsrec"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pdnsrec"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-pdnsrec-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/rec_control",
+            "sbin/pdns_recursor"
+          ],
+          "all_files": [
+            ".bottle/etc/powerdns/recursor.yml-dist",
+            ".brew/pdnsrec.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NOTICE",
+            "README",
+            "bin/rec_control",
+            "sbin/pdns_recursor",
+            "sbom.spdx.json",
+            "share/man/man1/pdns_recursor.1",
+            "share/man/man1/rec_control.1"
+          ],
+          "installed_size": 26817512
+        }
+      }
+    }
+  }
+}

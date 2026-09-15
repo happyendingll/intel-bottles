@@ -1,0 +1,277 @@
+{
+  "dnsdist": {
+    "formula": {
+      "name": "dnsdist",
+      "pkg_version": "2.1.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dnsdist.rb",
+      "tap_git_path": "Formula/d/dnsdist.rb",
+      "tap_git_revision": "9b24807165a97fb4687fac8dac216313f975ac1a",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Highly DNS-, DoS- and abuse-aware loadbalancer",
+      "license": "GPL-2.0-only",
+      "homepage": "https://www.dnsdist.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-15T16:10:53Z",
+      "tags": {
+        "sequoia": {
+          "filename": "dnsdist-2.1.2.sequoia.bottle.tar.gz",
+          "local_filename": "dnsdist--2.1.2.sequoia.bottle.tar.gz",
+          "sha256": "50323d6492136e57efec51cd459e7bc16d698f0e765d14201c5753e8f512266f",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "README"
+            ],
+            "linkage_files": [
+              "bin/dnsdist"
+            ],
+            "binary_relocation_files": [
+              "bin/dnsdist"
+            ],
+            "source_modified_time": 1788787008,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libevent",
+                "version": "2.1.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fstrm",
+                "version": "0.6.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.6.1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libnghttp2",
+                "version": "1.70.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.70.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libsodium",
+                "version": "1.0.22",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.22",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "luajit",
+                "version": "2.1.1788856981",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.1788856981",
+                "declared_directly": true,
+                "compatibility_version": 30
+              },
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": false,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "re2",
+                "version": "2025-11-05",
+                "revision": 2,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025-11-05_2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "tinycdb",
+                "version": "0.81",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.81_1",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/dnsdist",
+              "string": "\" '--disable-silent-rules' '--without-net-snmp' '--enable-dns-over-tls' '--enable-dns-over-https' '--enable-dnscrypt' '--with-re2' '--sysconfdir=/usr/local/etc/dnsdist' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/dnsdist/2.1.2' '--libdir=/usr/local/Cellar/dnsdist/2.1.2/lib' 'CC=clang' 'LDFLAGS=-Wl,-dead_strip_dylibs' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/libyaml/lib/pkgconfig:/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/python@3.14/lib/pkgconfig:/usr/local/opt/openssl@3/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/libsodium/lib/pkgconfig:/usr/local/opt/luajit/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/re2/lib/pkgconfig:/usr/local/opt/tinycdb/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'\"",
+              "offset": 6668080
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-luajit-2.1.1788856981",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-luajit-2.1.1788856981",
+                "name": "luajit",
+                "versionInfo": "2.1.1788856981",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/luajit-2.1.1788856981.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b76ac90f46b617eb05f8900688c70e0bd96de56d146ca748b4f00ec7b3687dbf"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/luajit@2.1.1788856981",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dnsdist"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dnsdist"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-luajit-2.1.1788856981",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dnsdist"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-dnsdist-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/dnsdist"
+          ],
+          "all_files": [
+            ".bottle/etc/dnsdist/dnsdist.conf-dist",
+            ".brew/dnsdist.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NOTICE",
+            "README",
+            "README.md",
+            "bin/dnsdist",
+            "sbom.spdx.json",
+            "share/man/man1/dnsdist.1"
+          ],
+          "installed_size": 11816988
+        }
+      }
+    }
+  }
+}

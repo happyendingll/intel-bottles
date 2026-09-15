@@ -1,0 +1,163 @@
+{
+  "graphqlite": {
+    "formula": {
+      "name": "graphqlite",
+      "pkg_version": "0.8.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/graphqlite.rb",
+      "tap_git_path": "Formula/g/graphqlite.rb",
+      "tap_git_revision": "9b24807165a97fb4687fac8dac216313f975ac1a",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "SQLite graph database extension",
+      "license": "MIT",
+      "homepage": "https://colliery-io.github.io/graphqlite/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-15T16:15:29Z",
+      "tags": {
+        "sequoia": {
+          "filename": "graphqlite-0.8.0.sequoia.bottle.tar.gz",
+          "local_filename": "graphqlite--0.8.0.sequoia.bottle.tar.gz",
+          "sha256": "043cda5bc8b775843af9d64e37b324e4948c55e0c2ce6e07fd5f8b2cb3d9707b",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/sqlite/graphqlite.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788786201,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "readline",
+                "version": "8.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-readline-8.3.3",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "name": "readline",
+                "versionInfo": "8.3.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphqlite"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-graphqlite"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-graphqlite-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/graphqlite.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "lib/sqlite/graphqlite.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 634926
+        }
+      }
+    }
+  }
+}
