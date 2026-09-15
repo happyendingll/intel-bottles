@@ -1,0 +1,116 @@
+{
+  "fastp": {
+    "formula": {
+      "name": "fastp",
+      "pkg_version": "1.3.7",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/fastp.rb",
+      "tap_git_path": "Formula/f/fastp.rb",
+      "tap_git_revision": "a161ca103bf2488d74d7ba6e6caaad7720b86d7c",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Ultra-fast all-in-one FASTQ preprocessor",
+      "license": "MIT",
+      "homepage": "https://github.com/OpenGene/fastp"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-15T05:39:50Z",
+      "tags": {
+        "sequoia": {
+          "filename": "fastp-1.3.7.sequoia.bottle.tar.gz",
+          "local_filename": "fastp--1.3.7.sequoia.bottle.tar.gz",
+          "sha256": "ebd7b7ada940de064a40f8e0e6b7dd93381b9e8a02755eb6a0a8469543c191ce",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/fastp"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789010060,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "highway",
+                "version": "1.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "isa-l",
+                "version": "2.32.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.32.1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libdeflate",
+                "version": "1.26",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.26",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-fastp-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/fastp"
+          ],
+          "all_files": [
+            ".brew/fastp.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/fastp",
+            "sbom.spdx.json",
+            "share/fastp/testdata/R1.fq",
+            "share/fastp/testdata/R2.fq"
+          ],
+          "installed_size": 1037768
+        }
+      }
+    }
+  }
+}

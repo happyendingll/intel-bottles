@@ -1,0 +1,221 @@
+{
+  "zmap": {
+    "formula": {
+      "name": "zmap",
+      "pkg_version": "4.4.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/z/zmap.rb",
+      "tap_git_path": "Formula/z/zmap.rb",
+      "tap_git_revision": "a161ca103bf2488d74d7ba6e6caaad7720b86d7c",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Network scanner for Internet-wide network studies",
+      "license": "Apache-2.0",
+      "homepage": "https://zmap.io"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-15T07:40:52Z",
+      "tags": {
+        "sequoia": {
+          "filename": "zmap-4.4.0.sequoia.bottle.tar.gz",
+          "local_filename": "zmap--4.4.0.sequoia.bottle.tar.gz",
+          "sha256": "072b6befaebae56fa70a5c21e9603a8682fd73e25496be409c575fb6e106987b",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "etc/zmap/zmap.conf"
+            ],
+            "linkage_files": [
+              "sbin/zblocklist",
+              "sbin/ziterate",
+              "sbin/zmap",
+              "sbin/ztee"
+            ],
+            "binary_relocation_files": [
+              "sbin/zmap"
+            ],
+            "source_modified_time": 1780036385,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": true
+              },
+              {
+                "full_name": "judy",
+                "version": "1.0.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.5",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libdnet",
+                "version": "1.18.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.18.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "sbin/zmap",
+              "string": "/usr/local/etc/zmap/blocklist.conf",
+              "offset": 146686
+            },
+            {
+              "path": "sbin/zmap",
+              "string": "/usr/local/etc/zmap/zmap.conf",
+              "offset": 159258
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zmap"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zmap"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-zmap-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "sbin/zblocklist",
+            "sbin/zmap",
+            "sbin/ziterate",
+            "sbin/ztee"
+          ],
+          "all_files": [
+            ".brew/zmap.rb",
+            "AUTHORS",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "etc/zmap/blocklist.conf",
+            "etc/zmap/zmap.conf",
+            "sbin/zblocklist",
+            "sbin/ziterate",
+            "sbin/zmap",
+            "sbin/ztee",
+            "sbom.spdx.json",
+            "share/man/man1/zblocklist.1",
+            "share/man/man1/ziterate.1",
+            "share/man/man1/zmap.1",
+            "share/man/man1/ztee.1"
+          ],
+          "installed_size": 450367
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,691 @@
+{
+  "trzsz": {
+    "formula": {
+      "name": "trzsz",
+      "pkg_version": "1.1.7",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/trzsz.rb",
+      "tap_git_path": "Formula/t/trzsz.rb",
+      "tap_git_revision": "a161ca103bf2488d74d7ba6e6caaad7720b86d7c",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Simple file transfer tools, similar to lrzsz (rz/sz), and compatible with tmux",
+      "license": "MIT",
+      "homepage": "https://trzsz.github.io"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-15T07:16:15Z",
+      "tags": {
+        "sequoia": {
+          "filename": "trzsz-1.1.7.sequoia.bottle.tar.gz",
+          "local_filename": "trzsz--1.1.7.sequoia.bottle.tar.gz",
+          "sha256": "7c12e073acdcfefe8fe582a5c1618ff36f2bcf17cc13e10614262f19d8e3a1ea",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [
+              "libexec/bin/trz",
+              "libexec/bin/trzsz-iterm2",
+              "libexec/bin/tsz",
+              "libexec/bin/websockets",
+              "libexec/pyvenv.cfg"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787934193,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.14",
+                "version": "3.14.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.14.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-readline-8.3.3",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "name": "readline",
+                "versionInfo": "8.3.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "name": "python@3.14",
+                "versionInfo": "3.14.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trzsz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trzsz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trzsz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trzsz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trzsz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trzsz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trzsz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trzsz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trzsz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-trzsz-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/trz",
+            "bin/tsz",
+            "bin/trzsz-iterm2"
+          ],
+          "all_files": [
+            ".brew/trzsz.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/trz",
+            "bin/trzsz-iterm2",
+            "bin/tsz",
+            "libexec/.gitignore",
+            "libexec/bin/python",
+            "libexec/bin/python3",
+            "libexec/bin/python3.14",
+            "libexec/bin/trz",
+            "libexec/bin/trzsz-iterm2",
+            "libexec/bin/tsz",
+            "libexec/bin/websockets",
+            "libexec/bin/𝜋thon",
+            "libexec/lib/python3.14/site-packages/google/__init__.py",
+            "libexec/lib/python3.14/site-packages/google/_upb/_message.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/google/protobuf/__init__.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/any.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/any_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/api_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/compiler/__init__.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/compiler/descriptor_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/compiler/plugin_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/descriptor.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/descriptor_database.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/descriptor_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/descriptor_pool.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/duration.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/duration_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/empty_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/field_mask_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/__init__.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/api_implementation.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/builder.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/containers.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/decoder.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/encoder.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/enum_type_wrapper.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/extension_dict.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/field_mask.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/message_benchmark.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/message_listener.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/python_edition_defaults.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/python_message.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/testing_refleaks.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/type_checkers.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/well_known_types.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/internal/wire_format.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/json_enumvalue_options_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/json_format.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/json_options_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/message.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/message_factory.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/proto.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/proto_builder.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/proto_json.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/proto_text.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/pyext/__init__.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/pyext/cpp_message.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/reflection.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/runtime_version.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/service_reflection.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/source_context_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/struct_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/symbol_database.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/testdata/__init__.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/text_encoding.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/text_format.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/timestamp.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/timestamp_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/type_pb2.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/unknown_fields.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/util/__init__.py",
+            "libexec/lib/python3.14/site-packages/google/protobuf/wrappers_pb2.py",
+            "libexec/lib/python3.14/site-packages/iterm2/__init__.py",
+            "libexec/lib/python3.14/site-packages/iterm2/_version.py",
+            "libexec/lib/python3.14/site-packages/iterm2/alert.py",
+            "libexec/lib/python3.14/site-packages/iterm2/api_pb2.py",
+            "libexec/lib/python3.14/site-packages/iterm2/api_pb2.pyi",
+            "libexec/lib/python3.14/site-packages/iterm2/app.py",
+            "libexec/lib/python3.14/site-packages/iterm2/arrangement.py",
+            "libexec/lib/python3.14/site-packages/iterm2/auth.py",
+            "libexec/lib/python3.14/site-packages/iterm2/binding.py",
+            "libexec/lib/python3.14/site-packages/iterm2/broadcast.py",
+            "libexec/lib/python3.14/site-packages/iterm2/capabilities.py",
+            "libexec/lib/python3.14/site-packages/iterm2/color.py",
+            "libexec/lib/python3.14/site-packages/iterm2/colorpresets.py",
+            "libexec/lib/python3.14/site-packages/iterm2/connection.py",
+            "libexec/lib/python3.14/site-packages/iterm2/customcontrol.py",
+            "libexec/lib/python3.14/site-packages/iterm2/filepanel.py",
+            "libexec/lib/python3.14/site-packages/iterm2/focus.py",
+            "libexec/lib/python3.14/site-packages/iterm2/keyboard.py",
+            "libexec/lib/python3.14/site-packages/iterm2/lifecycle.py",
+            "libexec/lib/python3.14/site-packages/iterm2/mainmenu.py",
+            "libexec/lib/python3.14/site-packages/iterm2/notifications.py",
+            "libexec/lib/python3.14/site-packages/iterm2/preferences.py",
+            "libexec/lib/python3.14/site-packages/iterm2/profile.py",
+            "libexec/lib/python3.14/site-packages/iterm2/prompt.py",
+            "libexec/lib/python3.14/site-packages/iterm2/py.typed",
+            "libexec/lib/python3.14/site-packages/iterm2/registration.py",
+            "libexec/lib/python3.14/site-packages/iterm2/rpc.py",
+            "libexec/lib/python3.14/site-packages/iterm2/screen.py",
+            "libexec/lib/python3.14/site-packages/iterm2/selection.py",
+            "libexec/lib/python3.14/site-packages/iterm2/session.py",
+            "libexec/lib/python3.14/site-packages/iterm2/statusbar.py",
+            "libexec/lib/python3.14/site-packages/iterm2/tab.py",
+            "libexec/lib/python3.14/site-packages/iterm2/tmux.py",
+            "libexec/lib/python3.14/site-packages/iterm2/tool.py",
+            "libexec/lib/python3.14/site-packages/iterm2/transaction.py",
+            "libexec/lib/python3.14/site-packages/iterm2/triggers.py",
+            "libexec/lib/python3.14/site-packages/iterm2/util.py",
+            "libexec/lib/python3.14/site-packages/iterm2/variables.py",
+            "libexec/lib/python3.14/site-packages/iterm2/window.py",
+            "libexec/lib/python3.14/site-packages/iterm2-2.22.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/iterm2-2.22.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/iterm2-2.22.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/iterm2-2.22.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/iterm2-2.22.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/iterm2-tests/__init__.py",
+            "libexec/lib/python3.14/site-packages/iterm2-tests/test_text_progress.py",
+            "libexec/lib/python3.14/site-packages/iterm2-tests/trzsz/__init__.py",
+            "libexec/lib/python3.14/site-packages/iterm2-tests/trzsz/iterm2/__init__.py",
+            "libexec/lib/python3.14/site-packages/iterm2-tests/trzsz/iterm2/__version__.py",
+            "libexec/lib/python3.14/site-packages/iterm2-tests/trzsz/iterm2/main.py",
+            "libexec/lib/python3.14/site-packages/iterm2-tests/trzsz/iterm2/text_progress.py",
+            "libexec/lib/python3.14/site-packages/iterm2-tests/trzsz/iterm2/zenity_progress.py",
+            "libexec/lib/python3.14/site-packages/protobuf-7.36.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/protobuf-7.36.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/protobuf-7.36.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/protobuf-7.36.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/protobuf-7.36.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/protobuf-7.36.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/svr-tests/__init__.py",
+            "libexec/lib/python3.14/site-packages/svr-tests/test_recv.py",
+            "libexec/lib/python3.14/site-packages/svr-tests/test_send.py",
+            "libexec/lib/python3.14/site-packages/svr-tests/trzsz/__init__.py",
+            "libexec/lib/python3.14/site-packages/svr-tests/trzsz/svr/__init__.py",
+            "libexec/lib/python3.14/site-packages/svr-tests/trzsz/svr/__version__.py",
+            "libexec/lib/python3.14/site-packages/svr-tests/trzsz/svr/recv.py",
+            "libexec/lib/python3.14/site-packages/svr-tests/trzsz/svr/send.py",
+            "libexec/lib/python3.14/site-packages/tests/__init__.py",
+            "libexec/lib/python3.14/site-packages/tests/test_transfer_action.py",
+            "libexec/lib/python3.14/site-packages/tests/test_transfer_config.py",
+            "libexec/lib/python3.14/site-packages/tests/test_utils_function.py",
+            "libexec/lib/python3.14/site-packages/tests/trzsz/__init__.py",
+            "libexec/lib/python3.14/site-packages/tests/trzsz/libs/__init__.py",
+            "libexec/lib/python3.14/site-packages/tests/trzsz/libs/__version__.py",
+            "libexec/lib/python3.14/site-packages/tests/trzsz/libs/transfer.py",
+            "libexec/lib/python3.14/site-packages/tests/trzsz/libs/utils.py",
+            "libexec/lib/python3.14/site-packages/tests/trzsz/libs/wins.py",
+            "libexec/lib/python3.14/site-packages/trzsz/__init__.py",
+            "libexec/lib/python3.14/site-packages/trzsz/__version__.py",
+            "libexec/lib/python3.14/site-packages/trzsz/iterm2/__init__.py",
+            "libexec/lib/python3.14/site-packages/trzsz/iterm2/__version__.py",
+            "libexec/lib/python3.14/site-packages/trzsz/iterm2/main.py",
+            "libexec/lib/python3.14/site-packages/trzsz/iterm2/text_progress.py",
+            "libexec/lib/python3.14/site-packages/trzsz/iterm2/zenity_progress.py",
+            "libexec/lib/python3.14/site-packages/trzsz/libs/__init__.py",
+            "libexec/lib/python3.14/site-packages/trzsz/libs/__version__.py",
+            "libexec/lib/python3.14/site-packages/trzsz/libs/transfer.py",
+            "libexec/lib/python3.14/site-packages/trzsz/libs/utils.py",
+            "libexec/lib/python3.14/site-packages/trzsz/libs/wins.py",
+            "libexec/lib/python3.14/site-packages/trzsz/svr/__init__.py",
+            "libexec/lib/python3.14/site-packages/trzsz/svr/__version__.py",
+            "libexec/lib/python3.14/site-packages/trzsz/svr/recv.py",
+            "libexec/lib/python3.14/site-packages/trzsz/svr/send.py",
+            "libexec/lib/python3.14/site-packages/trzsz-1.1.7.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/trzsz-1.1.7.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/trzsz-1.1.7.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/trzsz-1.1.7.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/trzsz-1.1.7.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.14/site-packages/trzsz-1.1.7.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/trzsz_iterm2-1.1.7-py3.14-nspkg.pth",
+            "libexec/lib/python3.14/site-packages/trzsz_iterm2-1.1.7.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/trzsz_iterm2-1.1.7.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/trzsz_iterm2-1.1.7.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/trzsz_iterm2-1.1.7.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/trzsz_iterm2-1.1.7.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/trzsz_iterm2-1.1.7.dist-info/namespace_packages.txt",
+            "libexec/lib/python3.14/site-packages/trzsz_iterm2-1.1.7.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/trzsz_libs-1.1.7-py3.14-nspkg.pth",
+            "libexec/lib/python3.14/site-packages/trzsz_libs-1.1.7.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/trzsz_libs-1.1.7.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/trzsz_libs-1.1.7.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/trzsz_libs-1.1.7.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/trzsz_libs-1.1.7.dist-info/namespace_packages.txt",
+            "libexec/lib/python3.14/site-packages/trzsz_libs-1.1.7.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/trzsz_svr-1.1.7-py3.14-nspkg.pth",
+            "libexec/lib/python3.14/site-packages/trzsz_svr-1.1.7.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/trzsz_svr-1.1.7.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/trzsz_svr-1.1.7.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/trzsz_svr-1.1.7.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/trzsz_svr-1.1.7.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/trzsz_svr-1.1.7.dist-info/namespace_packages.txt",
+            "libexec/lib/python3.14/site-packages/trzsz_svr-1.1.7.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/websockets/__init__.py",
+            "libexec/lib/python3.14/site-packages/websockets/__main__.py",
+            "libexec/lib/python3.14/site-packages/websockets/asyncio/__init__.py",
+            "libexec/lib/python3.14/site-packages/websockets/asyncio/client.py",
+            "libexec/lib/python3.14/site-packages/websockets/asyncio/connection.py",
+            "libexec/lib/python3.14/site-packages/websockets/asyncio/messages.py",
+            "libexec/lib/python3.14/site-packages/websockets/asyncio/router.py",
+            "libexec/lib/python3.14/site-packages/websockets/asyncio/server.py",
+            "libexec/lib/python3.14/site-packages/websockets/auth.py",
+            "libexec/lib/python3.14/site-packages/websockets/cli.py",
+            "libexec/lib/python3.14/site-packages/websockets/client.py",
+            "libexec/lib/python3.14/site-packages/websockets/connection.py",
+            "libexec/lib/python3.14/site-packages/websockets/datastructures.py",
+            "libexec/lib/python3.14/site-packages/websockets/exceptions.py",
+            "libexec/lib/python3.14/site-packages/websockets/extensions/__init__.py",
+            "libexec/lib/python3.14/site-packages/websockets/extensions/base.py",
+            "libexec/lib/python3.14/site-packages/websockets/extensions/permessage_deflate.py",
+            "libexec/lib/python3.14/site-packages/websockets/frames.py",
+            "libexec/lib/python3.14/site-packages/websockets/headers.py",
+            "libexec/lib/python3.14/site-packages/websockets/http11.py",
+            "libexec/lib/python3.14/site-packages/websockets/imports.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/__init__.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/auth.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/client.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/exceptions.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/framing.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/handshake.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/http.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/protocol.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/server.py",
+            "libexec/lib/python3.14/site-packages/websockets/protocol.py",
+            "libexec/lib/python3.14/site-packages/websockets/proxy.py",
+            "libexec/lib/python3.14/site-packages/websockets/py.typed",
+            "libexec/lib/python3.14/site-packages/websockets/server.py",
+            "libexec/lib/python3.14/site-packages/websockets/speedups.c",
+            "libexec/lib/python3.14/site-packages/websockets/speedups.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/websockets/speedups.pyi",
+            "libexec/lib/python3.14/site-packages/websockets/streams.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/__init__.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/client.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/connection.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/messages.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/router.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/server.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/utils.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/__init__.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/client.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/connection.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/messages.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/router.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/server.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/utils.py",
+            "libexec/lib/python3.14/site-packages/websockets/typing.py",
+            "libexec/lib/python3.14/site-packages/websockets/uri.py",
+            "libexec/lib/python3.14/site-packages/websockets/utils.py",
+            "libexec/lib/python3.14/site-packages/websockets/version.py",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/top_level.txt",
+            "libexec/pyvenv.cfg",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 3825295
+        }
+      }
+    }
+  }
+}

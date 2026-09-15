@@ -1,0 +1,167 @@
+{
+  "cdrdao": {
+    "formula": {
+      "name": "cdrdao",
+      "pkg_version": "1.2.6",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cdrdao.rb",
+      "tap_git_path": "Formula/c/cdrdao.rb",
+      "tap_git_revision": "a161ca103bf2488d74d7ba6e6caaad7720b86d7c",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Record CDs in Disk-At-Once mode",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://cdrdao.sourceforge.net/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-15T05:11:38Z",
+      "tags": {
+        "sequoia": {
+          "filename": "cdrdao-1.2.6.sequoia.bottle.tar.gz",
+          "local_filename": "cdrdao--1.2.6.sequoia.bottle.tar.gz",
+          "sha256": "8eeb287e975c75277be750ae7293f0b39e6c6f44b5be6a79dd232e782c874ae8",
+          "tab": {
+            "homebrew_version": "7.0.1",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/cdrdao",
+              "bin/toc2cddb",
+              "bin/toc2cue",
+              "bin/toc2mp3"
+            ],
+            "binary_relocation_files": [
+              "bin/cdrdao"
+            ],
+            "source_modified_time": 1764933430,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "mpg123",
+                "version": "1.33.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.33.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lame",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libao",
+                "version": "1.2.2",
+                "revision": 0,
+                "bottle_rebuild": 3,
+                "pkg_version": "1.2.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libogg",
+                "version": "1.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libvorbis",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.3.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mad",
+                "version": "0.16.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.16.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/cdrdao",
+              "string": "/usr/local/Cellar/cdrdao/1.2.6/share/cdrdao/drivers",
+              "offset": 349160
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-cdrdao-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/toc2cddb",
+            "bin/toc2mp3",
+            "bin/cdrdao",
+            "bin/cue2toc",
+            "bin/toc2cue"
+          ],
+          "all_files": [
+            ".brew/cdrdao.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/cdrdao",
+            "bin/cue2toc",
+            "bin/toc2cddb",
+            "bin/toc2cue",
+            "bin/toc2mp3",
+            "sbom.spdx.json",
+            "share/cdrdao/drivers",
+            "share/man/man1/cdrdao.1",
+            "share/man/man1/cue2toc.1",
+            "share/man/man1/toc2cddb.1",
+            "share/man/man1/toc2cue.1"
+          ],
+          "installed_size": 1714334
+        }
+      }
+    }
+  }
+}
