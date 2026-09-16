@@ -48,10 +48,13 @@ compatible with macOS 15 Intel, currently need a bottle, and pass the cost and i
 policy in `heavy.txt` and `catalog-policy.json`. Heavy Formula families and projects that prefer
 their own optimized macOS binary therefore never enter the catalog.
 
-A scheduled prewarm starts only after the scheduled `build bottles` run completes and caps the
-batch at 10 roots. Its date-based ordering changes daily, so one repeatedly failing package
-cannot starve the rest of the catalog. Prewarmed assets use the separate `bottles-warm-1`
-Release; their bottle blocks are merged into the same `homebrew-core` fork.
+A scheduled prewarm starts only after the scheduled `build bottles` run completes, selects up
+to 100 roots, and runs at most five jobs in parallel with a one-hour cap per job. Prewarmed
+assets use numbered rolling Releases (`bottles-warm-1`, `bottles-warm-2`, and so on). Before a
+Release approaches GitHub's 1,000-asset limit, the workflow advances to the next number. Old
+Releases are retained because existing manifests keep their original `root_url`; new and
+rebuilt Formulae point at the current rolling Release. All bottle blocks are merged into the
+same `homebrew-core` fork.
 
 **Consumption.** Bottle tarballs go to a rolling GitHub Release; `brew bottle --merge --write`
 writes the matching `bottle do` blocks into a fork of `homebrew-core`, which the Mac points at
