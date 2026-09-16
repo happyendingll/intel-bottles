@@ -1,0 +1,837 @@
+{
+  "uvicorn": {
+    "formula": {
+      "name": "uvicorn",
+      "pkg_version": "0.53.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/u/uvicorn.rb",
+      "tap_git_path": "Formula/u/uvicorn.rb",
+      "tap_git_revision": "929ac9aa1ca8b35f8727314e10d77928b2b08a89",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "ASGI web server",
+      "license": "BSD-3-Clause",
+      "homepage": "https://uvicorn.dev/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-16T05:56:22Z",
+      "tags": {
+        "sequoia": {
+          "filename": "uvicorn-0.53.0.sequoia.bottle.tar.gz",
+          "local_filename": "uvicorn--0.53.0.sequoia.bottle.tar.gz",
+          "sha256": "1505222de85aa83dda590126183e05db712787ec111afd3d85a4930867bda57b",
+          "tab": {
+            "homebrew_version": "7.0.2",
+            "changed_files": [
+              "libexec/bin/dotenv",
+              "libexec/bin/idna",
+              "libexec/bin/uvicorn",
+              "libexec/bin/watchfiles",
+              "libexec/bin/websockets",
+              "libexec/pyvenv.cfg"
+            ],
+            "linkage_files": [
+              "libexec/lib/python3.14/site-packages/watchfiles/_rust_notify.cpython-314-darwin.so",
+              "libexec/lib/python3.14/site-packages/yaml/_yaml.cpython-314-darwin.so"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789371865,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libyaml",
+                "version": "0.2.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.2.5",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.14",
+                "version": "3.14.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.14.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "name": "python@3.14",
+                "versionInfo": "3.14.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-uvicorn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-uvicorn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-uvicorn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-uvicorn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-uvicorn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-uvicorn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-uvicorn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-uvicorn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-uvicorn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-uvicorn-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/uvicorn"
+          ],
+          "all_files": [
+            ".brew/uvicorn.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/uvicorn",
+            "etc/bash_completion.d/uvicorn",
+            "libexec/.gitignore",
+            "libexec/bin/dotenv",
+            "libexec/bin/idna",
+            "libexec/bin/python",
+            "libexec/bin/python3",
+            "libexec/bin/python3.14",
+            "libexec/bin/uvicorn",
+            "libexec/bin/watchfiles",
+            "libexec/bin/websockets",
+            "libexec/bin/𝜋thon",
+            "libexec/lib/python3.14/site-packages/_yaml/__init__.py",
+            "libexec/lib/python3.14/site-packages/anyio/__init__.py",
+            "libexec/lib/python3.14/site-packages/anyio/_backends/__init__.py",
+            "libexec/lib/python3.14/site-packages/anyio/_backends/_asyncio.py",
+            "libexec/lib/python3.14/site-packages/anyio/_backends/_trio.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/__init__.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_asyncio_selector_thread.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_concurrency_utils.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_contextmanagers.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_eventloop.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_exceptions.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_fileio.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_futures.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_resources.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_signals.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_sockets.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_streams.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_subprocesses.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_synchronization.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_tasks.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_tempfile.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_testing.py",
+            "libexec/lib/python3.14/site-packages/anyio/_core/_typedattr.py",
+            "libexec/lib/python3.14/site-packages/anyio/_lazyimport.py",
+            "libexec/lib/python3.14/site-packages/anyio/abc/__init__.py",
+            "libexec/lib/python3.14/site-packages/anyio/abc/_eventloop.py",
+            "libexec/lib/python3.14/site-packages/anyio/abc/_resources.py",
+            "libexec/lib/python3.14/site-packages/anyio/abc/_sockets.py",
+            "libexec/lib/python3.14/site-packages/anyio/abc/_streams.py",
+            "libexec/lib/python3.14/site-packages/anyio/abc/_subprocesses.py",
+            "libexec/lib/python3.14/site-packages/anyio/abc/_tasks.py",
+            "libexec/lib/python3.14/site-packages/anyio/abc/_testing.py",
+            "libexec/lib/python3.14/site-packages/anyio/from_thread.py",
+            "libexec/lib/python3.14/site-packages/anyio/functools.py",
+            "libexec/lib/python3.14/site-packages/anyio/itertools.py",
+            "libexec/lib/python3.14/site-packages/anyio/lowlevel.py",
+            "libexec/lib/python3.14/site-packages/anyio/py.typed",
+            "libexec/lib/python3.14/site-packages/anyio/pytest_plugin.py",
+            "libexec/lib/python3.14/site-packages/anyio/streams/__init__.py",
+            "libexec/lib/python3.14/site-packages/anyio/streams/buffered.py",
+            "libexec/lib/python3.14/site-packages/anyio/streams/file.py",
+            "libexec/lib/python3.14/site-packages/anyio/streams/memory.py",
+            "libexec/lib/python3.14/site-packages/anyio/streams/stapled.py",
+            "libexec/lib/python3.14/site-packages/anyio/streams/text.py",
+            "libexec/lib/python3.14/site-packages/anyio/streams/tls.py",
+            "libexec/lib/python3.14/site-packages/anyio/to_interpreter.py",
+            "libexec/lib/python3.14/site-packages/anyio/to_process.py",
+            "libexec/lib/python3.14/site-packages/anyio/to_thread.py",
+            "libexec/lib/python3.14/site-packages/anyio-4.15.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/anyio-4.15.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/anyio-4.15.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/anyio-4.15.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/anyio-4.15.1.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/anyio-4.15.1.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/anyio-4.15.1.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/click/__init__.py",
+            "libexec/lib/python3.14/site-packages/click/_compat.py",
+            "libexec/lib/python3.14/site-packages/click/_termui_impl.py",
+            "libexec/lib/python3.14/site-packages/click/_textwrap.py",
+            "libexec/lib/python3.14/site-packages/click/_utils.py",
+            "libexec/lib/python3.14/site-packages/click/_winconsole.py",
+            "libexec/lib/python3.14/site-packages/click/core.py",
+            "libexec/lib/python3.14/site-packages/click/decorators.py",
+            "libexec/lib/python3.14/site-packages/click/exceptions.py",
+            "libexec/lib/python3.14/site-packages/click/formatting.py",
+            "libexec/lib/python3.14/site-packages/click/globals.py",
+            "libexec/lib/python3.14/site-packages/click/parser.py",
+            "libexec/lib/python3.14/site-packages/click/py.typed",
+            "libexec/lib/python3.14/site-packages/click/shell_completion.py",
+            "libexec/lib/python3.14/site-packages/click/termui.py",
+            "libexec/lib/python3.14/site-packages/click/testing.py",
+            "libexec/lib/python3.14/site-packages/click/types.py",
+            "libexec/lib/python3.14/site-packages/click/utils.py",
+            "libexec/lib/python3.14/site-packages/click-8.5.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/click-8.5.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/click-8.5.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/click-8.5.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/click-8.5.0.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/dotenv/__init__.py",
+            "libexec/lib/python3.14/site-packages/dotenv/__main__.py",
+            "libexec/lib/python3.14/site-packages/dotenv/cli.py",
+            "libexec/lib/python3.14/site-packages/dotenv/ipython.py",
+            "libexec/lib/python3.14/site-packages/dotenv/main.py",
+            "libexec/lib/python3.14/site-packages/dotenv/parser.py",
+            "libexec/lib/python3.14/site-packages/dotenv/py.typed",
+            "libexec/lib/python3.14/site-packages/dotenv/variables.py",
+            "libexec/lib/python3.14/site-packages/dotenv/version.py",
+            "libexec/lib/python3.14/site-packages/h11/__init__.py",
+            "libexec/lib/python3.14/site-packages/h11/_abnf.py",
+            "libexec/lib/python3.14/site-packages/h11/_connection.py",
+            "libexec/lib/python3.14/site-packages/h11/_events.py",
+            "libexec/lib/python3.14/site-packages/h11/_headers.py",
+            "libexec/lib/python3.14/site-packages/h11/_readers.py",
+            "libexec/lib/python3.14/site-packages/h11/_receivebuffer.py",
+            "libexec/lib/python3.14/site-packages/h11/_state.py",
+            "libexec/lib/python3.14/site-packages/h11/_util.py",
+            "libexec/lib/python3.14/site-packages/h11/_version.py",
+            "libexec/lib/python3.14/site-packages/h11/_writers.py",
+            "libexec/lib/python3.14/site-packages/h11/py.typed",
+            "libexec/lib/python3.14/site-packages/h11-0.16.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/h11-0.16.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/h11-0.16.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/h11-0.16.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/h11-0.16.0.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/h11-0.16.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/httptools/__init__.py",
+            "libexec/lib/python3.14/site-packages/httptools/_version.py",
+            "libexec/lib/python3.14/site-packages/httptools/parser/__init__.py",
+            "libexec/lib/python3.14/site-packages/httptools/parser/cparser.pxd",
+            "libexec/lib/python3.14/site-packages/httptools/parser/errors.py",
+            "libexec/lib/python3.14/site-packages/httptools/parser/parser.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/httptools/parser/parser.pyi",
+            "libexec/lib/python3.14/site-packages/httptools/parser/parser.pyx",
+            "libexec/lib/python3.14/site-packages/httptools/parser/protocol.py",
+            "libexec/lib/python3.14/site-packages/httptools/parser/python.pxd",
+            "libexec/lib/python3.14/site-packages/httptools/parser/url_cparser.pxd",
+            "libexec/lib/python3.14/site-packages/httptools/parser/url_parser.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/httptools/parser/url_parser.pyi",
+            "libexec/lib/python3.14/site-packages/httptools/parser/url_parser.pyx",
+            "libexec/lib/python3.14/site-packages/httptools/py.typed",
+            "libexec/lib/python3.14/site-packages/httptools-0.8.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/httptools-0.8.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/httptools-0.8.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/httptools-0.8.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/httptools-0.8.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/httptools-0.8.0.dist-info/licenses/vendor/http-parser/LICENSE-MIT",
+            "libexec/lib/python3.14/site-packages/httptools-0.8.0.dist-info/licenses/vendor/llhttp/LICENSE",
+            "libexec/lib/python3.14/site-packages/httptools-0.8.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/idna/__init__.py",
+            "libexec/lib/python3.14/site-packages/idna/__main__.py",
+            "libexec/lib/python3.14/site-packages/idna/cli.py",
+            "libexec/lib/python3.14/site-packages/idna/codec.py",
+            "libexec/lib/python3.14/site-packages/idna/compat.py",
+            "libexec/lib/python3.14/site-packages/idna/core.py",
+            "libexec/lib/python3.14/site-packages/idna/idnadata.py",
+            "libexec/lib/python3.14/site-packages/idna/intranges.py",
+            "libexec/lib/python3.14/site-packages/idna/package_data.py",
+            "libexec/lib/python3.14/site-packages/idna/py.typed",
+            "libexec/lib/python3.14/site-packages/idna/uts46data.py",
+            "libexec/lib/python3.14/site-packages/idna-3.19.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/idna-3.19.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/idna-3.19.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/idna-3.19.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/idna-3.19.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/idna-3.19.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.14/site-packages/python_dotenv-1.2.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/python_dotenv-1.2.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/python_dotenv-1.2.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/python_dotenv-1.2.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/python_dotenv-1.2.3.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/python_dotenv-1.2.3.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/python_dotenv-1.2.3.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/typing_extensions.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/__init__.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/__main__.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/_ansi.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/_compat.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/_subprocess.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/_types.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/config.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/importer.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/lifespan/__init__.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/lifespan/off.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/lifespan/on.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/logging.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/loops/__init__.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/loops/asyncio.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/loops/auto.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/loops/uvloop.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/loops/zuvloop.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/main.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/middleware/__init__.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/middleware/asgi2.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/middleware/message_logger.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/middleware/proxy_headers.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/middleware/wsgi.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/__init__.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/http/__init__.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/http/auto.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/http/auto_zttp_impl.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/http/flow_control.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/http/h11_impl.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/http/httptools_impl.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/http/zttp_h2_impl.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/http/zttp_impl.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/utils.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/websockets/__init__.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/websockets/auto.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/websockets/websockets_impl.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/websockets/websockets_sansio_impl.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/protocols/websockets/wsproto_impl.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/py.typed",
+            "libexec/lib/python3.14/site-packages/uvicorn/server.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/supervisors/__init__.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/supervisors/basereload.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/supervisors/multiprocess.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/supervisors/statreload.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/supervisors/watchfilesreload.py",
+            "libexec/lib/python3.14/site-packages/uvicorn/workers.py",
+            "libexec/lib/python3.14/site-packages/uvicorn-0.53.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/uvicorn-0.53.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/uvicorn-0.53.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/uvicorn-0.53.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/uvicorn-0.53.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/uvicorn-0.53.0.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.14/site-packages/uvloop/__init__.py",
+            "libexec/lib/python3.14/site-packages/uvloop/_noop.py",
+            "libexec/lib/python3.14/site-packages/uvloop/_testbase.py",
+            "libexec/lib/python3.14/site-packages/uvloop/_version.py",
+            "libexec/lib/python3.14/site-packages/uvloop/cbhandles.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/cbhandles.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/dns.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/errors.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/async_.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/async_.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/basetransport.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/basetransport.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/check.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/check.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/fsevent.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/fsevent.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/handle.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/handle.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/idle.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/idle.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/pipe.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/pipe.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/poll.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/poll.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/process.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/process.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/stream.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/stream.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/streamserver.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/streamserver.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/tcp.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/tcp.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/timer.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/timer.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/udp.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/handles/udp.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/includes/__init__.py",
+            "libexec/lib/python3.14/site-packages/uvloop/includes/consts.pxi",
+            "libexec/lib/python3.14/site-packages/uvloop/includes/debug.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/includes/flowcontrol.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/includes/python.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/includes/stdlib.pxi",
+            "libexec/lib/python3.14/site-packages/uvloop/includes/system.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/includes/uv.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/loop.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/uvloop/loop.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/loop.pyi",
+            "libexec/lib/python3.14/site-packages/uvloop/loop.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/lru.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/pseudosock.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/py.typed",
+            "libexec/lib/python3.14/site-packages/uvloop/request.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/request.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/server.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/server.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop/sslproto.pxd",
+            "libexec/lib/python3.14/site-packages/uvloop/sslproto.pyx",
+            "libexec/lib/python3.14/site-packages/uvloop-0.22.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/uvloop-0.22.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/uvloop-0.22.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/uvloop-0.22.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/uvloop-0.22.1.dist-info/licenses/LICENSE-APACHE",
+            "libexec/lib/python3.14/site-packages/uvloop-0.22.1.dist-info/licenses/LICENSE-MIT",
+            "libexec/lib/python3.14/site-packages/uvloop-0.22.1.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/watchfiles/__init__.py",
+            "libexec/lib/python3.14/site-packages/watchfiles/__main__.py",
+            "libexec/lib/python3.14/site-packages/watchfiles/_rust_notify.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/watchfiles/_rust_notify.pyi",
+            "libexec/lib/python3.14/site-packages/watchfiles/cli.py",
+            "libexec/lib/python3.14/site-packages/watchfiles/filters.py",
+            "libexec/lib/python3.14/site-packages/watchfiles/main.py",
+            "libexec/lib/python3.14/site-packages/watchfiles/py.typed",
+            "libexec/lib/python3.14/site-packages/watchfiles/run.py",
+            "libexec/lib/python3.14/site-packages/watchfiles/version.py",
+            "libexec/lib/python3.14/site-packages/watchfiles-1.2.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/watchfiles-1.2.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/watchfiles-1.2.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/watchfiles-1.2.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/watchfiles-1.2.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/watchfiles-1.2.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/websockets/__init__.py",
+            "libexec/lib/python3.14/site-packages/websockets/__main__.py",
+            "libexec/lib/python3.14/site-packages/websockets/asyncio/__init__.py",
+            "libexec/lib/python3.14/site-packages/websockets/asyncio/client.py",
+            "libexec/lib/python3.14/site-packages/websockets/asyncio/connection.py",
+            "libexec/lib/python3.14/site-packages/websockets/asyncio/messages.py",
+            "libexec/lib/python3.14/site-packages/websockets/asyncio/router.py",
+            "libexec/lib/python3.14/site-packages/websockets/asyncio/server.py",
+            "libexec/lib/python3.14/site-packages/websockets/auth.py",
+            "libexec/lib/python3.14/site-packages/websockets/cli.py",
+            "libexec/lib/python3.14/site-packages/websockets/client.py",
+            "libexec/lib/python3.14/site-packages/websockets/connection.py",
+            "libexec/lib/python3.14/site-packages/websockets/datastructures.py",
+            "libexec/lib/python3.14/site-packages/websockets/exceptions.py",
+            "libexec/lib/python3.14/site-packages/websockets/extensions/__init__.py",
+            "libexec/lib/python3.14/site-packages/websockets/extensions/base.py",
+            "libexec/lib/python3.14/site-packages/websockets/extensions/permessage_deflate.py",
+            "libexec/lib/python3.14/site-packages/websockets/frames.py",
+            "libexec/lib/python3.14/site-packages/websockets/headers.py",
+            "libexec/lib/python3.14/site-packages/websockets/http11.py",
+            "libexec/lib/python3.14/site-packages/websockets/imports.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/__init__.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/auth.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/client.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/exceptions.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/framing.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/handshake.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/http.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/protocol.py",
+            "libexec/lib/python3.14/site-packages/websockets/legacy/server.py",
+            "libexec/lib/python3.14/site-packages/websockets/protocol.py",
+            "libexec/lib/python3.14/site-packages/websockets/proxy.py",
+            "libexec/lib/python3.14/site-packages/websockets/py.typed",
+            "libexec/lib/python3.14/site-packages/websockets/server.py",
+            "libexec/lib/python3.14/site-packages/websockets/speedups.c",
+            "libexec/lib/python3.14/site-packages/websockets/speedups.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/websockets/speedups.pyi",
+            "libexec/lib/python3.14/site-packages/websockets/streams.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/__init__.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/client.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/connection.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/messages.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/router.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/server.py",
+            "libexec/lib/python3.14/site-packages/websockets/sync/utils.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/__init__.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/client.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/connection.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/messages.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/router.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/server.py",
+            "libexec/lib/python3.14/site-packages/websockets/trio/utils.py",
+            "libexec/lib/python3.14/site-packages/websockets/typing.py",
+            "libexec/lib/python3.14/site-packages/websockets/uri.py",
+            "libexec/lib/python3.14/site-packages/websockets/utils.py",
+            "libexec/lib/python3.14/site-packages/websockets/version.py",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/websockets-17.1.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/yaml/__init__.py",
+            "libexec/lib/python3.14/site-packages/yaml/_yaml.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/yaml/composer.py",
+            "libexec/lib/python3.14/site-packages/yaml/constructor.py",
+            "libexec/lib/python3.14/site-packages/yaml/cyaml.py",
+            "libexec/lib/python3.14/site-packages/yaml/dumper.py",
+            "libexec/lib/python3.14/site-packages/yaml/emitter.py",
+            "libexec/lib/python3.14/site-packages/yaml/error.py",
+            "libexec/lib/python3.14/site-packages/yaml/events.py",
+            "libexec/lib/python3.14/site-packages/yaml/loader.py",
+            "libexec/lib/python3.14/site-packages/yaml/nodes.py",
+            "libexec/lib/python3.14/site-packages/yaml/parser.py",
+            "libexec/lib/python3.14/site-packages/yaml/reader.py",
+            "libexec/lib/python3.14/site-packages/yaml/representer.py",
+            "libexec/lib/python3.14/site-packages/yaml/resolver.py",
+            "libexec/lib/python3.14/site-packages/yaml/scanner.py",
+            "libexec/lib/python3.14/site-packages/yaml/serializer.py",
+            "libexec/lib/python3.14/site-packages/yaml/tokens.py",
+            "libexec/pyvenv.cfg",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/uvicorn.fish",
+            "share/zsh/site-functions/_uvicorn"
+          ],
+          "installed_size": 6534287
+        }
+      }
+    }
+  }
+}
