@@ -1,0 +1,279 @@
+{
+  "wabt": {
+    "formula": {
+      "name": "wabt",
+      "pkg_version": "1.0.42",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/w/wabt.rb",
+      "tap_git_path": "Formula/w/wabt.rb",
+      "tap_git_revision": "bf4a6647cda39aaeeccade8184b7700dcca2481e",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Web Assembly Binary Toolkit",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/WebAssembly/wabt"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-16T09:57:47Z",
+      "tags": {
+        "sequoia": {
+          "filename": "wabt-1.0.42.sequoia.bottle.tar.gz",
+          "local_filename": "wabt--1.0.42.sequoia.bottle.tar.gz",
+          "sha256": "41310cbaf31d94f7e3032649b9fe9c68034d601a71edede18ada0b0fe7b1d400",
+          "tab": {
+            "homebrew_version": "7.0.2",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/spectest-interp",
+              "bin/wasm-interp",
+              "bin/wasm-objdump",
+              "bin/wasm-stats",
+              "bin/wasm-strip",
+              "bin/wasm-validate",
+              "bin/wasm2c",
+              "bin/wasm2wat",
+              "bin/wast2json",
+              "bin/wat-desugar",
+              "bin/wat2wasm"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789504507,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-wabt"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-wabt"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-wabt-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/wasm2wat",
+            "bin/wasm-interp",
+            "bin/wasm-strip",
+            "bin/spectest-interp",
+            "bin/wat2wasm",
+            "bin/wat-desugar",
+            "bin/wast2json",
+            "bin/wasm2c",
+            "bin/wasm-validate",
+            "bin/wasm-objdump",
+            "bin/wasm-stats"
+          ],
+          "all_files": [
+            ".brew/wabt.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/spectest-interp",
+            "bin/wasm-interp",
+            "bin/wasm-objdump",
+            "bin/wasm-stats",
+            "bin/wasm-strip",
+            "bin/wasm-validate",
+            "bin/wasm2c",
+            "bin/wasm2wat",
+            "bin/wast2json",
+            "bin/wat-desugar",
+            "bin/wat2wasm",
+            "include/wabt/apply-names.h",
+            "include/wabt/base-types.h",
+            "include/wabt/binary-reader-ir.h",
+            "include/wabt/binary-reader-logging.h",
+            "include/wabt/binary-reader-nop.h",
+            "include/wabt/binary-reader-objdump.h",
+            "include/wabt/binary-reader-stats.h",
+            "include/wabt/binary-reader.h",
+            "include/wabt/binary-writer-spec.h",
+            "include/wabt/binary-writer.h",
+            "include/wabt/binary.h",
+            "include/wabt/binding-hash.h",
+            "include/wabt/c-writer.h",
+            "include/wabt/cast.h",
+            "include/wabt/color.h",
+            "include/wabt/common.h",
+            "include/wabt/config.h",
+            "include/wabt/error-formatter.h",
+            "include/wabt/error.h",
+            "include/wabt/expr-visitor.h",
+            "include/wabt/feature.def",
+            "include/wabt/feature.h",
+            "include/wabt/filenames.h",
+            "include/wabt/generate-names.h",
+            "include/wabt/interp/binary-reader-interp.h",
+            "include/wabt/interp/interp-inl.h",
+            "include/wabt/interp/interp-math.h",
+            "include/wabt/interp/interp-util.h",
+            "include/wabt/interp/interp-wasi.h",
+            "include/wabt/interp/interp.h",
+            "include/wabt/interp/istream.h",
+            "include/wabt/intrusive-list.h",
+            "include/wabt/ir-util.h",
+            "include/wabt/ir.h",
+            "include/wabt/leb128.h",
+            "include/wabt/lexer-source-line-finder.h",
+            "include/wabt/lexer-source.h",
+            "include/wabt/literal.h",
+            "include/wabt/opcode-code-table.h",
+            "include/wabt/opcode.def",
+            "include/wabt/opcode.h",
+            "include/wabt/option-parser.h",
+            "include/wabt/range.h",
+            "include/wabt/resolve-names.h",
+            "include/wabt/result.h",
+            "include/wabt/sha256.h",
+            "include/wabt/shared-validator.h",
+            "include/wabt/stream.h",
+            "include/wabt/string-format.h",
+            "include/wabt/string-util.h",
+            "include/wabt/token.def",
+            "include/wabt/token.h",
+            "include/wabt/tracing.h",
+            "include/wabt/type-checker.h",
+            "include/wabt/type.h",
+            "include/wabt/utf8.h",
+            "include/wabt/validator.h",
+            "include/wabt/wast-lexer.h",
+            "include/wabt/wast-parser.h",
+            "include/wabt/wat-writer.h",
+            "include/wasm-rt-exceptions.h",
+            "include/wasm-rt.h",
+            "lib/cmake/wabt/wabt-config-version.cmake",
+            "lib/cmake/wabt/wabt-config.cmake",
+            "lib/cmake/wabt/wabt-targets-release.cmake",
+            "lib/cmake/wabt/wabt-targets.cmake",
+            "lib/libwabt.a",
+            "lib/libwasm-rt-impl.a",
+            "sbom.spdx.json",
+            "share/man/man1/spectest-interp.1",
+            "share/man/man1/wasm-interp.1",
+            "share/man/man1/wasm-objdump.1",
+            "share/man/man1/wasm-stats.1",
+            "share/man/man1/wasm-strip.1",
+            "share/man/man1/wasm-validate.1",
+            "share/man/man1/wasm2c.1",
+            "share/man/man1/wasm2wat.1",
+            "share/man/man1/wast2json.1",
+            "share/man/man1/wat-desugar.1",
+            "share/man/man1/wat2wasm.1",
+            "share/wabt/wasm2c/wasm-rt-exceptions-impl.c",
+            "share/wabt/wasm2c/wasm-rt-impl-tableops.inc",
+            "share/wabt/wasm2c/wasm-rt-impl.c",
+            "share/wabt/wasm2c/wasm-rt-impl.h",
+            "share/wabt/wasm2c/wasm-rt-mem-impl-helper.inc",
+            "share/wabt/wasm2c/wasm-rt-mem-impl.c"
+          ],
+          "installed_size": 18681835
+        }
+      }
+    }
+  }
+}

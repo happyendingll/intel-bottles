@@ -1,0 +1,168 @@
+{
+  "hierarchy-builder": {
+    "formula": {
+      "name": "hierarchy-builder",
+      "pkg_version": "1.10.3_3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/h/hierarchy-builder.rb",
+      "tap_git_path": "Formula/h/hierarchy-builder.rb",
+      "tap_git_revision": "bf4a6647cda39aaeeccade8184b7700dcca2481e",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "High level commands to declare a hierarchy based on packed classes",
+      "license": "MIT",
+      "homepage": "https://github.com/math-comp/hierarchy-builder"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-16T08:42:33Z",
+      "tags": {
+        "sequoia": {
+          "filename": "hierarchy-builder-1.10.3_3.sequoia.bottle.tar.gz",
+          "local_filename": "hierarchy-builder--1.10.3_3.sequoia.bottle.tar.gz",
+          "sha256": "651b739db9bd9704aa0ed45273e6d496a1d82869ed78a9e0aea11511592502e1",
+          "tab": {
+            "homebrew_version": "7.0.2",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1782313740,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ocaml",
+                "version": "5.5.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.5.0",
+                "declared_directly": false,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "ocaml-findlib",
+                "version": "1.9.8",
+                "revision": 4,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.9.8_4",
+                "declared_directly": false
+              },
+              {
+                "full_name": "ocaml-zarith",
+                "version": "1.14",
+                "revision": 5,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.14_5",
+                "declared_directly": false
+              },
+              {
+                "full_name": "rocq",
+                "version": "9.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "9.2.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "rocq-elpi",
+                "version": "3.5.1",
+                "revision": 0,
+                "pkg_version": "3.5.1",
+                "declared_directly": true,
+                "compatibility_version": 4
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-hierarchy-builder"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-hierarchy-builder-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/hierarchy-builder.rb",
+            "AUTHORS.md",
+            "Changelog.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "lib/ocaml/coq/user-contrib/HB/structures.glob",
+            "lib/ocaml/coq/user-contrib/HB/structures.v",
+            "lib/ocaml/coq/user-contrib/HB/structures.vo",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 2486625
+        }
+      }
+    }
+  }
+}

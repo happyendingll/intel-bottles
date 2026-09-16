@@ -1,0 +1,141 @@
+{
+  "beads": {
+    "formula": {
+      "name": "beads",
+      "pkg_version": "1.3.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/b/beads.rb",
+      "tap_git_path": "Formula/b/beads.rb",
+      "tap_git_revision": "bf4a6647cda39aaeeccade8184b7700dcca2481e",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Memory upgrade for your coding agent",
+      "license": "MIT",
+      "homepage": "https://github.com/gastownhall/beads"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-16T07:26:14Z",
+      "tags": {
+        "sequoia": {
+          "filename": "beads-1.3.0.sequoia.bottle.tar.gz",
+          "local_filename": "beads--1.3.0.sequoia.bottle.tar.gz",
+          "sha256": "4f24d9baf0cf8b80f843d139b30fe42636103d1aeac3601050b7b58afb0a0312",
+          "tab": {
+            "homebrew_version": "7.0.2",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/beads"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789499639,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "dolt",
+                "version": "2.3.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.4",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-dolt-2.3.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-dolt-2.3.4",
+                "name": "dolt",
+                "versionInfo": "2.3.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/dolt-2.3.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6e4de929d1e4afaaabaa07bba387dc516db1becf33e07f07c21e458bdd572864"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/dolt@2.3.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-dolt-2.3.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-beads"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-beads-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/bd",
+            "bin/beads"
+          ],
+          "all_files": [
+            ".brew/beads.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/bd",
+            "bin/beads",
+            "etc/bash_completion.d/bd",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/bd.fish",
+            "share/pwsh/completions/_bd.ps1",
+            "share/zsh/site-functions/_bd"
+          ],
+          "installed_size": 151717915
+        }
+      }
+    }
+  }
+}
