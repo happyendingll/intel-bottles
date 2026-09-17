@@ -1,8 +1,8 @@
 name: warm optional bottles
 
-# Optional prewarming starts only after the scheduled target build has completed, so
-# targets.txt always has first claim on the Intel runners. Manual runs remain available
-# for small, explicit validation batches.
+# Optional prewarming starts only after the scheduled held-refresh build has completed, so
+# version updates for every active manifest have first claim on the Intel runners. Manual
+# runs remain available for small, explicit validation batches.
 
 on:
   workflow_dispatch:

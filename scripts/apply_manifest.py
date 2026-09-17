@@ -9,8 +9,9 @@ bottle block is deliberately not re-applied. The upstream formula therefore rema
 fork without our bottle and is picked up by the following build-bottles plan. A successful
 build writes the new bottle block back to the fork.
 
-Emits one tab-separated instruction per still-current manifest on stdout:
-    APPLY <json_path>
+Emits tab-separated instructions on stdout:
+    APPLY <json_path>  for a manifest that still matches upstream
+    HELD  <formula>    for a successfully bottled Formula whose version moved
 """
 
 import json
@@ -65,6 +66,8 @@ def main() -> None:
     # next build plan see that a new bottle is required.
     for entry in current:
         print(f"APPLY\t{entry['json']}")
+    for entry, _now in held:
+        print(f"HELD\t{entry['name']}")
 
     print(
         f"\n{len(current)} at upstream version, {len(held)} held back, {len(dropped)} dropped",

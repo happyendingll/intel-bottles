@@ -22,11 +22,11 @@ tag before publishing so a mismatched runner cannot contaminate the fork.
 ```
   sync fork       updates the homebrew-core fork while preserving valid bottle blocks
    │
-   ├─ targets     build bottles reads targets.txt and publishes missing bottles in
-   │              dependency-ordered waves; this is always the highest-priority work
+   ├─ refresh     writes every stale active manifest to targets.txt; build bottles
+   │              publishes those updates in dependency-ordered waves
    │
    └─ prewarm     after a scheduled target build completes, warm optional bottles picks
-                  at most 10 missing entries from catalog.txt and builds them in waves
+                  at most 100 missing entries from catalog.txt and builds them in waves
 ```
 
 **Why roots, not one job per formula.** `brew install --build-bottle X` does *not* propagate
@@ -42,7 +42,8 @@ rebuilding them. The target planner auto-promotes anything at least five other u
 formulae depend on, so `qtbase` lands in an early wave without being listed anywhere.
 
 **Optional prewarming.** `catalog.txt` is a generated, lower-priority pool for Formulae that
-may be useful later but are not installed targets. The manual `generate prewarm catalog`
+may be useful later but have never been bottled here. Every successful prewarm writes an active
+manifest and thereby joins the permanently maintained set. The manual `generate prewarm catalog`
 workflow ranks Homebrew's 365-day install-on-request data, but writes only Formulae that are
 compatible with macOS 15 Intel, currently need a bottle, and pass the cost and installation
 policy in `heavy.txt` and `catalog-policy.json`. Heavy Formula families and projects that prefer
@@ -72,8 +73,8 @@ confirmation (`--delete --yes` is available for intentional non-interactive use)
 
 | Path | Role |
 |---|---|
-| `targets.txt` | Formulae to keep bottled (all installed core formulae) |
-| `catalog.txt` | Lower-priority Formulae to prewarm in bounded daily batches |
+| `targets.txt` | Generated queue of active manifests held for an upstream version refresh |
+| `catalog.txt` | Lower-priority source of new Formulae to add to the maintained set |
 | `catalog-policy.json` | Curated exclusions for upstream-binary-first and costly builds |
 | `prewarm-failures.txt` | Failed/timed-out optional builds quarantined from future catalogs |
 | `heavy.txt` | Forced into stage 1: expensive or risky |
@@ -121,8 +122,9 @@ repo private (which costs runner minutes for the GitHub-hosted jobs).
    free on public repos.
 3. **Add a secret `FORK_TOKEN`**: a fine-grained PAT with `contents: write` on
    `<your-github-user>/homebrew-core`. Used to push rebuilt bottle blocks.
-4. Run the **build bottles** workflow. First run is the expensive one; later runs only pick up
-   what upstream has bumped.
+4. Run **sync fork** to generate the held refresh queue, then run **build bottles**. Scheduled
+   runs do this in the same order; later builds only pick up active manifests whose upstream
+   version has moved.
 
 When changing the target macOS version, run **sync fork** once before **build bottles**. This
 removes bottle blocks from the previous target before planning the new build.

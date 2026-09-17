@@ -111,7 +111,9 @@ def levels(deps: dict[str, set[str]]) -> dict[str, int]:
 def main() -> None:
     targets = read_list(REPO / "targets.txt")
     if not targets:
-        sys.exit("targets.txt is empty -- nothing to plan")
+        print("targets.txt has no held formulae -- nothing to plan")
+        emit({}, [])
+        return
 
     missing = unbottled(targets)
     if not missing:
