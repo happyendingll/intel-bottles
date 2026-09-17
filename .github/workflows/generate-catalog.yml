@@ -1,7 +1,8 @@
 name: generate prewarm catalog
 
-# Manual maintenance entry point. Generation and bottle classification run together on
-# the target platform, so catalog.txt never contains a post-generation audit backlog.
+# Runs after every successful build-bottles workflow. Generation and bottle classification
+# run together on the target platform, so catalog.txt never contains an audit backlog.
+# The manual entry point remains available for regeneration without a preceding build.
 
 on:
   workflow_dispatch:
@@ -11,11 +12,9 @@ on:
         required: true
         default: 100
         type: number
-      scan_limit:
-        description: Number of popular Formulae to inspect before filling the catalog
-        required: true
-        default: 1500
-        type: number
+  workflow_run:
+    workflows: ["build bottles"]
+    types: [completed]
 
 concurrency:
   group: generate-prewarm-catalog
@@ -25,7 +24,20 @@ permissions:
   contents: write
 
 jobs:
+  reject-failed-build:
+    if: >-
+      github.event_name == 'workflow_run' &&
+      github.event.workflow_run.conclusion != 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "build bottles concluded: ${{ github.event.workflow_run.conclusion }}" >&2
+          exit 1
+
   generate:
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: macos-15-intel
     env:
       HOMEBREW_CORE_GIT_REMOTE: https://github.com/${{ github.repository_owner }}/homebrew-core
@@ -42,8 +54,7 @@ jobs:
       - name: Generate recommended catalog
         run: >-
           python3 scripts/generate_catalog.py
-          --limit '${{ inputs.limit }}'
-          --scan-limit '${{ inputs.scan_limit }}'
+          --limit '${{ inputs.limit || 100 }}'
           --write
 
       - name: Commit catalog when changed

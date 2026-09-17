@@ -20,13 +20,13 @@ tag before publishing so a mismatched runner cannot contaminate the fork.
 ## How it works
 
 ```
-  sync fork       updates the homebrew-core fork while preserving valid bottle blocks
-   │
-   ├─ refresh     writes every stale active manifest to targets.txt; build bottles
-   │              publishes those updates in dependency-ordered waves
-   │
-   └─ prewarm     after a scheduled target build completes, warm optional bottles picks
-                  at most 100 missing entries from catalog.txt and builds them in waves
+  sync fork       updates homebrew-core and writes stale active manifests to targets.txt
+       ↓
+  build bottles   publishes those updates in dependency-ordered waves
+       ↓
+  catalog         scans every Homebrew Formula and selects 100 eligible new candidates
+       ↓
+  prewarm         builds the new catalog entries in dependency-ordered waves
 ```
 
 **Why roots, not one job per formula.** `brew install --build-bottle X` does *not* propagate
@@ -42,16 +42,16 @@ rebuilding them. The target planner auto-promotes anything at least five other u
 formulae depend on, so `qtbase` lands in an early wave without being listed anywhere.
 
 **Optional prewarming.** `catalog.txt` is a generated, lower-priority pool for Formulae that
-may be useful later but have never been bottled here. Every successful prewarm writes an active
-manifest and thereby joins the permanently maintained set. The manual `generate prewarm catalog`
-workflow ranks Homebrew's 365-day install-on-request data, but writes only Formulae that are
-compatible with macOS 15 Intel, currently need a bottle, and pass the cost and installation
-policy in `heavy.txt` and `catalog-policy.json`. Heavy Formula families and projects that prefer
-their own optimized macOS binary therefore never enter the catalog.
+have never been bottled here. After every successful target build, catalog generation considers
+the complete Homebrew Formula set, ranks entries with 365-day install-on-request analytics first,
+then applies compatibility, current-bottle, cost, failure, and installation-policy filters before
+writing 100 candidates. Heavy Formula families and projects that prefer their own optimized macOS
+binary therefore never enter the catalog. Every successful prewarm writes an active manifest and
+thereby joins the permanently maintained set.
 
-A scheduled prewarm starts only after the scheduled `build bottles` run completes, selects up
-to 100 roots, and runs at most five jobs in parallel with a one-hour cap per job. Prewarmed
-assets use numbered rolling Releases (`bottles-warm-1`, `bottles-warm-2`, and so on). Before a
+A scheduled prewarm starts only after the post-build catalog refresh completes, selects up to
+100 roots, and runs at most five jobs in parallel with a one-hour cap per job. Prewarmed assets
+use numbered rolling Releases (`bottles-warm-1`, `bottles-warm-2`, and so on). Before a
 Release approaches GitHub's 1,000-asset limit, the workflow advances to the next number. Old
 Releases are retained because existing manifests keep their original `root_url`; new and
 rebuilt Formulae point at the current rolling Release. All bottle blocks are merged into the

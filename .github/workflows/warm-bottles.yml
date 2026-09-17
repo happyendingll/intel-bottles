@@ -1,8 +1,7 @@
 name: warm optional bottles
 
-# Optional prewarming starts only after the scheduled held-refresh build has completed, so
-# version updates for every active manifest have first claim on the Intel runners. Manual
-# runs remain available for small, explicit validation batches.
+# Optional prewarming starts only after the catalog has been regenerated following a
+# successful held-refresh build. Manual runs remain available for explicit validation batches.
 
 on:
   workflow_dispatch:
@@ -17,7 +16,7 @@ on:
         default: 100
         type: number
   workflow_run:
-    workflows: ["build bottles"]
+    workflows: ["generate prewarm catalog"]
     types: [completed]
 
 concurrency:
@@ -33,8 +32,7 @@ jobs:
     name: plan optional catalog
     if: >-
       github.event_name == 'workflow_dispatch' ||
-      (github.event.workflow_run.conclusion == 'success' &&
-       github.event.workflow_run.event == 'schedule')
+      github.event.workflow_run.conclusion == 'success'
     runs-on: macos-15-intel
     outputs:
       wave0: ${{ steps.plan.outputs.wave0 }}

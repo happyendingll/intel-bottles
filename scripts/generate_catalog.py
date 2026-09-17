@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
 """Generate a conservative optional-bottle catalog for macOS 15 Intel.
 
-Popularity only determines ordering. A Formula is emitted only when it is compatible,
-currently lacks a usable bottle on this runner, and is not blocked by the target,
-exclude, heavyweight, or curated upstream-binary policies.
+Every Homebrew Formula is considered. Popularity determines ordering when analytics are
+available, followed by the remaining Formulae alphabetically. A Formula is emitted only
+when it is compatible, currently lacks a usable bottle on this runner, and is not blocked
+by the target, exclude, heavyweight, or curated upstream-binary policies.
 """
 
 import argparse
@@ -41,6 +42,15 @@ def analytics_names(payload: Any) -> list[str]:
         if name and "/" not in name:
             names.append(name)
     return list(dict.fromkeys(names))
+
+
+def ranked_formula_names(
+    analytics_payload: Any, formulae: dict[str, dict[str, Any]]
+) -> list[str]:
+    """Rank the complete Formula set: analytics first, then unranked names."""
+    popular = [name for name in analytics_names(analytics_payload) if name in formulae]
+    seen = set(popular)
+    return popular + sorted(name for name in formulae if name not in seen)
 
 
 def incompatible(formula: dict[str, Any]) -> str | None:
@@ -101,12 +111,11 @@ def main() -> None:
     parser.add_argument("--formulae-json", default=FORMULAE_URL)
     parser.add_argument("--needs-bottle-file", help="Use a runner audit list instead of brew")
     parser.add_argument("--limit", type=int, default=100)
-    parser.add_argument("--scan-limit", type=int, default=1500)
     parser.add_argument("--output", type=Path, default=REPO / "catalog.txt")
     parser.add_argument("--write", action="store_true", help="Write --output; otherwise print")
     args = parser.parse_args()
-    if args.limit < 1 or args.scan_limit < args.limit:
-        parser.error("require 1 <= --limit <= --scan-limit")
+    if args.limit < 1:
+        parser.error("--limit must be at least 1")
     if not args.needs_bottle_file:
         macos_major = platform.mac_ver()[0].partition(".")[0]
         if sys.platform != "darwin" or platform.machine() != "x86_64" or macos_major != "15":
@@ -115,9 +124,10 @@ def main() -> None:
                 "run on macos-15-intel or pass --needs-bottle-file"
             )
 
-    analytics = analytics_names(load_json(args.analytics_json))[: args.scan_limit]
+    analytics_payload = load_json(args.analytics_json)
     formula_list = load_json(args.formulae_json)
     formulae = {item["name"]: item for item in formula_list if item.get("name")}
+    candidates = ranked_formula_names(analytics_payload, formulae)
     policy = load_json(str(REPO / "catalog-policy.json"))
     policy_excluded = set(policy.get("exclude", {}))
     targets = set(read_list(REPO / "targets.txt"))
@@ -130,7 +140,7 @@ def main() -> None:
 
     compatible = []
     rejected: dict[str, str] = {}
-    for name in analytics:
+    for name in candidates:
         formula = formulae.get(name)
         reason = "not in homebrew-core" if formula is None else incompatible(formula)
         if name in targets:
@@ -173,7 +183,8 @@ def main() -> None:
     header = [
         "# Optional Formulae recommended for bounded bottle prewarming.",
         "#",
-        f"# Generated {generated} from Homebrew 365-day install-on-request analytics.",
+        f"# Generated {generated} from the complete Homebrew Formula set.",
+        "# Ranked by 365-day install-on-request analytics, then alphabetically.",
         "# Filters: targets, incompatible/retired Formulae, exclude.txt, missing heavy.txt",
         "# dependencies, and catalog-policy.json. Regenerate with the manual",
         "# 'generate prewarm catalog' workflow on macos-15-intel.",
@@ -185,7 +196,7 @@ def main() -> None:
     else:
         print(output, end="")
     print(
-        f"catalog generation: scanned {len(analytics)}, compatible {len(compatible)}, "
+        f"catalog generation: scanned {len(candidates)}, compatible {len(compatible)}, "
         f"recommended {len(selected)}, rejected {len(rejected)}",
         file=sys.stderr,
     )
