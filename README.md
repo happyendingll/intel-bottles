@@ -61,6 +61,13 @@ writes the matching `bottle do` blocks into a fork of `homebrew-core`, which the
 via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works, and no
 `brew trust` is needed — brew still sees this as `homebrew/core`.
 
+**Release cleanup.** Successful target and prewarm builds automatically delete the old bottle
+asset after its replacement manifest has been pushed and only when no active manifest still
+references it. `python3 scripts/prune_release_assets.py` handles historical leftovers: it first
+performs a read-only audit; pass `--delete` only after reviewing the report. The script never
+deletes a Release, refuses to use a stale local manifest commit, and requires explicit
+confirmation (`--delete --yes` is available for intentional non-interactive use).
+
 ## Layout
 
 | Path | Role |
@@ -76,10 +83,11 @@ via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works,
 | `scripts/filter_unbottled.py` | Order-preserving "which of these lack a bottle here" |
 | `scripts/build_root.sh` | Builds + bottles one root and its unbottled chain |
 | `scripts/publish.sh` | Merges DSL into the fork, uploads release assets |
+| `scripts/delete_replaced_assets.py` | Removes superseded assets after their new manifests are safely pushed |
+| `scripts/prune_release_assets.py` | Audits unused Release bottles; deletes only with explicit confirmation |
 | `scripts/apply_manifest.py` | Splits the manifest into still-valid vs stale |
 | `scripts/sync_fork.sh` | Rebuilds the fork as upstream + our blocks |
-| `manifest/` | Active `*.bottle.json` files — the source of truth for re-applying blocks |
-| `manifest/archive/` | Inactive manifests retained from earlier target systems |
+| `manifest/` | Active `*.bottle.json` files — the source of truth for re-applying blocks; replaced versions remain recoverable from Git history |
 
 ## Runner assignment
 

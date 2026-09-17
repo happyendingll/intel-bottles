@@ -133,22 +133,18 @@ jobs:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           if ls bottles/.staged/*.bottle.json >/dev/null 2>&1; then
+            replaced="$RUNNER_TEMP/replaced-manifests"
+            rm -rf -- "$replaced"
+            mkdir -p "$replaced"
             for new in bottles/.staged/*.bottle.json; do
               base="$(basename "$new")"
               formula="${base%%--*}"
-              tag="${base%.bottle.json}"
-              tag="${tag##*.}"
-              archive="manifest/archive/$tag"
-              mkdir -p "$archive"
               for old in manifest/"$formula"--*.bottle.json; do
                 [ -e "$old" ] || continue
                 [ "$(basename "$old")" = "$base" ] && continue
-                destination="$archive/$(basename "$old")"
-                if [ -e "$destination" ]; then
-                  echo "refusing to overwrite archived manifest: $destination" >&2
-                  exit 1
-                fi
-                mv "$old" "$destination"
+                # Only current manifests are operational; Git history retains replaced ones.
+                cp "$old" "$replaced/"
+                rm -- "$old"
               done
             done
             cp bottles/.staged/*.bottle.json manifest/
@@ -159,6 +155,13 @@ jobs:
               git push
             fi
           fi
+
+      - name: Delete replaced bottle assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          python3 scripts/delete_replaced_assets.py
+          --candidates "$RUNNER_TEMP/replaced-manifests"
 
       - name: Record prewarm failures
         if: always() && startsWith(inputs.stage, 'warm-')
