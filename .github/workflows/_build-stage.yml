@@ -58,7 +58,7 @@ jobs:
       matrix:
         entry: ${{ fromJSON(inputs.formulae) }}
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
       - name: Report disk
         # Kept as one line for diagnostics. There used to be an Xcode-deleting cleanup
@@ -84,7 +84,7 @@ jobs:
 
       - name: Upload bottles
         if: always()
-        uses: actions/upload-artifact@v4
+        uses: actions/upload-artifact@v7
         with:
           name: bottles-${{ inputs.stage }}-${{ matrix.entry.formula }}
           path: bottles/
@@ -100,9 +100,9 @@ jobs:
       actions: read
       contents: write
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v7
 
-      - uses: actions/download-artifact@v4
+      - uses: actions/download-artifact@v8
         with:
           pattern: bottles-${{ inputs.stage }}-*
           path: bottles/
