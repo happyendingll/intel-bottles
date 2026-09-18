@@ -1,0 +1,699 @@
+{
+  "faiss": {
+    "formula": {
+      "name": "faiss",
+      "pkg_version": "1.15.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/faiss.rb",
+      "tap_git_path": "Formula/f/faiss.rb",
+      "tap_git_revision": "6954cae1a9d2ad803852a47eb120dc838a36cda8",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Efficient similarity search and clustering of dense vectors",
+      "license": "MIT",
+      "homepage": "https://faiss.ai"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-18T15:18:43Z",
+      "tags": {
+        "sequoia": {
+          "filename": "faiss-1.15.1.sequoia.bottle.tar.gz",
+          "local_filename": "faiss--1.15.1.sequoia.bottle.tar.gz",
+          "sha256": "8b95dc7d8851548313cdb8e69b1bfe7105c7e12a3b87283778c862db7da118f5",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libfaiss.dylib",
+              "lib/libfaiss_c.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789574819,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "isl",
+                "version": "0.28",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.28",
+                "declared_directly": false
+              },
+              {
+                "full_name": "mpfr",
+                "version": "4.2.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.2.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libmpc",
+                "version": "1.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gcc",
+                "version": "16.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "16.2.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libomp",
+                "version": "23.1.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openblas",
+                "version": "0.3.34",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.3.34",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-isl-0.28",
+              "SPDXRef-Package-SPDXRef-mpfr-4.2.2",
+              "SPDXRef-Package-SPDXRef-libmpc-1.4.1",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-gcc-16.2.0",
+              "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-isl-0.28",
+                "name": "isl",
+                "versionInfo": "0.28",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/isl/blobs/sha256:dca49213f0e9bccffe590c7477de4455a0dfbb65ab542854b1c1f52abfa10213",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "dca49213f0e9bccffe590c7477de4455a0dfbb65ab542854b1c1f52abfa10213"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/isl@0.28",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpfr-4.2.2",
+                "name": "mpfr",
+                "versionInfo": "4.2.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/mpfr/blobs/sha256:ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpfr@4.2.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libmpc-1.4.1",
+                "name": "libmpc",
+                "versionInfo": "1.4.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/libmpc/blobs/sha256:6c035aa0556baf634ceda0edc4415b6f03d675568873b6ffec4b8c6146639f44",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6c035aa0556baf634ceda0edc4415b6f03d675568873b6ffec4b8c6146639f44"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libmpc@1.4.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gcc-16.2.0",
+                "name": "gcc",
+                "versionInfo": "16.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later WITH GCC-exception-3.1",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gcc-16.2.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "927eeebb4f263103ae248ea2350e3f48211b747d3ea96e74a798b89a661eda77"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gcc@16.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "name": "libomp",
+                "versionInfo": "23.1.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libomp-23.1.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f9006339f8009a14348931dfb50532f9b6962968266db7a3108178588bf8b703"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libomp@23.1.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-faiss"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-isl-0.28",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-faiss"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpfr-4.2.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-faiss"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libmpc-1.4.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-faiss"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-faiss"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-faiss"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-faiss"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gcc-16.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-faiss"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-faiss"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-faiss-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/faiss.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/faiss/AutoTune.h",
+            "include/faiss/Clustering.h",
+            "include/faiss/IVFlib.h",
+            "include/faiss/Index.h",
+            "include/faiss/Index2Layer.h",
+            "include/faiss/IndexAdditiveQuantizer.h",
+            "include/faiss/IndexAdditiveQuantizerFastScan.h",
+            "include/faiss/IndexBinary.h",
+            "include/faiss/IndexBinaryFlat.h",
+            "include/faiss/IndexBinaryFromFloat.h",
+            "include/faiss/IndexBinaryHNSW.h",
+            "include/faiss/IndexBinaryHash.h",
+            "include/faiss/IndexBinaryIVF.h",
+            "include/faiss/IndexEDEN.h",
+            "include/faiss/IndexFastScan.h",
+            "include/faiss/IndexFlat.h",
+            "include/faiss/IndexFlatCodes.h",
+            "include/faiss/IndexHNSW.h",
+            "include/faiss/IndexIDMap.h",
+            "include/faiss/IndexIVF.h",
+            "include/faiss/IndexIVFAdditiveQuantizer.h",
+            "include/faiss/IndexIVFAdditiveQuantizerFastScan.h",
+            "include/faiss/IndexIVFEDEN.h",
+            "include/faiss/IndexIVFFastScan.h",
+            "include/faiss/IndexIVFFlat.h",
+            "include/faiss/IndexIVFFlatPanorama.h",
+            "include/faiss/IndexIVFIndependentQuantizer.h",
+            "include/faiss/IndexIVFPQ.h",
+            "include/faiss/IndexIVFPQFastScan.h",
+            "include/faiss/IndexIVFPQR.h",
+            "include/faiss/IndexIVFRaBitQ.h",
+            "include/faiss/IndexIVFRaBitQFastScan.h",
+            "include/faiss/IndexIVFSpectralHash.h",
+            "include/faiss/IndexLSH.h",
+            "include/faiss/IndexLattice.h",
+            "include/faiss/IndexNNDescent.h",
+            "include/faiss/IndexNSG.h",
+            "include/faiss/IndexNeuralNetCodec.h",
+            "include/faiss/IndexPQ.h",
+            "include/faiss/IndexPQFastScan.h",
+            "include/faiss/IndexPreTransform.h",
+            "include/faiss/IndexRaBitQ.h",
+            "include/faiss/IndexRaBitQFastScan.h",
+            "include/faiss/IndexRefine.h",
+            "include/faiss/IndexReplicas.h",
+            "include/faiss/IndexRowwiseMinMax.h",
+            "include/faiss/IndexScalarQuantizer.h",
+            "include/faiss/IndexShards.h",
+            "include/faiss/IndexShardsIVF.h",
+            "include/faiss/MatrixStats.h",
+            "include/faiss/MetaIndexes.h",
+            "include/faiss/MetricType.h",
+            "include/faiss/SuperKMeans.h",
+            "include/faiss/VectorTransform.h",
+            "include/faiss/c_api/AutoTune_c.h",
+            "include/faiss/c_api/Clustering_c.h",
+            "include/faiss/c_api/IndexBinaryFlat_c.h",
+            "include/faiss/c_api/IndexBinaryIVF_c.h",
+            "include/faiss/c_api/IndexBinary_c.h",
+            "include/faiss/c_api/IndexFlat_c.h",
+            "include/faiss/c_api/IndexHNSW_c.h",
+            "include/faiss/c_api/IndexIVFFlat_c.h",
+            "include/faiss/c_api/IndexIVF_c.h",
+            "include/faiss/c_api/IndexLSH_c.h",
+            "include/faiss/c_api/IndexPreTransform_c.h",
+            "include/faiss/c_api/IndexReplicas_c.h",
+            "include/faiss/c_api/IndexScalarQuantizer_c.h",
+            "include/faiss/c_api/IndexShards_c.h",
+            "include/faiss/c_api/Index_c.h",
+            "include/faiss/c_api/MetaIndexes_c.h",
+            "include/faiss/c_api/VectorTransform_c.h",
+            "include/faiss/c_api/clone_index_c.h",
+            "include/faiss/c_api/error_c.h",
+            "include/faiss/c_api/error_impl.h",
+            "include/faiss/c_api/faiss_c.h",
+            "include/faiss/c_api/impl/AuxIndexStructures_c.h",
+            "include/faiss/c_api/impl/io_c.h",
+            "include/faiss/c_api/index_factory_c.h",
+            "include/faiss/c_api/index_io_c.h",
+            "include/faiss/c_api/invlists/DirectMap_c.h",
+            "include/faiss/c_api/macros_impl.h",
+            "include/faiss/c_api/utils/distances_c.h",
+            "include/faiss/c_api/utils/utils_c.h",
+            "include/faiss/clone_index.h",
+            "include/faiss/factory_tools.h",
+            "include/faiss/impl/AdSampling.h",
+            "include/faiss/impl/AdditiveQuantizer.h",
+            "include/faiss/impl/AuxIndexStructures.h",
+            "include/faiss/impl/ClusteringHelpers.h",
+            "include/faiss/impl/ClusteringInitialization.h",
+            "include/faiss/impl/CodePacker.h",
+            "include/faiss/impl/CodePackerRaBitQ.h",
+            "include/faiss/impl/DistanceComputer.h",
+            "include/faiss/impl/EDENQuantizer.h",
+            "include/faiss/impl/FaissAssert.h",
+            "include/faiss/impl/FaissException.h",
+            "include/faiss/impl/HNSW.h",
+            "include/faiss/impl/IDSelector.h",
+            "include/faiss/impl/InvertedListScannerStats.h",
+            "include/faiss/impl/LocalSearchQuantizer.h",
+            "include/faiss/impl/NNDescent.h",
+            "include/faiss/impl/NSG.h",
+            "include/faiss/impl/Panorama.h",
+            "include/faiss/impl/PanoramaStats.h",
+            "include/faiss/impl/PdxLayout.h",
+            "include/faiss/impl/PolysemousTraining.h",
+            "include/faiss/impl/ProductAdditiveQuantizer.h",
+            "include/faiss/impl/ProductQuantizer-inl.h",
+            "include/faiss/impl/ProductQuantizer.h",
+            "include/faiss/impl/Quantizer.h",
+            "include/faiss/impl/RaBitQUtils.h",
+            "include/faiss/impl/RaBitQuantizer.h",
+            "include/faiss/impl/RaBitQuantizerMultiBit.h",
+            "include/faiss/impl/ResidualQuantizer.h",
+            "include/faiss/impl/ResultHandler.h",
+            "include/faiss/impl/ScalarQuantizer.h",
+            "include/faiss/impl/ThreadedIndex-inl.h",
+            "include/faiss/impl/ThreadedIndex.h",
+            "include/faiss/impl/VisitedTable.h",
+            "include/faiss/impl/approx_topk/approx_topk.h",
+            "include/faiss/impl/approx_topk/generic.h",
+            "include/faiss/impl/approx_topk/rq_beam_search_tab-inl.h",
+            "include/faiss/impl/approx_topk/rq_beam_search_tab.h",
+            "include/faiss/impl/approx_topk/simdlib256-inl.h",
+            "include/faiss/impl/expanded_scanners.h",
+            "include/faiss/impl/fast_scan/FastScanDistancePostProcessing.h",
+            "include/faiss/impl/fast_scan/LookupTableScaler.h",
+            "include/faiss/impl/fast_scan/accumulate_loops.h",
+            "include/faiss/impl/fast_scan/accumulate_loops_512.h",
+            "include/faiss/impl/fast_scan/decompose_qbs.h",
+            "include/faiss/impl/fast_scan/dispatching.h",
+            "include/faiss/impl/fast_scan/fast_scan.h",
+            "include/faiss/impl/fast_scan/kernels_simd256.h",
+            "include/faiss/impl/fast_scan/kernels_simd512.h",
+            "include/faiss/impl/fast_scan/rabitq_dispatching.h",
+            "include/faiss/impl/fast_scan/rabitq_result_handler.h",
+            "include/faiss/impl/fast_scan/simd_result_handlers.h",
+            "include/faiss/impl/hnsw/LockVector.h",
+            "include/faiss/impl/hnsw/MinimaxHeap.h",
+            "include/faiss/impl/index_read_utils.h",
+            "include/faiss/impl/io.h",
+            "include/faiss/impl/io_macros.h",
+            "include/faiss/impl/kmeans1d.h",
+            "include/faiss/impl/lattice_Zn.h",
+            "include/faiss/impl/mapped_io.h",
+            "include/faiss/impl/maybe_owned_vector.h",
+            "include/faiss/impl/platform_macros.h",
+            "include/faiss/impl/polysemous_training/dispatch.h",
+            "include/faiss/impl/pq_code_distance/IVFPQScanner_impl.h",
+            "include/faiss/impl/pq_code_distance/IVFPQ_QueryTables.h",
+            "include/faiss/impl/pq_code_distance/PQDistanceComputer_impl.h",
+            "include/faiss/impl/pq_code_distance/pq_code_distance-avx2.h",
+            "include/faiss/impl/pq_code_distance/pq_code_distance-avx512.h",
+            "include/faiss/impl/pq_code_distance/pq_code_distance-generic.h",
+            "include/faiss/impl/pq_code_distance/pq_code_distance-inl.h",
+            "include/faiss/impl/residual_quantizer_encode_steps.h",
+            "include/faiss/impl/scalar_quantizer/codecs.h",
+            "include/faiss/impl/scalar_quantizer/distance_computers.h",
+            "include/faiss/impl/scalar_quantizer/quantizers.h",
+            "include/faiss/impl/scalar_quantizer/scanners.h",
+            "include/faiss/impl/scalar_quantizer/similarities.h",
+            "include/faiss/impl/scalar_quantizer/sq-dispatch.h",
+            "include/faiss/impl/scalar_quantizer/training.h",
+            "include/faiss/impl/simd_dispatch.h",
+            "include/faiss/impl/simdlib/simdlib.h",
+            "include/faiss/impl/simdlib/simdlib_avx2.h",
+            "include/faiss/impl/simdlib/simdlib_avx512.h",
+            "include/faiss/impl/simdlib/simdlib_dispatch.h",
+            "include/faiss/impl/simdlib/simdlib_emulated.h",
+            "include/faiss/impl/simdlib/simdlib_neon.h",
+            "include/faiss/impl/simdlib/simdlib_ppc64.h",
+            "include/faiss/impl/zerocopy_io.h",
+            "include/faiss/index_factory.h",
+            "include/faiss/index_io.h",
+            "include/faiss/invlists/BlockInvertedLists.h",
+            "include/faiss/invlists/DirectMap.h",
+            "include/faiss/invlists/InvertedLists.h",
+            "include/faiss/invlists/InvertedListsIOHook.h",
+            "include/faiss/invlists/OnDiskInvertedLists.h",
+            "include/faiss/utils/AlignedTable.h",
+            "include/faiss/utils/Heap.h",
+            "include/faiss/utils/NeuralNet.h",
+            "include/faiss/utils/WorkerThread.h",
+            "include/faiss/utils/approx_topk_hamming/approx_topk_hamming.h",
+            "include/faiss/utils/bf16.h",
+            "include/faiss/utils/distances.h",
+            "include/faiss/utils/distances_fused/distances_fused.h",
+            "include/faiss/utils/distances_fused/simdlib_kernel-inl.h",
+            "include/faiss/utils/extra_distances.h",
+            "include/faiss/utils/fp16-arm.h",
+            "include/faiss/utils/fp16-fp16c.h",
+            "include/faiss/utils/fp16-inl.h",
+            "include/faiss/utils/fp16.h",
+            "include/faiss/utils/hamming-inl.h",
+            "include/faiss/utils/hamming.h",
+            "include/faiss/utils/hamming_distance/common.h",
+            "include/faiss/utils/hamming_distance/hamming_computer-avx2.h",
+            "include/faiss/utils/hamming_distance/hamming_computer-avx512.h",
+            "include/faiss/utils/hamming_distance/hamming_computer-avx512_vpopcnt.h",
+            "include/faiss/utils/hamming_distance/hamming_computer-generic.h",
+            "include/faiss/utils/hamming_distance/hamming_computer-neon.h",
+            "include/faiss/utils/hamming_distance/hamming_computer-rvv.h",
+            "include/faiss/utils/hamming_distance/hamming_computer.h",
+            "include/faiss/utils/hamming_distance/hamming_impl.h",
+            "include/faiss/utils/ordered_key_value.h",
+            "include/faiss/utils/partitioning.h",
+            "include/faiss/utils/prefetch.h",
+            "include/faiss/utils/quantize_lut.h",
+            "include/faiss/utils/rabitq_simd.h",
+            "include/faiss/utils/random.h",
+            "include/faiss/utils/simd_impl/IVFFlatScanner-inl.h",
+            "include/faiss/utils/simd_impl/distances_autovec-inl.h",
+            "include/faiss/utils/simd_impl/distances_simdlib256.h",
+            "include/faiss/utils/simd_impl/distances_sse-inl.h",
+            "include/faiss/utils/simd_impl/exhaustive_L2sqr_blas_cmax.h",
+            "include/faiss/utils/simd_impl/super_kmeans_dispatch.h",
+            "include/faiss/utils/simd_impl/super_kmeans_kernels.h",
+            "include/faiss/utils/simd_levels.h",
+            "include/faiss/utils/sorting.h",
+            "include/faiss/utils/transpose/transpose-avx2-inl.h",
+            "include/faiss/utils/transpose/transpose-avx512-inl.h",
+            "include/faiss/utils/utils.h",
+            "lib/libfaiss.dylib",
+            "lib/libfaiss_c.dylib",
+            "sbom.spdx.json",
+            "share/faiss/demos/CMakeLists.txt",
+            "share/faiss/demos/README.md",
+            "share/faiss/demos/demo_auto_tune.py",
+            "share/faiss/demos/demo_client_server_ivf.py",
+            "share/faiss/demos/demo_distributed_kmeans_torch.py",
+            "share/faiss/demos/demo_imi_flat.cpp",
+            "share/faiss/demos/demo_imi_pq.cpp",
+            "share/faiss/demos/demo_ivfpq_indexing.cpp",
+            "share/faiss/demos/demo_nndescent.cpp",
+            "share/faiss/demos/demo_ondisk_ivf.py",
+            "share/faiss/demos/demo_qinco.py",
+            "share/faiss/demos/demo_residual_quantizer.cpp",
+            "share/faiss/demos/demo_sift1M.cpp",
+            "share/faiss/demos/demo_weighted_kmeans.cpp",
+            "share/faiss/demos/diversity_filter/CMakeLists.txt",
+            "share/faiss/demos/diversity_filter/demo_diversity_result_handler.cpp",
+            "share/faiss/demos/diversity_filter/diversity_result_handler.h",
+            "share/faiss/demos/index_pq_flat_separate_codes_from_codebook.py",
+            "share/faiss/demos/offline_ivf/README.md",
+            "share/faiss/demos/offline_ivf/__init__.py",
+            "share/faiss/demos/offline_ivf/config_ssnpp.yaml",
+            "share/faiss/demos/offline_ivf/create_sharded_ssnpp_files.py",
+            "share/faiss/demos/offline_ivf/dataset.py",
+            "share/faiss/demos/offline_ivf/generate_config.py",
+            "share/faiss/demos/offline_ivf/offline_ivf.py",
+            "share/faiss/demos/offline_ivf/run.py",
+            "share/faiss/demos/offline_ivf/tests/test_iterate_input.py",
+            "share/faiss/demos/offline_ivf/tests/test_offline_ivf.py",
+            "share/faiss/demos/offline_ivf/tests/testing_utils.py",
+            "share/faiss/demos/offline_ivf/utils.py",
+            "share/faiss/demos/rocksdb_ivf/CMakeLists.txt",
+            "share/faiss/demos/rocksdb_ivf/README.md",
+            "share/faiss/demos/rocksdb_ivf/RocksDBInvertedLists.cpp",
+            "share/faiss/demos/rocksdb_ivf/RocksDBInvertedLists.h",
+            "share/faiss/demos/rocksdb_ivf/demo_rocksdb_ivf.cpp",
+            "share/faiss/faiss-config-version.cmake",
+            "share/faiss/faiss-config.cmake",
+            "share/faiss/faiss-targets-release.cmake",
+            "share/faiss/faiss-targets.cmake"
+          ],
+          "installed_size": 8640950
+        }
+      }
+    }
+  }
+}

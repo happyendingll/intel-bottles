@@ -1,0 +1,1013 @@
+{
+  "afl++": {
+    "formula": {
+      "name": "afl++",
+      "pkg_version": "5.03c",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/afl++.rb",
+      "tap_git_path": "Formula/a/afl++.rb",
+      "tap_git_revision": "6954cae1a9d2ad803852a47eb120dc838a36cda8",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "American Fuzzy Lop++",
+      "license": "Apache-2.0",
+      "homepage": "https://aflplus.plus/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-18T14:34:52Z",
+      "tags": {
+        "sequoia": {
+          "filename": "afl%2B%2B-5.03c.sequoia.bottle.tar.gz",
+          "local_filename": "afl++--5.03c.sequoia.bottle.tar.gz",
+          "sha256": "64e56be146388d640e8682123369171266aa34a8c6045ce9fa4dfded87ccdf53",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [
+              "bin/afl-addseeds",
+              "bin/afl-analyze",
+              "bin/afl-c++",
+              "bin/afl-cc",
+              "bin/afl-clang",
+              "bin/afl-clang++",
+              "bin/afl-clang-fast",
+              "bin/afl-clang-fast++",
+              "bin/afl-clang-lto",
+              "bin/afl-clang-lto++",
+              "bin/afl-cmin",
+              "bin/afl-cmin.awk",
+              "bin/afl-cmin.bash",
+              "bin/afl-cmin.py",
+              "bin/afl-fuzz",
+              "bin/afl-g++",
+              "bin/afl-gcc",
+              "bin/afl-gotcpu",
+              "bin/afl-health",
+              "bin/afl-ld-lto",
+              "bin/afl-lto",
+              "bin/afl-lto++",
+              "bin/afl-merge",
+              "bin/afl-persistent-config",
+              "bin/afl-plot",
+              "bin/afl-showmap",
+              "bin/afl-system-config",
+              "bin/afl-tmin",
+              "bin/afl-whatsup",
+              "share/man/man8/afl-c++.8",
+              "share/man/man8/afl-cc.8",
+              "share/man/man8/afl-clang-fast++.8",
+              "share/man/man8/afl-clang-fast.8",
+              "share/man/man8/afl-clang-lto++.8",
+              "share/man/man8/afl-clang-lto.8",
+              "share/man/man8/afl-cmin.8",
+              "share/man/man8/afl-lto++.8",
+              "share/man/man8/afl-lto.8",
+              "share/man/man8/afl-merge.8"
+            ],
+            "linkage_files": [
+              "lib/afl/SanitizerCoverageLTO.so",
+              "lib/afl/SanitizerCoveragePCGUARD.so",
+              "lib/afl/afl-c11-pass.so",
+              "lib/afl/afl-llvm-bug-pass.so",
+              "lib/afl/afl-llvm-dict2file.so",
+              "lib/afl/afl-llvm-ijon-pass.so",
+              "lib/afl/afl-llvm-lto-instrumentlist.so",
+              "lib/afl/cmplog-instructions-pass.so",
+              "lib/afl/cmplog-routines-pass.so",
+              "lib/afl/cmplog-switches-pass.so",
+              "lib/afl/compare-transform-pass.so",
+              "lib/afl/injection-pass.so",
+              "lib/afl/split-compares-pass.so",
+              "lib/afl/split-switches-pass.so",
+              "libexec/afl-cmin",
+              "libexec/afl-fuzz",
+              "libexec/afl-showmap",
+              "libexec/afl-tmin"
+            ],
+            "binary_relocation_files": [
+              "libexec/afl-analyze",
+              "libexec/afl-cc",
+              "libexec/afl-cmin",
+              "libexec/afl-fuzz",
+              "libexec/afl-ld-lto",
+              "libexec/afl-showmap",
+              "libexec/afl-tmin"
+            ],
+            "source_modified_time": 1788342004,
+            "compiler": "llvm_clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "z3",
+                "version": "5.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.1.0",
+                "declared_directly": false,
+                "compatibility_version": 4
+              },
+              {
+                "full_name": "llvm",
+                "version": "23.1.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.1",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "lld",
+                "version": "23.1.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.1",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.14",
+                "version": "3.14.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.14.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "libexec/afl-cc",
+              "string": "/usr/local/opt/lld/bin/ld64.lld",
+              "offset": 52730
+            },
+            {
+              "path": "libexec/afl-cc",
+              "string": "/usr/local/opt/llvm/bin",
+              "offset": 63226
+            },
+            {
+              "path": "libexec/afl-ld-lto",
+              "string": "/usr/local/opt/llvm/bin",
+              "offset": 7167
+            },
+            {
+              "path": "libexec/afl-ld-lto",
+              "string": "/usr/local/opt/lld/bin/ld64.lld",
+              "offset": 7705
+            },
+            {
+              "path": "libexec/afl-analyze",
+              "string": "/usr/local/Cellar/afl++/5.03c/share/doc/afl",
+              "offset": 41024
+            },
+            {
+              "path": "libexec/afl-analyze",
+              "string": "/usr/local/Cellar/afl++/5.03c/bin",
+              "offset": 49012
+            },
+            {
+              "path": "libexec/afl-analyze",
+              "string": "/usr/local/Cellar/afl++/5.03c/lib/afl",
+              "offset": 49046
+            },
+            {
+              "path": "libexec/afl-cc",
+              "string": "/usr/local/Cellar/afl++/5.03c/lib/afl",
+              "offset": 44153
+            },
+            {
+              "path": "libexec/afl-cc",
+              "string": "/usr/local/Cellar/afl++/5.03c/bin",
+              "offset": 69143
+            },
+            {
+              "path": "libexec/afl-showmap",
+              "string": "/usr/local/Cellar/afl++/5.03c/share/doc/afl",
+              "offset": 64927
+            },
+            {
+              "path": "libexec/afl-showmap",
+              "string": "/usr/local/Cellar/afl++/5.03c/bin",
+              "offset": 82733
+            },
+            {
+              "path": "libexec/afl-showmap",
+              "string": "/usr/local/Cellar/afl++/5.03c/lib/afl",
+              "offset": 82767
+            },
+            {
+              "path": "libexec/afl-fuzz",
+              "string": "/usr/local/Cellar/afl++/5.03c/share/doc/afl",
+              "offset": 326792
+            },
+            {
+              "path": "libexec/afl-fuzz",
+              "string": "/usr/local/Cellar/afl++/5.03c/bin",
+              "offset": 355387
+            },
+            {
+              "path": "libexec/afl-fuzz",
+              "string": "/usr/local/Cellar/afl++/5.03c/lib/afl",
+              "offset": 355421
+            },
+            {
+              "path": "libexec/afl-cmin",
+              "string": "/usr/local/Cellar/afl++/5.03c/share/doc/afl",
+              "offset": 68990
+            },
+            {
+              "path": "libexec/afl-cmin",
+              "string": "/usr/local/Cellar/afl++/5.03c/bin",
+              "offset": 78568
+            },
+            {
+              "path": "libexec/afl-cmin",
+              "string": "/usr/local/Cellar/afl++/5.03c/lib/afl",
+              "offset": 78602
+            },
+            {
+              "path": "libexec/afl-tmin",
+              "string": "/usr/local/Cellar/afl++/5.03c/share/doc/afl",
+              "offset": 58175
+            },
+            {
+              "path": "libexec/afl-tmin",
+              "string": "/usr/local/Cellar/afl++/5.03c/bin",
+              "offset": 68890
+            },
+            {
+              "path": "libexec/afl-tmin",
+              "string": "/usr/local/Cellar/afl++/5.03c/lib/afl",
+              "offset": 68924
+            },
+            {
+              "path": "libexec/afl-ld-lto",
+              "string": "/usr/local/Cellar/afl++/5.03c/lib/afl",
+              "offset": 6538
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-llvm-23.1.1",
+              "SPDXRef-Package-SPDXRef-lld-23.1.1",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.1.1",
+                "name": "llvm",
+                "versionInfo": "23.1.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/llvm-23.1.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4a7d69d006feb38f9e86ca826635ce1e2ba7ba072a8c763f0a4e4b721fd11f00"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/llvm@23.1.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lld-23.1.1",
+                "name": "lld",
+                "versionInfo": "23.1.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lld-23.1.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "58a53f9995ac4ab55c443574187a054a9356cfa6b5694e6a79db374e1d1611db"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lld@23.1.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "name": "python@3.14",
+                "versionInfo": "3.14.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "llvm_clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-afl++"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-afl++"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-afl++"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.1.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-afl++"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lld-23.1.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-afl++"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-afl++"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-afl++"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-afl++"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-afl++"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-afl++"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-afl++"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-afl++-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/afl-analyze",
+            "bin/afl-lto",
+            "bin/afl-clang++",
+            "bin/afl-addseeds",
+            "bin/afl-cc",
+            "bin/afl-cmin.awk",
+            "bin/afl-showmap",
+            "bin/afl-clang-fast++",
+            "bin/afl-clang-lto++",
+            "bin/afl-cmin.bash",
+            "bin/afl-clang-fast",
+            "bin/afl-whatsup",
+            "bin/afl-fuzz",
+            "bin/afl-c++",
+            "bin/afl-plot",
+            "bin/afl-cmin.py",
+            "bin/afl-health",
+            "bin/afl-g++",
+            "bin/afl-persistent-config",
+            "bin/afl-lto++",
+            "bin/afl-gotcpu",
+            "bin/afl-cmin",
+            "bin/afl-tmin",
+            "bin/afl-clang",
+            "bin/afl-gcc",
+            "bin/afl-clang-lto",
+            "bin/afl-ld-lto",
+            "bin/afl-merge",
+            "bin/afl-system-config"
+          ],
+          "all_files": [
+            ".brew/afl++.rb",
+            "Changelog.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "LICENSE.Apache-2.0",
+            "LICENSE.COMMERCIAL",
+            "README.md",
+            "TODO.md",
+            "bin/afl-addseeds",
+            "bin/afl-analyze",
+            "bin/afl-c++",
+            "bin/afl-cc",
+            "bin/afl-clang",
+            "bin/afl-clang++",
+            "bin/afl-clang-fast",
+            "bin/afl-clang-fast++",
+            "bin/afl-clang-lto",
+            "bin/afl-clang-lto++",
+            "bin/afl-cmin",
+            "bin/afl-cmin.awk",
+            "bin/afl-cmin.bash",
+            "bin/afl-cmin.py",
+            "bin/afl-fuzz",
+            "bin/afl-g++",
+            "bin/afl-gcc",
+            "bin/afl-gotcpu",
+            "bin/afl-health",
+            "bin/afl-ld-lto",
+            "bin/afl-lto",
+            "bin/afl-lto++",
+            "bin/afl-merge",
+            "bin/afl-persistent-config",
+            "bin/afl-plot",
+            "bin/afl-showmap",
+            "bin/afl-system-config",
+            "bin/afl-tmin",
+            "bin/afl-whatsup",
+            "include/afl/afl-fuzz.h",
+            "include/afl/afl-ijon-min.h",
+            "include/afl/afl-mutations.h",
+            "include/afl/afl-persistent-replay.h",
+            "include/afl/afl-prealloc.h",
+            "include/afl/afl-record-compat.h",
+            "include/afl/alloc-inl.h",
+            "include/afl/android-ashmem.h",
+            "include/afl/bitops.h",
+            "include/afl/cmp-attrs.h",
+            "include/afl/cmplog.h",
+            "include/afl/common.h",
+            "include/afl/config.h",
+            "include/afl/coverage-32.h",
+            "include/afl/coverage-64.h",
+            "include/afl/debug.h",
+            "include/afl/envs.h",
+            "include/afl/forkserver.h",
+            "include/afl/hash.h",
+            "include/afl/list.h",
+            "include/afl/sharedmem.h",
+            "include/afl/snapshot-inl.h",
+            "include/afl/t1ha.h",
+            "include/afl/t1ha0_ia32aes_b.h",
+            "include/afl/t1ha_bits.h",
+            "include/afl/t1ha_selfcheck.h",
+            "include/afl/types.h",
+            "include/afl/value-profile-attrs.h",
+            "include/afl/value-profile.h",
+            "include/afl/xxhash.h",
+            "lib/afl/SanitizerCoverageLTO.so",
+            "lib/afl/SanitizerCoveragePCGUARD.so",
+            "lib/afl/afl-c11-pass.so",
+            "lib/afl/afl-compiler-rt-32.o",
+            "lib/afl/afl-compiler-rt-64.o",
+            "lib/afl/afl-compiler-rt.o",
+            "lib/afl/afl-llvm-bug-pass.so",
+            "lib/afl/afl-llvm-dict2file.so",
+            "lib/afl/afl-llvm-ijon-pass.so",
+            "lib/afl/afl-llvm-lto-instrumentlist.so",
+            "lib/afl/afl-llvm-rt-lto-32.o",
+            "lib/afl/afl-llvm-rt-lto-64.o",
+            "lib/afl/afl-llvm-rt-lto.o",
+            "lib/afl/cmplog-instructions-pass.so",
+            "lib/afl/cmplog-routines-pass.so",
+            "lib/afl/cmplog-switches-pass.so",
+            "lib/afl/compare-transform-pass.so",
+            "lib/afl/dynamic_list.txt",
+            "lib/afl/injection-pass.so",
+            "lib/afl/libAFLDriver.a",
+            "lib/afl/libAFLQemuDriver.a",
+            "lib/afl/split-compares-pass.so",
+            "lib/afl/split-switches-pass.so",
+            "libexec/afl-addseeds",
+            "libexec/afl-analyze",
+            "libexec/afl-c++",
+            "libexec/afl-cc",
+            "libexec/afl-clang",
+            "libexec/afl-clang++",
+            "libexec/afl-clang-fast",
+            "libexec/afl-clang-fast++",
+            "libexec/afl-clang-lto",
+            "libexec/afl-clang-lto++",
+            "libexec/afl-cmin",
+            "libexec/afl-cmin.awk",
+            "libexec/afl-cmin.bash",
+            "libexec/afl-cmin.py",
+            "libexec/afl-fuzz",
+            "libexec/afl-g++",
+            "libexec/afl-gcc",
+            "libexec/afl-gotcpu",
+            "libexec/afl-health",
+            "libexec/afl-ld-lto",
+            "libexec/afl-lto",
+            "libexec/afl-lto++",
+            "libexec/afl-merge",
+            "libexec/afl-persistent-config",
+            "libexec/afl-plot",
+            "libexec/afl-showmap",
+            "libexec/afl-system-config",
+            "libexec/afl-tmin",
+            "libexec/afl-whatsup",
+            "sbom.spdx.json",
+            "share/afl/dictionaries/README.md",
+            "share/afl/dictionaries/aff.dict",
+            "share/afl/dictionaries/ass.dict",
+            "share/afl/dictionaries/atom.dict",
+            "share/afl/dictionaries/av1_dc.dict",
+            "share/afl/dictionaries/bash.dict",
+            "share/afl/dictionaries/bdf.dict",
+            "share/afl/dictionaries/bmp.dict",
+            "share/afl/dictionaries/bz2.dict",
+            "share/afl/dictionaries/creole.dict",
+            "share/afl/dictionaries/css.dict",
+            "share/afl/dictionaries/csv.dict",
+            "share/afl/dictionaries/dds.dict",
+            "share/afl/dictionaries/djvu.dict",
+            "share/afl/dictionaries/docommand.dict",
+            "share/afl/dictionaries/exif.dict",
+            "share/afl/dictionaries/fbs.dict",
+            "share/afl/dictionaries/ftp.dict",
+            "share/afl/dictionaries/gif.dict",
+            "share/afl/dictionaries/graphviz.dict",
+            "share/afl/dictionaries/heif.dict",
+            "share/afl/dictionaries/hoextdown.dict",
+            "share/afl/dictionaries/html_tags.dict",
+            "share/afl/dictionaries/http.dict",
+            "share/afl/dictionaries/icc.dict",
+            "share/afl/dictionaries/iccprofile.dict",
+            "share/afl/dictionaries/icns.dict",
+            "share/afl/dictionaries/initfile.dict",
+            "share/afl/dictionaries/jbig2.dict",
+            "share/afl/dictionaries/jpeg.dict",
+            "share/afl/dictionaries/jpeg2000.dict",
+            "share/afl/dictionaries/js.dict",
+            "share/afl/dictionaries/json.dict",
+            "share/afl/dictionaries/jsonnet.dict",
+            "share/afl/dictionaries/jsonschema.dict",
+            "share/afl/dictionaries/markdown.dict",
+            "share/afl/dictionaries/math.dict",
+            "share/afl/dictionaries/mathml.dict",
+            "share/afl/dictionaries/mp4.dict",
+            "share/afl/dictionaries/mysqld.dict",
+            "share/afl/dictionaries/ogg.dict",
+            "share/afl/dictionaries/openexr.dict",
+            "share/afl/dictionaries/otf.dict",
+            "share/afl/dictionaries/pbm.dict",
+            "share/afl/dictionaries/pcap.dict",
+            "share/afl/dictionaries/pdf.dict",
+            "share/afl/dictionaries/perl.dict",
+            "share/afl/dictionaries/png.dict",
+            "share/afl/dictionaries/proj4.dict",
+            "share/afl/dictionaries/protobuf.dict",
+            "share/afl/dictionaries/ps.dict",
+            "share/afl/dictionaries/psd.dict",
+            "share/afl/dictionaries/regexp.dict",
+            "share/afl/dictionaries/riff.dict",
+            "share/afl/dictionaries/rss.dict",
+            "share/afl/dictionaries/rst.dict",
+            "share/afl/dictionaries/rtf.dict",
+            "share/afl/dictionaries/ruby.dict",
+            "share/afl/dictionaries/sas.dict",
+            "share/afl/dictionaries/spss.dict",
+            "share/afl/dictionaries/sql.dict",
+            "share/afl/dictionaries/stata.dict",
+            "share/afl/dictionaries/stl.dict",
+            "share/afl/dictionaries/svg.dict",
+            "share/afl/dictionaries/tex.dict",
+            "share/afl/dictionaries/theme-load-fuzz.dict",
+            "share/afl/dictionaries/tiff.dict",
+            "share/afl/dictionaries/tokener_parse_ex.dict",
+            "share/afl/dictionaries/toml.dict",
+            "share/afl/dictionaries/type42.dict",
+            "share/afl/dictionaries/url.dict",
+            "share/afl/dictionaries/utf8.dict",
+            "share/afl/dictionaries/vcf.dict",
+            "share/afl/dictionaries/vhd.dict",
+            "share/afl/dictionaries/vpx_dec.dict",
+            "share/afl/dictionaries/wav.dict",
+            "share/afl/dictionaries/webm.dict",
+            "share/afl/dictionaries/webp.dict",
+            "share/afl/dictionaries/wkt.dict",
+            "share/afl/dictionaries/x86.dict",
+            "share/afl/dictionaries/xml.dict",
+            "share/afl/dictionaries/xml_UTF_16.dict",
+            "share/afl/dictionaries/xml_UTF_16BE.dict",
+            "share/afl/dictionaries/xml_UTF_16LE.dict",
+            "share/afl/dictionaries/xpath.dict",
+            "share/afl/dictionaries/xslt.dict",
+            "share/afl/dictionaries/yaml.dict",
+            "share/afl/dictionaries/yara.dict",
+            "share/afl/dictionaries/zip.dict",
+            "share/afl/injections.dic",
+            "share/afl/testcases/README.md",
+            "share/afl/testcases/archives/common/ar/small_archive.a",
+            "share/afl/testcases/archives/common/bzip2/small_archive.bz2",
+            "share/afl/testcases/archives/common/cab/small_archive.cab",
+            "share/afl/testcases/archives/common/compress/small_archive.Z",
+            "share/afl/testcases/archives/common/cpio/small_archive.cpio",
+            "share/afl/testcases/archives/common/gzip/small_archive.gz",
+            "share/afl/testcases/archives/common/lzo/small_archive.lzo",
+            "share/afl/testcases/archives/common/rar/small_archive.rar",
+            "share/afl/testcases/archives/common/tar/small_archive.tar",
+            "share/afl/testcases/archives/common/xz/small_archive.xz",
+            "share/afl/testcases/archives/common/zip/small_archive.zip",
+            "share/afl/testcases/archives/exotic/arj/small_archive.arj",
+            "share/afl/testcases/archives/exotic/lha/small_archive.lha",
+            "share/afl/testcases/archives/exotic/lrzip/small_archive.lrz",
+            "share/afl/testcases/archives/exotic/lzip/small_archive.lz",
+            "share/afl/testcases/archives/exotic/lzma/small_archive.lzma",
+            "share/afl/testcases/archives/exotic/rzip/small_archive.rz",
+            "share/afl/testcases/archives/exotic/zoo/small_archive.zoo",
+            "share/afl/testcases/images/bmp/not_kitty.bmp",
+            "share/afl/testcases/images/gif/not_kitty.gif",
+            "share/afl/testcases/images/ico/not_kitty.ico",
+            "share/afl/testcases/images/jp2/not_kitty.jp2",
+            "share/afl/testcases/images/jpeg/not_kitty.jpg",
+            "share/afl/testcases/images/jxr/not_kitty.jxr",
+            "share/afl/testcases/images/png/not_kitty.png",
+            "share/afl/testcases/images/png/not_kitty_alpha.png",
+            "share/afl/testcases/images/png/not_kitty_gamma.png",
+            "share/afl/testcases/images/png/not_kitty_icc.png",
+            "share/afl/testcases/images/tiff/not_kitty.tiff",
+            "share/afl/testcases/images/webp/not_kitty.webp",
+            "share/afl/testcases/multimedia/h264/small_movie.mp4",
+            "share/afl/testcases/others/elf/small_exec.elf",
+            "share/afl/testcases/others/js/small_script.js",
+            "share/afl/testcases/others/pcap/small_capture.pcap",
+            "share/afl/testcases/others/pdf/small.pdf",
+            "share/afl/testcases/others/rtf/small_document.rtf",
+            "share/afl/testcases/others/sql/simple_queries.sql",
+            "share/afl/testcases/others/text/hello_world.txt",
+            "share/afl/testcases/others/xml/small_document.xml",
+            "share/doc/afl/Changelog.md",
+            "share/doc/afl/FAQ.md",
+            "share/doc/afl/FrameShift.md",
+            "share/doc/afl/IJON.md",
+            "share/doc/afl/INSTALL.md",
+            "share/doc/afl/README.cmplog.md",
+            "share/doc/afl/README.gcc_plugin.md",
+            "share/doc/afl/README.injections.md",
+            "share/doc/afl/README.instrument_list.md",
+            "share/doc/afl/README.laf-intel.md",
+            "share/doc/afl/README.llvm.md",
+            "share/doc/afl/README.lto.md",
+            "share/doc/afl/README.md",
+            "share/doc/afl/README.persistent_mode.md",
+            "share/doc/afl/SAND.md",
+            "share/doc/afl/afl-fuzz_approach.md",
+            "share/doc/afl/best_practices.md",
+            "share/doc/afl/custom_mutators.md",
+            "share/doc/afl/env_variables.md",
+            "share/doc/afl/features.md",
+            "share/doc/afl/fuzzing_binary-only_targets.md",
+            "share/doc/afl/fuzzing_in_depth.md",
+            "share/doc/afl/important_changes.md",
+            "share/doc/afl/rpc_statsd.md",
+            "share/doc/afl/third_party_tools.md",
+            "share/doc/afl/tutorials.md",
+            "share/doc/afl/value_profiling.md",
+            "share/man/man8/afl-addseeds.8",
+            "share/man/man8/afl-analyze.8",
+            "share/man/man8/afl-c++.8",
+            "share/man/man8/afl-cc.8",
+            "share/man/man8/afl-clang-fast++.8",
+            "share/man/man8/afl-clang-fast.8",
+            "share/man/man8/afl-clang-lto++.8",
+            "share/man/man8/afl-clang-lto.8",
+            "share/man/man8/afl-cmin.8",
+            "share/man/man8/afl-cmin.awk.8",
+            "share/man/man8/afl-cmin.bash.8",
+            "share/man/man8/afl-cmin.py.8",
+            "share/man/man8/afl-fuzz.8",
+            "share/man/man8/afl-gotcpu.8",
+            "share/man/man8/afl-health.8",
+            "share/man/man8/afl-lto++.8",
+            "share/man/man8/afl-lto.8",
+            "share/man/man8/afl-merge.8",
+            "share/man/man8/afl-persistent-config.8",
+            "share/man/man8/afl-plot.8",
+            "share/man/man8/afl-showmap.8",
+            "share/man/man8/afl-system-config.8",
+            "share/man/man8/afl-tmin.8",
+            "share/man/man8/afl-whatsup.8"
+          ],
+          "installed_size": 4989892
+        }
+      }
+    }
+  }
+}
