@@ -1,0 +1,116 @@
+name: check heavy Formula updates
+
+# Watches the expensive foundation Formulae without consuming an Intel macOS runner.
+# An assigned issue becomes a GitHub notification (and email when account email
+# notifications are enabled). One open issue per Formula prevents daily duplicates.
+
+on:
+  workflow_dispatch:
+  schedule:
+    # 23:10 Beijing time: after sync-fork and before build-bottles.
+    - cron: "10 15 * * *"
+
+concurrency:
+  group: check-heavy-updates
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+  issues: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+
+      - name: Compare official versions with active manifests
+        run: >-
+          python3 scripts/check_heavy_updates.py
+          --output "$RUNNER_TEMP/heavy-update-report.json"
+          --summary "$GITHUB_STEP_SUMMARY"
+
+      - name: Create, update, or close reminder issues
+        uses: actions/github-script@v8
+        env:
+          REPORT_PATH: ${{ runner.temp }}/heavy-update-report.json
+        with:
+          script: |
+            const fs = require("fs");
+            const report = JSON.parse(fs.readFileSync(process.env.REPORT_PATH, "utf8"));
+            const { owner, repo } = context.repo;
+            const label = "heavy-dependency-update";
+
+            try {
+              await github.rest.issues.getLabel({ owner, repo, name: label });
+            } catch (error) {
+              if (error.status !== 404) throw error;
+              await github.rest.issues.createLabel({
+                owner, repo, name: label, color: "B60205",
+                description: "Heavy Intel bottle needs rebuilding",
+              });
+            }
+
+            const openIssues = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: "open", labels: label, per_page: 100,
+            });
+
+            for (const row of report.formulae) {
+              const marker = `<!-- heavy-formula:${row.name} -->`;
+              const existing = openIssues.find(issue =>
+                !issue.pull_request && (issue.body || "").includes(marker)
+              );
+
+              if (row.status === "current") {
+                if (existing) {
+                  await github.rest.issues.createComment({
+                    owner, repo, issue_number: existing.number,
+                    body: `已由有效的 Sequoia manifest 覆盖版本 \`${row.upstream_version}\`，自动关闭提醒。`,
+                  });
+                  await github.rest.issues.update({
+                    owner, repo, issue_number: existing.number, state: "closed",
+                    state_reason: "completed",
+                  });
+                }
+                continue;
+              }
+
+              const local = row.manifest_versions.length
+                ? row.manifest_versions.map(v => `\`${v}\``).join(", ")
+                : "无";
+              const officialIntel = row.official_intel_macos_tags.length
+                ? row.official_intel_macos_tags.map(v => `\`${v}\``).join(", ")
+                : "无";
+              const title = `[heavy bottle] ${row.name} ${row.upstream_version} needs Intel bottle`;
+              const body = [
+                marker,
+                `<!-- upstream-version:${row.upstream_version} -->`,
+                "每日检查发现重型基础依赖需要更新 Intel macOS bottle。",
+                "",
+                "| 项目 | 值 |",
+                "|---|---|",
+                `| Formula | \`${row.name}\` |`,
+                `| Homebrew 官方版本 | \`${row.upstream_version}\` |`,
+                `| 当前有效 manifest | ${local} |`,
+                `| 官方 Intel macOS bottle | ${officialIntel} |`,
+                "",
+                "可先运行 **build bottles**；`llvm` 如需跳过 PGO，则运行 **build llvm single stage**。",
+                "",
+                "_此 Issue 由每日检查创建；有效 manifest 追平后会自动关闭。_",
+              ].join("\n");
+
+              if (!existing) {
+                await github.rest.issues.create({
+                  owner, repo, title, body, labels: [label], assignees: [owner],
+                });
+              } else if (existing.title !== title || existing.body !== body) {
+                await github.rest.issues.update({
+                  owner, repo, issue_number: existing.number, title, body,
+                });
+                await github.rest.issues.createComment({
+                  owner, repo, issue_number: existing.number,
+                  body: `检测到新的上游版本：\`${row.upstream_version}\`。`,
+                });
+              }
+            }
