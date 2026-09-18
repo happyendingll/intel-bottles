@@ -1,5 +1,171 @@
 # intel-bottles
 
+[中文说明](#中文说明) · [English documentation](#english-documentation)
+
+## 中文说明
+
+### 项目概述
+
+`intel-bottles` 为 **Intel（x86_64）macOS 15 Sequoia** 持续补充 Homebrew bottle。
+项目不替代 Homebrew，也不维护一套独立 Formula：它同步官方 `homebrew-core`，只把缺失的
+Intel bottle 构建出来，再把对应的 `bottle do` 信息写入个人 `homebrew-core` fork。
+
+客户端仍然使用熟悉的 `brew install` 和 `brew upgrade`；区别只是 Formula 定义来自这个
+fork，因此 Homebrew 能直接下载 `sequoia` bottle，而不必在 Intel Mac 上等待源码编译。
+
+> 核心目标不是维护一份固定的包清单，而是维护一个会持续增长、能够自动跟随上游版本更新
+> 的 Intel bottle 集合。
+
+### 闭环设计
+
+```mermaid
+flowchart TB
+  subgraph refresh["维护闭环：让已有 bottle 持续跟上官方版本"]
+    U["官方 homebrew-core"] --> S["sync fork<br/>同步上游并重放有效 manifest"]
+    M[("manifest/*.bottle.json<br/>当前全部维护对象")] --> S
+    S --> F[("个人 homebrew-core fork<br/>官方 Formula + 有效 bottle block")]
+    S --> T["targets.txt<br/>版本已变化、需要重建的队列"]
+    T --> B["build bottles<br/>按依赖深度分 wave"]
+    B --> P["构建、装瓶并发布"]
+    P --> M
+    P --> F
+    P --> R[("GitHub Releases<br/>实际 bottle 资产")]
+    P --> D["安全删除已被替换且<br/>不再被 manifest 引用的旧资产"]
+  end
+
+  subgraph growth["增长闭环：逐步补齐尚未维护的新 Formula"]
+    A["Homebrew 全量 Formula<br/>+ 365 天安装热度"] --> G["generate catalog<br/>兼容性、策略、bottle、依赖链筛选"]
+    F --> G
+    X["exclude / heavy / catalog-policy<br/>prewarm-failures"] --> G
+    G --> C["catalog.txt<br/>本轮优先的 100 个新候选"]
+    C --> W["warm bottles<br/>再次去重并按 wave 预热"]
+    W -->|成功| WP["发布新 bottle"]
+    WP --> M
+    WP --> F
+    WP --> R
+    W -->|失败或超时| Q["prewarm-failures.txt<br/>隔离，避免下一轮重复消耗"]
+    Q --> G
+  end
+
+  subgraph observe["观察与人工决策"]
+    H["每日检查重型基础依赖版本"] -->|落后或缺失| I["GitHub Issue / 邮件提醒"]
+    I -. 手动决定普通构建或专用构建 .-> B
+  end
+
+  M -. 上游下一次升级后重新进入维护闭环 .-> S
+  B -->|成功后自动触发| G
+```
+
+这张图表达了三个关键意图：
+
+1. **已有 bottle 会持续更新。** `manifest/` 是维护集合的事实来源。上游版本变化后，
+   `sync fork` 不再套用旧 bottle，而是把它放进 `targets.txt`；构建成功后，新 manifest
+   替换旧版本，重新闭合维护循环。
+2. **维护集合会持续增长。** `catalog.txt` 只负责发现尚未维护的新 Formula。任何 warm
+   build 成功的 Formula 都会写入 `manifest/`，从下一轮开始自动进入上面的版本维护闭环。
+   因此维护数量不是固定值，会随着预热成功不断增加。
+3. **失败不会无限重复。** 可选预热失败或超过一小时的 Formula 会进入
+   `prewarm-failures.txt`，下一次生成 catalog 时连同依赖它的候选一起过滤。重型基础依赖
+   则单独监控和提醒，由维护者决定是否使用专用工作流构建。
+
+更完整的 catalog 筛选细节见
+[`catalog.txt` 生成与筛选规则](docs/catalog-generation.md)。
+
+### 自动运行顺序
+
+| 顺序 | Workflow | 作用 | 下一步 |
+|---:|---|---|---|
+| 1 | [`sync-fork.yml`](.github/workflows/sync-fork.yml) | 同步官方 core、重放版本仍匹配的 manifest，并生成 held 更新队列 | 等待定时 `build bottles` |
+| 2 | [`build-bottles.yml`](.github/workflows/build-bottles.yml) | 更新 `targets.txt` 中已经维护但版本落后的 bottle | 成功后触发 `generate catalog` |
+| 3 | [`generate-catalog.yml`](.github/workflows/generate-catalog.yml) | 从全量 Formula 中筛出本轮最值得新增的 100 个候选 | 成功后触发 `warm bottles` |
+| 4 | [`warm-bottles.yml`](.github/workflows/warm-bottles.yml) | 分 wave 构建新候选；成功项加入长期维护集合，失败项进入隔离文件 | 回到下一轮同步与筛选 |
+
+此外还有两个辅助入口：
+
+- [`check-heavy-updates.yml`](.github/workflows/check-heavy-updates.yml)：每天比较重型基础依赖的
+  官方版本和有效 manifest；有缺口时创建并指派 Issue，通过 GitHub 通知邮件提醒。
+- [`build-llvm-single-stage.yml`](.github/workflows/build-llvm-single-stage.yml)：LLVM 专用手动入口，
+  跳过耗时很长的 PGO 多阶段构建，在 Intel runner 上生成可用的单阶段 bottle。
+
+### 为什么使用依赖 wave
+
+GitHub 的每个 matrix job 都是隔离环境。如果所有 Formula 同时启动，多个 job 可能分别从
+源码重复构建 `qtbase`、LLVM 或其他共享依赖。规划器先计算缺失依赖之间的深度：
+
+```text
+wave 0：没有其他待构建依赖的基础包
+   ↓ 发布 bottle
+wave 1：可以直接使用 wave 0 bottle 的包
+   ↓ 发布 bottle
+wave 2～4：继续复用前面 wave 的成果
+```
+
+每个 wave 发布完成后才进入下一个 wave，后续 job 会直接 pour 已发布依赖。这是降低总编译
+时间、避免相同重型依赖被多次源码编译的核心设计。
+
+### 四类核心状态文件
+
+| 文件 | 谁维护 | 表示什么 | 是否直接构建 |
+|---|---|---|---|
+| [`manifest/`](manifest/) | 发布流程自动写入 | 所有已经成功构建、今后必须持续更新的 bottle；项目事实来源 | 版本变化后进入 `targets.txt` |
+| [`targets.txt`](targets.txt) | `sync fork` 自动覆盖 | 当前维护集合中版本已经落后的 Formula | 是，最高优先级 |
+| [`catalog.txt`](catalog.txt) | `generate catalog` 自动覆盖 | 尚未维护、通过筛选的本轮新增候选 | 是，低于 targets |
+| [`prewarm-failures.txt`](prewarm-failures.txt) | warm 发布流程更新 | 曾经失败或超时的可选预热 Formula | 否，成功重试后可移除 |
+
+必须注意：`targets.txt` 不是用户想安装的软件列表，`catalog.txt` 也不是全部维护对象。
+真正代表项目长期维护范围的是 `manifest/` 根目录下的全部有效 JSON。
+
+### 策略与执行文件
+
+| 文件 | 职责 |
+|---|---|
+| [`exclude.txt`](exclude.txt) | 永久排除当前环境无法完成或不应该构建的 Formula，并阻断其递归依赖者 |
+| [`heavy.txt`](heavy.txt) | 标记需要独立处理的重型基础依赖家族 |
+| [`catalog-policy.json`](catalog-policy.json) | 记录优先使用官方二进制、成本过高等可审计策略及原因 |
+| [`runners.json`](runners.json) | 为特殊 Formula 分配 runner 类型和超时时间 |
+| [`scripts/apply_manifest.py`](scripts/apply_manifest.py) | 把有效 manifest 与版本已变化的 held 项分开 |
+| [`scripts/generate_catalog.py`](scripts/generate_catalog.py) | 从全量 Formula 生成经过策略和依赖链过滤的新增候选 |
+| [`scripts/plan_targets.py`](scripts/plan_targets.py) | 规划强制更新队列的依赖 wave |
+| [`scripts/plan_catalog.py`](scripts/plan_catalog.py) | 在构建前复查 catalog、去重并规划预热 wave |
+| [`scripts/build_root.sh`](scripts/build_root.sh) | 按拓扑顺序构建一个根 Formula 及其仍缺 bottle 的依赖链 |
+| [`scripts/publish.sh`](scripts/publish.sh) | 上传 bottle、写入 manifest，并把 bottle block 合并进 core fork |
+| [`scripts/delete_replaced_assets.py`](scripts/delete_replaced_assets.py) | 新版本安全落地后删除不再被有效 manifest 引用的旧资产 |
+
+### 发布结果为什么分成三部分
+
+一次构建只有同时完成以下三项才真正闭环：
+
+- **Release 资产**：保存 `.bottle.tar.gz`，是客户端下载的实际文件；
+- **manifest**：记录版本、SHA256、Release 地址和 Formula 路径，是项目恢复与持续更新的依据；
+- **homebrew-core fork**：保存带 `sequoia` bottle block 的 Formula，让客户端 Homebrew 知道
+  应该下载哪个资产。
+
+manifest 中的 `root_url` 会指向 bottle 实际所在的滚动 Release。旧 Release 不能仅因为已经
+启用新编号就整体删除，因为仍有有效 manifest 可能引用它；只有被新版本替换且已无任何
+有效 manifest 引用的单个资产才会自动清理。
+
+### Intel Mac 使用方式
+
+```sh
+export HOMEBREW_NO_INSTALL_FROM_API=1
+export HOMEBREW_CORE_GIT_REMOTE=https://github.com/<your-github-user>/homebrew-core
+brew update
+```
+
+之后继续使用普通 Homebrew 命令即可：
+
+```sh
+brew upgrade --cask --all   # Cask 仍按原有来源更新
+brew upgrade --formula     # Formula 从自定义 core fork 获取定义和 Intel bottle
+```
+
+`HOMEBREW_NO_INSTALL_FROM_API=1` 会让 Homebrew 保留完整的 `homebrew-core` Git checkout，
+因此会比默认 JSON API 占用更多磁盘空间，`brew update` 也会稍慢；它不会改变 Cask 的来源。
+
+---
+
+## English documentation
+
 Prebuilt Homebrew **bottles for Intel (x86_64) macOS**, built on GitHub Actions and consumed
 through a fork of `homebrew-core`.
 
@@ -49,6 +215,10 @@ writing 100 candidates. Heavy Formula families and projects that prefer their ow
 binary therefore never enter the catalog. Every successful prewarm writes an active manifest and
 thereby joins the permanently maintained set.
 
+A detailed Chinese reference is available in
+[`catalog.txt` 生成与筛选规则](docs/catalog-generation.md), including the exact filter order,
+dynamic quarantine files, heavyweight dependency handling, and generation statistics.
+
 A scheduled prewarm starts only after the post-build catalog refresh completes, selects up to
 100 roots, and runs at most five jobs in parallel with a one-hour cap per job. Prewarmed assets
 use numbered rolling Releases (`bottles-warm-1`, `bottles-warm-2`, and so on). Before a
@@ -89,6 +259,7 @@ confirmation (`--delete --yes` is available for intentional non-interactive use)
 | `scripts/apply_manifest.py` | Splits the manifest into still-valid vs stale |
 | `scripts/sync_fork.sh` | Rebuilds the fork as upstream + our blocks |
 | `manifest/` | Active `*.bottle.json` files — the source of truth for re-applying blocks; replaced versions remain recoverable from Git history |
+| `docs/catalog-generation.md` | `catalog.txt` 全量筛选、依赖阻断与排序规则（中文） |
 
 ## Runner assignment
 
