@@ -88,7 +88,7 @@ jobs:
           python3 scripts/patch_llvm_single_stage.py \
             --expected-version 23.1.1 \
             "$formula"
-          brew ruby -c "$formula"
+          brew ruby -- -c "$formula"
           git -C "$(brew --repo homebrew/core)" diff --check -- Formula/l/llvm.rb
           git -C "$(brew --repo homebrew/core)" diff -- Formula/l/llvm.rb
 
