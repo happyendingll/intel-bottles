@@ -1,0 +1,143 @@
+{
+  "hopenpgp-tools": {
+    "formula": {
+      "name": "hopenpgp-tools",
+      "pkg_version": "0.26.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/h/hopenpgp-tools.rb",
+      "tap_git_path": "Formula/h/hopenpgp-tools.rb",
+      "tap_git_revision": "ae0f9eecd7688198ca1c83b3c6e2f8ae291036cf",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Command-line tools for OpenPGP-related operations",
+      "license": "AGPL-3.0-or-later",
+      "homepage": "https://hackage.haskell.org/package/hopenpgp-tools"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-18T10:01:08Z",
+      "tags": {
+        "sequoia": {
+          "filename": "hopenpgp-tools-0.26.1.sequoia.bottle.tar.gz",
+          "local_filename": "hopenpgp-tools--0.26.1.sequoia.bottle.tar.gz",
+          "sha256": "ffc2ad13cc9b3d11fc715523ff245d8aeff628c8561f80e56ef51d7c9235d5d7",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/hkt",
+              "bin/hokey",
+              "bin/hop",
+              "bin/hot"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1000000000,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-hopenpgp-tools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-hopenpgp-tools-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/hop",
+            "bin/hokey",
+            "bin/hot",
+            "bin/hkt"
+          ],
+          "all_files": [
+            ".brew/hopenpgp-tools.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "bin/hkt",
+            "bin/hokey",
+            "bin/hop",
+            "bin/hot",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 54126814
+        }
+      }
+    }
+  }
+}
