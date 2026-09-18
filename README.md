@@ -146,21 +146,57 @@ manifest 中的 `root_url` 会指向 bottle 实际所在的滚动 Release。旧 
 
 ### Intel Mac 使用方式
 
-```sh
-export HOMEBREW_NO_INSTALL_FROM_API=1
-export HOMEBREW_CORE_GIT_REMOTE=https://github.com/<your-github-user>/homebrew-core
-brew update
-```
-
-之后继续使用普通 Homebrew 命令即可：
+不要把自定义 Core 环境变量全局 `export`。在 `~/.zshrc`（使用 Bash 时为 `~/.bashrc`）中
+定义一个只影响单次命令的中转函数：
 
 ```sh
-brew upgrade --cask --all   # Cask 仍按原有来源更新
-brew upgrade --formula     # Formula 从自定义 core fork 获取定义和 Intel bottle
+brew-intel() {
+  HOMEBREW_NO_INSTALL_FROM_API=1 \
+  HOMEBREW_CORE_GIT_REMOTE=https://github.com/happyendingll/homebrew-core \
+    command brew "$@"
+}
 ```
 
-`HOMEBREW_NO_INSTALL_FROM_API=1` 会让 Homebrew 保留完整的 `homebrew-core` Git checkout，
-因此会比默认 JSON API 占用更多磁盘空间，`brew update` 也会稍慢；它不会改变 Cask 的来源。
+重新打开终端或执行 `source ~/.zshrc` 后，两个入口各自负责一类包：
+
+```sh
+brew upgrade --cask          # 官方 Homebrew API、官方 Cask 定义和原厂软件下载地址
+brew-intel upgrade --formula # 自定义 homebrew-core fork 和本项目的 Intel bottle
+```
+
+`HOMEBREW_CORE_GIT_REMOTE` 只改变 `homebrew/core` 的 Git remote，不会把 Cask 指向本项目；
+但 [Homebrew 官方文档](https://docs.brew.sh/Installation#default-tap-cloning)明确说明，
+`HOMEBREW_NO_INSTALL_FROM_API=1` 会让 Formula 和 Cask 改用本地 `homebrew/core`、
+`homebrew/cask` checkout，而不是默认 API。如果把它全局导出，普通 Cask 命令也会离开默认的
+快速 JSON API 路径，可能增加 Git checkout 占用，并让 `brew update` 变慢。
+
+通过 `brew-intel` 函数按命令临时设置变量，可以把这种本地 Git 模式限制在需要自定义 Core
+的 Formula 操作中；函数返回后环境不会残留，普通 `brew` 的 Cask 安装和更新继续使用
+Homebrew 默认 API，安装文件仍从官方 Cask 定义指定的软件厂商地址下载。
+
+可以再定义一个完整更新函数，把 Cask 和 Formula 按各自入口顺序更新：
+
+```sh
+brew-update-all() {
+  brew update &&
+    brew upgrade --cask &&
+    brew cleanup &&
+    brew-intel update &&
+    brew-intel upgrade --formula &&
+    brew-intel cleanup
+}
+```
+
+以后执行一次即可：
+
+```sh
+brew-update-all
+```
+
+这里不需要 `brew upgrade --cask --all`：
+[Homebrew `upgrade` 文档](https://docs.brew.sh/Manpage#upgrade-options-installed_formula-installed_cask-)
+规定，`--cask` 后不指定名称时本身就表示升级所有 outdated Cask；
+`brew-intel upgrade --formula` 同理会升级所有过期且未固定的 Formula。
 
 ---
 
@@ -302,20 +338,39 @@ removes bottle blocks from the previous target before planning the new build.
 
 ## Client setup (the Intel Mac)
 
+Keep the default `brew` path for official casks and scope the custom Core settings to a shell
+function (for example in `~/.zshrc`):
+
 ```sh
-export HOMEBREW_NO_INSTALL_FROM_API=1
-export HOMEBREW_CORE_GIT_REMOTE=https://github.com/<your-github-user>/homebrew-core
-brew update
+brew-intel() {
+  HOMEBREW_NO_INSTALL_FROM_API=1 \
+  HOMEBREW_CORE_GIT_REMOTE=https://github.com/happyendingll/homebrew-core \
+    command brew "$@"
+}
+
+brew-update-all() {
+  brew update &&
+    brew upgrade --cask &&
+    brew cleanup &&
+    brew-intel update &&
+    brew-intel upgrade --formula &&
+    brew-intel cleanup
+}
 ```
 
-Trade-off: this swaps the fast JSON API for a full local `homebrew-core` git checkout, so
-`brew update` and `brew search` get slower.
+Run `brew-update-all` for a combined update. Normal `brew` commands retain Homebrew's fast API
+and official cask definitions; `brew-intel` temporarily enables the local Core checkout and
+custom `homebrew-core` fork. This avoids globally forcing cask metadata onto the larger, slower
+Git-checkout path. Cask application downloads still use the vendor URLs in official cask
+definitions. See Homebrew's documentation for
+[`HOMEBREW_NO_INSTALL_FROM_API`](https://docs.brew.sh/Installation#default-tap-cloning) and
+[`brew upgrade`](https://docs.brew.sh/Manpage#upgrade-options-installed_formula-installed_cask-).
 
 ### Verify
 
 ```sh
-brew info --json=v2 tmux | jq '.formulae[0].bottle.stable.files'   # expect a "sequoia" entry
-brew reinstall tmux 2>&1 | grep -E 'Pouring|Building'             # expect "Pouring"
+brew-intel info --json=v2 tmux | jq '.formulae[0].bottle.stable.files' # expect "sequoia"
+brew-intel reinstall tmux 2>&1 | grep -E 'Pouring|Building'           # expect "Pouring"
 jq .poured_from_bottle /usr/local/Cellar/tmux/*/INSTALL_RECEIPT.json
 ```
 
