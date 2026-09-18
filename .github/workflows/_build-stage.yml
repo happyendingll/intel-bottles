@@ -23,6 +23,10 @@ on:
         description: GitHub Release that receives this stage's bottles
         type: string
         default: bottles
+      llvm_single_stage:
+        description: Disable LLVM's multi-stage PGO build for the one-off Intel bootstrap
+        type: boolean
+        default: false
     secrets:
       FORK_TOKEN:
         description: PAT with contents:write on the homebrew-core fork
@@ -76,6 +80,17 @@ jobs:
             echo "ERROR: expected bottle tag $EXPECTED_BOTTLE_TAG, got $actual_tag" >&2
             exit 1
           fi
+
+      - name: Patch LLVM for a single-stage build
+        if: inputs.llvm_single_stage && matrix.entry.formula == 'llvm'
+        run: |
+          formula="$(brew --repo homebrew/core)/Formula/l/llvm.rb"
+          python3 scripts/patch_llvm_single_stage.py \
+            --expected-version 23.1.1 \
+            "$formula"
+          brew ruby -c "$formula"
+          git -C "$(brew --repo homebrew/core)" diff --check -- Formula/l/llvm.rb
+          git -C "$(brew --repo homebrew/core)" diff -- Formula/l/llvm.rb
 
       - name: Build and bottle
         env:
