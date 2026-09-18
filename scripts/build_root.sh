@@ -90,7 +90,7 @@ fetch_with_limit() {
   fi
 }
 
-CHAIN="$(brew deps -n --include-build "$ROOT"; echo "$ROOT")"
+CHAIN="$(brew deps --formula -n --include-build "$ROOT"; echo "$ROOT")"
 TODO="$(python3 "$SCRIPT_DIR/filter_unbottled.py" $CHAIN)"
 
 if [ -z "$TODO" ]; then
@@ -160,7 +160,7 @@ for formula in $TODO; do
   # Force the links and retry once rather than losing a build to a preinstalled file.
   if ! brew install --build-bottle --display-times "$formula"; then
     echo "    install failed; forcing dependency links and retrying once"
-    for dep in $(brew deps --include-build "$formula") "$formula"; do
+    for dep in $(brew deps --formula --include-build "$formula") "$formula"; do
       brew link --overwrite --force "$dep" >/dev/null 2>&1 || true
     done
     brew install --build-bottle --display-times "$formula"

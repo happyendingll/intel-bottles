@@ -59,7 +59,9 @@ def dependency_map(formulae: list[str]) -> dict[str, set[str]]:
     """formula -> its dependencies, restricted to the set we care about."""
     if not formulae:
         return {}
-    out = brew("deps", "--include-build", "--full-name", "--for-each", *formulae)
+    out = brew(
+        "deps", "--formula", "--include-build", "--full-name", "--for-each", *formulae
+    )
     interesting = set(formulae)
     deps: dict[str, set[str]] = {}
     for line in out.splitlines():

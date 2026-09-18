@@ -29,7 +29,9 @@ def dependencies(formulae: list[str]) -> dict[str, set[str]]:
 
     from plan_targets import brew
 
-    output = brew("deps", "--include-build", "--full-name", "--for-each", *formulae)
+    output = brew(
+        "deps", "--formula", "--include-build", "--full-name", "--for-each", *formulae
+    )
     result = {name: set() for name in formulae}
     for line in output.splitlines():
         if ":" not in line:
