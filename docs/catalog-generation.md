@@ -86,14 +86,14 @@ runner 时间上限的包、Intel 构建已损坏的包，以及被 Homebrew 移
 [`catalog-policy.json`](../catalog-policy.json) 的 `exclude` 部分记录不推荐通过 Homebrew
 源码编译的项目，例如官方明确建议使用自身 macOS 二进制发行版的工具。
 
-这些 Formula 及其递归依赖者都会被排除。每条规则保留分类、原因和来源链接，方便以后
-重新检查当时的判断是否仍然成立。
+这些 Formula、带版本后缀的同一家族（例如 `node` 对应 `node@24`）及其递归依赖者都会被
+排除。每条规则保留分类、原因和来源链接，方便以后重新检查当时的判断是否仍然成立。
 
 ### 重型 Formula 家族
 
 重型 Formula 来自 [`heavy.txt`](../heavy.txt) 和 `catalog-policy.json` 的
-`heavy_formulae` 部分。家族匹配会覆盖带版本号的 Formula，例如 `node` 也会匹配
-`node@24`，`llvm` 也会匹配 `llvm@22`。
+`heavy_formulae` 部分。家族匹配会覆盖带版本号的 Formula，例如 `llvm` 也会匹配
+`llvm@22`。
 
 重型 Formula 本身不会作为推测性的预热根包进入 catalog，但生成器仍会在目标 runner
 上检查它们是否已有可用 bottle，因为这会决定依赖它们的普通 Formula 能否进入候选池：

@@ -8,11 +8,17 @@
     "ollama": "Large Go, CMake, and MLX build; keep it demand-driven.",
     "opencv": "Large optional computer-vision build; keep it demand-driven.",
     "openvino": "Large C++ inference-runtime build; keep it out of speculative prewarming.",
+    "ortp": "Nonessential Linphone RTP library whose upstream GitLab source is unreachable from the runner; do not maintain or prewarm it.",
     "php": "Large language runtime build; install on demand if it is actually needed.",
     "qemu": "Large emulator build; keep it demand-driven.",
     "semgrep": "Large OCaml and Python application build; keep it demand-driven."
   },
   "exclude": {
+    "node": {
+      "category": "prefer-upstream-binary",
+      "reason": "Node.js provides official macOS installers and version-manager based installation; do not spend the Homebrew Intel source-build budget on this runtime.",
+      "source": "https://nodejs.org/en/download"
+    },
     "mise": {
       "category": "prefer-upstream-binary",
       "reason": "Upstream recommends mise.run on macOS; its official binary is more optimized than the Homebrew build.",
