@@ -2,27 +2,27 @@
   "ncnn": {
     "formula": {
       "name": "ncnn",
-      "pkg_version": "20260526_5",
+      "pkg_version": "20260526_6",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/n/ncnn.rb",
       "tap_git_path": "Formula/n/ncnn.rb",
-      "tap_git_revision": "b96c013e81808bbe2bccaa831c8769fe165b7ec1",
+      "tap_git_revision": "2c88b3b668043be391661f1bda14be78f356276e",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "High-performance neural network inference framework",
       "license": "BSD-3-Clause",
       "homepage": "https://github.com/Tencent/ncnn"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-14T19:48:46Z",
+      "date": "2026-09-19T19:14:53Z",
       "tags": {
         "sequoia": {
-          "filename": "ncnn-20260526_5.sequoia.bottle.tar.gz",
-          "local_filename": "ncnn--20260526_5.sequoia.bottle.tar.gz",
-          "sha256": "e155ba7002309d4173748cac9c6af478a0c0bcc980d12d427a6226563a4cb906",
+          "filename": "ncnn-20260526_6.sequoia.bottle.tar.gz",
+          "local_filename": "ncnn--20260526_6.sequoia.bottle.tar.gz",
+          "sha256": "e1ffb8c4fbcd0fdc05b171535bef04915c555ab2b02fd6c5dcb21e1f0bc79bf1",
           "tab": {
-            "homebrew_version": "7.0.1",
+            "homebrew_version": "7.0.4",
             "changed_files": [
               "lib/cmake/ncnn/ncnn.cmake",
               "lib/cmake/ncnn/ncnnConfig.cmake"
@@ -69,18 +69,19 @@
                 "full_name": "glslang",
                 "version": "16.6.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "16.6.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "protobuf",
-                "version": "36.1",
+                "version": "36.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "36.1",
+                "pkg_version": "36.2",
                 "declared_directly": true,
-                "compatibility_version": 6
+                "compatibility_version": 7
               },
               {
                 "full_name": "libomp",
@@ -116,7 +117,8 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-spirv-headers-1.4.357.0",
               "SPDXRef-Package-SPDXRef-spirv-tools-1.4.357.0",
-              "SPDXRef-Package-SPDXRef-protobuf-36.1",
+              "SPDXRef-Package-SPDXRef-glslang-16.6.0",
+              "SPDXRef-Package-SPDXRef-protobuf-36.2",
               "SPDXRef-Package-SPDXRef-libomp-23.1.1",
               "SPDXRef-Compiler"
             ],
@@ -168,24 +170,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.1",
-                "name": "protobuf",
-                "versionInfo": "36.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-glslang-16.6.0",
+                "name": "glslang",
+                "versionInfo": "16.6.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.1.sequoia.bottle.tar.gz",
+                "licenseConcluded": "BSD-3-Clause AND GPL-3.0-or-later AND MIT AND Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/glslang-16.6.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13dee552679936df9044ceadddb97cf54bd3ee5a26ad6b51b502ebae8b91818b"
+                    "checksumValue": "206699ed10d9d5f4c94e87bf8727d57fc2b38ff414d3699c9b368dd363fc6e8a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/protobuf@36.1",
+                    "referenceLocator": "pkg:brew/glslang@16.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.2",
+                "name": "protobuf",
+                "versionInfo": "36.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "23c1b997672d8c907b7493086a0a785b885dcaf68851cd6d2a1e96d9f116314a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf@36.2",
                     "referenceType": "purl"
                   }
                 ]
@@ -238,7 +263,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-ncnn"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glslang-16.6.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ncnn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ncnn"
               },
@@ -316,7 +346,7 @@
             "lib/pkgconfig/ncnn.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 12269222
+          "installed_size": 12269249
         }
       }
     }

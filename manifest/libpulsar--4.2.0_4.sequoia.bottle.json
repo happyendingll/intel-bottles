@@ -2,27 +2,27 @@
   "libpulsar": {
     "formula": {
       "name": "libpulsar",
-      "pkg_version": "4.2.0_3",
+      "pkg_version": "4.2.0_4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libpulsar.rb",
       "tap_git_path": "Formula/lib/libpulsar.rb",
-      "tap_git_revision": "a161ca103bf2488d74d7ba6e6caaad7720b86d7c",
+      "tap_git_revision": "2c88b3b668043be391661f1bda14be78f356276e",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Apache Pulsar C++ library",
       "license": "Apache-2.0",
       "homepage": "https://pulsar.apache.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-15T06:26:21Z",
+      "date": "2026-09-19T19:14:16Z",
       "tags": {
         "sequoia": {
-          "filename": "libpulsar-4.2.0_3.sequoia.bottle.tar.gz",
-          "local_filename": "libpulsar--4.2.0_3.sequoia.bottle.tar.gz",
-          "sha256": "86e7d0f239a38e873839368e08d9f1d56adf4483981acc7d0e64bae45b90b277",
+          "filename": "libpulsar-4.2.0_4.sequoia.bottle.tar.gz",
+          "local_filename": "libpulsar--4.2.0_4.sequoia.bottle.tar.gz",
+          "sha256": "753cfb9ab2cdd642ce6c09636eed4cd520187c6d5ff0fcf3a2547d58cb2eb027",
           "tab": {
-            "homebrew_version": "7.0.1",
+            "homebrew_version": "7.0.4",
             "changed_files": [],
             "linkage_files": [
               "lib/libpulsar.dylib"
@@ -60,19 +60,19 @@
               },
               {
                 "full_name": "protobuf",
-                "version": "36.1",
+                "version": "36.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "36.1",
+                "pkg_version": "36.2",
                 "declared_directly": true,
-                "compatibility_version": 6
+                "compatibility_version": 7
               },
               {
                 "full_name": "snappy",
-                "version": "1.2.2",
+                "version": "1.3.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.2.2",
+                "pkg_version": "1.3.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -118,7 +118,8 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
               "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-protobuf-36.1",
+              "SPDXRef-Package-SPDXRef-protobuf-36.2",
+              "SPDXRef-Package-SPDXRef-snappy-1.3.1",
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
@@ -172,24 +173,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.2",
                 "name": "protobuf",
-                "versionInfo": "36.1",
+                "versionInfo": "36.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.2.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13dee552679936df9044ceadddb97cf54bd3ee5a26ad6b51b502ebae8b91818b"
+                    "checksumValue": "23c1b997672d8c907b7493086a0a785b885dcaf68851cd6d2a1e96d9f116314a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/protobuf@36.1",
+                    "referenceLocator": "pkg:brew/protobuf@36.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-snappy-1.3.1",
+                "name": "snappy",
+                "versionInfo": "1.3.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/snappy-1.3.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "72b0b0928c9a5cfd99e13d06cd67048d6a75e89bdd295fc1056017a3945e3d6d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/snappy@1.3.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -288,7 +312,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-libpulsar"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libpulsar"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-snappy-1.3.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libpulsar"
               },

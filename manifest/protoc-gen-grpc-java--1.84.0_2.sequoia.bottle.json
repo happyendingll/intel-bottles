@@ -1,34 +1,34 @@
 {
-  "osm-pbf": {
+  "protoc-gen-grpc-java": {
     "formula": {
-      "name": "osm-pbf",
-      "pkg_version": "1.8.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/osm-pbf.rb",
-      "tap_git_path": "Formula/o/osm-pbf.rb",
-      "tap_git_revision": "5965020942ec35d15d769487ee7df88aac1d5806",
+      "name": "protoc-gen-grpc-java",
+      "pkg_version": "1.84.0_2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/protoc-gen-grpc-java.rb",
+      "tap_git_path": "Formula/p/protoc-gen-grpc-java.rb",
+      "tap_git_revision": "2c88b3b668043be391661f1bda14be78f356276e",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Tools related to PBF (an alternative to XML format)",
-      "license": "LGPL-3.0-or-later",
-      "homepage": "https://wiki.openstreetmap.org/wiki/PBF_Format"
+      "desc": "Protoc plugin for gRPC Java",
+      "license": "Apache-2.0",
+      "homepage": "https://grpc.io/docs/languages/java/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-15T14:24:40Z",
+      "date": "2026-09-19T19:41:31Z",
       "tags": {
         "sequoia": {
-          "filename": "osm-pbf-1.8.0.sequoia.bottle.tar.gz",
-          "local_filename": "osm-pbf--1.8.0.sequoia.bottle.tar.gz",
-          "sha256": "6617cae5ef6f91e549bf3bcb2d4ca61c1b35939f551722819ac98779fa10ccdf",
+          "filename": "protoc-gen-grpc-java-1.84.0_2.sequoia.bottle.tar.gz",
+          "local_filename": "protoc-gen-grpc-java--1.84.0_2.sequoia.bottle.tar.gz",
+          "sha256": "bf6251ace1354beb2708c4be74dbdf93fb880eb320b417b290b459601dc2a14a",
           "tab": {
-            "homebrew_version": "7.0.1",
+            "homebrew_version": "7.0.4",
             "changed_files": [],
             "linkage_files": [
-              "lib/libosmpbf.1.7.0.dylib"
+              "bin/protoc-gen-grpc-java"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1789384678,
+            "source_modified_time": 1788255493,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -42,12 +42,12 @@
               },
               {
                 "full_name": "protobuf",
-                "version": "36.1",
+                "version": "36.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "36.1",
+                "pkg_version": "36.2",
                 "declared_directly": true,
-                "compatibility_version": 6
+                "compatibility_version": 7
               }
             ],
             "arch": "x86_64",
@@ -63,29 +63,29 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-protobuf-36.1",
+              "SPDXRef-Package-SPDXRef-protobuf-36.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.2",
                 "name": "protobuf",
-                "versionInfo": "36.1",
+                "versionInfo": "36.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.2.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13dee552679936df9044ceadddb97cf54bd3ee5a26ad6b51b502ebae8b91818b"
+                    "checksumValue": "23c1b997672d8c907b7493086a0a785b885dcaf68851cd6d2a1e96d9f116314a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/protobuf@36.1",
+                    "referenceLocator": "pkg:brew/protobuf@36.2",
                     "referenceType": "purl"
                   }
                 ]
@@ -105,35 +105,32 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-osm-pbf"
+                "relatedSpdxElement": "SPDXRef-Bottle-protoc-gen-grpc-java"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-osm-pbf-src"
+                "relatedSpdxElement": "SPDXRef-Archive-protoc-gen-grpc-java-src"
               }
             ]
           },
-          "path_exec_files": [],
+          "path_exec_files": [
+            "bin/protoc-gen-grpc-java"
+          ],
           "all_files": [
-            ".brew/osm-pbf.rb",
-            "CHANGELOG.md",
+            ".brew/protoc-gen-grpc-java.rb",
+            "AUTHORS",
             "INSTALL_RECEIPT.json",
             "LICENSE",
+            "NOTICE.txt",
             "README.md",
-            "include/osmpbf/fileformat.pb.h",
-            "include/osmpbf/osmformat.pb.h",
-            "include/osmpbf/osmpbf.h",
-            "lib/libosmpbf.1.7.0.dylib",
-            "lib/libosmpbf.1.dylib",
-            "lib/libosmpbf.a",
-            "lib/libosmpbf.dylib",
+            "bin/protoc-gen-grpc-java",
             "sbom.spdx.json",
-            "share/osm-pbf/sample.pbf"
+            "share/protoc-gen-grpc-java/helloworld.proto"
           ],
-          "installed_size": 701680
+          "installed_size": 799255
         }
       }
     }

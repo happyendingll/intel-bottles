@@ -1,0 +1,472 @@
+{
+  "soplex": {
+    "formula": {
+      "name": "soplex",
+      "pkg_version": "8.1.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/soplex.rb",
+      "tap_git_path": "Formula/s/soplex.rb",
+      "tap_git_revision": "2c88b3b668043be391661f1bda14be78f356276e",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Optimization package for solving linear programming problems (LPs)",
+      "license": "Apache-2.0",
+      "homepage": "https://soplex.zib.de/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-19T19:20:40Z",
+      "tags": {
+        "sequoia": {
+          "filename": "soplex-8.1.0.sequoia.bottle.tar.gz",
+          "local_filename": "soplex--8.1.0.sequoia.bottle.tar.gz",
+          "sha256": "16396c37a8dc8d20ef5475a4b4054c03dc5a27ebdc90e3e4f85a07a9f52f18e6",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/soplex",
+              "lib/libsoplexshared.8.1.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789658182,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "boost",
+                "version": "1.92.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.92.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpfr",
+                "version": "4.2.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.2.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-mpfr-4.2.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpfr-4.2.2",
+                "name": "mpfr",
+                "versionInfo": "4.2.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/mpfr/blobs/sha256:ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpfr@4.2.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-soplex"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-soplex"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-soplex"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-soplex"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpfr-4.2.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-soplex"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-soplex-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/soplex"
+          ],
+          "all_files": [
+            ".brew/soplex.rb",
+            "CHANGELOG",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/soplex",
+            "include/soplex/array.h",
+            "include/soplex/basevectors.h",
+            "include/soplex/changesoplex.hpp",
+            "include/soplex/classarray.h",
+            "include/soplex/classset.h",
+            "include/soplex/clufactor.h",
+            "include/soplex/clufactor.hpp",
+            "include/soplex/clufactor_rational.h",
+            "include/soplex/clufactor_rational.hpp",
+            "include/soplex/config.h",
+            "include/soplex/cring.h",
+            "include/soplex/dataarray.h",
+            "include/soplex/datahashtable.h",
+            "include/soplex/datakey.h",
+            "include/soplex/dataset.h",
+            "include/soplex/didxset.h",
+            "include/soplex/dsvector.h",
+            "include/soplex/dsvectorbase.h",
+            "include/soplex/dvector.h",
+            "include/soplex/enter.hpp",
+            "include/soplex/exceptions.h",
+            "include/soplex/external/fmt/chrono.h",
+            "include/soplex/external/fmt/color.h",
+            "include/soplex/external/fmt/compile.h",
+            "include/soplex/external/fmt/core.h",
+            "include/soplex/external/fmt/format-inl.h",
+            "include/soplex/external/fmt/format.h",
+            "include/soplex/external/fmt/locale.h",
+            "include/soplex/external/fmt/os.h",
+            "include/soplex/external/fmt/ostream.h",
+            "include/soplex/external/fmt/posix.h",
+            "include/soplex/external/fmt/printf.h",
+            "include/soplex/external/fmt/ranges.h",
+            "include/soplex/external/zstr/strict_fstream.hpp",
+            "include/soplex/external/zstr/zstr.hpp",
+            "include/soplex/fmt.hpp",
+            "include/soplex/idlist.h",
+            "include/soplex/idxset.h",
+            "include/soplex/islist.h",
+            "include/soplex/leave.hpp",
+            "include/soplex/lpcol.h",
+            "include/soplex/lpcolbase.h",
+            "include/soplex/lpcolset.h",
+            "include/soplex/lpcolsetbase.h",
+            "include/soplex/lprow.h",
+            "include/soplex/lprowbase.h",
+            "include/soplex/lprowset.h",
+            "include/soplex/lprowsetbase.h",
+            "include/soplex/mpsinput.h",
+            "include/soplex/nameset.h",
+            "include/soplex/notimer.h",
+            "include/soplex/random.h",
+            "include/soplex/rational.h",
+            "include/soplex/ratrecon.h",
+            "include/soplex/ratrecon.hpp",
+            "include/soplex/slinsolver.h",
+            "include/soplex/slinsolver_rational.h",
+            "include/soplex/slufactor.h",
+            "include/soplex/slufactor.hpp",
+            "include/soplex/slufactor_rational.h",
+            "include/soplex/slufactor_rational.hpp",
+            "include/soplex/sol.h",
+            "include/soplex/solbase.h",
+            "include/soplex/solverational.hpp",
+            "include/soplex/solvereal.hpp",
+            "include/soplex/soplex_interface.h",
+            "include/soplex/sorter.h",
+            "include/soplex/spxalloc.h",
+            "include/soplex/spxautopr.h",
+            "include/soplex/spxautopr.hpp",
+            "include/soplex/spxbasis.h",
+            "include/soplex/spxbasis.hpp",
+            "include/soplex/spxboundflippingrt.h",
+            "include/soplex/spxboundflippingrt.hpp",
+            "include/soplex/spxbounds.hpp",
+            "include/soplex/spxchangebasis.hpp",
+            "include/soplex/spxdantzigpr.h",
+            "include/soplex/spxdantzigpr.hpp",
+            "include/soplex/spxdefaultrt.h",
+            "include/soplex/spxdefaultrt.hpp",
+            "include/soplex/spxdefines.h",
+            "include/soplex/spxdefines.hpp",
+            "include/soplex/spxdesc.hpp",
+            "include/soplex/spxdevexpr.h",
+            "include/soplex/spxdevexpr.hpp",
+            "include/soplex/spxequilisc.h",
+            "include/soplex/spxequilisc.hpp",
+            "include/soplex/spxfastrt.h",
+            "include/soplex/spxfastrt.hpp",
+            "include/soplex/spxfileio.h",
+            "include/soplex/spxfileio.hpp",
+            "include/soplex/spxgeometsc.h",
+            "include/soplex/spxgeometsc.hpp",
+            "include/soplex/spxgithash.h",
+            "include/soplex/spxharrisrt.h",
+            "include/soplex/spxharrisrt.hpp",
+            "include/soplex/spxhybridpr.h",
+            "include/soplex/spxhybridpr.hpp",
+            "include/soplex/spxid.h",
+            "include/soplex/spxleastsqsc.h",
+            "include/soplex/spxleastsqsc.hpp",
+            "include/soplex/spxlp.h",
+            "include/soplex/spxlpbase.h",
+            "include/soplex/spxlpbase_rational.hpp",
+            "include/soplex/spxlpbase_real.hpp",
+            "include/soplex/spxmainsm.h",
+            "include/soplex/spxmainsm.hpp",
+            "include/soplex/spxout.h",
+            "include/soplex/spxpapilo.h",
+            "include/soplex/spxparmultpr.h",
+            "include/soplex/spxparmultpr.hpp",
+            "include/soplex/spxpricer.h",
+            "include/soplex/spxquality.hpp",
+            "include/soplex/spxratiotester.h",
+            "include/soplex/spxscaler.h",
+            "include/soplex/spxscaler.hpp",
+            "include/soplex/spxshift.hpp",
+            "include/soplex/spxsimplifier.h",
+            "include/soplex/spxsolve.hpp",
+            "include/soplex/spxsolver.h",
+            "include/soplex/spxsolver.hpp",
+            "include/soplex/spxstarter.h",
+            "include/soplex/spxstarter.hpp",
+            "include/soplex/spxsteepexpr.h",
+            "include/soplex/spxsteeppr.h",
+            "include/soplex/spxsteeppr.hpp",
+            "include/soplex/spxsumst.h",
+            "include/soplex/spxsumst.hpp",
+            "include/soplex/spxvecs.hpp",
+            "include/soplex/spxvectorst.h",
+            "include/soplex/spxvectorst.hpp",
+            "include/soplex/spxweightpr.h",
+            "include/soplex/spxweightpr.hpp",
+            "include/soplex/spxweightst.h",
+            "include/soplex/spxweightst.hpp",
+            "include/soplex/spxwritestate.hpp",
+            "include/soplex/ssvector.h",
+            "include/soplex/ssvectorbase.h",
+            "include/soplex/stablesum.h",
+            "include/soplex/statistics.h",
+            "include/soplex/statistics.hpp",
+            "include/soplex/svector.h",
+            "include/soplex/svectorbase.h",
+            "include/soplex/svset.h",
+            "include/soplex/svsetbase.h",
+            "include/soplex/testsoplex.hpp",
+            "include/soplex/timer.h",
+            "include/soplex/timerfactory.h",
+            "include/soplex/unitvector.h",
+            "include/soplex/unitvectorbase.h",
+            "include/soplex/updatevector.h",
+            "include/soplex/updatevector.hpp",
+            "include/soplex/usertimer.h",
+            "include/soplex/validation.h",
+            "include/soplex/validation.hpp",
+            "include/soplex/vector.h",
+            "include/soplex/vectorbase.h",
+            "include/soplex/wallclocktimer.h",
+            "include/soplex.h",
+            "include/soplex.hpp",
+            "include/soplex_interface.h",
+            "lib/cmake/soplex/FindMPFR.cmake",
+            "lib/cmake/soplex/soplex-config-version.cmake",
+            "lib/cmake/soplex/soplex-config.cmake",
+            "lib/cmake/soplex/soplex-targets-release.cmake",
+            "lib/cmake/soplex/soplex-targets.cmake",
+            "lib/libsoplex-pic.a",
+            "lib/libsoplex.a",
+            "lib/libsoplexshared.8.1.0.dylib",
+            "lib/libsoplexshared.8.1.dylib",
+            "lib/libsoplexshared.dylib",
+            "sbom.spdx.json",
+            "share/licenses/soplex/LICENSE",
+            "share/licenses/soplex/fmt/LICENSE.rst",
+            "share/licenses/soplex/zstr/License.txt",
+            "share/soplex/example.cpp"
+          ],
+          "installed_size": 19625224
+        }
+      }
+    }
+  }
+}
