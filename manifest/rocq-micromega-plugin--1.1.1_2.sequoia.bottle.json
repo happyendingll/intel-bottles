@@ -1,0 +1,442 @@
+{
+  "rocq-micromega-plugin": {
+    "formula": {
+      "name": "rocq-micromega-plugin",
+      "pkg_version": "1.1.1_2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rocq-micromega-plugin.rb",
+      "tap_git_path": "Formula/r/rocq-micromega-plugin.rb",
+      "tap_git_revision": "db775972c22648481ccd20c3b46e94681782e7c3",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Micromega decision procedures plugin for the Rocq prover",
+      "license": "LGPL-2.1-only",
+      "homepage": "https://github.com/rocq-community/micromega-plugin"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-19T20:55:26Z",
+      "tags": {
+        "sequoia": {
+          "filename": "rocq-micromega-plugin-1.1.1_2.sequoia.bottle.tar.gz",
+          "local_filename": "rocq-micromega-plugin--1.1.1_2.sequoia.bottle.tar.gz",
+          "sha256": "a74757490b38480bea7c4f3466d6f0cb83c76e49184b37d01bebce4b129a5a2e",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [
+              "lib/ocaml/rocq-micromega-plugin/dune-package"
+            ],
+            "linkage_files": [
+              "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin.cmxs",
+              "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin.cmxs"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1784280022,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ocaml",
+                "version": "5.5.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.5.1",
+                "declared_directly": true,
+                "compatibility_version": 4
+              },
+              {
+                "full_name": "ocaml-findlib",
+                "version": "1.9.8",
+                "revision": 5,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.9.8_5",
+                "declared_directly": true
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ocaml-zarith",
+                "version": "1.14",
+                "revision": 6,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.14_6",
+                "declared_directly": false
+              },
+              {
+                "full_name": "rocq",
+                "version": "9.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "9.3.0",
+                "declared_directly": true,
+                "compatibility_version": 3
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ocaml-5.5.1",
+              "SPDXRef-Package-SPDXRef-ocaml-findlib-1.9.8_5",
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-ocaml-zarith-1.14_6",
+              "SPDXRef-Package-SPDXRef-rocq-9.3.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ocaml-5.5.1",
+                "name": "ocaml",
+                "versionInfo": "5.5.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only WITH OCaml-LGPL-linking-exception",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/ocaml-5.5.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fd495d8c122be0f5be5bef73e214bcbd8bd3e097b62b3df334c8d3eb0ea96af4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ocaml@5.5.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ocaml-findlib-1.9.8_5",
+                "name": "ocaml-findlib",
+                "versionInfo": "1.9.8_5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/ocaml-findlib-1.9.8_5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e75d769f04f9aa9e6f909c01de32e76a5533a75031325a3eb12a679e2a93e923"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ocaml-findlib@1.9.8_5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ocaml-zarith-1.14_6",
+                "name": "ocaml-zarith",
+                "versionInfo": "1.14_6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.0-only",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/ocaml-zarith-1.14_6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "904490345d71ac8ff7fe8fe55119ffb3cbc0226a44aa862ef97c19625cd723ad"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ocaml-zarith@1.14_6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-rocq-9.3.0",
+                "name": "rocq",
+                "versionInfo": "9.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/rocq-9.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "92a07246732c9a9118c12fa1a8c95817e200b011f4a735599f0e1fd886339afb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/rocq@9.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ocaml-5.5.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rocq-micromega-plugin"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ocaml-findlib-1.9.8_5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rocq-micromega-plugin"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rocq-micromega-plugin"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ocaml-zarith-1.14_6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rocq-micromega-plugin"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-rocq-9.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rocq-micromega-plugin"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-rocq-micromega-plugin-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/rocq-micromega-plugin.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/ListDef.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/ListDef.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/ListDef.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/NatDef.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/NatDef.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/NatDef.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/PosDef.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/PosDef.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/PosDef.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/RatDef.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/RatDef.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/RatDef.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/Zify.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/Zify.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/Zify.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/checker.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/checker.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/checker.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/eval.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/eval.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/eval.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/field_checker.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/field_checker.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/field_checker.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/field_eval.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/field_eval.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/field_eval.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/formula.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/formula.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/formula.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/ring_checker.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/ring_checker.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/ring_checker.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/ring_eval.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/ring_eval.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/ring_eval.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/tactics.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/tactics.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/tactics.vo",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/witness.glob",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/witness.v",
+            "lib/ocaml/coq/user-contrib/micromega_plugin/witness.vo",
+            "lib/ocaml/rocq-micromega-plugin/META",
+            "lib/ocaml/rocq-micromega-plugin/dune-package",
+            "lib/ocaml/rocq-micromega-plugin/opam",
+            "lib/ocaml/rocq-micromega-plugin/plugin/certificate.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/certificate.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/coq_micromega.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/coq_micromega.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/g_micromega.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/g_micromega.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/itv.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/itv.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/linsolve.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/linsolve.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin.a",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin.cma",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin.cmxa",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin.cmxs",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Certificate.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Certificate.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Certificate.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Certificate.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Coq_micromega.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Coq_micromega.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Coq_micromega.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Coq_micromega.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__G_micromega.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__G_micromega.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__G_micromega.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__G_micromega.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Itv.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Itv.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Itv.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Itv.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Linsolve.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Linsolve.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Linsolve.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Linsolve.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Micromega.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Micromega.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Micromega.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Micromega.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Mutils.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Mutils.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Mutils.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Mutils.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__NumCompat.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__NumCompat.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__NumCompat.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__NumCompat.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Persistent_cache.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Persistent_cache.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Persistent_cache.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Persistent_cache.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Polynomial.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Polynomial.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Polynomial.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Polynomial.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Simplex.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Simplex.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Simplex.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Simplex.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Sos.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Sos.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Sos.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Sos.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Sos_lib.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Sos_lib.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Sos_lib.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Sos_lib.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Sos_types.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Sos_types.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Sos_types.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Sos_types.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Vect.cmi",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Vect.cmt",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Vect.cmti",
+            "lib/ocaml/rocq-micromega-plugin/plugin/micromega_ml_plugin__Vect.cmx",
+            "lib/ocaml/rocq-micromega-plugin/plugin/mutils.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/mutils.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/numCompat.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/numCompat.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/persistent_cache.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/persistent_cache.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/polynomial.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/polynomial.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/simplex.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/simplex.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/sos.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/sos.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/sos_lib.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/sos_lib.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/sos_types.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/sos_types.mli",
+            "lib/ocaml/rocq-micromega-plugin/plugin/vect.ml",
+            "lib/ocaml/rocq-micromega-plugin/plugin/vect.mli",
+            "lib/ocaml/rocq-micromega-plugin/zify/g_zify.ml",
+            "lib/ocaml/rocq-micromega-plugin/zify/g_zify.mli",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify.ml",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify.mli",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin.a",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin.cma",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin.cmi",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin.cmt",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin.cmx",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin.cmxa",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin.cmxs",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin.ml",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin__G_zify.cmi",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin__G_zify.cmt",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin__G_zify.cmti",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin__G_zify.cmx",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin__Zify.cmi",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin__Zify.cmt",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin__Zify.cmti",
+            "lib/ocaml/rocq-micromega-plugin/zify/zify_ml_plugin__Zify.cmx",
+            "sbom.spdx.json",
+            "share/doc/rocq-micromega-plugin/LICENSE",
+            "share/doc/rocq-micromega-plugin/README-developers.md",
+            "share/doc/rocq-micromega-plugin/README.md"
+          ],
+          "installed_size": 9365466
+        }
+      }
+    }
+  }
+}
