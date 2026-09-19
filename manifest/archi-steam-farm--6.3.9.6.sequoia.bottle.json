@@ -1,0 +1,361 @@
+{
+  "archi-steam-farm": {
+    "formula": {
+      "name": "archi-steam-farm",
+      "pkg_version": "6.3.9.6",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/archi-steam-farm.rb",
+      "tap_git_path": "Formula/a/archi-steam-farm.rb",
+      "tap_git_revision": "79057e15b38d7494db937d7c672e9eb07216cd18",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Application for idling Steam cards from multiple accounts simultaneously",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/JustArchiNET/ArchiSteamFarm"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-19T10:29:12Z",
+      "tags": {
+        "sequoia": {
+          "filename": "archi-steam-farm-6.3.9.6.sequoia.bottle.tar.gz",
+          "local_filename": "archi-steam-farm--6.3.9.6.sequoia.bottle.tar.gz",
+          "sha256": "dcfe49409748c774e0b2a4b4e50d1d24c272734b7a98b0dcff053419d8cf2627",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787349663,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "dotnet",
+                "version": "10.0.400",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.0.400",
+                "declared_directly": true,
+                "compatibility_version": 6
+              }
+            ],
+            "source": {
+              "scm_revision": "e8733970dd9a240ab357ab85d2d7155b6ec0427e"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-archi-steam-farm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-archi-steam-farm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-archi-steam-farm-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/asf"
+          ],
+          "all_files": [
+            ".bottle/etc/asf/.gitkeep",
+            ".brew/archi-steam-farm.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "README.md",
+            "bin/asf",
+            "libexec/ArchiSteamFarm",
+            "libexec/Changelog.html",
+            "libexec/ConfigGenerator.html",
+            "libexec/LICENSE.txt",
+            "libexec/Manual.html",
+            "libexec/UI.html",
+            "libexec/logs/.gitkeep",
+            "libexec/plugins/.gitkeep",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.deps.json",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/be-BY/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/bg-BG/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/bs-Latn/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/ca-ES/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/cs-CZ/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/da-DK/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/de-DE/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/el-GR/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/es-ES/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/fa-IR/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/fi-FI/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/fr-FR/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/he-IL/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/hr-HR/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/hu-HU/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/id-ID/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/it-IT/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/ja-JP/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/ka-GE/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/ko-KR/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/lt-LT/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/lv-LV/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/nl-NL/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/no-NO/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/pl-PL/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/pt-BR/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/pt-PT/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/qps-Ploc/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/ro-RO/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/ru-RU/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/sk-SK/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/sr-Latn/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/sv-SE/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/th-TH/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/tr-TR/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/uk-UA/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/vi-VN/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/zh-Hans/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/zh-Hant/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.ItemsMatcher/zh-Hant-HK/ArchiSteamFarm.OfficialPlugins.ItemsMatcher.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.deps.json",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/be-BY/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/bg-BG/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/bs-Latn/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/ca-ES/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/cs-CZ/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/da-DK/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/de-DE/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/el-GR/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/es-ES/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/fa-IR/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/fi-FI/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/fr-FR/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/he-IL/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/hr-HR/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/hu-HU/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/id-ID/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/it-IT/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/ja-JP/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/ka-GE/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/ko-KR/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/lt-LT/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/lv-LV/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/nl-NL/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/no-NO/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/pl-PL/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/pt-BR/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/pt-PT/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/qps-Ploc/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/ro-RO/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/ru-RU/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/sk-SK/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/sr-Latn/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/sv-SE/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/th-TH/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/tr-TR/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/uk-UA/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/vi-VN/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/zh-Hans/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/zh-Hant/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/plugins/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator/zh-Hant-HK/ArchiSteamFarm.OfficialPlugins.MobileAuthenticator.resources.dll",
+            "libexec/www/images/defaultAvatar.jpg",
+            "libexec/www/images/logo.png",
+            "libexec/www/images/lol-US.png",
+            "libexec/www/index.html",
+            "libexec/www/manifest.json",
+            "libexec/www/robots.txt",
+            "libexec/www/scripts/1024.ab8268b.chunk.js",
+            "libexec/www/scripts/1140.c78de93.chunk.js",
+            "libexec/www/scripts/1237.a6595aa.chunk.js",
+            "libexec/www/scripts/1780.206f511.chunk.js",
+            "libexec/www/scripts/1817.78d0a98.chunk.js",
+            "libexec/www/scripts/2135.5523f10.chunk.js",
+            "libexec/www/scripts/2254.252ba92.chunk.js",
+            "libexec/www/scripts/2287.f7c1522.chunk.js",
+            "libexec/www/scripts/2318.588b958.chunk.js",
+            "libexec/www/scripts/2524.2804829.chunk.js",
+            "libexec/www/scripts/2675.b67be81.chunk.js",
+            "libexec/www/scripts/2696.f94e974.chunk.js",
+            "libexec/www/scripts/2792.8ac8f17.chunk.js",
+            "libexec/www/scripts/295.148db38.chunk.js",
+            "libexec/www/scripts/315.4c1e110.chunk.js",
+            "libexec/www/scripts/3188.769977a.chunk.js",
+            "libexec/www/scripts/3212.7bb1873.chunk.js",
+            "libexec/www/scripts/322.cec4a2b.chunk.js",
+            "libexec/www/scripts/3397.21b846f.chunk.js",
+            "libexec/www/scripts/3480.7249778.chunk.js",
+            "libexec/www/scripts/3675.64f7db8.chunk.js",
+            "libexec/www/scripts/372.4831d4f.chunk.js",
+            "libexec/www/scripts/3971.c254269.chunk.js",
+            "libexec/www/scripts/3996.6d691ed.chunk.js",
+            "libexec/www/scripts/4056.ca21c98.chunk.js",
+            "libexec/www/scripts/4098.5c81226.chunk.js",
+            "libexec/www/scripts/410.7e70e3a.chunk.js",
+            "libexec/www/scripts/4398.b138b26.chunk.js",
+            "libexec/www/scripts/4536.6f1f479.chunk.js",
+            "libexec/www/scripts/4664.a6bf249.chunk.js",
+            "libexec/www/scripts/4696.23c2830.chunk.js",
+            "libexec/www/scripts/4752.4a554cb.chunk.js",
+            "libexec/www/scripts/5009.cfa1bcf.chunk.js",
+            "libexec/www/scripts/5168.dec29d2.chunk.js",
+            "libexec/www/scripts/5178.5e926b1.chunk.js",
+            "libexec/www/scripts/5253.9d5e1f8.chunk.js",
+            "libexec/www/scripts/5345.2bc11fb.chunk.js",
+            "libexec/www/scripts/5448.1b120f1.chunk.js",
+            "libexec/www/scripts/5582.043963b.chunk.js",
+            "libexec/www/scripts/5693.202921e.chunk.js",
+            "libexec/www/scripts/5744.85e3b00.chunk.js",
+            "libexec/www/scripts/591.c959678.chunk.js",
+            "libexec/www/scripts/6193.0b05787.chunk.js",
+            "libexec/www/scripts/6238.b1e5647.chunk.js",
+            "libexec/www/scripts/6276.c09109e.chunk.js",
+            "libexec/www/scripts/6283.e721ff2.chunk.js",
+            "libexec/www/scripts/7339.aa1756c.chunk.js",
+            "libexec/www/scripts/7518.c9ff078.chunk.js",
+            "libexec/www/scripts/7571.ecd84fb.chunk.js",
+            "libexec/www/scripts/7662.7cc7b51.chunk.js",
+            "libexec/www/scripts/7672.e299a18.chunk.js",
+            "libexec/www/scripts/7726.152abe4.chunk.js",
+            "libexec/www/scripts/7762.5b56d40.chunk.js",
+            "libexec/www/scripts/8280.acf2454.chunk.js",
+            "libexec/www/scripts/8284.de4685d.chunk.js",
+            "libexec/www/scripts/8289.78228a1.chunk.js",
+            "libexec/www/scripts/8312.011f03d.chunk.js",
+            "libexec/www/scripts/8487.7c3f517.chunk.js",
+            "libexec/www/scripts/8877.beae530.chunk.js",
+            "libexec/www/scripts/8878.70bad6a.chunk.js",
+            "libexec/www/scripts/8978.9665d52.chunk.js",
+            "libexec/www/scripts/9061.e80ecaf.chunk.js",
+            "libexec/www/scripts/9414.4c81e79.chunk.js",
+            "libexec/www/scripts/9463.c515183.chunk.js",
+            "libexec/www/scripts/9519.8551370.chunk.js",
+            "libexec/www/scripts/9623.2c42207.chunk.js",
+            "libexec/www/scripts/9754.9e66b41.chunk.js",
+            "libexec/www/scripts/9872.ef8b447.chunk.js",
+            "libexec/www/scripts/main.a39a684.bundle.js",
+            "libexec/www/scripts/main.a39a684.bundle.js.LICENSE.txt",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 21237327
+        }
+      }
+    }
+  }
+}

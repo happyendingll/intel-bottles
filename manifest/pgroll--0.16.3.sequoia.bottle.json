@@ -1,0 +1,100 @@
+{
+  "pgroll": {
+    "formula": {
+      "name": "pgroll",
+      "pkg_version": "0.16.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pgroll.rb",
+      "tap_git_path": "Formula/p/pgroll.rb",
+      "tap_git_revision": "79057e15b38d7494db937d7c672e9eb07216cd18",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Postgres zero-downtime migrations made easy",
+      "license": "Apache-2.0",
+      "homepage": "https://pgroll.com"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-19T12:10:46Z",
+      "tags": {
+        "sequoia": {
+          "filename": "pgroll-0.16.3.sequoia.bottle.tar.gz",
+          "local_filename": "pgroll--0.16.3.sequoia.bottle.tar.gz",
+          "sha256": "946ffb7bd8bd2e768908b2cf49b074c529a5da8641fdf4ab4e82700b84c760ce",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788856829,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libpg_query",
+                "version": "18.0.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "18.0.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-pgroll-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/pgroll"
+          ],
+          "all_files": [
+            ".brew/pgroll.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/pgroll",
+            "etc/bash_completion.d/pgroll",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/pgroll.fish",
+            "share/pgroll/01_create_tables.yaml",
+            "share/pwsh/completions/_pgroll.ps1",
+            "share/zsh/site-functions/_pgroll"
+          ],
+          "installed_size": 17953664
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,357 @@
+{
+  "seal": {
+    "formula": {
+      "name": "seal",
+      "pkg_version": "4.4.5",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/seal.rb",
+      "tap_git_path": "Formula/s/seal.rb",
+      "tap_git_revision": "79057e15b38d7494db937d7c672e9eb07216cd18",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Easy-to-use homomorphic encryption library",
+      "license": "MIT",
+      "homepage": "https://github.com/microsoft/SEAL"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-19T12:16:28Z",
+      "tags": {
+        "sequoia": {
+          "filename": "seal-4.4.5.sequoia.bottle.tar.gz",
+          "local_filename": "seal--4.4.5.sequoia.bottle.tar.gz",
+          "sha256": "716b3918a7115865fb96c39065f28e485ad23c5bb87578e0a456834d3c780d71",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [
+              "lib/pkgconfig/hexl.pc",
+              "lib/pkgconfig/seal_shared.pc"
+            ],
+            "linkage_files": [
+              "lib/libseal.4.4.5.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789423369,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "cpp-gsl",
+                "version": "5.0.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.0.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-cpp-gsl-5.0.0",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cpp-gsl-5.0.0",
+                "name": "cpp-gsl",
+                "versionInfo": "5.0.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/cpp-gsl/blobs/sha256:d44c0077b29023d3a9366763cf6d496f055c55b072eee40aea67eb982d14299b",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d44c0077b29023d3a9366763cf6d496f055c55b072eee40aea67eb982d14299b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/cpp-gsl@5.0.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cpp-gsl-5.0.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-seal"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-seal"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-seal"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-seal"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-seal-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/seal.rb",
+            "CHANGES.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NOTICE",
+            "README.md",
+            "include/SEAL-4.4/seal/batchencoder.h",
+            "include/SEAL-4.4/seal/ciphertext.h",
+            "include/SEAL-4.4/seal/ckks.h",
+            "include/SEAL-4.4/seal/context.h",
+            "include/SEAL-4.4/seal/decryptor.h",
+            "include/SEAL-4.4/seal/dynarray.h",
+            "include/SEAL-4.4/seal/encryptionparams.h",
+            "include/SEAL-4.4/seal/encryptor.h",
+            "include/SEAL-4.4/seal/evaluator.h",
+            "include/SEAL-4.4/seal/galoiskeys.h",
+            "include/SEAL-4.4/seal/keygenerator.h",
+            "include/SEAL-4.4/seal/kswitchkeys.h",
+            "include/SEAL-4.4/seal/memorymanager.h",
+            "include/SEAL-4.4/seal/modulus.h",
+            "include/SEAL-4.4/seal/plaintext.h",
+            "include/SEAL-4.4/seal/publickey.h",
+            "include/SEAL-4.4/seal/randomgen.h",
+            "include/SEAL-4.4/seal/randomtostd.h",
+            "include/SEAL-4.4/seal/relinkeys.h",
+            "include/SEAL-4.4/seal/seal.h",
+            "include/SEAL-4.4/seal/secretkey.h",
+            "include/SEAL-4.4/seal/serializable.h",
+            "include/SEAL-4.4/seal/serialization.h",
+            "include/SEAL-4.4/seal/util/blake2-impl.h",
+            "include/SEAL-4.4/seal/util/blake2.h",
+            "include/SEAL-4.4/seal/util/clang.h",
+            "include/SEAL-4.4/seal/util/clipnormal.h",
+            "include/SEAL-4.4/seal/util/common.h",
+            "include/SEAL-4.4/seal/util/config.h",
+            "include/SEAL-4.4/seal/util/croots.h",
+            "include/SEAL-4.4/seal/util/defines.h",
+            "include/SEAL-4.4/seal/util/dwthandler.h",
+            "include/SEAL-4.4/seal/util/fips202.h",
+            "include/SEAL-4.4/seal/util/galois.h",
+            "include/SEAL-4.4/seal/util/gcc.h",
+            "include/SEAL-4.4/seal/util/globals.h",
+            "include/SEAL-4.4/seal/util/hash.h",
+            "include/SEAL-4.4/seal/util/hestdparms.h",
+            "include/SEAL-4.4/seal/util/iterator.h",
+            "include/SEAL-4.4/seal/util/locks.h",
+            "include/SEAL-4.4/seal/util/mempool.h",
+            "include/SEAL-4.4/seal/util/msvc.h",
+            "include/SEAL-4.4/seal/util/ntt.h",
+            "include/SEAL-4.4/seal/util/numth.h",
+            "include/SEAL-4.4/seal/util/pointer.h",
+            "include/SEAL-4.4/seal/util/polyarithsmallmod.h",
+            "include/SEAL-4.4/seal/util/polycore.h",
+            "include/SEAL-4.4/seal/util/rlwe.h",
+            "include/SEAL-4.4/seal/util/rns.h",
+            "include/SEAL-4.4/seal/util/scalingvariant.h",
+            "include/SEAL-4.4/seal/util/streambuf.h",
+            "include/SEAL-4.4/seal/util/uintarith.h",
+            "include/SEAL-4.4/seal/util/uintarithmod.h",
+            "include/SEAL-4.4/seal/util/uintarithsmallmod.h",
+            "include/SEAL-4.4/seal/util/uintcore.h",
+            "include/SEAL-4.4/seal/util/ztools.h",
+            "include/SEAL-4.4/seal/valcheck.h",
+            "include/SEAL-4.4/seal/version.h",
+            "include/hexl/eltwise/eltwise-add-mod.hpp",
+            "include/hexl/eltwise/eltwise-cmp-add.hpp",
+            "include/hexl/eltwise/eltwise-cmp-sub-mod.hpp",
+            "include/hexl/eltwise/eltwise-fma-mod.hpp",
+            "include/hexl/eltwise/eltwise-mult-mod.hpp",
+            "include/hexl/eltwise/eltwise-reduce-mod.hpp",
+            "include/hexl/eltwise/eltwise-sub-mod.hpp",
+            "include/hexl/experimental/fft-like/fft-like-avx512-util.hpp",
+            "include/hexl/experimental/fft-like/fft-like-native.hpp",
+            "include/hexl/experimental/fft-like/fft-like.hpp",
+            "include/hexl/experimental/fft-like/fwd-fft-like-avx512.hpp",
+            "include/hexl/experimental/fft-like/inv-fft-like-avx512.hpp",
+            "include/hexl/experimental/misc/lr-mat-vec-mult.hpp",
+            "include/hexl/experimental/seal/dyadic-multiply-internal.hpp",
+            "include/hexl/experimental/seal/dyadic-multiply.hpp",
+            "include/hexl/experimental/seal/key-switch-internal.hpp",
+            "include/hexl/experimental/seal/key-switch.hpp",
+            "include/hexl/experimental/seal/locks.hpp",
+            "include/hexl/experimental/seal/ntt-cache.hpp",
+            "include/hexl/hexl.hpp",
+            "include/hexl/logging/logging.hpp",
+            "include/hexl/ntt/ntt.hpp",
+            "include/hexl/number-theory/number-theory.hpp",
+            "include/hexl/util/aligned-allocator.hpp",
+            "include/hexl/util/allocator.hpp",
+            "include/hexl/util/check.hpp",
+            "include/hexl/util/clang.hpp",
+            "include/hexl/util/compiler.hpp",
+            "include/hexl/util/defines.hpp",
+            "include/hexl/util/gcc.hpp",
+            "include/hexl/util/msvc.hpp",
+            "include/hexl/util/types.hpp",
+            "include/hexl/util/util.hpp",
+            "lib/cmake/SEAL-4.4/SEALConfig.cmake",
+            "lib/cmake/SEAL-4.4/SEALConfigVersion.cmake",
+            "lib/cmake/SEAL-4.4/SEALTargets-release.cmake",
+            "lib/cmake/SEAL-4.4/SEALTargets.cmake",
+            "lib/cmake/hexl-1.2.6/HEXLConfig.cmake",
+            "lib/cmake/hexl-1.2.6/HEXLConfigVersion.cmake",
+            "lib/cmake/hexl-1.2.6/HEXLTargets-release.cmake",
+            "lib/cmake/hexl-1.2.6/HEXLTargets.cmake",
+            "lib/libhexl.a",
+            "lib/libseal.4.4.5.dylib",
+            "lib/libseal.4.4.dylib",
+            "lib/libseal.dylib",
+            "lib/pkgconfig/hexl.pc",
+            "lib/pkgconfig/seal_msgsl.pc",
+            "lib/pkgconfig/seal_shared.pc",
+            "sbom.spdx.json",
+            "share/seal/examples/1_bfv_basics.cpp",
+            "share/seal/examples/2_encoders.cpp",
+            "share/seal/examples/3_levels.cpp",
+            "share/seal/examples/4_bgv_basics.cpp",
+            "share/seal/examples/5_ckks_basics.cpp",
+            "share/seal/examples/6_rotation.cpp",
+            "share/seal/examples/7_serialization.cpp",
+            "share/seal/examples/8_performance.cpp",
+            "share/seal/examples/CMakeLists.txt",
+            "share/seal/examples/examples.cpp",
+            "share/seal/examples/examples.h"
+          ],
+          "installed_size": 2775526
+        }
+      }
+    }
+  }
+}

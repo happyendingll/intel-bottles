@@ -1,0 +1,650 @@
+{
+  "rust-wasm": {
+    "formula": {
+      "name": "rust-wasm",
+      "pkg_version": "1.98.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rust-wasm.rb",
+      "tap_git_path": "Formula/r/rust-wasm.rb",
+      "tap_git_revision": "79057e15b38d7494db937d7c672e9eb07216cd18",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Rust standard library and sysroot for WebAssembly targets",
+      "license": "Apache-2.0 OR MIT",
+      "homepage": "https://www.rust-lang.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-19T11:21:43Z",
+      "tags": {
+        "sequoia": {
+          "filename": "rust-wasm-1.98.1.sequoia.bottle.tar.gz",
+          "local_filename": "rust-wasm--1.98.1.sequoia.bottle.tar.gz",
+          "sha256": "4794b1dd65971f99f420fedb41f81d40bdbae4cfd9950c922adbcf5d19a64911",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788245763,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "llvm@22",
+                "version": "22.1.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "22.1.8",
+                "declared_directly": false
+              },
+              {
+                "full_name": "lld@22",
+                "version": "22.1.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "22.1.8",
+                "declared_directly": true
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libssh2",
+                "version": "1.11.1",
+                "revision": 5,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.11.1_5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "llhttp",
+                "version": "9.4.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "9.4.3",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libgit2",
+                "version": "1.9.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.9.7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pkgconf",
+                "version": "3.0.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.7",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "rust",
+                "version": "1.98.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.98.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "wasi-libc",
+                "version": "34",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "34",
+                "declared_directly": true
+              },
+              {
+                "full_name": "wasm-component-ld",
+                "version": "0.5.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.5.30",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-llvm@22-22.1.8",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-libssh2-1.11.1_5",
+              "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-rust-1.98.1",
+              "SPDXRef-Package-SPDXRef-wasi-libc-34",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-llvm@22-22.1.8",
+                "name": "llvm@22",
+                "versionInfo": "22.1.8",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/llvm%4022-22.1.8.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5c9576f00064855c612b13fa743c394a3b56f25595020f90b8c790d7e6b064a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/llvm%4022@22.1.8",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libssh2-1.11.1_5",
+                "name": "libssh2",
+                "versionInfo": "1.11.1_5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libssh2-1.11.1_5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ef446a2a7c4f8c35a4aafd26dc173b6b4e18bd77e8a86b985b1b54eaa1d949c2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libssh2@1.11.1_5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
+                "name": "pkgconf",
+                "versionInfo": "3.0.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pkgconf-3.0.7.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4541713529fcd083637bf6aa528241ce334d90e461b1b9923aedd328a35a15b5"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pkgconf@3.0.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-rust-1.98.1",
+                "name": "rust",
+                "versionInfo": "1.98.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 OR MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/rust-1.98.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d8ebdb229d674045543eea3505c5b12ffa64623ea53c6e9ee1869b6b1c5c5056"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/rust@1.98.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-wasi-libc-34",
+                "name": "wasi-libc",
+                "versionInfo": "34",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 AND MIT AND (Apache-2.0 WITH LLVM-exception)",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/wasi-libc-34.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6b6d00a1945c4622677621dd982c37ce1aeb6bd6c30807117dad22edca32adb6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/wasi-libc@34",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm@22-22.1.8",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libssh2-1.11.1_5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-rust-1.98.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-wasi-libc-34",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-rust-wasm-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/rust-wasm.rb",
+            "COPYRIGHT",
+            "INSTALL_RECEIPT.json",
+            "LICENSE-APACHE",
+            "LICENSE-MIT",
+            "README.md",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libaddr2line-5868ea3a112c5422.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libadler2-4006a945200c95e0.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/liballoc-f2e092141ff72243.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libcfg_if-b18da20d1757eacc.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libcompiler_builtins-0e43557cef685895.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libcore-057e8721cf289283.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libdlmalloc-33f1872edb559e12.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libgimli-2e7bcf5becb794c4.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libhashbrown-96c3448270e99fbf.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/liblibc-b6afc9a5456a11a4.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libmemchr-b1d8835831a276bd.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libminiz_oxide-c2171d8c5dc74a5a.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libobject-d22cc65bfd49d1da.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libpanic_abort-108f0fb61cc6a878.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libpanic_unwind-fe49b0044aaccbfb.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libproc_macro-4f5a82ba886faa4a.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/librustc_demangle-21c8384f54f5d130.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/librustc_literal_escaper-7871c71102b961c4.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/librustc_std_workspace_alloc-dde0c9ac7aa61ff0.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/librustc_std_workspace_core-cfd53fc039b9b794.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libstd-10735fbc730abdfa.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libstd_detect-63b842b6e38fab89.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libunwind-4d88ebfc3cc018ad.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libaddr2line-2c9b5fe6d27410cc.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libadler2-d58c1f4811079cd3.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/liballoc-dc4c5c87280cf83b.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libcfg_if-af7d190e3942418d.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libcompiler_builtins-a2d388d44a65f1d2.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libcore-3679f45dca07efb6.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libgimli-66127d484f91e4ae.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libhashbrown-70e85f5ab71a7050.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/liblibc-f9837b3282479cbb.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libmemchr-04c26df82ddf9e4c.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libminiz_oxide-71c4e6be93f4c0fe.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libobject-1c85e2e9fdd46c40.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libpanic_abort-7150dda8f4f50eca.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libpanic_unwind-b7d5490fd451fb49.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libproc_macro-f430134014f708c9.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/librustc_demangle-300321505bed06b8.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/librustc_literal_escaper-905dd44bdd3bc206.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/librustc_std_workspace_alloc-140c4f8bb97e93b2.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/librustc_std_workspace_core-a96d32afcf386d94.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libstd-87634acb1ce38a15.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libstd_detect-7fabe4791dd34332.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libunwind-f2ede39a13798914.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libwasip1-5f2a308ef173e0a0.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/self-contained/crt1-command.o",
+            "lib/rustlib/wasm32-wasip1/lib/self-contained/crt1-reactor.o",
+            "lib/rustlib/wasm32-wasip1/lib/self-contained/libc.a",
+            "lib/rustlib/wasm32-wasip2/lib/libaddr2line-1d6f94439d671bba.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libadler2-279f6cbdd564f10e.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/liballoc-bebea69c571976d4.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libcfg_if-7d1040c15604643b.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libcompiler_builtins-e506107d3a1c9fcf.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libcore-ad260c61344deb30.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libgimli-9c55b129449b3eb0.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libhashbrown-174a60a616d36fc3.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/liblibc-1f544fdf63e60114.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libmemchr-1abff5141792e84c.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libminiz_oxide-54525c0c068b2404.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libobject-e86a5e1449302585.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libpanic_abort-bef6bd6e7e5b6801.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libpanic_unwind-aceba2d49a01663b.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libproc_macro-638f896a0941658d.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/librustc_demangle-bab60ad3bfdd6f98.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/librustc_literal_escaper-6357e664843588ae.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/librustc_std_workspace_alloc-eb9b333dfb129697.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/librustc_std_workspace_core-e39d6663e05f182b.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libstd-298dd0cd86eb50fd.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libstd_detect-8d68bc2845620b73.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libunwind-eb00a14c354a30aa.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libwasip2-783c71ef30ed6f6a.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libwit_bindgen-527032d0fae524c3.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/self-contained/crt1-command.o",
+            "lib/rustlib/wasm32-wasip2/lib/self-contained/crt1-reactor.o",
+            "lib/rustlib/wasm32-wasip2/lib/self-contained/libc.a",
+            "license-metadata.json",
+            "sbom.spdx.json",
+            "share/rust-wasm/cargo-config.toml"
+          ],
+          "installed_size": 252592498
+        }
+      }
+    }
+  }
+}

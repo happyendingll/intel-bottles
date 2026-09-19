@@ -1,0 +1,281 @@
+{
+  "hatari": {
+    "formula": {
+      "name": "hatari",
+      "pkg_version": "2.6.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/h/hatari.rb",
+      "tap_git_path": "Formula/h/hatari.rb",
+      "tap_git_revision": "79057e15b38d7494db937d7c672e9eb07216cd18",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Atari ST/STE/TT/Falcon emulator",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://www.hatari-emu.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-19T11:06:32Z",
+      "tags": {
+        "sequoia": {
+          "filename": "hatari-2.6.1.sequoia.bottle.tar.gz",
+          "local_filename": "hatari--2.6.1.sequoia.bottle.tar.gz",
+          "sha256": "5d89260e087bf1ccef94ed51a9d9fcd3bbb18c527adfd3106f6a1b1eb55a62a3",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/hatari"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1755267322,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "sdl3",
+                "version": "3.4.16",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.16",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sdl2-compat",
+                "version": "2.32.72",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.32.72",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+              "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "name": "sdl3",
+                "versionInfo": "3.4.16",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/sdl3-3.4.16.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9dc29b325dcf7a0acfacd6fb415251792750b219a5db765624514ddc185f438d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl3@3.4.16",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "name": "sdl2-compat",
+                "versionInfo": "2.32.72",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/sdl2-compat-2.32.72.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "95416aee23feb0d1bc449a7112554d787af252beed7753dbedbd603d4ebd517c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl2-compat@2.32.72",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-hatari"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-hatari"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-hatari-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/hatari",
+            "bin/atari-hd-image",
+            "bin/zip2st",
+            "bin/hatari_profile",
+            "bin/atari-convert-dir",
+            "bin/hmsa",
+            "bin/hatari-prg-args",
+            "bin/gst2ascii"
+          ],
+          "all_files": [
+            ".brew/hatari.rb",
+            "INSTALL_RECEIPT.json",
+            "bin/atari-convert-dir",
+            "bin/atari-hd-image",
+            "bin/gst2ascii",
+            "bin/hatari",
+            "bin/hatari-prg-args",
+            "bin/hatari_profile",
+            "bin/hmsa",
+            "bin/zip2st",
+            "readme.txt",
+            "sbom.spdx.json",
+            "share/applications/hatari.desktop",
+            "share/doc/hatari/authors.txt",
+            "share/doc/hatari/bugs.txt",
+            "share/doc/hatari/compatibility.html",
+            "share/doc/hatari/debugger.html",
+            "share/doc/hatari/emutos.txt",
+            "share/doc/hatari/hatari-ui.html",
+            "share/doc/hatari/hconsole/release-notes.txt",
+            "share/doc/hatari/images/callgraph.png",
+            "share/doc/hatari/images/callgraph.svg",
+            "share/doc/hatari/images/cpu.png",
+            "share/doc/hatari/images/devices-portmidi.png",
+            "share/doc/hatari/images/devices.png",
+            "share/doc/hatari/images/fileselector.png",
+            "share/doc/hatari/images/floppydisks.png",
+            "share/doc/hatari/images/harddisks.png",
+            "share/doc/hatari/images/hatari-ui-0.7.png",
+            "share/doc/hatari/images/hatari-ui-0.9.png",
+            "share/doc/hatari/images/hatari-ui-debug.png",
+            "share/doc/hatari/images/hatari-ui-input.png",
+            "share/doc/hatari/images/hatari-ui-noembed.png",
+            "share/doc/hatari/images/hatari-ui-peripherals.png",
+            "share/doc/hatari/images/hatari-ui-quit.png",
+            "share/doc/hatari/images/hatari-ui-setup-edit.png",
+            "share/doc/hatari/images/hatari-ui-setup.png",
+            "share/doc/hatari/images/hatari-ui-speed.png",
+            "share/doc/hatari/images/hatari-ui-trace.png",
+            "share/doc/hatari/images/joystick.png",
+            "share/doc/hatari/images/kcachegrind.png",
+            "share/doc/hatari/images/keyboard.png",
+            "share/doc/hatari/images/main.png",
+            "share/doc/hatari/images/memory.png",
+            "share/doc/hatari/images/monitor.png",
+            "share/doc/hatari/images/newfloppy.png",
+            "share/doc/hatari/images/screen.png",
+            "share/doc/hatari/images/sound.png",
+            "share/doc/hatari/images/system.png",
+            "share/doc/hatari/images/tos.png",
+            "share/doc/hatari/keymap-sample.txt",
+            "share/doc/hatari/m68k-linux.txt",
+            "share/doc/hatari/manual.css",
+            "share/doc/hatari/manual.html",
+            "share/doc/hatari/memory-usage.txt",
+            "share/doc/hatari/midi-linux.txt",
+            "share/doc/hatari/release-notes.txt",
+            "share/doc/hatari/scsi-driver.txt",
+            "share/doc/hatari/thanks.txt",
+            "share/doc/hatari/toc.js",
+            "share/doc/hatari/todo.txt",
+            "share/doc/hatari/video-recording.txt",
+            "share/hatari/hatari-icon.bmp",
+            "share/hatari/hconsole/example-commands",
+            "share/hatari/hconsole/example-debugger",
+            "share/hatari/hconsole/example.py",
+            "share/hatari/hconsole/hconsole.py",
+            "share/hatari/tos.img",
+            "share/icons/hicolor/128x128/apps/hatari.png",
+            "share/icons/hicolor/128x128/mimetypes/application-vnd.fastcopy-disk-image.png",
+            "share/icons/hicolor/128x128/mimetypes/application-vnd.msa-disk-image.png",
+            "share/icons/hicolor/128x128/mimetypes/application-x-st-disk-image.png",
+            "share/icons/hicolor/128x128/mimetypes/application-x-stx-disk-image.png",
+            "share/icons/hicolor/256x256/apps/hatari.png",
+            "share/icons/hicolor/256x256/mimetypes/application-vnd.fastcopy-disk-image.png",
+            "share/icons/hicolor/256x256/mimetypes/application-vnd.msa-disk-image.png",
+            "share/icons/hicolor/256x256/mimetypes/application-x-st-disk-image.png",
+            "share/icons/hicolor/256x256/mimetypes/application-x-stx-disk-image.png",
+            "share/icons/hicolor/32x32/apps/hatari.png",
+            "share/icons/hicolor/32x32/mimetypes/application-vnd.fastcopy-disk-image.png",
+            "share/icons/hicolor/32x32/mimetypes/application-vnd.msa-disk-image.png",
+            "share/icons/hicolor/32x32/mimetypes/application-x-st-disk-image.png",
+            "share/icons/hicolor/32x32/mimetypes/application-x-stx-disk-image.png",
+            "share/icons/hicolor/48x48/apps/hatari.png",
+            "share/icons/hicolor/48x48/mimetypes/application-vnd.fastcopy-disk-image.png",
+            "share/icons/hicolor/48x48/mimetypes/application-vnd.msa-disk-image.png",
+            "share/icons/hicolor/48x48/mimetypes/application-x-st-disk-image.png",
+            "share/icons/hicolor/48x48/mimetypes/application-x-stx-disk-image.png",
+            "share/icons/hicolor/64x64/apps/hatari.png",
+            "share/icons/hicolor/64x64/mimetypes/application-vnd.fastcopy-disk-image.png",
+            "share/icons/hicolor/64x64/mimetypes/application-vnd.msa-disk-image.png",
+            "share/icons/hicolor/64x64/mimetypes/application-x-st-disk-image.png",
+            "share/icons/hicolor/64x64/mimetypes/application-x-stx-disk-image.png",
+            "share/icons/hicolor/scalable/apps/hatari.svg",
+            "share/icons/hicolor/scalable/mimetypes/application-vnd.fastcopy-disk-image.svg",
+            "share/icons/hicolor/scalable/mimetypes/application-vnd.msa-disk-image.svg",
+            "share/icons/hicolor/scalable/mimetypes/application-x-st-disk-image.svg",
+            "share/icons/hicolor/scalable/mimetypes/application-x-stx-disk-image.svg",
+            "share/man/man1/atari-convert-dir.1.gz",
+            "share/man/man1/atari-hd-image.1.gz",
+            "share/man/man1/gst2ascii.1.gz",
+            "share/man/man1/hatari-prg-args.1.gz",
+            "share/man/man1/hatari.1.gz",
+            "share/man/man1/hatari_profile.1.gz",
+            "share/man/man1/hconsole.1.gz",
+            "share/man/man1/hmsa.1.gz",
+            "share/man/man1/zip2st.1.gz",
+            "share/mime/packages/hatari.xml"
+          ],
+          "installed_size": 16919692
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,104 @@
+{
+  "heartbeat": {
+    "formula": {
+      "name": "heartbeat",
+      "pkg_version": "9.5.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/h/heartbeat.rb",
+      "tap_git_path": "Formula/h/heartbeat.rb",
+      "tap_git_revision": "79057e15b38d7494db937d7c672e9eb07216cd18",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Lightweight Shipper for Uptime Monitoring",
+      "license": "Apache-2.0",
+      "homepage": "https://www.elastic.co/beats/heartbeat"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-19T11:11:48Z",
+      "tags": {
+        "sequoia": {
+          "filename": "heartbeat-9.5.4.sequoia.bottle.tar.gz",
+          "local_filename": "heartbeat--9.5.4.sequoia.bottle.tar.gz",
+          "sha256": "f6b97b06501ab2b5934104d1d0a80eece4c3b5dcd9d323d225546bc8ac8f1e9d",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [
+              "bin/heartbeat",
+              ".bottle/etc/heartbeat/fields.yml",
+              "sh.brew.heartbeat.plist",
+              "sh.brew.heartbeat.service"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788985443,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "source": {
+              "scm_revision": "ccdfcad1de773e22e494089f508162c52b027ee2"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-heartbeat-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/heartbeat"
+          ],
+          "all_files": [
+            ".bottle/etc/heartbeat/fields.yml",
+            ".bottle/etc/heartbeat/heartbeat.docker.yml",
+            ".bottle/etc/heartbeat/heartbeat.reference.yml",
+            ".bottle/etc/heartbeat/heartbeat.yml",
+            ".brew/heartbeat.rb",
+            "CHANGELOG.asciidoc",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "NOTICE.txt",
+            "README.md",
+            "bin/heartbeat",
+            "etc/bash_completion.d/heartbeat",
+            "libexec/bin/heartbeat",
+            "sbom.spdx.json",
+            "sh.brew.heartbeat.plist",
+            "sh.brew.heartbeat.service",
+            "share/zsh/site-functions/_heartbeat"
+          ],
+          "installed_size": 119048799
+        }
+      }
+    }
+  }
+}

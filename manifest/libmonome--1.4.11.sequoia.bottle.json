@@ -1,0 +1,104 @@
+{
+  "libmonome": {
+    "formula": {
+      "name": "libmonome",
+      "pkg_version": "1.4.11",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libmonome.rb",
+      "tap_git_path": "Formula/lib/libmonome.rb",
+      "tap_git_revision": "79057e15b38d7494db937d7c672e9eb07216cd18",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Library for easy interaction with monome devices",
+      "license": "ISC",
+      "homepage": "https://monome.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-19T12:18:28Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libmonome-1.4.11.sequoia.bottle.tar.gz",
+          "local_filename": "libmonome--1.4.11.sequoia.bottle.tar.gz",
+          "sha256": "2554b2d511ddb1d0db01525410dcc9ba0afac031a91074def39334fe3336c737",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libmonome.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787850873,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "liblo",
+                "version": "0.36",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.36",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libmonome-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libmonome.rb",
+            "COPYRIGHT",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "include/monome.h",
+            "lib/cmake/libmonome/libmonomeConfig-release.cmake",
+            "lib/cmake/libmonome/libmonomeConfig.cmake",
+            "lib/libmonome.a",
+            "lib/libmonome.dylib",
+            "sbom.spdx.json",
+            "share/libmonome/life.c",
+            "share/libmonome/simple.c",
+            "share/libmonome/test.c",
+            "share/libmonome/test_arc.c",
+            "share/libmonome/torture.c"
+          ],
+          "installed_size": 119888
+        }
+      }
+    }
+  }
+}

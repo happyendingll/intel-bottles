@@ -1,0 +1,127 @@
+{
+  "serialosc": {
+    "formula": {
+      "name": "serialosc",
+      "pkg_version": "1.4.8_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/serialosc.rb",
+      "tap_git_path": "Formula/s/serialosc.rb",
+      "tap_git_revision": "79057e15b38d7494db937d7c672e9eb07216cd18",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Opensound control server for monome devices",
+      "license": "ISC",
+      "homepage": "https://github.com/monome/docs/blob/gh-pages/serialosc/osc.md"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-19T12:19:07Z",
+      "tags": {
+        "sequoia": {
+          "filename": "serialosc-1.4.8_1.sequoia.bottle.tar.gz",
+          "local_filename": "serialosc--1.4.8_1.sequoia.bottle.tar.gz",
+          "sha256": "96fcb0264b8a26541384c2573c2ea5a99ae60eee948300d4cda32ac33c68408f",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [
+              "sh.brew.serialosc.plist",
+              "sh.brew.serialosc.service"
+            ],
+            "linkage_files": [
+              "bin/serialosc-device",
+              "bin/serialoscd"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787851619,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "liblo",
+                "version": "0.36",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.36",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libmonome",
+                "version": "1.4.11",
+                "revision": 0,
+                "pkg_version": "1.4.11",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libuv",
+                "version": "1.52.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.52.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "source": {
+              "scm_revision": "c96ea389dbf82c84d17f6f7adddaf311aed49438"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-serialosc-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/serialosc-device",
+            "bin/serialosc-detector",
+            "bin/serialoscd"
+          ],
+          "all_files": [
+            ".brew/serialosc.rb",
+            "COPYRIGHT",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/serialosc-detector",
+            "bin/serialosc-device",
+            "bin/serialoscd",
+            "sbom.spdx.json",
+            "sh.brew.serialosc.plist",
+            "sh.brew.serialosc.service"
+          ],
+          "installed_size": 142479
+        }
+      }
+    }
+  }
+}
