@@ -2,27 +2,27 @@
   "rocq-elpi": {
     "formula": {
       "name": "rocq-elpi",
-      "pkg_version": "3.5.1",
+      "pkg_version": "3.5.1_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rocq-elpi.rb",
       "tap_git_path": "Formula/r/rocq-elpi.rb",
-      "tap_git_revision": "bf4a6647cda39aaeeccade8184b7700dcca2481e",
+      "tap_git_revision": "88d726df051f7aaffe2e005fa9d0ff0d2a87f7b6",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Elpi extension language for Rocq",
       "license": "LGPL-2.1-or-later",
       "homepage": "https://github.com/LPCIC/coq-elpi"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-09-16T08:42:10Z",
+      "date": "2026-09-19T18:54:43Z",
       "tags": {
         "sequoia": {
-          "filename": "rocq-elpi-3.5.1.sequoia.bottle.tar.gz",
-          "local_filename": "rocq-elpi--3.5.1.sequoia.bottle.tar.gz",
-          "sha256": "11eadcf7185c77cba29fd680098c800789644b4b56c0c216a5e99848ae633b8f",
+          "filename": "rocq-elpi-3.5.1_2.sequoia.bottle.tar.gz",
+          "local_filename": "rocq-elpi--3.5.1_2.sequoia.bottle.tar.gz",
+          "sha256": "4b80081fc63cd121728662d9dc397ff209ba32181b84e8bbf25a146d56f274e1",
           "tab": {
-            "homebrew_version": "7.0.2",
+            "homebrew_version": "7.0.4",
             "changed_files": [
               "lib/ocaml/rocq-elpi/dune-package",
               "libexec/ocaml-system/lib/findlib/Makefile.config",
@@ -53,6 +53,7 @@
               "libexec/ocaml-system/lib/elpi/parser/elpi_parser.cmxs",
               "libexec/ocaml-system/lib/elpi/runtime/elpi_runtime.cmxs",
               "libexec/ocaml-system/lib/elpi/trace/atd/elpi_trace_atd.cmxs",
+              "libexec/ocaml-system/lib/elpi/trace/ppx/ppx.exe",
               "libexec/ocaml-system/lib/elpi/trace/ppx/trace_ppx.cmxs",
               "libexec/ocaml-system/lib/elpi/trace/runtime/trace_ppx_runtime.cmxs",
               "libexec/ocaml-system/lib/elpi/util/elpi_util.cmxs",
@@ -79,6 +80,7 @@
               "libexec/ocaml-system/lib/ppx_deriving/make/ppx_deriving_make.cmxs",
               "libexec/ocaml-system/lib/ppx_deriving/map/ppx_deriving_map.cmxs",
               "libexec/ocaml-system/lib/ppx_deriving/ord/ppx_deriving_ord.cmxs",
+              "libexec/ocaml-system/lib/ppx_deriving/ppx_deriving",
               "libexec/ocaml-system/lib/ppx_deriving/runtime/ppx_deriving_runtime.cmxs",
               "libexec/ocaml-system/lib/ppx_deriving/show/ppx_deriving_show.cmxs",
               "libexec/ocaml-system/lib/ppx_deriving/std/ppx_deriving_std.cmxs",
@@ -86,6 +88,7 @@
               "libexec/ocaml-system/lib/ppxlib/__private__/ppx_foo_deriver/ppx_foo_deriver.cmxs",
               "libexec/ocaml-system/lib/ppxlib/ast/ppxlib_ast.cmxs",
               "libexec/ocaml-system/lib/ppxlib/astlib/astlib.cmxs",
+              "libexec/ocaml-system/lib/ppxlib/metaquot/ppx.exe",
               "libexec/ocaml-system/lib/ppxlib/metaquot/ppxlib_metaquot.cmxs",
               "libexec/ocaml-system/lib/ppxlib/metaquot_lifters/ppxlib_metaquot_lifters.cmxs",
               "libexec/ocaml-system/lib/ppxlib/ppxlib.cmxs",
@@ -120,19 +123,17 @@
             "runtime_dependencies": [
               {
                 "full_name": "ocaml",
-                "version": "5.5.0",
+                "version": "5.5.1",
                 "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "5.5.0",
+                "pkg_version": "5.5.1",
                 "declared_directly": true,
-                "compatibility_version": 3
+                "compatibility_version": 4
               },
               {
                 "full_name": "ocaml-findlib",
                 "version": "1.9.8",
-                "revision": 4,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.9.8_4",
+                "revision": 5,
+                "pkg_version": "1.9.8_5",
                 "declared_directly": true
               },
               {
@@ -147,19 +148,26 @@
               {
                 "full_name": "ocaml-zarith",
                 "version": "1.14",
-                "revision": 5,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.14_5",
+                "revision": 6,
+                "pkg_version": "1.14_6",
                 "declared_directly": false
               },
               {
                 "full_name": "rocq",
-                "version": "9.2.0",
+                "version": "9.3.0",
                 "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "9.2.0",
+                "pkg_version": "9.3.0",
                 "declared_directly": true,
-                "compatibility_version": 2
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
               }
             ],
             "arch": "x86_64",
@@ -175,23 +183,24 @@
           "binary_relocation_diagnostics": [
             {
               "path": "libexec/ocaml-system/bin/ocamlfind",
-              "string": "/usr/local/Cellar/rocq-elpi/3.5.1/libexec/ocaml-system/lib/findlib.conf",
-              "offset": 1185576
+              "string": "/usr/local/Cellar/rocq-elpi/3.5.1_2/libexec/ocaml-system/lib/findlib.conf",
+              "offset": 1189672
             },
             {
               "path": "libexec/ocaml-system/lib/findlib/findlib.a",
-              "string": "/usr/local/Cellar/rocq-elpi/3.5.1/libexec/ocaml-system/lib/findlib.conf",
+              "string": "/usr/local/Cellar/rocq-elpi/3.5.1_2/libexec/ocaml-system/lib/findlib.conf",
               "offset": 56448
             },
             {
               "path": "libexec/ocaml-system/lib/findlib/findlib.cmxs",
-              "string": "/usr/local/Cellar/rocq-elpi/3.5.1/libexec/ocaml-system/lib/findlib.conf",
+              "string": "/usr/local/Cellar/rocq-elpi/3.5.1_2/libexec/ocaml-system/lib/findlib.conf",
               "offset": 173048
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -219,6 +228,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "16.4",
@@ -234,6 +266,11 @@
             "relationships": [
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rocq-elpi"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-rocq-elpi"
               },
@@ -3818,7 +3855,7 @@
             "share/doc/rocq-elpi/elpi-builtin.elpi",
             "share/rocq-elpi/example_data_base.v"
           ],
-          "installed_size": 441422312
+          "installed_size": 299959321
         }
       }
     }

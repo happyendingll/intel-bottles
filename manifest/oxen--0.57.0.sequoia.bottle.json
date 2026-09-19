@@ -2,33 +2,33 @@
   "oxen": {
     "formula": {
       "name": "oxen",
-      "pkg_version": "0.56.1",
+      "pkg_version": "0.57.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/o/oxen.rb",
       "tap_git_path": "Formula/o/oxen.rb",
-      "tap_git_revision": "1a884d5147df986d7754d336a8e7c750468797fa",
+      "tap_git_revision": "88d726df051f7aaffe2e005fa9d0ff0d2a87f7b6",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Data VCS for structured and unstructured machine learning datasets",
       "license": "Apache-2.0",
       "homepage": "https://www.oxen.ai/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-15T12:53:30Z",
+      "date": "2026-09-19T18:56:42Z",
       "tags": {
         "sequoia": {
-          "filename": "oxen-0.56.1.sequoia.bottle.tar.gz",
-          "local_filename": "oxen--0.56.1.sequoia.bottle.tar.gz",
-          "sha256": "c67e72b966f93f061f19ae6468a0ecea4ff413da7ed7c44a54e0b1c23965788b",
+          "filename": "oxen-0.57.0.sequoia.bottle.tar.gz",
+          "local_filename": "oxen--0.57.0.sequoia.bottle.tar.gz",
+          "sha256": "c2a935a15affc8a60a88e6440db4eee715528faf9b0859f77ccb6bc0cae3af13",
           "tab": {
-            "homebrew_version": "7.0.1",
+            "homebrew_version": "7.0.4",
             "changed_files": [],
             "linkage_files": [
               "bin/oxen"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1788306061,
+            "source_modified_time": 1789736484,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -50,10 +50,10 @@
               },
               {
                 "full_name": "snappy",
-                "version": "1.2.2",
+                "version": "1.3.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.2.2",
+                "pkg_version": "1.3.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -99,6 +99,7 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-snappy-1.3.1",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
               "SPDXRef-Compiler"
@@ -123,6 +124,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-snappy-1.3.1",
+                "name": "snappy",
+                "versionInfo": "1.3.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/snappy-1.3.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "72b0b0928c9a5cfd99e13d06cd67048d6a75e89bdd295fc1056017a3945e3d6d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/snappy@1.3.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -193,6 +217,11 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-oxen"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-snappy-1.3.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-oxen"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-oxen"
@@ -223,7 +252,7 @@
             "bin/oxen",
             "sbom.spdx.json"
           ],
-          "installed_size": 75878370
+          "installed_size": 77202914
         }
       }
     }

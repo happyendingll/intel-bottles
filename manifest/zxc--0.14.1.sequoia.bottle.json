@@ -1,34 +1,34 @@
 {
-  "sentry-native": {
+  "zxc": {
     "formula": {
-      "name": "sentry-native",
-      "pkg_version": "0.16.7",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sentry-native.rb",
-      "tap_git_path": "Formula/s/sentry-native.rb",
-      "tap_git_revision": "7d8b68163b20746f68a98170842584b80a78a542",
+      "name": "zxc",
+      "pkg_version": "0.14.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/z/zxc.rb",
+      "tap_git_path": "Formula/z/zxc.rb",
+      "tap_git_revision": "88d726df051f7aaffe2e005fa9d0ff0d2a87f7b6",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Sentry SDK for C, C++ and native applications",
-      "license": "MIT",
-      "homepage": "https://docs.sentry.io/platforms/native/"
+      "desc": "High-performance asymmetric lossless compression library",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/hellobertrand/zxc"
     },
     "bottle": {
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-19T06:39:04Z",
+      "date": "2026-09-19T18:44:41Z",
       "tags": {
         "sequoia": {
-          "filename": "sentry-native-0.16.7.sequoia.bottle.tar.gz",
-          "local_filename": "sentry-native--0.16.7.sequoia.bottle.tar.gz",
-          "sha256": "53066a46c16ae72bf4f21b65d4a5163b8ea44cf61ccaf9d23b718f42c0bfc587",
+          "filename": "zxc-0.14.1.sequoia.bottle.tar.gz",
+          "local_filename": "zxc--0.14.1.sequoia.bottle.tar.gz",
+          "sha256": "a2326ca22c21857ff0e4c4c7b0645729ac0e3451da16554f0c8d02ffe8372bf6",
           "tab": {
             "homebrew_version": "7.0.4",
             "changed_files": [],
             "linkage_files": [
-              "lib/libsentry.dylib"
+              "lib/libzxc.0.14.1.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1789779807,
+            "source_modified_time": 1789822628,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -64,34 +64,43 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-sentry-native-src"
+                "relatedSpdxElement": "SPDXRef-Archive-zxc-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/crashpad_handler"
+            "bin/unzxc",
+            "bin/zxc"
           ],
           "all_files": [
-            ".brew/sentry-native.rb",
+            ".brew/zxc.rb",
             "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
-            "bin/crashpad_handler",
-            "include/sentry.h",
-            "lib/cmake/sentry/sentry-config-version.cmake",
-            "lib/cmake/sentry/sentry-config.cmake",
-            "lib/cmake/sentry/sentry-targets-release.cmake",
-            "lib/cmake/sentry/sentry-targets.cmake",
-            "lib/cmake/sentry/sentry_crashpad-targets-release.cmake",
-            "lib/cmake/sentry/sentry_crashpad-targets.cmake",
-            "lib/libsentry.dylib",
-            "lib/libsentry.dylib.dSYM/Contents/Info.plist",
-            "lib/libsentry.dylib.dSYM/Contents/Resources/DWARF/libsentry.dylib",
-            "lib/libsentry.dylib.dSYM/Contents/Resources/Relocations/x86_64/libsentry.dylib.yml",
+            "bin/unzxc",
+            "bin/zxc",
+            "include/zxc.h",
+            "include/zxc_buffer.h",
+            "include/zxc_constants.h",
+            "include/zxc_dict.h",
+            "include/zxc_error.h",
+            "include/zxc_export.h",
+            "include/zxc_opts.h",
+            "include/zxc_pstream.h",
+            "include/zxc_seekable.h",
+            "include/zxc_stream.h",
+            "lib/cmake/zxc/zxc-targets-release.cmake",
+            "lib/cmake/zxc/zxc-targets.cmake",
+            "lib/cmake/zxc/zxcConfig.cmake",
+            "lib/cmake/zxc/zxcConfigVersion.cmake",
+            "lib/libzxc.0.14.1.dylib",
+            "lib/libzxc.4.dylib",
+            "lib/libzxc.dylib",
+            "lib/pkgconfig/libzxc.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 2218590
+          "installed_size": 722718
         }
       }
     }
