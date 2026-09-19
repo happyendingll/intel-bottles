@@ -29,8 +29,8 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Point Homebrew at the fork
-        run: ./scripts/prepare_homebrew.sh
+      - name: Point Homebrew at the fork (retry once)
+        run: ./scripts/retry.sh ./scripts/prepare_homebrew.sh
 
       - name: Authenticate the fork remote
         run: |
@@ -39,8 +39,8 @@ jobs:
           git -C "$(brew --repo homebrew/core)" remote set-url origin \
             "https://x-access-token:${{ secrets.FORK_TOKEN }}@github.com/${FORK_REPO}.git"
 
-      - name: Sync
-        run: ./scripts/sync_fork.sh
+      - name: Sync (retry once)
+        run: ./scripts/retry.sh ./scripts/sync_fork.sh
 
       - name: Record held refresh queue
         run: |
@@ -49,8 +49,23 @@ jobs:
           git add targets.txt
           if ! git diff --cached --quiet; then
             git commit -m "targets: refresh held bottles ($(date -u +%Y-%m-%d))"
-            git pull --rebase --autostash
-            git push
+            ./scripts/retry.sh git pull --rebase --autostash
+            ./scripts/retry.sh git push
           else
             echo "targets.txt already matches the held queue"
           fi
+
+      - name: Capture pipeline baseline
+        run: |
+          python3 scripts/pipeline_context.py create \
+            --output "$RUNNER_TEMP/pipeline-context.json" \
+            --stage sync \
+            --run-id "$GITHUB_RUN_ID" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+
+      - name: Upload pipeline context
+        uses: actions/upload-artifact@v7
+        with:
+          name: pipeline-context
+          path: ${{ runner.temp }}/pipeline-context.json
+          retention-days: 7

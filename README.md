@@ -31,6 +31,7 @@ flowchart TB
     P --> F
     P --> R[("GitHub Releases<br/>实际 bottle 资产")]
     P --> D["安全删除已被替换且<br/>不再被 manifest 引用的旧资产"]
+    P --> G
   end
 
   subgraph growth["增长闭环：逐步补齐尚未维护的新 Formula"]
@@ -45,6 +46,8 @@ flowchart TB
     WP --> R
     W -->|失败或超时| Q["prewarm-failures.txt<br/>隔离，避免下一轮重复消耗"]
     Q --> G
+    W -->|全部 wave 完成| E["闭环执行报告<br/>更新、新增、遗留与失败情况"]
+    E --> N["GitHub Issue 通知<br/>按账户设置发送一封邮件"]
   end
 
   subgraph observe["观察与人工决策"]
@@ -53,7 +56,7 @@ flowchart TB
   end
 
   M -. 上游下一次升级后重新进入维护闭环 .-> S
-  B -->|成功后自动触发| G
+  S -->|成功后自动触发| B
 ```
 
 这张图表达了三个关键意图：
@@ -75,15 +78,32 @@ flowchart TB
 
 | 顺序 | Workflow | 作用 | 下一步 |
 |---:|---|---|---|
-| 1 | [`sync-fork.yml`](.github/workflows/sync-fork.yml) | 同步官方 core、重放版本仍匹配的 manifest，并生成 held 更新队列 | 等待定时 `build bottles` |
+| 1 | [`sync-fork.yml`](.github/workflows/sync-fork.yml) | 同步官方 core、重放版本仍匹配的 manifest，并生成 held 更新队列；网络型步骤失败时重试一次 | 成功后触发 `build bottles` |
 | 2 | [`build-bottles.yml`](.github/workflows/build-bottles.yml) | 更新 `targets.txt` 中已经维护但版本落后的 bottle | 成功后触发 `generate catalog` |
-| 3 | [`generate-catalog.yml`](.github/workflows/generate-catalog.yml) | 从全量 Formula 中筛出本轮最值得新增的 100 个候选 | 成功后触发 `warm bottles` |
-| 4 | [`warm-bottles.yml`](.github/workflows/warm-bottles.yml) | 分 wave 构建新候选；成功项加入长期维护集合，失败项进入隔离文件 | 回到下一轮同步与筛选 |
+| 3 | [`generate-catalog.yml`](.github/workflows/generate-catalog.yml) | 从全量 Formula 中筛出本轮最值得新增的 100 个候选；网络型步骤失败时重试一次 | 成功后触发 `warm bottles` |
+| 4 | [`warm-bottles.yml`](.github/workflows/warm-bottles.yml) | 分 wave 构建新候选；成功项加入长期维护集合，失败项进入隔离文件 | 全部 wave 完成后生成闭环报告 |
+| 5 | `warm-bottles.yml` 中的 `email pipeline report` job | 汇总版本更新、新增 Formula、遗留 targets 和新隔离项 | 更新固定报告 Issue，并按 GitHub 通知设置发送一封邮件 |
+
+[GitHub 对 `workflow_run` 最多允许连续三级触发](https://docs.github.com/en/actions/reference/workflows-and-actions/events-that-trigger-workflows#workflow_run)，
+因此第 5 步是 `warm-bottles.yml` 内的最后一个 Ubuntu job，而不是再启动第五个 Workflow。
+四段 Workflow 仍通过同一份短期 artifact 传递链路基线和运行链接，最终报告用链路开始与结束时
+的 manifest 做差异比较。
+
+单个 Formula 到达 job 时限时，GitHub 会把该 matrix job（有时连同 Workflow）标记为
+`cancelled`，而不只是普通的 `failure`。结合 GitHub 的
+[Workflow cancellation 行为](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-cancellation)，
+`build bottles` 会在所有 wave 处理后上传一个
+`build-complete` 交接凭证：只要 wave 图已经自然进入终态，即使其中存在失败或超时，也允许链路
+继续走到报告；人工强制取消且没有交接凭证时不会进入 catalog 生成阶段。
+`warm bottles` 的报告 job 使用 `always()` 等待全部 wave 进入终态；即使 catalog、plan、编译或
+publish 失败，也会尽量恢复上游上下文，并在“需要人工复查”中明确列出失败或取消的环节。报告本身
+不把失败伪装成成功，也不会自动重试有副作用的发布操作。
 
 此外还有两个辅助入口：
 
 - [`check-heavy-updates.yml`](.github/workflows/check-heavy-updates.yml)：每天比较重型基础依赖的
-  官方版本和有效 manifest；有缺口时创建并指派 Issue，通过 GitHub 通知邮件提醒。
+  官方版本和有效 manifest；有缺口时创建 Issue，通过 GitHub 通知邮件提醒。Issue 不再指派给
+  仓库所有者，避免“新 Issue”和“被指派”各产生一封邮件。
 - [`build-llvm-single-stage.yml`](.github/workflows/build-llvm-single-stage.yml)：LLVM 专用手动入口，
   跳过耗时很长的 PGO 多阶段构建，在 Intel runner 上生成可用的单阶段 bottle。
 
@@ -130,6 +150,8 @@ wave 2～4：继续复用前面 wave 的成果
 | [`scripts/build_root.sh`](scripts/build_root.sh) | 按拓扑顺序构建一个根 Formula 及其仍缺 bottle 的依赖链 |
 | [`scripts/publish.sh`](scripts/publish.sh) | 上传 bottle、写入 manifest，并把 bottle block 合并进 core fork |
 | [`scripts/delete_replaced_assets.py`](scripts/delete_replaced_assets.py) | 新版本安全落地后删除不再被有效 manifest 引用的旧资产 |
+| [`scripts/retry.sh`](scripts/retry.sh) | 为同步和 catalog 的非编译网络步骤提供一次重试 |
+| [`scripts/pipeline_context.py`](scripts/pipeline_context.py) | 跨 Workflow 保存链路基线并生成最终差异报告 |
 
 ### 发布结果为什么分成三部分
 
@@ -329,9 +351,9 @@ repo private (which costs runner minutes for the GitHub-hosted jobs).
    free on public repos.
 3. **Add a secret `FORK_TOKEN`**: a fine-grained PAT with `contents: write` on
    `<your-github-user>/homebrew-core`. Used to push rebuilt bottle blocks.
-4. Run **sync fork** to generate the held refresh queue, then run **build bottles**. Scheduled
-   runs do this in the same order; later builds only pick up active manifests whose upstream
-   version has moved.
+4. Run **sync fork** to generate the held refresh queue. A successful run automatically starts
+   **build bottles**, then catalog generation and prewarming. Later builds only pick up active
+   manifests whose upstream version has moved.
 
 When changing the target macOS version, run **sync fork** once before **build bottles**. This
 removes bottle blocks from the previous target before planning the new build.

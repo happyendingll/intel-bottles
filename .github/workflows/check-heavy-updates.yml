@@ -1,13 +1,14 @@
 name: check heavy Formula updates
 
 # Watches the expensive foundation Formulae without consuming an Intel macOS runner.
-# An assigned issue becomes a GitHub notification (and email when account email
-# notifications are enabled). One open issue per Formula prevents daily duplicates.
+# Issue creation becomes one GitHub notification (and email when account email notifications
+# are enabled). Omitting an assignee avoids a second "assigned" email. One open issue per
+# Formula prevents daily duplicates.
 
 on:
   workflow_dispatch:
   schedule:
-    # 23:10 Beijing time: after sync-fork and before build-bottles.
+    # 23:10 Beijing time; independent from the main build chain.
     - cron: "10 15 * * *"
 
 concurrency:
@@ -102,7 +103,7 @@ jobs:
 
               if (!existing) {
                 await github.rest.issues.create({
-                  owner, repo, title, body, labels: [label], assignees: [owner],
+                  owner, repo, title, body, labels: [label],
                 });
               } else if (existing.title !== title || existing.body !== body) {
                 await github.rest.issues.update({

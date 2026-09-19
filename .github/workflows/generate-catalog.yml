@@ -21,23 +21,13 @@ concurrency:
   cancel-in-progress: false
 
 permissions:
+  actions: read
   contents: write
 
 jobs:
-  reject-failed-build:
-    if: >-
-      github.event_name == 'workflow_run' &&
-      github.event.workflow_run.conclusion != 'success'
-    runs-on: ubuntu-latest
-    steps:
-      - run: |
-          echo "build bottles concluded: ${{ github.event.workflow_run.conclusion }}" >&2
-          exit 1
-
   generate:
     if: >-
-      github.event_name == 'workflow_dispatch' ||
-      github.event.workflow_run.conclusion == 'success'
+      github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_run'
     runs-on: macos-15-intel
     env:
       HOMEBREW_CORE_GIT_REMOTE: https://github.com/${{ github.repository_owner }}/homebrew-core
@@ -48,12 +38,62 @@ jobs:
     steps:
       - uses: actions/checkout@v7
 
-      - name: Point Homebrew at the fork
-        run: ./scripts/prepare_homebrew.sh
+      - name: Verify a non-successful build reached its handoff
+        if: >-
+          github.event_name == 'workflow_run' &&
+          github.event.workflow_run.conclusion != 'success'
+        uses: actions/download-artifact@v8
+        with:
+          name: build-complete
+          path: ${{ runner.temp }}/build-complete
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
 
-      - name: Generate recommended catalog
+      - name: Download build pipeline context
+        if: github.event_name == 'workflow_run'
+        uses: actions/download-artifact@v8
+        with:
+          name: pipeline-context
+          path: ${{ runner.temp }}/pipeline-context
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
+
+      - name: Create pipeline context for a manual run
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p "$RUNNER_TEMP/pipeline-context"
+          python3 scripts/pipeline_context.py create \
+            --output "$RUNNER_TEMP/pipeline-context/pipeline-context.json" \
+            --stage catalog \
+            --run-id "$GITHUB_RUN_ID" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+
+      - name: Add catalog run to pipeline context
+        if: github.event_name == 'workflow_run'
+        run: |
+          python3 scripts/pipeline_context.py conclude \
+            "$RUNNER_TEMP/pipeline-context/pipeline-context.json" \
+            --stage build \
+            --conclusion "${{ github.event.workflow_run.conclusion }}"
+          python3 scripts/pipeline_context.py stamp \
+            "$RUNNER_TEMP/pipeline-context/pipeline-context.json" \
+            --stage catalog \
+            --run-id "$GITHUB_RUN_ID" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+
+      - name: Forward pipeline context
+        uses: actions/upload-artifact@v7
+        with:
+          name: pipeline-context
+          path: ${{ runner.temp }}/pipeline-context/pipeline-context.json
+          retention-days: 7
+
+      - name: Point Homebrew at the fork (retry once)
+        run: ./scripts/retry.sh ./scripts/prepare_homebrew.sh
+
+      - name: Generate recommended catalog (retry once)
         run: >-
-          python3 scripts/generate_catalog.py
+          ./scripts/retry.sh python3 scripts/generate_catalog.py
           --limit '${{ inputs.limit || 100 }}'
           --write
 
@@ -67,5 +107,5 @@ jobs:
           git config user.name github-actions[bot]
           git config user.email 41898282+github-actions[bot]@users.noreply.github.com
           git commit -m "Refresh recommended prewarm catalog"
-          git pull --rebase origin main
-          git push origin HEAD:main
+          ./scripts/retry.sh git pull --rebase origin main
+          ./scripts/retry.sh git push origin HEAD:main

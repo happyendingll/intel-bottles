@@ -1,7 +1,7 @@
 name: build bottles
 
-# Builds Intel (x86_64) bottles on GitHub's macos-15-intel runner and publishes them for a
-# forked homebrew-core to point at.
+# Runs after a successful sync-fork, builds Intel (x86_64) bottles on GitHub's
+# macos-15-intel runner, and publishes them for a forked homebrew-core to point at.
 #
 # Work is scheduled in waves by dependency depth. Ordering matters a lot: when everything
 # ran concurrently, six qt* jobs each spent ~70 minutes rebuilding qtbase before starting
@@ -15,10 +15,9 @@ on:
         description: Space-separated formulae to build instead of the computed plan
         required: false
         type: string
-  schedule:
-    # Daily, ~74 min after sync-fork, so anything upstream bumped is bottled within a day.
-    # The plan job is cheap and schedules nothing when nothing has changed.
-    - cron: "37 15 * * *"
+  workflow_run:
+    workflows: ["sync fork"]
+    types: [completed]
 
 concurrency:
   group: build-bottles
@@ -29,8 +28,21 @@ permissions:
   contents: write
 
 jobs:
+  reject-failed-sync:
+    if: >-
+      github.event_name == 'workflow_run' &&
+      github.event.workflow_run.conclusion != 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "sync fork concluded: ${{ github.event.workflow_run.conclusion }}" >&2
+          exit 1
+
   plan:
     name: plan
+    if: >-
+      github.event_name == 'workflow_dispatch' ||
+      github.event.workflow_run.conclusion == 'success'
     runs-on: macos-15-intel
     outputs:
       wave0: ${{ steps.plan.outputs.wave0 }}
@@ -47,6 +59,45 @@ jobs:
       HOMEBREW_NO_ENV_HINTS: 1
     steps:
       - uses: actions/checkout@v7
+
+      - name: Download sync pipeline context
+        if: github.event_name == 'workflow_run'
+        uses: actions/download-artifact@v8
+        with:
+          name: pipeline-context
+          path: ${{ runner.temp }}/pipeline-context
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
+
+      - name: Create pipeline context for a manual run
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p "$RUNNER_TEMP/pipeline-context"
+          python3 scripts/pipeline_context.py create \
+            --output "$RUNNER_TEMP/pipeline-context/pipeline-context.json" \
+            --stage build \
+            --run-id "$GITHUB_RUN_ID" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+
+      - name: Add build run to pipeline context
+        if: github.event_name == 'workflow_run'
+        run: |
+          python3 scripts/pipeline_context.py conclude \
+            "$RUNNER_TEMP/pipeline-context/pipeline-context.json" \
+            --stage sync \
+            --conclusion "${{ github.event.workflow_run.conclusion }}"
+          python3 scripts/pipeline_context.py stamp \
+            "$RUNNER_TEMP/pipeline-context/pipeline-context.json" \
+            --stage build \
+            --run-id "$GITHUB_RUN_ID" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+
+      - name: Forward pipeline context
+        uses: actions/upload-artifact@v7
+        with:
+          name: pipeline-context
+          path: ${{ runner.temp }}/pipeline-context/pipeline-context.json
+          retention-days: 7
 
       - name: Point Homebrew at the fork
         run: ./scripts/prepare_homebrew.sh
@@ -132,3 +183,22 @@ jobs:
       allow_failure: true
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
+
+  handoff:
+    name: hand off to catalog
+    needs: [plan, wave0, wave1, wave2, wave3, wave4]
+    # A Formula timeout or publish failure may make the workflow non-successful.
+    # Reaching this job proves the wave graph entered a terminal state, so catalog
+    # generation may continue and the final report can show what needs review.
+    # A workflow cancelled before the graph settles never creates this marker.
+    if: always() && needs.plan.result == 'success'
+    runs-on: ubuntu-latest
+    steps:
+      - name: Mark the build graph complete
+        run: touch "$RUNNER_TEMP/build-complete"
+
+      - uses: actions/upload-artifact@v7
+        with:
+          name: build-complete
+          path: ${{ runner.temp }}/build-complete
+          retention-days: 7

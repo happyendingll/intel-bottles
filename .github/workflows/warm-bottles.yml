@@ -26,6 +26,7 @@ concurrency:
 permissions:
   actions: read
   contents: write
+  issues: write
 
 jobs:
   plan:
@@ -48,6 +49,45 @@ jobs:
       HOMEBREW_NO_ENV_HINTS: 1
     steps:
       - uses: actions/checkout@v7
+
+      - name: Download catalog pipeline context
+        if: github.event_name == 'workflow_run'
+        uses: actions/download-artifact@v8
+        with:
+          name: pipeline-context
+          path: ${{ runner.temp }}/pipeline-context
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
+
+      - name: Create pipeline context for a manual run
+        if: github.event_name == 'workflow_dispatch'
+        run: |
+          mkdir -p "$RUNNER_TEMP/pipeline-context"
+          python3 scripts/pipeline_context.py create \
+            --output "$RUNNER_TEMP/pipeline-context/pipeline-context.json" \
+            --stage warm \
+            --run-id "$GITHUB_RUN_ID" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+
+      - name: Add warm run to pipeline context
+        if: github.event_name == 'workflow_run'
+        run: |
+          python3 scripts/pipeline_context.py conclude \
+            "$RUNNER_TEMP/pipeline-context/pipeline-context.json" \
+            --stage catalog \
+            --conclusion "${{ github.event.workflow_run.conclusion }}"
+          python3 scripts/pipeline_context.py stamp \
+            "$RUNNER_TEMP/pipeline-context/pipeline-context.json" \
+            --stage warm \
+            --run-id "$GITHUB_RUN_ID" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+
+      - name: Keep pipeline context for the final report
+        uses: actions/upload-artifact@v7
+        with:
+          name: pipeline-context
+          path: ${{ runner.temp }}/pipeline-context/pipeline-context.json
+          retention-days: 7
 
       - name: Point Homebrew at the fork
         run: ./scripts/prepare_homebrew.sh
@@ -123,3 +163,113 @@ jobs:
       allow_failure: true
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
+
+  report:
+    name: email pipeline report
+    needs: [plan, wave0, wave1, wave2, wave3, wave4]
+    # Reporting is the terminal safety net. It must run after failed/cancelled waves and
+    # also when catalog generation failed and the warm plan was therefore skipped.
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v7
+        with:
+          ref: main
+
+      - name: Download pipeline context from this warm run
+        id: warm-context
+        continue-on-error: true
+        uses: actions/download-artifact@v8
+        with:
+          name: pipeline-context
+          path: ${{ runner.temp }}/pipeline-context
+
+      - name: Recover context from the catalog run
+        if: >-
+          steps.warm-context.outcome != 'success' &&
+          github.event_name == 'workflow_run'
+        continue-on-error: true
+        uses: actions/download-artifact@v8
+        with:
+          name: pipeline-context
+          path: ${{ runner.temp }}/pipeline-context
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
+
+      - name: Normalize report context
+        run: |
+          context="$RUNNER_TEMP/pipeline-context/pipeline-context.json"
+          if [ ! -f "$context" ]; then
+            python3 scripts/pipeline_context.py create \
+              --output "$context" \
+              --stage warm \
+              --run-id "$GITHUB_RUN_ID" \
+              --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+          fi
+          if [ "$GITHUB_EVENT_NAME" = "workflow_run" ]; then
+            python3 scripts/pipeline_context.py stamp \
+              "$context" \
+              --stage catalog \
+              --run-id "${{ github.event.workflow_run.id }}" \
+              --run-url "${{ github.event.workflow_run.html_url }}"
+            python3 scripts/pipeline_context.py conclude \
+              "$context" \
+              --stage catalog \
+              --conclusion "${{ github.event.workflow_run.conclusion }}"
+          fi
+          python3 scripts/pipeline_context.py stamp \
+            "$context" \
+            --stage warm \
+            --run-id "$GITHUB_RUN_ID" \
+            --run-url "$GITHUB_SERVER_URL/$GITHUB_REPOSITORY/actions/runs/$GITHUB_RUN_ID"
+
+      - name: Build the final report
+        run: |
+          python3 scripts/pipeline_context.py report \
+            "$RUNNER_TEMP/pipeline-context/pipeline-context.json" \
+            --warm-results "plan=${{ needs.plan.result }},wave0=${{ needs.wave0.result }},wave1=${{ needs.wave1.result }},wave2=${{ needs.wave2.result }},wave3=${{ needs.wave3.result }},wave4=${{ needs.wave4.result }}" \
+            --output "$RUNNER_TEMP/pipeline-report.md"
+          cat "$RUNNER_TEMP/pipeline-report.md" >> "$GITHUB_STEP_SUMMARY"
+
+      - name: Send one GitHub email notification
+        uses: actions/github-script@v8
+        env:
+          REPORT_PATH: ${{ runner.temp }}/pipeline-report.md
+        with:
+          script: |
+            const fs = require("fs");
+            const report = fs.readFileSync(process.env.REPORT_PATH, "utf8");
+            const { owner, repo } = context.repo;
+            const label = "pipeline-report";
+            const marker = "<!-- intel-bottles-pipeline-report -->";
+
+            try {
+              await github.rest.issues.getLabel({ owner, repo, name: label });
+            } catch (error) {
+              if (error.status !== 404) throw error;
+              await github.rest.issues.createLabel({
+                owner, repo, name: label, color: "1D76DB",
+                description: "Daily Intel bottle pipeline reports",
+              });
+            }
+
+            const issues = await github.paginate(github.rest.issues.listForRepo, {
+              owner, repo, state: "open", labels: label, per_page: 100,
+            });
+            const existing = issues.find(issue =>
+              !issue.pull_request && (issue.body || "").includes(marker)
+            );
+
+            if (existing) {
+              await github.rest.issues.createComment({
+                owner, repo, issue_number: existing.number,
+                body: `@${owner}\n\n${report}`,
+              });
+            } else {
+              await github.rest.issues.create({
+                owner, repo,
+                title: "Intel bottle 自动编译链路报告",
+                body: `@${owner}\n\n${marker}\n\n${report}`,
+                labels: [label],
+              });
+            }
