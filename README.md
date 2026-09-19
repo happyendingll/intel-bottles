@@ -287,7 +287,7 @@ same `homebrew-core` fork.
 
 **Consumption.** Bottle tarballs go to a rolling GitHub Release; `brew bottle --merge --write`
 writes the matching `bottle do` blocks into a fork of `homebrew-core`, which the Mac points at
-via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install tmux` then just works, and no
+via `HOMEBREW_CORE_GIT_REMOTE`. Unqualified `brew install node` then just works, and no
 `brew trust` is needed — brew still sees this as `homebrew/core`.
 
 **Release cleanup.** Successful target and prewarm builds automatically delete the old bottle

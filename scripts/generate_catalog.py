@@ -105,18 +105,6 @@ def in_family(name: str, families: set[str]) -> bool:
     return any(name == family or name.startswith(f"{family}@") for family in families)
 
 
-def matching_family(name: str, families: set[str]) -> str | None:
-    """Return the policy family that owns an exact or version-suffixed Formula."""
-    return next(
-        (
-            family
-            for family in sorted(families, key=len, reverse=True)
-            if name == family or name.startswith(f"{family}@")
-        ),
-        None,
-    )
-
-
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--analytics-json", default=ANALYTICS_URL)
@@ -141,8 +129,7 @@ def main() -> None:
     formulae = {item["name"]: item for item in formula_list if item.get("name")}
     candidates = ranked_formula_names(analytics_payload, formulae)
     policy = load_json(str(REPO / "catalog-policy.json"))
-    policy_families = set(policy.get("exclude", {}))
-    policy_excluded = {name for name in formulae if in_family(name, policy_families)}
+    policy_excluded = set(policy.get("exclude", {}))
     targets = set(read_list(REPO / "targets.txt"))
     excluded = set(read_list(REPO / "exclude.txt"))
     prewarm_failures = set(read_list(REPO / "prewarm-failures.txt"))
@@ -159,9 +146,7 @@ def main() -> None:
         if name in targets:
             reason = "mandatory target"
         elif name in policy_excluded:
-            family = matching_family(name, policy_families)
-            assert family is not None
-            reason = policy["exclude"][family]["category"]
+            reason = policy["exclude"][name]["category"]
         elif name in excluded:
             reason = "excluded"
         elif name in prewarm_failures:
