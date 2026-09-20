@@ -1,0 +1,289 @@
+{
+  "exim": {
+    "formula": {
+      "name": "exim",
+      "pkg_version": "4.100.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/e/exim.rb",
+      "tap_git_path": "Formula/e/exim.rb",
+      "tap_git_revision": "5dc7d01b36b6a05d86de8711f98588820fe4e699",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Complete replacement for sendmail",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://exim.org"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-19T21:41:20Z",
+      "tags": {
+        "sequoia": {
+          "filename": "exim-4.100.1.sequoia.bottle.tar.gz",
+          "local_filename": "exim--4.100.1.sequoia.bottle.tar.gz",
+          "sha256": "857a3d45feca4bd6dde738a15d7be5fac8f65ef87417c9cf0606f5eff28df13e",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [
+              "bin/exicyclog",
+              "bin/exigrep",
+              "bin/exim_checkaccess",
+              "bin/exim_ctl",
+              "bin/exim_id_update",
+              "bin/exim_msgdate",
+              "bin/eximstats",
+              "bin/exinext",
+              "bin/exipick",
+              "bin/exiqgrep",
+              "bin/exiqsumm",
+              "bin/exiwhat",
+              "libexec/lib/perl5/darwin-thread-multi-2level/auto/File/FcntlLock/.packlist"
+            ],
+            "linkage_files": [
+              "bin/exim-4.100.1-2"
+            ],
+            "binary_relocation_files": [
+              "bin/exim-4.100.1-2"
+            ],
+            "source_modified_time": 1789395377,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/exim-4.100.1-2",
+              "string": "/usr/local/Cellar/exim/4.100.1/bin/exim",
+              "offset": 829201
+            },
+            {
+              "path": "bin/exim-4.100.1-2",
+              "string": "/usr/local/etc/exim.conf",
+              "offset": 829128
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.48.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "089df9911d09192beee2b9e49201bf1906d6e414bba1d4185982c5ac9d695feb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-exim"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-exim"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-exim"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-exim-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/exim_ctl",
+            "bin/exim_checkaccess",
+            "bin/eximstats",
+            "bin/exicyclog",
+            "bin/exim",
+            "bin/exim_id_update",
+            "bin/exinext",
+            "bin/exim_tidydb",
+            "bin/exigrep",
+            "bin/exiqsumm",
+            "bin/exim_lock",
+            "bin/exiwhat",
+            "bin/exim_fixdb",
+            "bin/exim_dbmbuild",
+            "bin/exim-4.100.1-2",
+            "bin/exiqgrep",
+            "bin/exim_msgdate",
+            "bin/exim_dumpdb",
+            "bin/exipick"
+          ],
+          "all_files": [
+            ".bottle/etc/aliases",
+            ".bottle/etc/exim.conf",
+            ".brew/exim.rb",
+            "ABOUT",
+            "CHANGES",
+            "INSTALL_RECEIPT.json",
+            "LICENCE",
+            "LICENSE.opendmarc",
+            "NOTICE",
+            "README",
+            "bin/exicyclog",
+            "bin/exigrep",
+            "bin/exim",
+            "bin/exim-4.100.1-2",
+            "bin/exim_checkaccess",
+            "bin/exim_ctl",
+            "bin/exim_dbmbuild",
+            "bin/exim_dumpdb",
+            "bin/exim_fixdb",
+            "bin/exim_id_update",
+            "bin/exim_lock",
+            "bin/exim_msgdate",
+            "bin/exim_tidydb",
+            "bin/eximstats",
+            "bin/exinext",
+            "bin/exipick",
+            "bin/exiqgrep",
+            "bin/exiqsumm",
+            "bin/exiwhat",
+            "libexec/lib/perl5/darwin-thread-multi-2level/File/FcntlLock/Core.pm",
+            "libexec/lib/perl5/darwin-thread-multi-2level/File/FcntlLock/Errors.pm",
+            "libexec/lib/perl5/darwin-thread-multi-2level/File/FcntlLock/Inline.pm",
+            "libexec/lib/perl5/darwin-thread-multi-2level/File/FcntlLock/Inline.pod",
+            "libexec/lib/perl5/darwin-thread-multi-2level/File/FcntlLock/Pure.pm",
+            "libexec/lib/perl5/darwin-thread-multi-2level/File/FcntlLock/Pure.pod",
+            "libexec/lib/perl5/darwin-thread-multi-2level/File/FcntlLock/XS.pm",
+            "libexec/lib/perl5/darwin-thread-multi-2level/File/FcntlLock/XS.pod",
+            "libexec/lib/perl5/darwin-thread-multi-2level/File/FcntlLock.pm",
+            "libexec/lib/perl5/darwin-thread-multi-2level/File/FcntlLock.pod",
+            "libexec/lib/perl5/darwin-thread-multi-2level/auto/File/FcntlLock/.packlist",
+            "libexec/lib/perl5/darwin-thread-multi-2level/auto/File/FcntlLock/FcntlLock.bundle",
+            "libexec/lib/perl5/darwin-thread-multi-2level/perllocal.pod",
+            "libexec/man/man3/File::FcntlLock.3pm",
+            "libexec/man/man3/File::FcntlLock::Inline.3pm",
+            "libexec/man/man3/File::FcntlLock::Pure.3pm",
+            "libexec/man/man3/File::FcntlLock::XS.3pm",
+            "sbom.spdx.json",
+            "share/man/man8/exim.8"
+          ],
+          "installed_size": 2119247
+        }
+      }
+    }
+  }
+}

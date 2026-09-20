@@ -1,0 +1,764 @@
+{
+  "pyspelling": {
+    "formula": {
+      "name": "pyspelling",
+      "pkg_version": "2.12.1_3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pyspelling.rb",
+      "tap_git_path": "Formula/p/pyspelling.rb",
+      "tap_git_revision": "5dc7d01b36b6a05d86de8711f98588820fe4e699",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Spell checker automation tool",
+      "license": "MIT",
+      "homepage": "https://facelessuser.github.io/pyspelling/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-19T23:22:22Z",
+      "tags": {
+        "sequoia": {
+          "filename": "pyspelling-2.12.1_3.sequoia.bottle.tar.gz",
+          "local_filename": "pyspelling--2.12.1_3.sequoia.bottle.tar.gz",
+          "sha256": "8ddd3412508313f5fc70065801a0398b4676de9353f4d8df6a110e8dc00d800b",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [
+              "libexec/bin/markdown_py",
+              "libexec/bin/pyspelling",
+              "libexec/bin/pyspelling3.14",
+              "libexec/pyvenv.cfg"
+            ],
+            "linkage_files": [
+              "libexec/lib/python3.14/site-packages/yaml/_yaml.cpython-314-darwin.so"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1764193623,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libyaml",
+                "version": "0.2.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.2.5",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.14",
+                "version": "3.14.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.14.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "name": "python@3.14",
+                "versionInfo": "3.14.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pyspelling"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pyspelling"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pyspelling"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pyspelling"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pyspelling"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pyspelling"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pyspelling"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pyspelling"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pyspelling"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-pyspelling-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/pyspelling3.14",
+            "bin/pyspelling"
+          ],
+          "all_files": [
+            ".brew/pyspelling.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/pyspelling",
+            "bin/pyspelling3.14",
+            "libexec/.gitignore",
+            "libexec/bin/markdown_py",
+            "libexec/bin/pyspelling",
+            "libexec/bin/pyspelling3.14",
+            "libexec/bin/python",
+            "libexec/bin/python3",
+            "libexec/bin/python3.14",
+            "libexec/bin/𝜋thon",
+            "libexec/lib/python3.14/site-packages/_yaml/__init__.py",
+            "libexec/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/licenses/AUTHORS",
+            "libexec/lib/python3.14/site-packages/beautifulsoup4-4.15.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/bracex/__init__.py",
+            "libexec/lib/python3.14/site-packages/bracex/__main__.py",
+            "libexec/lib/python3.14/site-packages/bracex/__meta__.py",
+            "libexec/lib/python3.14/site-packages/bracex/py.typed",
+            "libexec/lib/python3.14/site-packages/bracex-3.0.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/bracex-3.0.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/bracex-3.0.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/bracex-3.0.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/bracex-3.0.1.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.14/site-packages/bs4/__init__.py",
+            "libexec/lib/python3.14/site-packages/bs4/_deprecation.py",
+            "libexec/lib/python3.14/site-packages/bs4/_typing.py",
+            "libexec/lib/python3.14/site-packages/bs4/_warnings.py",
+            "libexec/lib/python3.14/site-packages/bs4/builder/__init__.py",
+            "libexec/lib/python3.14/site-packages/bs4/builder/_html5lib.py",
+            "libexec/lib/python3.14/site-packages/bs4/builder/_htmlparser.py",
+            "libexec/lib/python3.14/site-packages/bs4/builder/_lxml.py",
+            "libexec/lib/python3.14/site-packages/bs4/css.py",
+            "libexec/lib/python3.14/site-packages/bs4/dammit.py",
+            "libexec/lib/python3.14/site-packages/bs4/diagnose.py",
+            "libexec/lib/python3.14/site-packages/bs4/element.py",
+            "libexec/lib/python3.14/site-packages/bs4/exceptions.py",
+            "libexec/lib/python3.14/site-packages/bs4/filter.py",
+            "libexec/lib/python3.14/site-packages/bs4/formatter.py",
+            "libexec/lib/python3.14/site-packages/bs4/py.typed",
+            "libexec/lib/python3.14/site-packages/html5lib/__init__.py",
+            "libexec/lib/python3.14/site-packages/html5lib/_ihatexml.py",
+            "libexec/lib/python3.14/site-packages/html5lib/_inputstream.py",
+            "libexec/lib/python3.14/site-packages/html5lib/_tokenizer.py",
+            "libexec/lib/python3.14/site-packages/html5lib/_trie/__init__.py",
+            "libexec/lib/python3.14/site-packages/html5lib/_trie/_base.py",
+            "libexec/lib/python3.14/site-packages/html5lib/_trie/py.py",
+            "libexec/lib/python3.14/site-packages/html5lib/_utils.py",
+            "libexec/lib/python3.14/site-packages/html5lib/constants.py",
+            "libexec/lib/python3.14/site-packages/html5lib/filters/__init__.py",
+            "libexec/lib/python3.14/site-packages/html5lib/filters/alphabeticalattributes.py",
+            "libexec/lib/python3.14/site-packages/html5lib/filters/base.py",
+            "libexec/lib/python3.14/site-packages/html5lib/filters/inject_meta_charset.py",
+            "libexec/lib/python3.14/site-packages/html5lib/filters/lint.py",
+            "libexec/lib/python3.14/site-packages/html5lib/filters/optionaltags.py",
+            "libexec/lib/python3.14/site-packages/html5lib/filters/sanitizer.py",
+            "libexec/lib/python3.14/site-packages/html5lib/filters/whitespace.py",
+            "libexec/lib/python3.14/site-packages/html5lib/html5parser.py",
+            "libexec/lib/python3.14/site-packages/html5lib/serializer.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treeadapters/__init__.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treeadapters/genshi.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treeadapters/sax.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treebuilders/__init__.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treebuilders/base.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treebuilders/dom.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treebuilders/etree.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treebuilders/etree_lxml.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treewalkers/__init__.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treewalkers/base.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treewalkers/dom.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treewalkers/etree.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treewalkers/etree_lxml.py",
+            "libexec/lib/python3.14/site-packages/html5lib/treewalkers/genshi.py",
+            "libexec/lib/python3.14/site-packages/html5lib-1.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/html5lib-1.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/html5lib-1.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/html5lib-1.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/html5lib-1.1.dist-info/licenses/AUTHORS.rst",
+            "libexec/lib/python3.14/site-packages/html5lib-1.1.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/html5lib-1.1.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/lxml/ElementInclude.py",
+            "libexec/lib/python3.14/site-packages/lxml/__init__.py",
+            "libexec/lib/python3.14/site-packages/lxml/_elementpath.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/lxml/_elementpath.py",
+            "libexec/lib/python3.14/site-packages/lxml/apihelpers.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/builder.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/lxml/builder.py",
+            "libexec/lib/python3.14/site-packages/lxml/classlookup.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/cleanup.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/cssselect.py",
+            "libexec/lib/python3.14/site-packages/lxml/debug.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/docloader.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/doctestcompare.py",
+            "libexec/lib/python3.14/site-packages/lxml/dtd.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/etree.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/lxml/etree.h",
+            "libexec/lib/python3.14/site-packages/lxml/etree.pyx",
+            "libexec/lib/python3.14/site-packages/lxml/etree_api.h",
+            "libexec/lib/python3.14/site-packages/lxml/extensions.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/html/ElementSoup.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/__init__.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/_diffcommand.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/_difflib.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/lxml/html/_difflib.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/_html5builder.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/_setmixin.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/builder.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/clean.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/defs.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/diff.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/lxml/html/diff.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/formfill.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/html5parser.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/soupparser.py",
+            "libexec/lib/python3.14/site-packages/lxml/html/usedoctest.py",
+            "libexec/lib/python3.14/site-packages/lxml/includes/__init__.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/__init__.py",
+            "libexec/lib/python3.14/site-packages/lxml/includes/c14n.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/config.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/dtdvalid.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/etree_defs.h",
+            "libexec/lib/python3.14/site-packages/lxml/includes/etreepublic.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/htmlparser.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/lxml-version.h",
+            "libexec/lib/python3.14/site-packages/lxml/includes/relaxng.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/schematron.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/tree.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/uri.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/xinclude.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/xmlerror.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/xmlparser.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/xmlschema.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/xpath.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/includes/xslt.pxd",
+            "libexec/lib/python3.14/site-packages/lxml/isoschematron/__init__.py",
+            "libexec/lib/python3.14/site-packages/lxml/isoschematron/resources/rng/iso-schematron.rng",
+            "libexec/lib/python3.14/site-packages/lxml/isoschematron/resources/xsl/RNG2Schtrn.xsl",
+            "libexec/lib/python3.14/site-packages/lxml/isoschematron/resources/xsl/XSD2Schtrn.xsl",
+            "libexec/lib/python3.14/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_abstract_expand.xsl",
+            "libexec/lib/python3.14/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_dsdl_include.xsl",
+            "libexec/lib/python3.14/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_message.xsl",
+            "libexec/lib/python3.14/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_schematron_skeleton_for_xslt1.xsl",
+            "libexec/lib/python3.14/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/iso_svrl_for_xslt1.xsl",
+            "libexec/lib/python3.14/site-packages/lxml/isoschematron/resources/xsl/iso-schematron-xslt1/readme.txt",
+            "libexec/lib/python3.14/site-packages/lxml/iterparse.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/lxml.etree.h",
+            "libexec/lib/python3.14/site-packages/lxml/lxml.etree_api.h",
+            "libexec/lib/python3.14/site-packages/lxml/nsclasses.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/objectify.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/lxml/objectify.pyx",
+            "libexec/lib/python3.14/site-packages/lxml/objectpath.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/parser.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/parsertarget.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/proxy.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/public-api.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/pyclasslookup.py",
+            "libexec/lib/python3.14/site-packages/lxml/readonlytree.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/relaxng.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/sax.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/lxml/sax.py",
+            "libexec/lib/python3.14/site-packages/lxml/saxparser.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/schematron.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/serializer.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/usedoctest.py",
+            "libexec/lib/python3.14/site-packages/lxml/xinclude.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/xmlerror.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/xmlid.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/xmlschema.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/xpath.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/xslt.pxi",
+            "libexec/lib/python3.14/site-packages/lxml/xsltext.pxi",
+            "libexec/lib/python3.14/site-packages/lxml-6.1.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/lxml-6.1.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/lxml-6.1.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/lxml-6.1.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/lxml-6.1.3.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/lxml-6.1.3.dist-info/licenses/LICENSES.txt",
+            "libexec/lib/python3.14/site-packages/lxml-6.1.3.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/markdown/__init__.py",
+            "libexec/lib/python3.14/site-packages/markdown/__main__.py",
+            "libexec/lib/python3.14/site-packages/markdown/__meta__.py",
+            "libexec/lib/python3.14/site-packages/markdown/blockparser.py",
+            "libexec/lib/python3.14/site-packages/markdown/blockprocessors.py",
+            "libexec/lib/python3.14/site-packages/markdown/core.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/__init__.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/abbr.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/admonition.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/attr_list.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/codehilite.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/def_list.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/extra.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/fenced_code.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/footnotes.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/legacy_attrs.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/legacy_em.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/md_in_html.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/meta.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/nl2br.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/sane_lists.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/smarty.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/tables.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/toc.py",
+            "libexec/lib/python3.14/site-packages/markdown/extensions/wikilinks.py",
+            "libexec/lib/python3.14/site-packages/markdown/htmlparser.py",
+            "libexec/lib/python3.14/site-packages/markdown/inlinepatterns.py",
+            "libexec/lib/python3.14/site-packages/markdown/postprocessors.py",
+            "libexec/lib/python3.14/site-packages/markdown/preprocessors.py",
+            "libexec/lib/python3.14/site-packages/markdown/serializers.py",
+            "libexec/lib/python3.14/site-packages/markdown/test_tools.py",
+            "libexec/lib/python3.14/site-packages/markdown/treeprocessors.py",
+            "libexec/lib/python3.14/site-packages/markdown/util.py",
+            "libexec/lib/python3.14/site-packages/markdown-3.10.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/markdown-3.10.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/markdown-3.10.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/markdown-3.10.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/markdown-3.10.3.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/markdown-3.10.3.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.14/site-packages/markdown-3.10.3.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/pyspelling/__init__.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/__main__.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/__meta__.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/__init__.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/context.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/cpp.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/html.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/javascript.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/markdown.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/odf.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/ooxml.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/python.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/stylesheets.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/text.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/url.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/filters/xml.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/flow_control/__init__.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/flow_control/wildcard.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/plugin.py",
+            "libexec/lib/python3.14/site-packages/pyspelling/util/__init__.py",
+            "libexec/lib/python3.14/site-packages/pyspelling-2.12.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/pyspelling-2.12.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/pyspelling-2.12.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/pyspelling-2.12.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/pyspelling-2.12.1.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/pyspelling-2.12.1.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/six-1.17.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/six-1.17.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/six-1.17.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/six-1.17.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/six-1.17.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/six-1.17.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/six.py",
+            "libexec/lib/python3.14/site-packages/soupsieve/__init__.py",
+            "libexec/lib/python3.14/site-packages/soupsieve/__meta__.py",
+            "libexec/lib/python3.14/site-packages/soupsieve/css_match.py",
+            "libexec/lib/python3.14/site-packages/soupsieve/css_parser.py",
+            "libexec/lib/python3.14/site-packages/soupsieve/css_types.py",
+            "libexec/lib/python3.14/site-packages/soupsieve/pretty.py",
+            "libexec/lib/python3.14/site-packages/soupsieve/py.typed",
+            "libexec/lib/python3.14/site-packages/soupsieve/util.py",
+            "libexec/lib/python3.14/site-packages/soupsieve-2.9.2.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/soupsieve-2.9.2.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/soupsieve-2.9.2.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/soupsieve-2.9.2.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/soupsieve-2.9.2.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/typing_extensions.py",
+            "libexec/lib/python3.14/site-packages/wcmatch/__init__.py",
+            "libexec/lib/python3.14/site-packages/wcmatch/__meta__.py",
+            "libexec/lib/python3.14/site-packages/wcmatch/_wcmatch.py",
+            "libexec/lib/python3.14/site-packages/wcmatch/_wcparse.py",
+            "libexec/lib/python3.14/site-packages/wcmatch/fnmatch.py",
+            "libexec/lib/python3.14/site-packages/wcmatch/glob.py",
+            "libexec/lib/python3.14/site-packages/wcmatch/pathlib.py",
+            "libexec/lib/python3.14/site-packages/wcmatch/posix.py",
+            "libexec/lib/python3.14/site-packages/wcmatch/py.typed",
+            "libexec/lib/python3.14/site-packages/wcmatch/util.py",
+            "libexec/lib/python3.14/site-packages/wcmatch/wcmatch.py",
+            "libexec/lib/python3.14/site-packages/wcmatch-11.0.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/wcmatch-11.0.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/wcmatch-11.0.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/wcmatch-11.0.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/wcmatch-11.0.1.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.14/site-packages/webencodings/__init__.py",
+            "libexec/lib/python3.14/site-packages/webencodings/custom.py",
+            "libexec/lib/python3.14/site-packages/webencodings/labels.py",
+            "libexec/lib/python3.14/site-packages/webencodings-0.6.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/webencodings-0.6.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/webencodings-0.6.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/webencodings-0.6.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/webencodings-0.6.1.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/yaml/__init__.py",
+            "libexec/lib/python3.14/site-packages/yaml/_yaml.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/yaml/composer.py",
+            "libexec/lib/python3.14/site-packages/yaml/constructor.py",
+            "libexec/lib/python3.14/site-packages/yaml/cyaml.py",
+            "libexec/lib/python3.14/site-packages/yaml/dumper.py",
+            "libexec/lib/python3.14/site-packages/yaml/emitter.py",
+            "libexec/lib/python3.14/site-packages/yaml/error.py",
+            "libexec/lib/python3.14/site-packages/yaml/events.py",
+            "libexec/lib/python3.14/site-packages/yaml/loader.py",
+            "libexec/lib/python3.14/site-packages/yaml/nodes.py",
+            "libexec/lib/python3.14/site-packages/yaml/parser.py",
+            "libexec/lib/python3.14/site-packages/yaml/reader.py",
+            "libexec/lib/python3.14/site-packages/yaml/representer.py",
+            "libexec/lib/python3.14/site-packages/yaml/resolver.py",
+            "libexec/lib/python3.14/site-packages/yaml/scanner.py",
+            "libexec/lib/python3.14/site-packages/yaml/serializer.py",
+            "libexec/lib/python3.14/site-packages/yaml/tokens.py",
+            "libexec/pyvenv.cfg",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 7381862
+        }
+      }
+    }
+  }
+}

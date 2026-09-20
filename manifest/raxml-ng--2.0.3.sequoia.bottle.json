@@ -1,0 +1,127 @@
+{
+  "raxml-ng": {
+    "formula": {
+      "name": "raxml-ng",
+      "pkg_version": "2.0.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/raxml-ng.rb",
+      "tap_git_path": "Formula/r/raxml-ng.rb",
+      "tap_git_revision": "5dc7d01b36b6a05d86de8711f98588820fe4e699",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "RAxML Next Generation: faster, easier-to-use and more flexible",
+      "license": "AGPL-3.0-or-later",
+      "homepage": "https://cme.h-its.org/exelixis/web/software/raxml/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-19T23:20:31Z",
+      "tags": {
+        "sequoia": {
+          "filename": "raxml-ng-2.0.3.sequoia.bottle.tar.gz",
+          "local_filename": "raxml-ng--2.0.3.sequoia.bottle.tar.gz",
+          "sha256": "abead424e1396e1031986fb4a02b0acac7343f33a04a7ff05ffec69e27fd31e0",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788446925,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "source": {
+              "scm_revision": "173b012f9989bfdd53970e6917e4037be3d1e38e"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-raxml-ng"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-raxml-ng-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/raxml-ng"
+          ],
+          "all_files": [
+            ".brew/raxml-ng.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "README.md",
+            "bin/raxml-ng",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 3340565
+        }
+      }
+    }
+  }
+}

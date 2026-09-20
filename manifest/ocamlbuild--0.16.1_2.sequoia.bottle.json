@@ -1,0 +1,185 @@
+{
+  "ocamlbuild": {
+    "formula": {
+      "name": "ocamlbuild",
+      "pkg_version": "0.16.1_2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/ocamlbuild.rb",
+      "tap_git_path": "Formula/o/ocamlbuild.rb",
+      "tap_git_revision": "5dc7d01b36b6a05d86de8711f98588820fe4e699",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Generic build tool for OCaml",
+      "license": "LGPL-2.0-only WITH OCaml-LGPL-linking-exception",
+      "homepage": "https://github.com/ocaml/ocamlbuild"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-19T22:47:34Z",
+      "tags": {
+        "sequoia": {
+          "filename": "ocamlbuild-0.16.1_2.sequoia.bottle.tar.gz",
+          "local_filename": "ocamlbuild--0.16.1_2.sequoia.bottle.tar.gz",
+          "sha256": "6524e51c0c8cd66915a3df55275dab90f74b2d93b87463b30a71f4980fc145b2",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [
+              "bin/ocamlbuild.byte"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [
+              "bin/ocamlbuild",
+              "bin/ocamlbuild.native",
+              "lib/ocamlbuild/ocamlbuildlib.a"
+            ],
+            "source_modified_time": 1739695019,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ocaml",
+                "version": "5.5.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.5.1",
+                "declared_directly": true,
+                "compatibility_version": 4
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/ocamlbuild",
+              "string": "/usr/local/Cellar/ocamlbuild/0.16.1_2/lib",
+              "offset": 1422704
+            },
+            {
+              "path": "bin/ocamlbuild",
+              "string": "/usr/local/Cellar/ocamlbuild/0.16.1_2/bin",
+              "offset": 1422760
+            },
+            {
+              "path": "bin/ocamlbuild.native",
+              "string": "/usr/local/Cellar/ocamlbuild/0.16.1_2/lib",
+              "offset": 1422704
+            },
+            {
+              "path": "bin/ocamlbuild.native",
+              "string": "/usr/local/Cellar/ocamlbuild/0.16.1_2/bin",
+              "offset": 1422760
+            },
+            {
+              "path": "lib/ocamlbuild/ocamlbuildlib.a",
+              "string": "/usr/local/Cellar/ocamlbuild/0.16.1_2/lib",
+              "offset": 550832
+            },
+            {
+              "path": "lib/ocamlbuild/ocamlbuildlib.a",
+              "string": "/usr/local/Cellar/ocamlbuild/0.16.1_2/bin",
+              "offset": 550888
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ocaml-5.5.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ocaml-5.5.1",
+                "name": "ocaml",
+                "versionInfo": "5.5.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only WITH OCaml-LGPL-linking-exception",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/ocaml-5.5.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fd495d8c122be0f5be5bef73e214bcbd8bd3e097b62b3df334c8d3eb0ea96af4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ocaml@5.5.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ocaml-5.5.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ocamlbuild"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-ocamlbuild-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/ocamlbuild",
+            "bin/ocamlbuild.native",
+            "bin/ocamlbuild.byte"
+          ],
+          "all_files": [
+            ".brew/ocamlbuild.rb",
+            "Changes",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "Readme.md",
+            "bin/ocamlbuild",
+            "bin/ocamlbuild.byte",
+            "bin/ocamlbuild.native",
+            "lib/ocamlbuild/META",
+            "lib/ocamlbuild/ocamlbuild.cmo",
+            "lib/ocamlbuild/ocamlbuild.cmx",
+            "lib/ocamlbuild/ocamlbuild.o",
+            "lib/ocamlbuild/ocamlbuild_pack.cmi",
+            "lib/ocamlbuild/ocamlbuild_pack.cmx",
+            "lib/ocamlbuild/ocamlbuild_plugin.cmi",
+            "lib/ocamlbuild/ocamlbuild_plugin.cmx",
+            "lib/ocamlbuild/ocamlbuild_plugin.o",
+            "lib/ocamlbuild/ocamlbuild_unix_plugin.cmi",
+            "lib/ocamlbuild/ocamlbuild_unix_plugin.cmx",
+            "lib/ocamlbuild/ocamlbuild_unix_plugin.o",
+            "lib/ocamlbuild/ocamlbuildlib.a",
+            "lib/ocamlbuild/ocamlbuildlib.cma",
+            "lib/ocamlbuild/ocamlbuildlib.cmxa",
+            "lib/ocamlbuild/signatures.cmi",
+            "lib/ocamlbuild/signatures.cmti",
+            "lib/ocamlbuild/signatures.mli",
+            "sbom.spdx.json",
+            "share/man/man1/ocamlbuild.1"
+          ],
+          "installed_size": 8765345
+        }
+      }
+    }
+  }
+}

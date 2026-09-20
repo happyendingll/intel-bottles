@@ -1,0 +1,430 @@
+{
+  "arx-libertatis": {
+    "formula": {
+      "name": "arx-libertatis",
+      "pkg_version": "1.2.1_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/arx-libertatis.rb",
+      "tap_git_path": "Formula/a/arx-libertatis.rb",
+      "tap_git_revision": "5dc7d01b36b6a05d86de8711f98588820fe4e699",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Cross-platform, open source port of Arx Fatalis",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://arx-libertatis.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-19T21:26:17Z",
+      "tags": {
+        "sequoia": {
+          "filename": "arx-libertatis-1.2.1_1.sequoia.bottle.tar.gz",
+          "local_filename": "arx-libertatis--1.2.1_1.sequoia.bottle.tar.gz",
+          "sha256": "c564b15287f899b63ecb1a08685deb63049deb07ffde8300227a1a91bb8495da",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/arx",
+              "lib/libArxIO.1.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/arx"
+            ],
+            "source_modified_time": 1649602213,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glew",
+                "version": "2.3.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "boost",
+                "version": "1.92.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.92.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "innoextract",
+                "version": "1.9",
+                "revision": 14,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.9_14",
+                "declared_directly": true
+              },
+              {
+                "full_name": "sdl3",
+                "version": "3.4.16",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.16",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sdl2-compat",
+                "version": "2.32.72",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.32.72",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/arx",
+              "string": "/usr/local/Cellar/arx-libertatis/1.2.1_1/libexec",
+              "offset": 1668879
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-glew-2.3.1",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+              "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glew-2.3.1",
+                "name": "glew",
+                "versionInfo": "2.3.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/glew-2.3.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4cd5a1b632f2b9ccd2a012ccc067aba213f9b79b3d7284880a4ecd99f779de81"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glew@2.3.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "name": "sdl3",
+                "versionInfo": "3.4.16",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/sdl3-3.4.16.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9dc29b325dcf7a0acfacd6fb415251792750b219a5db765624514ddc185f438d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl3@3.4.16",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "name": "sdl2-compat",
+                "versionInfo": "2.32.72",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/sdl2-compat-2.32.72.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "95416aee23feb0d1bc449a7112554d787af252beed7753dbedbd603d4ebd517c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl2-compat@2.32.72",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glew-2.3.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-arx-libertatis"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-arx-libertatis"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-arx-libertatis"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-arx-libertatis"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-arx-libertatis"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-arx-libertatis"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-arx-libertatis-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/arx-install-data",
+            "bin/arxsavetool",
+            "bin/arx",
+            "bin/arxunpak"
+          ],
+          "all_files": [
+            ".brew/arx-libertatis.rb",
+            "AUTHORS",
+            "CHANGELOG",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "LICENSE.DejaVu",
+            "README.md",
+            "bin/arx",
+            "bin/arx-install-data",
+            "bin/arxsavetool",
+            "bin/arxunpak",
+            "include/ArxIO.h",
+            "lib/libArxIO.1.dylib",
+            "lib/libArxIO.dylib",
+            "libexec/arxtool",
+            "sbom.spdx.json",
+            "share/blender/scripts/addons/arx/__init__.py",
+            "share/blender/scripts/addons/arx/arx_io_animation.py",
+            "share/blender/scripts/addons/arx/arx_io_area.py",
+            "share/blender/scripts/addons/arx/arx_io_material.py",
+            "share/blender/scripts/addons/arx/arx_io_model.py",
+            "share/blender/scripts/addons/arx/arx_io_test_roundtrip.py",
+            "share/blender/scripts/addons/arx/arx_io_util.py",
+            "share/blender/scripts/addons/arx/arx_ui_area.py",
+            "share/blender/scripts/addons/arx/dataAmb.py",
+            "share/blender/scripts/addons/arx/dataCin.py",
+            "share/blender/scripts/addons/arx/dataCommon.py",
+            "share/blender/scripts/addons/arx/dataDlf.py",
+            "share/blender/scripts/addons/arx/dataFtl.py",
+            "share/blender/scripts/addons/arx/dataFts.py",
+            "share/blender/scripts/addons/arx/dataLlf.py",
+            "share/blender/scripts/addons/arx/dataTea.py",
+            "share/blender/scripts/addons/arx/files.py",
+            "share/blender/scripts/addons/arx/lib.py",
+            "share/blender/scripts/addons/arx/main.py",
+            "share/blender/scripts/addons/arx/managers.py",
+            "share/blender/scripts/addons/arx/meshEdit.py",
+            "share/blender/scripts/addons/arx/naivePkware.py",
+            "share/games/arx/localisation/languages/chinese.ini",
+            "share/games/arx/localisation/languages/deutsch.ini",
+            "share/games/arx/localisation/languages/english.ini",
+            "share/games/arx/localisation/languages/francais.ini",
+            "share/games/arx/localisation/languages/hungarian.ini",
+            "share/games/arx/localisation/languages/italiano.ini",
+            "share/games/arx/localisation/languages/japanese.ini",
+            "share/games/arx/localisation/languages/russian.ini",
+            "share/games/arx/localisation/languages/spanish.ini",
+            "share/games/arx/localisation/xtext_default_001_arxlibertatis.ini",
+            "share/games/arx/localisation/xtext_deutsch_001_arxlibertatis.ini",
+            "share/games/arx/localisation/xtext_english_001_arxlibertatis.ini",
+            "share/games/arx/localisation/xtext_hungarian_001_arxlibertatis.ini",
+            "share/games/arx/localisation/xtext_italiano_001_arxlibertatis.ini",
+            "share/games/arx/localisation/xtext_russian_001_arxlibertatis.ini",
+            "share/games/arx/localisation/xtext_spanish_001_arxlibertatis.ini",
+            "share/games/arx/misc/dejavusansmono.ttf",
+            "share/games/arx/misc/icons.ttf",
+            "share/man/man1/arx-install-data.1",
+            "share/man/man1/arxsavetool.1",
+            "share/man/man1/arxunpak.1",
+            "share/man/man6/arx.6",
+            "share/pixmaps/arx-libertatis.png",
+            "share/pixmaps/arx-libertatis_16.png",
+            "share/pixmaps/arx-libertatis_22.png",
+            "share/pixmaps/arx-libertatis_24.png",
+            "share/pixmaps/arx-libertatis_32.png"
+          ],
+          "installed_size": 3537509
+        }
+      }
+    }
+  }
+}
