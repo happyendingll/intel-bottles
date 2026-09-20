@@ -2,27 +2,27 @@
   "mpd": {
     "formula": {
       "name": "mpd",
-      "pkg_version": "0.24.15_3",
+      "pkg_version": "0.24.15_4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mpd.rb",
       "tap_git_path": "Formula/m/mpd.rb",
-      "tap_git_revision": "ac4f863aa2e18294591221fbbae699617ae97bd2",
+      "tap_git_revision": "998402ace18513003b9766867689e20d16a365e8",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Music Player Daemon",
       "license": "GPL-2.0-or-later",
       "homepage": "https://www.musicpd.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-14T06:37:03Z",
+      "date": "2026-09-20T19:16:17Z",
       "tags": {
         "sequoia": {
-          "filename": "mpd-0.24.15_3.sequoia.bottle.tar.gz",
-          "local_filename": "mpd--0.24.15_3.sequoia.bottle.tar.gz",
-          "sha256": "9e960ef7d68e91f65f24746830d037a9e019515cd407eeec1d6070f1b5a81609",
+          "filename": "mpd-0.24.15_4.sequoia.bottle.tar.gz",
+          "local_filename": "mpd--0.24.15_4.sequoia.bottle.tar.gz",
+          "sha256": "9512ae4eb14bdfdae47535a38d093be76576777a648b4dff611d97a0ea063a65",
           "tab": {
-            "homebrew_version": "7.0.1",
+            "homebrew_version": "7.0.4",
             "changed_files": [
               "sh.brew.mpd.plist",
               "sh.brew.mpd.service"
@@ -62,10 +62,10 @@
               },
               {
                 "full_name": "libvmaf",
-                "version": "3.2.0",
+                "version": "3.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.2.0",
+                "pkg_version": "3.2.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -160,10 +160,10 @@
               },
               {
                 "full_name": "ffmpeg",
-                "version": "9.0.1",
-                "revision": 1,
+                "version": "9.0.2",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.0.1_1",
+                "pkg_version": "9.0.2",
                 "declared_directly": true,
                 "compatibility_version": 3
               },
@@ -220,10 +220,10 @@
               },
               {
                 "full_name": "readline",
-                "version": "8.3.3",
+                "version": "8.3.6",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "8.3.3",
+                "pkg_version": "8.3.6",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -263,10 +263,10 @@
               },
               {
                 "full_name": "fluid-synth",
-                "version": "2.6.0",
+                "version": "2.6.1",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2.6.0",
+                "bottle_rebuild": 0,
+                "pkg_version": "2.6.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -319,6 +319,7 @@
                 "full_name": "libmikmod",
                 "version": "3.3.14",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "3.3.14",
                 "declared_directly": true
               },
@@ -333,11 +334,12 @@
               },
               {
                 "full_name": "libnfs",
-                "version": "7.0.2",
+                "version": "8.0.0",
                 "revision": 0,
-                "pkg_version": "7.0.2",
+                "bottle_rebuild": 0,
+                "pkg_version": "8.0.0",
                 "declared_directly": true,
-                "compatibility_version": 4
+                "compatibility_version": 5
               },
               {
                 "full_name": "gmp",
@@ -495,19 +497,47 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
               "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
               "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
               "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-readline-8.3.3",
+              "SPDXRef-Package-SPDXRef-ffmpeg-9.0.2",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
               "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-fluid-synth-2.6.1",
+              "SPDXRef-Package-SPDXRef-libmikmod-3.3.14",
+              "SPDXRef-Package-SPDXRef-libnfs-8.0.0",
               "SPDXRef-Package-SPDXRef-gmp-6.3.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.48",
               "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "name": "libvmaf",
+                "versionInfo": "3.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause-Patent",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libvmaf-3.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "628f2126275ef110c999b952c3575ff3cc854e80c68d57e1381b50805f1eb9bc"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libvmaf@3.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
                 "name": "ca-certificates",
@@ -607,12 +637,12 @@
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "0BSD AND GPL-2.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/xz-5.8.4.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "6b958311e9568372a79c5dafcd91e16d2deb19a079b69c6861307ac27644b534"
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
                   }
                 ],
                 "externalRefs": [
@@ -624,24 +654,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.3",
-                "name": "readline",
-                "versionInfo": "8.3.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ffmpeg-9.0.2",
+                "name": "ffmpeg",
+                "versionInfo": "9.0.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-3.0-or-later",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/ffmpeg-9.0.2.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3"
+                    "checksumValue": "f2e43a287b691f450a356eef2b7ffb8c23df8f73ea8380722a0a02ff6bff991b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/readline@8.3.3",
+                    "referenceLocator": "pkg:brew/ffmpeg@9.0.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
                     "referenceType": "purl"
                   }
                 ]
@@ -665,6 +718,75 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-fluid-synth-2.6.1",
+                "name": "fluid-synth",
+                "versionInfo": "2.6.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/fluid-synth-2.6.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5872f2be94f0d6dc4baae88cc33a740a2bfcf51e77ca2052489efe4ffede894b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/fluid-synth@2.6.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libmikmod-3.3.14",
+                "name": "libmikmod",
+                "versionInfo": "3.3.14",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libmikmod-3.3.14.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2742e8d64ed6e1c4b99a52bf1b0d5970ee0c806ea1c9307e1f1f07a6cf4512a8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libmikmod@3.3.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnfs-8.0.0",
+                "name": "libnfs",
+                "versionInfo": "8.0.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libnfs-8.0.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "349bf6202dcf0ae2cfa8fd296a151df183f3a2b4452be03366d740e562b0986e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libnfs@8.0.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -753,6 +875,11 @@
             ],
             "relationships": [
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpd"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mpd"
@@ -778,12 +905,32 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-mpd"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ffmpeg-9.0.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mpd"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fluid-synth-2.6.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libmikmod-3.3.14",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnfs-8.0.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mpd"
               },
@@ -830,7 +977,7 @@
             "share/doc/mpd/README.md",
             "share/icons/hicolor/scalable/apps/mpd.svg"
           ],
-          "installed_size": 2315045
+          "installed_size": 2315097
         }
       }
     }
