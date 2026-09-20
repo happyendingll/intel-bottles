@@ -1,0 +1,99 @@
+{
+  "libaegis": {
+    "formula": {
+      "name": "libaegis",
+      "pkg_version": "0.10.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libaegis.rb",
+      "tap_git_path": "Formula/lib/libaegis.rb",
+      "tap_git_revision": "ad7cc16162ad1162a0c514cd4f7e78cd8bac83de",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Portable C implementations of the AEGIS family of encryption algorithms",
+      "license": "MIT",
+      "homepage": "https://github.com/aegis-aead/libaegis"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-20T20:36:52Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libaegis-0.10.4.sequoia.bottle.tar.gz",
+          "local_filename": "libaegis--0.10.4.sequoia.bottle.tar.gz",
+          "sha256": "013f9d697e5cf7d8cdcec4fba0439912c00fe6e961d6961b52983fbf0ad73377",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libaegis.0.10.4.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789491036,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libaegis-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libaegis.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/aegis.h",
+            "include/aegis128l.h",
+            "include/aegis128x2.h",
+            "include/aegis128x4.h",
+            "include/aegis256.h",
+            "include/aegis256x2.h",
+            "include/aegis256x4.h",
+            "include/aegis_raf.h",
+            "lib/libaegis.0.10.4.dylib",
+            "lib/libaegis.0.dylib",
+            "lib/libaegis.dylib",
+            "sbom.spdx.json",
+            "share/cmake/aegis/aegis-config-version.cmake",
+            "share/cmake/aegis/aegis-config.cmake",
+            "share/cmake/aegis/aegis-targets-release.cmake",
+            "share/cmake/aegis/aegis-targets.cmake"
+          ],
+          "installed_size": 530269
+        }
+      }
+    }
+  }
+}

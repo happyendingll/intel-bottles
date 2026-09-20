@@ -1,0 +1,228 @@
+{
+  "clisp": {
+    "formula": {
+      "name": "clisp",
+      "pkg_version": "2.49.92_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/clisp.rb",
+      "tap_git_path": "Formula/c/clisp.rb",
+      "tap_git_revision": "ad7cc16162ad1162a0c514cd4f7e78cd8bac83de",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "GNU CLISP, a Common Lisp implementation",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://clisp.sourceforge.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-20T20:06:08Z",
+      "tags": {
+        "sequoia": {
+          "filename": "clisp-2.49.92_1.sequoia.bottle.tar.gz",
+          "local_filename": "clisp--2.49.92_1.sequoia.bottle.tar.gz",
+          "sha256": "58ce318f937498ce3d6462ab8f5b42b785290767400f619055c9d0a93dbc435e",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/clisp-2.49.92/base/lisp.run"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1518955615,
+            "compiler": "llvm_clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libffcall",
+                "version": "2.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.5",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libsigsegv",
+                "version": "2.15",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.15",
+                "declared_directly": true
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "llvm_clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-clisp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-clisp-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/clisp-link",
+            "bin/clisp"
+          ],
+          "all_files": [
+            ".brew/clisp.rb",
+            "COPYRIGHT",
+            "INSTALL_RECEIPT.json",
+            "bin/clisp",
+            "bin/clisp-link",
+            "lib/clisp-2.49.92/base/calls.o",
+            "lib/clisp-2.49.92/base/gettext.o",
+            "lib/clisp-2.49.92/base/libgnu.a",
+            "lib/clisp-2.49.92/base/libnoreadline.a",
+            "lib/clisp-2.49.92/base/lisp.a",
+            "lib/clisp-2.49.92/base/lisp.run",
+            "lib/clisp-2.49.92/base/lispinit.mem",
+            "lib/clisp-2.49.92/base/makevars",
+            "lib/clisp-2.49.92/base/modules.h",
+            "lib/clisp-2.49.92/base/modules.o",
+            "lib/clisp-2.49.92/base/readline.o",
+            "lib/clisp-2.49.92/base/regexi.o",
+            "lib/clisp-2.49.92/build-aux/config.guess",
+            "lib/clisp-2.49.92/build-aux/config.rpath",
+            "lib/clisp-2.49.92/build-aux/config.sub",
+            "lib/clisp-2.49.92/build-aux/depcomp",
+            "lib/clisp-2.49.92/build-aux/install-sh",
+            "lib/clisp-2.49.92/data/Symbol-Table.text",
+            "lib/clisp-2.49.92/data/UnicodeDataFull.txt",
+            "lib/clisp-2.49.92/linkkit/clisp.h",
+            "lib/clisp-2.49.92/linkkit/modprep.lisp",
+            "lib/clisp-2.49.92/linkkit/modules.c",
+            "sbom.spdx.json",
+            "share/aclocal/clisp.m4",
+            "share/doc/clisp/ANNOUNCE",
+            "share/doc/clisp/COPYRIGHT",
+            "share/doc/clisp/GNU-GPL",
+            "share/doc/clisp/MAGIC.add",
+            "share/doc/clisp/NEWS",
+            "share/doc/clisp/README",
+            "share/doc/clisp/README.de",
+            "share/doc/clisp/README.es",
+            "share/doc/clisp/SUMMARY",
+            "share/doc/clisp/clisp-link.html",
+            "share/doc/clisp/clisp.html",
+            "share/doc/clisp/doc/CLOS-guide.txt",
+            "share/doc/clisp/doc/LISP-tutorial.txt",
+            "share/doc/clisp/doc/clisp-link.1",
+            "share/doc/clisp/doc/clisp-link.html",
+            "share/doc/clisp/doc/clisp.1",
+            "share/doc/clisp/doc/clisp.html",
+            "share/doc/clisp/doc/clisp.png",
+            "share/doc/clisp/doc/impnotes.css",
+            "share/doc/clisp/doc/impnotes.html",
+            "share/emacs/site-lisp/clisp/clhs.el",
+            "share/emacs/site-lisp/clisp/clisp-coding.el",
+            "share/emacs/site-lisp/clisp/clisp-ffi.el",
+            "share/emacs/site-lisp/clisp/clisp-indent.el",
+            "share/emacs/site-lisp/clisp/clisp-indent.lisp",
+            "share/locale/da/LC_MESSAGES/clisp.mo",
+            "share/locale/da/LC_MESSAGES/clisplow.mo",
+            "share/locale/de/LC_MESSAGES/clisp.mo",
+            "share/locale/de/LC_MESSAGES/clisplow.mo",
+            "share/locale/en/LC_MESSAGES/clisp.mo",
+            "share/locale/en/LC_MESSAGES/clisplow.mo",
+            "share/locale/es/LC_MESSAGES/clisp.mo",
+            "share/locale/es/LC_MESSAGES/clisplow.mo",
+            "share/locale/fr/LC_MESSAGES/clisp.mo",
+            "share/locale/fr/LC_MESSAGES/clisplow.mo",
+            "share/locale/nl/LC_MESSAGES/clisp.mo",
+            "share/locale/nl/LC_MESSAGES/clisplow.mo",
+            "share/locale/ru/LC_MESSAGES/clisp.mo",
+            "share/locale/ru/LC_MESSAGES/clisplow.mo",
+            "share/locale/sv/LC_MESSAGES/clisp.mo",
+            "share/locale/sv/LC_MESSAGES/clisplow.mo",
+            "share/man/man1/clisp-link.1",
+            "share/man/man1/clisp.1",
+            "share/vim/vimfiles/after/syntax/lisp.vim"
+          ],
+          "installed_size": 16022187
+        }
+      }
+    }
+  }
+}

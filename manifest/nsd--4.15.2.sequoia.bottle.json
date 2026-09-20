@@ -1,0 +1,228 @@
+{
+  "nsd": {
+    "formula": {
+      "name": "nsd",
+      "pkg_version": "4.15.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/n/nsd.rb",
+      "tap_git_path": "Formula/n/nsd.rb",
+      "tap_git_revision": "ad7cc16162ad1162a0c514cd4f7e78cd8bac83de",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Name server daemon",
+      "license": "BSD-3-Clause",
+      "homepage": "https://www.nlnetlabs.nl/projects/nsd/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-20T20:55:21Z",
+      "tags": {
+        "sequoia": {
+          "filename": "nsd-4.15.2.sequoia.bottle.tar.gz",
+          "local_filename": "nsd--4.15.2.sequoia.bottle.tar.gz",
+          "sha256": "1717e8b42a0be24a3cdb1d206efd53c1d19ee64765eb6262c5b11f02efaa912a",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [
+              "sbin/nsd-control-setup",
+              ".bottle/etc/nsd/nsd.conf.sample",
+              "share/man/man5/nsd.conf.5",
+              "share/man/man8/nsd-checkconf.8",
+              "share/man/man8/nsd-control.8",
+              "share/man/man8/nsd.8"
+            ],
+            "linkage_files": [
+              "sbin/nsd",
+              "sbin/nsd-checkconf",
+              "sbin/nsd-checkzone",
+              "sbin/nsd-control"
+            ],
+            "binary_relocation_files": [
+              "sbin/nsd",
+              "sbin/nsd-checkconf",
+              "sbin/nsd-checkzone",
+              "sbin/nsd-control"
+            ],
+            "source_modified_time": 1788357176,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libevent",
+                "version": "2.1.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.13",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "sbin/nsd-control",
+              "string": "/usr/local/Cellar/nsd/4.15.2/sbin/nsd",
+              "offset": 84519
+            },
+            {
+              "path": "sbin/nsd-checkzone",
+              "string": "/usr/local/etc/nsd",
+              "offset": 828066
+            },
+            {
+              "path": "sbin/nsd-checkconf",
+              "string": "/usr/local/etc/nsd",
+              "offset": 89133
+            },
+            {
+              "path": "sbin/nsd-control",
+              "string": "/usr/local/etc/nsd",
+              "offset": 82397
+            },
+            {
+              "path": "sbin/nsd",
+              "string": "/usr/local/etc/nsd",
+              "offset": 1151159
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-nsd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-nsd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-nsd-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "sbin/nsd-checkzone",
+            "sbin/nsd-control-setup",
+            "sbin/nsd-checkconf",
+            "sbin/nsd-control",
+            "sbin/nsd"
+          ],
+          "all_files": [
+            ".bottle/etc/nsd/nsd.conf.sample",
+            ".brew/nsd.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "sbin/nsd",
+            "sbin/nsd-checkconf",
+            "sbin/nsd-checkzone",
+            "sbin/nsd-control",
+            "sbin/nsd-control-setup",
+            "sbom.spdx.json",
+            "share/man/man5/nsd.conf.5",
+            "share/man/man8/nsd-checkconf.8",
+            "share/man/man8/nsd-checkzone.8",
+            "share/man/man8/nsd-control.8",
+            "share/man/man8/nsd.8"
+          ],
+          "installed_size": 2945042
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "conserver": {
+    "formula": {
+      "name": "conserver",
+      "pkg_version": "8.3.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/conserver.rb",
+      "tap_git_path": "Formula/c/conserver.rb",
+      "tap_git_revision": "ad7cc16162ad1162a0c514cd4f7e78cd8bac83de",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Allows multiple users to watch a serial console at the same time",
+      "license": "BSD-3-Clause",
+      "homepage": "https://www.conserver.com/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-20T19:58:50Z",
+      "tags": {
+        "sequoia": {
+          "filename": "conserver-8.3.0.sequoia.bottle.tar.gz",
+          "local_filename": "conserver--8.3.0.sequoia.bottle.tar.gz",
+          "sha256": "d792776e4df220a5f69d508e3615d3a481ef76f746c56a28bba294ca992edc06",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/console",
+              "libexec/conserver/convert",
+              "sbin/conserver"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1770105850,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-conserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-conserver-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/console",
+            "sbin/conserver"
+          ],
+          "all_files": [
+            ".brew/conserver.rb",
+            "CHANGES",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "TODO",
+            "bin/console",
+            "libexec/conserver/convert",
+            "sbin/conserver",
+            "sbom.spdx.json",
+            "share/examples/conserver/conserver.cf",
+            "share/examples/conserver/conserver.passwd",
+            "share/examples/conserver/conserver.rc",
+            "share/man/man1/console.1",
+            "share/man/man5/conserver.cf.5",
+            "share/man/man5/conserver.passwd.5",
+            "share/man/man8/conserver.8"
+          ],
+          "installed_size": 485947
+        }
+      }
+    }
+  }
+}

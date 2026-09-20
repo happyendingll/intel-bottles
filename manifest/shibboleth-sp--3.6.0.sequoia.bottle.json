@@ -1,0 +1,861 @@
+{
+  "shibboleth-sp": {
+    "formula": {
+      "name": "shibboleth-sp",
+      "pkg_version": "3.6.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/shibboleth-sp.rb",
+      "tap_git_path": "Formula/s/shibboleth-sp.rb",
+      "tap_git_revision": "ad7cc16162ad1162a0c514cd4f7e78cd8bac83de",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Shibboleth 2 Service Provider daemon",
+      "license": "Apache-2.0",
+      "homepage": "https://wiki.shibboleth.net/confluence/display/SHIB2"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-20T21:45:16Z",
+      "tags": {
+        "sequoia": {
+          "filename": "shibboleth-sp-3.6.0.sequoia.bottle.tar.gz",
+          "local_filename": "shibboleth-sp--3.6.0.sequoia.bottle.tar.gz",
+          "sha256": "ebaaec524eb58e5e25e385e7b2fa9f2cb206f224031ae5560ef739abbcbdf7c5",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [
+              ".bottle/etc/shibboleth/shibd-amazon",
+              ".bottle/etc/shibboleth/shibd-debian",
+              ".bottle/etc/shibboleth/shibd-redhat",
+              ".bottle/etc/shibboleth/shibd-suse",
+              ".bottle/etc/shibboleth/apache.config",
+              ".bottle/etc/shibboleth/apache2.config",
+              ".bottle/etc/shibboleth/apache22.config",
+              ".bottle/etc/shibboleth/apache24.config",
+              ".bottle/etc/shibboleth/shibd-osx.plist",
+              ".bottle/etc/shibboleth/shibd-systemd",
+              "include/shibsp/paths.h",
+              "lib/pkgconfig/shibsp-lite.pc",
+              "lib/pkgconfig/shibsp.pc",
+              "sh.brew.shibboleth-sp.plist",
+              "sh.brew.shibboleth-sp.service",
+              "share/xml/shibboleth/catalog.xml"
+            ],
+            "linkage_files": [
+              "bin/mdquery",
+              "bin/resolvertest",
+              "lib/libshibsp-lite.13.dylib",
+              "lib/libshibsp.13.dylib",
+              "lib/shibboleth/adfs-lite.so",
+              "lib/shibboleth/adfs.so",
+              "lib/shibboleth/mod_shib_24.so",
+              "lib/shibboleth/odbc-store.so",
+              "lib/shibboleth/plugins-lite.so",
+              "lib/shibboleth/plugins.so",
+              "sbin/shibd"
+            ],
+            "binary_relocation_files": [
+              "lib/libshibsp-lite.13.dylib",
+              "lib/libshibsp.13.dylib"
+            ],
+            "source_modified_time": 1789065422,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "apr",
+                "version": "1.7.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.7.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "apr-util",
+                "version": "1.6.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.5",
+                "declared_directly": true
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "boost",
+                "version": "1.92.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.92.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libnghttp2",
+                "version": "1.70.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.70.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "httpd",
+                "version": "2.4.68",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.4.68",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "log4shib",
+                "version": "2.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.0.1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "xerces-c",
+                "version": "3.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.3.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "xml-security-c",
+                "version": "3.0.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libnghttp3",
+                "version": "1.18.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.18.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libngtcp2",
+                "version": "1.25.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.25.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpsl",
+                "version": "0.23.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.23.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libssh2",
+                "version": "1.11.1",
+                "revision": 5,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.11.1_5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "curl",
+                "version": "8.22.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.22.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xml-tooling-c",
+                "version": "3.3.0",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.3.0_2",
+                "declared_directly": true
+              },
+              {
+                "full_name": "opensaml",
+                "version": "3.3.1",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.3.1_1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "m4",
+                "version": "1.4.21",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.21",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtool",
+                "version": "2.6.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.6.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "unixodbc",
+                "version": "2.3.14",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.14",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/libshibsp.13.dylib",
+              "string": "/usr/local/Cellar/shibboleth-sp/3.6.0",
+              "offset": 1062661
+            },
+            {
+              "path": "lib/libshibsp.13.dylib",
+              "string": "/usr/local/Cellar/shibboleth-sp/3.6.0/lib",
+              "offset": 1062993
+            },
+            {
+              "path": "lib/libshibsp.13.dylib",
+              "string": "/usr/local/Cellar/shibboleth-sp/3.6.0/share/xml",
+              "offset": 1063152
+            },
+            {
+              "path": "lib/libshibsp.13.dylib",
+              "string": "/usr/local/Cellar/xml-tooling-c/3.3.0_2/share/xml/xmltooling/catalog.xml:/usr/local/Cellar/opensaml/3.3.1_1/share/xml/opensaml/saml20-catalog.xml:/usr/local/Cellar/opensaml/3.3.1_1/share/xml/opensaml/saml11-catalog.xml:/usr/local/Cellar/shibboleth-sp/3.6.0/share/xml/shibboleth/catalog.xml",
+              "offset": 1063215
+            },
+            {
+              "path": "lib/libshibsp-lite.13.dylib",
+              "string": "/usr/local/Cellar/shibboleth-sp/3.6.0",
+              "offset": 470845
+            },
+            {
+              "path": "lib/libshibsp-lite.13.dylib",
+              "string": "/usr/local/Cellar/shibboleth-sp/3.6.0/lib",
+              "offset": 471145
+            },
+            {
+              "path": "lib/libshibsp-lite.13.dylib",
+              "string": "/usr/local/Cellar/shibboleth-sp/3.6.0/share/xml",
+              "offset": 471304
+            },
+            {
+              "path": "lib/libshibsp-lite.13.dylib",
+              "string": "/usr/local/Cellar/xml-tooling-c/3.3.0_2/share/xml/xmltooling/catalog.xml:/usr/local/Cellar/opensaml/3.3.1_1/share/xml/opensaml/saml20-catalog.xml:/usr/local/Cellar/opensaml/3.3.1_1/share/xml/opensaml/saml11-catalog.xml:/usr/local/Cellar/shibboleth-sp/3.6.0/share/xml/shibboleth/catalog.xml",
+              "offset": 471367
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-libssh2-1.11.1_5",
+              "SPDXRef-Package-SPDXRef-curl-8.22.0",
+              "SPDXRef-Package-SPDXRef-m4-1.4.21",
+              "SPDXRef-Package-SPDXRef-libtool-2.6.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "name": "libnghttp2",
+                "versionInfo": "1.70.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libnghttp2-1.70.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5fc34d9e93ddb24b1c2cbb83a0beee5e3524a0d96c18b4a64cf32762681b2b65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libnghttp2@1.70.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.48.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "089df9911d09192beee2b9e49201bf1906d6e414bba1d4185982c5ac9d695feb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libssh2-1.11.1_5",
+                "name": "libssh2",
+                "versionInfo": "1.11.1_5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libssh2-1.11.1_5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ef446a2a7c4f8c35a4aafd26dc173b6b4e18bd77e8a86b985b1b54eaa1d949c2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libssh2@1.11.1_5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-curl-8.22.0",
+                "name": "curl",
+                "versionInfo": "8.22.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "curl",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/curl-8.22.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5cc6d5407f7b30834a066021791ac034841232f45eb6e1baffad368c9211aeb3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/curl@8.22.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-m4-1.4.21",
+                "name": "m4",
+                "versionInfo": "1.4.21",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:9956d5e742750c93d61a27ac209e7dfe7a6e0de2dfbc2ea73210741eb2e51461",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9956d5e742750c93d61a27ac209e7dfe7a6e0de2dfbc2ea73210741eb2e51461"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/m4@1.4.21",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtool-2.6.2",
+                "name": "libtool",
+                "versionInfo": "2.6.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:205e69efbbd83ca9ff421c98a0063bd20b64690b44248d0398bd6deb941cf81b",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "205e69efbbd83ca9ff421c98a0063bd20b64690b44248d0398bd6deb941cf81b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtool@2.6.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-shibboleth-sp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-shibboleth-sp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-shibboleth-sp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-shibboleth-sp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-shibboleth-sp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-shibboleth-sp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-shibboleth-sp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libssh2-1.11.1_5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-shibboleth-sp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-curl-8.22.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-shibboleth-sp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-m4-1.4.21",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-shibboleth-sp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtool-2.6.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-shibboleth-sp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-shibboleth-sp-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/resolvertest",
+            "bin/mdquery",
+            "sbin/shibd"
+          ],
+          "all_files": [
+            ".bottle/etc/shibboleth/apache.config",
+            ".bottle/etc/shibboleth/apache2.config",
+            ".bottle/etc/shibboleth/apache22.config",
+            ".bottle/etc/shibboleth/apache24.config",
+            ".bottle/etc/shibboleth/attrChecker.html",
+            ".bottle/etc/shibboleth/attrChecker.html.dist",
+            ".bottle/etc/shibboleth/attribute-map.xml",
+            ".bottle/etc/shibboleth/attribute-map.xml.dist",
+            ".bottle/etc/shibboleth/attribute-policy.xml",
+            ".bottle/etc/shibboleth/attribute-policy.xml.dist",
+            ".bottle/etc/shibboleth/bindingTemplate.html",
+            ".bottle/etc/shibboleth/bindingTemplate.html.dist",
+            ".bottle/etc/shibboleth/console.logger",
+            ".bottle/etc/shibboleth/console.logger.dist",
+            ".bottle/etc/shibboleth/discoveryTemplate.html",
+            ".bottle/etc/shibboleth/discoveryTemplate.html.dist",
+            ".bottle/etc/shibboleth/example-metadata.xml",
+            ".bottle/etc/shibboleth/example-metadata.xml.dist",
+            ".bottle/etc/shibboleth/example-shibboleth2.xml",
+            ".bottle/etc/shibboleth/example-shibboleth2.xml.dist",
+            ".bottle/etc/shibboleth/globalLogout.html",
+            ".bottle/etc/shibboleth/globalLogout.html.dist",
+            ".bottle/etc/shibboleth/keygen.sh",
+            ".bottle/etc/shibboleth/localLogout.html",
+            ".bottle/etc/shibboleth/localLogout.html.dist",
+            ".bottle/etc/shibboleth/metadataError.html",
+            ".bottle/etc/shibboleth/metadataError.html.dist",
+            ".bottle/etc/shibboleth/metagen.sh",
+            ".bottle/etc/shibboleth/native.logger",
+            ".bottle/etc/shibboleth/native.logger.dist",
+            ".bottle/etc/shibboleth/partialLogout.html",
+            ".bottle/etc/shibboleth/partialLogout.html.dist",
+            ".bottle/etc/shibboleth/postTemplate.html",
+            ".bottle/etc/shibboleth/postTemplate.html.dist",
+            ".bottle/etc/shibboleth/protocols.xml",
+            ".bottle/etc/shibboleth/protocols.xml.dist",
+            ".bottle/etc/shibboleth/seckeygen.sh",
+            ".bottle/etc/shibboleth/security-policy.xml",
+            ".bottle/etc/shibboleth/security-policy.xml.dist",
+            ".bottle/etc/shibboleth/sessionError.html",
+            ".bottle/etc/shibboleth/sessionError.html.dist",
+            ".bottle/etc/shibboleth/shibboleth2.xml",
+            ".bottle/etc/shibboleth/shibboleth2.xml.dist",
+            ".bottle/etc/shibboleth/shibd-amazon",
+            ".bottle/etc/shibboleth/shibd-debian",
+            ".bottle/etc/shibboleth/shibd-osx.plist",
+            ".bottle/etc/shibboleth/shibd-redhat",
+            ".bottle/etc/shibboleth/shibd-suse",
+            ".bottle/etc/shibboleth/shibd-systemd",
+            ".bottle/etc/shibboleth/shibd.logger",
+            ".bottle/etc/shibboleth/shibd.logger.dist",
+            ".bottle/etc/shibboleth/sp-encrypt-key.pem",
+            ".bottle/etc/shibboleth/sp-signing-key.pem",
+            ".bottle/etc/shibboleth/sslError.html",
+            ".bottle/etc/shibboleth/sslError.html.dist",
+            ".brew/shibboleth-sp.rb",
+            "INSTALL_RECEIPT.json",
+            "bin/mdquery",
+            "bin/resolvertest",
+            "include/shibsp/AbstractSPRequest.h",
+            "include/shibsp/AccessControl.h",
+            "include/shibsp/Application.h",
+            "include/shibsp/GSSRequest.h",
+            "include/shibsp/RequestMapper.h",
+            "include/shibsp/SPConfig.h",
+            "include/shibsp/SPRequest.h",
+            "include/shibsp/ServiceProvider.h",
+            "include/shibsp/SessionCache.h",
+            "include/shibsp/TransactionLog.h",
+            "include/shibsp/attribute/Attribute.h",
+            "include/shibsp/attribute/AttributeDecoder.h",
+            "include/shibsp/attribute/BinaryAttribute.h",
+            "include/shibsp/attribute/ExtensibleAttribute.h",
+            "include/shibsp/attribute/NameIDAttribute.h",
+            "include/shibsp/attribute/ScopedAttribute.h",
+            "include/shibsp/attribute/SimpleAttribute.h",
+            "include/shibsp/attribute/XMLAttribute.h",
+            "include/shibsp/attribute/filtering/AttributeFilter.h",
+            "include/shibsp/attribute/filtering/BasicFilteringContext.h",
+            "include/shibsp/attribute/filtering/FilterPolicyContext.h",
+            "include/shibsp/attribute/filtering/FilteringContext.h",
+            "include/shibsp/attribute/filtering/MatchFunctor.h",
+            "include/shibsp/attribute/resolver/AttributeExtractor.h",
+            "include/shibsp/attribute/resolver/AttributeResolver.h",
+            "include/shibsp/attribute/resolver/ResolutionContext.h",
+            "include/shibsp/base.h",
+            "include/shibsp/binding/ArtifactResolver.h",
+            "include/shibsp/binding/ProtocolProvider.h",
+            "include/shibsp/binding/SOAPClient.h",
+            "include/shibsp/config_pub.h",
+            "include/shibsp/exceptions.h",
+            "include/shibsp/handler/AbstractHandler.h",
+            "include/shibsp/handler/AssertionConsumerService.h",
+            "include/shibsp/handler/Handler.h",
+            "include/shibsp/handler/LogoutHandler.h",
+            "include/shibsp/handler/LogoutInitiator.h",
+            "include/shibsp/handler/RemotedHandler.h",
+            "include/shibsp/handler/SecuredHandler.h",
+            "include/shibsp/handler/SessionInitiator.h",
+            "include/shibsp/lite/CommonDomainCookie.h",
+            "include/shibsp/lite/SAMLConstants.h",
+            "include/shibsp/metadata/MetadataExt.h",
+            "include/shibsp/metadata/MetadataProviderCriteria.h",
+            "include/shibsp/paths.h",
+            "include/shibsp/remoting/ListenerService.h",
+            "include/shibsp/remoting/ddf.h",
+            "include/shibsp/security/PKIXTrustEngine.h",
+            "include/shibsp/security/SecurityPolicy.h",
+            "include/shibsp/security/SecurityPolicyProvider.h",
+            "include/shibsp/util/CGIParser.h",
+            "include/shibsp/util/DOMPropertySet.h",
+            "include/shibsp/util/IPRange.h",
+            "include/shibsp/util/PropertySet.h",
+            "include/shibsp/util/SPConstants.h",
+            "include/shibsp/util/TemplateParameters.h",
+            "include/shibsp/version.h",
+            "lib/libshibsp-lite.13.dylib",
+            "lib/libshibsp-lite.dylib",
+            "lib/libshibsp.13.dylib",
+            "lib/libshibsp.dylib",
+            "lib/pkgconfig/shibsp-lite.pc",
+            "lib/pkgconfig/shibsp.pc",
+            "lib/shibboleth/adfs-lite.so",
+            "lib/shibboleth/adfs.so",
+            "lib/shibboleth/mod_shib_24.so",
+            "lib/shibboleth/odbc-store.so",
+            "lib/shibboleth/plugins-lite.so",
+            "lib/shibboleth/plugins.so",
+            "sbin/shibd",
+            "sbom.spdx.json",
+            "sh.brew.shibboleth-sp.plist",
+            "sh.brew.shibboleth-sp.service",
+            "share/doc/shibboleth-3.6.0/CREDITS.txt",
+            "share/doc/shibboleth-3.6.0/FASTCGI.LICENSE",
+            "share/doc/shibboleth-3.6.0/LICENSE.txt",
+            "share/doc/shibboleth-3.6.0/LOG4CPP.LICENSE",
+            "share/doc/shibboleth-3.6.0/NOTICE.txt",
+            "share/doc/shibboleth-3.6.0/OPENSSL.LICENSE",
+            "share/doc/shibboleth-3.6.0/README.txt",
+            "share/doc/shibboleth-3.6.0/RELEASE.txt",
+            "share/shibboleth/main.css",
+            "share/xml/shibboleth/MetadataExchange.xsd",
+            "share/xml/shibboleth/WS-Trust.xsd",
+            "share/xml/shibboleth/catalog.xml",
+            "share/xml/shibboleth/oasis-200401-wss-wssecurity-secext-1.0.xsd",
+            "share/xml/shibboleth/oasis-200401-wss-wssecurity-utility-1.0.xsd",
+            "share/xml/shibboleth/shibboleth-2.0-afp-mf-basic.xsd",
+            "share/xml/shibboleth/shibboleth-2.0-afp-mf-saml.xsd",
+            "share/xml/shibboleth/shibboleth-2.0-afp.xsd",
+            "share/xml/shibboleth/shibboleth-2.0-attribute-map.xsd",
+            "share/xml/shibboleth/shibboleth-2.0-native-sp-config.xsd",
+            "share/xml/shibboleth/shibboleth-2.0-native-sp-protocols.xsd",
+            "share/xml/shibboleth/shibboleth-2.0-sp-notify.xsd",
+            "share/xml/shibboleth/shibboleth-3.0-native-sp-config.xsd",
+            "share/xml/shibboleth/shibboleth-metadata-1.0.xsd",
+            "share/xml/shibboleth/shibboleth.xsd",
+            "share/xml/shibboleth/ws-addr.xsd",
+            "share/xml/shibboleth/ws-authorization.xsd",
+            "share/xml/shibboleth/ws-federation.xsd",
+            "share/xml/shibboleth/ws-securitypolicy-1.2.xsd"
+          ],
+          "installed_size": 4898210
+        }
+      }
+    }
+  }
+}

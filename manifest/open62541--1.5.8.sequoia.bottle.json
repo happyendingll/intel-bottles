@@ -1,0 +1,157 @@
+{
+  "open62541": {
+    "formula": {
+      "name": "open62541",
+      "pkg_version": "1.5.8",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/open62541.rb",
+      "tap_git_path": "Formula/o/open62541.rb",
+      "tap_git_revision": "ad7cc16162ad1162a0c514cd4f7e78cd8bac83de",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Open source implementation of OPC UA",
+      "license": "MPL-2.0",
+      "homepage": "https://open62541.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-20T21:00:25Z",
+      "tags": {
+        "sequoia": {
+          "filename": "open62541-1.5.8.sequoia.bottle.tar.gz",
+          "local_filename": "open62541--1.5.8.sequoia.bottle.tar.gz",
+          "sha256": "e98d0f4423c8f242427d4d1e2122c7266a97a7858195d841444ae31ecb4525a1",
+          "tab": {
+            "homebrew_version": "7.0.4",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libopen62541.1.5.8.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788725222,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-open62541-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/open62541.rb",
+            "CHANGES.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "LICENSE-CC0",
+            "README.md",
+            "include/open62541/client.h",
+            "include/open62541/client_config_default.h",
+            "include/open62541/client_highlevel.h",
+            "include/open62541/client_highlevel_async.h",
+            "include/open62541/client_subscriptions.h",
+            "include/open62541/common.h",
+            "include/open62541/config.h",
+            "include/open62541/nodeids.h",
+            "include/open62541/plugin/accesscontrol.h",
+            "include/open62541/plugin/accesscontrol_default.h",
+            "include/open62541/plugin/certificategroup.h",
+            "include/open62541/plugin/certificategroup_default.h",
+            "include/open62541/plugin/create_certificate.h",
+            "include/open62541/plugin/eventloop.h",
+            "include/open62541/plugin/historydata/history_data_backend.h",
+            "include/open62541/plugin/historydata/history_data_backend_memory.h",
+            "include/open62541/plugin/historydata/history_data_gathering.h",
+            "include/open62541/plugin/historydata/history_data_gathering_default.h",
+            "include/open62541/plugin/historydata/history_database_default.h",
+            "include/open62541/plugin/historydatabase.h",
+            "include/open62541/plugin/log.h",
+            "include/open62541/plugin/log_stdout.h",
+            "include/open62541/plugin/log_syslog.h",
+            "include/open62541/plugin/nodestore.h",
+            "include/open62541/plugin/nodestore_default.h",
+            "include/open62541/plugin/securitypolicy.h",
+            "include/open62541/plugin/securitypolicy_default.h",
+            "include/open62541/pubsub.h",
+            "include/open62541/server.h",
+            "include/open62541/server_config_default.h",
+            "include/open62541/server_config_file_based.h",
+            "include/open62541/server_pubsub.h",
+            "include/open62541/statuscodes.h",
+            "include/open62541/types.h",
+            "include/open62541/types_generated.h",
+            "include/open62541/util.h",
+            "lib/cmake/open62541/open62541Config.cmake",
+            "lib/cmake/open62541/open62541ConfigVersion.cmake",
+            "lib/cmake/open62541/open62541Macros.cmake",
+            "lib/cmake/open62541/open62541Targets-release.cmake",
+            "lib/cmake/open62541/open62541Targets.cmake",
+            "lib/libopen62541.1.5.8.dylib",
+            "lib/libopen62541.1.5.dylib",
+            "lib/libopen62541.dylib",
+            "sbom.spdx.json",
+            "share/open62541/certs/create_self-signed.py",
+            "share/open62541/certs/localhost.cnf",
+            "share/open62541/certs/localhost_ecc.cnf",
+            "share/open62541/generate_bsd.py",
+            "share/open62541/generate_datatypes.py",
+            "share/open62541/generate_nodeid_header.py",
+            "share/open62541/generate_statuscode_descriptions.py",
+            "share/open62541/nodeset_compiler/NodeID_NS0_Base.txt",
+            "share/open62541/nodeset_compiler/README.md",
+            "share/open62541/nodeset_compiler/__init__.py",
+            "share/open62541/nodeset_compiler/backend_graphviz.py",
+            "share/open62541/nodeset_compiler/backend_open62541.py",
+            "share/open62541/nodeset_compiler/datatypes.py",
+            "share/open62541/nodeset_compiler/nodes.py",
+            "share/open62541/nodeset_compiler/nodeset.py",
+            "share/open62541/nodeset_compiler/nodeset_compiler.py",
+            "share/open62541/nodeset_compiler/opaque_type_mapping.py",
+            "share/open62541/nodeset_compiler/type_parser.py",
+            "share/open62541/schema/NodeIds.csv",
+            "share/open62541/schema/Opc.Ua.NodeSet2.DiagnosticsMinimal.xml",
+            "share/open62541/schema/Opc.Ua.NodeSet2.EventsMinimal.xml",
+            "share/open62541/schema/Opc.Ua.NodeSet2.HistorizingMinimal.xml",
+            "share/open62541/schema/Opc.Ua.NodeSet2.Part8_Subset.xml",
+            "share/open62541/schema/Opc.Ua.NodeSet2.PubSubMinimal.xml",
+            "share/open62541/schema/Opc.Ua.NodeSet2.Reduced.xml",
+            "share/open62541/schema/Opc.Ua.Types.bsd",
+            "share/open62541/schema/StatusCode.csv"
+          ],
+          "installed_size": 8371479
+        }
+      }
+    }
+  }
+}
