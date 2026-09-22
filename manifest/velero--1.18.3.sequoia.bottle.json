@@ -1,0 +1,89 @@
+{
+  "velero": {
+    "formula": {
+      "name": "velero",
+      "pkg_version": "1.18.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/v/velero.rb",
+      "tap_git_path": "Formula/v/velero.rb",
+      "tap_git_revision": "ed7e41bc1d4ea55f28020f29d9ce7dccdb2a867c",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Disaster recovery for Kubernetes resources and persistent volumes",
+      "license": "Apache-2.0",
+      "homepage": "https://velero.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-22T11:37:11Z",
+      "tags": {
+        "sequoia": {
+          "filename": "velero-1.18.3.sequoia.bottle.tar.gz",
+          "local_filename": "velero--1.18.3.sequoia.bottle.tar.gz",
+          "sha256": "9c4815d82da7d73fd56aee8add1ce1b4245629bc2f7008f1ad9823aeb31fa183",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1788856422,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-velero-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/velero"
+          ],
+          "all_files": [
+            ".brew/velero.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/velero",
+            "etc/bash_completion.d/velero",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/velero.fish",
+            "share/zsh/site-functions/_velero"
+          ],
+          "installed_size": 104508980
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "netcode": {
+    "formula": {
+      "name": "netcode",
+      "pkg_version": "1.4.8",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/n/netcode.rb",
+      "tap_git_path": "Formula/n/netcode.rb",
+      "tap_git_revision": "ed7e41bc1d4ea55f28020f29d9ce7dccdb2a867c",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Secure client/server protocol for multiplayer games built on top of UDP",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/mas-bandwidth/netcode"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-22T10:18:15Z",
+      "tags": {
+        "sequoia": {
+          "filename": "netcode-1.4.8.sequoia.bottle.tar.gz",
+          "local_filename": "netcode--1.4.8.sequoia.bottle.tar.gz",
+          "sha256": "dbeccb0b8f6dccf6a171834a3990c003595bb456860ba450e24ae61b6c5771a0",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libnetcode.1.4.8.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789338420,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libsodium",
+                "version": "1.0.22",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.22",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-netcode-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/netcode.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENCE",
+            "README.md",
+            "include/netcode.h",
+            "lib/cmake/netcode/netcodeConfig.cmake",
+            "lib/cmake/netcode/netcodeConfigVersion.cmake",
+            "lib/cmake/netcode/netcodeTargets-release.cmake",
+            "lib/cmake/netcode/netcodeTargets.cmake",
+            "lib/libnetcode.1.4.8.dylib",
+            "lib/libnetcode.1.dylib",
+            "lib/libnetcode.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 106308
+        }
+      }
+    }
+  }
+}

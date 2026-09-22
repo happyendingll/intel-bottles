@@ -1,0 +1,255 @@
+{
+  "epic5": {
+    "formula": {
+      "name": "epic5",
+      "pkg_version": "3.0.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/e/epic5.rb",
+      "tap_git_path": "Formula/e/epic5.rb",
+      "tap_git_revision": "ed7e41bc1d4ea55f28020f29d9ce7dccdb2a867c",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Enhanced, programmable IRC client",
+      "license": "BSD-3-Clause",
+      "homepage": "https://www.epicsol.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-22T09:12:41Z",
+      "tags": {
+        "sequoia": {
+          "filename": "epic5-3.0.3.sequoia.bottle.tar.gz",
+          "local_filename": "epic5--3.0.3.sequoia.bottle.tar.gz",
+          "sha256": "e9411e19e2c7e0749a3f6ea15b08fca341f33ceb3d4e13187621cfe83b09c2d4",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "share/man/man1/epic5.1"
+            ],
+            "linkage_files": [
+              "bin/epic5-2157",
+              "libexec/epic5-wserv4"
+            ],
+            "binary_relocation_files": [
+              "bin/epic5-2157"
+            ],
+            "source_modified_time": 1740706518,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/epic5-2157",
+              "string": "/usr/local/Cellar/epic5/3.0.3/share/epic5/",
+              "offset": 683053
+            },
+            {
+              "path": "bin/epic5-2157",
+              "string": "/usr/local/Cellar/epic5/3.0.3/libexec/epic5-wserv4",
+              "offset": 736202
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-epic5"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-epic5-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/epic5-2157",
+            "bin/epic5"
+          ],
+          "all_files": [
+            ".brew/epic5.rb",
+            "COPYRIGHT",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/epic5",
+            "bin/epic5-2157",
+            "libexec/epic5-wserv4",
+            "sbom.spdx.json",
+            "share/epic5/script/2.8script",
+            "share/epic5/script/activity",
+            "share/epic5/script/addset",
+            "share/epic5/script/alloc_dump_summary.sh",
+            "share/epic5/script/altchan",
+            "share/epic5/script/ambig",
+            "share/epic5/script/autoget",
+            "share/epic5/script/autojoin",
+            "share/epic5/script/autoquery",
+            "share/epic5/script/ban",
+            "share/epic5/script/builtins",
+            "share/epic5/script/capctl",
+            "share/epic5/script/chanmonitor",
+            "share/epic5/script/colors",
+            "share/epic5/script/commandqueues",
+            "share/epic5/script/country",
+            "share/epic5/script/ctcp",
+            "share/epic5/script/cycle",
+            "share/epic5/script/data_array",
+            "share/epic5/script/data_struct",
+            "share/epic5/script/dbmdump",
+            "share/epic5/script/dcc_ports",
+            "share/epic5/script/debug.irc",
+            "share/epic5/script/debugwin",
+            "share/epic5/script/dump",
+            "share/epic5/script/edit_topic",
+            "share/epic5/script/epic-crypt-gpg",
+            "share/epic5/script/epic-crypt-gpg-aa",
+            "share/epic5/script/epic.py",
+            "share/epic5/script/epiclogo",
+            "share/epic5/script/epicrc.example",
+            "share/epic5/script/epicsol.txt",
+            "share/epic5/script/files",
+            "share/epic5/script/find_ssl_root_certs",
+            "share/epic5/script/floodprot",
+            "share/epic5/script/functions",
+            "share/epic5/script/global",
+            "share/epic5/script/grep",
+            "share/epic5/script/guh",
+            "share/epic5/script/help",
+            "share/epic5/script/help.irc",
+            "share/epic5/script/highlight",
+            "share/epic5/script/history",
+            "share/epic5/script/history.rb",
+            "share/epic5/script/hold_mode",
+            "share/epic5/script/idlealert",
+            "share/epic5/script/ison",
+            "share/epic5/script/layout",
+            "share/epic5/script/less",
+            "share/epic5/script/less-pipe",
+            "share/epic5/script/loadformats",
+            "share/epic5/script/local.examp",
+            "share/epic5/script/locale",
+            "share/epic5/script/logman",
+            "share/epic5/script/mail",
+            "share/epic5/script/man",
+            "share/epic5/script/map",
+            "share/epic5/script/massmode",
+            "share/epic5/script/meta-compat",
+            "share/epic5/script/motd",
+            "share/epic5/script/netsplit",
+            "share/epic5/script/new_lastlog",
+            "share/epic5/script/newaway",
+            "share/epic5/script/newnick",
+            "share/epic5/script/nickcomp",
+            "share/epic5/script/nopaste",
+            "share/epic5/script/notify",
+            "share/epic5/script/paste",
+            "share/epic5/script/pipe",
+            "share/epic5/script/python",
+            "share/epic5/script/reconnect",
+            "share/epic5/script/reconnect.old",
+            "share/epic5/script/rejoin",
+            "share/epic5/script/renumber",
+            "share/epic5/script/revdcc",
+            "share/epic5/script/sasl_auth",
+            "share/epic5/script/sasl_external",
+            "share/epic5/script/sasl_nistp256",
+            "share/epic5/script/save",
+            "share/epic5/script/scan",
+            "share/epic5/script/screen",
+            "share/epic5/script/screen.e",
+            "share/epic5/script/set_color",
+            "share/epic5/script/setmail",
+            "share/epic5/script/shortener.py",
+            "share/epic5/script/shorturl.irc",
+            "share/epic5/script/slowcat",
+            "share/epic5/script/snip",
+            "share/epic5/script/speak.irc",
+            "share/epic5/script/sping",
+            "share/epic5/script/suppressmotd",
+            "share/epic5/script/tabkey.ce",
+            "share/epic5/script/tabkey.jm",
+            "share/epic5/script/tabkey.sjh",
+            "share/epic5/script/tmux_away",
+            "share/epic5/script/topicbar",
+            "share/epic5/script/topicbar.bj",
+            "share/epic5/script/url.irc",
+            "share/epic5/script/userlist",
+            "share/epic5/script/utime",
+            "share/epic5/script/xmsglog",
+            "share/man/man1/epic5.1"
+          ],
+          "installed_size": 1536166
+        }
+      }
+    }
+  }
+}

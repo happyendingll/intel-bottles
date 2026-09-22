@@ -1,0 +1,264 @@
+{
+  "joyce": {
+    "formula": {
+      "name": "joyce",
+      "pkg_version": "2.4.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/j/joyce.rb",
+      "tap_git_path": "Formula/j/joyce.rb",
+      "tap_git_revision": "ed7e41bc1d4ea55f28020f29d9ce7dccdb2a867c",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Emulates the Amstrad PCW on Unix, Windows and macOS",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://www.seasip.info/Unix/Joyce/index.html"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-22T09:37:08Z",
+      "tags": {
+        "sequoia": {
+          "filename": "joyce-2.4.2.sequoia.bottle.tar.gz",
+          "local_filename": "joyce--2.4.2.sequoia.bottle.tar.gz",
+          "sha256": "b2b7453d2dc9d567403973fe2fac00a443477cc5c3724329a3a85c39f064bc77",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/dskconv",
+              "bin/dsklabel",
+              "bin/lsgotek",
+              "bin/xanne",
+              "bin/xjoyce"
+            ],
+            "binary_relocation_files": [
+              "bin/xanne",
+              "bin/xjoyce"
+            ],
+            "source_modified_time": 1684686263,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libdsk",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.4.2",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sdl3",
+                "version": "3.4.16",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.16",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sdl2-compat",
+                "version": "2.32.72",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.32.72",
+                "declared_directly": false
+              },
+              {
+                "full_name": "sdl12-compat",
+                "version": "1.2.76",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.2.76",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/xjoyce",
+              "string": "/usr/local/Cellar/joyce/2.4.2/share/Joyce",
+              "offset": 687112
+            },
+            {
+              "path": "bin/xanne",
+              "string": "/usr/local/Cellar/joyce/2.4.2/share/Joyce",
+              "offset": 652744
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+              "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+              "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "name": "libpng",
+                "versionInfo": "1.6.58",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libpng-1.6.58.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a6af06c61f8385b8e4cc0e685dc3a4ab7bd964e28493a94a2d0833a3e7566a2c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "name": "sdl3",
+                "versionInfo": "3.4.16",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/sdl3-3.4.16.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9dc29b325dcf7a0acfacd6fb415251792750b219a5db765624514ddc185f438d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl3@3.4.16",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "name": "sdl2-compat",
+                "versionInfo": "2.32.72",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/sdl2-compat-2.32.72.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "95416aee23feb0d1bc449a7112554d787af252beed7753dbedbd603d4ebd517c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl2-compat@2.32.72",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-joyce"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-joyce"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-joyce"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-joyce-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/xjoyce",
+            "bin/xanne",
+            "bin/lsgotek",
+            "bin/dskconv",
+            "bin/dsklabel"
+          ],
+          "all_files": [
+            ".brew/joyce.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYING.LIB",
+            "COPYING.txt",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "TODO",
+            "bin/dskconv",
+            "bin/dsklabel",
+            "bin/lsgotek",
+            "bin/xanne",
+            "bin/xjoyce",
+            "include/765.h",
+            "include/cpmredir.h",
+            "include/liblink.h",
+            "lib/lib765.a",
+            "lib/libcpmredir.a",
+            "lib/liblink.a",
+            "sbom.spdx.json",
+            "share/Joyce/16power2.bmp",
+            "share/Joyce/16power3.bmp",
+            "share/Joyce/Boot/bootfile.emj",
+            "share/Joyce/Disks/utils.dsk",
+            "share/Joyce/Disks/utils16.dsk",
+            "share/Joyce/pcw.bmp",
+            "share/Joyce/pcw16.bmp",
+            "share/Joyce/pcwkey.bmp"
+          ],
+          "installed_size": 4490827
+        }
+      }
+    }
+  }
+}
