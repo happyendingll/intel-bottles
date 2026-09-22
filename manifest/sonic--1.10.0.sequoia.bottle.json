@@ -1,0 +1,95 @@
+{
+  "sonic": {
+    "formula": {
+      "name": "sonic",
+      "pkg_version": "1.10.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sonic.rb",
+      "tap_git_path": "Formula/s/sonic.rb",
+      "tap_git_revision": "361bc02a16cea3cabd8ad7f10a11a5f744e3c1a8",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Fast, lightweight & schema-less search backend",
+      "license": "MPL-2.0",
+      "homepage": "https://github.com/valeriansaliou/sonic"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-21T22:30:15Z",
+      "tags": {
+        "sequoia": {
+          "filename": "sonic-1.10.0.sequoia.bottle.tar.gz",
+          "local_filename": "sonic--1.10.0.sequoia.bottle.tar.gz",
+          "sha256": "1ea27b3e004d49472398df128051d10e9d4c3151488931ec8756975d89360127",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              ".bottle/etc/sonic.cfg",
+              "sh.brew.sonic.plist",
+              "sh.brew.sonic.service"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789999483,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-sonic-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/sonic"
+          ],
+          "all_files": [
+            ".bottle/etc/sonic.cfg",
+            ".brew/sonic.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/sonic",
+            "sbom.spdx.json",
+            "sh.brew.sonic.plist",
+            "sh.brew.sonic.service"
+          ],
+          "installed_size": 15952283
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,705 @@
+{
+  "djlint": {
+    "formula": {
+      "name": "djlint",
+      "pkg_version": "1.46.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/djlint.rb",
+      "tap_git_path": "Formula/d/djlint.rb",
+      "tap_git_revision": "361bc02a16cea3cabd8ad7f10a11a5f744e3c1a8",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Lint & Format HTML Templates",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://djlint.com"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-21T20:23:06Z",
+      "tags": {
+        "sequoia": {
+          "filename": "djlint-1.46.2.sequoia.bottle.tar.gz",
+          "local_filename": "djlint--1.46.2.sequoia.bottle.tar.gz",
+          "sha256": "467e99928fedb2117db2d0a50a000cc94449d48c8a34df45296c6f2c15432f71",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "libexec/bin/css-beautify",
+              "libexec/bin/djlint",
+              "libexec/bin/editorconfig",
+              "libexec/bin/js-beautify",
+              "libexec/bin/pyjson5",
+              "libexec/pyvenv.cfg"
+            ],
+            "linkage_files": [
+              "libexec/lib/python3.14/site-packages/yaml/_yaml.cpython-314-darwin.so"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789863366,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libyaml",
+                "version": "0.2.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.2.5",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.14",
+                "version": "3.14.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.14.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "name": "python@3.14",
+                "versionInfo": "3.14.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-djlint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-djlint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-djlint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-djlint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-djlint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-djlint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-djlint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-djlint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-djlint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-djlint-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/djlint"
+          ],
+          "all_files": [
+            ".brew/djlint.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/djlint",
+            "etc/bash_completion.d/djlint",
+            "libexec/.gitignore",
+            "libexec/bin/css-beautify",
+            "libexec/bin/djlint",
+            "libexec/bin/editorconfig",
+            "libexec/bin/js-beautify",
+            "libexec/bin/pyjson5",
+            "libexec/bin/python",
+            "libexec/bin/python3",
+            "libexec/bin/python3.14",
+            "libexec/bin/𝜋thon",
+            "libexec/lib/python3.14/site-packages/_yaml/__init__.py",
+            "libexec/lib/python3.14/site-packages/click/__init__.py",
+            "libexec/lib/python3.14/site-packages/click/_compat.py",
+            "libexec/lib/python3.14/site-packages/click/_termui_impl.py",
+            "libexec/lib/python3.14/site-packages/click/_textwrap.py",
+            "libexec/lib/python3.14/site-packages/click/_utils.py",
+            "libexec/lib/python3.14/site-packages/click/_winconsole.py",
+            "libexec/lib/python3.14/site-packages/click/core.py",
+            "libexec/lib/python3.14/site-packages/click/decorators.py",
+            "libexec/lib/python3.14/site-packages/click/exceptions.py",
+            "libexec/lib/python3.14/site-packages/click/formatting.py",
+            "libexec/lib/python3.14/site-packages/click/globals.py",
+            "libexec/lib/python3.14/site-packages/click/parser.py",
+            "libexec/lib/python3.14/site-packages/click/py.typed",
+            "libexec/lib/python3.14/site-packages/click/shell_completion.py",
+            "libexec/lib/python3.14/site-packages/click/termui.py",
+            "libexec/lib/python3.14/site-packages/click/testing.py",
+            "libexec/lib/python3.14/site-packages/click/types.py",
+            "libexec/lib/python3.14/site-packages/click/utils.py",
+            "libexec/lib/python3.14/site-packages/click-8.5.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/click-8.5.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/click-8.5.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/click-8.5.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/click-8.5.0.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/cssbeautifier/__init__.py",
+            "libexec/lib/python3.14/site-packages/cssbeautifier/__version__.py",
+            "libexec/lib/python3.14/site-packages/cssbeautifier/_main.py",
+            "libexec/lib/python3.14/site-packages/cssbeautifier/css/__init__.py",
+            "libexec/lib/python3.14/site-packages/cssbeautifier/css/beautifier.py",
+            "libexec/lib/python3.14/site-packages/cssbeautifier/css/options.py",
+            "libexec/lib/python3.14/site-packages/cssbeautifier/tests/__init__.py",
+            "libexec/lib/python3.14/site-packages/cssbeautifier/tests/generated/__init__.py",
+            "libexec/lib/python3.14/site-packages/cssbeautifier/tests/generated/tests.py",
+            "libexec/lib/python3.14/site-packages/cssbeautifier-2.0.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/cssbeautifier-2.0.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/cssbeautifier-2.0.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/cssbeautifier-2.0.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/cssbeautifier-2.0.3.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/cssbeautifier-2.0.3.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/djlint/__init__.py",
+            "libexec/lib/python3.14/site-packages/djlint/__main__.py",
+            "libexec/lib/python3.14/site-packages/djlint/const.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/__init__.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/attribute_values.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/attributes.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/beautifier.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/class_attributes.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/compress.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/condense.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/css.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/endblocks.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/entities.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/expand.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/indent.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/js.py",
+            "libexec/lib/python3.14/site-packages/djlint/formatter/tokenizer.py",
+            "libexec/lib/python3.14/site-packages/djlint/github_output.py",
+            "libexec/lib/python3.14/site-packages/djlint/helpers.py",
+            "libexec/lib/python3.14/site-packages/djlint/lint.py",
+            "libexec/lib/python3.14/site-packages/djlint/output.py",
+            "libexec/lib/python3.14/site-packages/djlint/reformat.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H009.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H012.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H014.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H016.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H022.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H025.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H036.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H037.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H041.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H042.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H044.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H047.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H048.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H051.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H053.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H054.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/H057.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/T001.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/T002.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/T003.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/T027.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/T038.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/T039.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/T041.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/T042.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/T043.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/T044.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/T045.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules/__init__.py",
+            "libexec/lib/python3.14/site-packages/djlint/rules.yaml",
+            "libexec/lib/python3.14/site-packages/djlint/sarif_output.py",
+            "libexec/lib/python3.14/site-packages/djlint/settings.py",
+            "libexec/lib/python3.14/site-packages/djlint/src.py",
+            "libexec/lib/python3.14/site-packages/djlint/types.pyi",
+            "libexec/lib/python3.14/site-packages/djlint-1.46.2.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/djlint-1.46.2.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/djlint-1.46.2.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/djlint-1.46.2.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/djlint-1.46.2.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/djlint-1.46.2.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/editorconfig/__init__.py",
+            "libexec/lib/python3.14/site-packages/editorconfig/__main__.py",
+            "libexec/lib/python3.14/site-packages/editorconfig/exceptions.py",
+            "libexec/lib/python3.14/site-packages/editorconfig/fnmatch.py",
+            "libexec/lib/python3.14/site-packages/editorconfig/handler.py",
+            "libexec/lib/python3.14/site-packages/editorconfig/ini.py",
+            "libexec/lib/python3.14/site-packages/editorconfig/py.typed",
+            "libexec/lib/python3.14/site-packages/editorconfig/version.py",
+            "libexec/lib/python3.14/site-packages/editorconfig/versiontools.py",
+            "libexec/lib/python3.14/site-packages/editorconfig-0.17.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/editorconfig-0.17.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/editorconfig-0.17.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/editorconfig-0.17.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/editorconfig-0.17.1.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/editorconfig-0.17.1.dist-info/licenses/COPYING",
+            "libexec/lib/python3.14/site-packages/editorconfig-0.17.1.dist-info/licenses/LICENSE.BSD",
+            "libexec/lib/python3.14/site-packages/editorconfig-0.17.1.dist-info/licenses/LICENSE.PSF",
+            "libexec/lib/python3.14/site-packages/editorconfig-0.17.1.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/__init__.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/__version__.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/cli/__init__.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/core/__init__.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/core/directives.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/core/inputscanner.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/core/options.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/core/output.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/core/pattern.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/core/templatablepattern.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/core/token.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/core/tokenizer.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/core/tokenstream.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/core/whitespacepattern.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/javascript/__init__.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/javascript/acorn.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/javascript/beautifier.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/javascript/options.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/javascript/tokenizer.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/tests/__init__.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/tests/generated/__init__.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/tests/generated/tests.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/tests/testindentation.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/unpackers/__init__.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/unpackers/evalbased.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/unpackers/javascriptobfuscator.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/unpackers/myobfuscate.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/unpackers/packer.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/unpackers/tests/__init__.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/unpackers/tests/testjavascriptobfuscator.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/unpackers/tests/testmyobfuscate.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/unpackers/tests/testpacker.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/unpackers/tests/testurlencode.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier/unpackers/urlencode.py",
+            "libexec/lib/python3.14/site-packages/jsbeautifier-2.0.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/jsbeautifier-2.0.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/jsbeautifier-2.0.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/jsbeautifier-2.0.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/jsbeautifier-2.0.3.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/jsbeautifier-2.0.3.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/json5/__init__.py",
+            "libexec/lib/python3.14/site-packages/json5/__main__.py",
+            "libexec/lib/python3.14/site-packages/json5/host.py",
+            "libexec/lib/python3.14/site-packages/json5/lib.py",
+            "libexec/lib/python3.14/site-packages/json5/parser.py",
+            "libexec/lib/python3.14/site-packages/json5/py.typed",
+            "libexec/lib/python3.14/site-packages/json5/tool.py",
+            "libexec/lib/python3.14/site-packages/json5/version.py",
+            "libexec/lib/python3.14/site-packages/json5-0.15.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/json5-0.15.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/json5-0.15.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/json5-0.15.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/json5-0.15.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/json5-0.15.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/json5-0.15.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/pathspec/__init__.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/__init__.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/_utils.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/agg.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/hyperscan/__init__.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/hyperscan/_base.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/hyperscan/base.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/hyperscan/gitignore.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/hyperscan/pathspec.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/re2/__init__.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/re2/_base.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/re2/base.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/re2/gitignore.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/re2/pathspec.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/simple/__init__.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/simple/gitignore.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_backends/simple/pathspec.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_meta.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_typing.py",
+            "libexec/lib/python3.14/site-packages/pathspec/_version.py",
+            "libexec/lib/python3.14/site-packages/pathspec/backend.py",
+            "libexec/lib/python3.14/site-packages/pathspec/gitignore.py",
+            "libexec/lib/python3.14/site-packages/pathspec/pathspec.py",
+            "libexec/lib/python3.14/site-packages/pathspec/pattern.py",
+            "libexec/lib/python3.14/site-packages/pathspec/patterns/__init__.py",
+            "libexec/lib/python3.14/site-packages/pathspec/patterns/gitignore/__init__.py",
+            "libexec/lib/python3.14/site-packages/pathspec/patterns/gitignore/base.py",
+            "libexec/lib/python3.14/site-packages/pathspec/patterns/gitignore/basic.py",
+            "libexec/lib/python3.14/site-packages/pathspec/patterns/gitignore/spec.py",
+            "libexec/lib/python3.14/site-packages/pathspec/patterns/gitwildmatch.py",
+            "libexec/lib/python3.14/site-packages/pathspec/py.typed",
+            "libexec/lib/python3.14/site-packages/pathspec/util.py",
+            "libexec/lib/python3.14/site-packages/pathspec-1.1.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/pathspec-1.1.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/pathspec-1.1.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/pathspec-1.1.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/pathspec-1.1.1.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/regex/__init__.py",
+            "libexec/lib/python3.14/site-packages/regex/_main.py",
+            "libexec/lib/python3.14/site-packages/regex/_regex.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/regex/_regex_core.py",
+            "libexec/lib/python3.14/site-packages/regex/tests/test_regex.py",
+            "libexec/lib/python3.14/site-packages/regex-2026.9.10.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/regex-2026.9.10.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/regex-2026.9.10.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/regex-2026.9.10.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/regex-2026.9.10.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/regex-2026.9.10.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/yaml/__init__.py",
+            "libexec/lib/python3.14/site-packages/yaml/_yaml.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/yaml/composer.py",
+            "libexec/lib/python3.14/site-packages/yaml/constructor.py",
+            "libexec/lib/python3.14/site-packages/yaml/cyaml.py",
+            "libexec/lib/python3.14/site-packages/yaml/dumper.py",
+            "libexec/lib/python3.14/site-packages/yaml/emitter.py",
+            "libexec/lib/python3.14/site-packages/yaml/error.py",
+            "libexec/lib/python3.14/site-packages/yaml/events.py",
+            "libexec/lib/python3.14/site-packages/yaml/loader.py",
+            "libexec/lib/python3.14/site-packages/yaml/nodes.py",
+            "libexec/lib/python3.14/site-packages/yaml/parser.py",
+            "libexec/lib/python3.14/site-packages/yaml/reader.py",
+            "libexec/lib/python3.14/site-packages/yaml/representer.py",
+            "libexec/lib/python3.14/site-packages/yaml/resolver.py",
+            "libexec/lib/python3.14/site-packages/yaml/scanner.py",
+            "libexec/lib/python3.14/site-packages/yaml/serializer.py",
+            "libexec/lib/python3.14/site-packages/yaml/tokens.py",
+            "libexec/pyvenv.cfg",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/djlint.fish",
+            "share/zsh/site-functions/_djlint"
+          ],
+          "installed_size": 3852681
+        }
+      }
+    }
+  }
+}

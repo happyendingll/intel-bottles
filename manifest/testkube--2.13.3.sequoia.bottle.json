@@ -1,0 +1,137 @@
+{
+  "testkube": {
+    "formula": {
+      "name": "testkube",
+      "pkg_version": "2.13.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/testkube.rb",
+      "tap_git_path": "Formula/t/testkube.rb",
+      "tap_git_revision": "361bc02a16cea3cabd8ad7f10a11a5f744e3c1a8",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Kubernetes-native framework for test definition and execution",
+      "license": "MIT",
+      "homepage": "https://testkube.io"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-21T22:59:18Z",
+      "tags": {
+        "sequoia": {
+          "filename": "testkube-2.13.3.sequoia.bottle.tar.gz",
+          "local_filename": "testkube--2.13.3.sequoia.bottle.tar.gz",
+          "sha256": "034af1d15aa0882e036dbbc0302c31078b12e308fa9096780355f6c8dbced6d4",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789997915,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "helm",
+                "version": "4.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.3.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "kubernetes-cli",
+                "version": "1.37.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.37.0",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-helm-4.3.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-helm-4.3.0",
+                "name": "helm",
+                "versionInfo": "4.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/helm-4.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ee287c12e40a182ae560f04749c6d5d3e5138e5f8df1f4c36964040c863976e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/helm@4.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-helm-4.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-testkube"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-testkube-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/testkube",
+            "bin/kubectl-testkube"
+          ],
+          "all_files": [
+            ".brew/testkube.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/kubectl-testkube",
+            "bin/testkube",
+            "etc/bash_completion.d/kubectl-testkube",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/kubectl-testkube.fish",
+            "share/pwsh/completions/_kubectl-testkube.ps1",
+            "share/zsh/site-functions/_kubectl-testkube"
+          ],
+          "installed_size": 71862203
+        }
+      }
+    }
+  }
+}
