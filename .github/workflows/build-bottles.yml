@@ -131,6 +131,7 @@ jobs:
       formulae: ${{ needs.plan.outputs.wave0 }}
       stage: wave0
       allow_failure: true
+      llvm_single_stage: true
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
@@ -145,6 +146,7 @@ jobs:
       formulae: ${{ needs.plan.outputs.wave1 }}
       stage: wave1
       allow_failure: true
+      llvm_single_stage: true
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
@@ -157,6 +159,7 @@ jobs:
       formulae: ${{ needs.plan.outputs.wave2 }}
       stage: wave2
       allow_failure: true
+      llvm_single_stage: true
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
@@ -169,6 +172,7 @@ jobs:
       formulae: ${{ needs.plan.outputs.wave3 }}
       stage: wave3
       allow_failure: true
+      llvm_single_stage: true
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
@@ -181,6 +185,7 @@ jobs:
       formulae: ${{ needs.plan.outputs.wave4 }}
       stage: wave4
       allow_failure: true
+      llvm_single_stage: true
     secrets:
       FORK_TOKEN: ${{ secrets.FORK_TOKEN }}
 
