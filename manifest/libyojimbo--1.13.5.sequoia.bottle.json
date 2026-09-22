@@ -1,0 +1,211 @@
+{
+  "libyojimbo": {
+    "formula": {
+      "name": "libyojimbo",
+      "pkg_version": "1.13.5",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libyojimbo.rb",
+      "tap_git_path": "Formula/lib/libyojimbo.rb",
+      "tap_git_revision": "d76e298e315dc9d4bcf44e26c521abca44e990a1",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Secure client/server network protocol library for multiplayer games",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/mas-bandwidth/yojimbo"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-22T11:52:53Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libyojimbo-1.13.5.sequoia.bottle.tar.gz",
+          "local_filename": "libyojimbo--1.13.5.sequoia.bottle.tar.gz",
+          "sha256": "5435347a17d2893a31d6ae7b5e0fa53db5183c25d0a250b5b634f1852558dcbc",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libyojimbo.1.13.5.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789345200,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libsodium",
+                "version": "1.0.22",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.22",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "netcode",
+                "version": "1.4.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.8",
+                "declared_directly": true
+              },
+              {
+                "full_name": "reliable",
+                "version": "1.4.5",
+                "revision": 0,
+                "pkg_version": "1.4.5",
+                "declared_directly": true
+              },
+              {
+                "full_name": "serialize",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.17.0",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-netcode-1.4.8",
+              "SPDXRef-Package-SPDXRef-serialize-1.17.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-netcode-1.4.8",
+                "name": "netcode",
+                "versionInfo": "1.4.8",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/netcode-1.4.8.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "dbeccb0b8f6dccf6a171834a3990c003595bb456860ba450e24ae61b6c5771a0"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/netcode@1.4.8",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-serialize-1.17.0",
+                "name": "serialize",
+                "versionInfo": "1.17.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/serialize/blobs/sha256:33cbadc42bfb4a33191b6b53440906063a85e2f11bfd711bd5400224e1fa4b90",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "33cbadc42bfb4a33191b6b53440906063a85e2f11bfd711bd5400224e1fa4b90"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/serialize@1.17.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-netcode-1.4.8",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libyojimbo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-serialize-1.17.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libyojimbo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libyojimbo-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libyojimbo.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENCE",
+            "README.md",
+            "include/tlsf.h",
+            "include/yojimbo.h",
+            "include/yojimbo_adapter.h",
+            "include/yojimbo_address.h",
+            "include/yojimbo_allocator.h",
+            "include/yojimbo_base_client.h",
+            "include/yojimbo_base_server.h",
+            "include/yojimbo_bit_array.h",
+            "include/yojimbo_channel.h",
+            "include/yojimbo_client.h",
+            "include/yojimbo_client_interface.h",
+            "include/yojimbo_config.h",
+            "include/yojimbo_connection.h",
+            "include/yojimbo_constants.h",
+            "include/yojimbo_message.h",
+            "include/yojimbo_network_info.h",
+            "include/yojimbo_network_simulator.h",
+            "include/yojimbo_platform.h",
+            "include/yojimbo_queue.h",
+            "include/yojimbo_reliable_ordered_channel.h",
+            "include/yojimbo_sequence_buffer.h",
+            "include/yojimbo_serialize.h",
+            "include/yojimbo_server.h",
+            "include/yojimbo_server_interface.h",
+            "include/yojimbo_unreliable_unordered_channel.h",
+            "include/yojimbo_utils.h",
+            "lib/cmake/Yojimbo/YojimboConfig.cmake",
+            "lib/cmake/Yojimbo/YojimboConfigVersion.cmake",
+            "lib/cmake/Yojimbo/YojimboDependencies.cmake",
+            "lib/cmake/Yojimbo/YojimboSystemDeps.cmake",
+            "lib/cmake/Yojimbo/YojimboTargets-release.cmake",
+            "lib/cmake/Yojimbo/YojimboTargets.cmake",
+            "lib/cmake/Yojimbo/dependencies.manifest",
+            "lib/libyojimbo.1.13.5.dylib",
+            "lib/libyojimbo.1.dylib",
+            "lib/libyojimbo.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 390266
+        }
+      }
+    }
+  }
+}
