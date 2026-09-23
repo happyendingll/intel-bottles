@@ -1,0 +1,301 @@
+{
+  "libxo": {
+    "formula": {
+      "name": "libxo",
+      "pkg_version": "2.3.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libxo.rb",
+      "tap_git_path": "Formula/lib/libxo.rb",
+      "tap_git_revision": "a21abf44a532aaa71cc68b1ad4822746aa1017df",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Allows an application to generate text, XML, JSON, and HTML output",
+      "license": "BSD-2-Clause",
+      "homepage": "https://juniper.github.io/libxo/libxo-manual.html"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-23T01:31:03Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libxo-2.3.0.sequoia.bottle.tar.gz",
+          "local_filename": "libxo--2.3.0.sequoia.bottle.tar.gz",
+          "sha256": "7a508b13b26461e30378619ecc736399c991fcba1a190af880b05344ee2a15a5",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "bin/libxo-config",
+              "bin/xohtml",
+              "lib/pkgconfig/libxo.pc"
+            ],
+            "linkage_files": [
+              "bin/xo",
+              "bin/xo-logger",
+              "bin/xopo",
+              "lib/libxo/encoder/libenc_cbor.0.dylib",
+              "lib/libxo/encoder/libenc_csv.0.dylib",
+              "lib/libxo/encoder/libenc_rtoon.0.dylib",
+              "lib/libxo/encoder/libenc_test.0.dylib",
+              "lib/libxo.0.dylib",
+              "lib/libxo_format.0.dylib"
+            ],
+            "binary_relocation_files": [
+              "lib/libxo.0.dylib",
+              "lib/libxo.a"
+            ],
+            "source_modified_time": 1789751215,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/libxo.0.dylib",
+              "string": "/usr/local/Cellar/libxo/2.3.0/lib/libxo/encoder",
+              "offset": 108827
+            },
+            {
+              "path": "lib/libxo.a",
+              "string": "/usr/local/Cellar/libxo/2.3.0/lib/libxo/encoder",
+              "offset": 133297
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libxo-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/xo",
+            "bin/xolint",
+            "bin/xo-logger",
+            "bin/xopo",
+            "bin/xohtml",
+            "bin/libxo-config"
+          ],
+          "all_files": [
+            ".brew/libxo.rb",
+            "Copyright",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/libxo-config",
+            "bin/xo",
+            "bin/xo-logger",
+            "bin/xohtml",
+            "bin/xolint",
+            "bin/xopo",
+            "include/libxo/xo.h",
+            "include/libxo/xo_encoder.h",
+            "lib/libxo/encoder/cbor.enc",
+            "lib/libxo/encoder/csv.enc",
+            "lib/libxo/encoder/libenc_cbor.0.dylib",
+            "lib/libxo/encoder/libenc_cbor.a",
+            "lib/libxo/encoder/libenc_cbor.dylib",
+            "lib/libxo/encoder/libenc_csv.0.dylib",
+            "lib/libxo/encoder/libenc_csv.a",
+            "lib/libxo/encoder/libenc_csv.dylib",
+            "lib/libxo/encoder/libenc_rtoon.0.dylib",
+            "lib/libxo/encoder/libenc_rtoon.a",
+            "lib/libxo/encoder/libenc_rtoon.dylib",
+            "lib/libxo/encoder/libenc_test.0.dylib",
+            "lib/libxo/encoder/libenc_test.a",
+            "lib/libxo/encoder/libenc_test.dylib",
+            "lib/libxo/encoder/rtoon.enc",
+            "lib/libxo/encoder/test.enc",
+            "lib/libxo.0.dylib",
+            "lib/libxo.a",
+            "lib/libxo.dylib",
+            "lib/libxo_format.0.dylib",
+            "lib/libxo_format.a",
+            "lib/libxo_format.dylib",
+            "lib/pkgconfig/libxo.pc",
+            "sbom.spdx.json",
+            "share/doc/libxo/Copyright",
+            "share/libxo/xohtml.css",
+            "share/libxo/xohtml.js",
+            "share/man/man1/xo-logger.1",
+            "share/man/man1/xo.1",
+            "share/man/man1/xohtml.1",
+            "share/man/man1/xolint.1",
+            "share/man/man1/xopo.1",
+            "share/man/man3/libxo.3",
+            "share/man/man3/xo_add_filter.3",
+            "share/man/man3/xo_attr.3",
+            "share/man/man3/xo_create.3",
+            "share/man/man3/xo_emit.3",
+            "share/man/man3/xo_emit_err.3",
+            "share/man/man3/xo_err.3",
+            "share/man/man3/xo_error.3",
+            "share/man/man3/xo_finish.3",
+            "share/man/man3/xo_flush.3",
+            "share/man/man3/xo_is_emitting.3",
+            "share/man/man3/xo_map_add.3",
+            "share/man/man3/xo_message.3",
+            "share/man/man3/xo_no_setlocale.3",
+            "share/man/man3/xo_open_container.3",
+            "share/man/man3/xo_open_list.3",
+            "share/man/man3/xo_open_marker.3",
+            "share/man/man3/xo_parse_args.3",
+            "share/man/man3/xo_set_allocator.3",
+            "share/man/man3/xo_set_flags.3",
+            "share/man/man3/xo_set_info.3",
+            "share/man/man3/xo_set_options.3",
+            "share/man/man3/xo_set_style.3",
+            "share/man/man3/xo_set_syslog_enterprise_id.3",
+            "share/man/man3/xo_set_version.3",
+            "share/man/man3/xo_set_writer.3",
+            "share/man/man3/xo_syslog.3",
+            "share/man/man5/xo_format.5",
+            "share/man/man7/libxo.7",
+            "share/man/man7/xo_csv.7",
+            "share/man/man7/xo_options.7"
+          ],
+          "installed_size": 819560
+        }
+      }
+    }
+  }
+}

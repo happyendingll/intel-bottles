@@ -1,0 +1,216 @@
+{
+  "cln": {
+    "formula": {
+      "name": "cln",
+      "pkg_version": "1.3.7",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cln.rb",
+      "tap_git_path": "Formula/c/cln.rb",
+      "tap_git_revision": "a21abf44a532aaa71cc68b1ad4822746aa1017df",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Class Library for Numbers",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://www.ginac.de/CLN/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-23T00:58:30Z",
+      "tags": {
+        "sequoia": {
+          "filename": "cln-1.3.7.sequoia.bottle.tar.gz",
+          "local_filename": "cln--1.3.7.sequoia.bottle.tar.gz",
+          "sha256": "cbe231dd0550e1f912be0533fb94deeef426899d5975986a96fb83b0e6a0be25",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "lib/pkgconfig/cln.pc"
+            ],
+            "linkage_files": [
+              "bin/pi",
+              "lib/libcln.6.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1705915022,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cln"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-cln-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/pi"
+          ],
+          "all_files": [
+            ".brew/cln.rb",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "TODO",
+            "bin/pi",
+            "include/cln/GV.h",
+            "include/cln/GV_complex.h",
+            "include/cln/GV_integer.h",
+            "include/cln/GV_modinteger.h",
+            "include/cln/GV_number.h",
+            "include/cln/GV_rational.h",
+            "include/cln/GV_real.h",
+            "include/cln/SV.h",
+            "include/cln/SV_complex.h",
+            "include/cln/SV_integer.h",
+            "include/cln/SV_number.h",
+            "include/cln/SV_rational.h",
+            "include/cln/SV_real.h",
+            "include/cln/SV_ringelt.h",
+            "include/cln/V.h",
+            "include/cln/cln.h",
+            "include/cln/complex.h",
+            "include/cln/complex_class.h",
+            "include/cln/complex_io.h",
+            "include/cln/complex_ring.h",
+            "include/cln/condition.h",
+            "include/cln/config.h",
+            "include/cln/dfloat.h",
+            "include/cln/dfloat_class.h",
+            "include/cln/dfloat_io.h",
+            "include/cln/exception.h",
+            "include/cln/ffloat.h",
+            "include/cln/ffloat_class.h",
+            "include/cln/ffloat_io.h",
+            "include/cln/float.h",
+            "include/cln/float_class.h",
+            "include/cln/float_io.h",
+            "include/cln/floatformat.h",
+            "include/cln/host_cpu.h",
+            "include/cln/input.h",
+            "include/cln/integer.h",
+            "include/cln/integer_class.h",
+            "include/cln/integer_io.h",
+            "include/cln/integer_ring.h",
+            "include/cln/intparam.h",
+            "include/cln/io.h",
+            "include/cln/lfloat.h",
+            "include/cln/lfloat_class.h",
+            "include/cln/lfloat_io.h",
+            "include/cln/malloc.h",
+            "include/cln/modinteger.h",
+            "include/cln/modules.h",
+            "include/cln/null_ring.h",
+            "include/cln/number.h",
+            "include/cln/number_io.h",
+            "include/cln/numtheory.h",
+            "include/cln/object.h",
+            "include/cln/output.h",
+            "include/cln/proplist.h",
+            "include/cln/random.h",
+            "include/cln/rational.h",
+            "include/cln/rational_class.h",
+            "include/cln/rational_io.h",
+            "include/cln/rational_ring.h",
+            "include/cln/real.h",
+            "include/cln/real_class.h",
+            "include/cln/real_io.h",
+            "include/cln/real_ring.h",
+            "include/cln/ring.h",
+            "include/cln/sfloat.h",
+            "include/cln/sfloat_class.h",
+            "include/cln/sfloat_io.h",
+            "include/cln/string.h",
+            "include/cln/symbol.h",
+            "include/cln/timing.h",
+            "include/cln/types.h",
+            "include/cln/univpoly.h",
+            "include/cln/univpoly_complex.h",
+            "include/cln/univpoly_integer.h",
+            "include/cln/univpoly_modint.h",
+            "include/cln/univpoly_rational.h",
+            "include/cln/univpoly_real.h",
+            "include/cln/version.h",
+            "lib/libcln.6.dylib",
+            "lib/libcln.a",
+            "lib/libcln.dylib",
+            "lib/pkgconfig/cln.pc",
+            "sbom.spdx.json",
+            "share/info/cln.info",
+            "share/man/man1/pi.1"
+          ],
+          "installed_size": 6417017
+        }
+      }
+    }
+  }
+}

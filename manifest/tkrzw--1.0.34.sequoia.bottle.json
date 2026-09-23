@@ -1,0 +1,289 @@
+{
+  "tkrzw": {
+    "formula": {
+      "name": "tkrzw",
+      "pkg_version": "1.0.34",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/tkrzw.rb",
+      "tap_git_path": "Formula/t/tkrzw.rb",
+      "tap_git_revision": "a21abf44a532aaa71cc68b1ad4822746aa1017df",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Set of implementations of DBM",
+      "license": "Apache-2.0",
+      "homepage": "https://dbmx.net/tkrzw/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-23T02:31:38Z",
+      "tags": {
+        "sequoia": {
+          "filename": "tkrzw-1.0.34.sequoia.bottle.tar.gz",
+          "local_filename": "tkrzw--1.0.34.sequoia.bottle.tar.gz",
+          "sha256": "cc7faa8756c646161bb8c6a76df0c4634c18a19100303ee19652c6e48f6a4ee7",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "lib/pkgconfig/tkrzw.pc"
+            ],
+            "linkage_files": [
+              "bin/tkrzw_build_util",
+              "bin/tkrzw_dbm_perf",
+              "bin/tkrzw_dbm_tran",
+              "bin/tkrzw_dbm_util",
+              "bin/tkrzw_file_perf",
+              "bin/tkrzw_langc_check",
+              "bin/tkrzw_str_perf",
+              "bin/tkrzw_ulog_util",
+              "lib/libtkrzw.1.77.0.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/tkrzw_build_util"
+            ],
+            "source_modified_time": 1789907274,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/tkrzw_build_util",
+              "string": "/usr/local/Cellar/tkrzw/1.0.34/bin",
+              "offset": 20234
+            },
+            {
+              "path": "bin/tkrzw_build_util",
+              "string": "/usr/local/Cellar/tkrzw/1.0.34",
+              "offset": 20612
+            },
+            {
+              "path": "bin/tkrzw_build_util",
+              "string": "/usr/local/Cellar/tkrzw/1.0.34/include",
+              "offset": 20659
+            },
+            {
+              "path": "bin/tkrzw_build_util",
+              "string": "/usr/local/Cellar/tkrzw/1.0.34/lib",
+              "offset": 20710
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tkrzw"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tkrzw"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tkrzw"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-tkrzw-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/tkrzw_str_perf",
+            "bin/tkrzw_dbm_tran",
+            "bin/tkrzw_ulog_util",
+            "bin/tkrzw_file_perf",
+            "bin/tkrzw_langc_check",
+            "bin/tkrzw_dbm_perf",
+            "bin/tkrzw_dbm_util",
+            "bin/tkrzw_build_util"
+          ],
+          "all_files": [
+            ".brew/tkrzw.rb",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/tkrzw_build_util",
+            "bin/tkrzw_dbm_perf",
+            "bin/tkrzw_dbm_tran",
+            "bin/tkrzw_dbm_util",
+            "bin/tkrzw_file_perf",
+            "bin/tkrzw_langc_check",
+            "bin/tkrzw_str_perf",
+            "bin/tkrzw_ulog_util",
+            "include/tkrzw_cmd_util.h",
+            "include/tkrzw_compress.h",
+            "include/tkrzw_containers.h",
+            "include/tkrzw_dbm.h",
+            "include/tkrzw_dbm_async.h",
+            "include/tkrzw_dbm_baby.h",
+            "include/tkrzw_dbm_cache.h",
+            "include/tkrzw_dbm_common_impl.h",
+            "include/tkrzw_dbm_hash.h",
+            "include/tkrzw_dbm_hash_impl.h",
+            "include/tkrzw_dbm_poly.h",
+            "include/tkrzw_dbm_shard.h",
+            "include/tkrzw_dbm_skip.h",
+            "include/tkrzw_dbm_skip_impl.h",
+            "include/tkrzw_dbm_std.h",
+            "include/tkrzw_dbm_tiny.h",
+            "include/tkrzw_dbm_tree.h",
+            "include/tkrzw_dbm_tree_impl.h",
+            "include/tkrzw_dbm_ulog.h",
+            "include/tkrzw_file.h",
+            "include/tkrzw_file_mmap.h",
+            "include/tkrzw_file_poly.h",
+            "include/tkrzw_file_pos.h",
+            "include/tkrzw_file_std.h",
+            "include/tkrzw_file_util.h",
+            "include/tkrzw_hash_util.h",
+            "include/tkrzw_index.h",
+            "include/tkrzw_key_comparators.h",
+            "include/tkrzw_langc.h",
+            "include/tkrzw_lib_common.h",
+            "include/tkrzw_logger.h",
+            "include/tkrzw_message_queue.h",
+            "include/tkrzw_str_util.h",
+            "include/tkrzw_thread_util.h",
+            "include/tkrzw_time_util.h",
+            "lib/libtkrzw.1.77.0.dylib",
+            "lib/libtkrzw.1.dylib",
+            "lib/libtkrzw.a",
+            "lib/libtkrzw.dylib",
+            "lib/pkgconfig/tkrzw.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 6545997
+        }
+      }
+    }
+  }
+}

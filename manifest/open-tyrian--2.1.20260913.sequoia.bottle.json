@@ -1,0 +1,285 @@
+{
+  "open-tyrian": {
+    "formula": {
+      "name": "open-tyrian",
+      "pkg_version": "2.1.20260913",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/open-tyrian.rb",
+      "tap_git_path": "Formula/o/open-tyrian.rb",
+      "tap_git_revision": "a21abf44a532aaa71cc68b1ad4822746aa1017df",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Open-source port of Tyrian",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://github.com/opentyrian/opentyrian"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-23T01:41:42Z",
+      "tags": {
+        "sequoia": {
+          "filename": "open-tyrian-2.1.20260913.sequoia.bottle.tar.gz",
+          "local_filename": "open-tyrian--2.1.20260913.sequoia.bottle.tar.gz",
+          "sha256": "7f01a9b29a5ad1cf5ad6f2f1f52ae1cf1d4cd6e8480cf815ceb0e0ff15bc388f",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/opentyrian"
+            ],
+            "binary_relocation_files": [
+              "bin/opentyrian"
+            ],
+            "source_modified_time": 1789341622,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "sdl3",
+                "version": "3.4.16",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.16",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sdl2-compat",
+                "version": "2.32.72",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.32.72",
+                "declared_directly": true
+              },
+              {
+                "full_name": "sdl2_net",
+                "version": "2.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.4.0",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/opentyrian",
+              "string": "/usr/local/Cellar/open-tyrian/2.1.20260913/share/open-tyrian/data",
+              "offset": 435928
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+              "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "name": "sdl3",
+                "versionInfo": "3.4.16",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/sdl3-3.4.16.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9dc29b325dcf7a0acfacd6fb415251792750b219a5db765624514ddc185f438d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl3@3.4.16",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "name": "sdl2-compat",
+                "versionInfo": "2.32.72",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/sdl2-compat-2.32.72.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "95416aee23feb0d1bc449a7112554d787af252beed7753dbedbd603d4ebd517c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl2-compat@2.32.72",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-open-tyrian"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-open-tyrian"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-open-tyrian-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/opentyrian"
+          ],
+          "all_files": [
+            ".brew/open-tyrian.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/opentyrian",
+            "sbom.spdx.json",
+            "share/open-tyrian/data/cubetxt1.dat",
+            "share/open-tyrian/data/cubetxt2.dat",
+            "share/open-tyrian/data/cubetxt3.dat",
+            "share/open-tyrian/data/cubetxt4.dat",
+            "share/open-tyrian/data/demo.1",
+            "share/open-tyrian/data/demo.2",
+            "share/open-tyrian/data/demo.3",
+            "share/open-tyrian/data/demo.4",
+            "share/open-tyrian/data/demo.5",
+            "share/open-tyrian/data/dpmi16bi.ovl",
+            "share/open-tyrian/data/estsc.shp",
+            "share/open-tyrian/data/exitmsg.bin",
+            "share/open-tyrian/data/file0001.exe",
+            "share/open-tyrian/data/file0002.exe",
+            "share/open-tyrian/data/file_id.diz",
+            "share/open-tyrian/data/helpme.doc",
+            "share/open-tyrian/data/helpme.exe",
+            "share/open-tyrian/data/levels1.dat",
+            "share/open-tyrian/data/levels2.dat",
+            "share/open-tyrian/data/levels3.dat",
+            "share/open-tyrian/data/levels4.dat",
+            "share/open-tyrian/data/license.doc",
+            "share/open-tyrian/data/loudness.awe",
+            "share/open-tyrian/data/manual.doc",
+            "share/open-tyrian/data/modems.txt",
+            "share/open-tyrian/data/music.mus",
+            "share/open-tyrian/data/netarena.exe",
+            "share/open-tyrian/data/netarena.pcx",
+            "share/open-tyrian/data/netfont1.pcx",
+            "share/open-tyrian/data/netfont2.pcx",
+            "share/open-tyrian/data/netipx.exe",
+            "share/open-tyrian/data/netmega.pcx",
+            "share/open-tyrian/data/netmodem.exe",
+            "share/open-tyrian/data/netset.pcx",
+            "share/open-tyrian/data/netterm.exe",
+            "share/open-tyrian/data/netterm.int",
+            "share/open-tyrian/data/newsh#.shp",
+            "share/open-tyrian/data/newsh0.shp",
+            "share/open-tyrian/data/newsh1.shp",
+            "share/open-tyrian/data/newsh2.shp",
+            "share/open-tyrian/data/newsh3.shp",
+            "share/open-tyrian/data/newsh4.shp",
+            "share/open-tyrian/data/newsh5.shp",
+            "share/open-tyrian/data/newsh6.shp",
+            "share/open-tyrian/data/newsh7.shp",
+            "share/open-tyrian/data/newsh8.shp",
+            "share/open-tyrian/data/newsh9.shp",
+            "share/open-tyrian/data/newsh^.shp",
+            "share/open-tyrian/data/newsha.shp",
+            "share/open-tyrian/data/newshb.shp",
+            "share/open-tyrian/data/newshc.shp",
+            "share/open-tyrian/data/newshd.shp",
+            "share/open-tyrian/data/newshe.shp",
+            "share/open-tyrian/data/newshf.shp",
+            "share/open-tyrian/data/newshg.shp",
+            "share/open-tyrian/data/newshh.shp",
+            "share/open-tyrian/data/newshi.shp",
+            "share/open-tyrian/data/newshj.shp",
+            "share/open-tyrian/data/newshk.shp",
+            "share/open-tyrian/data/newshl.shp",
+            "share/open-tyrian/data/newshm.shp",
+            "share/open-tyrian/data/newshn.shp",
+            "share/open-tyrian/data/newsho.shp",
+            "share/open-tyrian/data/newshp.shp",
+            "share/open-tyrian/data/newshr.shp",
+            "share/open-tyrian/data/newshs.shp",
+            "share/open-tyrian/data/newsht.shp",
+            "share/open-tyrian/data/newshu.shp",
+            "share/open-tyrian/data/newshv.shp",
+            "share/open-tyrian/data/newsh~.shp",
+            "share/open-tyrian/data/order.doc",
+            "share/open-tyrian/data/order.exe",
+            "share/open-tyrian/data/order.tfp",
+            "share/open-tyrian/data/palette.dat",
+            "share/open-tyrian/data/rtm.exe",
+            "share/open-tyrian/data/setup.box",
+            "share/open-tyrian/data/setup.exe",
+            "share/open-tyrian/data/setup.ini",
+            "share/open-tyrian/data/setup.int",
+            "share/open-tyrian/data/shapes).dat",
+            "share/open-tyrian/data/shapesw.dat",
+            "share/open-tyrian/data/shapesx.dat",
+            "share/open-tyrian/data/shapesy.dat",
+            "share/open-tyrian/data/shapesz.dat",
+            "share/open-tyrian/data/shipedit.doc",
+            "share/open-tyrian/data/shipedit.exe",
+            "share/open-tyrian/data/shipedit.pcx",
+            "share/open-tyrian/data/tshp2.pcx",
+            "share/open-tyrian/data/tyrend.anm",
+            "share/open-tyrian/data/tyrian.cdt",
+            "share/open-tyrian/data/tyrian.exe",
+            "share/open-tyrian/data/tyrian.hdt",
+            "share/open-tyrian/data/tyrian.ico",
+            "share/open-tyrian/data/tyrian.pic",
+            "share/open-tyrian/data/tyrian.shp",
+            "share/open-tyrian/data/tyrian.snd",
+            "share/open-tyrian/data/tyrian1.lvl",
+            "share/open-tyrian/data/tyrian2.lvl",
+            "share/open-tyrian/data/tyrian3.lvl",
+            "share/open-tyrian/data/tyrian4.lvl",
+            "share/open-tyrian/data/tyrianc.shp",
+            "share/open-tyrian/data/tyrset.pcx",
+            "share/open-tyrian/data/user1.shp",
+            "share/open-tyrian/data/user2.shp",
+            "share/open-tyrian/data/voices.snd",
+            "share/open-tyrian/data/voicesc.snd"
+          ],
+          "installed_size": 12035807
+        }
+      }
+    }
+  }
+}

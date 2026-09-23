@@ -1,0 +1,89 @@
+{
+  "tektoncd-cli": {
+    "formula": {
+      "name": "tektoncd-cli",
+      "pkg_version": "0.46.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/tektoncd-cli.rb",
+      "tap_git_path": "Formula/t/tektoncd-cli.rb",
+      "tap_git_revision": "a21abf44a532aaa71cc68b1ad4822746aa1017df",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "CLI for interacting with TektonCD",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/tektoncd/cli"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-23T02:28:49Z",
+      "tags": {
+        "sequoia": {
+          "filename": "tektoncd-cli-0.46.1.sequoia.bottle.tar.gz",
+          "local_filename": "tektoncd-cli--0.46.1.sequoia.bottle.tar.gz",
+          "sha256": "a2a64cd25ee490c9ea4dde45a1eaea5febb12ee9b463f02b9baba2fa624a76a0",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790007936,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-tektoncd-cli-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/tkn"
+          ],
+          "all_files": [
+            ".brew/tektoncd-cli.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/tkn",
+            "etc/bash_completion.d/tkn",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/tkn.fish",
+            "share/pwsh/completions/_tkn.ps1",
+            "share/zsh/site-functions/_tkn"
+          ],
+          "installed_size": 116385165
+        }
+      }
+    }
+  }
+}

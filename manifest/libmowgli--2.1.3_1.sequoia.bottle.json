@@ -1,0 +1,189 @@
+{
+  "libmowgli": {
+    "formula": {
+      "name": "libmowgli",
+      "pkg_version": "2.1.3_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libmowgli.rb",
+      "tap_git_path": "Formula/lib/libmowgli.rb",
+      "tap_git_revision": "a21abf44a532aaa71cc68b1ad4822746aa1017df",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Core framework for Atheme applications",
+      "license": "ISC",
+      "homepage": "https://github.com/atheme/libmowgli-2"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-23T01:27:05Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libmowgli-2.1.3_1.sequoia.bottle.tar.gz",
+          "local_filename": "libmowgli--2.1.3_1.sequoia.bottle.tar.gz",
+          "sha256": "6433ad46970043c6bbdb0da3d3e099b1e60d1227146187595eccb3ad3296f9d7",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "lib/pkgconfig/libmowgli-2.pc"
+            ],
+            "linkage_files": [
+              "lib/libmowgli-2.0.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1505513878,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libmowgli"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libmowgli-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libmowgli.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "include/libmowgli-2/base/argstack.h",
+            "include/libmowgli-2/base/bitvector.h",
+            "include/libmowgli-2/base/formatter.h",
+            "include/libmowgli-2/base/hash.h",
+            "include/libmowgli-2/base/hook.h",
+            "include/libmowgli-2/base/memslice.h",
+            "include/libmowgli-2/base/mowgli_signal.h",
+            "include/libmowgli-2/base/random.h",
+            "include/libmowgli-2/container/dictionary.h",
+            "include/libmowgli-2/container/index.h",
+            "include/libmowgli-2/container/list.h",
+            "include/libmowgli-2/container/patricia.h",
+            "include/libmowgli-2/container/queue.h",
+            "include/libmowgli-2/core/alloc.h",
+            "include/libmowgli-2/core/allocation_policy.h",
+            "include/libmowgli-2/core/allocator.h",
+            "include/libmowgli-2/core/assert.h",
+            "include/libmowgli-2/core/bootstrap.h",
+            "include/libmowgli-2/core/heap.h",
+            "include/libmowgli-2/core/iterator.h",
+            "include/libmowgli-2/core/logger.h",
+            "include/libmowgli-2/core/mowgli_string.h",
+            "include/libmowgli-2/core/process.h",
+            "include/libmowgli-2/core/stdinc.h",
+            "include/libmowgli-2/dns/dns.h",
+            "include/libmowgli-2/dns/evloop_res.h",
+            "include/libmowgli-2/dns/evloop_reslib.h",
+            "include/libmowgli-2/eventloop/eventloop.h",
+            "include/libmowgli-2/ext/confparse.h",
+            "include/libmowgli-2/ext/error_backtrace.h",
+            "include/libmowgli-2/ext/getopt_long.h",
+            "include/libmowgli-2/ext/global_storage.h",
+            "include/libmowgli-2/ext/json-inline.h",
+            "include/libmowgli-2/ext/json.h",
+            "include/libmowgli-2/ext/proctitle.h",
+            "include/libmowgli-2/ext/program_opts.h",
+            "include/libmowgli-2/linebuf/linebuf.h",
+            "include/libmowgli-2/module/module.h",
+            "include/libmowgli-2/mowgli.h",
+            "include/libmowgli-2/object/class.h",
+            "include/libmowgli-2/object/message.h",
+            "include/libmowgli-2/object/metadata.h",
+            "include/libmowgli-2/object/object.h",
+            "include/libmowgli-2/platform/attributes.h",
+            "include/libmowgli-2/platform/cacheline.h",
+            "include/libmowgli-2/platform/constructor.h",
+            "include/libmowgli-2/platform/machine.h",
+            "include/libmowgli-2/platform/win32/win32_stdinc.h",
+            "include/libmowgli-2/thread/mutex.h",
+            "include/libmowgli-2/thread/thread.h",
+            "include/libmowgli-2/vio/vio.h",
+            "lib/libmowgli-2.0.0.dylib",
+            "lib/libmowgli-2.0.dylib",
+            "lib/libmowgli-2.dylib",
+            "lib/pkgconfig/libmowgli-2.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 308050
+        }
+      }
+    }
+  }
+}

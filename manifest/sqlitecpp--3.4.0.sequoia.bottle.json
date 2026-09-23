@@ -1,0 +1,184 @@
+{
+  "sqlitecpp": {
+    "formula": {
+      "name": "sqlitecpp",
+      "pkg_version": "3.4.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sqlitecpp.rb",
+      "tap_git_path": "Formula/s/sqlitecpp.rb",
+      "tap_git_revision": "a21abf44a532aaa71cc68b1ad4822746aa1017df",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Smart and easy to use C++ SQLite3 wrapper",
+      "license": "MIT",
+      "homepage": "https://srombauts.github.io/SQLiteCpp/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-23T02:16:05Z",
+      "tags": {
+        "sequoia": {
+          "filename": "sqlitecpp-3.4.0.sequoia.bottle.tar.gz",
+          "local_filename": "sqlitecpp--3.4.0.sequoia.bottle.tar.gz",
+          "sha256": "f4e930dcd186b9b328d795c4fcf0eea61fab65b4df241be5c6810eb366acdefd",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libSQLiteCpp.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790024241,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sqlitecpp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sqlitecpp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-sqlitecpp-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/sqlitecpp.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "README.md",
+            "TODO.txt",
+            "include/SQLiteCpp/Assertion.h",
+            "include/SQLiteCpp/Backup.h",
+            "include/SQLiteCpp/Column.h",
+            "include/SQLiteCpp/Database.h",
+            "include/SQLiteCpp/Exception.h",
+            "include/SQLiteCpp/ExecuteMany.h",
+            "include/SQLiteCpp/SQLiteCpp.h",
+            "include/SQLiteCpp/SQLiteCppExport.h",
+            "include/SQLiteCpp/Savepoint.h",
+            "include/SQLiteCpp/Statement.h",
+            "include/SQLiteCpp/Transaction.h",
+            "include/SQLiteCpp/Utils.h",
+            "include/SQLiteCpp/VariadicBind.h",
+            "lib/cmake/SQLiteCpp/SQLiteCppConfig.cmake",
+            "lib/cmake/SQLiteCpp/SQLiteCppConfigVersion.cmake",
+            "lib/cmake/SQLiteCpp/SQLiteCppTargets-release.cmake",
+            "lib/cmake/SQLiteCpp/SQLiteCppTargets.cmake",
+            "lib/libSQLiteCpp.0.dylib",
+            "lib/libSQLiteCpp.dylib",
+            "sbom.spdx.json",
+            "share/SQLiteCpp/example/main.cpp",
+            "share/SQLiteCpp/package.xml"
+          ],
+          "installed_size": 211062
+        }
+      }
+    }
+  }
+}

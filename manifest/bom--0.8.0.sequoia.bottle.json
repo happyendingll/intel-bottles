@@ -1,0 +1,89 @@
+{
+  "bom": {
+    "formula": {
+      "name": "bom",
+      "pkg_version": "0.8.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/b/bom.rb",
+      "tap_git_path": "Formula/b/bom.rb",
+      "tap_git_revision": "a21abf44a532aaa71cc68b1ad4822746aa1017df",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Utility to generate SPDX-compliant Bill of Materials manifests",
+      "license": "Apache-2.0",
+      "homepage": "https://kubernetes-sigs.github.io/bom/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-23T00:45:25Z",
+      "tags": {
+        "sequoia": {
+          "filename": "bom-0.8.0.sequoia.bottle.tar.gz",
+          "local_filename": "bom--0.8.0.sequoia.bottle.tar.gz",
+          "sha256": "cc903ff13a763ae5f8de401298a04ec569e99031a3ad924c65ab5312956c401b",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790062457,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-bom-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/bom"
+          ],
+          "all_files": [
+            ".brew/bom.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/bom",
+            "etc/bash_completion.d/bom",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/bom.fish",
+            "share/pwsh/completions/_bom.ps1",
+            "share/zsh/site-functions/_bom"
+          ],
+          "installed_size": 32478563
+        }
+      }
+    }
+  }
+}
