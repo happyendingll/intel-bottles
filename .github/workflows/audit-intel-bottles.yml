@@ -40,7 +40,9 @@ jobs:
             needs = File.open(File.join(audit_dir, "needs-bottle.txt"), "w")
             errors = File.open(File.join(audit_dir, "errors.tsv"), "w")
 
-            formulae = Formula.all(eval_all: true).sort_by(&:name)
+            # Current Homebrew always enumerates every core Formula here; the former
+            # eval_all: keyword was removed from Formula.all.
+            formulae = Formula.all.sort_by(&:name)
             formulae.each_with_index do |formula, index|
               begin
                 (formula.bottled? ? bottled : needs).puts(formula.name)
