@@ -2,10 +2,10 @@
   "awscli": {
     "formula": {
       "name": "awscli",
-      "pkg_version": "2.36.49",
+      "pkg_version": "2.36.50",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/awscli.rb",
       "tap_git_path": "Formula/a/awscli.rb",
-      "tap_git_revision": "7d8b68163b20746f68a98170842584b80a78a542",
+      "tap_git_revision": "5be7a75b5a952274c095a608792b29991a62340f",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Official Amazon AWS command-line interface",
       "license": "Apache-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-19T05:04:27Z",
+      "date": "2026-09-23T00:30:44Z",
       "tags": {
         "sequoia": {
-          "filename": "awscli-2.36.49.sequoia.bottle.tar.gz",
-          "local_filename": "awscli--2.36.49.sequoia.bottle.tar.gz",
-          "sha256": "58c7356c78a34c9663015ee946b358b01201ad350f7ec1862bba37425b713cab",
+          "filename": "awscli-2.36.50.sequoia.bottle.tar.gz",
+          "local_filename": "awscli--2.36.50.sequoia.bottle.tar.gz",
+          "sha256": "75a1a2df7aafe124b5eda1047dea9f399b8b04dbbbcda5462a1c7b90749c0874",
           "tab": {
-            "homebrew_version": "7.0.4",
+            "homebrew_version": "7.0.6",
             "changed_files": [
               "libexec/bin/aws",
               "libexec/bin/aws_completer",
@@ -47,15 +47,15 @@
               "libexec/lib/python3.14/site-packages/_awscrt.abi3.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1789757668,
+            "source_modified_time": 1790014952,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "aws-c-common",
-                "version": "1.0.0",
+                "version": "1.0.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.0.0",
+                "pkg_version": "1.0.1",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
@@ -168,10 +168,10 @@
               },
               {
                 "full_name": "aws-c-s3",
-                "version": "1.1.2",
+                "version": "1.1.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.1.2",
+                "pkg_version": "1.1.3",
                 "declared_directly": true,
                 "compatibility_version": 4
               },
@@ -251,7 +251,7 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-aws-c-common-1.0.0",
+              "SPDXRef-Package-SPDXRef-aws-c-common-1.0.1",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
               "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
               "SPDXRef-Package-SPDXRef-aws-c-cal-1.0.0",
@@ -264,7 +264,7 @@
               "SPDXRef-Package-SPDXRef-aws-checksums-1.0.0",
               "SPDXRef-Package-SPDXRef-aws-c-event-stream-1.0.0",
               "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.0.0",
-              "SPDXRef-Package-SPDXRef-aws-c-s3-1.1.2",
+              "SPDXRef-Package-SPDXRef-aws-c-s3-1.1.3",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
               "SPDXRef-Package-SPDXRef-readline-8.3.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
@@ -276,24 +276,24 @@
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-common-1.0.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-common-1.0.1",
                 "name": "aws-c-common",
-                "versionInfo": "1.0.0",
+                "versionInfo": "1.0.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/aws-c-common-1.0.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/aws-c-common-1.0.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e3a533c094a0e2ec3d04caeca7ec5544b26596fd951b82b20927743d7bdde83d"
+                    "checksumValue": "79725c64ffaee23e3ac2c9a6282e94d49aae5f04cf9ba58c2bd53ce8e4ffa935"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/aws-c-common@1.0.0",
+                    "referenceLocator": "pkg:brew/aws-c-common@1.0.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -575,24 +575,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-s3-1.1.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-s3-1.1.3",
                 "name": "aws-c-s3",
-                "versionInfo": "1.1.2",
+                "versionInfo": "1.1.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/aws-c-s3-1.1.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/aws-c-s3-1.1.3.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5b30ef083ec8a2c5d19db16b77cf909647cb9331417b9f628936344d3866c173"
+                    "checksumValue": "75e8a8c422855fb9ce683d9f7ec5c98cb1b73df0715f824b4144dfc8ec0cf004"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/aws-c-s3@1.1.2",
+                    "referenceLocator": "pkg:brew/aws-c-s3@1.1.3",
                     "referenceType": "purl"
                   }
                 ]
@@ -773,7 +773,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-common-1.0.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-common-1.0.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
@@ -838,7 +838,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-s3-1.1.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-s3-1.1.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-awscli"
               },
@@ -2929,6 +2929,7 @@
             "libexec/lib/python3.14/site-packages/awscli/customizations/agenttoolkit/agents.py",
             "libexec/lib/python3.14/site-packages/awscli/customizations/agenttoolkit/configure.py",
             "libexec/lib/python3.14/site-packages/awscli/customizations/agenttoolkit/get_skill_file.py",
+            "libexec/lib/python3.14/site-packages/awscli/customizations/agenttoolkit/hint.py",
             "libexec/lib/python3.14/site-packages/awscli/customizations/agenttoolkit/list_installed_skills.py",
             "libexec/lib/python3.14/site-packages/awscli/customizations/agenttoolkit/remove_skill.py",
             "libexec/lib/python3.14/site-packages/awscli/customizations/agenttoolkit/update_skill.py",
@@ -9110,11 +9111,11 @@
             "libexec/lib/python3.14/site-packages/awscli/topics/topic-tags.json",
             "libexec/lib/python3.14/site-packages/awscli/topictags.py",
             "libexec/lib/python3.14/site-packages/awscli/utils.py",
-            "libexec/lib/python3.14/site-packages/awscli-2.36.49.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/awscli-2.36.49.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/awscli-2.36.49.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/awscli-2.36.49.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/awscli-2.36.49.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/awscli-2.36.50.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/awscli-2.36.50.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/awscli-2.36.50.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/awscli-2.36.50.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/awscli-2.36.50.dist-info/licenses/LICENSE.txt",
             "libexec/lib/python3.14/site-packages/awscrt/__init__.py",
             "libexec/lib/python3.14/site-packages/awscrt/_test.py",
             "libexec/lib/python3.14/site-packages/awscrt/aio/__init__.py",
@@ -15570,7 +15571,7 @@
             "share/zsh/site-functions/_aws",
             "share/zsh/site-functions/aws_zsh_completer.sh"
           ],
-          "installed_size": 162436128
+          "installed_size": 162487619
         }
       }
     }
