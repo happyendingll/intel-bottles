@@ -2,10 +2,10 @@
   "libheif-plugins": {
     "formula": {
       "name": "libheif-plugins",
-      "pkg_version": "1.23.4_1",
+      "pkg_version": "1.23.5",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libheif-plugins.rb",
       "tap_git_path": "Formula/lib/libheif-plugins.rb",
-      "tap_git_revision": "ae0f9eecd7688198ca1c83b3c6e2f8ae291036cf",
+      "tap_git_revision": "32f245f7eb3eff301eabb5cfb03acce5075286de",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "ISO/IEC 23008-12:2017 HEIF file format decoder and encoder",
       "license": "LGPL-3.0-or-later",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-18T10:12:10Z",
+      "date": "2026-09-23T00:22:58Z",
       "tags": {
         "sequoia": {
-          "filename": "libheif-plugins-1.23.4_1.sequoia.bottle.tar.gz",
-          "local_filename": "libheif-plugins--1.23.4_1.sequoia.bottle.tar.gz",
-          "sha256": "bc0055e5c30597eae1af23e58c0daaa2613744fcf85fd1e8e87c78ef5af854a0",
+          "filename": "libheif-plugins-1.23.5.sequoia.bottle.tar.gz",
+          "local_filename": "libheif-plugins--1.23.5.sequoia.bottle.tar.gz",
+          "sha256": "ffe12ddbf65fb088de2583795bd1e3b82417a3a459e061218f1cb6e11627478e",
           "tab": {
-            "homebrew_version": "7.0.4",
+            "homebrew_version": "7.0.6",
             "changed_files": [],
             "linkage_files": [
               "lib/libheif/libheif-dav1d.so",
@@ -37,7 +37,7 @@
               "lib/libheif/libheif-x264.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1788705917,
+            "source_modified_time": 1790014349,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -166,10 +166,10 @@
               },
               {
                 "full_name": "ffmpeg",
-                "version": "9.0.1",
-                "revision": 1,
+                "version": "9.0.2",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.0.1_1",
+                "pkg_version": "9.0.2",
                 "declared_directly": true,
                 "compatibility_version": 3
               },
@@ -254,10 +254,10 @@
               },
               {
                 "full_name": "libheif",
-                "version": "1.23.4",
+                "version": "1.23.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.23.4",
+                "pkg_version": "1.23.5",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -283,6 +283,7 @@
                 "full_name": "openjph",
                 "version": "0.32.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "0.32.0",
                 "declared_directly": true,
                 "compatibility_version": 7
@@ -310,23 +311,54 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-mpg123-1.33.7",
               "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+              "SPDXRef-Package-SPDXRef-libvpx-1.17.0",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
               "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
               "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
               "SPDXRef-Package-SPDXRef-sdl2-compat-2.32.72",
+              "SPDXRef-Package-SPDXRef-x265-4.3",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-ffmpeg-9.0.2",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
               "SPDXRef-Package-SPDXRef-aom-3.15.0",
               "SPDXRef-Package-SPDXRef-libde265-1.1.3",
+              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+              "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+              "SPDXRef-Package-SPDXRef-webp-1.6.0",
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
               "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
-              "SPDXRef-Package-SPDXRef-libheif-1.23.4",
+              "SPDXRef-Package-SPDXRef-libheif-1.23.5",
               "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+              "SPDXRef-Package-SPDXRef-openjph-0.32.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpg123-1.33.7",
+                "name": "mpg123",
+                "versionInfo": "1.33.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/mpg123-1.33.7.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2c28d89f9273aa311b9649a6b5376c9c208928652e9e1a049360be28f698053b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpg123@1.33.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
                 "name": "libvmaf",
@@ -346,6 +378,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/libvmaf@3.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libvpx-1.17.0",
+                "name": "libvpx",
+                "versionInfo": "1.17.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/libvpx-1.17.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "18e587374cebdaa75f473aaac3d54422e492c0cddd92cc54df348626e99753e6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libvpx@1.17.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -443,6 +498,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-x265-4.3",
+                "name": "x265",
+                "versionInfo": "4.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/x265-4.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6f36e7cbb83fbd7b6498668f3cbfd1dec5391958ffc4e541be29cbc04e27162b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/x265@4.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
@@ -461,6 +539,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ffmpeg-9.0.2",
+                "name": "ffmpeg",
+                "versionInfo": "9.0.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/ffmpeg-9.0.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f2e43a287b691f450a356eef2b7ffb8c23df8f73ea8380722a0a02ff6bff991b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ffmpeg@9.0.2",
                     "referenceType": "purl"
                   }
                 ]
@@ -535,6 +636,75 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "name": "libpng",
+                "versionInfo": "1.6.58",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libpng-1.6.58.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a6af06c61f8385b8e4cc0e685dc3a4ab7bd964e28493a94a2d0833a3e7566a2c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "name": "giflib",
+                "versionInfo": "6.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/giflib-6.1.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f67ea26714be587a58ae9b9ff427a1afa0c082cbec177192514f179983ff2352"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/giflib@6.1.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "name": "webp",
+                "versionInfo": "1.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/webp-1.6.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "76a57f341e4dda8eb186c486f67e84b5ef173a8f9b0d475668100365177355eb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/webp@1.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
@@ -604,24 +774,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libheif-1.23.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libheif-1.23.5",
                 "name": "libheif",
-                "versionInfo": "1.23.4",
+                "versionInfo": "1.23.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libheif-1.23.4.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libheif-1.23.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "169ef09e6f708641a6326c345c777ecb64ed791295607e22352b4d0af78cd72f"
+                    "checksumValue": "33b67699a86d77b33c1f14bb0c2b20bf5c9e7dd0fbcb50be9aeea1880a66fc85"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libheif@1.23.4",
+                    "referenceLocator": "pkg:brew/libheif@1.23.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -650,6 +820,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openjph-0.32.0",
+                "name": "openjph",
+                "versionInfo": "0.32.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openjph-0.32.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "118e82db7425aaa68f11577813d3a1e8d6ad131b5c0a607fee11585cbb4e8199"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openjph@0.32.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "16.4",
@@ -664,7 +857,17 @@
             ],
             "relationships": [
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpg123-1.33.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libvpx-1.17.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
               },
@@ -689,7 +892,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-x265-4.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ffmpeg-9.0.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
               },
@@ -709,6 +922,21 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
@@ -724,12 +952,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libheif-1.23.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libheif-1.23.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openjph-0.32.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libheif-plugins"
               },
@@ -758,7 +991,7 @@
             "lib/libheif/libheif-x264.so",
             "sbom.spdx.json"
           ],
-          "installed_size": 484578
+          "installed_size": 488646
         }
       }
     }
