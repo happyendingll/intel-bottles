@@ -19,7 +19,7 @@ from urllib.parse import quote, unquote, urlparse
 
 PROJECT = Path(__file__).resolve().parent.parent
 MANIFEST = PROJECT / "manifest"
-MANAGED_TAG = re.compile(r"bottles(?:-warm-\d+)?$")
+MANAGED_TAG = re.compile(r"bottles(?:-\d+|-warm-\d+)?$")
 
 
 def run(command: list[str]) -> str:

@@ -28,6 +28,7 @@ set -euo pipefail
 : "${STAGE:=bottles}"
 
 STAGING="$BOTTLE_DIR/.staged"
+REPO_DIR="$(cd "$(dirname "$0")/.." && pwd)"
 rm -rf "$STAGING"
 mkdir -p "$STAGING"
 
@@ -78,6 +79,11 @@ if [ "$kept" -eq 0 ]; then
 fi
 
 cd "$STAGING"
+
+# Count this verified batch against the latest Release before merging its bottle blocks.
+# The selector updates staged JSON root_url when it rolls to the next numbered tag.
+RELEASE_TAG="$(python3 "$REPO_DIR/scripts/roll_release.py" \
+  --repo "$BOTTLES_REPO" --base-tag "$RELEASE_TAG" --staging "$STAGING")"
 
 # Merge the bottle blocks into the fork first, while the tarballs still have their
 # original names (brew validates against the json).

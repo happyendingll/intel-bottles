@@ -166,6 +166,12 @@ manifest 中的 `root_url` 会指向 bottle 实际所在的滚动 Release。旧 
 启用新编号就整体删除，因为仍有有效 manifest 可能引用它；只有被新版本替换且已无任何
 有效 manifest 引用的单个资产才会自动清理。
 
+发布时按本轮实际产出的 bottle 数量计算容量，Release 达到 900 个资产的安全阈值前会自动
+切到下一编号：常规构建从 `bottles` 续为 `bottles-2`、`bottles-3`，预热构建从
+`bottles-warm-2` 续为 `bottles-warm-3`、`bottles-warm-4`。新建 Release 后，发布脚本会
+同步改写本轮 bottle JSON 的 `root_url`，并将其写入 manifest 和 core fork；已有 bottle
+仍保留原来的 Release 地址。
+
 ### Intel Mac 使用方式
 
 不要把自定义 Core 环境变量全局 `export`。在 `~/.zshrc`（使用 Bash 时为 `~/.bashrc`）中
@@ -279,9 +285,11 @@ dynamic quarantine files, heavyweight dependency handling, and generation statis
 
 A scheduled prewarm starts only after the post-build catalog refresh completes, selects up to
 100 roots, and runs at most five jobs in parallel with a one-hour cap per job. Prewarmed assets
-use numbered rolling Releases (`bottles-warm-1`, `bottles-warm-2`, and so on). Before a
-Release approaches GitHub's 1,000-asset limit, the workflow advances to the next number. Old
-Releases are retained because existing manifests keep their original `root_url`; new and
+use numbered rolling Releases (`bottles-warm-1`, `bottles-warm-2`, and so on). Publishing
+selects a new number when the verified batch would exceed 900 assets in the current Release,
+leaving room below GitHub's 1,000-asset limit. Target builds similarly roll from `bottles` to
+`bottles-2`, `bottles-3`, and so on. Old Releases are retained because existing manifests keep
+their original `root_url`; new and
 rebuilt Formulae point at the current rolling Release. All bottle blocks are merged into the
 same `homebrew-core` fork.
 
