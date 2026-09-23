@@ -2,31 +2,31 @@
   "gopass": {
     "formula": {
       "name": "gopass",
-      "pkg_version": "1.17.2",
+      "pkg_version": "1.17.3",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gopass.rb",
       "tap_git_path": "Formula/g/gopass.rb",
-      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_revision": "6c08552edfcefc257ddbdc1588979ab914451102",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Slightly more awesome Standard Unix Password Manager for Teams",
       "license": "MIT",
       "homepage": "https://www.gopass.pw/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-09-14T14:35:55Z",
+      "date": "2026-09-23T22:26:35Z",
       "tags": {
         "sequoia": {
-          "filename": "gopass-1.17.2.sequoia.bottle.tar.gz",
-          "local_filename": "gopass--1.17.2.sequoia.bottle.tar.gz",
-          "sha256": "e4cca2032fe5252b49b426522b18ce90ab949d092a25a9b6c910c10f651fc3aa",
+          "filename": "gopass-1.17.3.sequoia.bottle.tar.gz",
+          "local_filename": "gopass--1.17.3.sequoia.bottle.tar.gz",
+          "sha256": "8ef3d53186a0656a19a1cb3172aa2491acf4b97e7450099f546429c78c2decf4",
           "tab": {
-            "homebrew_version": "7.0.1",
+            "homebrew_version": "7.0.6",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1789029791,
+            "source_modified_time": 1790100926,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -68,7 +68,7 @@
                 "full_name": "gettext",
                 "version": "1.0",
                 "revision": 0,
-                "bottle_rebuild": 1,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.0",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -182,19 +182,19 @@
               },
               {
                 "full_name": "readline",
-                "version": "8.3.3",
+                "version": "8.3.6",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "8.3.3",
+                "pkg_version": "8.3.6",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "gnupg",
-                "version": "2.5.22",
+                "version": "2.5.24",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.5.22",
+                "pkg_version": "2.5.24",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -222,10 +222,13 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
               "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
               "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
               "SPDXRef-Package-SPDXRef-libgcrypt-1.12.4",
-              "SPDXRef-Package-SPDXRef-readline-8.3.3",
-              "SPDXRef-Package-SPDXRef-gnupg-2.5.22",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-gnupg-2.5.24",
               "SPDXRef-Package-SPDXRef-terminal-notifier-3.1.0",
               "SPDXRef-Compiler"
             ],
@@ -277,6 +280,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
@@ -300,6 +326,52 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+                "name": "p11-kit",
+                "versionInfo": "0.26.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/p11-kit-0.26.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ee01fce79642e0693fd6bb9024aeb3e684bddfcf797ad6cb9ba8907c24742162"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/p11-kit@0.26.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-libgcrypt-1.12.4",
                 "name": "libgcrypt",
                 "versionInfo": "1.12.4",
@@ -311,7 +383,7 @@
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e03f6e969135b669ffdff8ef121637d96d886aed3bc22c255e01a00cf2e29cc6"
+                    "checksumValue": "5f792fbf2ed9926dca457f3cc8144e3cd46588ac3653daf82d80ffbbb8bd35e4"
                   }
                 ],
                 "externalRefs": [
@@ -323,47 +395,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
                 "name": "readline",
-                "versionInfo": "8.3.3",
+                "versionInfo": "8.3.6",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-3.0-or-later",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3"
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/readline@8.3.3",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gnupg-2.5.22",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gnupg-2.5.24",
                 "name": "gnupg",
-                "versionInfo": "2.5.22",
+                "versionInfo": "2.5.24",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gnupg-2.5.22.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gnupg-2.5.24.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8f709fb925f1096859ee9ba15d958f9b65a1e8e0b85f2493ef7ece0010f0c573"
+                    "checksumValue": "dc7e1ae29bd7fd255ea65018d7bb7c8a9319b4680c3d7ebafed97f5d8c85a5f5"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/gnupg@2.5.22",
+                    "referenceLocator": "pkg:brew/gnupg@2.5.24",
                     "referenceType": "purl"
                   }
                 ]
@@ -416,7 +488,22 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gopass"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gopass"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gopass"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gopass"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gopass"
               },
@@ -426,12 +513,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gopass"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gopass"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gnupg-2.5.22",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gnupg-2.5.24",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gopass"
               },
@@ -464,7 +551,7 @@
             "share/man/man1/gopass.1",
             "share/zsh/site-functions/_gopass"
           ],
-          "installed_size": 20518142
+          "installed_size": 20514360
         }
       }
     }
