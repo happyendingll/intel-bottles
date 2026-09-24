@@ -1,0 +1,97 @@
+{
+  "etcd": {
+    "formula": {
+      "name": "etcd",
+      "pkg_version": "3.7.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/e/etcd.rb",
+      "tap_git_path": "Formula/e/etcd.rb",
+      "tap_git_revision": "f918d9506a83f36ccebdd5007bebdcd9b3be884a",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Key value store for shared configuration and service discovery",
+      "license": "Apache-2.0",
+      "homepage": "https://etcd.io"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-23T22:56:52Z",
+      "tags": {
+        "sequoia": {
+          "filename": "etcd-3.7.2.sequoia.bottle.tar.gz",
+          "local_filename": "etcd--3.7.2.sequoia.bottle.tar.gz",
+          "sha256": "8c61e4c7ba2db68d0b7c90d78b78aed4110317de315c83cbcdd0adc94a5907fd",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "sh.brew.etcd.plist",
+              "sh.brew.etcd.service"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790111253,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "source": {
+              "scm_revision": "68c065e562994b89e333e77b039ad066f933c586"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-etcd-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/etcdutl",
+            "bin/etcdctl",
+            "bin/etcd"
+          ],
+          "all_files": [
+            ".brew/etcd.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/etcd",
+            "bin/etcdctl",
+            "bin/etcdutl",
+            "sbom.spdx.json",
+            "sh.brew.etcd.plist",
+            "sh.brew.etcd.service"
+          ],
+          "installed_size": 88803751
+        }
+      }
+    }
+  }
+}

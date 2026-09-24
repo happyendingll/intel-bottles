@@ -1,0 +1,152 @@
+{
+  "yubico-piv-tool": {
+    "formula": {
+      "name": "yubico-piv-tool",
+      "pkg_version": "2.7.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/y/yubico-piv-tool.rb",
+      "tap_git_path": "Formula/y/yubico-piv-tool.rb",
+      "tap_git_revision": "f918d9506a83f36ccebdd5007bebdcd9b3be884a",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Command-line tool for the YubiKey PIV application",
+      "license": "BSD-2-Clause",
+      "homepage": "https://developers.yubico.com/yubico-piv-tool/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-24T00:25:16Z",
+      "tags": {
+        "sequoia": {
+          "filename": "yubico-piv-tool-2.7.3.sequoia.bottle.tar.gz",
+          "local_filename": "yubico-piv-tool--2.7.3.sequoia.bottle.tar.gz",
+          "sha256": "3f28b3a911db48fddba3fc4416715532c4e796a990d2c13845658e2b38f364e7",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "lib/pkgconfig/ykcs11.pc",
+              "lib/pkgconfig/ykpiv.pc"
+            ],
+            "linkage_files": [
+              "bin/yubico-piv-tool",
+              "lib/libykcs11.2.7.3.dylib",
+              "lib/libykpiv.2.7.3.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1768490474,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-yubico-piv-tool"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-yubico-piv-tool-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/yubico-piv-tool"
+          ],
+          "all_files": [
+            ".brew/yubico-piv-tool.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "bin/yubico-piv-tool",
+            "include/ykpiv/ykpiv-config.h",
+            "include/ykpiv/ykpiv.h",
+            "lib/libykcs11.2.7.3.dylib",
+            "lib/libykcs11.2.dylib",
+            "lib/libykcs11.a",
+            "lib/libykcs11.dylib",
+            "lib/libykpiv.2.7.3.dylib",
+            "lib/libykpiv.2.dylib",
+            "lib/libykpiv.a",
+            "lib/libykpiv.dylib",
+            "lib/pkgconfig/ykcs11.pc",
+            "lib/pkgconfig/ykpiv.pc",
+            "sbom.spdx.json",
+            "share/man/man1/yubico-piv-tool.1"
+          ],
+          "installed_size": 777231
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,659 @@
+{
+  "ansible-creator": {
+    "formula": {
+      "name": "ansible-creator",
+      "pkg_version": "26.9.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/ansible-creator.rb",
+      "tap_git_path": "Formula/a/ansible-creator.rb",
+      "tap_git_revision": "f918d9506a83f36ccebdd5007bebdcd9b3be884a",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "CLI tool for scaffolding Ansible Content",
+      "license": "Apache-2.0",
+      "homepage": "https://ansible.readthedocs.io/projects/creator/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-23T22:49:10Z",
+      "tags": {
+        "sequoia": {
+          "filename": "ansible-creator-26.9.0.sequoia.bottle.tar.gz",
+          "local_filename": "ansible-creator--26.9.0.sequoia.bottle.tar.gz",
+          "sha256": "c23b84191e28fe0988e82275eb1f6a0c0117867a6a94965a404b814ef95c1ff4",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "libexec/bin/ansible-creator",
+              "libexec/pyvenv.cfg"
+            ],
+            "linkage_files": [
+              "libexec/lib/python3.14/site-packages/yaml/_yaml.cpython-314-darwin.so"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790070000,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libyaml",
+                "version": "0.2.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.2.5",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.14",
+                "version": "3.14.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.14.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "name": "python@3.14",
+                "versionInfo": "3.14.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ansible-creator"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ansible-creator"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ansible-creator"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ansible-creator"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ansible-creator"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ansible-creator"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ansible-creator"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ansible-creator"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ansible-creator"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-ansible-creator-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/ansible-creator"
+          ],
+          "all_files": [
+            ".brew/ansible-creator.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/ansible-creator",
+            "libexec/.gitignore",
+            "libexec/bin/ansible-creator",
+            "libexec/bin/python",
+            "libexec/bin/python3",
+            "libexec/bin/python3.14",
+            "libexec/bin/\ud835\udf0bthon",
+            "libexec/lib/python3.14/site-packages/_yaml/__init__.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/__init__.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/__main__.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/_arg_parser_custom.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/_version.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/_version.pyi",
+            "libexec/lib/python3.14/site-packages/ansible_creator/api.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/arg_parser.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/bundles.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/cli.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/compat.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/config.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/constants.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/exceptions.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/output.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/py.typed",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/.github/workflows/release.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/.github/workflows/tests.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/.isort.cfg.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/.pre-commit-config.yaml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/.prettierignore.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/CHANGELOG.rst",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/CODE_OF_CONDUCT.md",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/CONTRIBUTING",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/LICENSE.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/MAINTAINERS",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/README.md.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/changelogs/config.yaml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/docs/.keep",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/docs/docsite/links.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/extensions/eda/rulebooks/rulebook.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/extensions/molecule/integration_sample_filter/molecule.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/extensions/molecule/utils/playbooks/converge.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/extensions/molecule/utils/playbooks/noop.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/extensions/molecule/utils/vars/vars.yml",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/galaxy.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/meta/runtime.yml",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/action/__init__.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/action/sample_action.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/cache/__init__.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/filter/__init__.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/filter/sample_filter.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/inventory/__init__.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/lookup/__init__.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/lookup/sample_lookup.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/module_utils/__init__.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/modules/__init__.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/modules/sample_action.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/modules/sample_module.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/plugin_utils/__init__.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/sub_plugins/__init__.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/test/__init__.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/plugins/test/sample_test.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/pyproject.toml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/requirements.txt",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/test-requirements.txt",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/tests/.gitignore",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/tests/integration/__init__.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/tests/integration/targets/sample_filter/tasks/main.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/tests/integration/test_integration.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/tests/unit/.keep",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/tests/unit/__init__.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/tests/unit/test_basic.py.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/collection_project/tox-ansible.ini.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/ai/AGENTS.md",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/devcontainer/.devcontainer/devcontainer.json.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/devcontainer/.devcontainer/docker/devcontainer.json.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/devcontainer/.devcontainer/podman/devcontainer.json.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/devfile/devfile.yaml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/ee-ci/.github/workflows/ee-build.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/ee-ci/.gitlab-ci.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/execution-environment/execution-environment.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/gitignore/.gitignore.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/gitignore/__meta__.yml",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/play-argspec/argspec_validation_plays.meta.yml",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/play-argspec/argspec_validation_plays.yml",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/play-argspec/inventory/argspec_validation_inventory.yml",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/playbook/playbook.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/role/roles/run/README.md.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/role/roles/run/defaults/main.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/role/roles/run/files/.keep",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/role/roles/run/handlers/main.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/role/roles/run/meta/argument_specs.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/role/roles/run/meta/main.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/role/roles/run/tasks/main.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/role/roles/run/templates/.keep",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/role/roles/run/tests/inventory",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/role/roles/run/vars/main.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/common/vscode/.vscode/extensions.json.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/decision_environment_project/.gitignore",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/decision_environment_project/NEXT_STEPS.md.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/decision_environment_project/README.md.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/decision_environment_project/execution-environment.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/execution_env_project/.gitignore",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/execution_env_project/NEXT_STEPS.md.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/execution_env_project/README.md.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/execution_env_project/execution-environment.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/.github/ansible-code-bot.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/.github/workflows/tests.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/README.md.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/ansible-navigator.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/ansible.cfg.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/argspec_validation_plays.meta.yml",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/argspec_validation_plays.yml",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/collections/ansible_collections/project_org/project_repo/CHANGELOG.md",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/collections/ansible_collections/project_org/project_repo/README.md.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/collections/ansible_collections/project_org/project_repo/galaxy.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/collections/ansible_collections/project_org/project_repo/meta/runtime.yml",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/collections/ansible_collections/project_org/project_repo/roles/run/README.md.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/collections/ansible_collections/project_org/project_repo/roles/run/tasks/main.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/collections/requirements.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/inventory/argspec_validation_inventory.yml",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/inventory/group_vars/all.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/inventory/group_vars/db_servers.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/inventory/group_vars/production.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/inventory/group_vars/test.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/inventory/group_vars/web_servers.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/inventory/host_vars/server1.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/inventory/host_vars/server2.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/inventory/host_vars/server3.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/inventory/host_vars/switch1.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/inventory/host_vars/switch2.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/inventory/hosts.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/linux_playbook.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/network_playbook.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/resources/playbook_project/site.yml.j2",
+            "libexec/lib/python3.14/site-packages/ansible_creator/schema.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/schemas/__init__.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/subcommands/__init__.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/subcommands/add.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/subcommands/init.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/subcommands/schema.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/templar.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/types.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator/utils.py",
+            "libexec/lib/python3.14/site-packages/ansible_creator-26.9.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/ansible_creator-26.9.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/ansible_creator-26.9.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/ansible_creator-26.9.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/ansible_creator-26.9.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/ansible_creator-26.9.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/ansible_creator-26.9.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/jinja2/__init__.py",
+            "libexec/lib/python3.14/site-packages/jinja2/_identifier.py",
+            "libexec/lib/python3.14/site-packages/jinja2/async_utils.py",
+            "libexec/lib/python3.14/site-packages/jinja2/bccache.py",
+            "libexec/lib/python3.14/site-packages/jinja2/compiler.py",
+            "libexec/lib/python3.14/site-packages/jinja2/constants.py",
+            "libexec/lib/python3.14/site-packages/jinja2/debug.py",
+            "libexec/lib/python3.14/site-packages/jinja2/defaults.py",
+            "libexec/lib/python3.14/site-packages/jinja2/environment.py",
+            "libexec/lib/python3.14/site-packages/jinja2/exceptions.py",
+            "libexec/lib/python3.14/site-packages/jinja2/ext.py",
+            "libexec/lib/python3.14/site-packages/jinja2/filters.py",
+            "libexec/lib/python3.14/site-packages/jinja2/idtracking.py",
+            "libexec/lib/python3.14/site-packages/jinja2/lexer.py",
+            "libexec/lib/python3.14/site-packages/jinja2/loaders.py",
+            "libexec/lib/python3.14/site-packages/jinja2/meta.py",
+            "libexec/lib/python3.14/site-packages/jinja2/nativetypes.py",
+            "libexec/lib/python3.14/site-packages/jinja2/nodes.py",
+            "libexec/lib/python3.14/site-packages/jinja2/optimizer.py",
+            "libexec/lib/python3.14/site-packages/jinja2/parser.py",
+            "libexec/lib/python3.14/site-packages/jinja2/py.typed",
+            "libexec/lib/python3.14/site-packages/jinja2/runtime.py",
+            "libexec/lib/python3.14/site-packages/jinja2/sandbox.py",
+            "libexec/lib/python3.14/site-packages/jinja2/tests.py",
+            "libexec/lib/python3.14/site-packages/jinja2/utils.py",
+            "libexec/lib/python3.14/site-packages/jinja2/visitor.py",
+            "libexec/lib/python3.14/site-packages/jinja2-3.1.6.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/jinja2-3.1.6.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/jinja2-3.1.6.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/jinja2-3.1.6.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/jinja2-3.1.6.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/jinja2-3.1.6.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/markupsafe/__init__.py",
+            "libexec/lib/python3.14/site-packages/markupsafe/_native.py",
+            "libexec/lib/python3.14/site-packages/markupsafe/_speedups.c",
+            "libexec/lib/python3.14/site-packages/markupsafe/_speedups.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/markupsafe/_speedups.pyi",
+            "libexec/lib/python3.14/site-packages/markupsafe/py.typed",
+            "libexec/lib/python3.14/site-packages/markupsafe-3.0.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/markupsafe-3.0.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/markupsafe-3.0.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/markupsafe-3.0.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/markupsafe-3.0.3.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/markupsafe-3.0.3.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/pyyaml-6.0.3.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/yaml/__init__.py",
+            "libexec/lib/python3.14/site-packages/yaml/_yaml.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/yaml/composer.py",
+            "libexec/lib/python3.14/site-packages/yaml/constructor.py",
+            "libexec/lib/python3.14/site-packages/yaml/cyaml.py",
+            "libexec/lib/python3.14/site-packages/yaml/dumper.py",
+            "libexec/lib/python3.14/site-packages/yaml/emitter.py",
+            "libexec/lib/python3.14/site-packages/yaml/error.py",
+            "libexec/lib/python3.14/site-packages/yaml/events.py",
+            "libexec/lib/python3.14/site-packages/yaml/loader.py",
+            "libexec/lib/python3.14/site-packages/yaml/nodes.py",
+            "libexec/lib/python3.14/site-packages/yaml/parser.py",
+            "libexec/lib/python3.14/site-packages/yaml/reader.py",
+            "libexec/lib/python3.14/site-packages/yaml/representer.py",
+            "libexec/lib/python3.14/site-packages/yaml/resolver.py",
+            "libexec/lib/python3.14/site-packages/yaml/scanner.py",
+            "libexec/lib/python3.14/site-packages/yaml/serializer.py",
+            "libexec/lib/python3.14/site-packages/yaml/tokens.py",
+            "libexec/pyvenv.cfg",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1366121
+        }
+      }
+    }
+  }
+}

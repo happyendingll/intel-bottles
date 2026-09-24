@@ -1,0 +1,136 @@
+{
+  "pixiewps": {
+    "formula": {
+      "name": "pixiewps",
+      "pkg_version": "1.4.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pixiewps.rb",
+      "tap_git_path": "Formula/p/pixiewps.rb",
+      "tap_git_revision": "f918d9506a83f36ccebdd5007bebdcd9b3be884a",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Offline Wi-Fi Protected Setup brute-force utility",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://github.com/wiire-a/pixiewps"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-23T23:18:12Z",
+      "tags": {
+        "sequoia": {
+          "filename": "pixiewps-1.4.2.sequoia.bottle.tar.gz",
+          "local_filename": "pixiewps--1.4.2.sequoia.bottle.tar.gz",
+          "sha256": "7724f78b72b90af0a5bed83badd3f4288d2c785c003c74bfc43dbf2a27a82b21",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/pixiewps"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1516914650,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pixiewps"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-pixiewps-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/pixiewps"
+          ],
+          "all_files": [
+            ".brew/pixiewps.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/pixiewps",
+            "sbom.spdx.json",
+            "share/man/man1/pixiewps.1"
+          ],
+          "installed_size": 122669
+        }
+      }
+    }
+  }
+}

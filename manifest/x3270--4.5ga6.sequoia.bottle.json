@@ -1,0 +1,216 @@
+{
+  "x3270": {
+    "formula": {
+      "name": "x3270",
+      "pkg_version": "4.5ga6",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/x/x3270.rb",
+      "tap_git_path": "Formula/x/x3270.rb",
+      "tap_git_revision": "f918d9506a83f36ccebdd5007bebdcd9b3be884a",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "IBM 3270 terminal emulator for the X Window System and Windows",
+      "license": "BSD-3-Clause",
+      "homepage": "https://x3270.bgp.nu/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-24T00:22:13Z",
+      "tags": {
+        "sequoia": {
+          "filename": "x3270-4.5ga6.sequoia.bottle.tar.gz",
+          "local_filename": "x3270--4.5ga6.sequoia.bottle.tar.gz",
+          "sha256": "589450ab783bce07ee04af2fdc10d90d9a4fdd38d2ca5ee7ed6560f06a7482ce",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/b3270",
+              "bin/c3270",
+              "bin/pr3287",
+              "bin/s3270",
+              "bin/x3270if"
+            ],
+            "binary_relocation_files": [
+              "bin/b3270",
+              "bin/c3270",
+              "bin/s3270"
+            ],
+            "source_modified_time": 1785191868,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2",
+                "declared_directly": true
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/s3270",
+              "string": "/usr/local/Cellar/x3270/4.5ga6/etc/x3270",
+              "offset": 343978
+            },
+            {
+              "path": "bin/b3270",
+              "string": "/usr/local/Cellar/x3270/4.5ga6/etc/x3270",
+              "offset": 382400
+            },
+            {
+              "path": "bin/c3270",
+              "string": "/usr/local/Cellar/x3270/4.5ga6/etc/x3270",
+              "offset": 405641
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-x3270"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-x3270"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-x3270-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/s3270",
+            "bin/b3270",
+            "bin/c3270",
+            "bin/prtodir",
+            "bin/tcl3270",
+            "bin/x3270if",
+            "bin/pr3287"
+          ],
+          "all_files": [
+            ".brew/x3270.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/b3270",
+            "bin/c3270",
+            "bin/pr3287",
+            "bin/prtodir",
+            "bin/s3270",
+            "bin/tcl3270",
+            "bin/x3270if",
+            "etc/x3270/ibm_hosts",
+            "sbom.spdx.json",
+            "share/man/man1/b3270.1",
+            "share/man/man1/c3270.1",
+            "share/man/man1/pr3287.1",
+            "share/man/man1/s3270.1",
+            "share/man/man1/tcl3270.1",
+            "share/man/man1/x3270if.1",
+            "share/man/man5/ibm_hosts.5"
+          ],
+          "installed_size": 5240502
+        }
+      }
+    }
+  }
+}

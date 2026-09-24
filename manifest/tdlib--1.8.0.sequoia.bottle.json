@@ -1,0 +1,217 @@
+{
+  "tdlib": {
+    "formula": {
+      "name": "tdlib",
+      "pkg_version": "1.8.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/tdlib.rb",
+      "tap_git_path": "Formula/t/tdlib.rb",
+      "tap_git_revision": "f918d9506a83f36ccebdd5007bebdcd9b3be884a",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Cross-platform library for building Telegram clients",
+      "license": "BSL-1.0",
+      "homepage": "https://core.telegram.org/tdlib"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-24T00:13:03Z",
+      "tags": {
+        "sequoia": {
+          "filename": "tdlib-1.8.0.sequoia.bottle.tar.gz",
+          "local_filename": "tdlib--1.8.0.sequoia.bottle.tar.gz",
+          "sha256": "c12f0ae810a7c9d8a065b9ea7a92de234541a13985669bba22a5e0d9ecd98444",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "lib/cmake/Td/TdTargets.cmake",
+              "lib/pkgconfig/tdactor.pc",
+              "lib/pkgconfig/tdapi.pc",
+              "lib/pkgconfig/tdclient.pc",
+              "lib/pkgconfig/tdcore.pc",
+              "lib/pkgconfig/tddb.pc",
+              "lib/pkgconfig/tdjson.pc",
+              "lib/pkgconfig/tdjson_private.pc",
+              "lib/pkgconfig/tdjson_static.pc",
+              "lib/pkgconfig/tdnet.pc",
+              "lib/pkgconfig/tdsqlite.pc",
+              "lib/pkgconfig/tdutils.pc"
+            ],
+            "linkage_files": [
+              "lib/libtdjson.1.8.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1640788700,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2",
+                "declared_directly": true
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tdlib"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-tdlib"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-tdlib-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/tdlib.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "include/td/telegram/Client.h",
+            "include/td/telegram/Log.h",
+            "include/td/telegram/td_api.h",
+            "include/td/telegram/td_api.hpp",
+            "include/td/telegram/td_json_client.h",
+            "include/td/telegram/td_log.h",
+            "include/td/telegram/tdjson_export.h",
+            "include/td/tl/TlObject.h",
+            "lib/cmake/Td/TdConfig.cmake",
+            "lib/cmake/Td/TdConfigVersion.cmake",
+            "lib/cmake/Td/TdTargets-release.cmake",
+            "lib/cmake/Td/TdTargets.cmake",
+            "lib/libtdactor.a",
+            "lib/libtdapi.a",
+            "lib/libtdclient.a",
+            "lib/libtdcore.a",
+            "lib/libtddb.a",
+            "lib/libtdjson.1.8.0.dylib",
+            "lib/libtdjson.dylib",
+            "lib/libtdjson_private.a",
+            "lib/libtdjson_static.a",
+            "lib/libtdnet.a",
+            "lib/libtdsqlite.a",
+            "lib/libtdutils.a",
+            "lib/pkgconfig/tdactor.pc",
+            "lib/pkgconfig/tdapi.pc",
+            "lib/pkgconfig/tdclient.pc",
+            "lib/pkgconfig/tdcore.pc",
+            "lib/pkgconfig/tddb.pc",
+            "lib/pkgconfig/tdjson.pc",
+            "lib/pkgconfig/tdjson_private.pc",
+            "lib/pkgconfig/tdjson_static.pc",
+            "lib/pkgconfig/tdnet.pc",
+            "lib/pkgconfig/tdsqlite.pc",
+            "lib/pkgconfig/tdutils.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 64796967
+        }
+      }
+    }
+  }
+}
