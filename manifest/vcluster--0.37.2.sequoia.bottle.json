@@ -1,0 +1,134 @@
+{
+  "vcluster": {
+    "formula": {
+      "name": "vcluster",
+      "pkg_version": "0.37.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/v/vcluster.rb",
+      "tap_git_path": "Formula/v/vcluster.rb",
+      "tap_git_revision": "80467ab9141d38efcd5a20224d9344713886f3d9",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Creates fully functional virtual k8s cluster inside host k8s cluster's namespace",
+      "license": "Apache-2.0",
+      "homepage": "https://www.vcluster.com"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-24T22:27:07Z",
+      "tags": {
+        "sequoia": {
+          "filename": "vcluster-0.37.2.sequoia.bottle.tar.gz",
+          "local_filename": "vcluster--0.37.2.sequoia.bottle.tar.gz",
+          "sha256": "bb2a4b0e34164722435950650f1afe50c111691a0b82958fc4eb0f6d5789200c",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790159505,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "helm",
+                "version": "4.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.3.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "kubernetes-cli",
+                "version": "1.37.1",
+                "revision": 0,
+                "pkg_version": "1.37.1",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-helm-4.3.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-helm-4.3.0",
+                "name": "helm",
+                "versionInfo": "4.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/helm-4.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ee287c12e40a182ae560f04749c6d5d3e5138e5f8df1f4c36964040c863976e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/helm@4.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-helm-4.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vcluster"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-vcluster-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/vcluster"
+          ],
+          "all_files": [
+            ".brew/vcluster.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/vcluster",
+            "etc/bash_completion.d/vcluster",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/vcluster.fish",
+            "share/pwsh/completions/_vcluster.ps1",
+            "share/zsh/site-functions/_vcluster"
+          ],
+          "installed_size": 120240237
+        }
+      }
+    }
+  }
+}

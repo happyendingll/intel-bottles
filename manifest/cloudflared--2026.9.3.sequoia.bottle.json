@@ -1,0 +1,92 @@
+{
+  "cloudflared": {
+    "formula": {
+      "name": "cloudflared",
+      "pkg_version": "2026.9.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cloudflared.rb",
+      "tap_git_path": "Formula/c/cloudflared.rb",
+      "tap_git_revision": "80467ab9141d38efcd5a20224d9344713886f3d9",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Cloudflare Tunnel client (formerly Argo Tunnel)",
+      "license": "Apache-2.0",
+      "homepage": "https://developers.cloudflare.com/cloudflare-one/networks/connectors/cloudflare-tunnel/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-24T19:31:00Z",
+      "tags": {
+        "sequoia": {
+          "filename": "cloudflared-2026.9.3.sequoia.bottle.tar.gz",
+          "local_filename": "cloudflared--2026.9.3.sequoia.bottle.tar.gz",
+          "sha256": "9f516fa9592ca41fd572c5cf773185f47940f92fca289e4ad47593f3d1a92285",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "sh.brew.cloudflared.plist",
+              "sh.brew.cloudflared.service"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790263870,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-cloudflared-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/cloudflared"
+          ],
+          "all_files": [
+            ".brew/cloudflared.rb",
+            "CHANGES.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/cloudflared",
+            "sbom.spdx.json",
+            "sh.brew.cloudflared.plist",
+            "sh.brew.cloudflared.service",
+            "share/man/man1/cloudflared.1"
+          ],
+          "installed_size": 27696537
+        }
+      }
+    }
+  }
+}
