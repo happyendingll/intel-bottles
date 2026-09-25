@@ -1,0 +1,355 @@
+{
+  "opensc": {
+    "formula": {
+      "name": "opensc",
+      "pkg_version": "0.27.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/opensc.rb",
+      "tap_git_path": "Formula/o/opensc.rb",
+      "tap_git_revision": "3582a6fde7d6b53e2caa492cd39d0c1be355877b",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Tools and libraries for smart cards",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://github.com/OpenSC/OpenSC/wiki"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-25T15:25:51Z",
+      "tags": {
+        "sequoia": {
+          "filename": "opensc-0.27.1.sequoia.bottle.tar.gz",
+          "local_filename": "opensc--0.27.1.sequoia.bottle.tar.gz",
+          "sha256": "bdf419ad0684f8e4d35562f29a272e10d8110c9c3b23d6190943711543dcbd95",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "lib/pkgconfig/opensc-pkcs11.pc",
+              "share/applications/org.opensc.notify.desktop",
+              "share/doc/opensc/opensc.conf",
+              "share/man/man5/opensc.conf.5",
+              "share/man/man5/pkcs15-profile.5"
+            ],
+            "linkage_files": [
+              "bin/cardos-tool",
+              "bin/cryptoflex-tool",
+              "bin/dnie-tool",
+              "bin/dtrust-tool",
+              "bin/egk-tool",
+              "bin/eidenv",
+              "bin/gids-tool",
+              "bin/goid-tool",
+              "bin/iasecc-tool",
+              "bin/netkey-tool",
+              "bin/openpgp-tool",
+              "bin/opensc-asn1",
+              "bin/opensc-explorer",
+              "bin/opensc-notify",
+              "bin/opensc-tool",
+              "bin/piv-tool",
+              "bin/pkcs11-register",
+              "bin/pkcs11-tool",
+              "bin/pkcs15-crypt",
+              "bin/pkcs15-init",
+              "bin/pkcs15-tool",
+              "bin/sc-hsm-tool",
+              "bin/westcos-tool",
+              "lib/libopensc.13.dylib",
+              "lib/libsmm-local.13.so",
+              "lib/opensc-pkcs11.so",
+              "lib/pkcs11-spy.so"
+            ],
+            "binary_relocation_files": [
+              "bin/pkcs11-register",
+              "bin/pkcs11-tool",
+              "lib/libopensc.13.dylib",
+              "lib/libopensc.a"
+            ],
+            "source_modified_time": 1774956361,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/pkcs11-register",
+              "string": "/usr/local/Cellar/opensc/0.27.1/lib/opensc-pkcs11.so",
+              "offset": 11920
+            },
+            {
+              "path": "bin/pkcs11-register",
+              "string": "/usr/local/Cellar/opensc/0.27.1/lib/onepin-opensc-pkcs11.so",
+              "offset": 11973
+            },
+            {
+              "path": "bin/pkcs11-tool",
+              "string": "/usr/local/Cellar/opensc/0.27.1/lib/opensc-pkcs11.so",
+              "offset": 108253
+            },
+            {
+              "path": "lib/libopensc.a",
+              "string": "/usr/local/Cellar/opensc/0.27.1/etc/opensc.conf",
+              "offset": 48997
+            },
+            {
+              "path": "lib/libopensc.a",
+              "string": "/usr/local/Cellar/opensc/0.27.1/lib",
+              "offset": 145063
+            },
+            {
+              "path": "lib/libopensc.a",
+              "string": "/usr/local/Cellar/opensc/0.27.1/share/opensc",
+              "offset": 2599146
+            },
+            {
+              "path": "lib/libopensc.13.dylib",
+              "string": "/usr/local/Cellar/opensc/0.27.1/etc/opensc.conf",
+              "offset": 1297892
+            },
+            {
+              "path": "lib/libopensc.13.dylib",
+              "string": "/usr/local/Cellar/opensc/0.27.1/lib",
+              "offset": 1305282
+            },
+            {
+              "path": "lib/libopensc.13.dylib",
+              "string": "/usr/local/Cellar/opensc/0.27.1/share/opensc",
+              "offset": 1472876
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-opensc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-opensc-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/egk-tool",
+            "bin/goid-tool",
+            "bin/gids-tool",
+            "bin/sc-hsm-tool",
+            "bin/pkcs11-register",
+            "bin/pkcs15-tool",
+            "bin/iasecc-tool",
+            "bin/pkcs15-crypt",
+            "bin/dtrust-tool",
+            "bin/opensc-asn1",
+            "bin/opensc-notify",
+            "bin/openpgp-tool",
+            "bin/westcos-tool",
+            "bin/opensc-explorer",
+            "bin/opensc-tool",
+            "bin/netkey-tool",
+            "bin/eidenv",
+            "bin/pkcs15-init",
+            "bin/cardos-tool",
+            "bin/pkcs11-tool",
+            "bin/dnie-tool",
+            "bin/cryptoflex-tool",
+            "bin/piv-tool"
+          ],
+          "all_files": [
+            ".brew/opensc.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "bin/cardos-tool",
+            "bin/cryptoflex-tool",
+            "bin/dnie-tool",
+            "bin/dtrust-tool",
+            "bin/egk-tool",
+            "bin/eidenv",
+            "bin/gids-tool",
+            "bin/goid-tool",
+            "bin/iasecc-tool",
+            "bin/netkey-tool",
+            "bin/openpgp-tool",
+            "bin/opensc-asn1",
+            "bin/opensc-explorer",
+            "bin/opensc-notify",
+            "bin/opensc-tool",
+            "bin/piv-tool",
+            "bin/pkcs11-register",
+            "bin/pkcs11-tool",
+            "bin/pkcs15-crypt",
+            "bin/pkcs15-init",
+            "bin/pkcs15-tool",
+            "bin/sc-hsm-tool",
+            "bin/westcos-tool",
+            "etc/bash_completion.d/cardos-tool",
+            "etc/bash_completion.d/cryptoflex-tool",
+            "etc/bash_completion.d/dnie-tool",
+            "etc/bash_completion.d/dtrust-tool",
+            "etc/bash_completion.d/egk-tool",
+            "etc/bash_completion.d/eidenv",
+            "etc/bash_completion.d/gids-tool",
+            "etc/bash_completion.d/goid-tool",
+            "etc/bash_completion.d/iasecc-tool",
+            "etc/bash_completion.d/netkey-tool",
+            "etc/bash_completion.d/npa-tool",
+            "etc/bash_completion.d/openpgp-tool",
+            "etc/bash_completion.d/opensc-asn1",
+            "etc/bash_completion.d/opensc-explorer",
+            "etc/bash_completion.d/opensc-notify",
+            "etc/bash_completion.d/opensc-tool",
+            "etc/bash_completion.d/piv-tool",
+            "etc/bash_completion.d/pkcs11-register",
+            "etc/bash_completion.d/pkcs11-tool",
+            "etc/bash_completion.d/pkcs15-crypt",
+            "etc/bash_completion.d/pkcs15-init",
+            "etc/bash_completion.d/pkcs15-tool",
+            "etc/bash_completion.d/sc-hsm-tool",
+            "etc/bash_completion.d/westcos-tool",
+            "etc/opensc.conf",
+            "lib/libopensc.13.dylib",
+            "lib/libopensc.a",
+            "lib/libopensc.dylib",
+            "lib/libsmm-local.13.so",
+            "lib/libsmm-local.so",
+            "lib/onepin-opensc-pkcs11.so",
+            "lib/opensc-pkcs11.so",
+            "lib/pkcs11/onepin-opensc-pkcs11.so",
+            "lib/pkcs11/opensc-pkcs11.so",
+            "lib/pkcs11/pkcs11-spy.so",
+            "lib/pkcs11-spy.so",
+            "lib/pkgconfig/opensc-pkcs11.pc",
+            "sbom.spdx.json",
+            "share/applications/org.opensc.notify.desktop",
+            "share/doc/opensc/NEWS",
+            "share/doc/opensc/opensc.conf",
+            "share/man/man1/cardos-tool.1",
+            "share/man/man1/cryptoflex-tool.1",
+            "share/man/man1/dnie-tool.1",
+            "share/man/man1/dtrust-tool.1",
+            "share/man/man1/egk-tool.1",
+            "share/man/man1/eidenv.1",
+            "share/man/man1/gids-tool.1",
+            "share/man/man1/goid-tool.1",
+            "share/man/man1/iasecc-tool.1",
+            "share/man/man1/netkey-tool.1",
+            "share/man/man1/npa-tool.1",
+            "share/man/man1/openpgp-tool.1",
+            "share/man/man1/opensc-asn1.1",
+            "share/man/man1/opensc-explorer.1",
+            "share/man/man1/opensc-notify.1",
+            "share/man/man1/opensc-tool.1",
+            "share/man/man1/piv-tool.1",
+            "share/man/man1/pkcs11-register.1",
+            "share/man/man1/pkcs11-tool.1",
+            "share/man/man1/pkcs15-crypt.1",
+            "share/man/man1/pkcs15-init.1",
+            "share/man/man1/pkcs15-tool.1",
+            "share/man/man1/sc-hsm-tool.1",
+            "share/man/man1/westcos-tool.1",
+            "share/man/man5/opensc.conf.5",
+            "share/man/man5/pkcs15-profile.5",
+            "share/opensc/asepcos.profile",
+            "share/opensc/authentic.profile",
+            "share/opensc/cardos.profile",
+            "share/opensc/cyberflex.profile",
+            "share/opensc/entersafe.profile",
+            "share/opensc/epass2003.profile",
+            "share/opensc/flex.profile",
+            "share/opensc/gids.profile",
+            "share/opensc/ias_adele_admin1.profile",
+            "share/opensc/ias_adele_admin2.profile",
+            "share/opensc/ias_adele_common.profile",
+            "share/opensc/iasecc.profile",
+            "share/opensc/iasecc_admin_eid.profile",
+            "share/opensc/iasecc_generic_oberthur.profile",
+            "share/opensc/iasecc_generic_pki.profile",
+            "share/opensc/isoApplet.profile",
+            "share/opensc/muscle.profile",
+            "share/opensc/myeid.profile",
+            "share/opensc/oberthur.profile",
+            "share/opensc/openpgp.profile",
+            "share/opensc/pkcs15.profile",
+            "share/opensc/rutoken.profile",
+            "share/opensc/rutoken_ecp.profile",
+            "share/opensc/rutoken_lite.profile",
+            "share/opensc/sc-hsm.profile",
+            "share/opensc/setcos.profile",
+            "share/opensc/starcos.profile"
+          ],
+          "installed_size": 6549903
+        }
+      }
+    }
+  }
+}

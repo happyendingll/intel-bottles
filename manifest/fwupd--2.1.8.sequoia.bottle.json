@@ -1,0 +1,871 @@
+{
+  "fwupd": {
+    "formula": {
+      "name": "fwupd",
+      "pkg_version": "2.1.8",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/fwupd.rb",
+      "tap_git_path": "Formula/f/fwupd.rb",
+      "tap_git_revision": "3582a6fde7d6b53e2caa492cd39d0c1be355877b",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Firmware update daemon",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://github.com/fwupd/fwupd"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-25T14:31:06Z",
+      "tags": {
+        "sequoia": {
+          "filename": "fwupd-2.1.8.sequoia.bottle.tar.gz",
+          "local_filename": "fwupd--2.1.8.sequoia.bottle.tar.gz",
+          "sha256": "1223dd2bcf842deb6f54376b3842ba4898d86db808d8e1c31546a03d91baf45c",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "etc/fwupd/remotes.d/vendor-directory.conf",
+              "lib/pkgconfig/fwupd.pc",
+              "share/man/man5/fwupd-remotes.d.5",
+              "share/man/man5/fwupd.conf.5"
+            ],
+            "linkage_files": [
+              "bin/fwupdtool",
+              "lib/fwupd-2.1.8/libfwupdengine.dylib",
+              "lib/fwupd-2.1.8/libfwupdplugin.dylib",
+              "lib/fwupd-2.1.8/libfwupdutil.dylib",
+              "lib/libfwupd.3.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/fwupdtool",
+              "lib/fwupd-2.1.8/libfwupdengine.dylib",
+              "lib/fwupd-2.1.8/libfwupdplugin.dylib"
+            ],
+            "source_modified_time": 1790242817,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.90.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.13",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.8.13_2",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libcbor",
+                "version": "0.14.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.14.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "json-glib",
+                "version": "1.10.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libjcat",
+                "version": "0.2.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.2.6",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libusb",
+                "version": "1.0.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.30",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxmlb",
+                "version": "0.3.29",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.3.29",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "usb.ids",
+                "version": "2026.06.26",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026.06.26",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/fwupd-2.1.8/libfwupdplugin.dylib",
+              "string": "/usr/local/opt/usb.ids/share/misc/usb.ids",
+              "offset": 970163
+            },
+            {
+              "path": "bin/fwupdtool",
+              "string": "/usr/local/Cellar/fwupd/2.1.8/share/locale",
+              "offset": 78600
+            },
+            {
+              "path": "lib/fwupd-2.1.8/libfwupdplugin.dylib",
+              "string": "/usr/local/Cellar/fwupd/2.1.8/etc",
+              "offset": 970238
+            },
+            {
+              "path": "lib/fwupd-2.1.8/libfwupdplugin.dylib",
+              "string": "/usr/local/Cellar/fwupd/2.1.8/lib/fwupd-2.1.8",
+              "offset": 970272
+            },
+            {
+              "path": "lib/fwupd-2.1.8/libfwupdplugin.dylib",
+              "string": "/usr/local/Cellar/fwupd/2.1.8/share",
+              "offset": 970318
+            },
+            {
+              "path": "lib/fwupd-2.1.8/libfwupdengine.dylib",
+              "string": "/usr/local/Cellar/fwupd/2.1.8/etc",
+              "offset": 1283229
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Package-SPDXRef-glib-2.90.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-usb.ids-2026.06.26",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.48.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "089df9911d09192beee2b9e49201bf1906d6e414bba1d4185982c5ac9d695feb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "name": "glib",
+                "versionInfo": "2.90.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/glib-2.90.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "285fda7b55475ba96d27f32af3233dc1d7799740abae01269117d192e8108f51"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+                "name": "p11-kit",
+                "versionInfo": "0.26.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/p11-kit-0.26.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ee01fce79642e0693fd6bb9024aeb3e684bddfcf797ad6cb9ba8907c24742162"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/p11-kit@0.26.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-usb.ids-2026.06.26",
+                "name": "usb.ids",
+                "versionInfo": "2026.06.26",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR BSD-3-Clause",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/usb.ids/blobs/sha256:c9491342e01272aa6c99d7a721050ba0aea50334eb462541d2d657ff8b74707e",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c9491342e01272aa6c99d7a721050ba0aea50334eb462541d2d657ff8b74707e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/usb.ids@2026.06.26",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.26.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-usb.ids-2026.06.26",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fwupd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-fwupd-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/fwupdtool"
+          ],
+          "all_files": [
+            ".brew/fwupd.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/fwupdtool",
+            "etc/fwupd/fwupd.conf",
+            "etc/fwupd/remotes.d/lvfs-embargo.conf",
+            "etc/fwupd/remotes.d/lvfs-testing.conf",
+            "etc/fwupd/remotes.d/lvfs.conf",
+            "etc/fwupd/remotes.d/vendor-directory.conf",
+            "etc/pki/fwupd/LVFS-CA-2025PQ.pem",
+            "etc/pki/fwupd/LVFS-CA.pem",
+            "etc/pki/fwupd-metadata/LVFS-CA-2025PQ.pem",
+            "etc/pki/fwupd-metadata/LVFS-CA.pem",
+            "include/fwupd-3/fwupd.h",
+            "include/fwupd-3/libfwupd/fwupd-bios-setting-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-bios-setting.h",
+            "include/fwupd-3/libfwupd/fwupd-build-glib-2-58.h",
+            "include/fwupd-3/libfwupd/fwupd-build-glib-2-60.h",
+            "include/fwupd-3/libfwupd/fwupd-build-glib-2-62.h",
+            "include/fwupd-3/libfwupd/fwupd-build-glib-2-64.h",
+            "include/fwupd-3/libfwupd/fwupd-build-glib-2-66.h",
+            "include/fwupd-3/libfwupd/fwupd-build-glib-2-68.h",
+            "include/fwupd-3/libfwupd/fwupd-build-glib-2-70.h",
+            "include/fwupd-3/libfwupd/fwupd-build-glib-2-72.h",
+            "include/fwupd-3/libfwupd/fwupd-build-glib-2-76.h",
+            "include/fwupd-3/libfwupd/fwupd-build-glib-2-80.h",
+            "include/fwupd-3/libfwupd/fwupd-build.h",
+            "include/fwupd-3/libfwupd/fwupd-client-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-client-sync.h",
+            "include/fwupd-3/libfwupd/fwupd-client.h",
+            "include/fwupd-3/libfwupd/fwupd-codec-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-codec.h",
+            "include/fwupd-3/libfwupd/fwupd-common.h",
+            "include/fwupd-3/libfwupd/fwupd-device-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-device.h",
+            "include/fwupd-3/libfwupd/fwupd-enums-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-enums.h",
+            "include/fwupd-3/libfwupd/fwupd-error-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-error.h",
+            "include/fwupd-3/libfwupd/fwupd-jcat-blob.h",
+            "include/fwupd-3/libfwupd/fwupd-jcat-file.h",
+            "include/fwupd-3/libfwupd/fwupd-jcat-item.h",
+            "include/fwupd-3/libfwupd/fwupd-jcat-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-json-array.h",
+            "include/fwupd-3/libfwupd/fwupd-json-common.h",
+            "include/fwupd-3/libfwupd/fwupd-json-node.h",
+            "include/fwupd-3/libfwupd/fwupd-json-object.h",
+            "include/fwupd-3/libfwupd/fwupd-json-parser.h",
+            "include/fwupd-3/libfwupd/fwupd-json-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-plugin-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-plugin.h",
+            "include/fwupd-3/libfwupd/fwupd-release-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-release.h",
+            "include/fwupd-3/libfwupd/fwupd-remote-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-remote.h",
+            "include/fwupd-3/libfwupd/fwupd-report-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-report.h",
+            "include/fwupd-3/libfwupd/fwupd-request-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-request.h",
+            "include/fwupd-3/libfwupd/fwupd-security-attr-struct.h",
+            "include/fwupd-3/libfwupd/fwupd-security-attr.h",
+            "include/fwupd-3/libfwupd/fwupd-variant.h",
+            "include/fwupd-3/libfwupd/fwupd-version.h",
+            "lib/fwupd-2.1.8/libfwupdengine.dylib",
+            "lib/fwupd-2.1.8/libfwupdplugin.dylib",
+            "lib/fwupd-2.1.8/libfwupdutil.dylib",
+            "lib/libfwupd.3.dylib",
+            "lib/libfwupd.dylib",
+            "lib/pkgconfig/fwupd.pc",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/fwupdmgr.fish",
+            "share/fwupd/add_capsule_header.py",
+            "share/fwupd/firmware_packager.py",
+            "share/fwupd/install_dell_bios_exe.py",
+            "share/fwupd/metainfo/org.freedesktop.fwupd.remotes.lvfs-testing.metainfo.xml",
+            "share/fwupd/metainfo/org.freedesktop.fwupd.remotes.lvfs.metainfo.xml",
+            "share/fwupd/quirks.d/builtin.quirk.gz",
+            "share/fwupd/remotes.d/vendor/firmware/README.md",
+            "share/fwupd/simple_client.py",
+            "share/icons/hicolor/128x128/apps/org.freedesktop.fwupd.png",
+            "share/icons/hicolor/64x64/apps/org.freedesktop.fwupd.png",
+            "share/icons/hicolor/scalable/apps/org.freedesktop.fwupd.svg",
+            "share/locale/af/LC_MESSAGES/fwupd.mo",
+            "share/locale/ar/LC_MESSAGES/fwupd.mo",
+            "share/locale/ast/LC_MESSAGES/fwupd.mo",
+            "share/locale/bg/LC_MESSAGES/fwupd.mo",
+            "share/locale/ca/LC_MESSAGES/fwupd.mo",
+            "share/locale/cs/LC_MESSAGES/fwupd.mo",
+            "share/locale/da/LC_MESSAGES/fwupd.mo",
+            "share/locale/de/LC_MESSAGES/fwupd.mo",
+            "share/locale/en_GB/LC_MESSAGES/fwupd.mo",
+            "share/locale/eo/LC_MESSAGES/fwupd.mo",
+            "share/locale/es/LC_MESSAGES/fwupd.mo",
+            "share/locale/et/LC_MESSAGES/fwupd.mo",
+            "share/locale/eu/LC_MESSAGES/fwupd.mo",
+            "share/locale/fi/LC_MESSAGES/fwupd.mo",
+            "share/locale/fr/LC_MESSAGES/fwupd.mo",
+            "share/locale/fur/LC_MESSAGES/fwupd.mo",
+            "share/locale/gl/LC_MESSAGES/fwupd.mo",
+            "share/locale/he/LC_MESSAGES/fwupd.mo",
+            "share/locale/hi/LC_MESSAGES/fwupd.mo",
+            "share/locale/hr/LC_MESSAGES/fwupd.mo",
+            "share/locale/hu/LC_MESSAGES/fwupd.mo",
+            "share/locale/id/LC_MESSAGES/fwupd.mo",
+            "share/locale/it/LC_MESSAGES/fwupd.mo",
+            "share/locale/ja/LC_MESSAGES/fwupd.mo",
+            "share/locale/ka/LC_MESSAGES/fwupd.mo",
+            "share/locale/kk/LC_MESSAGES/fwupd.mo",
+            "share/locale/ko/LC_MESSAGES/fwupd.mo",
+            "share/locale/ky/LC_MESSAGES/fwupd.mo",
+            "share/locale/lt/LC_MESSAGES/fwupd.mo",
+            "share/locale/lv/LC_MESSAGES/fwupd.mo",
+            "share/locale/nl/LC_MESSAGES/fwupd.mo",
+            "share/locale/oc/LC_MESSAGES/fwupd.mo",
+            "share/locale/pa/LC_MESSAGES/fwupd.mo",
+            "share/locale/pl/LC_MESSAGES/fwupd.mo",
+            "share/locale/pt/LC_MESSAGES/fwupd.mo",
+            "share/locale/pt_BR/LC_MESSAGES/fwupd.mo",
+            "share/locale/ro/LC_MESSAGES/fwupd.mo",
+            "share/locale/ru/LC_MESSAGES/fwupd.mo",
+            "share/locale/si/LC_MESSAGES/fwupd.mo",
+            "share/locale/sk/LC_MESSAGES/fwupd.mo",
+            "share/locale/sl/LC_MESSAGES/fwupd.mo",
+            "share/locale/sq/LC_MESSAGES/fwupd.mo",
+            "share/locale/sr/LC_MESSAGES/fwupd.mo",
+            "share/locale/sv/LC_MESSAGES/fwupd.mo",
+            "share/locale/tr/LC_MESSAGES/fwupd.mo",
+            "share/locale/uk/LC_MESSAGES/fwupd.mo",
+            "share/locale/zh_CN/LC_MESSAGES/fwupd.mo",
+            "share/locale/zh_TW/LC_MESSAGES/fwupd.mo",
+            "share/man/man1/fwupdtool.1",
+            "share/man/man5/fwupd-remotes.d.5",
+            "share/man/man5/fwupd.conf.5",
+            "share/metainfo/org.freedesktop.fwupd.metainfo.xml"
+          ],
+          "installed_size": 8249371
+        }
+      }
+    }
+  }
+}
