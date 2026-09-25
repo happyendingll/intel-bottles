@@ -2,27 +2,27 @@
   "gmic": {
     "formula": {
       "name": "gmic",
-      "pkg_version": "4.0.5",
+      "pkg_version": "4.0.5_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gmic.rb",
       "tap_git_path": "Formula/g/gmic.rb",
-      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_revision": "fab3991cc4e60674248d63bd83509c86af66988d",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Full-Featured Open-Source Framework for Image Processing",
       "license": "CECILL-2.1",
       "homepage": "https://gmic.eu/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-14T14:36:23Z",
+      "date": "2026-09-24T22:45:45Z",
       "tags": {
         "sequoia": {
-          "filename": "gmic-4.0.5.sequoia.bottle.tar.gz",
-          "local_filename": "gmic--4.0.5.sequoia.bottle.tar.gz",
-          "sha256": "022114b5b4b67adaaead275c2c0599aaa2368c0ad6118fa9dc302759e11c4b02",
+          "filename": "gmic-4.0.5_1.sequoia.bottle.tar.gz",
+          "local_filename": "gmic--4.0.5_1.sequoia.bottle.tar.gz",
+          "sha256": "dbe077607f77ce889ad11173ef543bb56f0a103fab7f80c211969f98e1883727",
           "tab": {
-            "homebrew_version": "7.0.1",
+            "homebrew_version": "7.0.6",
             "changed_files": [],
             "linkage_files": [
               "bin/gmic",
@@ -42,10 +42,10 @@
               },
               {
                 "full_name": "libomp",
-                "version": "23.1.1",
+                "version": "23.1.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "23.1.1",
+                "pkg_version": "23.1.2",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -149,21 +149,21 @@
               },
               {
                 "full_name": "openjph",
-                "version": "0.31.0",
+                "version": "0.32.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.31.0",
+                "pkg_version": "0.32.0",
                 "declared_directly": false,
-                "compatibility_version": 6
+                "compatibility_version": 7
               },
               {
                 "full_name": "openexr",
-                "version": "3.4.15",
+                "version": "3.5.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.4.15",
+                "pkg_version": "3.5.0",
                 "declared_directly": true,
-                "compatibility_version": 1
+                "compatibility_version": 2
               }
             ],
             "arch": "x86_64",
@@ -180,12 +180,17 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-cimg-4.0.5",
-              "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+              "SPDXRef-Package-SPDXRef-libomp-23.1.2",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+              "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+              "SPDXRef-Package-SPDXRef-webp-1.6.0",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
               "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+              "SPDXRef-Package-SPDXRef-openjph-0.32.0",
+              "SPDXRef-Package-SPDXRef-openexr-3.5.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -213,24 +218,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.1.2",
                 "name": "libomp",
-                "versionInfo": "23.1.1",
+                "versionInfo": "23.1.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libomp-23.1.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libomp-23.1.2.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "f9006339f8009a14348931dfb50532f9b6962968266db7a3108178588bf8b703"
+                    "checksumValue": "847accf04dd181b6afad3527664929bf7c667d0a3c29a998d685746d6bcf1975"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libomp@23.1.1",
+                    "referenceLocator": "pkg:brew/libomp@23.1.2",
                     "referenceType": "purl"
                   }
                 ]
@@ -259,18 +264,87 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "name": "libpng",
+                "versionInfo": "1.6.58",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libpng-1.6.58.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a6af06c61f8385b8e4cc0e685dc3a4ab7bd964e28493a94a2d0833a3e7566a2c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "name": "giflib",
+                "versionInfo": "6.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/giflib-6.1.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f67ea26714be587a58ae9b9ff427a1afa0c082cbec177192514f179983ff2352"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/giflib@6.1.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "name": "webp",
+                "versionInfo": "1.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/webp-1.6.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "76a57f341e4dda8eb186c486f67e84b5ef173a8f9b0d475668100365177355eb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/webp@1.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "0BSD AND GPL-2.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/xz-5.8.4.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "6b958311e9568372a79c5dafcd91e16d2deb19a079b69c6861307ac27644b534"
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
                   }
                 ],
                 "externalRefs": [
@@ -351,6 +425,52 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openjph-0.32.0",
+                "name": "openjph",
+                "versionInfo": "0.32.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openjph-0.32.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "118e82db7425aaa68f11577813d3a1e8d6ad131b5c0a607fee11585cbb4e8199"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openjph@0.32.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openexr-3.5.0",
+                "name": "openexr",
+                "versionInfo": "3.5.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openexr-3.5.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "dc859a6ad61564463df3f6055ea4bd9c52d299fcdb1270f0ca58a9e8ccfe844a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openexr@3.5.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "16.4",
@@ -370,12 +490,27 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gmic"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.1.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gmic"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gmic"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gmic"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gmic"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.6.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gmic"
               },
@@ -396,6 +531,16 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gmic"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openjph-0.32.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gmic"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openexr-3.5.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gmic"
               },
@@ -426,7 +571,7 @@
             "share/bash-completion/completions/gmic",
             "share/man/man1/gmic.1"
           ],
-          "installed_size": 15812516
+          "installed_size": 15812527
         }
       }
     }

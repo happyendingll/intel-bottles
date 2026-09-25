@@ -1,31 +1,34 @@
 {
-  "mimo-code": {
+  "node-sass": {
     "formula": {
-      "name": "mimo-code",
-      "pkg_version": "0.1.14",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mimo-code.rb",
-      "tap_git_path": "Formula/m/mimo-code.rb",
-      "tap_git_revision": "79057e15b38d7494db937d7c672e9eb07216cd18",
+      "name": "node-sass",
+      "pkg_version": "1.105.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/n/node-sass.rb",
+      "tap_git_path": "Formula/n/node-sass.rb",
+      "tap_git_revision": "fab3991cc4e60674248d63bd83509c86af66988d",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "AI coding agent with cross-session memory",
+      "desc": "JavaScript implementation of a Sass compiler",
       "license": "MIT",
-      "homepage": "https://github.com/XiaomiMiMo/MiMo-Code"
+      "homepage": "https://github.com/sass/dart-sass"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-09-19T11:38:08Z",
+      "date": "2026-09-24T23:03:15Z",
       "tags": {
         "sequoia": {
-          "filename": "mimo-code-0.1.14.sequoia.bottle.tar.gz",
-          "local_filename": "mimo-code--0.1.14.sequoia.bottle.tar.gz",
-          "sha256": "47be8ae638cfb3f32774bc3e9be0e3f9bb76c3149d9f7bf83300ed0c9ef5e3d1",
+          "filename": "node-sass-1.105.0.sequoia.bottle.tar.gz",
+          "local_filename": "node-sass--1.105.0.sequoia.bottle.tar.gz",
+          "sha256": "81c2524f2a35eac6ea7ae5e5f67dc6806366dece1efa1ec3ae84b323051a8b5c",
           "tab": {
-            "homebrew_version": "7.0.4",
+            "homebrew_version": "7.0.6",
             "changed_files": [
-              "libexec/lib/node_modules/@mimo-ai/cli/bin/mimo",
-              "libexec/lib/node_modules/@mimo-ai/cli/postinstall.mjs"
+              "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/scripts/build-from-source.js",
+              "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/clang-format.js",
+              "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/conversion.js",
+              "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/eslint-format.js",
+              "libexec/lib/node_modules/sass/sass.js"
             ],
             "linkage_files": [],
             "binary_relocation_files": [],
@@ -133,10 +136,10 @@
               },
               {
                 "full_name": "simdutf",
-                "version": "9.2.0",
+                "version": "9.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.2.0",
+                "pkg_version": "9.2.1",
                 "declared_directly": false,
                 "compatibility_version": 5
               },
@@ -268,7 +271,8 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-simdutf-9.2.0",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+              "SPDXRef-Package-SPDXRef-simdutf-9.2.1",
               "SPDXRef-Package-SPDXRef-merve-1.2.2_3",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
               "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
@@ -283,24 +287,47 @@
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2.0",
-                "name": "simdutf",
-                "versionInfo": "9.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "name": "libnghttp2",
+                "versionInfo": "1.70.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/simdutf-9.2.0.sequoia.bottle.tar.gz",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libnghttp2-1.70.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "6ec4e7dfdf4adf835b2b55da8d376606539cad475ea9fe083f71d0014286ffe6"
+                    "checksumValue": "5fc34d9e93ddb24b1c2cbb83a0beee5e3524a0d96c18b4a64cf32762681b2b65"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdutf@9.2.0",
+                    "referenceLocator": "pkg:brew/libnghttp2@1.70.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2.1",
+                "name": "simdutf",
+                "versionInfo": "9.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 OR MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/simdutf-9.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b093eec0cf2abf48f6661bdf7a1e5c3277c21a6aa1a6246bbfd67b528ea9654e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/simdutf@9.2.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -550,86 +577,254 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mimo-code"
+                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-merve-1.2.2_3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mimo-code"
+                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mimo-code"
+                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mimo-code"
+                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-4.6.11",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mimo-code"
+                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mimo-code"
+                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mimo-code"
+                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mimo-code"
+                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mimo-code"
+                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mimo-code"
+                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.9.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mimo-code"
+                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-mimo-code-src"
+                "relatedSpdxElement": "SPDXRef-Archive-node-sass-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/mimo"
+            "bin/sass"
           ],
           "all_files": [
-            ".brew/mimo-code.rb",
+            ".brew/node-sass.rb",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
-            "bin/mimo",
-            "libexec/bin/mimo",
-            "libexec/lib/node_modules/@mimo-ai/cli/LICENSE",
-            "libexec/lib/node_modules/@mimo-ai/cli/README.md",
-            "libexec/lib/node_modules/@mimo-ai/cli/bin/.mimocode",
-            "libexec/lib/node_modules/@mimo-ai/cli/bin/mimo",
-            "libexec/lib/node_modules/@mimo-ai/cli/package.json",
-            "libexec/lib/node_modules/@mimo-ai/cli/postinstall.mjs",
+            "bin/sass",
+            "libexec/bin/sass",
+            "libexec/lib/node_modules/sass/LICENSE",
+            "libexec/lib/node_modules/sass/README.md",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/LICENSE",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/README.md",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/binding.gyp",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/index.d.ts",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/index.js",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/index.js.flow",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/package.json",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/scripts/build-from-source.js",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Backend.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Backend.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Debounce.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Debounce.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/DirTree.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/DirTree.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Event.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Glob.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Glob.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/PromiseRunner.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Signal.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Watcher.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Watcher.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/binding.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/kqueue/KqueueBackend.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/kqueue/KqueueBackend.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/linux/InotifyBackend.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/linux/InotifyBackend.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/macos/FSEventsBackend.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/macos/FSEventsBackend.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/shared/BruteForceBackend.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/shared/BruteForceBackend.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/unix/fts.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/unix/legacy.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/wasm/WasmBackend.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/wasm/WasmBackend.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/wasm/include.h",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/watchman/BSER.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/watchman/BSER.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/watchman/IPC.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/watchman/WatchmanBackend.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/watchman/WatchmanBackend.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/windows/WindowsBackend.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/windows/WindowsBackend.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/windows/win_utils.cc",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/windows/win_utils.hh",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/wrapper.js",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher-darwin-x64/LICENSE",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher-darwin-x64/README.md",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher-darwin-x64/package.json",
+            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher-darwin-x64/watcher.node",
+            "libexec/lib/node_modules/sass/node_modules/chokidar/LICENSE",
+            "libexec/lib/node_modules/sass/node_modules/chokidar/README.md",
+            "libexec/lib/node_modules/sass/node_modules/chokidar/handler.d.ts",
+            "libexec/lib/node_modules/sass/node_modules/chokidar/handler.js",
+            "libexec/lib/node_modules/sass/node_modules/chokidar/index.d.ts",
+            "libexec/lib/node_modules/sass/node_modules/chokidar/index.js",
+            "libexec/lib/node_modules/sass/node_modules/chokidar/package.json",
+            "libexec/lib/node_modules/sass/node_modules/detect-libc/LICENSE",
+            "libexec/lib/node_modules/sass/node_modules/detect-libc/README.md",
+            "libexec/lib/node_modules/sass/node_modules/detect-libc/index.d.ts",
+            "libexec/lib/node_modules/sass/node_modules/detect-libc/lib/detect-libc.js",
+            "libexec/lib/node_modules/sass/node_modules/detect-libc/lib/elf.js",
+            "libexec/lib/node_modules/sass/node_modules/detect-libc/lib/filesystem.js",
+            "libexec/lib/node_modules/sass/node_modules/detect-libc/lib/process.js",
+            "libexec/lib/node_modules/sass/node_modules/detect-libc/package.json",
+            "libexec/lib/node_modules/sass/node_modules/immutable/LICENSE",
+            "libexec/lib/node_modules/sass/node_modules/immutable/README.md",
+            "libexec/lib/node_modules/sass/node_modules/immutable/dist/immutable.d.ts",
+            "libexec/lib/node_modules/sass/node_modules/immutable/dist/immutable.es.js",
+            "libexec/lib/node_modules/sass/node_modules/immutable/dist/immutable.js",
+            "libexec/lib/node_modules/sass/node_modules/immutable/dist/immutable.js.flow",
+            "libexec/lib/node_modules/sass/node_modules/immutable/dist/immutable.min.js",
+            "libexec/lib/node_modules/sass/node_modules/immutable/package.json",
+            "libexec/lib/node_modules/sass/node_modules/is-extglob/LICENSE",
+            "libexec/lib/node_modules/sass/node_modules/is-extglob/README.md",
+            "libexec/lib/node_modules/sass/node_modules/is-extglob/index.js",
+            "libexec/lib/node_modules/sass/node_modules/is-extglob/package.json",
+            "libexec/lib/node_modules/sass/node_modules/is-glob/LICENSE",
+            "libexec/lib/node_modules/sass/node_modules/is-glob/README.md",
+            "libexec/lib/node_modules/sass/node_modules/is-glob/index.js",
+            "libexec/lib/node_modules/sass/node_modules/is-glob/package.json",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/LICENSE.md",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/README.md",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/common.gypi",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/except.gypi",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/index.js",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/napi-inl.deprecated.h",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/napi-inl.h",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/napi.h",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/node_addon_api.gyp",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/node_api.gyp",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/noexcept.gypi",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/nothing.c",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/package-support.json",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/package.json",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/README.md",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/check-napi.js",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/clang-format.js",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/conversion.js",
+            "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/eslint-format.js",
+            "libexec/lib/node_modules/sass/node_modules/picomatch/LICENSE",
+            "libexec/lib/node_modules/sass/node_modules/picomatch/README.md",
+            "libexec/lib/node_modules/sass/node_modules/picomatch/index.js",
+            "libexec/lib/node_modules/sass/node_modules/picomatch/lib/constants.js",
+            "libexec/lib/node_modules/sass/node_modules/picomatch/lib/parse.js",
+            "libexec/lib/node_modules/sass/node_modules/picomatch/lib/picomatch.js",
+            "libexec/lib/node_modules/sass/node_modules/picomatch/lib/scan.js",
+            "libexec/lib/node_modules/sass/node_modules/picomatch/lib/utils.js",
+            "libexec/lib/node_modules/sass/node_modules/picomatch/package.json",
+            "libexec/lib/node_modules/sass/node_modules/picomatch/posix.js",
+            "libexec/lib/node_modules/sass/node_modules/readdirp/LICENSE",
+            "libexec/lib/node_modules/sass/node_modules/readdirp/README.md",
+            "libexec/lib/node_modules/sass/node_modules/readdirp/index.d.ts",
+            "libexec/lib/node_modules/sass/node_modules/readdirp/index.js",
+            "libexec/lib/node_modules/sass/node_modules/readdirp/package.json",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/LICENSE",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/README.md",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/array-set.js",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/base64-vlq.js",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/base64.js",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/binary-search.js",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/mapping-list.js",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/quick-sort.js",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/source-map-consumer.d.ts",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/source-map-consumer.js",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/source-map-generator.d.ts",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/source-map-generator.js",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/source-node.d.ts",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/source-node.js",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/util.js",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/package.json",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/source-map.d.ts",
+            "libexec/lib/node_modules/sass/node_modules/source-map-js/source-map.js",
+            "libexec/lib/node_modules/sass/package.json",
+            "libexec/lib/node_modules/sass/sass.dart.js",
+            "libexec/lib/node_modules/sass/sass.default.cjs",
+            "libexec/lib/node_modules/sass/sass.default.js",
+            "libexec/lib/node_modules/sass/sass.js",
+            "libexec/lib/node_modules/sass/sass.node.js",
+            "libexec/lib/node_modules/sass/sass.node.mjs",
+            "libexec/lib/node_modules/sass/types/compile.d.ts",
+            "libexec/lib/node_modules/sass/types/deprecations.d.ts",
+            "libexec/lib/node_modules/sass/types/exception.d.ts",
+            "libexec/lib/node_modules/sass/types/importer.d.ts",
+            "libexec/lib/node_modules/sass/types/index.d.ts",
+            "libexec/lib/node_modules/sass/types/legacy/exception.d.ts",
+            "libexec/lib/node_modules/sass/types/legacy/function.d.ts",
+            "libexec/lib/node_modules/sass/types/legacy/importer.d.ts",
+            "libexec/lib/node_modules/sass/types/legacy/options.d.ts",
+            "libexec/lib/node_modules/sass/types/legacy/plugin_this.d.ts",
+            "libexec/lib/node_modules/sass/types/legacy/render.d.ts",
+            "libexec/lib/node_modules/sass/types/logger/index.d.ts",
+            "libexec/lib/node_modules/sass/types/logger/source_location.d.ts",
+            "libexec/lib/node_modules/sass/types/logger/source_span.d.ts",
+            "libexec/lib/node_modules/sass/types/options.d.ts",
+            "libexec/lib/node_modules/sass/types/util/promise_or.d.ts",
+            "libexec/lib/node_modules/sass/types/value/argument_list.d.ts",
+            "libexec/lib/node_modules/sass/types/value/boolean.d.ts",
+            "libexec/lib/node_modules/sass/types/value/calculation.d.ts",
+            "libexec/lib/node_modules/sass/types/value/color.d.ts",
+            "libexec/lib/node_modules/sass/types/value/function.d.ts",
+            "libexec/lib/node_modules/sass/types/value/index.d.ts",
+            "libexec/lib/node_modules/sass/types/value/list.d.ts",
+            "libexec/lib/node_modules/sass/types/value/map.d.ts",
+            "libexec/lib/node_modules/sass/types/value/mixin.d.ts",
+            "libexec/lib/node_modules/sass/types/value/module.d.ts",
+            "libexec/lib/node_modules/sass/types/value/number.d.ts",
+            "libexec/lib/node_modules/sass/types/value/string.d.ts",
             "sbom.spdx.json"
           ],
-          "installed_size": 105425270
+          "installed_size": 8064623
         }
       }
     }
