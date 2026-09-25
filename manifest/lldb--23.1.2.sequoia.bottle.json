@@ -2,27 +2,27 @@
   "lldb": {
     "formula": {
       "name": "lldb",
-      "pkg_version": "23.1.1",
+      "pkg_version": "23.1.2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/l/lldb.rb",
       "tap_git_path": "Formula/l/lldb.rb",
-      "tap_git_revision": "5dc7d01b36b6a05d86de8711f98588820fe4e699",
+      "tap_git_revision": "75e0bd6346cd554413f57fdd33fa593e47defd85",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Next generation, high-performance debugger",
       "license": "Apache-2.0 WITH LLVM-exception",
       "homepage": "https://lldb.llvm.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-09-19T22:46:41Z",
+      "date": "2026-09-25T13:36:11Z",
       "tags": {
         "sequoia": {
-          "filename": "lldb-23.1.1.sequoia.bottle.tar.gz",
-          "local_filename": "lldb--23.1.1.sequoia.bottle.tar.gz",
-          "sha256": "5e2d31d8228469a0753814af062d754250c0e6884f44b02fe76f6a7f691efc02",
+          "filename": "lldb-23.1.2.sequoia.bottle.tar.gz",
+          "local_filename": "lldb--23.1.2.sequoia.bottle.tar.gz",
+          "sha256": "ec3aeb3bd26d1a70d864f9603ed47cc3849d15804585c2ec7a3fada8dc7815bb",
           "tab": {
-            "homebrew_version": "7.0.4",
+            "homebrew_version": "7.0.6",
             "changed_files": [
               "include/lldb/Host/Config.h"
             ],
@@ -36,13 +36,13 @@
               "bin/lldb-server",
               "bin/lldb-tblgen",
               "bin/yaml2macho-core",
-              "lib/liblldb.23.1.1.dylib",
+              "lib/liblldb.23.1.2.dylib",
               "lib/liblldbPluginScriptInterpreterPython.23.1.dylib"
             ],
             "binary_relocation_files": [
-              "lib/liblldb.23.1.1.dylib"
+              "lib/liblldb.23.1.2.dylib"
             ],
-            "source_modified_time": 1788786089,
+            "source_modified_time": 1789873207,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -82,10 +82,10 @@
               },
               {
                 "full_name": "llvm",
-                "version": "23.1.1",
+                "version": "23.1.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "23.1.1",
+                "pkg_version": "23.1.2",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
@@ -156,9 +156,9 @@
           },
           "binary_relocation_diagnostics": [
             {
-              "path": "lib/liblldb.23.1.1.dylib",
+              "path": "lib/liblldb.23.1.2.dylib",
               "string": "/usr/local/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/lib/libpython3.14.dylib",
-              "offset": 8920363
+              "offset": 8920347
             }
           ],
           "sbom": {
@@ -166,7 +166,7 @@
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-llvm-23.1.1",
+              "SPDXRef-Package-SPDXRef-llvm-23.1.2",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
               "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
@@ -246,24 +246,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.1.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.1.2",
                 "name": "llvm",
-                "versionInfo": "23.1.1",
+                "versionInfo": "23.1.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/llvm-23.1.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/llvm-23.1.2.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4a7d69d006feb38f9e86ca826635ce1e2ba7ba072a8c763f0a4e4b721fd11f00"
+                    "checksumValue": "fe936f60388d6ec767e8b8ad79f24bf018808d49c2a0bc19339e26f19c348b19"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/llvm@23.1.1",
+                    "referenceLocator": "pkg:brew/llvm@23.1.2",
                     "referenceType": "purl"
                   }
                 ]
@@ -436,7 +436,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-lldb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.1.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.1.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lldb"
               },
@@ -1192,7 +1192,7 @@
             "include/lldb/lldb-public.h",
             "include/lldb/lldb-types.h",
             "include/lldb/lldb-versioning.h",
-            "lib/liblldb.23.1.1.dylib",
+            "lib/liblldb.23.1.2.dylib",
             "lib/liblldb.23.1.dylib",
             "lib/liblldb.dylib",
             "lib/liblldbPluginScriptInterpreterPython.23.1.dylib",
@@ -1236,7 +1236,7 @@
             "lib/python3.14/site-packages/lldb/utils/symbolication.py",
             "sbom.spdx.json"
           ],
-          "installed_size": 30372859
+          "installed_size": 30373289
         }
       }
     }
