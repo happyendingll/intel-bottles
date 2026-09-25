@@ -24,7 +24,7 @@ on:
         type: string
         default: bottles
       llvm_single_stage:
-        description: Disable LLVM's multi-stage PGO build for the one-off Intel bootstrap
+        description: Disable LLVM's multi-stage PGO build for Intel bottles
         type: boolean
         default: false
     secrets:
@@ -85,9 +85,7 @@ jobs:
         if: inputs.llvm_single_stage && matrix.entry.formula == 'llvm'
         run: |
           formula="$(brew --repo homebrew/core)/Formula/l/llvm.rb"
-          python3 scripts/patch_llvm_single_stage.py \
-            --expected-version 23.1.1 \
-            "$formula"
+          python3 scripts/patch_llvm_single_stage.py "$formula"
           brew ruby -- -c "$formula"
           git -C "$(brew --repo homebrew/core)" diff --check -- Formula/l/llvm.rb
           git -C "$(brew --repo homebrew/core)" diff -- Formula/l/llvm.rb

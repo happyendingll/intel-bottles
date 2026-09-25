@@ -105,7 +105,8 @@ publish 失败，也会尽量恢复上游上下文，并在“需要人工复查
   官方版本和有效 manifest；有缺口时创建 Issue，通过 GitHub 通知邮件提醒。Issue 不再指派给
   仓库所有者，避免“新 Issue”和“被指派”各产生一封邮件。
 - [`build-llvm-single-stage.yml`](.github/workflows/build-llvm-single-stage.yml)：LLVM 专用手动入口，
-  跳过耗时很长的 PGO 多阶段构建，在 Intel runner 上生成可用的单阶段 bottle。
+  跳过耗时很长的 PGO 多阶段构建；普通 `build-bottles.yml` 遇到新版 `llvm` 时也会自动使用
+  同一套单阶段构建逻辑。
 
 ### 为什么使用依赖 wave
 

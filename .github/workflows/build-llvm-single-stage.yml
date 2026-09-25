@@ -1,9 +1,9 @@
 name: build llvm single stage
 
-# One-off bootstrap for LLVM 23.1.1 on GitHub's six-hour Intel runner. Homebrew's
+# Manual LLVM build on GitHub's six-hour Intel runner. Homebrew's
 # regular unversioned LLVM formula uses a multi-stage PGO/LTO build that needs far
 # longer than the hosted runner permits. This workflow changes only pgo_build to
-# false in the disposable runner checkout; the published bottle remains LLVM 23.1.1.
+# false in the disposable runner checkout for any current LLVM version.
 
 on:
   workflow_dispatch:
@@ -20,7 +20,7 @@ permissions:
 
 jobs:
   llvm:
-    name: LLVM 23.1.1 non-PGO bootstrap
+    name: LLVM non-PGO build
     uses: ./.github/workflows/_build-stage.yml
     with:
       formulae: >-
