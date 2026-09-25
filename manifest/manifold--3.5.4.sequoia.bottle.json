@@ -1,0 +1,168 @@
+{
+  "manifold": {
+    "formula": {
+      "name": "manifold",
+      "pkg_version": "3.5.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/manifold.rb",
+      "tap_git_path": "Formula/m/manifold.rb",
+      "tap_git_revision": "45726f9e485a8847ad5fb6af2bc2742c607b4b2b",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Geometry library for topological robustness",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/elalish/manifold"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-25T21:38:34Z",
+      "tags": {
+        "sequoia": {
+          "filename": "manifold-3.5.4.sequoia.bottle.tar.gz",
+          "local_filename": "manifold--3.5.4.sequoia.bottle.tar.gz",
+          "sha256": "00c1dae00e425a4ddde193b2812873060c9cbe3378c24b21e58b9cae769ec2d7",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "lib/pkgconfig/manifold.pc"
+            ],
+            "linkage_files": [
+              "lib/libmanifold.3.5.4.dylib",
+              "lib/libmanifoldc.3.5.4.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790331477,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "clipper2",
+                "version": "2.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.0.1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "hwloc",
+                "version": "2.15.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.15.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "tbb",
+                "version": "2023.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2023.1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-hwloc-2.15.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-hwloc-2.15.0",
+                "name": "hwloc",
+                "versionInfo": "2.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/hwloc-2.15.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5588358e1993ccdbee9cf813a16f27369a77deffbe0c03fb34ec633b6002b21a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/hwloc@2.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-hwloc-2.15.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manifold"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-manifold-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/manifold.rb",
+            "AUTHORS",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/manifold/common.h",
+            "include/manifold/cross_section.h",
+            "include/manifold/linalg.h",
+            "include/manifold/manifold.h",
+            "include/manifold/manifoldc.h",
+            "include/manifold/math.h",
+            "include/manifold/mesh.h",
+            "include/manifold/optional_assert.h",
+            "include/manifold/polygon.h",
+            "include/manifold/types.h",
+            "include/manifold/vec_view.h",
+            "include/manifold/version.h",
+            "lib/cmake/manifold/manifoldConfig.cmake",
+            "lib/cmake/manifold/manifoldConfigVersion.cmake",
+            "lib/cmake/manifold/manifoldTargets-release.cmake",
+            "lib/cmake/manifold/manifoldTargets.cmake",
+            "lib/libmanifold.3.5.4.dylib",
+            "lib/libmanifold.3.dylib",
+            "lib/libmanifold.dylib",
+            "lib/libmanifoldc.3.5.4.dylib",
+            "lib/libmanifoldc.3.dylib",
+            "lib/libmanifoldc.dylib",
+            "lib/pkgconfig/manifold.pc",
+            "sbom.spdx.json",
+            "share/manifold/large_scene_test.cpp"
+          ],
+          "installed_size": 3788863
+        }
+      }
+    }
+  }
+}
