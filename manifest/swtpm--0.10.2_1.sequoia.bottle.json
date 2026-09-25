@@ -1,0 +1,593 @@
+{
+  "swtpm": {
+    "formula": {
+      "name": "swtpm",
+      "pkg_version": "0.10.2_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/swtpm.rb",
+      "tap_git_path": "Formula/s/swtpm.rb",
+      "tap_git_revision": "bb121738f9f2066904e38d8ff64a714c3d03830d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Software TPM Emulator based on libtpms",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/stefanberger/swtpm"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-25T16:07:44Z",
+      "tags": {
+        "sequoia": {
+          "filename": "swtpm-0.10.2_1.sequoia.bottle.tar.gz",
+          "local_filename": "swtpm--0.10.2_1.sequoia.bottle.tar.gz",
+          "sha256": "8822aed2f068d56a7f16b8e8714c53276ffbc6fcaed95f301d52293dd00c2b61",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "share/swtpm/swtpm-create-user-config-files",
+              "share/swtpm/swtpm-localca",
+              "etc/swtpm-localca.conf",
+              "etc/swtpm_setup.conf"
+            ],
+            "linkage_files": [
+              "bin/swtpm",
+              "bin/swtpm_bios",
+              "bin/swtpm_cert",
+              "bin/swtpm_ioctl",
+              "bin/swtpm_localca",
+              "bin/swtpm_setup",
+              "lib/swtpm/libswtpm_libtpms.0.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/swtpm_localca",
+              "bin/swtpm_setup"
+            ],
+            "source_modified_time": 1787099550,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.90.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-glib",
+                "version": "1.10.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.8",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-08-13",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "2026-08-13",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libtpms",
+                "version": "0.10.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.10.2_1",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/swtpm_setup",
+              "string": "/usr/local/Cellar/swtpm/0.10.2_1/etc",
+              "offset": 55411
+            },
+            {
+              "path": "bin/swtpm_setup",
+              "string": "/usr/local/Cellar/swtpm/0.10.2_1/bin",
+              "offset": 63797
+            },
+            {
+              "path": "bin/swtpm_localca",
+              "string": "/usr/local/Cellar/swtpm/0.10.2_1/etc",
+              "offset": 26675
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Package-SPDXRef-glib-2.90.0",
+              "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-libtpms-0.10.2_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.48.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "089df9911d09192beee2b9e49201bf1906d6e414bba1d4185982c5ac9d695feb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "name": "glib",
+                "versionInfo": "2.90.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/glib-2.90.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "285fda7b55475ba96d27f32af3233dc1d7799740abae01269117d192e8108f51"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "name": "ca-certificates",
+                "versionInfo": "2026-08-13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtpms-0.10.2_1",
+                "name": "libtpms",
+                "versionInfo": "0.10.2_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/libtpms-0.10.2_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "90b624a591a07e2d609134b4566a525cc75ca495c46c9c7ed328e0dce8b100d4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtpms@0.10.2_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-swtpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-swtpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-swtpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-swtpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-swtpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.3.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-swtpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-swtpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtpms-0.10.2_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-swtpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-swtpm-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/swtpm_bios",
+            "bin/swtpm_cert",
+            "bin/swtpm_setup",
+            "bin/swtpm_localca",
+            "bin/swtpm",
+            "bin/swtpm_ioctl"
+          ],
+          "all_files": [
+            ".brew/swtpm.rb",
+            "CHANGES",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README",
+            "TODO",
+            "bin/swtpm",
+            "bin/swtpm_bios",
+            "bin/swtpm_cert",
+            "bin/swtpm_ioctl",
+            "bin/swtpm_localca",
+            "bin/swtpm_setup",
+            "etc/swtpm-localca.conf",
+            "etc/swtpm-localca.options",
+            "etc/swtpm_setup.conf",
+            "include/swtpm/tpm_ioctl.h",
+            "lib/swtpm/libswtpm_libtpms.0.dylib",
+            "lib/swtpm/libswtpm_libtpms.a",
+            "lib/swtpm/libswtpm_libtpms.dylib",
+            "libexec/installed-tests/swtpm/_test_encrypted_state",
+            "libexec/installed-tests/swtpm/_test_getcap",
+            "libexec/installed-tests/swtpm/_test_hashing",
+            "libexec/installed-tests/swtpm/_test_hashing2",
+            "libexec/installed-tests/swtpm/_test_init",
+            "libexec/installed-tests/swtpm/_test_locality",
+            "libexec/installed-tests/swtpm/_test_migration_key",
+            "libexec/installed-tests/swtpm/_test_migration_key_2",
+            "libexec/installed-tests/swtpm/_test_print_capabilities",
+            "libexec/installed-tests/swtpm/_test_print_states",
+            "libexec/installed-tests/swtpm/_test_resume_volatile",
+            "libexec/installed-tests/swtpm/_test_save_load_encrypted_state",
+            "libexec/installed-tests/swtpm/_test_save_load_state",
+            "libexec/installed-tests/swtpm/_test_setbuffersize",
+            "libexec/installed-tests/swtpm/_test_swtpm_bios",
+            "libexec/installed-tests/swtpm/_test_tpm2_avoid_da_lockout",
+            "libexec/installed-tests/swtpm/_test_tpm2_derived_keys",
+            "libexec/installed-tests/swtpm/_test_tpm2_encrypted_state",
+            "libexec/installed-tests/swtpm/_test_tpm2_file_permissions",
+            "libexec/installed-tests/swtpm/_test_tpm2_getcap",
+            "libexec/installed-tests/swtpm/_test_tpm2_hashing",
+            "libexec/installed-tests/swtpm/_test_tpm2_hashing2",
+            "libexec/installed-tests/swtpm/_test_tpm2_hashing3",
+            "libexec/installed-tests/swtpm/_test_tpm2_init",
+            "libexec/installed-tests/swtpm/_test_tpm2_locality",
+            "libexec/installed-tests/swtpm/_test_tpm2_migration_key",
+            "libexec/installed-tests/swtpm/_test_tpm2_print_capabilities",
+            "libexec/installed-tests/swtpm/_test_tpm2_print_states",
+            "libexec/installed-tests/swtpm/_test_tpm2_probe",
+            "libexec/installed-tests/swtpm/_test_tpm2_resume_volatile",
+            "libexec/installed-tests/swtpm/_test_tpm2_save_load_encrypted_state",
+            "libexec/installed-tests/swtpm/_test_tpm2_save_load_state",
+            "libexec/installed-tests/swtpm/_test_tpm2_save_load_state_da_timeout",
+            "libexec/installed-tests/swtpm/_test_tpm2_save_load_state_locking",
+            "libexec/installed-tests/swtpm/_test_tpm2_savestate",
+            "libexec/installed-tests/swtpm/_test_tpm2_setbuffersize",
+            "libexec/installed-tests/swtpm/_test_tpm2_swtpm_bios",
+            "libexec/installed-tests/swtpm/_test_tpm2_volatilestate",
+            "libexec/installed-tests/swtpm/_test_tpm2_wrongorder",
+            "libexec/installed-tests/swtpm/_test_tpm_probe",
+            "libexec/installed-tests/swtpm/_test_volatilestate",
+            "libexec/installed-tests/swtpm/_test_wrongorder",
+            "libexec/installed-tests/swtpm/common",
+            "libexec/installed-tests/swtpm/create_certs.sh",
+            "libexec/installed-tests/swtpm/data/ecprivek.pem",
+            "libexec/installed-tests/swtpm/data/ecpubek.pem",
+            "libexec/installed-tests/swtpm/data/issuercert.pem",
+            "libexec/installed-tests/swtpm/data/keyfile.txt",
+            "libexec/installed-tests/swtpm/data/keyfile256bit.txt",
+            "libexec/installed-tests/swtpm/data/migkey1/tpm2-volatilestate.bin",
+            "libexec/installed-tests/swtpm/data/migkey1/volatilestate.bin",
+            "libexec/installed-tests/swtpm/data/pubek.pem",
+            "libexec/installed-tests/swtpm/data/pwdfile.txt",
+            "libexec/installed-tests/swtpm/data/signkey-encrypted.pem",
+            "libexec/installed-tests/swtpm/data/signkey.pem",
+            "libexec/installed-tests/swtpm/data/tpm2state1/tpm2-00.permall",
+            "libexec/installed-tests/swtpm/data/tpm2state1/tpm2-00.volatilestate",
+            "libexec/installed-tests/swtpm/data/tpm2state2/pwdfile.txt",
+            "libexec/installed-tests/swtpm/data/tpm2state2/tpm2-00.permall",
+            "libexec/installed-tests/swtpm/data/tpm2state2/tpm2-00.volatilestate",
+            "libexec/installed-tests/swtpm/data/tpm2state2b/pwdfile.txt",
+            "libexec/installed-tests/swtpm/data/tpm2state2b/tpm2-00.permall",
+            "libexec/installed-tests/swtpm/data/tpm2state2b/tpm2-00.volatilestate",
+            "libexec/installed-tests/swtpm/data/tpm2state3/hkey.priv",
+            "libexec/installed-tests/swtpm/data/tpm2state3/hkey.pub",
+            "libexec/installed-tests/swtpm/data/tpm2state3/signature.bin",
+            "libexec/installed-tests/swtpm/data/tpm2state3/tpm2-00.permall",
+            "libexec/installed-tests/swtpm/data/tpm2state3b/h02000000.bin",
+            "libexec/installed-tests/swtpm/data/tpm2state3b/h81000000.bin",
+            "libexec/installed-tests/swtpm/data/tpm2state3b/tpm2-00.permall",
+            "libexec/installed-tests/swtpm/data/tpm2state3b/tpm2-00.volatilestate",
+            "libexec/installed-tests/swtpm/data/tpm2state3c/tpm2-00.permall",
+            "libexec/installed-tests/swtpm/data/tpm2state3c/tpm2-00.volatilestate",
+            "libexec/installed-tests/swtpm/data/tpm2state3d/signature2.bin",
+            "libexec/installed-tests/swtpm/data/tpm2state3d/tpm2-00.permall",
+            "libexec/installed-tests/swtpm/data/tpm2state3d/tpm2-00.volatilestate",
+            "libexec/installed-tests/swtpm/data/tpm2state4/tpm2-00.permall",
+            "libexec/installed-tests/swtpm/data/tpm2state4/tpm2-00.volatilestate",
+            "libexec/installed-tests/swtpm/data/tpm2state5/signature.bin",
+            "libexec/installed-tests/swtpm/data/tpm2state5/tpm2-00.permall",
+            "libexec/installed-tests/swtpm/data/tpm2state6/tpm2-00.permall",
+            "libexec/installed-tests/swtpm/data/tpmstate1/README",
+            "libexec/installed-tests/swtpm/data/tpmstate1/tpm-00.permall",
+            "libexec/installed-tests/swtpm/data/tpmstate1/tpm-00.volatilestate",
+            "libexec/installed-tests/swtpm/data/tpmstate2/README",
+            "libexec/installed-tests/swtpm/data/tpmstate2/pwdfile.txt",
+            "libexec/installed-tests/swtpm/data/tpmstate2/tpm-00.permall",
+            "libexec/installed-tests/swtpm/data/tpmstate2/tpm-00.volatilestate",
+            "libexec/installed-tests/swtpm/data/tpmstate2b/pwdfile.txt",
+            "libexec/installed-tests/swtpm/data/tpmstate2b/tpm-00.permall",
+            "libexec/installed-tests/swtpm/data/tpmstate2b/tpm-00.volatilestate",
+            "libexec/installed-tests/swtpm/fileinstall",
+            "libexec/installed-tests/swtpm/installed-runner.sh",
+            "libexec/installed-tests/swtpm/load_vtpm_proxy",
+            "libexec/installed-tests/swtpm/patches/0001-Deactivate-test-cases-accessing-rootcerts.txt.patch",
+            "libexec/installed-tests/swtpm/patches/0002-Implement-powerup-for-swtpm.patch",
+            "libexec/installed-tests/swtpm/patches/0003-Set-CRYPTOLIBRARY-to-openssl.patch",
+            "libexec/installed-tests/swtpm/patches/0004-Store-and-restore-volatile-state-at-every-step.patch",
+            "libexec/installed-tests/swtpm/patches/0005-Disable-tests-related-to-events.patch",
+            "libexec/installed-tests/swtpm/patches/0010-Adjust-test-cases-for-OpenSSL-3.patch",
+            "libexec/installed-tests/swtpm/patches/0012-Disable-Nuvoton-commands.patch",
+            "libexec/installed-tests/swtpm/patches/libtpm.patch",
+            "libexec/installed-tests/swtpm/sed-inplace",
+            "libexec/installed-tests/swtpm/softhsm_setup",
+            "libexec/installed-tests/swtpm/swtpm_setup.conf",
+            "libexec/installed-tests/swtpm/test_clientfds.py",
+            "libexec/installed-tests/swtpm/test_common",
+            "libexec/installed-tests/swtpm/test_config",
+            "libexec/installed-tests/swtpm/test_cuse",
+            "libexec/installed-tests/swtpm/test_setdatafd.py",
+            "libexec/installed-tests/swtpm/test_swtpm_cert",
+            "libexec/installed-tests/swtpm/tests",
+            "sbom.spdx.json",
+            "share/man/man3/swtpm_ioctls.3",
+            "share/man/man5/swtpm-localca.conf.5",
+            "share/man/man5/swtpm-localca.options.5",
+            "share/man/man5/swtpm_setup.conf.5",
+            "share/man/man8/swtpm-create-tpmca.8",
+            "share/man/man8/swtpm-localca.8",
+            "share/man/man8/swtpm.8",
+            "share/man/man8/swtpm_bios.8",
+            "share/man/man8/swtpm_cert.8",
+            "share/man/man8/swtpm_ioctl.8",
+            "share/man/man8/swtpm_localca.8",
+            "share/man/man8/swtpm_setup.8",
+            "share/swtpm/swtpm-create-tpmca",
+            "share/swtpm/swtpm-create-user-config-files",
+            "share/swtpm/swtpm-localca"
+          ],
+          "installed_size": 1231468
+        }
+      }
+    }
+  }
+}
