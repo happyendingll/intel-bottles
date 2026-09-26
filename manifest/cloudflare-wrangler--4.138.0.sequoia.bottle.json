@@ -2,10 +2,10 @@
   "cloudflare-wrangler": {
     "formula": {
       "name": "cloudflare-wrangler",
-      "pkg_version": "4.137.0",
+      "pkg_version": "4.138.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cloudflare-wrangler.rb",
       "tap_git_path": "Formula/c/cloudflare-wrangler.rb",
-      "tap_git_revision": "fab3991cc4e60674248d63bd83509c86af66988d",
+      "tap_git_revision": "65345d2ef56bf344c0c46eb8f19783c190a6f5c5",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "CLI tool for Cloudflare Workers",
       "license": "Apache-2.0 OR MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-24T22:35:44Z",
+      "date": "2026-09-26T03:36:54Z",
       "tags": {
         "sequoia": {
-          "filename": "cloudflare-wrangler-4.137.0.sequoia.bottle.tar.gz",
-          "local_filename": "cloudflare-wrangler--4.137.0.sequoia.bottle.tar.gz",
-          "sha256": "7c89a822f47bbeb402b846d64b692a12470a4ebce6f0e66e7c2fc31975907829",
+          "filename": "cloudflare-wrangler-4.138.0.sequoia.bottle.tar.gz",
+          "local_filename": "cloudflare-wrangler--4.138.0.sequoia.bottle.tar.gz",
+          "sha256": "f1f914246c4ca6f9a098c6e323dc2a90393066fe0f872a0fe08ae25fa2086e65",
           "tab": {
             "homebrew_version": "7.0.6",
             "changed_files": [
@@ -121,10 +121,10 @@
               },
               {
                 "full_name": "libuv",
-                "version": "1.52.1",
+                "version": "1.53.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.52.1",
+                "pkg_version": "1.53.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -140,11 +140,11 @@
               {
                 "full_name": "simdutf",
                 "version": "9.2.1",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.2.1",
+                "pkg_version": "9.2.1_1",
                 "declared_directly": false,
-                "compatibility_version": 5
+                "compatibility_version": 6
               },
               {
                 "full_name": "merve",
@@ -164,10 +164,10 @@
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-08-13",
+                "version": "2026-09-25",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2026-08-13",
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -253,10 +253,10 @@
               },
               {
                 "full_name": "node",
-                "version": "26.9.0",
-                "revision": 0,
+                "version": "26.10.0",
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.9.0",
+                "pkg_version": "26.10.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -275,9 +275,10 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
-              "SPDXRef-Package-SPDXRef-simdutf-9.2.1",
+              "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+              "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
               "SPDXRef-Package-SPDXRef-merve-1.2.2_3",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
               "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
               "SPDXRef-Package-SPDXRef-simdjson-4.6.11",
               "SPDXRef-Package-SPDXRef-readline-8.3.6",
@@ -285,7 +286,7 @@
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-node-26.9.0",
+              "SPDXRef-Package-SPDXRef-node-26.10.0_1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -313,24 +314,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2.1",
-                "name": "simdutf",
-                "versionInfo": "9.2.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "name": "libuv",
+                "versionInfo": "1.53.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/simdutf-9.2.1.sequoia.bottle.tar.gz",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libuv-1.53.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b093eec0cf2abf48f6661bdf7a1e5c3277c21a6aa1a6246bbfd67b528ea9654e"
+                    "checksumValue": "2378d10bb8de9b4b5c842db3903822a5854ae0b0d5d01e5731defdddec18154b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdutf@9.2.1",
+                    "referenceLocator": "pkg:brew/libuv@1.53.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
+                "name": "simdutf",
+                "versionInfo": "9.2.1_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 OR MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/simdutf-9.2.1_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3d04cac42b6ba30f6dd4480f379dead4fceaaa8a2d8961c7ebb071d0f07aa0e9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/simdutf@9.2.1_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -359,24 +383,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "name": "ca-certificates",
-                "versionInfo": "2026-08-13",
+                "versionInfo": "2026-09-25",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
                     "referenceType": "purl"
                   }
                 ]
@@ -543,24 +567,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.9.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.10.0_1",
                 "name": "node",
-                "versionInfo": "26.9.0",
+                "versionInfo": "26.10.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/node-26.9.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/node-26.10.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d553eb1aef6f07918427012cf89eb6a7806e9077255f3ec4ab36263ad24edd89"
+                    "checksumValue": "2000a586dc4065e351bcaa3b4861a7aa59caa26d7649c548940f962f3e9e193e"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/node@26.9.0",
+                    "referenceLocator": "pkg:brew/node@26.10.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -585,7 +609,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-cloudflare-wrangler"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cloudflare-wrangler"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-cloudflare-wrangler"
               },
@@ -595,7 +624,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-cloudflare-wrangler"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-cloudflare-wrangler"
               },
@@ -635,7 +664,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-cloudflare-wrangler"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.9.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.10.0_1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-cloudflare-wrangler"
               },
@@ -1345,7 +1374,7 @@
             "libexec/lib/node_modules/wrangler/node_modules/kleur/readme.md",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/README.md",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/ArrowClockwise.es-BO0R2SrV.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/Breadcrumbs-BTU08_Ha.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/Breadcrumbs-DNtWsHus.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/CaretDown.es-CWtfv2k1.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/CaretLeft.es-DTrZuUzL.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/CaretRight.es-D0cpy723.js",
@@ -1359,81 +1388,79 @@
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/ListBullets.es-CKbiC0q2.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/MagnifyingGlass.es-BOtZXGPK.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/PaperPlaneTilt.es-BF792sca.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/Paperclip.es-NSqMEOkK.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/Pencil.es-Bx7U2_0j.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/Plus.es-B4gFGDf0.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/ResourceError-C6JULYWo.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/ResourceError-DiqVVHxs.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/Spinner.es-nzt2UDnP.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/TableSelect-Tc4n1CNy.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/TestEmailDraftsContext-DEjDy2pm.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/TableSelect-CCd0irzX.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/X.es-B0_b2V5j.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_bucketName-BhL8MwYL.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_bucketName-BhqtKIik.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_bucketName-DIESc_l0.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_bucketName-D_lDgtrF.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_bucketName-_WC7hM5K.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_className-9IwAGd3c.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_className-BhL8MwYL.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_className-D4iBCK1Z.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_className-DIESc_l0.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_className-D_lDgtrF.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_className-_WC7hM5K.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_databaseId-_WC7hM5K.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_databaseId-t7xFi4e2.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_emailId-D_lDgtrF.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_emailId-_WC7hM5K.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_emailId-gTtLCT4U.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_instanceId-D_lDgtrF.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_instanceId-NaspPNQt.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_instanceId-_WC7hM5K.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_namespaceId-Cg2QZspB.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_namespaceId-_WC7hM5K.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_objectId-CKTezRIm.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_objectId-D_lDgtrF.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_objectId-_WC7hM5K.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_workflowName-BT_VnJoo.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_workflowName-BhL8MwYL.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_workflowName-DIESc_l0.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_workflowName-D_lDgtrF.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_workflowName-_WC7hM5K.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_bucketName-B4bsMnav.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_bucketName-Cd2h4txK.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_bucketName-D6UpWbUx.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_bucketName-DD6hyOyk.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_bucketName-DZeebCf3.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_captureId-D1N9gvEV.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_captureId-D6UpWbUx.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_captureId-DZeebCf3.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_className-B4bsMnav.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_className-BtqAk_Rs.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_className-D6UpWbUx.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_className-DD6hyOyk.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_className-DDJYEnDo.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_className-DZeebCf3.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_databaseId-BJdvoxKN.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_databaseId-DZeebCf3.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_instanceId-BO9d7sWM.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_instanceId-D6UpWbUx.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_instanceId-DZeebCf3.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_namespaceId-DZeebCf3.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_namespaceId-FDay0eqC.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_objectId-CCdPXYNg.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_objectId-D6UpWbUx.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_objectId-DZeebCf3.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_workflowName-B4bsMnav.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_workflowName-CIexxPrS.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_workflowName-D6UpWbUx.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_workflowName-DD6hyOyk.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/_workflowName-DZeebCf3.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/async-t2_zA-v_.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/button-cdxnqcgzwko8ooha-C-jhLFk8.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/checkbox-kt1uojk2f9e0d0h1-C0A1TNjH.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/clipboard-text-vcbvmtne4zjk4b18-Br1CnkQc.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/dialog-oqh8l3l3zutpibxx-DNbL1Zm5.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/dropdown-ncwhcd912vmone8k-CXXZdmom.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/email-DcwoiO9R.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/events-BS6vcvAG.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/events-_WC7hM5K.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/format-C9CghzaW.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/format-D6ANPGS1.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/email-xIcGNnBb.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/events-D2p-iVqS.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/events-DZeebCf3.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/format-CyHnKKk6.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/helpers-Bz2sloWm.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/index-BSZvhHWL.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/index-Dd05wWXw.css",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/index-Dxf0hR4-.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/index-zdHOibR4.css",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/input-group-lxdd09p60cf27pe1-Bc_qbwva.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/input-h48k3uagzrgb98au-B-HxwG4C.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/label-latndvb1ngem7we8-Dl06XNMO.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/link-provider-mn2voeohon7cj9o4-BjYUZ9Vs.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/matchContext-B4hkydjc.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/object._-D_lDgtrF.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/object._-DrznkjmW.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/object._-_WC7hM5K.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/observability-B20znvND.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/observability-CxSkJ4RY.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/observability-_WC7hM5K.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/object._-D6UpWbUx.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/object._-DRJS-FT1.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/object._-DZeebCf3.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/observability-DZVKAJvE.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/observability-DZeebCf3.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/observability-Dsf1WhtE.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/redirect-CLm7CyAW.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/routes-Cp4mah3V.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/routing-BPwtAyVs.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/routing-BhL8MwYL.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/routing-DIESc_l0.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/routing-_WC7hM5K.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/select-kva5ru5f673kah1m-CfKPXTsO.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/sending-Xw6Gm0hZ.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/sending-_WC7hM5K.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/routes-Cq3a87qq.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/routing-B4bsMnav.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/routing-C4uNmPpZ.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/routing-DD6hyOyk.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/routing-DZeebCf3.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/select-kva5ru5f673kah1m-Bsca--gL.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/sending-DZeebCf3.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/sending-fF-kPY41.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/table-inweecadl3her7pd-CjLSx6WN.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/text-nmyi1rkwdj37f30f-BFpJJoII.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/types-Dq7qRC43.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/types-zg5jaBFk.js",
-            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/useCursorPaginatedList-Da_WAGfW.js",
+            "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/useCursorPaginatedList-BniMJiTT.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/assets/useRouterState-B61JuVpB.js",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/favicon.svg",
             "libexec/lib/node_modules/wrangler/node_modules/miniflare/dist/local-explorer-ui/index.html",
@@ -2313,7 +2340,7 @@
             "share/pwsh/completions/_wrangler.ps1",
             "share/zsh/site-functions/_wrangler"
           ],
-          "installed_size": 214608594
+          "installed_size": 215152664
         }
       }
     }

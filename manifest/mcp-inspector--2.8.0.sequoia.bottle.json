@@ -2,27 +2,27 @@
   "mcp-inspector": {
     "formula": {
       "name": "mcp-inspector",
-      "pkg_version": "2.7.0",
+      "pkg_version": "2.8.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mcp-inspector.rb",
       "tap_git_path": "Formula/m/mcp-inspector.rb",
-      "tap_git_revision": "6954cae1a9d2ad803852a47eb120dc838a36cda8",
+      "tap_git_revision": "65345d2ef56bf344c0c46eb8f19783c190a6f5c5",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Visual testing tool for MCP servers",
       "license": "MIT",
       "homepage": "https://modelcontextprotocol.io/docs/tools/inspector"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-18T17:01:08Z",
+      "date": "2026-09-26T03:58:50Z",
       "tags": {
         "sequoia": {
-          "filename": "mcp-inspector-2.7.0.sequoia.bottle.tar.gz",
-          "local_filename": "mcp-inspector--2.7.0.sequoia.bottle.tar.gz",
-          "sha256": "b1bddc0e30d9ed2af4f50913cb914bc181dc71a5390b3071394022e95fd6000a",
+          "filename": "mcp-inspector-2.8.0.sequoia.bottle.tar.gz",
+          "local_filename": "mcp-inspector--2.8.0.sequoia.bottle.tar.gz",
+          "sha256": "43bff8a439564ae2269a070ea44476b13dae53e460fed8263654fcfd5a66de5e",
           "tab": {
-            "homebrew_version": "7.0.4",
+            "homebrew_version": "7.0.6",
             "changed_files": [
               "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/cli/build/index.js",
               "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
@@ -49,6 +49,15 @@
             "source_modified_time": 499162500,
             "compiler": "clang",
             "runtime_dependencies": [
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": false,
+                "compatibility_version": 3
+              },
               {
                 "full_name": "fmt",
                 "version": "12.2.0",
@@ -122,47 +131,11 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "libnghttp3",
-                "version": "1.18.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.18.0",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "ca-certificates",
-                "version": "2026-08-13",
-                "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2026-08-13",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libngtcp2",
-                "version": "1.25.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.25.0",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
                 "full_name": "libuv",
-                "version": "1.52.1",
+                "version": "1.53.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.52.1",
+                "pkg_version": "1.53.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -177,12 +150,12 @@
               },
               {
                 "full_name": "simdutf",
-                "version": "9.2.0",
-                "revision": 0,
+                "version": "9.2.1",
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.2.0",
+                "pkg_version": "9.2.1_1",
                 "declared_directly": false,
-                "compatibility_version": 5
+                "compatibility_version": 6
               },
               {
                 "full_name": "merve",
@@ -199,6 +172,24 @@
                 "bottle_rebuild": 0,
                 "pkg_version": "0.1.4",
                 "declared_directly": false
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "simdjson",
@@ -263,11 +254,20 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "node",
-                "version": "26.8.2",
+                "full_name": "highway",
+                "version": "1.4.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.8.2",
+                "pkg_version": "1.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "node",
+                "version": "26.10.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "26.10.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -285,85 +285,87 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-simdutf-9.2.0",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+              "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+              "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
               "SPDXRef-Package-SPDXRef-merve-1.2.2_3",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
               "SPDXRef-Package-SPDXRef-simdjson-4.6.11",
               "SPDXRef-Package-SPDXRef-readline-8.3.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-node-26.8.2",
+              "SPDXRef-Package-SPDXRef-node-26.10.0_1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-                "name": "ca-certificates",
-                "versionInfo": "2026-08-13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "name": "libnghttp2",
+                "versionInfo": "1.70.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libnghttp2-1.70.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                    "checksumValue": "5fc34d9e93ddb24b1c2cbb83a0beee5e3524a0d96c18b4a64cf32762681b2b65"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceLocator": "pkg:brew/libnghttp2@1.70.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "name": "libuv",
+                "versionInfo": "1.53.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libuv-1.53.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                    "checksumValue": "2378d10bb8de9b4b5c842db3903822a5854ae0b0d5d01e5731defdddec18154b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/libuv@1.53.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
                 "name": "simdutf",
-                "versionInfo": "9.2.0",
+                "versionInfo": "9.2.1_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/simdutf-9.2.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/simdutf-9.2.1_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "6ec4e7dfdf4adf835b2b55da8d376606539cad475ea9fe083f71d0014286ffe6"
+                    "checksumValue": "3d04cac42b6ba30f6dd4480f379dead4fceaaa8a2d8961c7ebb071d0f07aa0e9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdutf@9.2.0",
+                    "referenceLocator": "pkg:brew/simdutf@9.2.1_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -387,6 +389,52 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/merve@1.2.2_3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
                     "referenceType": "purl"
                   }
                 ]
@@ -530,24 +578,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.8.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.10.0_1",
                 "name": "node",
-                "versionInfo": "26.8.2",
+                "versionInfo": "26.10.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/node-26.8.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/node-26.10.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9f0caea139ea3b950341fd868fcf051903ba736a8d4d7e8cab6e18dd1297b93e"
+                    "checksumValue": "2000a586dc4065e351bcaa3b4861a7aa59caa26d7649c548940f962f3e9e193e"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/node@26.8.2",
+                    "referenceLocator": "pkg:brew/node@26.10.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -567,22 +615,32 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mcp-inspector"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mcp-inspector"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mcp-inspector"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-merve-1.2.2_3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mcp-inspector"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mcp-inspector"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mcp-inspector"
               },
@@ -617,7 +675,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-mcp-inspector"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.8.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.10.0_1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mcp-inspector"
               },
@@ -634,9 +692,11 @@
           "all_files": [
             ".brew/mcp-inspector.rb",
             "INSTALL_RECEIPT.json",
+            "LICENSE",
             "README.md",
             "bin/mcp-inspector",
             "libexec/bin/mcp-inspector",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/LICENSE",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/README.md",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/cli/build/index.js",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/launcher/build/index.js",
@@ -645,12 +705,12 @@
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/build/index.js",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/MCP-CWGQJYyH.svg",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/css-BwN3NHAj.js",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/index-DZkZ6KYt.js",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/index-9ZWu1ACP.js",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/index-dqp8Sd8W.css",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/markdown-CZCm46w1.js",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/markup-CWGodlA2.js",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/markup-D5BvAyPW.js",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/prism-light-CoQfbOXL.js",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/prism-light-CGBvpchP.js",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/tomorrow-DlPePFH9.js",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/worker-json-8CDXFfik.js",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/clients/web/dist/assets/yaml-BXU4NK_h.js",
@@ -8037,27 +8097,27 @@
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/plugins-index.d.mts",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/plugins-index.mjs",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/binding-BTa6BPQe.d.mts",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/binding-BbrDfv1x.mjs",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/bindingify-input-options-D4l624og.mjs",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/constructors-CmDKpWIU.d.mts",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/constructors-D9jwEbE4.mjs",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/create-bundler-option-DJpvtSqr.mjs",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/define-config-BFdLpVut.d.mts",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/binding-BY0qR5iS.mjs",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/bindingify-input-options-XrReX_BJ.mjs",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/constructors-DuOq7MqW.d.mts",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/constructors-xEvVj3lN.mjs",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/create-bundler-option-YGKfBl_D.mjs",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/define-config-C7HCoqY8.d.mts",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/define-config-Demdg3_4.mjs",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/dist-DKbukT1H.mjs",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/error-CGhV1ebk.mjs",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/error-C7pxws0W.mjs",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/get-log-filter-AjBknEEO.d.mts",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/load-config-qRezutA0.mjs",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/load-config-iYtRcbXn.mjs",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/logging-xuHO4mAy.d.mts",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/logs-DmYCAKcW.mjs",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/logs-D6uA606S.mjs",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/misc-DOSKtd97.mjs",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/normalize-string-or-regex-zc1bUto6.mjs",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/parse-DltPb1DL.mjs",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/normalize-string-or-regex-F14uvr6D.mjs",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/parse-WKtEKiA6.mjs",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/prompt-CH6TK0bC.mjs",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/resolve-tsconfig-Bf6oL9fm.mjs",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/rolldown-Ld3ZGGCt.mjs",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/resolve-tsconfig-DHwpIs5e.mjs",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/rolldown-CgWItHdG.mjs",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/transform-DK_nCt9j.d.mts",
-            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/watch-BDSxrMiV.mjs",
+            "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/shared/watch-DUTFlQ6u.mjs",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/utils-index.d.mts",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/dist/utils-index.mjs",
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/node_modules/rolldown/package.json",
@@ -10028,7 +10088,7 @@
             "libexec/lib/node_modules/@modelcontextprotocol/inspector/scripts/install-clients.mjs",
             "sbom.spdx.json"
           ],
-          "installed_size": 79498744
+          "installed_size": 79601395
         }
       }
     }

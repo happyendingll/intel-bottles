@@ -1,32 +1,35 @@
 {
-  "cookcli": {
+  "autobrr": {
     "formula": {
-      "name": "cookcli",
-      "pkg_version": "0.36.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cookcli.rb",
-      "tap_git_path": "Formula/c/cookcli.rb",
-      "tap_git_revision": "da5e08bad283294bc94fb785f5a27234611fd269",
+      "name": "autobrr",
+      "pkg_version": "1.87.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/autobrr.rb",
+      "tap_git_path": "Formula/a/autobrr.rb",
+      "tap_git_revision": "65345d2ef56bf344c0c46eb8f19783c190a6f5c5",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "CLI-tool for cooking recipes formated using Cooklang",
-      "license": "MIT",
-      "homepage": "https://cooklang.org"
+      "desc": "Modern, easy to use download automation for torrents and usenet",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://autobrr.com/"
     },
     "bottle": {
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-09-19T10:07:07Z",
+      "date": "2026-09-26T03:37:51Z",
       "tags": {
         "sequoia": {
-          "filename": "cookcli-0.36.0.sequoia.bottle.tar.gz",
-          "local_filename": "cookcli--0.36.0.sequoia.bottle.tar.gz",
-          "sha256": "4f60c3bfb6fbd23344f47b207eec39c2d1227ce3abbff40d758a1fc4be30c9b7",
+          "filename": "autobrr-1.87.0.sequoia.bottle.tar.gz",
+          "local_filename": "autobrr--1.87.0.sequoia.bottle.tar.gz",
+          "sha256": "a81d975d4f847692ef3845c4c27e5b9fc5f4a70b3f9664651164b3f0e38b2d03",
           "tab": {
-            "homebrew_version": "7.0.4",
-            "changed_files": [],
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "sh.brew.autobrr.plist",
+              "sh.brew.autobrr.service"
+            ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1789734222,
+            "source_modified_time": 1790282517,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -62,25 +65,26 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-cookcli-src"
+                "relatedSpdxElement": "SPDXRef-Archive-autobrr-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/cook"
+            "bin/autobrrctl",
+            "bin/autobrr"
           ],
           "all_files": [
-            ".brew/cookcli.rb",
-            ".crates.toml",
-            ".crates2.json",
-            "CHANGELOG.md",
+            ".brew/autobrr.rb",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
-            "bin/cook",
-            "sbom.spdx.json"
+            "bin/autobrr",
+            "bin/autobrrctl",
+            "sbom.spdx.json",
+            "sh.brew.autobrr.plist",
+            "sh.brew.autobrr.service"
           ],
-          "installed_size": 25196800
+          "installed_size": 59961221
         }
       }
     }

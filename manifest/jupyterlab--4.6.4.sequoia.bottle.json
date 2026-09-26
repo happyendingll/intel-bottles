@@ -2,27 +2,27 @@
   "jupyterlab": {
     "formula": {
       "name": "jupyterlab",
-      "pkg_version": "4.6.3",
+      "pkg_version": "4.6.4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/j/jupyterlab.rb",
       "tap_git_path": "Formula/j/jupyterlab.rb",
-      "tap_git_revision": "6954cae1a9d2ad803852a47eb120dc838a36cda8",
+      "tap_git_revision": "65345d2ef56bf344c0c46eb8f19783c190a6f5c5",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Interactive environments for writing and running code",
       "license": "BSD-3-Clause AND MIT",
       "homepage": "https://jupyter.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-18T16:42:38Z",
+      "date": "2026-09-26T03:57:57Z",
       "tags": {
         "sequoia": {
-          "filename": "jupyterlab-4.6.3.sequoia.bottle.tar.gz",
-          "local_filename": "jupyterlab--4.6.3.sequoia.bottle.tar.gz",
-          "sha256": "a4190c0805067a2444e0255952a3c4d922e14e10b78409a984ae3936076cfe66",
+          "filename": "jupyterlab-4.6.4.sequoia.bottle.tar.gz",
+          "local_filename": "jupyterlab--4.6.4.sequoia.bottle.tar.gz",
+          "sha256": "4e4433043bb5271b962cfbba33b5b94907cc2f72c155ca0ea7439aff3df3e48a",
           "tab": {
-            "homebrew_version": "7.0.4",
+            "homebrew_version": "7.0.6",
             "changed_files": [
               "libexec/bin/debugpy",
               "libexec/bin/debugpy-adapter",
@@ -72,15 +72,15 @@
               "libexec/lib/python3.14/site-packages/zmq/backend/cython/_zmq.cpython-314-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1786387861,
+            "source_modified_time": 1790004323,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "ca-certificates",
-                "version": "2026-08-13",
+                "version": "2026-09-25",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2026-08-13",
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -119,6 +119,15 @@
                 "pkg_version": "0.2.5",
                 "declared_directly": true,
                 "compatibility_version": 1
+              },
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": false,
+                "compatibility_version": 3
               },
               {
                 "full_name": "fmt",
@@ -193,38 +202,11 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "libnghttp3",
-                "version": "1.18.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.18.0",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libngtcp2",
-                "version": "1.25.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.25.0",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
                 "full_name": "libuv",
-                "version": "1.52.1",
+                "version": "1.53.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.52.1",
+                "pkg_version": "1.53.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -239,12 +221,12 @@
               },
               {
                 "full_name": "simdutf",
-                "version": "9.2.0",
-                "revision": 0,
+                "version": "9.2.1",
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.2.0",
+                "pkg_version": "9.2.1_1",
                 "declared_directly": false,
-                "compatibility_version": 5
+                "compatibility_version": 6
               },
               {
                 "full_name": "merve",
@@ -261,6 +243,15 @@
                 "bottle_rebuild": 0,
                 "pkg_version": "0.1.4",
                 "declared_directly": false
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "simdjson",
@@ -325,11 +316,20 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "node",
-                "version": "26.8.2",
+                "full_name": "highway",
+                "version": "1.4.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.8.2",
+                "pkg_version": "1.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "node",
+                "version": "26.10.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "26.10.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -410,20 +410,22 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
               "SPDXRef-Package-SPDXRef-certifi-2026.7.22",
               "SPDXRef-Package-SPDXRef-pycparser-3.0",
               "SPDXRef-Package-SPDXRef-cffi-2.1.1",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-simdutf-9.2.0",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+              "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+              "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
               "SPDXRef-Package-SPDXRef-merve-1.2.2_3",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
               "SPDXRef-Package-SPDXRef-simdjson-4.6.11",
               "SPDXRef-Package-SPDXRef-readline-8.3.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-node-26.8.2",
+              "SPDXRef-Package-SPDXRef-node-26.10.0_1",
               "SPDXRef-Package-SPDXRef-gmp-6.3.0",
               "SPDXRef-Package-SPDXRef-pandoc-3.11",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
@@ -432,24 +434,24 @@
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "name": "ca-certificates",
-                "versionInfo": "2026-08-13",
+                "versionInfo": "2026-09-25",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
                     "referenceType": "purl"
                   }
                 ]
@@ -524,47 +526,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "name": "libnghttp2",
+                "versionInfo": "1.70.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libnghttp2-1.70.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                    "checksumValue": "5fc34d9e93ddb24b1c2cbb83a0beee5e3524a0d96c18b4a64cf32762681b2b65"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/libnghttp2@1.70.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2.0",
-                "name": "simdutf",
-                "versionInfo": "9.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "name": "libuv",
+                "versionInfo": "1.53.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/simdutf-9.2.0.sequoia.bottle.tar.gz",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libuv-1.53.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "6ec4e7dfdf4adf835b2b55da8d376606539cad475ea9fe083f71d0014286ffe6"
+                    "checksumValue": "2378d10bb8de9b4b5c842db3903822a5854ae0b0d5d01e5731defdddec18154b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdutf@9.2.0",
+                    "referenceLocator": "pkg:brew/libuv@1.53.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
+                "name": "simdutf",
+                "versionInfo": "9.2.1_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 OR MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/simdutf-9.2.1_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3d04cac42b6ba30f6dd4480f379dead4fceaaa8a2d8961c7ebb071d0f07aa0e9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/simdutf@9.2.1_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -588,6 +613,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/merve@1.2.2_3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
                     "referenceType": "purl"
                   }
                 ]
@@ -731,24 +779,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.8.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.10.0_1",
                 "name": "node",
-                "versionInfo": "26.8.2",
+                "versionInfo": "26.10.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/node-26.8.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/node-26.10.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9f0caea139ea3b950341fd868fcf051903ba736a8d4d7e8cab6e18dd1297b93e"
+                    "checksumValue": "2000a586dc4065e351bcaa3b4861a7aa59caa26d7649c548940f962f3e9e193e"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/node@26.8.2",
+                    "referenceLocator": "pkg:brew/node@26.10.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -860,7 +908,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-jupyterlab"
               },
@@ -880,17 +928,27 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-jupyterlab"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-jupyterlab"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-jupyterlab"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-jupyterlab"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-merve-1.2.2_3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-jupyterlab"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-jupyterlab"
               },
@@ -925,7 +983,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-jupyterlab"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.8.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.10.0_1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-jupyterlab"
               },
@@ -1040,7 +1098,7 @@
             "libexec/bin/send2trash",
             "libexec/bin/trove-classifiers",
             "libexec/bin/wsdump",
-            "libexec/bin/𝜋thon",
+            "libexec/bin/\ud835\udf0bthon",
             "libexec/etc/jupyter/jupyter_notebook_config.d/jupyterlab.json",
             "libexec/etc/jupyter/jupyter_server_config.d/jupyter-lsp-jupyter-server.json",
             "libexec/etc/jupyter/jupyter_server_config.d/jupyter_server_terminals.json",
@@ -2917,13 +2975,13 @@
             "libexec/lib/python3.14/site-packages/debugpy/server/api.py",
             "libexec/lib/python3.14/site-packages/debugpy/server/attach_pid_injected.py",
             "libexec/lib/python3.14/site-packages/debugpy/server/cli.py",
-            "libexec/lib/python3.14/site-packages/debugpy-1.8.21.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/debugpy-1.8.21.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/debugpy-1.8.21.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/debugpy-1.8.21.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/debugpy-1.8.21.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/debugpy-1.8.21.dist-info/licenses/LICENSE",
-            "libexec/lib/python3.14/site-packages/debugpy-1.8.21.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/debugpy-1.8.22.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/debugpy-1.8.22.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/debugpy-1.8.22.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/debugpy-1.8.22.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/debugpy-1.8.22.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/debugpy-1.8.22.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/debugpy-1.8.22.dist-info/top_level.txt",
             "libexec/lib/python3.14/site-packages/defusedxml/ElementTree.py",
             "libexec/lib/python3.14/site-packages/defusedxml/__init__.py",
             "libexec/lib/python3.14/site-packages/defusedxml/cElementTree.py",
@@ -3014,12 +3072,12 @@
             "libexec/lib/python3.14/site-packages/hatch_jupyter_builder/plugin.py",
             "libexec/lib/python3.14/site-packages/hatch_jupyter_builder/py.typed",
             "libexec/lib/python3.14/site-packages/hatch_jupyter_builder/utils.py",
-            "libexec/lib/python3.14/site-packages/hatch_jupyter_builder-0.9.1.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/hatch_jupyter_builder-0.9.1.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/hatch_jupyter_builder-0.9.1.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/hatch_jupyter_builder-0.9.1.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/hatch_jupyter_builder-0.9.1.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/hatch_jupyter_builder-0.9.1.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/hatch_jupyter_builder-0.10.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/hatch_jupyter_builder-0.10.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/hatch_jupyter_builder-0.10.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/hatch_jupyter_builder-0.10.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/hatch_jupyter_builder-0.10.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/hatch_jupyter_builder-0.10.0.dist-info/licenses/LICENSE.txt",
             "libexec/lib/python3.14/site-packages/hatch_nodejs_version/__init__.py",
             "libexec/lib/python3.14/site-packages/hatch_nodejs_version/_version.py",
             "libexec/lib/python3.14/site-packages/hatch_nodejs_version/hooks.py",
@@ -3099,12 +3157,12 @@
             "libexec/lib/python3.14/site-packages/hatchling/version/source/plugin/hooks.py",
             "libexec/lib/python3.14/site-packages/hatchling/version/source/plugin/interface.py",
             "libexec/lib/python3.14/site-packages/hatchling/version/source/regex.py",
-            "libexec/lib/python3.14/site-packages/hatchling-1.32.0.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/hatchling-1.32.0.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/hatchling-1.32.0.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/hatchling-1.32.0.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/hatchling-1.32.0.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/hatchling-1.32.0.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/hatchling-1.32.4.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/hatchling-1.32.4.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/hatchling-1.32.4.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/hatchling-1.32.4.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/hatchling-1.32.4.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/hatchling-1.32.4.dist-info/licenses/LICENSE.txt",
             "libexec/lib/python3.14/site-packages/homebrew_deps.pth",
             "libexec/lib/python3.14/site-packages/httpcore/__init__.py",
             "libexec/lib/python3.14/site-packages/httpcore/_api.py",
@@ -3184,12 +3242,12 @@
             "libexec/lib/python3.14/site-packages/idna/package_data.py",
             "libexec/lib/python3.14/site-packages/idna/py.typed",
             "libexec/lib/python3.14/site-packages/idna/uts46data.py",
-            "libexec/lib/python3.14/site-packages/idna-3.19.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/idna-3.19.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/idna-3.19.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/idna-3.19.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/idna-3.19.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/idna-3.19.dist-info/licenses/LICENSE.md",
+            "libexec/lib/python3.14/site-packages/idna-3.20.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/idna-3.20.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/idna-3.20.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/idna-3.20.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/idna-3.20.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/idna-3.20.dist-info/licenses/LICENSE.md",
             "libexec/lib/python3.14/site-packages/ipykernel/__init__.py",
             "libexec/lib/python3.14/site-packages/ipykernel/__main__.py",
             "libexec/lib/python3.14/site-packages/ipykernel/_eventloop_macos.py",
@@ -9357,12 +9415,12 @@
             "libexec/lib/python3.14/site-packages/jupyter_server/utils.py",
             "libexec/lib/python3.14/site-packages/jupyter_server/view/__init__.py",
             "libexec/lib/python3.14/site-packages/jupyter_server/view/handlers.py",
-            "libexec/lib/python3.14/site-packages/jupyter_server-2.21.0.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/jupyter_server-2.21.0.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/jupyter_server-2.21.0.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/jupyter_server-2.21.0.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/jupyter_server-2.21.0.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/jupyter_server-2.21.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/jupyter_server-2.21.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/jupyter_server-2.21.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/jupyter_server-2.21.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/jupyter_server-2.21.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/jupyter_server-2.21.1.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/jupyter_server-2.21.1.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/jupyter_server_terminals/__init__.py",
             "libexec/lib/python3.14/site-packages/jupyter_server_terminals/_version.py",
             "libexec/lib/python3.14/site-packages/jupyter_server_terminals/api_handlers.py",
@@ -9498,7 +9556,7 @@
             "libexec/lib/python3.14/site-packages/jupyterlab/galata/@jupyterlab/galata-extension/static/fa5a5b16280994a8.woff2",
             "libexec/lib/python3.14/site-packages/jupyterlab/galata/@jupyterlab/galata-extension/static/ff38d5317df7345a.woff2",
             "libexec/lib/python3.14/site-packages/jupyterlab/galata/@jupyterlab/galata-extension/static/lib_extension_index_js.573abb5f68d369fe.js",
-            "libexec/lib/python3.14/site-packages/jupyterlab/galata/@jupyterlab/galata-extension/static/remoteEntry.d7e66883113389af.js",
+            "libexec/lib/python3.14/site-packages/jupyterlab/galata/@jupyterlab/galata-extension/static/remoteEntry.1e1bdbb057205efa.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/galata/@jupyterlab/galata-extension/static/style.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/galata/@jupyterlab/galata-extension/static/vendors-node_modules_fontsource-variable_noto-sans-sc_index_css.386da7677f8b1f52.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/galata/@jupyterlab/galata-extension/static/vendors-node_modules_fontsource_dejavu-mono_index_css.d98af1128b7590b9.js",
@@ -9663,6 +9721,7 @@
             "libexec/lib/python3.14/site-packages/jupyterlab/static/1584.f43d421d2384c719.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/16.6cda5b6d5f0fa449.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/1601.c443d46d5b6dbb77.js",
+            "libexec/lib/python3.14/site-packages/jupyterlab/static/1605.3e7b485b34c42e24.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/1617.cc66edd89898364c.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/1645.ed332d3fefafaead.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/170.bf91d89e4b982380.js",
@@ -9680,7 +9739,7 @@
             "libexec/lib/python3.14/site-packages/jupyterlab/static/2115.aaf130fb21b64ca1.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/2121.8dc495824b1f59ce.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/213.4168e841092fb2f0.js",
-            "libexec/lib/python3.14/site-packages/jupyterlab/static/2134.a7a5751faf22fd80.js",
+            "libexec/lib/python3.14/site-packages/jupyterlab/static/2134.5714c97a7acac90f.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/219.2389a53dc040cbd0.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/2208.ef6ea98c27c7851d.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/2272.1dd8f8d1ed60185f.js",
@@ -9740,7 +9799,7 @@
             "libexec/lib/python3.14/site-packages/jupyterlab/static/4232.15151af47a0093e1.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/4251.502491875ee0f0d1.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/4324.764a63584c864a84.js",
-            "libexec/lib/python3.14/site-packages/jupyterlab/static/4350.8660e174406ea5be.js",
+            "libexec/lib/python3.14/site-packages/jupyterlab/static/4350.ee5d1386f257be13.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/4379.b42d95e853a44d36.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/4385.29cdf9dd304b8c00.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/4395.a391f759c80d1173.js",
@@ -9760,7 +9819,7 @@
             "libexec/lib/python3.14/site-packages/jupyterlab/static/4726.a26e5e177770dbdd.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/4743.95a1b3de81f80653.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/479.bdbaa5d2cdd9bc91.js",
-            "libexec/lib/python3.14/site-packages/jupyterlab/static/4797.ff27331deddd5f5e.js",
+            "libexec/lib/python3.14/site-packages/jupyterlab/static/4797.ae90e8f6c6398aba.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/4818.15eaf82d426f67a6.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/4845.6da260237bbb8966.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/4889.054114d42698ba53.js",
@@ -9894,9 +9953,8 @@
             "libexec/lib/python3.14/site-packages/jupyterlab/static/9661.655bf8f7a2179fc9.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/9699.3f28ac81b1a6fe0d.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/9701.05648707e9bb8b5d.js",
-            "libexec/lib/python3.14/site-packages/jupyterlab/static/9726.64286dad27041c11.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/974801a4444657f1.eot",
-            "libexec/lib/python3.14/site-packages/jupyterlab/static/9797.ee26bfc157f6b602.js",
+            "libexec/lib/python3.14/site-packages/jupyterlab/static/9797.bbbda3ac42827a77.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/988.f2a9b9e578d483be.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/992.1e5b27001dad0742.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/9954.aa40d27c3a9319cc.js",
@@ -9920,8 +9978,8 @@
             "libexec/lib/python3.14/site-packages/jupyterlab/static/f300743a20c11809.woff",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/index.html",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/index.out.js",
-            "libexec/lib/python3.14/site-packages/jupyterlab/static/jlab_core.a3196067513a13d4.js",
-            "libexec/lib/python3.14/site-packages/jupyterlab/static/main.910e4a95b492eb7e.js",
+            "libexec/lib/python3.14/site-packages/jupyterlab/static/jlab_core.2320aca330a6fa6c.js",
+            "libexec/lib/python3.14/site-packages/jupyterlab/static/main.c9147cb24d83fa64.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/package.json",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/style.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/static/third-party-licenses.json",
@@ -9990,12 +10048,12 @@
             "libexec/lib/python3.14/site-packages/jupyterlab/themes/@jupyterlab/theme-light-extension/index.js",
             "libexec/lib/python3.14/site-packages/jupyterlab/upgrade_extension.py",
             "libexec/lib/python3.14/site-packages/jupyterlab/utils.py",
-            "libexec/lib/python3.14/site-packages/jupyterlab-4.6.3.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/jupyterlab-4.6.3.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/jupyterlab-4.6.3.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/jupyterlab-4.6.3.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/jupyterlab-4.6.3.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/jupyterlab-4.6.3.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/jupyterlab-4.6.4.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/jupyterlab-4.6.4.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/jupyterlab-4.6.4.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/jupyterlab-4.6.4.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/jupyterlab-4.6.4.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/jupyterlab-4.6.4.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/jupyterlab_pygments/__init__.py",
             "libexec/lib/python3.14/site-packages/jupyterlab_pygments/_version.py",
             "libexec/lib/python3.14/site-packages/jupyterlab_pygments/style.py",
@@ -10040,11 +10098,11 @@
             "libexec/lib/python3.14/site-packages/jupyterlab_server/translations_handler.py",
             "libexec/lib/python3.14/site-packages/jupyterlab_server/workspaces_app.py",
             "libexec/lib/python3.14/site-packages/jupyterlab_server/workspaces_handler.py",
-            "libexec/lib/python3.14/site-packages/jupyterlab_server-2.28.0.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/jupyterlab_server-2.28.0.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/jupyterlab_server-2.28.0.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/jupyterlab_server-2.28.0.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/jupyterlab_server-2.28.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/jupyterlab_server-2.28.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/jupyterlab_server-2.28.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/jupyterlab_server-2.28.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/jupyterlab_server-2.28.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/jupyterlab_server-2.28.1.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/lark/__init__.py",
             "libexec/lib/python3.14/site-packages/lark/__pyinstaller/__init__.py",
             "libexec/lib/python3.14/site-packages/lark/__pyinstaller/hook-lark.py",
@@ -10790,11 +10848,11 @@
             "libexec/lib/python3.14/site-packages/platformdirs/unix.py",
             "libexec/lib/python3.14/site-packages/platformdirs/version.py",
             "libexec/lib/python3.14/site-packages/platformdirs/windows.py",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.11.8.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.11.8.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.11.8.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.11.8.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/platformdirs-4.11.8.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.11.11.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.11.11.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.11.11.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.11.11.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/platformdirs-4.11.11.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/pluggy/__init__.py",
             "libexec/lib/python3.14/site-packages/pluggy/_callers.py",
             "libexec/lib/python3.14/site-packages/pluggy/_hooks.py",
@@ -11688,12 +11746,12 @@
             "libexec/lib/python3.14/site-packages/tornado/web.py",
             "libexec/lib/python3.14/site-packages/tornado/websocket.py",
             "libexec/lib/python3.14/site-packages/tornado/wsgi.py",
-            "libexec/lib/python3.14/site-packages/tornado-6.5.9.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/tornado-6.5.9.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/tornado-6.5.9.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/tornado-6.5.9.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/tornado-6.5.9.dist-info/licenses/LICENSE",
-            "libexec/lib/python3.14/site-packages/tornado-6.5.9.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/tornado-6.5.10.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/tornado-6.5.10.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/tornado-6.5.10.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/tornado-6.5.10.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/tornado-6.5.10.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/tornado-6.5.10.dist-info/top_level.txt",
             "libexec/lib/python3.14/site-packages/traitlets/__init__.py",
             "libexec/lib/python3.14/site-packages/traitlets/_version.py",
             "libexec/lib/python3.14/site-packages/traitlets/config/__init__.py",
@@ -11727,13 +11785,13 @@
             "libexec/lib/python3.14/site-packages/trove_classifiers/__init__.py",
             "libexec/lib/python3.14/site-packages/trove_classifiers/__main__.py",
             "libexec/lib/python3.14/site-packages/trove_classifiers/py.typed",
-            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.6.1.19.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.6.1.19.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.6.1.19.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.6.1.19.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.6.1.19.dist-info/entry_points.txt",
-            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.6.1.19.dist-info/licenses/LICENSE",
-            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.6.1.19.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.9.21.13.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.9.21.13.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.9.21.13.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.9.21.13.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.9.21.13.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.9.21.13.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/trove_classifiers-2026.9.21.13.dist-info/top_level.txt",
             "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/INSTALLER",
             "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/METADATA",
             "libexec/lib/python3.14/site-packages/typing_extensions-4.16.0.dist-info/REQUESTED",
@@ -12424,11 +12482,11 @@
             "libexec/lib/python3.14/site-packages/urllib3/util/url.py",
             "libexec/lib/python3.14/site-packages/urllib3/util/util.py",
             "libexec/lib/python3.14/site-packages/urllib3/util/wait.py",
-            "libexec/lib/python3.14/site-packages/urllib3-2.7.0.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/urllib3-2.7.0.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/urllib3-2.7.0.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/urllib3-2.7.0.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/urllib3-2.7.0.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.14/site-packages/urllib3-2.8.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/urllib3-2.8.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/urllib3-2.8.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/urllib3-2.8.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/urllib3-2.8.0.dist-info/licenses/LICENSE.txt",
             "libexec/lib/python3.14/site-packages/wcwidth/__init__.py",
             "libexec/lib/python3.14/site-packages/wcwidth/_clip.py",
             "libexec/lib/python3.14/site-packages/wcwidth/_constants.py",
@@ -12446,25 +12504,26 @@
             "libexec/lib/python3.14/site-packages/wcwidth/table_ambiguous.py",
             "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme.py",
             "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/__init__.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_27e0693f.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_3d4826b8.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_45d92e98.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_4cdf59ce.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_50bf0759.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_529fbb4a.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_5bfac390.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_813fee16.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_8589765c.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_8f94b404.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_970dbe10.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_c0a2cdbf.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_c2157f7e.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_c3db41c0.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_da9ceb0a.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_e08bd75e.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_e22030f3.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_fcc05a0f.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_fd9d4c44.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_058c7585.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_2148ff29.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_244dc88b.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_336a71a1.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_33ac73f2.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_3a1895d5.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_59180a0d.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_65c6beb5.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_78f828e8.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_8c2ae14d.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_900356bf.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_97904ece.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_a5880eeb.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_b6d33cf4.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_c57c295b.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_cf02297d.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_e18ac6a7.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_e2b75ee3.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_fb5fd79b.py",
+            "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_known_fdc99132.py",
             "libexec/lib/python3.14/site-packages/wcwidth/table_grapheme_overrides/_registry.py",
             "libexec/lib/python3.14/site-packages/wcwidth/table_mc.py",
             "libexec/lib/python3.14/site-packages/wcwidth/table_overrides.py",
@@ -12475,14 +12534,13 @@
             "libexec/lib/python3.14/site-packages/wcwidth/table_zero.py",
             "libexec/lib/python3.14/site-packages/wcwidth/text_sizing.py",
             "libexec/lib/python3.14/site-packages/wcwidth/textwrap.py",
-            "libexec/lib/python3.14/site-packages/wcwidth/textwrap.py,cover",
             "libexec/lib/python3.14/site-packages/wcwidth/unicode_versions.py",
             "libexec/lib/python3.14/site-packages/wcwidth/wcwidth.py",
-            "libexec/lib/python3.14/site-packages/wcwidth-0.8.3.dist-info/INSTALLER",
-            "libexec/lib/python3.14/site-packages/wcwidth-0.8.3.dist-info/METADATA",
-            "libexec/lib/python3.14/site-packages/wcwidth-0.8.3.dist-info/REQUESTED",
-            "libexec/lib/python3.14/site-packages/wcwidth-0.8.3.dist-info/WHEEL",
-            "libexec/lib/python3.14/site-packages/wcwidth-0.8.3.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/wcwidth-0.8.4.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/wcwidth-0.8.4.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/wcwidth-0.8.4.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/wcwidth-0.8.4.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/wcwidth-0.8.4.dist-info/licenses/LICENSE",
             "libexec/lib/python3.14/site-packages/webcolors/__init__.py",
             "libexec/lib/python3.14/site-packages/webcolors/_conversion.py",
             "libexec/lib/python3.14/site-packages/webcolors/_definitions.py",
@@ -12815,6 +12873,7 @@
             "libexec/share/jupyter/lab/static/1584.f43d421d2384c719.js",
             "libexec/share/jupyter/lab/static/16.6cda5b6d5f0fa449.js",
             "libexec/share/jupyter/lab/static/1601.c443d46d5b6dbb77.js",
+            "libexec/share/jupyter/lab/static/1605.3e7b485b34c42e24.js",
             "libexec/share/jupyter/lab/static/1617.cc66edd89898364c.js",
             "libexec/share/jupyter/lab/static/1645.ed332d3fefafaead.js",
             "libexec/share/jupyter/lab/static/170.bf91d89e4b982380.js",
@@ -12832,7 +12891,7 @@
             "libexec/share/jupyter/lab/static/2115.aaf130fb21b64ca1.js",
             "libexec/share/jupyter/lab/static/2121.8dc495824b1f59ce.js",
             "libexec/share/jupyter/lab/static/213.4168e841092fb2f0.js",
-            "libexec/share/jupyter/lab/static/2134.a7a5751faf22fd80.js",
+            "libexec/share/jupyter/lab/static/2134.5714c97a7acac90f.js",
             "libexec/share/jupyter/lab/static/219.2389a53dc040cbd0.js",
             "libexec/share/jupyter/lab/static/2208.ef6ea98c27c7851d.js",
             "libexec/share/jupyter/lab/static/2272.1dd8f8d1ed60185f.js",
@@ -12892,7 +12951,7 @@
             "libexec/share/jupyter/lab/static/4232.15151af47a0093e1.js",
             "libexec/share/jupyter/lab/static/4251.502491875ee0f0d1.js",
             "libexec/share/jupyter/lab/static/4324.764a63584c864a84.js",
-            "libexec/share/jupyter/lab/static/4350.8660e174406ea5be.js",
+            "libexec/share/jupyter/lab/static/4350.ee5d1386f257be13.js",
             "libexec/share/jupyter/lab/static/4379.b42d95e853a44d36.js",
             "libexec/share/jupyter/lab/static/4385.29cdf9dd304b8c00.js",
             "libexec/share/jupyter/lab/static/4395.a391f759c80d1173.js",
@@ -12912,7 +12971,7 @@
             "libexec/share/jupyter/lab/static/4726.a26e5e177770dbdd.js",
             "libexec/share/jupyter/lab/static/4743.95a1b3de81f80653.js",
             "libexec/share/jupyter/lab/static/479.bdbaa5d2cdd9bc91.js",
-            "libexec/share/jupyter/lab/static/4797.ff27331deddd5f5e.js",
+            "libexec/share/jupyter/lab/static/4797.ae90e8f6c6398aba.js",
             "libexec/share/jupyter/lab/static/4818.15eaf82d426f67a6.js",
             "libexec/share/jupyter/lab/static/4845.6da260237bbb8966.js",
             "libexec/share/jupyter/lab/static/4889.054114d42698ba53.js",
@@ -13046,9 +13105,8 @@
             "libexec/share/jupyter/lab/static/9661.655bf8f7a2179fc9.js",
             "libexec/share/jupyter/lab/static/9699.3f28ac81b1a6fe0d.js",
             "libexec/share/jupyter/lab/static/9701.05648707e9bb8b5d.js",
-            "libexec/share/jupyter/lab/static/9726.64286dad27041c11.js",
             "libexec/share/jupyter/lab/static/974801a4444657f1.eot",
-            "libexec/share/jupyter/lab/static/9797.ee26bfc157f6b602.js",
+            "libexec/share/jupyter/lab/static/9797.bbbda3ac42827a77.js",
             "libexec/share/jupyter/lab/static/988.f2a9b9e578d483be.js",
             "libexec/share/jupyter/lab/static/992.1e5b27001dad0742.js",
             "libexec/share/jupyter/lab/static/9954.aa40d27c3a9319cc.js",
@@ -13072,8 +13130,8 @@
             "libexec/share/jupyter/lab/static/f300743a20c11809.woff",
             "libexec/share/jupyter/lab/static/index.html",
             "libexec/share/jupyter/lab/static/index.out.js",
-            "libexec/share/jupyter/lab/static/jlab_core.a3196067513a13d4.js",
-            "libexec/share/jupyter/lab/static/main.910e4a95b492eb7e.js",
+            "libexec/share/jupyter/lab/static/jlab_core.2320aca330a6fa6c.js",
+            "libexec/share/jupyter/lab/static/main.c9147cb24d83fa64.js",
             "libexec/share/jupyter/lab/static/package.json",
             "libexec/share/jupyter/lab/static/style.js",
             "libexec/share/jupyter/lab/static/third-party-licenses.json",
@@ -13157,7 +13215,7 @@
             "sh.brew.jupyterlab.service",
             "share/zsh/site-functions/_jupyter"
           ],
-          "installed_size": 148432282
+          "installed_size": 148404159
         }
       }
     }

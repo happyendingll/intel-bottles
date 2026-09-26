@@ -2,27 +2,27 @@
   "hf-mcp-server": {
     "formula": {
       "name": "hf-mcp-server",
-      "pkg_version": "0.4.20",
+      "pkg_version": "0.4.23",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/h/hf-mcp-server.rb",
       "tap_git_path": "Formula/h/hf-mcp-server.rb",
-      "tap_git_revision": "79057e15b38d7494db937d7c672e9eb07216cd18",
+      "tap_git_revision": "65345d2ef56bf344c0c46eb8f19783c190a6f5c5",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "MCP Server for Hugging Face",
       "license": "MIT",
       "homepage": "https://github.com/evalstate/hf-mcp-server"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-09-19T11:10:06Z",
+      "date": "2026-09-26T03:41:10Z",
       "tags": {
         "sequoia": {
-          "filename": "hf-mcp-server-0.4.20.sequoia.bottle.tar.gz",
-          "local_filename": "hf-mcp-server--0.4.20.sequoia.bottle.tar.gz",
-          "sha256": "6a3f8b5bd19701907bf0af2df36cd994a395c6b3a2fe4631b66c9b8372e6bb4e",
+          "filename": "hf-mcp-server-0.4.23.sequoia.bottle.tar.gz",
+          "local_filename": "hf-mcp-server--0.4.23.sequoia.bottle.tar.gz",
+          "sha256": "ca9ae7f4ca678ad8e6a330a62a4c3ea62f4f096f4072083380f4448343501370",
           "tab": {
-            "homebrew_version": "7.0.4",
+            "homebrew_version": "7.0.6",
             "changed_files": [
               "libexec/lib/node_modules/@llmindset/hf-mcp-server/dist/server/stdio.d.ts",
               "libexec/lib/node_modules/@llmindset/hf-mcp-server/dist/server/stdio.js",
@@ -129,10 +129,10 @@
               },
               {
                 "full_name": "libuv",
-                "version": "1.52.1",
+                "version": "1.53.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.52.1",
+                "pkg_version": "1.53.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -147,12 +147,12 @@
               },
               {
                 "full_name": "simdutf",
-                "version": "9.2.0",
-                "revision": 0,
+                "version": "9.2.1",
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.2.0",
+                "pkg_version": "9.2.1_1",
                 "declared_directly": false,
-                "compatibility_version": 5
+                "compatibility_version": 6
               },
               {
                 "full_name": "merve",
@@ -172,10 +172,10 @@
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-08-13",
+                "version": "2026-09-25",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2026-08-13",
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -261,10 +261,10 @@
               },
               {
                 "full_name": "node",
-                "version": "26.9.0",
-                "revision": 0,
+                "version": "26.10.0",
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.9.0",
+                "pkg_version": "26.10.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -282,9 +282,11 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-simdutf-9.2.0",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+              "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+              "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
               "SPDXRef-Package-SPDXRef-merve-1.2.2_3",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
               "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
               "SPDXRef-Package-SPDXRef-simdjson-4.6.11",
               "SPDXRef-Package-SPDXRef-readline-8.3.6",
@@ -292,29 +294,75 @@
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-node-26.9.0",
+              "SPDXRef-Package-SPDXRef-node-26.10.0_1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2.0",
-                "name": "simdutf",
-                "versionInfo": "9.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "name": "libnghttp2",
+                "versionInfo": "1.70.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/simdutf-9.2.0.sequoia.bottle.tar.gz",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libnghttp2-1.70.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "6ec4e7dfdf4adf835b2b55da8d376606539cad475ea9fe083f71d0014286ffe6"
+                    "checksumValue": "5fc34d9e93ddb24b1c2cbb83a0beee5e3524a0d96c18b4a64cf32762681b2b65"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdutf@9.2.0",
+                    "referenceLocator": "pkg:brew/libnghttp2@1.70.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "name": "libuv",
+                "versionInfo": "1.53.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libuv-1.53.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2378d10bb8de9b4b5c842db3903822a5854ae0b0d5d01e5731defdddec18154b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libuv@1.53.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
+                "name": "simdutf",
+                "versionInfo": "9.2.1_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 OR MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/simdutf-9.2.1_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3d04cac42b6ba30f6dd4480f379dead4fceaaa8a2d8961c7ebb071d0f07aa0e9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/simdutf@9.2.1_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -343,24 +391,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "name": "ca-certificates",
-                "versionInfo": "2026-08-13",
+                "versionInfo": "2026-09-25",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
                     "referenceType": "purl"
                   }
                 ]
@@ -527,24 +575,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.9.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.10.0_1",
                 "name": "node",
-                "versionInfo": "26.9.0",
+                "versionInfo": "26.10.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/node-26.9.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/node-26.10.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d553eb1aef6f07918427012cf89eb6a7806e9077255f3ec4ab36263ad24edd89"
+                    "checksumValue": "2000a586dc4065e351bcaa3b4861a7aa59caa26d7649c548940f962f3e9e193e"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/node@26.9.0",
+                    "referenceLocator": "pkg:brew/node@26.10.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -564,7 +612,17 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-hf-mcp-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-hf-mcp-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2.1_1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-hf-mcp-server"
               },
@@ -574,7 +632,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-hf-mcp-server"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-hf-mcp-server"
               },
@@ -614,7 +672,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-hf-mcp-server"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.9.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.10.0_1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-hf-mcp-server"
               },
@@ -911,8 +969,8 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/dist/shared/transport-metrics.js",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/dist/shared/transport-metrics.js.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/dist/web/assets/hf-logo-DbjPOSLw.svg",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/dist/web/assets/main-8rULVR14.css",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/dist/web/assets/main-CgGj4HHO.js",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/dist/web/assets/main-B9vkS3Er.js",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/dist/web/assets/main-DkfqPvne.css",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/dist/web/hf-logo-DbjPOSLw.svg",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/dist/web/index.html",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/dist/web/mcp-welcome.html",
@@ -1083,7 +1141,7 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@huggingface/hub/dist/browser/sha256-wrapper-DYTB3MXW.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@huggingface/hub/dist/browser/sub-paths-F6TP7MGR.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@huggingface/hub/dist/browser/sub-paths-RH3O65LG.js",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@huggingface/hub/dist/chunk-43AFHXC3.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@huggingface/hub/dist/chunk-AXSL4LYE.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@huggingface/hub/dist/chunk-FFYIGW52.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@huggingface/hub/dist/cli-progress-XP5T6RZP.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@huggingface/hub/dist/cli.d.ts",
@@ -2915,6 +2973,10 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/dist/jobs/commands/scheduled.d.ts.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/dist/jobs/commands/scheduled.js",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/dist/jobs/commands/scheduled.js.map",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/dist/jobs/commands/update-labels.d.ts",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/dist/jobs/commands/update-labels.d.ts.map",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/dist/jobs/commands/update-labels.js",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/dist/jobs/commands/update-labels.js.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/dist/jobs/commands/utils.d.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/dist/jobs/commands/utils.d.ts.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/dist/jobs/commands/utils.js",
@@ -3147,6 +3209,7 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/src/jobs/commands/ps.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/src/jobs/commands/run.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/src/jobs/commands/scheduled.ts",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/src/jobs/commands/update-labels.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/src/jobs/commands/utils.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/src/jobs/commands/uv-utils.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/src/jobs/formatters.ts",
@@ -3205,7 +3268,9 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/test/jobs/command-translation.spec.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/test/jobs/formatters.spec.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/test/jobs/jobs-output.spec.ts",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/test/jobs/labels-update-filter.spec.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/test/jobs/sse-handler.spec.ts",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/test/jobs/submission-labels.spec.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/test/jobs/uv-command.spec.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/test/sandbox-tool.spec.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/@llmindset/hf-mcp/tsconfig.json",
@@ -5844,6 +5909,8 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/briefcase-conveyor-belt.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/briefcase-medical.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/briefcase-medical.mjs.map",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/briefcase-plus.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/briefcase-plus.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/briefcase.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/briefcase.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/bring-to-front.mjs",
@@ -7264,6 +7331,8 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/hourglass-cog.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/hourglass.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/hourglass.mjs.map",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/house-cog.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/house-cog.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/house-heart.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/house-heart.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/house-plug.mjs",
@@ -7462,8 +7531,14 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/lighthouse.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-chart.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-chart.mjs.map",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-dot-bottom-vertical.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-dot-bottom-vertical.mjs.map",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-dot-left-horizontal.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-dot-left-horizontal.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-dot-right-horizontal.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-dot-right-horizontal.mjs.map",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-dot-top-vertical.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-dot-top-vertical.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-squiggle.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-squiggle.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/line-style.mjs",
@@ -8806,6 +8881,8 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/square-sigma.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/square-slash.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/square-slash.mjs.map",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/square-sparkles.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/square-sparkles.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/square-split-horizontal.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/square-split-horizontal.mjs.map",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/lucide-react/dist/esm/icons/square-split-vertical.mjs",
@@ -10407,27 +10484,27 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/plugins-index.d.mts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/plugins-index.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/binding-BTa6BPQe.d.mts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/binding-BbrDfv1x.mjs",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/bindingify-input-options-D4l624og.mjs",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/constructors-CmDKpWIU.d.mts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/constructors-D9jwEbE4.mjs",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/create-bundler-option-DJpvtSqr.mjs",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/define-config-BFdLpVut.d.mts",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/binding-BY0qR5iS.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/bindingify-input-options-XrReX_BJ.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/constructors-DuOq7MqW.d.mts",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/constructors-xEvVj3lN.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/create-bundler-option-YGKfBl_D.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/define-config-C7HCoqY8.d.mts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/define-config-Demdg3_4.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/dist-DKbukT1H.mjs",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/error-CGhV1ebk.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/error-C7pxws0W.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/get-log-filter-AjBknEEO.d.mts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/load-config-qRezutA0.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/load-config-iYtRcbXn.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/logging-xuHO4mAy.d.mts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/logs-DmYCAKcW.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/logs-D6uA606S.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/misc-DOSKtd97.mjs",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/normalize-string-or-regex-zc1bUto6.mjs",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/parse-DltPb1DL.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/normalize-string-or-regex-F14uvr6D.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/parse-WKtEKiA6.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/prompt-CH6TK0bC.mjs",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/resolve-tsconfig-Bf6oL9fm.mjs",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/rolldown-Ld3ZGGCt.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/resolve-tsconfig-DHwpIs5e.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/rolldown-CgWItHdG.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/transform-DK_nCt9j.d.mts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/watch-BDSxrMiV.mjs",
+            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/shared/watch-DUTFlQ6u.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/utils-index.d.mts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/dist/utils-index.mjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/rolldown/package.json",
@@ -11510,7 +11587,6 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/generics.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/global-config.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/hash.test.ts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/iban.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/in-out.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/index.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/instance-footprint.test.ts",
@@ -11540,7 +11616,6 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/preprocess.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/primitive.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/promise.test.ts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/properties.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/prototypes.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/readonly.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/classic/tests/record.test.ts",
@@ -11579,14 +11654,11 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/registries.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/schemas.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/standard-schema.ts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/cached.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/compile-differential.test.ts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/compile-generative.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/compile-global.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/compile-off-by-default.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/compile-stats.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/compile.test.ts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/email-regex.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/extend.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/index.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/locales/be.test.ts",
@@ -11599,11 +11671,9 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/locales/nl.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/locales/parity.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/locales/ru.test.ts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/locales/tg.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/locales/tk.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/locales/tr.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/locales/uz.test.ts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/polyfill-collision.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/record-constructor.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/recursive-tuples.test.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/core/tests/treeshake.test.ts",
@@ -11666,7 +11736,6 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/locales/sl.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/locales/sv.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/locales/ta.ts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/locales/tg.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/locales/th.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/locales/tk.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/src/v4/locales/tr.ts",
@@ -12101,10 +12170,6 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/v4/locales/ta.d.cts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/v4/locales/ta.d.ts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/v4/locales/ta.js",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/v4/locales/tg.cjs",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/v4/locales/tg.d.cts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/v4/locales/tg.d.ts",
-            "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/v4/locales/tg.js",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/v4/locales/th.cjs",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/v4/locales/th.d.cts",
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/node_modules/zod/v4/locales/th.d.ts",
@@ -12195,7 +12260,7 @@
             "libexec/lib/node_modules/@llmindset/hf-mcp-server/package.json",
             "sbom.spdx.json"
           ],
-          "installed_size": 98955933
+          "installed_size": 98806085
         }
       }
     }
