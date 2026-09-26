@@ -1,0 +1,164 @@
+{
+  "ipmitool": {
+    "formula": {
+      "name": "ipmitool",
+      "pkg_version": "1.8.19_3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/i/ipmitool.rb",
+      "tap_git_path": "Formula/i/ipmitool.rb",
+      "tap_git_revision": "51aaa2e24e4a875ee2ed95d1e6986319c97b501d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Utility for IPMI control with kernel driver or LAN interface",
+      "license": "BSD-3-Clause",
+      "homepage": "https://codeberg.org/IPMITool/ipmitool"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-26T05:38:28Z",
+      "tags": {
+        "sequoia": {
+          "filename": "ipmitool-1.8.19_3.sequoia.bottle.tar.gz",
+          "local_filename": "ipmitool--1.8.19_3.sequoia.bottle.tar.gz",
+          "sha256": "4a7cfee85a685a70fa76d8564cefe8653e6e6fa87d48c925b546ad59720fcf24",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "share/man/man1/ipmitool.1",
+              "share/man/man8/ipmievd.8"
+            ],
+            "linkage_files": [
+              "bin/ipmitool",
+              "sbin/ipmievd"
+            ],
+            "binary_relocation_files": [
+              "bin/ipmitool",
+              "sbin/ipmievd"
+            ],
+            "source_modified_time": 1662057751,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/ipmitool",
+              "string": "/usr/local/Cellar/ipmitool/1.8.19_3/share/misc/enterprise-numbers",
+              "offset": 496645
+            },
+            {
+              "path": "sbin/ipmievd",
+              "string": "/usr/local/Cellar/ipmitool/1.8.19_3/share/misc/enterprise-numbers",
+              "offset": 271624
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ipmitool"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-ipmitool-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/ipmitool",
+            "sbin/ipmievd"
+          ],
+          "all_files": [
+            ".brew/ipmitool.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/ipmitool",
+            "sbin/ipmievd",
+            "sbom.spdx.json",
+            "share/doc/ipmitool/AUTHORS",
+            "share/doc/ipmitool/COPYING",
+            "share/doc/ipmitool/ChangeLog",
+            "share/doc/ipmitool/README",
+            "share/ipmitool/oem_ibm_sel_map",
+            "share/man/man1/ipmitool.1",
+            "share/man/man8/ipmievd.8",
+            "share/misc/enterprise-numbers"
+          ],
+          "installed_size": 6634747
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,248 @@
+{
+  "libewf": {
+    "formula": {
+      "name": "libewf",
+      "pkg_version": "20140817",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libewf.rb",
+      "tap_git_path": "Formula/lib/libewf.rb",
+      "tap_git_revision": "51aaa2e24e4a875ee2ed95d1e6986319c97b501d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Library for support of the Expert Witness Compression Format",
+      "license": "LGPL-3.0-or-later",
+      "homepage": "https://github.com/libyal/libewf"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-26T05:42:25Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libewf-20140817.sequoia.bottle.tar.gz",
+          "local_filename": "libewf--20140817.sequoia.bottle.tar.gz",
+          "sha256": "85ea83abd21070e59e8c03cc4d9c3e037db10d5273e3199f8b6b085e790938c7",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "lib/pkgconfig/libewf.pc"
+            ],
+            "linkage_files": [
+              "bin/ewfacquire",
+              "bin/ewfacquirestream",
+              "bin/ewfdebug",
+              "bin/ewfexport",
+              "bin/ewfinfo",
+              "bin/ewfmount",
+              "bin/ewfrecover",
+              "bin/ewfverify",
+              "lib/libewf.2.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790318237,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libewf"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libewf"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libewf"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libewf-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/ewfrecover",
+            "bin/ewfacquire",
+            "bin/ewfverify",
+            "bin/ewfacquirestream",
+            "bin/ewfmount",
+            "bin/ewfinfo",
+            "bin/ewfexport",
+            "bin/ewfdebug"
+          ],
+          "all_files": [
+            ".brew/libewf.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYING.LESSER",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/ewfacquire",
+            "bin/ewfacquirestream",
+            "bin/ewfdebug",
+            "bin/ewfexport",
+            "bin/ewfinfo",
+            "bin/ewfmount",
+            "bin/ewfrecover",
+            "bin/ewfverify",
+            "include/libewf/codepage.h",
+            "include/libewf/definitions.h",
+            "include/libewf/error.h",
+            "include/libewf/extern.h",
+            "include/libewf/features.h",
+            "include/libewf/types.h",
+            "include/libewf.h",
+            "lib/libewf.2.dylib",
+            "lib/libewf.a",
+            "lib/libewf.dylib",
+            "lib/pkgconfig/libewf.pc",
+            "sbom.spdx.json",
+            "share/man/man1/ewfacquire.1",
+            "share/man/man1/ewfacquirestream.1",
+            "share/man/man1/ewfexport.1",
+            "share/man/man1/ewfinfo.1",
+            "share/man/man1/ewfmount.1",
+            "share/man/man1/ewfrecover.1",
+            "share/man/man1/ewfverify.1",
+            "share/man/man3/libewf.3"
+          ],
+          "installed_size": 11315747
+        }
+      }
+    }
+  }
+}

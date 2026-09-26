@@ -1,0 +1,707 @@
+{
+  "dwarfs": {
+    "formula": {
+      "name": "dwarfs",
+      "pkg_version": "0.15.7",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dwarfs.rb",
+      "tap_git_path": "Formula/d/dwarfs.rb",
+      "tap_git_revision": "51aaa2e24e4a875ee2ed95d1e6986319c97b501d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Fast high compression read-only file system for Linux, Windows, and macOS",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://github.com/mhx/dwarfs"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-26T04:50:28Z",
+      "tags": {
+        "sequoia": {
+          "filename": "dwarfs-0.15.7.sequoia.bottle.tar.gz",
+          "local_filename": "dwarfs--0.15.7.sequoia.bottle.tar.gz",
+          "sha256": "8919af8dd3cd26d5916c4d2278b25d291a737d967c7013cc610ef4f4795c5194",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/dwarfsck",
+              "bin/dwarfsextract",
+              "bin/mkdwarfs",
+              "lib/libdwarfs_common.0.15.7.dylib",
+              "lib/libdwarfs_compressor.0.15.7.dylib",
+              "lib/libdwarfs_decompressor.0.15.7.dylib",
+              "lib/libdwarfs_extractor.0.15.7.dylib",
+              "lib/libdwarfs_reader.0.15.7.dylib",
+              "lib/libdwarfs_rewrite.0.15.7.dylib",
+              "lib/libdwarfs_writer.0.15.7.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787160987,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "boost",
+                "version": "1.92.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.92.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libogg",
+                "version": "1.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "flac",
+                "version": "1.5.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "fmt",
+                "version": "12.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "12.2.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "howard-hinnant-date",
+                "version": "3.0.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.5",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libb2",
+                "version": "0.98.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.98.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libarchive",
+                "version": "3.8.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.8.9",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nlohmann-json",
+                "version": "3.12.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.12.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2",
+                "declared_directly": true
+              },
+              {
+                "full_name": "parallel-hashmap",
+                "version": "2.0.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.0.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "range-v3",
+                "version": "0.12.0",
+                "revision": 0,
+                "bottle_rebuild": 3,
+                "pkg_version": "0.12.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "utf8cpp",
+                "version": "4.2.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.2.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xxhash",
+                "version": "0.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.8.4",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-nlohmann-json-3.12.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-parallel-hashmap-2.0.0",
+              "SPDXRef-Package-SPDXRef-range-v3-0.12.0",
+              "SPDXRef-Package-SPDXRef-utf8cpp-4.2.1",
+              "SPDXRef-Package-SPDXRef-xxhash-0.8.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-nlohmann-json-3.12.0",
+                "name": "nlohmann-json",
+                "versionInfo": "3.12.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/nlohmann-json/blobs/sha256:df65065eb8504f15f8802b7c681df015a592a68336db7fe290eeeda59fa1e440",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df65065eb8504f15f8802b7c681df015a592a68336db7fe290eeeda59fa1e440"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/nlohmann-json@3.12.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-parallel-hashmap-2.0.0",
+                "name": "parallel-hashmap",
+                "versionInfo": "2.0.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/parallel-hashmap/blobs/sha256:caa4a19542de0e778d7cb13ab955da943a9fd970124ab0d578971b0afe1e7a91",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "caa4a19542de0e778d7cb13ab955da943a9fd970124ab0d578971b0afe1e7a91"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/parallel-hashmap@2.0.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-range-v3-0.12.0",
+                "name": "range-v3",
+                "versionInfo": "0.12.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSL-1.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/range-v3/blobs/sha256:6e8ed329dcadb543381b45e5fac6994216dd9240da78df421272e3a9672c5182",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6e8ed329dcadb543381b45e5fac6994216dd9240da78df421272e3a9672c5182"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/range-v3@0.12.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-utf8cpp-4.2.1",
+                "name": "utf8cpp",
+                "versionInfo": "4.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSL-1.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/utf8cpp/blobs/sha256:91979507787b320aa978b9fe793d1d72b5c50c7e73529897dbe5f09c75fb0e90",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "91979507787b320aa978b9fe793d1d72b5c50c7e73529897dbe5f09c75fb0e90"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/utf8cpp@4.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xxhash-0.8.4",
+                "name": "xxhash",
+                "versionInfo": "0.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xxhash-0.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b7e422b8ae270b8cbf5c19dbdcd2f39d902e859117b3896f71d38d0888b18b10"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xxhash@0.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dwarfs"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dwarfs"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dwarfs"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-nlohmann-json-3.12.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dwarfs"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dwarfs"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-parallel-hashmap-2.0.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dwarfs"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-range-v3-0.12.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dwarfs"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-utf8cpp-4.2.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dwarfs"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xxhash-0.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dwarfs"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-dwarfs-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/dwarfsextract",
+            "bin/mkdwarfs",
+            "bin/dwarfsck"
+          ],
+          "all_files": [
+            ".brew/dwarfs.rb",
+            "CHANGES.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "TODO",
+            "bin/dwarfsck",
+            "bin/dwarfsextract",
+            "bin/mkdwarfs",
+            "include/dwarfs/binary_literals.h",
+            "include/dwarfs/bit_view.h",
+            "include/dwarfs/bits.h",
+            "include/dwarfs/block_compressor.h",
+            "include/dwarfs/block_compressor_parser.h",
+            "include/dwarfs/block_decompressor.h",
+            "include/dwarfs/byte_buffer.h",
+            "include/dwarfs/byte_buffer_factory.h",
+            "include/dwarfs/checksum.h",
+            "include/dwarfs/compiler.h",
+            "include/dwarfs/compression.h",
+            "include/dwarfs/compression_constraints.h",
+            "include/dwarfs/compressor_factory.h",
+            "include/dwarfs/compressor_registry.h",
+            "include/dwarfs/config.h",
+            "include/dwarfs/conv.h",
+            "include/dwarfs/counting_semaphore.h",
+            "include/dwarfs/decompressor_factory.h",
+            "include/dwarfs/decompressor_registry.h",
+            "include/dwarfs/detail/compression_registry.h",
+            "include/dwarfs/detail/file_extent_info.h",
+            "include/dwarfs/detail/file_segment_impl.h",
+            "include/dwarfs/detail/file_view_impl.h",
+            "include/dwarfs/detail/logging_class_factory.h",
+            "include/dwarfs/detail/scoped_env.h",
+            "include/dwarfs/detail/string_like_hash.h",
+            "include/dwarfs/endian.h",
+            "include/dwarfs/error.h",
+            "include/dwarfs/extent_kind.h",
+            "include/dwarfs/file_access.h",
+            "include/dwarfs/file_access_generic.h",
+            "include/dwarfs/file_extent.h",
+            "include/dwarfs/file_extents_iterable.h",
+            "include/dwarfs/file_range.h",
+            "include/dwarfs/file_range_utils.h",
+            "include/dwarfs/file_segment.h",
+            "include/dwarfs/file_segments_iterable.h",
+            "include/dwarfs/file_stat.h",
+            "include/dwarfs/file_type.h",
+            "include/dwarfs/file_util.h",
+            "include/dwarfs/file_view.h",
+            "include/dwarfs/format.h",
+            "include/dwarfs/fstypes.h",
+            "include/dwarfs/glob_matcher.h",
+            "include/dwarfs/history.h",
+            "include/dwarfs/history_config.h",
+            "include/dwarfs/integral_value_parser.h",
+            "include/dwarfs/io_advice.h",
+            "include/dwarfs/library_dependencies.h",
+            "include/dwarfs/logger.h",
+            "include/dwarfs/malloc_byte_buffer.h",
+            "include/dwarfs/malloc_byte_buffer_factory.h",
+            "include/dwarfs/mapped_byte_buffer.h",
+            "include/dwarfs/match.h",
+            "include/dwarfs/memory_mapping.h",
+            "include/dwarfs/metadata_defs.h",
+            "include/dwarfs/open_file_options.h",
+            "include/dwarfs/option_map.h",
+            "include/dwarfs/os_access.h",
+            "include/dwarfs/os_access_generic.h",
+            "include/dwarfs/pcm_sample_transformer.h",
+            "include/dwarfs/performance_monitor.h",
+            "include/dwarfs/platform.h",
+            "include/dwarfs/portability/unistd.h",
+            "include/dwarfs/portability/windows.h",
+            "include/dwarfs/reader/block_cache_options.h",
+            "include/dwarfs/reader/block_range.h",
+            "include/dwarfs/reader/cache_tidy_config.h",
+            "include/dwarfs/reader/detail/file_reader.h",
+            "include/dwarfs/reader/filesystem_options.h",
+            "include/dwarfs/reader/filesystem_v2.h",
+            "include/dwarfs/reader/fsinfo_features.h",
+            "include/dwarfs/reader/fsinfo_options.h",
+            "include/dwarfs/reader/getattr_options.h",
+            "include/dwarfs/reader/inode_reader_options.h",
+            "include/dwarfs/reader/iovec_read_buf.h",
+            "include/dwarfs/reader/metadata_options.h",
+            "include/dwarfs/reader/metadata_types.h",
+            "include/dwarfs/reader/mlock_mode.h",
+            "include/dwarfs/reader/seek_whence.h",
+            "include/dwarfs/scope_exit.h",
+            "include/dwarfs/scoped_output_capture.h",
+            "include/dwarfs/small_vector.h",
+            "include/dwarfs/sorted_array_map.h",
+            "include/dwarfs/source_location.h",
+            "include/dwarfs/string.h",
+            "include/dwarfs/terminal.h",
+            "include/dwarfs/terminal_ansi.h",
+            "include/dwarfs/thread_pool.h",
+            "include/dwarfs/thrift_lite/assert.h",
+            "include/dwarfs/thrift_lite/compact_reader.h",
+            "include/dwarfs/thrift_lite/compact_writer.h",
+            "include/dwarfs/thrift_lite/concepts.h",
+            "include/dwarfs/thrift_lite/container.h",
+            "include/dwarfs/thrift_lite/debug_writer.h",
+            "include/dwarfs/thrift_lite/demangle.h",
+            "include/dwarfs/thrift_lite/detail/concepts.h",
+            "include/dwarfs/thrift_lite/detail/protocol_helpers.h",
+            "include/dwarfs/thrift_lite/detail/protocol_methods.h",
+            "include/dwarfs/thrift_lite/detail/protocol_type.h",
+            "include/dwarfs/thrift_lite/detail/type_class.h",
+            "include/dwarfs/thrift_lite/enum_traits.h",
+            "include/dwarfs/thrift_lite/enum_utils.h",
+            "include/dwarfs/thrift_lite/field_ref.h",
+            "include/dwarfs/thrift_lite/json_writer.h",
+            "include/dwarfs/thrift_lite/traits.h",
+            "include/dwarfs/thrift_lite/types.h",
+            "include/dwarfs/thrift_lite/utility.h",
+            "include/dwarfs/thrift_lite/varint.h",
+            "include/dwarfs/thrift_lite/writer_options.h",
+            "include/dwarfs/type_list.h",
+            "include/dwarfs/types.h",
+            "include/dwarfs/util.h",
+            "include/dwarfs/utility/filesystem_extractor.h",
+            "include/dwarfs/utility/filesystem_extractor_archive_format.h",
+            "include/dwarfs/utility/rewrite_filesystem.h",
+            "include/dwarfs/utility/rewrite_options.h",
+            "include/dwarfs/varint.h",
+            "include/dwarfs/version.h",
+            "include/dwarfs/vfs_stat.h",
+            "include/dwarfs/writer/categorized_option.h",
+            "include/dwarfs/writer/categorizer.h",
+            "include/dwarfs/writer/category_parser.h",
+            "include/dwarfs/writer/category_resolver.h",
+            "include/dwarfs/writer/compression_metadata_requirements.h",
+            "include/dwarfs/writer/console_writer.h",
+            "include/dwarfs/writer/contextual_option.h",
+            "include/dwarfs/writer/entry_factory.h",
+            "include/dwarfs/writer/entry_filter.h",
+            "include/dwarfs/writer/entry_interface.h",
+            "include/dwarfs/writer/filesystem_block_category_resolver.h",
+            "include/dwarfs/writer/filesystem_writer.h",
+            "include/dwarfs/writer/filesystem_writer_options.h",
+            "include/dwarfs/writer/filter_debug.h",
+            "include/dwarfs/writer/fragment_category.h",
+            "include/dwarfs/writer/fragment_order_options.h",
+            "include/dwarfs/writer/fragment_order_parser.h",
+            "include/dwarfs/writer/inode_fragments.h",
+            "include/dwarfs/writer/inode_options.h",
+            "include/dwarfs/writer/metadata_options.h",
+            "include/dwarfs/writer/object.h",
+            "include/dwarfs/writer/rule_based_entry_filter.h",
+            "include/dwarfs/writer/scanner.h",
+            "include/dwarfs/writer/scanner_options.h",
+            "include/dwarfs/writer/segmenter.h",
+            "include/dwarfs/writer/segmenter_factory.h",
+            "include/dwarfs/writer/writer_progress.h",
+            "include/dwarfs/xattr.h",
+            "include/dwarfs/zstd_context_manager.h",
+            "lib/cmake/dwarfs/dwarfs-config-version.cmake",
+            "lib/cmake/dwarfs/dwarfs-config.cmake",
+            "lib/cmake/dwarfs/dwarfs-targets-release.cmake",
+            "lib/cmake/dwarfs/dwarfs-targets.cmake",
+            "lib/libdwarfs_common.0.15.7.dylib",
+            "lib/libdwarfs_common.dylib",
+            "lib/libdwarfs_compressor.0.15.7.dylib",
+            "lib/libdwarfs_compressor.dylib",
+            "lib/libdwarfs_decompressor.0.15.7.dylib",
+            "lib/libdwarfs_decompressor.dylib",
+            "lib/libdwarfs_extractor.0.15.7.dylib",
+            "lib/libdwarfs_extractor.dylib",
+            "lib/libdwarfs_reader.0.15.7.dylib",
+            "lib/libdwarfs_reader.dylib",
+            "lib/libdwarfs_rewrite.0.15.7.dylib",
+            "lib/libdwarfs_rewrite.dylib",
+            "lib/libdwarfs_writer.0.15.7.dylib",
+            "lib/libdwarfs_writer.dylib",
+            "sbom.spdx.json",
+            "share/bash-completion/completions/dwarfsck",
+            "share/bash-completion/completions/dwarfsextract",
+            "share/bash-completion/completions/mkdwarfs",
+            "share/man/man1/dwarfsck.1",
+            "share/man/man1/dwarfsextract.1",
+            "share/man/man1/mkdwarfs.1",
+            "share/man/man5/dwarfs-format.5",
+            "share/man/man7/dwarfs-env.7",
+            "share/mime/packages/dwarfs.xml",
+            "share/zsh/site-functions/_dwarfsck",
+            "share/zsh/site-functions/_dwarfsextract",
+            "share/zsh/site-functions/_mkdwarfs"
+          ],
+          "installed_size": 9960293
+        }
+      }
+    }
+  }
+}

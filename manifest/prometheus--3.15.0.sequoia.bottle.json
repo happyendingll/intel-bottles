@@ -1,0 +1,100 @@
+{
+  "prometheus": {
+    "formula": {
+      "name": "prometheus",
+      "pkg_version": "3.15.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/prometheus.rb",
+      "tap_git_path": "Formula/p/prometheus.rb",
+      "tap_git_revision": "51aaa2e24e4a875ee2ed95d1e6986319c97b501d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Service monitoring system and time series database",
+      "license": "Apache-2.0",
+      "homepage": "https://prometheus.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-26T06:05:52Z",
+      "tags": {
+        "sequoia": {
+          "filename": "prometheus-3.15.0.sequoia.bottle.tar.gz",
+          "local_filename": "prometheus--3.15.0.sequoia.bottle.tar.gz",
+          "sha256": "443a9c7a4611d821893ef1e459740151cdcffb8b92ef7f776b12b279969b31a6",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "bin/prometheus_brew_services",
+              ".bottle/etc/prometheus.args",
+              "sh.brew.prometheus.plist",
+              "sh.brew.prometheus.service"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790321138,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-prometheus-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/prometheus_brew_services",
+            "bin/prometheus",
+            "bin/promtool"
+          ],
+          "all_files": [
+            ".bottle/etc/prometheus.args",
+            ".bottle/etc/prometheus.yml",
+            ".brew/prometheus.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NOTICE",
+            "README.md",
+            "bin/prometheus",
+            "bin/prometheus_brew_services",
+            "bin/promtool",
+            "sbom.spdx.json",
+            "sh.brew.prometheus.plist",
+            "sh.brew.prometheus.service"
+          ],
+          "installed_size": 272884449
+        }
+      }
+    }
+  }
+}

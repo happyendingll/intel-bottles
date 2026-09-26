@@ -1,0 +1,167 @@
+{
+  "fq": {
+    "formula": {
+      "name": "fq",
+      "pkg_version": "0.13.12",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/fq.rb",
+      "tap_git_path": "Formula/f/fq.rb",
+      "tap_git_revision": "51aaa2e24e4a875ee2ed95d1e6986319c97b501d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Brokered message queue optimized for performance",
+      "license": "MIT",
+      "homepage": "https://github.com/circonus-labs/fq"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-26T04:52:02Z",
+      "tags": {
+        "sequoia": {
+          "filename": "fq-0.13.12.sequoia.bottle.tar.gz",
+          "local_filename": "fq--0.13.12.sequoia.bottle.tar.gz",
+          "sha256": "a1bd99150326dea59beefdf7e0a1f6046c48b6aa649413a8d2a8157ef78fcf6f",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/fq_rcvr",
+              "bin/fq_sndr",
+              "bin/fqc",
+              "bin/fqs",
+              "bin/fqtool",
+              "lib/libfq.0.13.12.dylib",
+              "sbin/fqd"
+            ],
+            "binary_relocation_files": [
+              "sbin/fqd"
+            ],
+            "source_modified_time": 1734373417,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "concurrencykit",
+                "version": "0.7.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.7.2",
+                "declared_directly": true
+              },
+              {
+                "full_name": "jlog",
+                "version": "2.6.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.6.0",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "sbin/fqd",
+              "string": "/usr/local/Cellar/fq/0.13.12/libexec/fq",
+              "offset": 90183
+            },
+            {
+              "path": "sbin/fqd",
+              "string": "/usr/local/Cellar/fq/0.13.12/var/lib/fq/web",
+              "offset": 96977
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-fq-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/fqs",
+            "bin/fq_sndr",
+            "bin/fq-proxy",
+            "bin/fq_rcvr",
+            "bin/fqc",
+            "bin/fq-receiver",
+            "bin/fqtool",
+            "bin/fq-sender",
+            "sbin/fqd"
+          ],
+          "all_files": [
+            ".brew/fq.rb",
+            "ChangeLog.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/fq-proxy",
+            "bin/fq-receiver",
+            "bin/fq-sender",
+            "bin/fq_rcvr",
+            "bin/fq_sndr",
+            "bin/fqc",
+            "bin/fqs",
+            "bin/fqtool",
+            "include/fq.h",
+            "lib/dtrace/fq.d",
+            "lib/libfq.0.13.12.dylib",
+            "lib/libfq.0.dylib",
+            "lib/libfq.a",
+            "lib/libfq.dylib",
+            "libexec/fq/fq-sample.so",
+            "sbin/fqd",
+            "sbom.spdx.json",
+            "share/lua/5.1/fqclient.lua",
+            "var/lib/fq/web/css/bootstrap-theme.css",
+            "var/lib/fq/web/css/bootstrap-theme.min.css",
+            "var/lib/fq/web/css/bootstrap.css",
+            "var/lib/fq/web/css/bootstrap.min.css",
+            "var/lib/fq/web/css/colorbrewer.css",
+            "var/lib/fq/web/css/theme.css",
+            "var/lib/fq/web/favicon.png",
+            "var/lib/fq/web/fonts/glyphicons-halflings-regular.eot",
+            "var/lib/fq/web/fonts/glyphicons-halflings-regular.svg",
+            "var/lib/fq/web/fonts/glyphicons-halflings-regular.ttf",
+            "var/lib/fq/web/fonts/glyphicons-halflings-regular.woff",
+            "var/lib/fq/web/i/product-logo-rev2.png",
+            "var/lib/fq/web/index.html",
+            "var/lib/fq/web/js/bootstrap.js",
+            "var/lib/fq/web/js/bootstrap.min.js",
+            "var/lib/fq/web/js/colorbrewer.js",
+            "var/lib/fq/web/js/d3.min.js",
+            "var/lib/fq/web/js/fq.js",
+            "var/lib/fq/web/js/jquery-3.5.1.min.js"
+          ],
+          "installed_size": 1237503
+        }
+      }
+    }
+  }
+}

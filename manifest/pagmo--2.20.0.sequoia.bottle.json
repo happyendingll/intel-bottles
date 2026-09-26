@@ -1,0 +1,429 @@
+{
+  "pagmo": {
+    "formula": {
+      "name": "pagmo",
+      "pkg_version": "2.20.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pagmo.rb",
+      "tap_git_path": "Formula/p/pagmo.rb",
+      "tap_git_revision": "51aaa2e24e4a875ee2ed95d1e6986319c97b501d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Scientific library for massively parallel optimization",
+      "license": "LGPL-3.0-or-later OR GPL-3.0-or-later",
+      "homepage": "https://esa.github.io/pagmo2/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-26T05:51:49Z",
+      "tags": {
+        "sequoia": {
+          "filename": "pagmo-2.20.0.sequoia.bottle.tar.gz",
+          "local_filename": "pagmo--2.20.0.sequoia.bottle.tar.gz",
+          "sha256": "c12db5ac66f289de43a1207380335fc8972e539d658e5b373652cec31beffd5a",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libpagmo.9.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790337253,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "boost",
+                "version": "1.92.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.92.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "eigen",
+                "version": "5.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.0.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nlopt",
+                "version": "2.11.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.11.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "hwloc",
+                "version": "2.15.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.15.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "tbb",
+                "version": "2023.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2023.1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-eigen-5.0.1",
+              "SPDXRef-Package-SPDXRef-hwloc-2.15.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-eigen-5.0.1",
+                "name": "eigen",
+                "versionInfo": "5.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0 AND Apache-2.0 AND BSD-3-Clause AND Minpack",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/eigen/blobs/sha256:563e391400dc4eab1a9cf164c14082db589cd39d0546b454a8b4f7ec56237be6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "563e391400dc4eab1a9cf164c14082db589cd39d0546b454a8b4f7ec56237be6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/eigen@5.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-hwloc-2.15.0",
+                "name": "hwloc",
+                "versionInfo": "2.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/hwloc-2.15.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5588358e1993ccdbee9cf813a16f27369a77deffbe0c03fb34ec633b6002b21a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/hwloc@2.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pagmo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pagmo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pagmo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-eigen-5.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pagmo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-hwloc-2.15.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pagmo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-pagmo-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/pagmo.rb",
+            "COPYING.gpl3",
+            "COPYING.lgpl3",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "include/pagmo/algorithm.hpp",
+            "include/pagmo/algorithms/bee_colony.hpp",
+            "include/pagmo/algorithms/cmaes.hpp",
+            "include/pagmo/algorithms/compass_search.hpp",
+            "include/pagmo/algorithms/cstrs_self_adaptive.hpp",
+            "include/pagmo/algorithms/de.hpp",
+            "include/pagmo/algorithms/de1220.hpp",
+            "include/pagmo/algorithms/gaco.hpp",
+            "include/pagmo/algorithms/gwo.hpp",
+            "include/pagmo/algorithms/ihs.hpp",
+            "include/pagmo/algorithms/ipopt.hpp",
+            "include/pagmo/algorithms/maco.hpp",
+            "include/pagmo/algorithms/mbh.hpp",
+            "include/pagmo/algorithms/moead.hpp",
+            "include/pagmo/algorithms/moead_gen.hpp",
+            "include/pagmo/algorithms/nlopt.hpp",
+            "include/pagmo/algorithms/not_population_based.hpp",
+            "include/pagmo/algorithms/nsga2.hpp",
+            "include/pagmo/algorithms/nsga3.hpp",
+            "include/pagmo/algorithms/nspso.hpp",
+            "include/pagmo/algorithms/null_algorithm.hpp",
+            "include/pagmo/algorithms/pso.hpp",
+            "include/pagmo/algorithms/pso_gen.hpp",
+            "include/pagmo/algorithms/sade.hpp",
+            "include/pagmo/algorithms/sea.hpp",
+            "include/pagmo/algorithms/sga.hpp",
+            "include/pagmo/algorithms/simulated_annealing.hpp",
+            "include/pagmo/algorithms/xnes.hpp",
+            "include/pagmo/archipelago.hpp",
+            "include/pagmo/batch_evaluators/default_bfe.hpp",
+            "include/pagmo/batch_evaluators/member_bfe.hpp",
+            "include/pagmo/batch_evaluators/thread_bfe.hpp",
+            "include/pagmo/bfe.hpp",
+            "include/pagmo/config.hpp",
+            "include/pagmo/detail/archipelago_fwd.hpp",
+            "include/pagmo/detail/base_sr_policy.hpp",
+            "include/pagmo/detail/bfe_impl.hpp",
+            "include/pagmo/detail/constants.hpp",
+            "include/pagmo/detail/custom_comparisons.hpp",
+            "include/pagmo/detail/eigen.hpp",
+            "include/pagmo/detail/eigen_s11n.hpp",
+            "include/pagmo/detail/free_form_fwd.hpp",
+            "include/pagmo/detail/gte_getter.hpp",
+            "include/pagmo/detail/island_fwd.hpp",
+            "include/pagmo/detail/nsga3_impl.hpp",
+            "include/pagmo/detail/prime_numbers.hpp",
+            "include/pagmo/detail/reference_point.hpp",
+            "include/pagmo/detail/s11n_wrappers.hpp",
+            "include/pagmo/detail/support_xeus_cling.hpp",
+            "include/pagmo/detail/task_queue.hpp",
+            "include/pagmo/detail/type_name.hpp",
+            "include/pagmo/detail/typeid_name_extract.hpp",
+            "include/pagmo/detail/visibility.hpp",
+            "include/pagmo/exceptions.hpp",
+            "include/pagmo/io.hpp",
+            "include/pagmo/island.hpp",
+            "include/pagmo/islands/fork_island.hpp",
+            "include/pagmo/islands/thread_island.hpp",
+            "include/pagmo/pagmo.hpp",
+            "include/pagmo/population.hpp",
+            "include/pagmo/problem.hpp",
+            "include/pagmo/problems/ackley.hpp",
+            "include/pagmo/problems/cec2006.hpp",
+            "include/pagmo/problems/cec2009.hpp",
+            "include/pagmo/problems/cec2013.hpp",
+            "include/pagmo/problems/cec2014.hpp",
+            "include/pagmo/problems/decompose.hpp",
+            "include/pagmo/problems/dtlz.hpp",
+            "include/pagmo/problems/golomb_ruler.hpp",
+            "include/pagmo/problems/griewank.hpp",
+            "include/pagmo/problems/hock_schittkowski_71.hpp",
+            "include/pagmo/problems/inventory.hpp",
+            "include/pagmo/problems/lennard_jones.hpp",
+            "include/pagmo/problems/luksan_vlcek1.hpp",
+            "include/pagmo/problems/minlp_rastrigin.hpp",
+            "include/pagmo/problems/null_problem.hpp",
+            "include/pagmo/problems/rastrigin.hpp",
+            "include/pagmo/problems/rosenbrock.hpp",
+            "include/pagmo/problems/schwefel.hpp",
+            "include/pagmo/problems/translate.hpp",
+            "include/pagmo/problems/unconstrain.hpp",
+            "include/pagmo/problems/wfg.hpp",
+            "include/pagmo/problems/zdt.hpp",
+            "include/pagmo/r_policies/fair_replace.hpp",
+            "include/pagmo/r_policy.hpp",
+            "include/pagmo/rng.hpp",
+            "include/pagmo/s11n.hpp",
+            "include/pagmo/s_policies/select_best.hpp",
+            "include/pagmo/s_policy.hpp",
+            "include/pagmo/threading.hpp",
+            "include/pagmo/topologies/base_bgl_topology.hpp",
+            "include/pagmo/topologies/free_form.hpp",
+            "include/pagmo/topologies/fully_connected.hpp",
+            "include/pagmo/topologies/ring.hpp",
+            "include/pagmo/topologies/unconnected.hpp",
+            "include/pagmo/topology.hpp",
+            "include/pagmo/type_traits.hpp",
+            "include/pagmo/types.hpp",
+            "include/pagmo/utils/constrained.hpp",
+            "include/pagmo/utils/discrepancy.hpp",
+            "include/pagmo/utils/generic.hpp",
+            "include/pagmo/utils/genetic_operators.hpp",
+            "include/pagmo/utils/gradients_and_hessians.hpp",
+            "include/pagmo/utils/hv_algos/hv_algorithm.hpp",
+            "include/pagmo/utils/hv_algos/hv_bf_approx.hpp",
+            "include/pagmo/utils/hv_algos/hv_bf_fpras.hpp",
+            "include/pagmo/utils/hv_algos/hv_hv2d.hpp",
+            "include/pagmo/utils/hv_algos/hv_hv3d.hpp",
+            "include/pagmo/utils/hv_algos/hv_hvwfg.hpp",
+            "include/pagmo/utils/hypervolume.hpp",
+            "include/pagmo/utils/multi_objective.hpp",
+            "lib/cmake/pagmo/Findpagmo_IPOPT.cmake",
+            "lib/cmake/pagmo/pagmo-config-version.cmake",
+            "lib/cmake/pagmo/pagmo-config.cmake",
+            "lib/cmake/pagmo/pagmo_export-release.cmake",
+            "lib/cmake/pagmo/pagmo_export.cmake",
+            "lib/libpagmo.9.0.dylib",
+            "lib/libpagmo.9.dylib",
+            "lib/libpagmo.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 22976897
+        }
+      }
+    }
+  }
+}
