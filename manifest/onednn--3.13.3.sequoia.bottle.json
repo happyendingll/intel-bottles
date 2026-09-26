@@ -1,0 +1,139 @@
+{
+  "onednn": {
+    "formula": {
+      "name": "onednn",
+      "pkg_version": "3.13.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/onednn.rb",
+      "tap_git_path": "Formula/o/onednn.rb",
+      "tap_git_revision": "78a139fc9b58e2e13a45ac45ce19a411394a7448",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Basic building blocks for deep learning applications",
+      "license": "Apache-2.0",
+      "homepage": "https://www.oneapi.io/open-source/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-26T22:28:20Z",
+      "tags": {
+        "sequoia": {
+          "filename": "onednn-3.13.3.sequoia.bottle.tar.gz",
+          "local_filename": "onednn--3.13.3.sequoia.bottle.tar.gz",
+          "sha256": "8c44c76261ed6cdc8af223ca41338711a86f154191057705197896d834a9ae6c",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libdnnl.3.13.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790371420,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-onednn-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/onednn.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/dnnl.h",
+            "include/dnnl.hpp",
+            "include/dnnl_config.h",
+            "include/dnnl_debug.h",
+            "include/dnnl_ocl.h",
+            "include/dnnl_ocl.hpp",
+            "include/dnnl_sycl.h",
+            "include/dnnl_sycl.hpp",
+            "include/dnnl_sycl_types.h",
+            "include/dnnl_threadpool.h",
+            "include/dnnl_threadpool.hpp",
+            "include/dnnl_threadpool_iface.hpp",
+            "include/dnnl_types.h",
+            "include/dnnl_version.h",
+            "include/oneapi/dnnl/dnnl.h",
+            "include/oneapi/dnnl/dnnl.hpp",
+            "include/oneapi/dnnl/dnnl_common.h",
+            "include/oneapi/dnnl/dnnl_common.hpp",
+            "include/oneapi/dnnl/dnnl_common_types.h",
+            "include/oneapi/dnnl/dnnl_config.h",
+            "include/oneapi/dnnl/dnnl_debug.h",
+            "include/oneapi/dnnl/dnnl_graph.h",
+            "include/oneapi/dnnl/dnnl_graph.hpp",
+            "include/oneapi/dnnl/dnnl_graph_ocl.h",
+            "include/oneapi/dnnl/dnnl_graph_ocl.hpp",
+            "include/oneapi/dnnl/dnnl_graph_sycl.h",
+            "include/oneapi/dnnl/dnnl_graph_sycl.hpp",
+            "include/oneapi/dnnl/dnnl_graph_types.h",
+            "include/oneapi/dnnl/dnnl_ocl.h",
+            "include/oneapi/dnnl/dnnl_ocl.hpp",
+            "include/oneapi/dnnl/dnnl_ocl_types.h",
+            "include/oneapi/dnnl/dnnl_sycl.h",
+            "include/oneapi/dnnl/dnnl_sycl.hpp",
+            "include/oneapi/dnnl/dnnl_sycl_types.h",
+            "include/oneapi/dnnl/dnnl_threadpool.h",
+            "include/oneapi/dnnl/dnnl_threadpool.hpp",
+            "include/oneapi/dnnl/dnnl_threadpool_iface.hpp",
+            "include/oneapi/dnnl/dnnl_types.h",
+            "include/oneapi/dnnl/dnnl_ukernel.h",
+            "include/oneapi/dnnl/dnnl_ukernel.hpp",
+            "include/oneapi/dnnl/dnnl_ukernel_types.h",
+            "include/oneapi/dnnl/dnnl_version.h",
+            "include/oneapi/dnnl/dnnl_version_hash.h",
+            "include/oneapi/dnnl/dnnl_ze.h",
+            "include/oneapi/dnnl/dnnl_ze.hpp",
+            "lib/cmake/dnnl/dnnl-config-version.cmake",
+            "lib/cmake/dnnl/dnnl-config.cmake",
+            "lib/cmake/dnnl/dnnl-targets-release.cmake",
+            "lib/cmake/dnnl/dnnl-targets.cmake",
+            "lib/libdnnl.3.13.dylib",
+            "lib/libdnnl.3.dylib",
+            "lib/libdnnl.dylib",
+            "sbom.spdx.json",
+            "share/doc/dnnl/LICENSE",
+            "share/doc/dnnl/README",
+            "share/doc/dnnl/THIRD-PARTY-PROGRAMS"
+          ],
+          "installed_size": 51668165
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "nanoarrow": {
+    "formula": {
+      "name": "nanoarrow",
+      "pkg_version": "0.9.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/n/nanoarrow.rb",
+      "tap_git_path": "Formula/n/nanoarrow.rb",
+      "tap_git_revision": "78a139fc9b58e2e13a45ac45ce19a411394a7448",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Helpers for Arrow C Data & Arrow C Stream interfaces",
+      "license": "Apache-2.0",
+      "homepage": "https://arrow.apache.org/nanoarrow"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-26T21:59:39Z",
+      "tags": {
+        "sequoia": {
+          "filename": "nanoarrow-0.9.0.sequoia.bottle.tar.gz",
+          "local_filename": "nanoarrow--0.9.0.sequoia.bottle.tar.gz",
+          "sha256": "fce310bca6d90c48d7a19372ccfd96a00d0a86fc1d2467de0f3dd534aea3a04c",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libnanoarrow_ipc_shared.dylib",
+              "lib/libnanoarrow_shared.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1785530761,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "flatcc",
+                "version": "0.6.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.6.4",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-flatcc-0.6.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-flatcc-0.6.4",
+                "name": "flatcc",
+                "versionInfo": "0.6.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/flatcc-0.6.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8fa55ca38cecfe3b10052692cc3ce825a56050f8bfbea2a4685126b2ff7021b7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/flatcc@0.6.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-flatcc-0.6.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-nanoarrow"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-nanoarrow-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/nanoarrow.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "NOTICE.txt",
+            "README.md",
+            "include/nanoarrow/common/inline_array.h",
+            "include/nanoarrow/common/inline_buffer.h",
+            "include/nanoarrow/common/inline_types.h",
+            "include/nanoarrow/flatcc_generated.h",
+            "include/nanoarrow/hpp/array_stream.hpp",
+            "include/nanoarrow/hpp/buffer.hpp",
+            "include/nanoarrow/hpp/exception.hpp",
+            "include/nanoarrow/hpp/operators.hpp",
+            "include/nanoarrow/hpp/unique.hpp",
+            "include/nanoarrow/hpp/view.hpp",
+            "include/nanoarrow/nanoarrow.h",
+            "include/nanoarrow/nanoarrow.hpp",
+            "include/nanoarrow/nanoarrow_config.h",
+            "include/nanoarrow/nanoarrow_ipc.h",
+            "include/nanoarrow/nanoarrow_ipc.hpp",
+            "lib/cmake/nanoarrow/nanoarrow-config-version.cmake",
+            "lib/cmake/nanoarrow/nanoarrow-config.cmake",
+            "lib/cmake/nanoarrow/nanoarrow-targets-release.cmake",
+            "lib/cmake/nanoarrow/nanoarrow-targets.cmake",
+            "lib/libnanoarrow_ipc_shared.dylib",
+            "lib/libnanoarrow_ipc_static.a",
+            "lib/libnanoarrow_shared.dylib",
+            "lib/libnanoarrow_static.a",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 2181169
+        }
+      }
+    }
+  }
+}
