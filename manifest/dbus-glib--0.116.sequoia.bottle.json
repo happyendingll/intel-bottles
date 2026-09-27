@@ -1,0 +1,324 @@
+{
+  "dbus-glib": {
+    "formula": {
+      "name": "dbus-glib",
+      "pkg_version": "0.116",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dbus-glib.rb",
+      "tap_git_path": "Formula/d/dbus-glib.rb",
+      "tap_git_revision": "7d0718c9447aa6e512bd4ddcbe00d76e92dc1ea8",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "GLib bindings for the D-Bus message bus system",
+      "license": "GPL-2.0-or-later AND (AFL-2.1 OR GPL-2.0-or-later)",
+      "homepage": "https://wiki.freedesktop.org/www/Software/DBusBindings/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-27T22:12:07Z",
+      "tags": {
+        "sequoia": {
+          "filename": "dbus-glib-0.116.sequoia.bottle.tar.gz",
+          "local_filename": "dbus-glib--0.116.sequoia.bottle.tar.gz",
+          "sha256": "f09b92ac924741cbac9b1ce4979aef555ec2e5c49681d717f542983c131bbcc9",
+          "tab": {
+            "homebrew_version": "7.0.6",
+            "changed_files": [
+              "lib/pkgconfig/dbus-glib-1.pc"
+            ],
+            "linkage_files": [
+              "bin/dbus-binding-tool",
+              "lib/libdbus-glib-1.2.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790525592,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "dbus",
+                "version": "1.16.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.16.2_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.90.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Package-SPDXRef-glib-2.90.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.48.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "089df9911d09192beee2b9e49201bf1906d6e414bba1d4185982c5ac9d695feb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "name": "glib",
+                "versionInfo": "2.90.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/glib-2.90.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "285fda7b55475ba96d27f32af3233dc1d7799740abae01269117d192e8108f51"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dbus-glib"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dbus-glib"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dbus-glib"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dbus-glib"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dbus-glib"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-dbus-glib-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/dbus-binding-tool"
+          ],
+          "all_files": [
+            ".brew/dbus-glib.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "bin/dbus-binding-tool",
+            "include/dbus-1.0/dbus/dbus-glib-bindings.h",
+            "include/dbus-1.0/dbus/dbus-glib-lowlevel.h",
+            "include/dbus-1.0/dbus/dbus-glib.h",
+            "include/dbus-1.0/dbus/dbus-gtype-specialized.h",
+            "include/dbus-1.0/dbus/dbus-gvalue-parse-variant.h",
+            "lib/libdbus-glib-1.2.dylib",
+            "lib/libdbus-glib-1.a",
+            "lib/libdbus-glib-1.dylib",
+            "lib/pkgconfig/dbus-glib-1.pc",
+            "sbom.spdx.json",
+            "share/gtk-doc/html/dbus-glib/api-index-full.html",
+            "share/gtk-doc/html/dbus-glib/ch01.html",
+            "share/gtk-doc/html/dbus-glib/ch02.html",
+            "share/gtk-doc/html/dbus-glib/ch03.html",
+            "share/gtk-doc/html/dbus-glib/dbus-binding-tool.html",
+            "share/gtk-doc/html/dbus-glib/dbus-glib-DBus-GLib-low-level.html",
+            "share/gtk-doc/html/dbus-glib/dbus-glib-DBus-GObject-related-functions.html",
+            "share/gtk-doc/html/dbus-glib/dbus-glib-DBusGConnection.html",
+            "share/gtk-doc/html/dbus-glib/dbus-glib-DBusGError.html",
+            "share/gtk-doc/html/dbus-glib/dbus-glib-DBusGMessage.html",
+            "share/gtk-doc/html/dbus-glib/dbus-glib-DBusGMethod.html",
+            "share/gtk-doc/html/dbus-glib/dbus-glib-DBusGProxy.html",
+            "share/gtk-doc/html/dbus-glib/dbus-glib-Specializable-GType-System.html",
+            "share/gtk-doc/html/dbus-glib/dbus-glib.devhelp2",
+            "share/gtk-doc/html/dbus-glib/home.png",
+            "share/gtk-doc/html/dbus-glib/index.html",
+            "share/gtk-doc/html/dbus-glib/left-insensitive.png",
+            "share/gtk-doc/html/dbus-glib/left.png",
+            "share/gtk-doc/html/dbus-glib/right-insensitive.png",
+            "share/gtk-doc/html/dbus-glib/right.png",
+            "share/gtk-doc/html/dbus-glib/style.css",
+            "share/gtk-doc/html/dbus-glib/up-insensitive.png",
+            "share/gtk-doc/html/dbus-glib/up.png",
+            "share/man/man1/dbus-binding-tool.1"
+          ],
+          "installed_size": 1023350
+        }
+      }
+    }
+  }
+}
