@@ -94,7 +94,10 @@ flowchart TB
 [Workflow cancellation 行为](https://docs.github.com/en/actions/reference/workflows-and-actions/workflow-cancellation)，
 `build bottles` 会在所有 wave 处理后上传一个
 `build-complete` 交接凭证：只要 wave 图已经自然进入终态，即使其中存在失败或超时，也允许链路
-继续走到报告；人工强制取消且没有交接凭证时不会进入 catalog 生成阶段。
+继续走到报告；人工强制取消且没有交接凭证时不会进入 catalog 生成阶段。手动运行
+`build-bottles.yml` 并填写 `formulae` 时是一次性定向编译：仍会发布成功的 bottle，但不上传
+交接凭证，因此不继续生成 catalog、预热或发送闭环报告。手动运行但不填写 `formulae` 时，仍按
+完整链路执行。
 `warm bottles` 的报告 job 使用 `always()` 等待全部 wave 进入终态；即使 catalog、plan、编译或
 publish 失败，也会尽量恢复上游上下文，并在“需要人工复查”中明确列出失败或取消的环节。报告本身
 不把失败伪装成成功，也不会自动重试有副作用的发布操作。

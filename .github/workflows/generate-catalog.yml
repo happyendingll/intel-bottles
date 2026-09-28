@@ -1,6 +1,7 @@
 name: generate prewarm catalog
 
-# Runs after every successful build-bottles workflow. Generation and bottle classification
+# Runs only after a build-bottles workflow hands off its completed build graph.
+# Manual Formula override builds do not hand off. Generation and bottle classification
 # run together on the target platform, so catalog.txt never contains an audit backlog.
 # The manual entry point remains available for regeneration without a preceding build.
 
@@ -25,9 +26,38 @@ permissions:
   contents: write
 
 jobs:
+  gate:
+    name: check build handoff
+    runs-on: ubuntu-latest
+    outputs:
+      proceed: ${{ steps.route.outputs.proceed }}
+    steps:
+      - name: Look for the build handoff marker
+        id: marker
+        if: github.event_name == 'workflow_run'
+        continue-on-error: true
+        uses: actions/download-artifact@v8
+        with:
+          name: build-complete
+          path: ${{ runner.temp }}/build-complete
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
+
+      - name: Decide whether to generate the catalog
+        id: route
+        env:
+          MARKER_OUTCOME: ${{ steps.marker.outcome }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = workflow_dispatch ] || [ "$MARKER_OUTCOME" = success ]; then
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+            echo "No build handoff marker; skipping the catalog."
+          fi
+
   generate:
-    if: >-
-      github.event_name == 'workflow_dispatch' || github.event_name == 'workflow_run'
+    needs: gate
+    if: needs.gate.outputs.proceed == 'true'
     runs-on: macos-15-intel
     env:
       HOMEBREW_CORE_GIT_REMOTE: https://github.com/${{ github.repository_owner }}/homebrew-core
@@ -37,17 +67,6 @@ jobs:
       HOMEBREW_NO_ENV_HINTS: 1
     steps:
       - uses: actions/checkout@v7
-
-      - name: Verify a non-successful build reached its handoff
-        if: >-
-          github.event_name == 'workflow_run' &&
-          github.event.workflow_run.conclusion != 'success'
-        uses: actions/download-artifact@v8
-        with:
-          name: build-complete
-          path: ${{ runner.temp }}/build-complete
-          github-token: ${{ github.token }}
-          run-id: ${{ github.event.workflow_run.id }}
 
       - name: Download build pipeline context
         if: github.event_name == 'workflow_run'

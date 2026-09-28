@@ -195,8 +195,10 @@ jobs:
     # A Formula timeout or publish failure may make the workflow non-successful.
     # Reaching this job proves the wave graph entered a terminal state, so catalog
     # generation may continue and the final report can show what needs review.
-    # A workflow cancelled before the graph settles never creates this marker.
-    if: always() && needs.plan.result == 'success'
+    # A cancelled workflow or manual Formula override never creates this marker.
+    if: >-
+      always() && needs.plan.result == 'success' &&
+      (github.event_name != 'workflow_dispatch' || inputs.formulae == '')
     runs-on: ubuntu-latest
     steps:
       - name: Mark the build graph complete

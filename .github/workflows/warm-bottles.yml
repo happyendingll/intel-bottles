@@ -29,11 +29,42 @@ permissions:
   issues: write
 
 jobs:
+  gate:
+    name: check catalog handoff
+    runs-on: ubuntu-latest
+    outputs:
+      proceed: ${{ steps.route.outputs.proceed }}
+    steps:
+      - name: Look for the catalog pipeline context
+        id: context
+        if: github.event_name == 'workflow_run'
+        continue-on-error: true
+        uses: actions/download-artifact@v8
+        with:
+          name: pipeline-context
+          path: ${{ runner.temp }}/pipeline-context
+          github-token: ${{ github.token }}
+          run-id: ${{ github.event.workflow_run.id }}
+
+      - name: Decide whether to continue the pipeline
+        id: route
+        env:
+          CONTEXT_OUTCOME: ${{ steps.context.outcome }}
+        run: |
+          if [ "$GITHUB_EVENT_NAME" = workflow_dispatch ] || [ "$CONTEXT_OUTCOME" = success ]; then
+            echo "proceed=true" >> "$GITHUB_OUTPUT"
+          else
+            echo "proceed=false" >> "$GITHUB_OUTPUT"
+            echo "No catalog pipeline context; skipping warm bottles and the report."
+          fi
+
   plan:
     name: plan optional catalog
+    needs: gate
     if: >-
-      github.event_name == 'workflow_dispatch' ||
-      github.event.workflow_run.conclusion == 'success'
+      needs.gate.outputs.proceed == 'true' &&
+      (github.event_name == 'workflow_dispatch' ||
+       github.event.workflow_run.conclusion == 'success')
     runs-on: macos-15-intel
     outputs:
       wave0: ${{ steps.plan.outputs.wave0 }}
@@ -166,10 +197,10 @@ jobs:
 
   report:
     name: email pipeline report
-    needs: [plan, wave0, wave1, wave2, wave3, wave4]
+    needs: [gate, plan, wave0, wave1, wave2, wave3, wave4]
     # Reporting is the terminal safety net. It must run after failed/cancelled waves and
     # also when catalog generation failed and the warm plan was therefore skipped.
-    if: always()
+    if: always() && needs.gate.outputs.proceed == 'true'
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v7
