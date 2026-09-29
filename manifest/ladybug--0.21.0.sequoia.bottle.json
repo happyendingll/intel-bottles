@@ -1,0 +1,170 @@
+{
+  "ladybug": {
+    "formula": {
+      "name": "ladybug",
+      "pkg_version": "0.21.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/l/ladybug.rb",
+      "tap_git_path": "Formula/l/ladybug.rb",
+      "tap_git_revision": "6065f00a61e01ed6ec483dd5ef601077650c3b48",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Embedded graph database built for query speed and scalability",
+      "license": "MIT",
+      "homepage": "https://ladybugdb.com/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-29T22:09:22Z",
+      "tags": {
+        "sequoia": {
+          "filename": "ladybug-0.21.0.sequoia.bottle.tar.gz",
+          "local_filename": "ladybug--0.21.0.sequoia.bottle.tar.gz",
+          "sha256": "9261cf1ddfbcb50f10601304a9732e8f58a479b034bb45dabcad7a7d645e63d7",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/lbug",
+              "lib/liblbug.0.21.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790631253,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2_1",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+                "name": "openssl@4",
+                "versionInfo": "4.0.2_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.2_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "33fdf31bdda789d752b69dfd4053542b2387bbbcd0b2cf6ef734adab9bdf42c3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.2_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ladybug"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ladybug"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-ladybug-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/lbug"
+          ],
+          "all_files": [
+            ".brew/ladybug.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/lbug",
+            "include/lbug.h",
+            "include/lbug.hpp",
+            "lib/liblbug.0.21.0.dylib",
+            "lib/liblbug.0.dylib",
+            "lib/liblbug.a",
+            "lib/liblbug.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 132745602
+        }
+      }
+    }
+  }
+}
