@@ -1,0 +1,363 @@
+{
+  "technitium-dns": {
+    "formula": {
+      "name": "technitium-dns",
+      "pkg_version": "15.5.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/technitium-dns.rb",
+      "tap_git_path": "Formula/t/technitium-dns.rb",
+      "tap_git_revision": "86a7f62ac8a0880012c02541baae74b4e11cb6a0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Self host a DNS server for privacy & security",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://technitium.com/dns/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-29T15:37:24Z",
+      "tags": {
+        "sequoia": {
+          "filename": "technitium-dns-15.5.1.sequoia.bottle.tar.gz",
+          "local_filename": "technitium-dns--15.5.1.sequoia.bottle.tar.gz",
+          "sha256": "babf25c216920b55945408ba8eb66b22f80e3272cd8e028be775c089ae24d351",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "bin/technitium-dns",
+              "sh.brew.technitium-dns.plist",
+              "sh.brew.technitium-dns.service"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790420406,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "dotnet",
+                "version": "10.0.401",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.0.401",
+                "declared_directly": true,
+                "compatibility_version": 7
+              },
+              {
+                "full_name": "libmsquic",
+                "version": "2.6.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.6.1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "technitium-library",
+                "version": "15.5.1",
+                "revision": 0,
+                "pkg_version": "15.5.1",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+              "SPDXRef-Package-SPDXRef-dotnet-10.0.401",
+              "SPDXRef-Package-SPDXRef-libmsquic-2.6.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d63b0bbe503c00db050f52f5f2172deba5e0233a30cbd0059622bf53ce9be9c3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-dotnet-10.0.401",
+                "name": "dotnet",
+                "versionInfo": "10.0.401",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/dotnet-10.0.401.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e75481b8feca2b2ecc92ea8978a8a74453fbe173c88f27c5aef3cfd7529bb92b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/dotnet@10.0.401",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libmsquic-2.6.1",
+                "name": "libmsquic",
+                "versionInfo": "2.6.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/libmsquic-2.6.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63e560e637640f40024fbc7b3a27f0ab1caa50d21743987fa1cf7f9094b4a68a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libmsquic@2.6.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-technitium-dns"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-technitium-dns"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-dotnet-10.0.401",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-technitium-dns"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libmsquic-2.6.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-technitium-dns"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-technitium-dns-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/technitium-dns"
+          ],
+          "all_files": [
+            ".brew/technitium-dns.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/technitium-dns",
+            "libexec/BouncyCastle.Cryptography.dll",
+            "libexec/DnsServerApp",
+            "libexec/DnsServerApp.deps.json",
+            "libexec/DnsServerApp.dll",
+            "libexec/DnsServerApp.pdb",
+            "libexec/DnsServerApp.runtimeconfig.json",
+            "libexec/DnsServerCore.ApplicationCommon.dll",
+            "libexec/DnsServerCore.ApplicationCommon.pdb",
+            "libexec/DnsServerCore.HttpApi.dll",
+            "libexec/DnsServerCore.HttpApi.pdb",
+            "libexec/DnsServerCore.dll",
+            "libexec/DnsServerCore.pdb",
+            "libexec/Microsoft.AspNetCore.Authentication.OpenIdConnect.dll",
+            "libexec/Microsoft.Bcl.Cryptography.dll",
+            "libexec/Microsoft.IdentityModel.Abstractions.dll",
+            "libexec/Microsoft.IdentityModel.JsonWebTokens.dll",
+            "libexec/Microsoft.IdentityModel.Logging.dll",
+            "libexec/Microsoft.IdentityModel.Protocols.OpenIdConnect.dll",
+            "libexec/Microsoft.IdentityModel.Protocols.dll",
+            "libexec/Microsoft.IdentityModel.Tokens.dll",
+            "libexec/Microsoft.Win32.SystemEvents.dll",
+            "libexec/QRCoder.dll",
+            "libexec/System.DirectoryServices.Protocols.dll",
+            "libexec/System.Drawing.Common.dll",
+            "libexec/System.IdentityModel.Tokens.Jwt.dll",
+            "libexec/TechnitiumLibrary.ByteTree.dll",
+            "libexec/TechnitiumLibrary.ByteTree.pdb",
+            "libexec/TechnitiumLibrary.IO.dll",
+            "libexec/TechnitiumLibrary.IO.pdb",
+            "libexec/TechnitiumLibrary.Net.dll",
+            "libexec/TechnitiumLibrary.Net.pdb",
+            "libexec/TechnitiumLibrary.Security.OTP.dll",
+            "libexec/TechnitiumLibrary.Security.OTP.pdb",
+            "libexec/TechnitiumLibrary.dll",
+            "libexec/TechnitiumLibrary.pdb",
+            "libexec/dohwww/css/bootstrap.min.css",
+            "libexec/dohwww/css/bootstrap.min.css.map",
+            "libexec/dohwww/css/main.css",
+            "libexec/dohwww/favicon.ico",
+            "libexec/dohwww/img/firefox-doh.png",
+            "libexec/dohwww/img/logo.png",
+            "libexec/dohwww/index.html",
+            "libexec/dohwww/js/jquery.min.js",
+            "libexec/dohwww/js/main.js",
+            "libexec/dohwww/robots.txt",
+            "libexec/named.root",
+            "libexec/openrc.service",
+            "libexec/root-anchors.xml",
+            "libexec/start.bat",
+            "libexec/start.sh",
+            "libexec/systemd.service",
+            "libexec/www/css/amber-mode.css",
+            "libexec/www/css/bootstrap.min.css",
+            "libexec/www/css/bootstrap.min.css.map",
+            "libexec/www/css/dark-mode.css",
+            "libexec/www/css/font-awesome.min.css",
+            "libexec/www/css/main.css",
+            "libexec/www/favicon.ico",
+            "libexec/www/fonts/FontAwesome.otf",
+            "libexec/www/fonts/fontawesome-webfont.eot",
+            "libexec/www/fonts/fontawesome-webfont.svg",
+            "libexec/www/fonts/fontawesome-webfont.ttf",
+            "libexec/www/fonts/fontawesome-webfont.woff",
+            "libexec/www/fonts/fontawesome-webfont.woff2",
+            "libexec/www/fonts/glyphicons-halflings-regular.eot",
+            "libexec/www/fonts/glyphicons-halflings-regular.svg",
+            "libexec/www/fonts/glyphicons-halflings-regular.ttf",
+            "libexec/www/fonts/glyphicons-halflings-regular.woff",
+            "libexec/www/fonts/glyphicons-halflings-regular.woff2",
+            "libexec/www/img/loader-small.gif",
+            "libexec/www/img/loader.gif",
+            "libexec/www/img/logo.png",
+            "libexec/www/img/logo25x25.png",
+            "libexec/www/img/oidc.png",
+            "libexec/www/index.html",
+            "libexec/www/js/Chart.min.js",
+            "libexec/www/js/apps.js",
+            "libexec/www/js/auth.js",
+            "libexec/www/js/bootstrap.min.js",
+            "libexec/www/js/cluster.js",
+            "libexec/www/js/common.js",
+            "libexec/www/js/dhcp.js",
+            "libexec/www/js/dnsclient.js",
+            "libexec/www/js/jquery.min.js",
+            "libexec/www/js/logs.js",
+            "libexec/www/js/main.js",
+            "libexec/www/js/moment.min.js",
+            "libexec/www/js/other-zones.js",
+            "libexec/www/js/zone.js",
+            "libexec/www/json/dnsclient-server-list-builtin.json",
+            "libexec/www/json/quick-block-lists-builtin.json",
+            "libexec/www/json/quick-forwarders-list-builtin.json",
+            "libexec/www/json/readme.txt",
+            "libexec/www/robots.txt",
+            "sbom.spdx.json",
+            "sh.brew.technitium-dns.plist",
+            "sh.brew.technitium-dns.service"
+          ],
+          "installed_size": 14187513
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "ironclaw": {
+    "formula": {
+      "name": "ironclaw",
+      "pkg_version": "1.4.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/i/ironclaw.rb",
+      "tap_git_path": "Formula/i/ironclaw.rb",
+      "tap_git_revision": "86a7f62ac8a0880012c02541baae74b4e11cb6a0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Security-first personal AI assistant with WASM sandbox channels",
+      "license": "MIT OR Apache-2.0",
+      "homepage": "https://www.ironclaw.com"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-09-29T10:12:04Z",
+      "tags": {
+        "sequoia": {
+          "filename": "ironclaw-1.4.0.sequoia.bottle.tar.gz",
+          "local_filename": "ironclaw--1.4.0.sequoia.bottle.tar.gz",
+          "sha256": "925da352ab0c881e1823072712c4c19ee496cea49ba53b18591ebeec52722fdf",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "sh.brew.ironclaw.plist",
+              "sh.brew.ironclaw.service"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787865838,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-ironclaw-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/ironclaw"
+          ],
+          "all_files": [
+            ".brew/ironclaw.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE-APACHE",
+            "LICENSE-MIT",
+            "README.md",
+            "bin/ironclaw",
+            "sbom.spdx.json",
+            "sh.brew.ironclaw.plist",
+            "sh.brew.ironclaw.service"
+          ],
+          "installed_size": 139263308
+        }
+      }
+    }
+  }
+}
