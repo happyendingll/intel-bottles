@@ -1,0 +1,1530 @@
+{
+  "trafficserver": {
+    "formula": {
+      "name": "trafficserver",
+      "pkg_version": "10.2.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/trafficserver.rb",
+      "tap_git_path": "Formula/t/trafficserver.rb",
+      "tap_git_revision": "226f50b0d29c3e8823e458d5c71553eba8eb7432",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "HTTP/1.1 and HTTP/2 compliant caching proxy server",
+      "license": "Apache-2.0",
+      "homepage": "https://trafficserver.apache.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-29T04:30:50Z",
+      "tags": {
+        "sequoia": {
+          "filename": "trafficserver-10.2.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "trafficserver--10.2.0_1.sequoia.bottle.tar.gz",
+          "sha256": "7aeb5b3d5d3cc9280960c6d17648a09b200745c9f05acea229499e0cbccc2351",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "bin/trafficserver",
+              "lib/cmake/Findtsapi.cmake",
+              "lib/pkgconfig/ts.pc"
+            ],
+            "linkage_files": [
+              "bin/traffic_cache_tool",
+              "bin/traffic_crashlog",
+              "bin/traffic_ctl",
+              "bin/traffic_layout",
+              "bin/traffic_logcat",
+              "bin/traffic_logstats",
+              "bin/traffic_server",
+              "bin/traffic_top",
+              "bin/traffic_via",
+              "lib/libswoc.1.5.15.dylib",
+              "lib/libtsapi.dylib",
+              "lib/libtscppapi.dylib",
+              "libexec/trafficserver/access_control.so",
+              "libexec/trafficserver/authproxy.so",
+              "libexec/trafficserver/background_fetch.so",
+              "libexec/trafficserver/block_errors.so",
+              "libexec/trafficserver/cache_fill.so",
+              "libexec/trafficserver/cache_promote.so",
+              "libexec/trafficserver/cache_range_requests.so",
+              "libexec/trafficserver/cachekey.so",
+              "libexec/trafficserver/cert_reporting_tool.so",
+              "libexec/trafficserver/certifier.so",
+              "libexec/trafficserver/combo_handler.so",
+              "libexec/trafficserver/compress.so",
+              "libexec/trafficserver/conf_remap.so",
+              "libexec/trafficserver/cookie_remap.so",
+              "libexec/trafficserver/custom_redirect.so",
+              "libexec/trafficserver/escalate.so",
+              "libexec/trafficserver/esi.so",
+              "libexec/trafficserver/filter_body.so",
+              "libexec/trafficserver/fq_pacing.so",
+              "libexec/trafficserver/generator.so",
+              "libexec/trafficserver/geoip_acl.so",
+              "libexec/trafficserver/header_freq.so",
+              "libexec/trafficserver/header_rewrite.so",
+              "libexec/trafficserver/hook-trace.so",
+              "libexec/trafficserver/http_stats.so",
+              "libexec/trafficserver/icap_plugin.so",
+              "libexec/trafficserver/inliner.so",
+              "libexec/trafficserver/ja3_fingerprint.so",
+              "libexec/trafficserver/ja4_fingerprint.so",
+              "libexec/trafficserver/jax_fingerprint.so",
+              "libexec/trafficserver/libloader.so",
+              "libexec/trafficserver/magick.so",
+              "libexec/trafficserver/maxmind_acl.so",
+              "libexec/trafficserver/memcache.so",
+              "libexec/trafficserver/memory_profile.so",
+              "libexec/trafficserver/money_trace.so",
+              "libexec/trafficserver/mp4.so",
+              "libexec/trafficserver/multiplexer.so",
+              "libexec/trafficserver/origin_server_auth.so",
+              "libexec/trafficserver/prefetch.so",
+              "libexec/trafficserver/rate_limit.so",
+              "libexec/trafficserver/realip.so",
+              "libexec/trafficserver/regex_remap.so",
+              "libexec/trafficserver/regex_revalidate.so",
+              "libexec/trafficserver/remap_purge.so",
+              "libexec/trafficserver/remap_stats.so",
+              "libexec/trafficserver/s3_auth.so",
+              "libexec/trafficserver/server_push_preload.so",
+              "libexec/trafficserver/slice.so",
+              "libexec/trafficserver/sslheaders.so",
+              "libexec/trafficserver/stale_response.so",
+              "libexec/trafficserver/statichit.so",
+              "libexec/trafficserver/stats_over_http.so",
+              "libexec/trafficserver/stek_share.so",
+              "libexec/trafficserver/stream_editor.so",
+              "libexec/trafficserver/system_stats.so",
+              "libexec/trafficserver/tcpinfo.so",
+              "libexec/trafficserver/tls_bridge.so",
+              "libexec/trafficserver/traffic_dump.so",
+              "libexec/trafficserver/tslua.so",
+              "libexec/trafficserver/txn_box.so",
+              "libexec/trafficserver/url_sig.so",
+              "libexec/trafficserver/webp_transform.so",
+              "libexec/trafficserver/xdebug.so"
+            ],
+            "binary_relocation_files": [
+              "bin/traffic_crashlog",
+              "bin/traffic_ctl",
+              "bin/traffic_layout",
+              "bin/traffic_logcat",
+              "bin/traffic_logstats",
+              "bin/traffic_server",
+              "bin/traffic_top",
+              "lib/libtsapi.dylib"
+            ],
+            "source_modified_time": 1786996463,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "brotli",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "hwloc",
+                "version": "2.15.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.15.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.58",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.58",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libvmaf",
+                "version": "3.2.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "aom",
+                "version": "3.15.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.15.1",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libde265",
+                "version": "1.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "giflib",
+                "version": "6.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.1.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "webp",
+                "version": "1.6.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtiff",
+                "version": "4.7.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.7.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "x265",
+                "version": "4.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.3",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libheif",
+                "version": "1.23.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.23.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "m4",
+                "version": "1.4.21",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.21",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtool",
+                "version": "2.6.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.6.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "little-cms2",
+                "version": "2.19.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.19.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "imagemagick",
+                "version": "7.1.2-32",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "7.1.2-32",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "libmaxminddb",
+                "version": "1.14.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.14.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "luajit",
+                "version": "2.1.1788856981",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.1788856981",
+                "declared_directly": true,
+                "compatibility_version": 30
+              },
+              {
+                "full_name": "asio",
+                "version": "1.38.2",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.38.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2_1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "nuraft",
+                "version": "3.0.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.0_1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.48",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "yaml-cpp",
+                "version": "0.9.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.9.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/traffic_top",
+              "string": "/usr/local/Cellar/trafficserver/10.2.0_1",
+              "offset": 157538
+            },
+            {
+              "path": "bin/traffic_logcat",
+              "string": "/usr/local/Cellar/trafficserver/10.2.0_1",
+              "offset": 747015
+            },
+            {
+              "path": "bin/traffic_logstats",
+              "string": "/usr/local/Cellar/trafficserver/10.2.0_1",
+              "offset": 816465
+            },
+            {
+              "path": "bin/traffic_layout",
+              "string": "/usr/local/Cellar/trafficserver/10.2.0_1",
+              "offset": 346399
+            },
+            {
+              "path": "bin/traffic_server",
+              "string": "/usr/local/Cellar/trafficserver/10.2.0_1",
+              "offset": 3008714
+            },
+            {
+              "path": "bin/traffic_ctl",
+              "string": "/usr/local/Cellar/trafficserver/10.2.0_1",
+              "offset": 405919
+            },
+            {
+              "path": "bin/traffic_crashlog",
+              "string": "/usr/local/Cellar/trafficserver/10.2.0_1",
+              "offset": 284051
+            },
+            {
+              "path": "bin/traffic_top",
+              "string": "/usr/local/var/trafficserver",
+              "offset": 157448
+            },
+            {
+              "path": "bin/traffic_logcat",
+              "string": "/usr/local/var/trafficserver",
+              "offset": 746925
+            },
+            {
+              "path": "bin/traffic_logstats",
+              "string": "/usr/local/var/trafficserver",
+              "offset": 816375
+            },
+            {
+              "path": "bin/traffic_layout",
+              "string": "/usr/local/var/trafficserver",
+              "offset": 346618
+            },
+            {
+              "path": "bin/traffic_server",
+              "string": "/usr/local/var/trafficserver",
+              "offset": 3008624
+            },
+            {
+              "path": "bin/traffic_ctl",
+              "string": "/usr/local/var/trafficserver",
+              "offset": 405829
+            },
+            {
+              "path": "bin/traffic_crashlog",
+              "string": "/usr/local/var/trafficserver",
+              "offset": 283961
+            },
+            {
+              "path": "bin/traffic_top",
+              "string": "/usr/local/var/log/trafficserver",
+              "offset": 157394
+            },
+            {
+              "path": "bin/traffic_logcat",
+              "string": "/usr/local/var/log/trafficserver",
+              "offset": 746871
+            },
+            {
+              "path": "bin/traffic_logstats",
+              "string": "/usr/local/var/log/trafficserver",
+              "offset": 816321
+            },
+            {
+              "path": "bin/traffic_layout",
+              "string": "/usr/local/var/log/trafficserver",
+              "offset": 346564
+            },
+            {
+              "path": "bin/traffic_server",
+              "string": "/usr/local/var/log/trafficserver",
+              "offset": 3008570
+            },
+            {
+              "path": "bin/traffic_ctl",
+              "string": "/usr/local/var/log/trafficserver",
+              "offset": 405775
+            },
+            {
+              "path": "bin/traffic_crashlog",
+              "string": "/usr/local/var/log/trafficserver",
+              "offset": 269414
+            },
+            {
+              "path": "bin/traffic_top",
+              "string": "/usr/local/var/run/trafficserver",
+              "offset": 157361
+            },
+            {
+              "path": "bin/traffic_logcat",
+              "string": "/usr/local/var/run/trafficserver",
+              "offset": 746838
+            },
+            {
+              "path": "bin/traffic_logstats",
+              "string": "/usr/local/var/run/trafficserver",
+              "offset": 816288
+            },
+            {
+              "path": "bin/traffic_layout",
+              "string": "/usr/local/var/run/trafficserver",
+              "offset": 346531
+            },
+            {
+              "path": "bin/traffic_server",
+              "string": "/usr/local/var/run/trafficserver",
+              "offset": 3008537
+            },
+            {
+              "path": "bin/traffic_ctl",
+              "string": "/usr/local/var/run/trafficserver",
+              "offset": 405742
+            },
+            {
+              "path": "bin/traffic_crashlog",
+              "string": "/usr/local/var/run/trafficserver",
+              "offset": 253823
+            },
+            {
+              "path": "lib/libtsapi.dylib",
+              "string": "/usr/local/var/run/trafficserver",
+              "offset": 275900
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-hwloc-2.15.0",
+              "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+              "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+              "SPDXRef-Package-SPDXRef-aom-3.15.1",
+              "SPDXRef-Package-SPDXRef-libde265-1.1.3",
+              "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+              "SPDXRef-Package-SPDXRef-webp-1.6.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+              "SPDXRef-Package-SPDXRef-x265-4.3",
+              "SPDXRef-Package-SPDXRef-libheif-1.23.5",
+              "SPDXRef-Package-SPDXRef-m4-1.4.21",
+              "SPDXRef-Package-SPDXRef-libtool-2.6.2",
+              "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+              "SPDXRef-Package-SPDXRef-imagemagick-7.1.2-32",
+              "SPDXRef-Package-SPDXRef-libmaxminddb-1.14.1",
+              "SPDXRef-Package-SPDXRef-luajit-2.1.1788856981",
+              "SPDXRef-Package-SPDXRef-asio-1.38.2",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+              "SPDXRef-Package-SPDXRef-nuraft-3.0.0_1",
+              "SPDXRef-Package-SPDXRef-pcre2-10.48",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-hwloc-2.15.0",
+                "name": "hwloc",
+                "versionInfo": "2.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/hwloc-2.15.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5588358e1993ccdbee9cf813a16f27369a77deffbe0c03fb34ec633b6002b21a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/hwloc@2.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "name": "libpng",
+                "versionInfo": "1.6.58",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libpng-1.6.58.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a6af06c61f8385b8e4cc0e685dc3a4ab7bd964e28493a94a2d0833a3e7566a2c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.58",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ab6e54c4ceaa0b1535994c00b64471b2b5f531b8267ef1ae27f399e3e1c0f587"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "name": "libvmaf",
+                "versionInfo": "3.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause-Patent",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libvmaf-3.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "628f2126275ef110c999b952c3575ff3cc854e80c68d57e1381b50805f1eb9bc"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libvmaf@3.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.15.1",
+                "name": "aom",
+                "versionInfo": "3.15.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/aom-3.15.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f85d95626080be7b9dae982effc93faac37b29f5a5109d8d34a1e008dd079a48"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aom@3.15.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libde265-1.1.3",
+                "name": "libde265",
+                "versionInfo": "1.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libde265-1.1.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "918d94833f729359a4c21cf065858b6e936c513d57b4fc314ce3931f3fd06d84"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libde265@1.1.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "name": "giflib",
+                "versionInfo": "6.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/giflib-6.1.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f67ea26714be587a58ae9b9ff427a1afa0c082cbec177192514f179983ff2352"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/giflib@6.1.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "name": "webp",
+                "versionInfo": "1.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/webp-1.6.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "76a57f341e4dda8eb186c486f67e84b5ef173a8f9b0d475668100365177355eb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/webp@1.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "name": "libtiff",
+                "versionInfo": "4.7.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libtiff",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libtiff-4.7.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "59c1a9823cdf63e5acb5c81c8a069be461be8768bd5d866bd47ee15053756f53"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtiff@4.7.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-x265-4.3",
+                "name": "x265",
+                "versionInfo": "4.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/x265-4.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6f36e7cbb83fbd7b6498668f3cbfd1dec5391958ffc4e541be29cbc04e27162b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/x265@4.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libheif-1.23.5",
+                "name": "libheif",
+                "versionInfo": "1.23.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libheif-1.23.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "33b67699a86d77b33c1f14bb0c2b20bf5c9e7dd0fbcb50be9aeea1880a66fc85"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libheif@1.23.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-m4-1.4.21",
+                "name": "m4",
+                "versionInfo": "1.4.21",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:9956d5e742750c93d61a27ac209e7dfe7a6e0de2dfbc2ea73210741eb2e51461",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9956d5e742750c93d61a27ac209e7dfe7a6e0de2dfbc2ea73210741eb2e51461"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/m4@1.4.21",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtool-2.6.2",
+                "name": "libtool",
+                "versionInfo": "2.6.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:205e69efbbd83ca9ff421c98a0063bd20b64690b44248d0398bd6deb941cf81b",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "205e69efbbd83ca9ff421c98a0063bd20b64690b44248d0398bd6deb941cf81b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtool@2.6.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "name": "little-cms2",
+                "versionInfo": "2.19.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/little-cms2-2.19.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3c8e8dc49c3067141aa5d264c5ee9af2b2f0fc5b3905915fe629cd79ac2bfd57"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/little-cms2@2.19.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-imagemagick-7.1.2-32",
+                "name": "imagemagick",
+                "versionInfo": "7.1.2-32",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ImageMagick",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/imagemagick-7.1.2-32.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6ee0b72f5ee4e4a395fdc52bef5f2efb497318665ddf33b49081348f5f53144b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/imagemagick@7.1.2-32",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libmaxminddb-1.14.1",
+                "name": "libmaxminddb",
+                "versionInfo": "1.14.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libmaxminddb-1.14.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "83aaeb49ff90c8ad95722880eed6fbfe2684188ad1ac15c0b9c2801ea8ad9727"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libmaxminddb@1.14.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-luajit-2.1.1788856981",
+                "name": "luajit",
+                "versionInfo": "2.1.1788856981",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/luajit-2.1.1788856981.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b76ac90f46b617eb05f8900688c70e0bd96de56d146ca748b4f00ec7b3687dbf"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/luajit@2.1.1788856981",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-asio-1.38.2",
+                "name": "asio",
+                "versionInfo": "1.38.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSL-1.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/asio/blobs/sha256:11ef27f86eddd6a508404e15a51fe2b18d87c25bbc93660df71c04fc210fe0a5",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "11ef27f86eddd6a508404e15a51fe2b18d87c25bbc93660df71c04fc210fe0a5"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/asio@1.38.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+                "name": "openssl@4",
+                "versionInfo": "4.0.2_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.2_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "33fdf31bdda789d752b69dfd4053542b2387bbbcd0b2cf6ef734adab9bdf42c3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.2_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-nuraft-3.0.0_1",
+                "name": "nuraft",
+                "versionInfo": "3.0.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/nuraft-3.0.0_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "800daf3ec2847fe8b0e17ac2f7fd92a6341985f34428f7c3801c4c97e2968a51"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/nuraft@3.0.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "name": "pcre2",
+                "versionInfo": "10.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.48.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "089df9911d09192beee2b9e49201bf1906d6e414bba1d4185982c5ac9d695feb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-hwloc-2.15.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.6.58",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libvmaf-3.2.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.15.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libde265-1.1.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.1.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.6.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-x265-4.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libheif-1.23.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-m4-1.4.21",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtool-2.6.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.19.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-imagemagick-7.1.2-32",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libmaxminddb-1.14.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-luajit-2.1.1788856981",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-asio-1.38.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-nuraft-3.0.0_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-trafficserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-trafficserver-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/traffic_top",
+            "bin/traffic_cache_tool",
+            "bin/traffic_logcat",
+            "bin/trafficserver",
+            "bin/traffic_logstats",
+            "bin/traffic_layout",
+            "bin/traffic_server",
+            "bin/traffic_via",
+            "bin/traffic_ctl",
+            "bin/traffic_crashlog"
+          ],
+          "all_files": [
+            ".bottle/etc/trafficserver/cache.config",
+            ".bottle/etc/trafficserver/hosting.config",
+            ".bottle/etc/trafficserver/ip_allow.yaml",
+            ".bottle/etc/trafficserver/jsonrpc.yaml",
+            ".bottle/etc/trafficserver/logging.yaml",
+            ".bottle/etc/trafficserver/parent.config",
+            ".bottle/etc/trafficserver/plugin.config",
+            ".bottle/etc/trafficserver/records.yaml",
+            ".bottle/etc/trafficserver/remap.config",
+            ".bottle/etc/trafficserver/sni.yaml",
+            ".bottle/etc/trafficserver/socks.config",
+            ".bottle/etc/trafficserver/splitdns.config",
+            ".bottle/etc/trafficserver/ssl_multicert.config",
+            ".bottle/etc/trafficserver/storage.config",
+            ".bottle/etc/trafficserver/strategies.yaml",
+            ".bottle/etc/trafficserver/volume.config",
+            ".brew/trafficserver.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NOTICE",
+            "README.md",
+            "bin/traffic_cache_tool",
+            "bin/traffic_crashlog",
+            "bin/traffic_ctl",
+            "bin/traffic_layout",
+            "bin/traffic_logcat",
+            "bin/traffic_logstats",
+            "bin/traffic_server",
+            "bin/traffic_top",
+            "bin/traffic_via",
+            "bin/trafficserver",
+            "etc/trafficserver/body_factory/default/.body_factory_info",
+            "etc/trafficserver/body_factory/default/README",
+            "etc/trafficserver/body_factory/default/access#denied",
+            "etc/trafficserver/body_factory/default/access#proxy_auth_required",
+            "etc/trafficserver/body_factory/default/access#ssl_forbidden",
+            "etc/trafficserver/body_factory/default/cache#not_in_cache",
+            "etc/trafficserver/body_factory/default/cache#read_error",
+            "etc/trafficserver/body_factory/default/connect#all_down",
+            "etc/trafficserver/body_factory/default/connect#dns_failed",
+            "etc/trafficserver/body_factory/default/connect#failed_connect",
+            "etc/trafficserver/body_factory/default/connect#hangup",
+            "etc/trafficserver/body_factory/default/default",
+            "etc/trafficserver/body_factory/default/interception#no_host",
+            "etc/trafficserver/body_factory/default/redirect#moved_permanently",
+            "etc/trafficserver/body_factory/default/redirect#moved_temporarily",
+            "etc/trafficserver/body_factory/default/request#cycle_detected",
+            "etc/trafficserver/body_factory/default/request#invalid_content_length",
+            "etc/trafficserver/body_factory/default/request#no_content_length",
+            "etc/trafficserver/body_factory/default/request#no_host",
+            "etc/trafficserver/body_factory/default/request#scheme_unsupported",
+            "etc/trafficserver/body_factory/default/request#syntax_error",
+            "etc/trafficserver/body_factory/default/request#uri_len_too_long",
+            "etc/trafficserver/body_factory/default/response#bad_response",
+            "etc/trafficserver/body_factory/default/response#bad_version",
+            "etc/trafficserver/body_factory/default/timeout#activity",
+            "etc/trafficserver/body_factory/default/timeout#inactivity",
+            "etc/trafficserver/body_factory/default/transcoding#unsupported",
+            "etc/trafficserver/body_factory/default/urlrouting#no_mapping",
+            "etc/trafficserver/cache.config",
+            "etc/trafficserver/hosting.config",
+            "etc/trafficserver/ip_allow.yaml",
+            "etc/trafficserver/jsonrpc.yaml",
+            "etc/trafficserver/logging.yaml",
+            "etc/trafficserver/parent.config",
+            "etc/trafficserver/plugin.config",
+            "etc/trafficserver/records.yaml",
+            "etc/trafficserver/remap.config",
+            "etc/trafficserver/sni.yaml",
+            "etc/trafficserver/socks.config",
+            "etc/trafficserver/splitdns.config",
+            "etc/trafficserver/ssl_multicert.config",
+            "etc/trafficserver/storage.config",
+            "etc/trafficserver/strategies.yaml",
+            "etc/trafficserver/volume.config",
+            "include/swoc/ArenaWriter.h",
+            "include/swoc/BufferWriter.h",
+            "include/swoc/DiscreteRange.h",
+            "include/swoc/Errata.h",
+            "include/swoc/HashFNV.h",
+            "include/swoc/IPAddr.h",
+            "include/swoc/IPEndpoint.h",
+            "include/swoc/IPRange.h",
+            "include/swoc/IPSrv.h",
+            "include/swoc/IntrusiveDList.h",
+            "include/swoc/IntrusiveHashMap.h",
+            "include/swoc/Lexicon.h",
+            "include/swoc/MemArena.h",
+            "include/swoc/MemSpan.h",
+            "include/swoc/RBTree.h",
+            "include/swoc/Scalar.h",
+            "include/swoc/TextView.h",
+            "include/swoc/Vectray.h",
+            "include/swoc/bwf_base.h",
+            "include/swoc/bwf_ex.h",
+            "include/swoc/bwf_fwd.h",
+            "include/swoc/bwf_ip.h",
+            "include/swoc/bwf_std.h",
+            "include/swoc/string_view_util.h",
+            "include/swoc/swoc_file.h",
+            "include/swoc/swoc_ip.h",
+            "include/swoc/swoc_ip_util.h",
+            "include/swoc/swoc_meta.h",
+            "include/swoc/swoc_version.h",
+            "include/ts/TsException.h",
+            "include/ts/apidefs.h",
+            "include/ts/remap.h",
+            "include/ts/ts.h",
+            "include/tscpp/api/Async.h",
+            "include/tscpp/api/AsyncHttpFetch.h",
+            "include/tscpp/api/AsyncTimer.h",
+            "include/tscpp/api/CaseInsensitiveStringComparator.h",
+            "include/tscpp/api/Cleanup.h",
+            "include/tscpp/api/ClientRequest.h",
+            "include/tscpp/api/Continuation.h",
+            "include/tscpp/api/GlobalPlugin.h",
+            "include/tscpp/api/GzipDeflateTransformation.h",
+            "include/tscpp/api/GzipInflateTransformation.h",
+            "include/tscpp/api/Headers.h",
+            "include/tscpp/api/HttpMethod.h",
+            "include/tscpp/api/HttpStatus.h",
+            "include/tscpp/api/HttpVersion.h",
+            "include/tscpp/api/InterceptPlugin.h",
+            "include/tscpp/api/Logger.h",
+            "include/tscpp/api/Plugin.h",
+            "include/tscpp/api/PluginInit.h",
+            "include/tscpp/api/RemapPlugin.h",
+            "include/tscpp/api/Request.h",
+            "include/tscpp/api/Response.h",
+            "include/tscpp/api/Stat.h",
+            "include/tscpp/api/Transaction.h",
+            "include/tscpp/api/TransactionPlugin.h",
+            "include/tscpp/api/TransformationPlugin.h",
+            "include/tscpp/api/Url.h",
+            "include/tscpp/api/noncopyable.h",
+            "include/tscpp/api/utils.h",
+            "include/tsutil/Assert.h",
+            "include/tsutil/Bravo.h",
+            "include/tsutil/Convert.h",
+            "include/tsutil/DbgCtl.h",
+            "include/tsutil/DenseThreadId.h",
+            "include/tsutil/Histogram.h",
+            "include/tsutil/LocalBuffer.h",
+            "include/tsutil/Metrics.h",
+            "include/tsutil/PostScript.h",
+            "include/tsutil/Regex.h",
+            "include/tsutil/SourceLocation.h",
+            "include/tsutil/Strerror.h",
+            "include/tsutil/StringConvert.h",
+            "include/tsutil/TsMutex.h",
+            "include/tsutil/TsSharedMutex.h",
+            "include/tsutil/YamlCfg.h",
+            "include/tsutil/ts_bw_format.h",
+            "include/tsutil/ts_diag_levels.h",
+            "include/tsutil/ts_errata.h",
+            "include/tsutil/ts_ip.h",
+            "include/tsutil/ts_meta.h",
+            "include/tsutil/ts_thread_safety.h",
+            "include/tsutil/ts_time_parser.h",
+            "include/tsutil/ts_unit_parser.h",
+            "lib/cmake/Findtsapi.cmake",
+            "lib/libswoc.1.5.15.dylib",
+            "lib/libswoc.1.dylib",
+            "lib/libswoc.dylib",
+            "lib/libtsapi.dylib",
+            "lib/libtscppapi.dylib",
+            "lib/pkgconfig/ts.pc",
+            "libexec/trafficserver/access_control.so",
+            "libexec/trafficserver/authproxy.so",
+            "libexec/trafficserver/background_fetch.so",
+            "libexec/trafficserver/block_errors.so",
+            "libexec/trafficserver/cache_fill.so",
+            "libexec/trafficserver/cache_promote.so",
+            "libexec/trafficserver/cache_range_requests.so",
+            "libexec/trafficserver/cachekey.so",
+            "libexec/trafficserver/cert_reporting_tool.so",
+            "libexec/trafficserver/certifier.so",
+            "libexec/trafficserver/combo_handler.so",
+            "libexec/trafficserver/compress.so",
+            "libexec/trafficserver/conf_remap.so",
+            "libexec/trafficserver/cookie_remap.so",
+            "libexec/trafficserver/custom_redirect.so",
+            "libexec/trafficserver/escalate.so",
+            "libexec/trafficserver/esi.so",
+            "libexec/trafficserver/filter_body.so",
+            "libexec/trafficserver/fq_pacing.so",
+            "libexec/trafficserver/generator.so",
+            "libexec/trafficserver/geoip_acl.so",
+            "libexec/trafficserver/header_freq.so",
+            "libexec/trafficserver/header_rewrite.so",
+            "libexec/trafficserver/hook-trace.so",
+            "libexec/trafficserver/http_stats.so",
+            "libexec/trafficserver/icap_plugin.so",
+            "libexec/trafficserver/inliner.so",
+            "libexec/trafficserver/ja3_fingerprint.so",
+            "libexec/trafficserver/ja4_fingerprint.so",
+            "libexec/trafficserver/jax_fingerprint.so",
+            "libexec/trafficserver/libloader.so",
+            "libexec/trafficserver/magick.so",
+            "libexec/trafficserver/maxmind_acl.so",
+            "libexec/trafficserver/memcache.so",
+            "libexec/trafficserver/memory_profile.so",
+            "libexec/trafficserver/money_trace.so",
+            "libexec/trafficserver/mp4.so",
+            "libexec/trafficserver/multiplexer.so",
+            "libexec/trafficserver/origin_server_auth.so",
+            "libexec/trafficserver/prefetch.so",
+            "libexec/trafficserver/rate_limit.so",
+            "libexec/trafficserver/realip.so",
+            "libexec/trafficserver/regex_remap.so",
+            "libexec/trafficserver/regex_revalidate.so",
+            "libexec/trafficserver/remap_purge.so",
+            "libexec/trafficserver/remap_stats.so",
+            "libexec/trafficserver/s3_auth.so",
+            "libexec/trafficserver/server_push_preload.so",
+            "libexec/trafficserver/slice.so",
+            "libexec/trafficserver/sslheaders.so",
+            "libexec/trafficserver/stale_response.so",
+            "libexec/trafficserver/statichit.so",
+            "libexec/trafficserver/stats_over_http.so",
+            "libexec/trafficserver/stek_share.so",
+            "libexec/trafficserver/stream_editor.so",
+            "libexec/trafficserver/system_stats.so",
+            "libexec/trafficserver/tcpinfo.so",
+            "libexec/trafficserver/tls_bridge.so",
+            "libexec/trafficserver/traffic_dump.so",
+            "libexec/trafficserver/tslua.so",
+            "libexec/trafficserver/txn_box.so",
+            "libexec/trafficserver/url_sig.so",
+            "libexec/trafficserver/webp_transform.so",
+            "libexec/trafficserver/xdebug.so",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 23834330
+        }
+      }
+    }
+  }
+}

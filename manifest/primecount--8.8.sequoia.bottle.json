@@ -1,0 +1,181 @@
+{
+  "primecount": {
+    "formula": {
+      "name": "primecount",
+      "pkg_version": "8.8",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/primecount.rb",
+      "tap_git_path": "Formula/p/primecount.rb",
+      "tap_git_revision": "226f50b0d29c3e8823e458d5c71553eba8eb7432",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Fast prime counting function program and C/C++ library",
+      "license": "BSD-2-Clause",
+      "homepage": "https://github.com/kimwalisch/primecount"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-29T04:15:33Z",
+      "tags": {
+        "sequoia": {
+          "filename": "primecount-8.8.sequoia.bottle.tar.gz",
+          "local_filename": "primecount--8.8.sequoia.bottle.tar.gz",
+          "sha256": "b5f137cd65a67f5b442cdcb8f96a7aad4c019a4a72aea0ae94f1d49c3fdad9a7",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/primecount.pc"
+            ],
+            "linkage_files": [
+              "bin/primecount",
+              "lib/libprimecount.8.8.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790510131,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "primesieve",
+                "version": "12.16",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "12.16",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libomp",
+                "version": "23.1.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-primesieve-12.16",
+              "SPDXRef-Package-SPDXRef-libomp-23.1.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-primesieve-12.16",
+                "name": "primesieve",
+                "versionInfo": "12.16",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/primesieve-12.16.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "da762f11949d562b4aca79e39827646a3307b47ce1ee34402610fea602fb440e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/primesieve@12.16",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.1.2",
+                "name": "libomp",
+                "versionInfo": "23.1.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libomp-23.1.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "847accf04dd181b6afad3527664929bf7c667d0a3c29a998d685746d6bcf1975"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libomp@23.1.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-primesieve-12.16",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-primecount"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.1.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-primecount"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-primecount-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/primecount"
+          ],
+          "all_files": [
+            ".brew/primecount.rb",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/primecount",
+            "include/primecount.h",
+            "include/primecount.hpp",
+            "lib/cmake/primecount/primecountConfig.cmake",
+            "lib/cmake/primecount/primecountConfigVersion.cmake",
+            "lib/cmake/primecount/primecountShared-release.cmake",
+            "lib/cmake/primecount/primecountShared.cmake",
+            "lib/cmake/primecount/primecountStatic-release.cmake",
+            "lib/cmake/primecount/primecountStatic.cmake",
+            "lib/libprimecount.8.8.dylib",
+            "lib/libprimecount.8.dylib",
+            "lib/libprimecount.a",
+            "lib/libprimecount.dylib",
+            "lib/pkgconfig/primecount.pc",
+            "sbom.spdx.json",
+            "share/man/man1/primecount.1"
+          ],
+          "installed_size": 1265455
+        }
+      }
+    }
+  }
+}
