@@ -1,0 +1,372 @@
+{
+  "bacula-fd": {
+    "formula": {
+      "name": "bacula-fd",
+      "pkg_version": "15.0.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/b/bacula-fd.rb",
+      "tap_git_path": "Formula/b/bacula-fd.rb",
+      "tap_git_revision": "7510fafcdca7769a58eabc58329057d0f99683a3",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Network backup solution",
+      "license": "AGPL-3.0-only WITH openvpn-openssl-exception",
+      "homepage": "https://www.bacula.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-29T03:28:38Z",
+      "tags": {
+        "sequoia": {
+          "filename": "bacula-fd-15.0.3.sequoia.bottle.tar.gz",
+          "local_filename": "bacula-fd--15.0.3.sequoia.bottle.tar.gz",
+          "sha256": "493a46a0ee789f6a6b519b48009430e17686dfb6f7921299760c6753ecd75e0d",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "bin/bacula",
+              "bin/btraceback",
+              "etc/bacula",
+              "etc/bacula-ctl-dir",
+              "etc/bacula-ctl-fd",
+              "etc/bacula-ctl-sd",
+              "etc/bacula_config",
+              "etc/bconsole",
+              "etc/install-key-manager.sh",
+              "etc/key-manager.py",
+              "etc/mtx-changer",
+              "etc/bacula-fd.conf",
+              "etc/bacula-tray-monitor.desktop",
+              "sh.brew.bacula-fd.plist",
+              "sh.brew.bacula-fd.service"
+            ],
+            "linkage_files": [
+              "bin/bacula-fd",
+              "bin/bbconsjson",
+              "bin/bconsole",
+              "bin/bfdjson",
+              "lib/libbac-15.0.3.dylib",
+              "lib/libbaccfg-15.0.3.dylib",
+              "lib/libbacfind-15.0.3.dylib"
+            ],
+            "binary_relocation_files": [
+              "lib/libbaccfg-15.0.3.dylib"
+            ],
+            "source_modified_time": 1742999675,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2_1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/libbaccfg-15.0.3.dylib",
+              "string": "/usr/local/Cellar/bacula-fd/15.0.3/etc",
+              "offset": 40236
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-gettext-1.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+                "name": "openssl@4",
+                "versionInfo": "4.0.2_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.2_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "33fdf31bdda789d752b69dfd4053542b2387bbbcd0b2cf6ef734adab9bdf42c3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.2_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-bacula-fd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-bacula-fd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-bacula-fd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-bacula-fd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-bacula-fd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-bacula-fd-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/bbconsjson",
+            "bin/bacula",
+            "bin/bacula-fd",
+            "bin/md5tobase64.py",
+            "bin/bfdjson",
+            "bin/bconsole",
+            "bin/get_malware_abuse.ch",
+            "bin/btraceback"
+          ],
+          "all_files": [
+            ".brew/bacula-fd.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYRIGHT",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "LICENSE-FAQ",
+            "LICENSE-FOSS",
+            "README",
+            "bin/bacula",
+            "bin/bacula-fd",
+            "bin/bbconsjson",
+            "bin/bconsole",
+            "bin/bfdjson",
+            "bin/btraceback",
+            "bin/get_malware_abuse.ch",
+            "bin/md5tobase64.py",
+            "etc/bacula",
+            "etc/bacula-ctl-dir",
+            "etc/bacula-ctl-fd",
+            "etc/bacula-ctl-sd",
+            "etc/bacula-fd.conf",
+            "etc/bacula-tray-monitor.desktop",
+            "etc/bacula_config",
+            "etc/baculabackupreport",
+            "etc/bconsole",
+            "etc/bconsole.conf",
+            "etc/btraceback.dbx",
+            "etc/btraceback.gdb",
+            "etc/btraceback.mdb",
+            "etc/disk-changer",
+            "etc/install-key-manager.sh",
+            "etc/isworm",
+            "etc/key-manager.py",
+            "etc/mtx-changer",
+            "etc/mtx-changer.conf",
+            "etc/tapealert",
+            "lib/bpipe-fd.so",
+            "lib/libbac-15.0.3.dylib",
+            "lib/libbac.dylib",
+            "lib/libbaccfg-15.0.3.dylib",
+            "lib/libbaccfg.dylib",
+            "lib/libbacfind-15.0.3.dylib",
+            "lib/libbacfind.dylib",
+            "sbom.spdx.json",
+            "sh.brew.bacula-fd.plist",
+            "sh.brew.bacula-fd.service",
+            "share/doc/bacula/ChangeLog",
+            "share/doc/bacula/INSTALL",
+            "share/doc/bacula/LICENSE",
+            "share/doc/bacula/LICENSE-FAQ",
+            "share/doc/bacula/LICENSE-FOSS",
+            "share/doc/bacula/README",
+            "share/doc/bacula/ReleaseNotes",
+            "share/doc/bacula/VERIFYING"
+          ],
+          "installed_size": 2365254
+        }
+      }
+    }
+  }
+}

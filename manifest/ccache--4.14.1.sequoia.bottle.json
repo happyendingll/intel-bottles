@@ -1,0 +1,432 @@
+{
+  "ccache": {
+    "formula": {
+      "name": "ccache",
+      "pkg_version": "4.14.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/ccache.rb",
+      "tap_git_path": "Formula/c/ccache.rb",
+      "tap_git_revision": "7510fafcdca7769a58eabc58329057d0f99683a3",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Object-file caching compiler wrapper",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://ccache.dev/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-29T03:32:18Z",
+      "tags": {
+        "sequoia": {
+          "filename": "ccache-4.14.1.sequoia.bottle.tar.gz",
+          "local_filename": "ccache--4.14.1.sequoia.bottle.tar.gz",
+          "sha256": "f61978037ac1431a04460116561d8e8c32895206be1c8e66c0dde80d46f673f1",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/ccache"
+            ],
+            "binary_relocation_files": [
+              "bin/ccache"
+            ],
+            "source_modified_time": 1790495219,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "blake3",
+                "version": "1.8.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fmt",
+                "version": "12.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "12.2.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "hiredis",
+                "version": "1.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.1",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "xxhash",
+                "version": "0.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.8.4",
+                "declared_directly": true
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/ccache",
+              "string": "/usr/local/Cellar/ccache/4.14.1/libexec",
+              "offset": 841216
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+              "SPDXRef-Package-SPDXRef-xxhash-0.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d63b0bbe503c00db050f52f5f2172deba5e0233a30cbd0059622bf53ce9be9c3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xxhash-0.8.4",
+                "name": "xxhash",
+                "versionInfo": "0.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xxhash-0.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b7e422b8ae270b8cbf5c19dbdcd2f39d902e859117b3896f71d38d0888b18b10"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xxhash@0.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ccache"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ccache"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xxhash-0.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ccache"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ccache"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ccache"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ccache"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-ccache-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/ccache"
+          ],
+          "all_files": [
+            ".brew/ccache.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.adoc",
+            "README.md",
+            "bin/ccache",
+            "libexec/c++",
+            "libexec/c++-10",
+            "libexec/c++-11",
+            "libexec/c++-12",
+            "libexec/c++-13",
+            "libexec/c++-14",
+            "libexec/c++-15",
+            "libexec/c++-3.3",
+            "libexec/c++-4.0",
+            "libexec/c++-4.2",
+            "libexec/c++-4.3",
+            "libexec/c++-4.4",
+            "libexec/c++-4.5",
+            "libexec/c++-4.6",
+            "libexec/c++-4.7",
+            "libexec/c++-4.8",
+            "libexec/c++-4.9",
+            "libexec/c++-5",
+            "libexec/c++-6",
+            "libexec/c++-7",
+            "libexec/c++-8",
+            "libexec/c++-9",
+            "libexec/c++3",
+            "libexec/cc",
+            "libexec/clang",
+            "libexec/clang++",
+            "libexec/g++",
+            "libexec/g++-10",
+            "libexec/g++-11",
+            "libexec/g++-12",
+            "libexec/g++-13",
+            "libexec/g++-14",
+            "libexec/g++-15",
+            "libexec/g++-3.3",
+            "libexec/g++-4.0",
+            "libexec/g++-4.2",
+            "libexec/g++-4.3",
+            "libexec/g++-4.4",
+            "libexec/g++-4.5",
+            "libexec/g++-4.6",
+            "libexec/g++-4.7",
+            "libexec/g++-4.8",
+            "libexec/g++-4.9",
+            "libexec/g++-5",
+            "libexec/g++-6",
+            "libexec/g++-7",
+            "libexec/g++-8",
+            "libexec/g++-9",
+            "libexec/g++2",
+            "libexec/g++3",
+            "libexec/gcc",
+            "libexec/gcc-10",
+            "libexec/gcc-11",
+            "libexec/gcc-12",
+            "libexec/gcc-13",
+            "libexec/gcc-14",
+            "libexec/gcc-15",
+            "libexec/gcc-3.3",
+            "libexec/gcc-4.0",
+            "libexec/gcc-4.2",
+            "libexec/gcc-4.3",
+            "libexec/gcc-4.4",
+            "libexec/gcc-4.5",
+            "libexec/gcc-4.6",
+            "libexec/gcc-4.7",
+            "libexec/gcc-4.8",
+            "libexec/gcc-4.9",
+            "libexec/gcc-5",
+            "libexec/gcc-6",
+            "libexec/gcc-7",
+            "libexec/gcc-8",
+            "libexec/gcc-9",
+            "libexec/gcc2",
+            "libexec/gcc3",
+            "libexec/i686-w64-mingw32-g++",
+            "libexec/i686-w64-mingw32-gcc",
+            "libexec/x86_64-w64-mingw32-g++",
+            "libexec/x86_64-w64-mingw32-gcc",
+            "sbom.spdx.json",
+            "share/doc/ccache/AUTHORS.html",
+            "share/doc/ccache/LICENSE.html",
+            "share/doc/ccache/MANUAL.html",
+            "share/doc/ccache/NEWS.html",
+            "share/man/man1/ccache.1"
+          ],
+          "installed_size": 2273484
+        }
+      }
+    }
+  }
+}
