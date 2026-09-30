@@ -1,0 +1,917 @@
+{
+  "rakudo": {
+    "formula": {
+      "name": "rakudo",
+      "pkg_version": "2026.09",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rakudo.rb",
+      "tap_git_path": "Formula/r/rakudo.rb",
+      "tap_git_revision": "4398ef2f4b7571e31f17e61cb905a661ff3a4c10",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Mature, production-ready implementation of the Raku language",
+      "license": "Artistic-2.0",
+      "homepage": "https://rakudo.org"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-30T01:36:37Z",
+      "tags": {
+        "sequoia": {
+          "filename": "rakudo-2026.09.sequoia.bottle.tar.gz",
+          "local_filename": "rakudo--2026.09.sequoia.bottle.tar.gz",
+          "sha256": "0985432f50f9c5c251303c579b628c5c729d98b11325d6f6f4ca856ee16e6920",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/perl6",
+              "bin/perl6-debug",
+              "bin/perl6-debug-m",
+              "bin/perl6-m",
+              "bin/rakudo",
+              "bin/rakudo-debug",
+              "bin/rakudo-debug-m",
+              "bin/rakudo-m",
+              "share/perl6/runtime/dynext/libperl6_ops_moar.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/perl6",
+              "bin/perl6-debug",
+              "bin/perl6-debug-m",
+              "bin/perl6-m",
+              "bin/rakudo",
+              "bin/rakudo-debug",
+              "bin/rakudo-debug-m",
+              "bin/rakudo-m",
+              "share/perl6/lib/Perl6/Actions.moarvm",
+              "share/perl6/lib/Perl6/BOOTSTRAP/v6c.moarvm",
+              "share/perl6/lib/Perl6/BOOTSTRAP/v6d.moarvm",
+              "share/perl6/lib/Perl6/BOOTSTRAP/v6e.moarvm",
+              "share/perl6/lib/Perl6/Compiler.moarvm",
+              "share/perl6/lib/Perl6/Grammar.moarvm",
+              "share/perl6/lib/Perl6/Metamodel.moarvm",
+              "share/perl6/lib/Perl6/ModuleLoader.moarvm",
+              "share/perl6/lib/Perl6/Ops.moarvm",
+              "share/perl6/lib/Perl6/Optimizer.moarvm",
+              "share/perl6/lib/Perl6/Pod.moarvm",
+              "share/perl6/lib/Perl6/SysConfig.moarvm",
+              "share/perl6/lib/Perl6/World.moarvm",
+              "share/perl6/lib/Raku/Actions.moarvm",
+              "share/perl6/lib/Raku/Grammar.moarvm",
+              "share/perl6/runtime/CORE.c.setting.moarvm",
+              "share/perl6/runtime/dynext/libperl6_ops_moar.dylib",
+              "share/perl6/runtime/perl6-debug.moarvm",
+              "share/perl6/runtime/perl6.moarvm",
+              "share/perl6/runtime/rakudo-debug.moarvm",
+              "share/perl6/runtime/rakudo.moarvm"
+            ],
+            "source_modified_time": 1790610837,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libtommath",
+                "version": "1.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mimalloc",
+                "version": "3.5.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.5.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libuv",
+                "version": "1.53.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.53.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "moarvm",
+                "version": "2026.09",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026.09",
+                "declared_directly": true
+              },
+              {
+                "full_name": "nqp",
+                "version": "2026.09",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026.09",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "share/perl6/runtime/rakudo-debug.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 25064
+            },
+            {
+              "path": "share/perl6/runtime/rakudo.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 4704
+            },
+            {
+              "path": "share/perl6/runtime/perl6-debug.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 25064
+            },
+            {
+              "path": "share/perl6/runtime/perl6.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 4704
+            },
+            {
+              "path": "share/perl6/lib/Perl6/Optimizer.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 47112
+            },
+            {
+              "path": "share/perl6/lib/Perl6/SysConfig.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 3040
+            },
+            {
+              "path": "share/perl6/lib/Perl6/BOOTSTRAP/v6e.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 2108
+            },
+            {
+              "path": "share/perl6/lib/Perl6/BOOTSTRAP/v6c.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 1322576
+            },
+            {
+              "path": "share/perl6/lib/Perl6/BOOTSTRAP/v6d.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 1984
+            },
+            {
+              "path": "share/perl6/lib/Perl6/Ops.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 9388
+            },
+            {
+              "path": "share/perl6/lib/Perl6/World.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 73324
+            },
+            {
+              "path": "share/perl6/lib/Perl6/Actions.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 140716
+            },
+            {
+              "path": "share/perl6/lib/Perl6/Metamodel.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 119784
+            },
+            {
+              "path": "share/perl6/lib/Perl6/Compiler.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 14240
+            },
+            {
+              "path": "share/perl6/lib/Perl6/ModuleLoader.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 7160
+            },
+            {
+              "path": "share/perl6/lib/Perl6/Grammar.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 268860
+            },
+            {
+              "path": "share/perl6/lib/Perl6/Pod.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 56020
+            },
+            {
+              "path": "share/perl6/lib/Raku/Actions.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 122972
+            },
+            {
+              "path": "share/perl6/lib/Raku/Grammar.moarvm",
+              "string": "/usr/local/opt/moarvm/bin/../share/nqp/lib/MAST/Ops.nqp",
+              "offset": 290612
+            },
+            {
+              "path": "bin/rakudo-m",
+              "string": "//usr/local/Cellar/moarvm/2026.09/lib",
+              "offset": 1212
+            },
+            {
+              "path": "bin/rakudo-m",
+              "string": "/usr/local/Cellar/rakudo/2026.09/bin/rakudo-m",
+              "offset": 6059
+            },
+            {
+              "path": "bin/rakudo-m",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 6256
+            },
+            {
+              "path": "bin/rakudo-m",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 6337
+            },
+            {
+              "path": "bin/perl6-debug-m",
+              "string": "//usr/local/Cellar/moarvm/2026.09/lib",
+              "offset": 1212
+            },
+            {
+              "path": "bin/perl6-debug-m",
+              "string": "/usr/local/Cellar/rakudo/2026.09/bin/perl6-debug-m",
+              "offset": 6097
+            },
+            {
+              "path": "bin/perl6-debug-m",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 6299
+            },
+            {
+              "path": "bin/perl6-debug-m",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 6380
+            },
+            {
+              "path": "bin/rakudo-debug",
+              "string": "//usr/local/Cellar/moarvm/2026.09/lib",
+              "offset": 1212
+            },
+            {
+              "path": "bin/rakudo-debug",
+              "string": "/usr/local/Cellar/rakudo/2026.09/bin/rakudo-debug",
+              "offset": 6097
+            },
+            {
+              "path": "bin/rakudo-debug",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 6298
+            },
+            {
+              "path": "bin/rakudo-debug",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 6379
+            },
+            {
+              "path": "bin/rakudo-debug-m",
+              "string": "//usr/local/Cellar/moarvm/2026.09/lib",
+              "offset": 1212
+            },
+            {
+              "path": "bin/rakudo-debug-m",
+              "string": "/usr/local/Cellar/rakudo/2026.09/bin/rakudo-debug-m",
+              "offset": 6097
+            },
+            {
+              "path": "bin/rakudo-debug-m",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 6300
+            },
+            {
+              "path": "bin/rakudo-debug-m",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 6381
+            },
+            {
+              "path": "bin/perl6",
+              "string": "//usr/local/Cellar/moarvm/2026.09/lib",
+              "offset": 1212
+            },
+            {
+              "path": "bin/perl6",
+              "string": "/usr/local/Cellar/rakudo/2026.09/bin/perl6",
+              "offset": 6059
+            },
+            {
+              "path": "bin/perl6",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 6253
+            },
+            {
+              "path": "bin/perl6",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 6334
+            },
+            {
+              "path": "bin/perl6-debug",
+              "string": "//usr/local/Cellar/moarvm/2026.09/lib",
+              "offset": 1212
+            },
+            {
+              "path": "bin/perl6-debug",
+              "string": "/usr/local/Cellar/rakudo/2026.09/bin/perl6-debug",
+              "offset": 6097
+            },
+            {
+              "path": "bin/perl6-debug",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 6297
+            },
+            {
+              "path": "bin/perl6-debug",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 6378
+            },
+            {
+              "path": "bin/perl6-m",
+              "string": "//usr/local/Cellar/moarvm/2026.09/lib",
+              "offset": 1212
+            },
+            {
+              "path": "bin/perl6-m",
+              "string": "/usr/local/Cellar/rakudo/2026.09/bin/perl6-m",
+              "offset": 6059
+            },
+            {
+              "path": "bin/perl6-m",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 6255
+            },
+            {
+              "path": "bin/perl6-m",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 6336
+            },
+            {
+              "path": "bin/rakudo",
+              "string": "//usr/local/Cellar/moarvm/2026.09/lib",
+              "offset": 1212
+            },
+            {
+              "path": "bin/rakudo",
+              "string": "/usr/local/Cellar/rakudo/2026.09/bin/rakudo",
+              "offset": 6059
+            },
+            {
+              "path": "bin/rakudo",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 6254
+            },
+            {
+              "path": "bin/rakudo",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 6335
+            },
+            {
+              "path": "share/perl6/runtime/rakudo-debug.moarvm",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 8672
+            },
+            {
+              "path": "share/perl6/runtime/rakudo-debug.moarvm",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 8804
+            },
+            {
+              "path": "share/perl6/runtime/rakudo.moarvm",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 2108
+            },
+            {
+              "path": "share/perl6/runtime/rakudo.moarvm",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 2240
+            },
+            {
+              "path": "share/perl6/runtime/dynext/libperl6_ops_moar.dylib",
+              "string": "//usr/local/Cellar/moarvm/2026.09/lib",
+              "offset": 1268
+            },
+            {
+              "path": "share/perl6/runtime/perl6-debug.moarvm",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 8672
+            },
+            {
+              "path": "share/perl6/runtime/perl6-debug.moarvm",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 8804
+            },
+            {
+              "path": "share/perl6/runtime/perl6.moarvm",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 2108
+            },
+            {
+              "path": "share/perl6/runtime/perl6.moarvm",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 2240
+            },
+            {
+              "path": "share/perl6/runtime/CORE.c.setting.moarvm",
+              "string": "/usr/local/Cellar/nqp/2026.09/share/nqp",
+              "offset": 7222204
+            },
+            {
+              "path": "share/perl6/runtime/CORE.c.setting.moarvm",
+              "string": "/usr/local/Cellar/rakudo/2026.09/share/perl6",
+              "offset": 7222272
+            },
+            {
+              "path": "share/perl6/runtime/CORE.c.setting.moarvm",
+              "string": "/usr/local/Cellar/moarvm/2026.09/bin",
+              "offset": 7269452
+            },
+            {
+              "path": "share/perl6/runtime/CORE.c.setting.moarvm",
+              "string": "/usr/local/Cellar/moarvm/2026.09/lib",
+              "offset": 7272988
+            },
+            {
+              "path": "share/perl6/runtime/CORE.c.setting.moarvm",
+              "string": "/usr/local/Cellar/moarvm/2026.09/share/nqp/lib/MAST",
+              "offset": 7273260
+            },
+            {
+              "path": "share/perl6/runtime/CORE.c.setting.moarvm",
+              "string": "/usr/local/Cellar/moarvm/2026.09",
+              "offset": 7274172
+            },
+            {
+              "path": "share/perl6/runtime/CORE.c.setting.moarvm",
+              "string": "/usr/local/opt/pkgconf/bin/pkgconf",
+              "offset": 7274076
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-mimalloc-3.5.3",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+              "SPDXRef-Package-SPDXRef-moarvm-2026.09",
+              "SPDXRef-Package-SPDXRef-nqp-2026.09",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mimalloc-3.5.3",
+                "name": "mimalloc",
+                "versionInfo": "3.5.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mimalloc-3.5.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "19d95c5b8727d7b9f1a0b88cf8c17ee3b1ea5f66bf8d03d257fc6c8fef5a0331"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mimalloc@3.5.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "name": "libuv",
+                "versionInfo": "1.53.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libuv-1.53.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2378d10bb8de9b4b5c842db3903822a5854ae0b0d5d01e5731defdddec18154b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libuv@1.53.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-moarvm-2026.09",
+                "name": "moarvm",
+                "versionInfo": "2026.09",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Artistic-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/moarvm-2026.09.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7a304c7fabc93d2f132c61e41cfbd01b01138b2c4c4fc72c43842ad9ae67554b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/moarvm@2026.09",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-nqp-2026.09",
+                "name": "nqp",
+                "versionInfo": "2026.09",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Artistic-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/nqp-2026.09.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e5f8c512f943989ce04e70f2754c474de49ce70a575bfcd880a2a42db6abfc98"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/nqp@2026.09",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mimalloc-3.5.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rakudo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rakudo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rakudo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rakudo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rakudo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-moarvm-2026.09",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rakudo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-nqp-2026.09",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rakudo"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-rakudo-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/rakudo-m",
+            "bin/perl6-debug-m",
+            "bin/perl6-gdb-m",
+            "bin/raku-install-dist",
+            "bin/rakudo-debug",
+            "bin/rakudo-debug-m",
+            "bin/raku-debug",
+            "bin/perl6",
+            "bin/rakudo-valgrind-m",
+            "bin/perl6-lldb-m",
+            "bin/perl6-debug",
+            "bin/perl6-valgrind-m",
+            "bin/perl6-m",
+            "bin/raku",
+            "bin/rakudo-lldb-m",
+            "bin/rakudo",
+            "bin/rakudo-gdb-m"
+          ],
+          "all_files": [
+            ".brew/rakudo.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/perl6",
+            "bin/perl6-debug",
+            "bin/perl6-debug-m",
+            "bin/perl6-gdb-m",
+            "bin/perl6-lldb-m",
+            "bin/perl6-m",
+            "bin/perl6-valgrind-m",
+            "bin/raku",
+            "bin/raku-debug",
+            "bin/raku-install-dist",
+            "bin/rakudo",
+            "bin/rakudo-debug",
+            "bin/rakudo-debug-m",
+            "bin/rakudo-gdb-m",
+            "bin/rakudo-lldb-m",
+            "bin/rakudo-m",
+            "bin/rakudo-valgrind-m",
+            "sbom.spdx.json",
+            "share/perl6/core/dist/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/04/04C3C2CBBE5B32360A0D62EB44089D7E5F0B4F27",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/04/04C3C2CBBE5B32360A0D62EB44089D7E5F0B4F27.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/04/04C3C2CBBE5B32360A0D62EB44089D7E5F0B4F27.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/12/12C039E89C214BE31682CC6F93C51880665C0264",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/12/12C039E89C214BE31682CC6F93C51880665C0264.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/12/12C039E89C214BE31682CC6F93C51880665C0264.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/24/2479E68F39530CB2385674AF93A4C152B9A52B48",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/24/2479E68F39530CB2385674AF93A4C152B9A52B48.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/24/2479E68F39530CB2385674AF93A4C152B9A52B48.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/52/52633DCA50105EDA360EC9FB0197F55D506D95FB",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/52/52633DCA50105EDA360EC9FB0197F55D506D95FB.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/52/52633DCA50105EDA360EC9FB0197F55D506D95FB.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/65/654D9718FDA1B0943A6168BBA25713FC3E6BBEC3",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/65/654D9718FDA1B0943A6168BBA25713FC3E6BBEC3.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/65/654D9718FDA1B0943A6168BBA25713FC3E6BBEC3.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/6C/6C14BFBC1E96064107DD2BFFD5E6A00587645037",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/6C/6C14BFBC1E96064107DD2BFFD5E6A00587645037.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/6C/6C14BFBC1E96064107DD2BFFD5E6A00587645037.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/73/733F8FAD5F8216E6773715DA9CB48F96ECFAACBB",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/73/733F8FAD5F8216E6773715DA9CB48F96ECFAACBB.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/73/733F8FAD5F8216E6773715DA9CB48F96ECFAACBB.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/75/7543E39267364F09C4C2E5616579042A019C5D01",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/75/7543E39267364F09C4C2E5616579042A019C5D01.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/75/7543E39267364F09C4C2E5616579042A019C5D01.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/79/79CABA4C2785819A0A7E9C3AAED3AF01A51DAE7A",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/79/79CABA4C2785819A0A7E9C3AAED3AF01A51DAE7A.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/79/79CABA4C2785819A0A7E9C3AAED3AF01A51DAE7A.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/7E/7E7DFD77EE922BECAB50384B9E942127886F713F",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/7E/7E7DFD77EE922BECAB50384B9E942127886F713F.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/7E/7E7DFD77EE922BECAB50384B9E942127886F713F.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/82/824DAABF898BB3A3766D900854464D15541D8045",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/82/824DAABF898BB3A3766D900854464D15541D8045.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/82/824DAABF898BB3A3766D900854464D15541D8045.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/8E/8E5DAEA79BD4B8C631F6A766D7615C20F56A26A6",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/8E/8E5DAEA79BD4B8C631F6A766D7615C20F56A26A6.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/8E/8E5DAEA79BD4B8C631F6A766D7615C20F56A26A6.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/A8/A8E852A5E4454FE58C46A054A140F6F2C4308E72",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/A8/A8E852A5E4454FE58C46A054A140F6F2C4308E72.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/A8/A8E852A5E4454FE58C46A054A140F6F2C4308E72.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/AA/AAC68C15769307A644A85E2080D1EA983CCB403D",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/AA/AAC68C15769307A644A85E2080D1EA983CCB403D.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/AA/AAC68C15769307A644A85E2080D1EA983CCB403D.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/AB/ABB2E0E30DC37460611C78079F42562685D7AA7E",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/AB/ABB2E0E30DC37460611C78079F42562685D7AA7E.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/AB/ABB2E0E30DC37460611C78079F42562685D7AA7E.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/B8/B8291852C1F43CA072FE60E475F6348D1A38DDB9",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/B8/B8291852C1F43CA072FE60E475F6348D1A38DDB9.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/B8/B8291852C1F43CA072FE60E475F6348D1A38DDB9.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/C6/C6E4B7CBC5932543698612CB8DBD975011B3CC76",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/C6/C6E4B7CBC5932543698612CB8DBD975011B3CC76.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/C6/C6E4B7CBC5932543698612CB8DBD975011B3CC76.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/CC/CC2DB2633F497712AC1F611E02070A73D99ECBDB",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/CC/CC2DB2633F497712AC1F611E02070A73D99ECBDB.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/CC/CC2DB2633F497712AC1F611E02070A73D99ECBDB.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/D3/D3174C09ECD124C697846E78040E56A18B780AB5",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/D3/D3174C09ECD124C697846E78040E56A18B780AB5.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/D3/D3174C09ECD124C697846E78040E56A18B780AB5.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/D6/D6C6F69BC3ED80D2C2EE0457DA6CF0923C83DC31",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/D6/D6C6F69BC3ED80D2C2EE0457DA6CF0923C83DC31.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/D6/D6C6F69BC3ED80D2C2EE0457DA6CF0923C83DC31.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/D7/D71CF25DDEEE9CF4D6B5FCAFF224DBF684498651",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/D7/D71CF25DDEEE9CF4D6B5FCAFF224DBF684498651.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/D7/D71CF25DDEEE9CF4D6B5FCAFF224DBF684498651.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/D7/D7C52B01B425975729A5E48CB58CEC280DC83A96",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/D7/D7C52B01B425975729A5E48CB58CEC280DC83A96.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/D7/D7C52B01B425975729A5E48CB58CEC280DC83A96.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/E1/E181DAF1531E73C7A1304141D5E3881086BE215A",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/E1/E181DAF1531E73C7A1304141D5E3881086BE215A.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/E1/E181DAF1531E73C7A1304141D5E3881086BE215A.repo-id",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/E2/E20381E624E33C3C849FF33D14A29BFBBE70D220",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/E2/E20381E624E33C3C849FF33D14A29BFBBE70D220.lock",
+            "share/perl6/core/precomp/E278858793B5F02773C68009CF1AC4457503AFD5/E2/E20381E624E33C3C849FF33D14A29BFBBE70D220.repo-id",
+            "share/perl6/core/repo.lock",
+            "share/perl6/core/short/00DB34C60CE4A98B45F5DAA9A685BA1CB09B5486/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/0D7FDBBC72083980348BED148BF46BD198D51DE8/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/2216470A6AACB2EDEC4887E9EADEC834847AFC5D/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/2BA1EE66FDCF4E625DB5EF9D6FEE9FDB3625D60A/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/33A52796DB3EBB40BEF94B7696A1B0AB7A29B5C5/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/38673F0433DE95B90DD16424ED7B5B6520D383C5/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/3BE64EE0EF742F80B8FE4C0C2B1C061EAA3B4B5A/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/4572C95D8CF876588C349264F7E943A1F258045B/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/5C64D4D594EFA6C5343DC4B7A7F5FE423DAB3B23/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/640AB2BAE07BEDC4C163F679A746F7AB7FB5D1FA/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/6B7A1AECF02807F30DDAD99C02C34440CA036AF6/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/6DD4FE806EB6AA488B589ABD5DAAA57F324F6077/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/7B0F8CAB4CD25DB9B23C6F385F07D6A8128A124E/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/89677CAD3796FF5930AE8E82C7F21D827A14F9EB/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/8ED70850C429EAB5227A12CC407856148169C1F4/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/91D1F4AFADA887C669BEF2560A5B0D03793F37CC/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/9938EA7FBD24E15BFC1DBC1C0C05E6334D5A27CF/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/A4B2DCF23211FC6A4E31811837DDAB9882B7AD0F/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/A7BEDED1F1E6D7B79807BF5661696F687C21E51F/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/AA6BD3F20D89C0C763C948A41AC54C604C5C9B7A/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/AB1077C0C942BA12C447F03F50C117BA2972199D/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/B1B49A477F5975E36B2CEB81543FA9C3CAB302CA/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/B879776A8AE66092E34488CFD4956F8700BDB9DD/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/E09578190BD87F12B5EB553A0A67E66DA4479AEF/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/short/F6FD7A4346B3BB0E3124991926D729836808DA54/5DFC77992F205D05928FC6BB6E8CC518F74A2486",
+            "share/perl6/core/sources/04C3C2CBBE5B32360A0D62EB44089D7E5F0B4F27",
+            "share/perl6/core/sources/12C039E89C214BE31682CC6F93C51880665C0264",
+            "share/perl6/core/sources/2479E68F39530CB2385674AF93A4C152B9A52B48",
+            "share/perl6/core/sources/52633DCA50105EDA360EC9FB0197F55D506D95FB",
+            "share/perl6/core/sources/654D9718FDA1B0943A6168BBA25713FC3E6BBEC3",
+            "share/perl6/core/sources/6C14BFBC1E96064107DD2BFFD5E6A00587645037",
+            "share/perl6/core/sources/733F8FAD5F8216E6773715DA9CB48F96ECFAACBB",
+            "share/perl6/core/sources/7543E39267364F09C4C2E5616579042A019C5D01",
+            "share/perl6/core/sources/79CABA4C2785819A0A7E9C3AAED3AF01A51DAE7A",
+            "share/perl6/core/sources/7E7DFD77EE922BECAB50384B9E942127886F713F",
+            "share/perl6/core/sources/824DAABF898BB3A3766D900854464D15541D8045",
+            "share/perl6/core/sources/8E5DAEA79BD4B8C631F6A766D7615C20F56A26A6",
+            "share/perl6/core/sources/A8E852A5E4454FE58C46A054A140F6F2C4308E72",
+            "share/perl6/core/sources/AAC68C15769307A644A85E2080D1EA983CCB403D",
+            "share/perl6/core/sources/ABB2E0E30DC37460611C78079F42562685D7AA7E",
+            "share/perl6/core/sources/B8291852C1F43CA072FE60E475F6348D1A38DDB9",
+            "share/perl6/core/sources/C6E4B7CBC5932543698612CB8DBD975011B3CC76",
+            "share/perl6/core/sources/CC2DB2633F497712AC1F611E02070A73D99ECBDB",
+            "share/perl6/core/sources/D3174C09ECD124C697846E78040E56A18B780AB5",
+            "share/perl6/core/sources/D6C6F69BC3ED80D2C2EE0457DA6CF0923C83DC31",
+            "share/perl6/core/sources/D71CF25DDEEE9CF4D6B5FCAFF224DBF684498651",
+            "share/perl6/core/sources/D7C52B01B425975729A5E48CB58CEC280DC83A96",
+            "share/perl6/core/sources/E181DAF1531E73C7A1304141D5E3881086BE215A",
+            "share/perl6/core/sources/E20381E624E33C3C849FF33D14A29BFBBE70D220",
+            "share/perl6/core/version",
+            "share/perl6/lib/Perl6/Actions.moarvm",
+            "share/perl6/lib/Perl6/BOOTSTRAP/v6c.moarvm",
+            "share/perl6/lib/Perl6/BOOTSTRAP/v6d.moarvm",
+            "share/perl6/lib/Perl6/BOOTSTRAP/v6e.moarvm",
+            "share/perl6/lib/Perl6/Compiler.moarvm",
+            "share/perl6/lib/Perl6/Grammar.moarvm",
+            "share/perl6/lib/Perl6/Metamodel.moarvm",
+            "share/perl6/lib/Perl6/ModuleLoader.moarvm",
+            "share/perl6/lib/Perl6/Ops.moarvm",
+            "share/perl6/lib/Perl6/Optimizer.moarvm",
+            "share/perl6/lib/Perl6/Pod.moarvm",
+            "share/perl6/lib/Perl6/SysConfig.moarvm",
+            "share/perl6/lib/Perl6/World.moarvm",
+            "share/perl6/lib/Raku/Actions.moarvm",
+            "share/perl6/lib/Raku/Grammar.moarvm",
+            "share/perl6/runtime/CORE.c.setting.moarvm",
+            "share/perl6/runtime/CORE.d.setting.moarvm",
+            "share/perl6/runtime/CORE.e.setting.moarvm",
+            "share/perl6/runtime/dynext/libperl6_ops_moar.dylib",
+            "share/perl6/runtime/perl6-debug.moarvm",
+            "share/perl6/runtime/perl6.moarvm",
+            "share/perl6/runtime/rakudo-debug.moarvm",
+            "share/perl6/runtime/rakudo.moarvm",
+            "share/perl6/site/config.json",
+            "share/perl6/site/version",
+            "share/perl6/templates/posix-runner-tmpl",
+            "share/perl6/vendor/config.json",
+            "share/perl6/vendor/version"
+          ],
+          "installed_size": 55670395
+        }
+      }
+    }
+  }
+}
