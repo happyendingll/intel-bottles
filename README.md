@@ -172,7 +172,7 @@ manifest 中的 `root_url` 会指向 bottle 实际所在的滚动 Release。旧 
 
 发布时按本轮实际产出的 bottle 数量计算容量，Release 达到 900 个资产的安全阈值前会自动
 切到下一编号：常规构建从 `bottles` 续为 `bottles-2`、`bottles-3`，预热构建从
-`bottles-warm-2` 续为 `bottles-warm-3`、`bottles-warm-4`。新建 Release 后，发布脚本会
+`bottles-warm-1` 续为 `bottles-warm-2`、`bottles-warm-3`。新建 Release 后，发布脚本会
 同步改写本轮 bottle JSON 的 `root_url`，并将其写入 manifest 和 core fork；已有 bottle
 仍保留原来的 Release 地址。
 

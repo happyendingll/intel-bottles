@@ -15,6 +15,14 @@ SPEC.loader.exec_module(MODULE)
 
 
 class RollReleaseTests(unittest.TestCase):
+    def test_warm_release_starts_at_one_and_rolls_to_two(self):
+        releases = [{"tag_name": "bottles-warm-1"}]
+        existing = {f"old-{number}" for number in range(900)}
+        self.assertEqual(
+            "bottles-warm-2",
+            MODULE.choose_tag("bottles-warm-1", releases, existing, {"new"}),
+        )
+
     def test_warm_release_rolls_before_batch_crosses_safe_cap(self):
         releases = [
             {"tag_name": "bottles-warm-1"},
@@ -25,11 +33,11 @@ class RollReleaseTests(unittest.TestCase):
         batch = {f"new-{number}" for number in range(51)}
         self.assertEqual(
             "bottles-warm-3",
-            MODULE.choose_tag("bottles-warm-2", releases, existing, batch),
+            MODULE.choose_tag("bottles-warm-1", releases, existing, batch),
         )
         self.assertEqual(
             "bottles-warm-2",
-            MODULE.choose_tag("bottles-warm-2", releases, existing, set(existing)),
+            MODULE.choose_tag("bottles-warm-1", releases, existing, set(existing)),
         )
 
     def test_target_release_rolls_separately_from_warm_releases(self):
@@ -54,7 +62,7 @@ class RollReleaseTests(unittest.TestCase):
                 "tool": {
                     "formula": {"pkg_version": "1.0"},
                     "bottle": {
-                        "root_url": "https://github.com/owner/repo/releases/download/bottles-warm-2",
+                        "root_url": "https://github.com/owner/repo/releases/download/bottles-warm-1",
                         "tags": {"sequoia": {"sha256": "abc"}},
                     },
                 }
@@ -62,7 +70,7 @@ class RollReleaseTests(unittest.TestCase):
             path.write_text(json.dumps(payload))
             MODULE.retarget_json(
                 [path],
-                "https://github.com/owner/repo/releases/download/bottles-warm-2",
+                "https://github.com/owner/repo/releases/download/bottles-warm-1",
                 "https://github.com/owner/repo/releases/download/bottles-warm-3",
             )
             updated = json.loads(path.read_text())["tool"]
