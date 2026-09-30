@@ -1,0 +1,332 @@
+{
+  "pgpool-ii": {
+    "formula": {
+      "name": "pgpool-ii",
+      "pkg_version": "4.7.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pgpool-ii.rb",
+      "tap_git_path": "Formula/p/pgpool-ii.rb",
+      "tap_git_revision": "36583f2087f1cf8b84d590d56ed4f6dc2ca3720d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "PostgreSQL connection pool server",
+      "license": "HPND AND ISC",
+      "homepage": "https://www.pgpool.net/mediawiki/index.php/Main_Page"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-30T00:39:18Z",
+      "tags": {
+        "sequoia": {
+          "filename": "pgpool-ii-4.7.3.sequoia.bottle.tar.gz",
+          "local_filename": "pgpool-ii--4.7.3.sequoia.bottle.tar.gz",
+          "sha256": "92957b2e0f6df68ce23f95df0c6348d4dd5507f90baf7d142e4dc8f27b049449",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "bin/pgpool_setup",
+              "bin/watchdog_setup",
+              ".bottle/etc/pgpool.conf",
+              "sh.brew.pgpool-ii.plist",
+              "sh.brew.pgpool-ii.service"
+            ],
+            "linkage_files": [
+              "bin/pcp_attach_node",
+              "bin/pcp_detach_node",
+              "bin/pcp_health_check_stats",
+              "bin/pcp_invalidate_query_cache",
+              "bin/pcp_log_rotate",
+              "bin/pcp_node_count",
+              "bin/pcp_node_info",
+              "bin/pcp_pool_status",
+              "bin/pcp_proc_count",
+              "bin/pcp_proc_info",
+              "bin/pcp_promote_node",
+              "bin/pcp_recovery_node",
+              "bin/pcp_reload_config",
+              "bin/pcp_stop_pgpool",
+              "bin/pcp_watchdog_info",
+              "bin/pg_enc",
+              "bin/pg_md5",
+              "bin/pgpool",
+              "bin/pgproto",
+              "bin/wd_cli",
+              "lib/libpgpoolpcp.3.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790340926,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libmemcached",
+                "version": "1.0.18",
+                "revision": 2,
+                "bottle_rebuild": 2,
+                "pkg_version": "1.0.18_2",
+                "declared_directly": true
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.4",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.4_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "krb5",
+                "version": "1.22.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.22.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpq",
+                "version": "18.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "18.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+                "name": "openssl@3",
+                "versionInfo": "3.6.4_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d63b0bbe503c00db050f52f5f2172deba5e0233a30cbd0059622bf53ce9be9c3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.4_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pgpool-ii"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pgpool-ii"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pgpool-ii"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-pgpool-ii-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/pg_md5",
+            "bin/wd_cli",
+            "bin/pgpool",
+            "bin/pgpool_setup",
+            "bin/pcp_log_rotate",
+            "bin/pcp_node_count",
+            "bin/pcp_pool_status",
+            "bin/pcp_stop_pgpool",
+            "bin/pcp_recovery_node",
+            "bin/pcp_reload_config",
+            "bin/pg_enc",
+            "bin/pcp_health_check_stats",
+            "bin/pcp_attach_node",
+            "bin/pcp_node_info",
+            "bin/pcp_proc_count",
+            "bin/watchdog_setup",
+            "bin/pcp_detach_node",
+            "bin/pcp_watchdog_info",
+            "bin/pcp_promote_node",
+            "bin/pgproto",
+            "bin/pcp_proc_info",
+            "bin/pcp_invalidate_query_cache"
+          ],
+          "all_files": [
+            ".bottle/etc/aws_eip_if_cmd.sh.sample",
+            ".bottle/etc/aws_rtb_if_cmd.sh.sample",
+            ".bottle/etc/escalation.sh.sample",
+            ".bottle/etc/failover.sh.sample",
+            ".bottle/etc/follow_primary.sh.sample",
+            ".bottle/etc/pcp.conf.sample",
+            ".bottle/etc/pgpool.conf",
+            ".bottle/etc/pgpool_remote_start.sample",
+            ".bottle/etc/pool_hba.conf.sample",
+            ".bottle/etc/recovery_1st_stage.sample",
+            ".bottle/etc/replication_mode_recovery_1st_stage.sample",
+            ".bottle/etc/replication_mode_recovery_2nd_stage.sample",
+            ".brew/pgpool-ii.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "TODO",
+            "bin/pcp_attach_node",
+            "bin/pcp_detach_node",
+            "bin/pcp_health_check_stats",
+            "bin/pcp_invalidate_query_cache",
+            "bin/pcp_log_rotate",
+            "bin/pcp_node_count",
+            "bin/pcp_node_info",
+            "bin/pcp_pool_status",
+            "bin/pcp_proc_count",
+            "bin/pcp_proc_info",
+            "bin/pcp_promote_node",
+            "bin/pcp_recovery_node",
+            "bin/pcp_reload_config",
+            "bin/pcp_stop_pgpool",
+            "bin/pcp_watchdog_info",
+            "bin/pg_enc",
+            "bin/pg_md5",
+            "bin/pgpool",
+            "bin/pgpool_setup",
+            "bin/pgproto",
+            "bin/watchdog_setup",
+            "bin/wd_cli",
+            "include/libpcp_ext.h",
+            "include/pcp.h",
+            "include/pool_process_reporting.h",
+            "include/pool_type.h",
+            "lib/libpgpoolpcp.3.dylib",
+            "lib/libpgpoolpcp.a",
+            "lib/libpgpoolpcp.dylib",
+            "sbom.spdx.json",
+            "sh.brew.pgpool-ii.plist",
+            "sh.brew.pgpool-ii.service",
+            "share/pgpool-II/insert_lock.sql",
+            "share/pgpool-II/pgpool.pam"
+          ],
+          "installed_size": 4126579
+        }
+      }
+    }
+  }
+}

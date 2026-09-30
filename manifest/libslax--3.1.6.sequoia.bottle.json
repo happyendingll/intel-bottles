@@ -1,0 +1,319 @@
+{
+  "libslax": {
+    "formula": {
+      "name": "libslax",
+      "pkg_version": "3.1.6",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libslax.rb",
+      "tap_git_path": "Formula/lib/libslax.rb",
+      "tap_git_revision": "36583f2087f1cf8b84d590d56ed4f6dc2ca3720d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Implementation of the SLAX language (an XSLT alternative)",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/Juniper/libslax/wiki"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-09-30T00:24:10Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libslax-3.1.6.sequoia.bottle.tar.gz",
+          "local_filename": "libslax--3.1.6.sequoia.bottle.tar.gz",
+          "sha256": "eb7cf5255c4dcede30dcc7fc2333849e2bec188cf8c7e8895987e896cba7a0d8",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "bin/slax-config",
+              "lib/pkgconfig/libslax.pc"
+            ],
+            "linkage_files": [
+              "bin/slaxproc",
+              "lib/libparrotdb.0.dylib",
+              "lib/libpsu.0.dylib",
+              "lib/libslax.0.dylib",
+              "lib/libxi.0.dylib",
+              "lib/slax/extensions/libext_bit.0.dylib",
+              "lib/slax/extensions/libext_curl.0.dylib",
+              "lib/slax/extensions/libext_db.0.dylib",
+              "lib/slax/extensions/libext_exslt.0.dylib",
+              "lib/slax/extensions/libext_os.0.dylib",
+              "lib/slax/extensions/libext_xutil.0.dylib"
+            ],
+            "binary_relocation_files": [
+              "lib/libslax.0.dylib",
+              "lib/libslax.a",
+              "lib/slax/extensions/libext_db.0.dylib",
+              "lib/slax/extensions/libext_db.a"
+            ],
+            "source_modified_time": 1756181003,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2_1",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/slax/extensions/libext_db.0.dylib",
+              "string": "/usr/local/Cellar/libslax/3.1.6/lib/slax/extensions",
+              "offset": 22890
+            },
+            {
+              "path": "lib/slax/extensions/libext_db.a",
+              "string": "/usr/local/Cellar/libslax/3.1.6/lib/slax/extensions",
+              "offset": 12058
+            },
+            {
+              "path": "lib/libslax.a",
+              "string": "/usr/local/Cellar/libslax/3.1.6/lib/slax/extensions",
+              "offset": 60898
+            },
+            {
+              "path": "lib/libslax.0.dylib",
+              "string": "/usr/local/Cellar/libslax/3.1.6/lib/slax/extensions",
+              "offset": 161287
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+                "name": "openssl@4",
+                "versionInfo": "4.0.2_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.2_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "33fdf31bdda789d752b69dfd4053542b2387bbbcd0b2cf6ef734adab9bdf42c3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.2_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libslax"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libslax"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libslax-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/slaxproc",
+            "bin/gt",
+            "bin/slax-config"
+          ],
+          "all_files": [
+            ".brew/libslax.rb",
+            "Copyright",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/gt",
+            "bin/slax-config",
+            "bin/slaxproc",
+            "include/libpsu/psualloc.h",
+            "include/libpsu/psubase64.h",
+            "include/libpsu/psucommon.h",
+            "include/libpsu/psucpu.h",
+            "include/libpsu/psulog.h",
+            "include/libpsu/psustring.h",
+            "include/libpsu/psuthread.h",
+            "include/libpsu/psutime.h",
+            "include/libslax/internal/jsonlexer.h",
+            "include/libslax/internal/jsonwriter.h",
+            "include/libslax/internal/slaxext.h",
+            "include/libslax/internal/slaxhumanize.h",
+            "include/libslax/internal/slaxinternals.h",
+            "include/libslax/internal/slaxio.h",
+            "include/libslax/internal/slaxlexer.h",
+            "include/libslax/internal/slaxloader.h",
+            "include/libslax/internal/slaxnames.h",
+            "include/libslax/internal/slaxparser-tail.y",
+            "include/libslax/internal/slaxparser-xp.y",
+            "include/libslax/internal/slaxparser-xpl.y",
+            "include/libslax/internal/slaxparser.y",
+            "include/libslax/internal/slaxprofiler.h",
+            "include/libslax/internal/slaxstring.h",
+            "include/libslax/internal/slaxtree.h",
+            "include/libslax/internal/yamlwriter.h",
+            "include/libslax/slax.h",
+            "include/libslax/slaxconfig.h",
+            "include/libslax/slaxdata.h",
+            "include/libslax/slaxdyn.h",
+            "include/libslax/slaxversion.h",
+            "include/libslax/xmlsoft.h",
+            "include/libxi/xicommon.h",
+            "include/libxi/xinodeset.h",
+            "include/libxi/xiparse.h",
+            "include/libxi/xirules.h",
+            "include/libxi/xisource.h",
+            "include/libxi/xitree.h",
+            "include/libxi/xiwhiffle.h",
+            "include/libxi/xiworkspace.h",
+            "include/libxi/xixpath.h",
+            "include/parrotdb/paarb.h",
+            "include/parrotdb/pabitmap.h",
+            "include/parrotdb/pacommon.h",
+            "include/parrotdb/paconfig.h",
+            "include/parrotdb/pafixed.h",
+            "include/parrotdb/paistr.h",
+            "include/parrotdb/palog2.h",
+            "include/parrotdb/pammap.h",
+            "include/parrotdb/papat.h",
+            "lib/libparrotdb.0.dylib",
+            "lib/libparrotdb.a",
+            "lib/libparrotdb.dylib",
+            "lib/libpsu.0.dylib",
+            "lib/libpsu.a",
+            "lib/libpsu.dylib",
+            "lib/libslax.0.dylib",
+            "lib/libslax.a",
+            "lib/libslax.dylib",
+            "lib/libxi.0.dylib",
+            "lib/libxi.a",
+            "lib/libxi.dylib",
+            "lib/pkgconfig/libslax.pc",
+            "lib/slax/extensions/bit.prefix",
+            "lib/slax/extensions/crypto.prefix",
+            "lib/slax/extensions/curl.prefix",
+            "lib/slax/extensions/date.prefix",
+            "lib/slax/extensions/db.prefix",
+            "lib/slax/extensions/dyn.prefix",
+            "lib/slax/extensions/exsl.prefix",
+            "lib/slax/extensions/func.prefix",
+            "lib/slax/extensions/http%3A%2F%2Fexslt.org%2Fcommon.ext",
+            "lib/slax/extensions/http%3A%2F%2Fexslt.org%2Fcrypto.ext",
+            "lib/slax/extensions/http%3A%2F%2Fexslt.org%2Fdates-and-times.ext",
+            "lib/slax/extensions/http%3A%2F%2Fexslt.org%2Fdynamic.ext",
+            "lib/slax/extensions/http%3A%2F%2Fexslt.org%2Ffunctions.ext",
+            "lib/slax/extensions/http%3A%2F%2Fexslt.org%2Fmath.ext",
+            "lib/slax/extensions/http%3A%2F%2Fexslt.org%2Fsets.ext",
+            "lib/slax/extensions/http%3A%2F%2Fexslt.org%2Fstrings.ext",
+            "lib/slax/extensions/http%3A%2F%2Ficl.com%2Fsaxon.ext",
+            "lib/slax/extensions/http%3A%2F%2Fxml.libslax.org%2Fbit.ext",
+            "lib/slax/extensions/http%3A%2F%2Fxml.libslax.org%2Fcurl.ext",
+            "lib/slax/extensions/http%3A%2F%2Fxml.libslax.org%2Fdb.ext",
+            "lib/slax/extensions/http%3A%2F%2Fxml.libslax.org%2Fos.ext",
+            "lib/slax/extensions/http%3A%2F%2Fxml.libslax.org%2Fxutil.ext",
+            "lib/slax/extensions/libext_bit.0.dylib",
+            "lib/slax/extensions/libext_bit.a",
+            "lib/slax/extensions/libext_bit.dylib",
+            "lib/slax/extensions/libext_curl.0.dylib",
+            "lib/slax/extensions/libext_curl.a",
+            "lib/slax/extensions/libext_curl.dylib",
+            "lib/slax/extensions/libext_db.0.dylib",
+            "lib/slax/extensions/libext_db.a",
+            "lib/slax/extensions/libext_db.dylib",
+            "lib/slax/extensions/libext_exslt.0.dylib",
+            "lib/slax/extensions/libext_exslt.a",
+            "lib/slax/extensions/libext_exslt.dylib",
+            "lib/slax/extensions/libext_os.0.dylib",
+            "lib/slax/extensions/libext_os.a",
+            "lib/slax/extensions/libext_os.dylib",
+            "lib/slax/extensions/libext_xutil.0.dylib",
+            "lib/slax/extensions/libext_xutil.a",
+            "lib/slax/extensions/libext_xutil.dylib",
+            "lib/slax/extensions/math.prefix",
+            "lib/slax/extensions/os.prefix",
+            "lib/slax/extensions/saxon.prefix",
+            "lib/slax/extensions/set.prefix",
+            "lib/slax/extensions/str.prefix",
+            "lib/slax/extensions/xutil.prefix",
+            "sbom.spdx.json",
+            "share/doc/libslax/Copyright",
+            "share/doc/libslax/slax.txt",
+            "share/man/man1/slaxdebugger.1x",
+            "share/man/man1/slaxproc.1x",
+            "share/man/man3/libslax.3x"
+          ],
+          "installed_size": 1631511
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,273 @@
+{
+  "nghttp2": {
+    "formula": {
+      "name": "nghttp2",
+      "pkg_version": "1.70.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/n/nghttp2.rb",
+      "tap_git_path": "Formula/n/nghttp2.rb",
+      "tap_git_revision": "36583f2087f1cf8b84d590d56ed4f6dc2ca3720d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "HTTP/2 C Library",
+      "license": "MIT",
+      "homepage": "https://nghttp2.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-09-30T00:33:33Z",
+      "tags": {
+        "sequoia": {
+          "filename": "nghttp2-1.70.0.sequoia.bottle.tar.gz",
+          "local_filename": "nghttp2--1.70.0.sequoia.bottle.tar.gz",
+          "sha256": "72f247d531082b714e74e1bce563703d808d3706684ea34b796196f61b1c093d",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/h2load",
+              "bin/nghttp",
+              "bin/nghttpd",
+              "bin/nghttpx"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1785328200,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "c-ares",
+                "version": "1.34.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.34.8",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "jemalloc",
+                "version": "5.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.4.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libev",
+                "version": "4.33",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.33",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libnghttp2",
+                "version": "1.70.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.70.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.2_1",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-jemalloc-5.4.0",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jemalloc-5.4.0",
+                "name": "jemalloc",
+                "versionInfo": "5.4.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/jemalloc-5.4.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4873409ef2756f5ca36c2e63ee7cf0bd4984b4fe86410c3a09e83ce392661d1d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jemalloc@5.4.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "name": "libnghttp2",
+                "versionInfo": "1.70.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libnghttp2-1.70.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5fc34d9e93ddb24b1c2cbb83a0beee5e3524a0d96c18b4a64cf32762681b2b65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libnghttp2@1.70.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+                "name": "openssl@4",
+                "versionInfo": "4.0.2_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.2_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "33fdf31bdda789d752b69dfd4053542b2387bbbcd0b2cf6ef734adab9bdf42c3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.2_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jemalloc-5.4.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-nghttp2"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.70.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-nghttp2"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-nghttp2"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@4-4.0.2_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-nghttp2"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-nghttp2-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/nghttp",
+            "bin/nghttpx",
+            "bin/nghttpd",
+            "bin/h2load"
+          ],
+          "all_files": [
+            ".brew/nghttp2.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "README.rst",
+            "bin/h2load",
+            "bin/nghttp",
+            "bin/nghttpd",
+            "bin/nghttpx",
+            "sbom.spdx.json",
+            "share/doc/nghttp2/README.rst",
+            "share/man/man1/h2load.1",
+            "share/man/man1/nghttp.1",
+            "share/man/man1/nghttpd.1",
+            "share/man/man1/nghttpx.1"
+          ],
+          "installed_size": 2947508
+        }
+      }
+    }
+  }
+}
