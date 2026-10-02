@@ -2,40 +2,41 @@
   "aws-checksums": {
     "formula": {
       "name": "aws-checksums",
-      "pkg_version": "1.0.0",
+      "pkg_version": "1.0.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-checksums.rb",
       "tap_git_path": "Formula/a/aws-checksums.rb",
-      "tap_git_revision": "2bf64aac2a4c461b3df391883f51018b69daedae",
+      "tap_git_revision": "903bfb9833b0a8bade17c0078846631c84da4ff7",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Cross-Platform HW accelerated CRC32c and CRC32 with fallback",
       "license": "Apache-2.0",
       "homepage": "https://github.com/awslabs/aws-checksums"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-13T11:47:11Z",
+      "date": "2026-10-02T06:21:58Z",
       "tags": {
         "sequoia": {
-          "filename": "aws-checksums-1.0.0.sequoia.bottle.tar.gz",
-          "local_filename": "aws-checksums--1.0.0.sequoia.bottle.tar.gz",
-          "sha256": "912096c8e8c5884c2a92d2c4273e7924c8dce1ee550c3647b5020d4c74b3f31c",
+          "filename": "aws-checksums-1.0.1.sequoia.bottle.tar.gz",
+          "local_filename": "aws-checksums--1.0.1.sequoia.bottle.tar.gz",
+          "sha256": "94d39f223a4234cbfc7479f3aee792a829b2b130aef907b256ef8547a9875c06",
           "tab": {
-            "homebrew_version": "7.0.0",
+            "homebrew_version": "7.0.7",
             "changed_files": [],
             "linkage_files": [
-              "lib/libaws-checksums.1.0.0.dylib"
+              "lib/libaws-checksums.1.0.1.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1787702062,
+            "source_modified_time": 1790795424,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "aws-c-common",
-                "version": "1.0.0",
+                "version": "1.0.2",
                 "revision": 0,
-                "pkg_version": "1.0.0",
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.2",
                 "declared_directly": true,
                 "compatibility_version": 2
               }
@@ -53,9 +54,33 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-aws-c-common-1.0.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-common-1.0.2",
+                "name": "aws-c-common",
+                "versionInfo": "1.0.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/aws-c-common-1.0.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "edcc740014e3f4236a56bab317dba049bcfd03cab0c8d9bc31ef8e581ae4866e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-common@1.0.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
@@ -70,6 +95,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-common-1.0.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-aws-checksums"
+              },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
@@ -91,12 +121,12 @@
             "lib/cmake/aws-checksums/aws-checksums-config.cmake",
             "lib/cmake/aws-checksums/shared/aws-checksums-targets-release.cmake",
             "lib/cmake/aws-checksums/shared/aws-checksums-targets.cmake",
-            "lib/libaws-checksums.1.0.0.dylib",
+            "lib/libaws-checksums.1.0.1.dylib",
             "lib/libaws-checksums.1.0.dylib",
             "lib/libaws-checksums.dylib",
             "sbom.spdx.json"
           ],
-          "installed_size": 131951
+          "installed_size": 131978
         }
       }
     }

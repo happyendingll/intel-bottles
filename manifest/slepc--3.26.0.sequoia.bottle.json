@@ -2,30 +2,31 @@
   "slepc": {
     "formula": {
       "name": "slepc",
-      "pkg_version": "3.25.2",
+      "pkg_version": "3.26.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/slepc.rb",
       "tap_git_path": "Formula/s/slepc.rb",
-      "tap_git_revision": "79057e15b38d7494db937d7c672e9eb07216cd18",
+      "tap_git_revision": "903bfb9833b0a8bade17c0078846631c84da4ff7",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Scalable Library for Eigenvalue Problem Computations (real)",
       "license": "BSD-2-Clause",
       "homepage": "https://slepc.upv.es"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-09-19T12:26:40Z",
+      "date": "2026-10-02T06:34:33Z",
       "tags": {
         "sequoia": {
-          "filename": "slepc-3.25.2.sequoia.bottle.tar.gz",
-          "local_filename": "slepc--3.25.2.sequoia.bottle.tar.gz",
-          "sha256": "36c7a30fd253c3a5be2559d295fd2d0835433da42091df49888ad6c98d6211a2",
+          "filename": "slepc-3.26.0.sequoia.bottle.tar.gz",
+          "local_filename": "slepc--3.26.0.sequoia.bottle.tar.gz",
+          "sha256": "fd8a44275cfec9fc9e7ae4f9d0d43b80b1b377459aaf5d672f743a6c36b14f14",
           "tab": {
-            "homebrew_version": "7.0.4",
+            "homebrew_version": "7.0.7",
             "changed_files": [
               "lib/slepc/conf/uninstall.py",
               "include/slepcconf.h",
+              "include/slepcconfiginfo.h",
               "lib/pkgconfig/SLEPc.pc",
               "lib/slepc/conf/slepc_rules",
               "lib/slepc/conf/slepc_rules_util.mk",
@@ -34,12 +35,12 @@
               "share/slepc/examples/gmakefile.test"
             ],
             "linkage_files": [
-              "lib/libslepc.3.25.2.dylib"
+              "lib/libslepc.3.26.0.dylib"
             ],
             "binary_relocation_files": [
-              "lib/libslepc.3.25.2.dylib"
+              "lib/libslepc.3.26.0.dylib"
             ],
-            "source_modified_time": 1789728965,
+            "source_modified_time": 1790666645,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -114,28 +115,28 @@
               },
               {
                 "full_name": "hwloc",
-                "version": "2.14.0",
+                "version": "2.15.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.14.0",
+                "pkg_version": "2.15.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-08-13",
+                "version": "2026-09-25",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2026-08-13",
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "openssl@3",
-                "version": "3.6.4",
+                "version": "3.6.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
+                "pkg_version": "3.6.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -176,10 +177,10 @@
               },
               {
                 "full_name": "libomp",
-                "version": "23.1.1",
+                "version": "23.1.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "23.1.1",
+                "pkg_version": "23.1.2",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -256,12 +257,12 @@
               },
               {
                 "full_name": "petsc",
-                "version": "3.25.5",
+                "version": "3.26.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.25.5",
+                "pkg_version": "3.26.0",
                 "declared_directly": true,
-                "compatibility_version": 2
+                "compatibility_version": 3
               }
             ],
             "arch": "x86_64",
@@ -276,9 +277,9 @@
           },
           "binary_relocation_diagnostics": [
             {
-              "path": "lib/libslepc.3.25.2.dylib",
-              "string": "/usr/local/Cellar/slepc/3.25.2/lib",
-              "offset": 2671518
+              "path": "lib/libslepc.3.26.0.dylib",
+              "string": "/usr/local/Cellar/slepc/3.26.0/lib",
+              "offset": 2714012
             }
           ],
           "sbom": {
@@ -291,14 +292,15 @@
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
               "SPDXRef-Package-SPDXRef-gcc-16.2.0",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-hwloc-2.15.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
               "SPDXRef-Package-SPDXRef-open-mpi-5.0.11",
-              "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+              "SPDXRef-Package-SPDXRef-libomp-23.1.2",
               "SPDXRef-Package-SPDXRef-libaec-1.1.7",
               "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
               "SPDXRef-Package-SPDXRef-suite-sparse-7.14.1",
-              "SPDXRef-Package-SPDXRef-petsc-3.25.5",
+              "SPDXRef-Package-SPDXRef-petsc-3.26.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -487,47 +489,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-                "name": "ca-certificates",
-                "versionInfo": "2026-08-13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-hwloc-2.15.0",
+                "name": "hwloc",
+                "versionInfo": "2.15.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/hwloc-2.15.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                    "checksumValue": "5588358e1993ccdbee9cf813a16f27369a77deffbe0c03fb34ec633b6002b21a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceLocator": "pkg:brew/hwloc@2.15.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "name": "openssl@3",
+                "versionInfo": "3.6.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9ed9599d2df434ad6706bb4065ab5cf758030b4d9b461ae96f9677fa7a500a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -556,24 +581,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.1.2",
                 "name": "libomp",
-                "versionInfo": "23.1.1",
+                "versionInfo": "23.1.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libomp-23.1.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libomp-23.1.2.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "f9006339f8009a14348931dfb50532f9b6962968266db7a3108178588bf8b703"
+                    "checksumValue": "847accf04dd181b6afad3527664929bf7c667d0a3c29a998d685746d6bcf1975"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libomp@23.1.1",
+                    "referenceLocator": "pkg:brew/libomp@23.1.2",
                     "referenceType": "purl"
                   }
                 ]
@@ -648,24 +673,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-petsc-3.25.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-petsc-3.26.0",
                 "name": "petsc",
-                "versionInfo": "3.25.5",
+                "versionInfo": "3.26.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/petsc-3.25.5.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/petsc-3.26.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "cf6f19bb35f129bb9ba0badca26b783b16e28687da1a1f61f2a4b9094bcfd64f"
+                    "checksumValue": "7542631ddc6af64998f7cbe489d0f83c86532400371b42ec06638daf276483e9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/petsc@3.25.5",
+                    "referenceLocator": "pkg:brew/petsc@3.26.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -725,12 +750,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-slepc"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-hwloc-2.15.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-slepc"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-slepc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-slepc"
               },
@@ -740,7 +770,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-slepc"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.1.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-slepc"
               },
@@ -760,7 +790,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-slepc"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-petsc-3.25.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-petsc-3.26.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-slepc"
               },
@@ -800,6 +830,7 @@
             "include/slepc/finclude/slepcsys.h",
             "include/slepc/finclude/slepcvec.h",
             "include/slepc/private/bvimpl.h",
+            "include/slepc/private/cupmblas.h",
             "include/slepc/private/dsimpl.h",
             "include/slepc/private/epsimpl.h",
             "include/slepc/private/fnimpl.h",
@@ -822,6 +853,7 @@
             "include/slepcbv.mod",
             "include/slepcbvdef.mod",
             "include/slepcconf.h",
+            "include/slepcconfiginfo.h",
             "include/slepccupmblas.h",
             "include/slepcds.h",
             "include/slepcds.mod",
@@ -863,11 +895,11 @@
             "include/slepcsysdef.mod",
             "include/slepcvec.h",
             "include/slepcversion.h",
-            "lib/libslepc.3.25.2.dylib",
-            "lib/libslepc.3.25.dylib",
+            "lib/libslepc.3.26.0.dylib",
+            "lib/libslepc.3.26.dylib",
             "lib/libslepc.dylib",
             "lib/pkgconfig/SLEPc.pc",
-            "lib/slepc/conf/modules/slepc/3.25.2",
+            "lib/slepc/conf/modules/slepc/3.26.0",
             "lib/slepc/conf/slepc_common",
             "lib/slepc/conf/slepc_rules",
             "lib/slepc/conf/slepc_rules_util.mk",
@@ -1079,6 +1111,8 @@
             "share/slepc/examples/src/eps/tutorials/ex56.c",
             "share/slepc/examples/src/eps/tutorials/ex57.c",
             "share/slepc/examples/src/eps/tutorials/ex58.c",
+            "share/slepc/examples/src/eps/tutorials/ex59.c",
+            "share/slepc/examples/src/eps/tutorials/ex60.c",
             "share/slepc/examples/src/eps/tutorials/ex6f.F90",
             "share/slepc/examples/src/eps/tutorials/ex7.c",
             "share/slepc/examples/src/eps/tutorials/ex9.c",
@@ -1108,9 +1142,10 @@
             "share/slepc/examples/src/eps/tutorials/output/ex2_3.out",
             "share/slepc/examples/src/eps/tutorials/output/ex2_4.out",
             "share/slepc/examples/src/eps/tutorials/output/ex2_5.out",
+            "share/slepc/examples/src/eps/tutorials/output/ex2_5_alt.out",
             "share/slepc/examples/src/eps/tutorials/output/ex2_6.out",
+            "share/slepc/examples/src/eps/tutorials/output/ex2_6_alt.out",
             "share/slepc/examples/src/eps/tutorials/output/ex2_6_rel_large.out",
-            "share/slepc/examples/src/eps/tutorials/output/ex2_6_rel_large_alt.out",
             "share/slepc/examples/src/eps/tutorials/output/ex2_6_rel_small.out",
             "share/slepc/examples/src/eps/tutorials/output/ex2_ciss.out",
             "share/slepc/examples/src/eps/tutorials/output/ex30_1.out",
@@ -1158,8 +1193,11 @@
             "share/slepc/examples/src/eps/tutorials/output/ex57_2.out",
             "share/slepc/examples/src/eps/tutorials/output/ex58_1.out",
             "share/slepc/examples/src/eps/tutorials/output/ex58_2.out",
+            "share/slepc/examples/src/eps/tutorials/output/ex59_1.out",
             "share/slepc/examples/src/eps/tutorials/output/ex5_1.out",
             "share/slepc/examples/src/eps/tutorials/output/ex5_2.out",
+            "share/slepc/examples/src/eps/tutorials/output/ex5_2_alt.out",
+            "share/slepc/examples/src/eps/tutorials/output/ex60_1.out",
             "share/slepc/examples/src/eps/tutorials/output/ex6f_1.out",
             "share/slepc/examples/src/eps/tutorials/output/ex7_1.out",
             "share/slepc/examples/src/eps/tutorials/output/ex7_3.out",
@@ -1543,7 +1581,12 @@
             "share/slepc/examples/src/svd/tutorials/output/ex14_4_alt.out",
             "share/slepc/examples/src/svd/tutorials/output/ex14_4_alt_2.out",
             "share/slepc/examples/src/svd/tutorials/output/ex14_4_alt_3.out",
+            "share/slepc/examples/src/svd/tutorials/output/ex14_4_alt_4.out",
+            "share/slepc/examples/src/svd/tutorials/output/ex14_4_alt_5.out",
+            "share/slepc/examples/src/svd/tutorials/output/ex14_4_alt_6.out",
             "share/slepc/examples/src/svd/tutorials/output/ex14_4_complex.out",
+            "share/slepc/examples/src/svd/tutorials/output/ex14_4_complex_alt.out",
+            "share/slepc/examples/src/svd/tutorials/output/ex14_4_complex_alt_2.out",
             "share/slepc/examples/src/svd/tutorials/output/ex15_1.out",
             "share/slepc/examples/src/svd/tutorials/output/ex15_1_scalapack.out",
             "share/slepc/examples/src/svd/tutorials/output/ex15f_1.out",
@@ -1567,16 +1610,17 @@
             "share/slepc/examples/src/svd/tutorials/output/ex48_5_alt_3.out",
             "share/slepc/examples/src/svd/tutorials/output/ex48_5_alt_4.out",
             "share/slepc/examples/src/svd/tutorials/output/ex48_5_alt_5.out",
-            "share/slepc/examples/src/svd/tutorials/output/ex48_5_alt_6.out",
             "share/slepc/examples/src/svd/tutorials/output/ex48_5_complex.out",
+            "share/slepc/examples/src/svd/tutorials/output/ex48_5_complex_alt.out",
+            "share/slepc/examples/src/svd/tutorials/output/ex48_5_complex_alt_2.out",
             "share/slepc/examples/src/svd/tutorials/output/ex48_6.out",
             "share/slepc/examples/src/svd/tutorials/output/ex51_1.out",
             "share/slepc/examples/src/svd/tutorials/output/ex52_1.out",
             "share/slepc/examples/src/svd/tutorials/output/ex52_2.out",
             "share/slepc/examples/src/svd/tutorials/output/ex52_5.out",
             "share/slepc/examples/src/svd/tutorials/output/ex52_6.out",
-            "share/slepc/examples/src/svd/tutorials/output/ex52_6_alt.out",
             "share/slepc/examples/src/svd/tutorials/output/ex52_6_complex.out",
+            "share/slepc/examples/src/svd/tutorials/output/ex52_6_complex_alt.out",
             "share/slepc/examples/src/svd/tutorials/output/ex53_1.out",
             "share/slepc/examples/src/svd/tutorials/output/ex8_1.out",
             "share/slepc/examples/src/sys/classes/bv/makefile",
@@ -1603,6 +1647,7 @@
             "share/slepc/examples/src/sys/classes/bv/tests/output/test1_1_bv_type-svec.out",
             "share/slepc/examples/src/sys/classes/bv/tests/output/test1_1_bv_type-vecs.out",
             "share/slepc/examples/src/sys/classes/bv/tests/output/test1_1_mat_gpu.out",
+            "share/slepc/examples/src/sys/classes/bv/tests/output/test1_1_mat_kokkos_np2.out",
             "share/slepc/examples/src/sys/classes/bv/tests/output/test1_1_svec_gpu.out",
             "share/slepc/examples/src/sys/classes/bv/tests/output/test1_2_bv_type-contiguous.out",
             "share/slepc/examples/src/sys/classes/bv/tests/output/test1_2_bv_type-mat.out",
@@ -1801,10 +1846,7 @@
             "share/slepc/examples/src/sys/mat/tests/makefile",
             "share/slepc/examples/src/sys/mat/tests/output/test1_1.out",
             "share/slepc/examples/src/sys/mat/tests/output/test1_2.out",
-            "share/slepc/examples/src/sys/mat/tests/output/test2_1.out",
-            "share/slepc/examples/src/sys/mat/tests/output/test2_1_complex.out",
             "share/slepc/examples/src/sys/mat/tests/test1.c",
-            "share/slepc/examples/src/sys/mat/tests/test2.c",
             "share/slepc/examples/src/sys/tests/makefile",
             "share/slepc/examples/src/sys/tests/output/test1_1.out",
             "share/slepc/examples/src/sys/tests/output/test2_1.out",
@@ -1826,7 +1868,7 @@
             "share/slepc/examples/src/sys/vec/tests/output/test1_2.out",
             "share/slepc/examples/src/sys/vec/tests/test1.c"
           ],
-          "installed_size": 15294259
+          "installed_size": 15504560
         }
       }
     }
