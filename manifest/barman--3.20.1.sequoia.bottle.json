@@ -1,0 +1,591 @@
+{
+  "barman": {
+    "formula": {
+      "name": "barman",
+      "pkg_version": "3.20.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/b/barman.rb",
+      "tap_git_path": "Formula/b/barman.rb",
+      "tap_git_revision": "6ab0ff351f72ea0229c28dfa1f0c5981afae9bd0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Backup and Recovery Manager for PostgreSQL",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://www.pgbarman.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-01T21:37:01Z",
+      "tags": {
+        "sequoia": {
+          "filename": "barman-3.20.1.sequoia.bottle.tar.gz",
+          "local_filename": "barman--3.20.1.sequoia.bottle.tar.gz",
+          "sha256": "2212bbf251f97528a02f352025c64213ed115cd233fde0d4f0b004ae959d4a89",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "libexec/bin/barman",
+              "libexec/bin/barman-cloud-backup",
+              "libexec/bin/barman-cloud-backup-delete",
+              "libexec/bin/barman-cloud-backup-keep",
+              "libexec/bin/barman-cloud-backup-list",
+              "libexec/bin/barman-cloud-backup-show",
+              "libexec/bin/barman-cloud-check-wal-archive",
+              "libexec/bin/barman-cloud-restore",
+              "libexec/bin/barman-cloud-wal-archive",
+              "libexec/bin/barman-cloud-wal-restore",
+              "libexec/bin/barman-wal-archive",
+              "libexec/bin/barman-wal-restore",
+              "libexec/pyvenv.cfg"
+            ],
+            "linkage_files": [
+              "libexec/lib/python3.14/site-packages/psycopg2/_psycopg.cpython-314-darwin.so"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790719612,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.5",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "krb5",
+                "version": "1.22.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.22.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpq",
+                "version": "18.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "18.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.14",
+                "version": "3.14.8",
+                "revision": 0,
+                "pkg_version": "3.14.8",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+              "SPDXRef-Package-SPDXRef-readline-8.3.6",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+              "SPDXRef-Package-SPDXRef-xz-5.8.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "name": "openssl@3",
+                "versionInfo": "3.6.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9ed9599d2df434ad6706bb4065ab5cf758030b4d9b461ae96f9677fa7a500a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-barman"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-barman"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-barman"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-barman"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-barman"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-barman"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-barman"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-barman"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-barman-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/barman-cloud-wal-archive",
+            "bin/barman-cloud-backup",
+            "bin/barman-wal-archive",
+            "bin/barman-cloud-backup-delete",
+            "bin/barman-cloud-backup-list",
+            "bin/barman-cloud-check-wal-archive",
+            "bin/barman-cloud-restore",
+            "bin/barman-cloud-backup-keep",
+            "bin/barman-cloud-wal-restore",
+            "bin/barman-cloud-backup-show",
+            "bin/barman",
+            "bin/barman-wal-restore"
+          ],
+          "all_files": [
+            ".bottle/etc/barman.conf",
+            ".brew/barman.rb",
+            "AUTHORS",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.rst",
+            "bin/barman",
+            "bin/barman-cloud-backup",
+            "bin/barman-cloud-backup-delete",
+            "bin/barman-cloud-backup-keep",
+            "bin/barman-cloud-backup-list",
+            "bin/barman-cloud-backup-show",
+            "bin/barman-cloud-check-wal-archive",
+            "bin/barman-cloud-restore",
+            "bin/barman-cloud-wal-archive",
+            "bin/barman-cloud-wal-restore",
+            "bin/barman-wal-archive",
+            "bin/barman-wal-restore",
+            "libexec/.gitignore",
+            "libexec/bin/barman",
+            "libexec/bin/barman-cloud-backup",
+            "libexec/bin/barman-cloud-backup-delete",
+            "libexec/bin/barman-cloud-backup-keep",
+            "libexec/bin/barman-cloud-backup-list",
+            "libexec/bin/barman-cloud-backup-show",
+            "libexec/bin/barman-cloud-check-wal-archive",
+            "libexec/bin/barman-cloud-restore",
+            "libexec/bin/barman-cloud-wal-archive",
+            "libexec/bin/barman-cloud-wal-restore",
+            "libexec/bin/barman-wal-archive",
+            "libexec/bin/barman-wal-restore",
+            "libexec/bin/python",
+            "libexec/bin/python3",
+            "libexec/bin/python3.14",
+            "libexec/bin/\ud835\udf0bthon",
+            "libexec/lib/python3.14/site-packages/barman/__init__.py",
+            "libexec/lib/python3.14/site-packages/barman/annotations.py",
+            "libexec/lib/python3.14/site-packages/barman/backup.py",
+            "libexec/lib/python3.14/site-packages/barman/backup_executor.py",
+            "libexec/lib/python3.14/site-packages/barman/backup_manifest.py",
+            "libexec/lib/python3.14/site-packages/barman/cli.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/__init__.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/cloud_backup.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/cloud_backup_delete.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/cloud_backup_keep.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/cloud_backup_list.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/cloud_backup_show.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/cloud_check_wal_archive.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/cloud_cli.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/cloud_compression.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/cloud_restore.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/cloud_walarchive.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/cloud_walrestore.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/walarchive.py",
+            "libexec/lib/python3.14/site-packages/barman/clients/walrestore.py",
+            "libexec/lib/python3.14/site-packages/barman/cloud.py",
+            "libexec/lib/python3.14/site-packages/barman/cloud_providers/__init__.py",
+            "libexec/lib/python3.14/site-packages/barman/cloud_providers/aws_s3.py",
+            "libexec/lib/python3.14/site-packages/barman/cloud_providers/azure_blob_storage.py",
+            "libexec/lib/python3.14/site-packages/barman/cloud_providers/google_cloud_storage.py",
+            "libexec/lib/python3.14/site-packages/barman/command_wrappers.py",
+            "libexec/lib/python3.14/site-packages/barman/compression.py",
+            "libexec/lib/python3.14/site-packages/barman/config.py",
+            "libexec/lib/python3.14/site-packages/barman/copy_controller.py",
+            "libexec/lib/python3.14/site-packages/barman/diagnose.py",
+            "libexec/lib/python3.14/site-packages/barman/encryption.py",
+            "libexec/lib/python3.14/site-packages/barman/exceptions.py",
+            "libexec/lib/python3.14/site-packages/barman/fs.py",
+            "libexec/lib/python3.14/site-packages/barman/hooks.py",
+            "libexec/lib/python3.14/site-packages/barman/infofile.py",
+            "libexec/lib/python3.14/site-packages/barman/lockfile.py",
+            "libexec/lib/python3.14/site-packages/barman/output.py",
+            "libexec/lib/python3.14/site-packages/barman/postgres.py",
+            "libexec/lib/python3.14/site-packages/barman/postgres_plumbing.py",
+            "libexec/lib/python3.14/site-packages/barman/process.py",
+            "libexec/lib/python3.14/site-packages/barman/recovery_executor.py",
+            "libexec/lib/python3.14/site-packages/barman/remote_status.py",
+            "libexec/lib/python3.14/site-packages/barman/retention_policies.py",
+            "libexec/lib/python3.14/site-packages/barman/server.py",
+            "libexec/lib/python3.14/site-packages/barman/storage/__init__.py",
+            "libexec/lib/python3.14/site-packages/barman/storage/file_manager.py",
+            "libexec/lib/python3.14/site-packages/barman/storage/file_stats.py",
+            "libexec/lib/python3.14/site-packages/barman/storage/local_file_manager.py",
+            "libexec/lib/python3.14/site-packages/barman/utils.py",
+            "libexec/lib/python3.14/site-packages/barman/version.py",
+            "libexec/lib/python3.14/site-packages/barman/wal_archiver.py",
+            "libexec/lib/python3.14/site-packages/barman/xlog.py",
+            "libexec/lib/python3.14/site-packages/barman-3.20.1.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/barman-3.20.1.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/barman-3.20.1.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/barman-3.20.1.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/barman-3.20.1.dist-info/entry_points.txt",
+            "libexec/lib/python3.14/site-packages/barman-3.20.1.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/dateutil/__init__.py",
+            "libexec/lib/python3.14/site-packages/dateutil/_common.py",
+            "libexec/lib/python3.14/site-packages/dateutil/_version.py",
+            "libexec/lib/python3.14/site-packages/dateutil/easter.py",
+            "libexec/lib/python3.14/site-packages/dateutil/parser/__init__.py",
+            "libexec/lib/python3.14/site-packages/dateutil/parser/_parser.py",
+            "libexec/lib/python3.14/site-packages/dateutil/parser/isoparser.py",
+            "libexec/lib/python3.14/site-packages/dateutil/relativedelta.py",
+            "libexec/lib/python3.14/site-packages/dateutil/rrule.py",
+            "libexec/lib/python3.14/site-packages/dateutil/tz/__init__.py",
+            "libexec/lib/python3.14/site-packages/dateutil/tz/_common.py",
+            "libexec/lib/python3.14/site-packages/dateutil/tz/_factories.py",
+            "libexec/lib/python3.14/site-packages/dateutil/tz/tz.py",
+            "libexec/lib/python3.14/site-packages/dateutil/tz/win.py",
+            "libexec/lib/python3.14/site-packages/dateutil/tzwin.py",
+            "libexec/lib/python3.14/site-packages/dateutil/utils.py",
+            "libexec/lib/python3.14/site-packages/dateutil/zoneinfo/__init__.py",
+            "libexec/lib/python3.14/site-packages/dateutil/zoneinfo/dateutil-zoneinfo.tar.gz",
+            "libexec/lib/python3.14/site-packages/dateutil/zoneinfo/rebuild.py",
+            "libexec/lib/python3.14/site-packages/psycopg2/__init__.py",
+            "libexec/lib/python3.14/site-packages/psycopg2/_ipaddress.py",
+            "libexec/lib/python3.14/site-packages/psycopg2/_json.py",
+            "libexec/lib/python3.14/site-packages/psycopg2/_psycopg.cpython-314-darwin.so",
+            "libexec/lib/python3.14/site-packages/psycopg2/_range.py",
+            "libexec/lib/python3.14/site-packages/psycopg2/errorcodes.py",
+            "libexec/lib/python3.14/site-packages/psycopg2/errors.py",
+            "libexec/lib/python3.14/site-packages/psycopg2/extensions.py",
+            "libexec/lib/python3.14/site-packages/psycopg2/extras.py",
+            "libexec/lib/python3.14/site-packages/psycopg2/pool.py",
+            "libexec/lib/python3.14/site-packages/psycopg2/sql.py",
+            "libexec/lib/python3.14/site-packages/psycopg2/tz.py",
+            "libexec/lib/python3.14/site-packages/psycopg2-2.9.13.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/psycopg2-2.9.13.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/psycopg2-2.9.13.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/psycopg2-2.9.13.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/psycopg2-2.9.13.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/psycopg2-2.9.13.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/python_dateutil-2.9.0.post0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/python_dateutil-2.9.0.post0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/python_dateutil-2.9.0.post0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/python_dateutil-2.9.0.post0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/python_dateutil-2.9.0.post0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/python_dateutil-2.9.0.post0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/python_dateutil-2.9.0.post0.dist-info/zip-safe",
+            "libexec/lib/python3.14/site-packages/six-1.17.0.dist-info/INSTALLER",
+            "libexec/lib/python3.14/site-packages/six-1.17.0.dist-info/METADATA",
+            "libexec/lib/python3.14/site-packages/six-1.17.0.dist-info/REQUESTED",
+            "libexec/lib/python3.14/site-packages/six-1.17.0.dist-info/WHEEL",
+            "libexec/lib/python3.14/site-packages/six-1.17.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.14/site-packages/six-1.17.0.dist-info/top_level.txt",
+            "libexec/lib/python3.14/site-packages/six.py",
+            "libexec/pyvenv.cfg",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 2972323
+        }
+      }
+    }
+  }
+}

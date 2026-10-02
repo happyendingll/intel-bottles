@@ -1,0 +1,197 @@
+{
+  "libmsquic": {
+    "formula": {
+      "name": "libmsquic",
+      "pkg_version": "2.6.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libmsquic.rb",
+      "tap_git_path": "Formula/lib/libmsquic.rb",
+      "tap_git_revision": "6ab0ff351f72ea0229c28dfa1f0c5981afae9bd0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Cross-platform, C implementation of the IETF QUIC protocol",
+      "license": "MIT",
+      "homepage": "https://github.com/microsoft/msquic"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-02T02:12:49Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libmsquic-2.6.2.sequoia.bottle.tar.gz",
+          "local_filename": "libmsquic--2.6.2.sequoia.bottle.tar.gz",
+          "sha256": "7be599d48c768c46ba0ad202d300160e58e51c730135261ff1f8475019fc9095",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libmsquic.2.6.2.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790788877,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.5",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "source": {
+              "scm_revision": "819ab74f851ee168504cbc392ec32e7bed1d82e9"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "name": "openssl@3",
+                "versionInfo": "3.6.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9ed9599d2df434ad6706bb4065ab5cf758030b4d9b461ae96f9677fa7a500a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libmsquic"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libmsquic"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libmsquic-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libmsquic.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/msquic.h",
+            "include/msquic.hpp",
+            "include/msquic_fuzz.h",
+            "include/msquic_posix.h",
+            "include/msquic_winkernel.h",
+            "include/msquic_winuser.h",
+            "include/msquichelper.h",
+            "include/msquicp.h",
+            "include/quic_cert.h",
+            "include/quic_crypt.h",
+            "include/quic_datapath.h",
+            "include/quic_driver_helpers.h",
+            "include/quic_hashtable.h",
+            "include/quic_pcp.h",
+            "include/quic_platform.h",
+            "include/quic_platform_posix.h",
+            "include/quic_platform_winkernel.h",
+            "include/quic_platform_winuser.h",
+            "include/quic_sal_stub.h",
+            "include/quic_storage.h",
+            "include/quic_tls.h",
+            "include/quic_toeplitz.h",
+            "include/quic_trace.h",
+            "include/quic_trace_manifested_etw.h",
+            "include/quic_var_int.h",
+            "include/quic_versions.h",
+            "lib/libmsquic.2.6.2.dylib",
+            "lib/libmsquic.2.dylib",
+            "lib/libmsquic.dylib",
+            "lib/libmsquic_platform.a",
+            "sbom.spdx.json",
+            "share/msquic/msquic-config.cmake",
+            "share/msquic/msquic-release.cmake",
+            "share/msquic/msquic.cmake"
+          ],
+          "installed_size": 1367590
+        }
+      }
+    }
+  }
+}

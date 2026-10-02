@@ -1,0 +1,130 @@
+{
+  "newsraft": {
+    "formula": {
+      "name": "newsraft",
+      "pkg_version": "0.38",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/n/newsraft.rb",
+      "tap_git_path": "Formula/n/newsraft.rb",
+      "tap_git_revision": "6ab0ff351f72ea0229c28dfa1f0c5981afae9bd0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Terminal feed reader",
+      "license": "ISC",
+      "homepage": "https://codeberg.org/newsraft/newsraft"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-02T02:37:30Z",
+      "tags": {
+        "sequoia": {
+          "filename": "newsraft-0.38.sequoia.bottle.tar.gz",
+          "local_filename": "newsraft--0.38.sequoia.bottle.tar.gz",
+          "sha256": "42af9bc884f548f87209007b742322aeea1c412f4ee5c11ff2e229ea8d811ad9",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/newsraft"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790846797,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gumbo-parser",
+                "version": "0.14.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.14.1",
+                "declared_directly": true,
+                "compatibility_version": 2
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gumbo-parser-0.14.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gumbo-parser-0.14.1",
+                "name": "gumbo-parser",
+                "versionInfo": "0.14.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gumbo-parser-0.14.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "97186a217797ca86145776a6dacf537a90a857edf24ead55ff89bc4ad46193da"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gumbo-parser@0.14.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gumbo-parser-0.14.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-newsraft"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-newsraft-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/newsraft"
+          ],
+          "all_files": [
+            ".brew/newsraft.rb",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/newsraft",
+            "sbom.spdx.json",
+            "share/applications/newsraft.desktop",
+            "share/icons/hicolor/scalable/apps/newsraft.svg",
+            "share/man/man1/newsraft.1",
+            "share/newsraft/examples/config",
+            "share/newsraft/examples/feeds"
+          ],
+          "installed_size": 298705
+        }
+      }
+    }
+  }
+}
