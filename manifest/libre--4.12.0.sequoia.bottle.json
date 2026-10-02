@@ -1,0 +1,256 @@
+{
+  "libre": {
+    "formula": {
+      "name": "libre",
+      "pkg_version": "4.12.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libre.rb",
+      "tap_git_path": "Formula/lib/libre.rb",
+      "tap_git_revision": "dbf63e5acddfa4d45cb58e9c269ecf118dd38c7c",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Toolkit library for asynchronous network I/O with protocol stacks",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/baresip/re"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-02T11:48:23Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libre-4.12.0.sequoia.bottle.tar.gz",
+          "local_filename": "libre--4.12.0.sequoia.bottle.tar.gz",
+          "sha256": "da29f4af519a840fc90341e6cf10797617c78b0f25d1ba1a8f3aacda932aed87",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/libre.pc"
+            ],
+            "linkage_files": [
+              "lib/libre.45.12.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790790028,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@4-4.0.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@4-4.0.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libre"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@4-4.0.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libre"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libre-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libre.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/re/re.h",
+            "include/re/re_aes.h",
+            "include/re/re_async.h",
+            "include/re/re_atomic.h",
+            "include/re/re_av1.h",
+            "include/re/re_base64.h",
+            "include/re/re_bfcp.h",
+            "include/re/re_btrace.h",
+            "include/re/re_conf.h",
+            "include/re/re_convert.h",
+            "include/re/re_crc32.h",
+            "include/re/re_dbg.h",
+            "include/re/re_dd.h",
+            "include/re/re_dns.h",
+            "include/re/re_fmt.h",
+            "include/re/re_h264.h",
+            "include/re/re_h265.h",
+            "include/re/re_hash.h",
+            "include/re/re_hmac.h",
+            "include/re/re_http.h",
+            "include/re/re_httpauth.h",
+            "include/re/re_ice.h",
+            "include/re/re_json.h",
+            "include/re/re_list.h",
+            "include/re/re_main.h",
+            "include/re/re_mbuf.h",
+            "include/re/re_md5.h",
+            "include/re/re_mem.h",
+            "include/re/re_mod.h",
+            "include/re/re_mqueue.h",
+            "include/re/re_msg.h",
+            "include/re/re_net.h",
+            "include/re/re_odict.h",
+            "include/re/re_pcp.h",
+            "include/re/re_rtmp.h",
+            "include/re/re_rtp.h",
+            "include/re/re_rtpext.h",
+            "include/re/re_sa.h",
+            "include/re/re_sdp.h",
+            "include/re/re_sha.h",
+            "include/re/re_shim.h",
+            "include/re/re_sip.h",
+            "include/re/re_sipevent.h",
+            "include/re/re_sipreg.h",
+            "include/re/re_sipsess.h",
+            "include/re/re_srtp.h",
+            "include/re/re_stun.h",
+            "include/re/re_sys.h",
+            "include/re/re_tcp.h",
+            "include/re/re_telev.h",
+            "include/re/re_thread.h",
+            "include/re/re_tls.h",
+            "include/re/re_tmr.h",
+            "include/re/re_trace.h",
+            "include/re/re_trice.h",
+            "include/re/re_turn.h",
+            "include/re/re_types.h",
+            "include/re/re_udp.h",
+            "include/re/re_unixsock.h",
+            "include/re/re_uri.h",
+            "include/re/re_websock.h",
+            "include/re/rem.h",
+            "include/re/rem_aac.h",
+            "include/re/rem_au.h",
+            "include/re/rem_aubuf.h",
+            "include/re/rem_auconv.h",
+            "include/re/rem_audio.h",
+            "include/re/rem_aufile.h",
+            "include/re/rem_auframe.h",
+            "include/re/rem_aulevel.h",
+            "include/re/rem_aumix.h",
+            "include/re/rem_auresamp.h",
+            "include/re/rem_autone.h",
+            "include/re/rem_avc.h",
+            "include/re/rem_dsp.h",
+            "include/re/rem_dtmf.h",
+            "include/re/rem_fir.h",
+            "include/re/rem_flv.h",
+            "include/re/rem_g711.h",
+            "include/re/rem_goertzel.h",
+            "include/re/rem_vid.h",
+            "include/re/rem_vidconv.h",
+            "include/re/rem_video.h",
+            "include/re/rem_vidmix.h",
+            "lib/cmake/libre/libre-config.cmake",
+            "lib/cmake/libre/libre-targets-release.cmake",
+            "lib/cmake/libre/libre-targets.cmake",
+            "lib/cmake/re/re-config.cmake",
+            "lib/libre.45.12.0.dylib",
+            "lib/libre.45.dylib",
+            "lib/libre.a",
+            "lib/libre.dylib",
+            "lib/pkgconfig/libre.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 2090308
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "trivy": {
+    "formula": {
+      "name": "trivy",
+      "pkg_version": "0.75.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/trivy.rb",
+      "tap_git_path": "Formula/t/trivy.rb",
+      "tap_git_revision": "dbf63e5acddfa4d45cb58e9c269ecf118dd38c7c",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Vulnerability scanner for container images, file systems, and Git repos",
+      "license": "Apache-2.0",
+      "homepage": "https://trivy.dev/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-02T12:43:01Z",
+      "tags": {
+        "sequoia": {
+          "filename": "trivy-0.75.0.sequoia.bottle.tar.gz",
+          "local_filename": "trivy--0.75.0.sequoia.bottle.tar.gz",
+          "sha256": "27f6ff02a2d134eb30085e3e75f5a1bdf3ce51202f4f719e9c3aeacf5c68a603",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790857739,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-trivy-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/trivy"
+          ],
+          "all_files": [
+            ".brew/trivy.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NOTICE",
+            "README.md",
+            "bin/trivy",
+            "etc/bash_completion.d/trivy",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/trivy.fish",
+            "share/pwsh/completions/_trivy.ps1",
+            "share/trivy/templates/asff.tpl",
+            "share/trivy/templates/gitlab-codequality.tpl",
+            "share/trivy/templates/gitlab.tpl",
+            "share/trivy/templates/html.tpl",
+            "share/trivy/templates/junit.tpl",
+            "share/zsh/site-functions/_trivy"
+          ],
+          "installed_size": 224910572
+        }
+      }
+    }
+  }
+}

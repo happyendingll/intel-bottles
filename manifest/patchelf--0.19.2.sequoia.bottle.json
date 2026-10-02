@@ -1,0 +1,88 @@
+{
+  "patchelf": {
+    "formula": {
+      "name": "patchelf",
+      "pkg_version": "0.19.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/patchelf.rb",
+      "tap_git_path": "Formula/p/patchelf.rb",
+      "tap_git_revision": "dbf63e5acddfa4d45cb58e9c269ecf118dd38c7c",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Modify dynamic ELF executables",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://github.com/NixOS/patchelf"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-02T12:04:04Z",
+      "tags": {
+        "sequoia": {
+          "filename": "patchelf-0.19.2.sequoia.bottle.tar.gz",
+          "local_filename": "patchelf--0.19.2.sequoia.bottle.tar.gz",
+          "sha256": "f6733ea47d3d15b35e13d829442b75e3c1269a1560e9b10f9c800aac9fc9150a",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790858009,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-patchelf-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/patchelf"
+          ],
+          "all_files": [
+            ".brew/patchelf.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/patchelf",
+            "sbom.spdx.json",
+            "share/doc/patchelf/README.md",
+            "share/man/man1/patchelf.1",
+            "share/zsh/site-functions/_patchelf"
+          ],
+          "installed_size": 376948
+        }
+      }
+    }
+  }
+}
