@@ -1,0 +1,132 @@
+{
+  "libtatsu": {
+    "formula": {
+      "name": "libtatsu",
+      "pkg_version": "1.0.5_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libtatsu.rb",
+      "tap_git_path": "Formula/lib/libtatsu.rb",
+      "tap_git_revision": "0914cfba46ebe470daababcd1bdd6f6f549759eb",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Library handling the communication with Apple's Tatsu Signing Server (TSS)",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://libimobiledevice.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-03T07:24:55Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libtatsu-1.0.5_1.sequoia.bottle.tar.gz",
+          "local_filename": "libtatsu--1.0.5_1.sequoia.bottle.tar.gz",
+          "sha256": "78b86a0044a902914cc3ae766710ea5570495054db3281ab62ab2813a9208236",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "lib/pkgconfig/libtatsu-1.0.pc"
+            ],
+            "linkage_files": [
+              "lib/libtatsu.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1749034400,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libplist",
+                "version": "2.8.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.8.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-libplist-2.8.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libplist-2.8.0",
+                "name": "libplist",
+                "versionInfo": "2.8.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3/libplist-2.8.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fd91262bd5685d7963c7879f02f388356d6569c12ee98a5370c9b02ca526a103"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libplist@2.8.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libplist-2.8.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libtatsu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libtatsu-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libtatsu.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "include/libtatsu/tatsu.h",
+            "include/libtatsu/tss.h",
+            "lib/libtatsu.0.dylib",
+            "lib/libtatsu.a",
+            "lib/libtatsu.dylib",
+            "lib/pkgconfig/libtatsu-1.0.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 129886
+        }
+      }
+    }
+  }
+}
