@@ -2,31 +2,31 @@
   "rust-wasm": {
     "formula": {
       "name": "rust-wasm",
-      "pkg_version": "1.98.1",
+      "pkg_version": "1.99.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rust-wasm.rb",
       "tap_git_path": "Formula/r/rust-wasm.rb",
-      "tap_git_revision": "79057e15b38d7494db937d7c672e9eb07216cd18",
+      "tap_git_revision": "d00c4225fe130cb258379cc1b3e222d0778826f9",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Rust standard library and sysroot for WebAssembly targets",
       "license": "Apache-2.0 OR MIT",
       "homepage": "https://www.rust-lang.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-09-19T11:21:43Z",
+      "date": "2026-10-03T05:06:38Z",
       "tags": {
         "sequoia": {
-          "filename": "rust-wasm-1.98.1.sequoia.bottle.tar.gz",
-          "local_filename": "rust-wasm--1.98.1.sequoia.bottle.tar.gz",
-          "sha256": "4794b1dd65971f99f420fedb41f81d40bdbae4cfd9950c922adbcf5d19a64911",
+          "filename": "rust-wasm-1.99.0.sequoia.bottle.tar.gz",
+          "local_filename": "rust-wasm--1.99.0.sequoia.bottle.tar.gz",
+          "sha256": "4016b0ebec4770fc39839179a575f384167356ba3cb26141a2c7860136d74a5d",
           "tab": {
-            "homebrew_version": "7.0.4",
+            "homebrew_version": "7.0.7",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1788245763,
+            "source_modified_time": 1790619855,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -56,45 +56,56 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "llvm@22",
-                "version": "22.1.8",
+                "full_name": "z3",
+                "version": "5.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "22.1.8",
-                "declared_directly": false
+                "pkg_version": "5.1.0",
+                "declared_directly": false,
+                "compatibility_version": 4
               },
               {
-                "full_name": "lld@22",
-                "version": "22.1.8",
+                "full_name": "llvm",
+                "version": "23.1.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "22.1.8",
-                "declared_directly": true
+                "pkg_version": "23.1.2",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "lld",
+                "version": "23.1.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.2",
+                "declared_directly": true,
+                "compatibility_version": 2
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-08-13",
+                "version": "2026-09-25",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2026-08-13",
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "openssl@3",
-                "version": "3.6.4",
+                "version": "3.6.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
+                "pkg_version": "3.6.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "libssh2",
                 "version": "1.11.1",
-                "revision": 5,
+                "revision": 6,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.11.1_5",
+                "pkg_version": "1.11.1_6",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -145,10 +156,10 @@
               },
               {
                 "full_name": "rust",
-                "version": "1.98.1",
+                "version": "1.99.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.98.1",
+                "pkg_version": "1.99.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -185,14 +196,15 @@
               "SPDXRef-Package-SPDXRef-lz4-1.10.0",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
               "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-llvm@22-22.1.8",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-libssh2-1.11.1_5",
+              "SPDXRef-Package-SPDXRef-llvm-23.1.2",
+              "SPDXRef-Package-SPDXRef-lld-23.1.2",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+              "SPDXRef-Package-SPDXRef-libssh2-1.11.1_6",
               "SPDXRef-Package-SPDXRef-pkgconf-3.0.7",
               "SPDXRef-Package-SPDXRef-readline-8.3.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
-              "SPDXRef-Package-SPDXRef-rust-1.98.1",
+              "SPDXRef-Package-SPDXRef-rust-1.99.0",
               "SPDXRef-Package-SPDXRef-wasi-libc-34",
               "SPDXRef-Compiler"
             ],
@@ -267,93 +279,116 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-llvm@22-22.1.8",
-                "name": "llvm@22",
-                "versionInfo": "22.1.8",
+                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.1.2",
+                "name": "llvm",
+                "versionInfo": "23.1.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/llvm%4022-22.1.8.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/llvm-23.1.2.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d5c9576f00064855c612b13fa743c394a3b56f25595020f90b8c790d7e6b064a"
+                    "checksumValue": "fe936f60388d6ec767e8b8ad79f24bf018808d49c2a0bc19339e26f19c348b19"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/llvm%4022@22.1.8",
+                    "referenceLocator": "pkg:brew/llvm@23.1.2",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lld-23.1.2",
+                "name": "lld",
+                "versionInfo": "23.1.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lld-23.1.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2ab6e1d823b4db23746515fea783dabe7a8053392acdd7ae9d1d2d91694d49c0"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lld@23.1.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "name": "ca-certificates",
-                "versionInfo": "2026-08-13",
+                "versionInfo": "2026-09-25",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
                 "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "versionInfo": "3.6.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                    "checksumValue": "9ed9599d2df434ad6706bb4065ab5cf758030b4d9b461ae96f9677fa7a500a0f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libssh2-1.11.1_5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libssh2-1.11.1_6",
                 "name": "libssh2",
-                "versionInfo": "1.11.1_5",
+                "versionInfo": "1.11.1_6",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libssh2-1.11.1_5.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libssh2-1.11.1_6.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "ef446a2a7c4f8c35a4aafd26dc173b6b4e18bd77e8a86b985b1b54eaa1d949c2"
+                    "checksumValue": "fec5363922ccb2870606a532958f37cd4d477dba3077cbfbd4528cfbaa577f2c"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libssh2@1.11.1_5",
+                    "referenceLocator": "pkg:brew/libssh2@1.11.1_6",
                     "referenceType": "purl"
                   }
                 ]
@@ -428,24 +463,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-rust-1.98.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-rust-1.99.0",
                 "name": "rust",
-                "versionInfo": "1.98.1",
+                "versionInfo": "1.99.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/rust-1.98.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/rust-1.99.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d8ebdb229d674045543eea3505c5b12ffa64623ea53c6e9ee1869b6b1c5c5056"
+                    "checksumValue": "e201c7ee7f2f2ae55da4056eac0e065ddb86d6a7001c39aa619f503c008d8b0c"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/rust@1.98.1",
+                    "referenceLocator": "pkg:brew/rust@1.99.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -503,22 +538,27 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm@22-22.1.8",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.1.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lld-23.1.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libssh2-1.11.1_5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libssh2-1.11.1_6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
               },
@@ -538,7 +578,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-rust-1.98.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-rust-1.99.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-rust-wasm"
               },
@@ -562,79 +602,79 @@
             "LICENSE-APACHE",
             "LICENSE-MIT",
             "README.md",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libaddr2line-5868ea3a112c5422.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libadler2-4006a945200c95e0.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/liballoc-f2e092141ff72243.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libcfg_if-b18da20d1757eacc.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libcompiler_builtins-0e43557cef685895.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libcore-057e8721cf289283.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libdlmalloc-33f1872edb559e12.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libgimli-2e7bcf5becb794c4.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libhashbrown-96c3448270e99fbf.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/liblibc-b6afc9a5456a11a4.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libmemchr-b1d8835831a276bd.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libminiz_oxide-c2171d8c5dc74a5a.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libobject-d22cc65bfd49d1da.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libpanic_abort-108f0fb61cc6a878.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libpanic_unwind-fe49b0044aaccbfb.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libproc_macro-4f5a82ba886faa4a.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/librustc_demangle-21c8384f54f5d130.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/librustc_literal_escaper-7871c71102b961c4.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/librustc_std_workspace_alloc-dde0c9ac7aa61ff0.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/librustc_std_workspace_core-cfd53fc039b9b794.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libstd-10735fbc730abdfa.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libstd_detect-63b842b6e38fab89.rlib",
-            "lib/rustlib/wasm32-unknown-unknown/lib/libunwind-4d88ebfc3cc018ad.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libaddr2line-2c9b5fe6d27410cc.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libadler2-d58c1f4811079cd3.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/liballoc-dc4c5c87280cf83b.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libcfg_if-af7d190e3942418d.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libcompiler_builtins-a2d388d44a65f1d2.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libcore-3679f45dca07efb6.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libgimli-66127d484f91e4ae.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libhashbrown-70e85f5ab71a7050.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/liblibc-f9837b3282479cbb.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libmemchr-04c26df82ddf9e4c.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libminiz_oxide-71c4e6be93f4c0fe.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libobject-1c85e2e9fdd46c40.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libpanic_abort-7150dda8f4f50eca.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libpanic_unwind-b7d5490fd451fb49.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libproc_macro-f430134014f708c9.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/librustc_demangle-300321505bed06b8.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/librustc_literal_escaper-905dd44bdd3bc206.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/librustc_std_workspace_alloc-140c4f8bb97e93b2.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/librustc_std_workspace_core-a96d32afcf386d94.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libstd-87634acb1ce38a15.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libstd_detect-7fabe4791dd34332.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libunwind-f2ede39a13798914.rlib",
-            "lib/rustlib/wasm32-wasip1/lib/libwasip1-5f2a308ef173e0a0.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libaddr2line-d7ee8011d94a6469.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libadler2-b66a523bba38c936.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/liballoc-660e7d0f62bd9621.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libcfg_if-7f63879193710075.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libcompiler_builtins-49b5c6e71f97d595.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libcore-6cc803e31d8c67dc.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libdlmalloc-a83054b1a99c2ebd.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libgimli-a67c33f20e6c47d0.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libhashbrown-ed85e037543550a6.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/liblibc-4c6cc121a968f2c0.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libmemchr-33bf06ca47b1badd.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libminiz_oxide-10d07c52c5d104ef.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libobject-6da06eab4be122d8.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libpanic_abort-6d897e47d94b4f47.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libpanic_unwind-3a697f98ad951a67.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libproc_macro-56d53940f7c3f106.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/librustc_demangle-37e84728b24d4d03.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/librustc_literal_escaper-e69c92e7440ca548.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/librustc_std_workspace_alloc-85b26cae0f651674.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/librustc_std_workspace_core-e04dd981a48c31fd.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libstd-34d3a05a9ad72cc6.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libstd_detect-96e93c5b8ac38b16.rlib",
+            "lib/rustlib/wasm32-unknown-unknown/lib/libunwind-1f148b1ca8022da3.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libaddr2line-8ff6b13671847cae.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libadler2-c0086013ba3d8abd.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/liballoc-86bf907ecc88174b.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libcfg_if-28d0c66e5f080e33.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libcompiler_builtins-8b5b769833ade9b0.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libcore-8ca39ad7297253a8.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libgimli-459eb37176b3f735.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libhashbrown-0500e787326dc2c8.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/liblibc-b34f837b99e501ce.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libmemchr-e94c42439ae92ada.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libminiz_oxide-eced26027c65766a.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libobject-b34dfc038758822d.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libpanic_abort-bc518435fdb023df.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libpanic_unwind-d0e03d2d8d336202.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libproc_macro-cc76b92113bb4fde.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/librustc_demangle-c1540a8e722c42c8.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/librustc_literal_escaper-12d98ff537efb78e.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/librustc_std_workspace_alloc-94a1b37e15cf823f.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/librustc_std_workspace_core-39191e151de485e5.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libstd-b6c6d7c78e267513.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libstd_detect-bf30fa7262cd980c.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libunwind-f974e66825f6d23d.rlib",
+            "lib/rustlib/wasm32-wasip1/lib/libwasip1-027bdb647fb1a104.rlib",
             "lib/rustlib/wasm32-wasip1/lib/self-contained/crt1-command.o",
             "lib/rustlib/wasm32-wasip1/lib/self-contained/crt1-reactor.o",
             "lib/rustlib/wasm32-wasip1/lib/self-contained/libc.a",
-            "lib/rustlib/wasm32-wasip2/lib/libaddr2line-1d6f94439d671bba.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libadler2-279f6cbdd564f10e.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/liballoc-bebea69c571976d4.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libcfg_if-7d1040c15604643b.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libcompiler_builtins-e506107d3a1c9fcf.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libcore-ad260c61344deb30.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libgimli-9c55b129449b3eb0.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libhashbrown-174a60a616d36fc3.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/liblibc-1f544fdf63e60114.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libmemchr-1abff5141792e84c.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libminiz_oxide-54525c0c068b2404.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libobject-e86a5e1449302585.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libpanic_abort-bef6bd6e7e5b6801.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libpanic_unwind-aceba2d49a01663b.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libproc_macro-638f896a0941658d.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/librustc_demangle-bab60ad3bfdd6f98.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/librustc_literal_escaper-6357e664843588ae.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/librustc_std_workspace_alloc-eb9b333dfb129697.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/librustc_std_workspace_core-e39d6663e05f182b.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libstd-298dd0cd86eb50fd.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libstd_detect-8d68bc2845620b73.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libunwind-eb00a14c354a30aa.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libwasip2-783c71ef30ed6f6a.rlib",
-            "lib/rustlib/wasm32-wasip2/lib/libwit_bindgen-527032d0fae524c3.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libaddr2line-160c517bb44fd9bc.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libadler2-2c1566b188e20846.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/liballoc-fa2106c16b50c3dc.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libcfg_if-809b74c52f25cb65.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libcompiler_builtins-76c28a4dceb640fa.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libcore-1d4a4702e49d0a7b.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libgimli-f4da82fdbc71d248.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libhashbrown-59dbf09c2dfb35c4.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/liblibc-6ed41a74eb386e38.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libmemchr-6342c71f4206a10d.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libminiz_oxide-a3e0c97f895ebea7.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libobject-a998dc7550c699a6.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libpanic_abort-021d0dd55527885f.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libpanic_unwind-e17516d424b25ad8.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libproc_macro-8d5f7af3bdc21463.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/librustc_demangle-b0a51ae298c5b2df.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/librustc_literal_escaper-0379d8d6831b98e2.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/librustc_std_workspace_alloc-3ebd4838db19a0c3.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/librustc_std_workspace_core-94bb95db8dbab093.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libstd-b18ae502d3c6aae5.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libstd_detect-0be61366e71f2126.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libunwind-5dad0a71a7437551.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libwasip2-2bbe724c3e154071.rlib",
+            "lib/rustlib/wasm32-wasip2/lib/libwit_bindgen-857e72d00566e048.rlib",
             "lib/rustlib/wasm32-wasip2/lib/self-contained/crt1-command.o",
             "lib/rustlib/wasm32-wasip2/lib/self-contained/crt1-reactor.o",
             "lib/rustlib/wasm32-wasip2/lib/self-contained/libc.a",
@@ -642,7 +682,7 @@
             "sbom.spdx.json",
             "share/rust-wasm/cargo-config.toml"
           ],
-          "installed_size": 252592498
+          "installed_size": 264337351
         }
       }
     }
