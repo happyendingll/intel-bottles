@@ -1,0 +1,153 @@
+{
+  "ipv6calc": {
+    "formula": {
+      "name": "ipv6calc",
+      "pkg_version": "4.4.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/i/ipv6calc.rb",
+      "tap_git_path": "Formula/i/ipv6calc.rb",
+      "tap_git_revision": "5e3230090914bb958e2b10b0587a58a7026c77b4",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Small utility for manipulating IPv6 addresses",
+      "license": "GPL-2.0-only",
+      "homepage": "https://www.deepspace6.net/projects/ipv6calc.html"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-04T11:53:38Z",
+      "tags": {
+        "sequoia": {
+          "filename": "ipv6calc-4.4.1.sequoia.bottle.tar.gz",
+          "local_filename": "ipv6calc--4.4.1.sequoia.bottle.tar.gz",
+          "sha256": "dafa893c099e146530962582399294806d1c19abfbb8d1a2d805b832b6cbe43e",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "share/ipv6calc/tools/ipv6calc-create-registry-list-ipv4.pl",
+              "share/ipv6calc/tools/ipv6calc-create-registry-list-ipv6.pl"
+            ],
+            "linkage_files": [
+              "bin/ipv6calc"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791017480,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "name": "openssl@3",
+                "versionInfo": "3.6.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9ed9599d2df434ad6706bb4065ab5cf758030b4d9b461ae96f9677fa7a500a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ipv6calc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-ipv6calc-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/ipv6logstats",
+            "bin/ipv6logconv",
+            "bin/ipv6loganon",
+            "bin/ipv6calc"
+          ],
+          "all_files": [
+            ".brew/ipv6calc.rb",
+            "CHANGES",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README",
+            "TODO",
+            "bin/ipv6calc",
+            "bin/ipv6loganon",
+            "bin/ipv6logconv",
+            "bin/ipv6logstats",
+            "sbom.spdx.json",
+            "share/ipv6calc/tools/DBIP-update.sh",
+            "share/ipv6calc/tools/GeoIP-update.sh",
+            "share/ipv6calc/tools/IP2Location-update.sh",
+            "share/ipv6calc/tools/ipv6calc-create-registry-list-ipv4.pl",
+            "share/ipv6calc/tools/ipv6calc-create-registry-list-ipv6.pl",
+            "share/ipv6calc/tools/ipv6calc-create-update-ipset.sh",
+            "share/ipv6calc/tools/ipv6calc-db-update-support.sh",
+            "share/ipv6calc/tools/ipv6calc-db-update.sh",
+            "share/ipv6calc/tools/ipv6calc-registries-check-run-create.sh",
+            "share/ipv6calc/tools/ipv6calc-update-registries.sh",
+            "share/man/man8/ipv6calc.8",
+            "share/man/man8/ipv6loganon.8",
+            "share/man/man8/ipv6logconv.8",
+            "share/man/man8/ipv6logstats.8"
+          ],
+          "installed_size": 14647775
+        }
+      }
+    }
+  }
+}
