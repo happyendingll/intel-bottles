@@ -1,51 +1,51 @@
 {
-  "python-tk@3.13": {
+  "python-tk@3.14": {
     "formula": {
-      "name": "python-tk@3.13",
-      "pkg_version": "3.13.16",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/python-tk@3.13.rb",
-      "tap_git_path": "Formula/p/python-tk@3.13.rb",
-      "tap_git_revision": "6ab0ff351f72ea0229c28dfa1f0c5981afae9bd0",
+      "name": "python-tk@3.14",
+      "pkg_version": "3.14.8_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/python-tk@3.14.rb",
+      "tap_git_path": "Formula/p/python-tk@3.14.rb",
+      "tap_git_revision": "e8ca1b1f890aea400b40c7e76973d2d224d37dcf",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Python interface to Tcl/Tk",
       "license": "Python-2.0",
       "homepage": "https://www.python.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-02T04:32:16Z",
+      "date": "2026-10-04T09:46:57Z",
       "tags": {
         "sequoia": {
-          "filename": "python-tk%403.13-3.13.16.sequoia.bottle.tar.gz",
-          "local_filename": "python-tk@3.13--3.13.16.sequoia.bottle.tar.gz",
-          "sha256": "b567e1046cc01cfd7c33542e89a4d5e689cec83f04739f5ce2ab9568aef31048",
+          "filename": "python-tk%403.14-3.14.8_1.sequoia.bottle.tar.gz",
+          "local_filename": "python-tk@3.14--3.14.8_1.sequoia.bottle.tar.gz",
+          "sha256": "45cb86638bdc9168046e1798e09490791b81fc7ce3fe9aa7ef39aa2b84387741",
           "tab": {
             "homebrew_version": "7.0.7",
             "changed_files": [],
             "linkage_files": [
-              "libexec/_tkinter.cpython-313-darwin.so"
+              "libexec/_tkinter.cpython-314-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790794640,
+            "source_modified_time": 1790790909,
             "compiler": "clang",
             "runtime_dependencies": [
-              {
-                "full_name": "mpdecimal",
-                "version": "4.0.1",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "4.0.1",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
               {
                 "full_name": "ca-certificates",
                 "version": "2026-09-25",
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -86,10 +86,28 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "python@3.13",
-                "version": "3.13.16",
+                "full_name": "lz4",
+                "version": "1.10.0",
                 "revision": 0,
-                "pkg_version": "3.13.16",
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.14",
+                "version": "3.14.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.14.8",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -104,12 +122,12 @@
               },
               {
                 "full_name": "tcl-tk",
-                "version": "9.0.4",
-                "revision": 1,
+                "version": "9.1.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.0.4_1",
+                "pkg_version": "9.1.0",
                 "declared_directly": true,
-                "compatibility_version": 1
+                "compatibility_version": 2
               }
             ],
             "arch": "x86_64",
@@ -125,39 +143,19 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
               "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
               "SPDXRef-Package-SPDXRef-readline-8.3.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
               "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-tcl-tk-9.0.4_1",
+              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+              "SPDXRef-Package-SPDXRef-python@3.14-3.14.8",
+              "SPDXRef-Package-SPDXRef-tcl-tk-9.1.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
-                "name": "mpdecimal",
-                "versionInfo": "4.0.1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "name": "ca-certificates",
@@ -177,6 +175,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -274,24 +295,93 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-tcl-tk-9.0.4_1",
-                "name": "tcl-tk",
-                "versionInfo": "9.0.4_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "TCL",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/tcl-tk-9.0.4_1.sequoia.bottle.tar.gz",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "1fd256e1858ee5bc1edcd3d62f1643717b51f555d443ad77f888165bda82e390"
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/tcl-tk@9.0.4_1",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.8",
+                "name": "python@3.14",
+                "versionInfo": "3.14.8",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/python%403.14-3.14.8.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5f7cf5e3903c4cc6a0d297389be06e649c77b9f09c463526641db8d2b13ca255"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.8",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-tcl-tk-9.1.0",
+                "name": "tcl-tk",
+                "versionInfo": "9.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "TCL",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/tcl-tk-9.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9ff52bf189aa6b8f874e411d44b41dd954361bab4f660a42c7093cb5daafb368"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/tcl-tk@9.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -311,57 +401,72 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.13"
-              },
-              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.14"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.14"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.14"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.14"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.14"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.14"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-tcl-tk-9.0.4_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.14"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.14"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.8",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.14"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-tcl-tk-9.1.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk@3.14"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-python-tk@3.13-src"
+                "relatedSpdxElement": "SPDXRef-Archive-python-tk@3.14-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/python-tk@3.13.rb",
+            ".brew/python-tk@3.14.rb",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.rst",
-            "libexec/_tkinter.cpython-313-darwin.so",
+            "libexec/_tkinter.cpython-314-darwin.so",
             "sbom.spdx.json"
           ],
-          "installed_size": 100520
+          "installed_size": 101132
         }
       }
     }

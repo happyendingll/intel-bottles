@@ -2,37 +2,41 @@
   "sdl2-compat": {
     "formula": {
       "name": "sdl2-compat",
-      "pkg_version": "2.32.72",
+      "pkg_version": "2.32.74",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sdl2-compat.rb",
       "tap_git_path": "Formula/s/sdl2-compat.rb",
-      "tap_git_revision": "dcd910835f0ef1ff06a5e06a83c7b29c1c507a3d",
+      "tap_git_revision": "e8ca1b1f890aea400b40c7e76973d2d224d37dcf",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "SDL2 compatibility layer that uses SDL3 behind the scenes",
       "license": "Zlib",
       "homepage": "https://github.com/libsdl-org/sdl2-compat"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-08T15:46:12Z",
+      "date": "2026-10-04T09:47:02Z",
       "tags": {
         "sequoia": {
-          "filename": "sdl2-compat-2.32.72.sequoia.bottle.tar.gz",
-          "local_filename": "sdl2-compat--2.32.72.sequoia.bottle.tar.gz",
-          "sha256": "95416aee23feb0d1bc449a7112554d787af252beed7753dbedbd603d4ebd517c",
+          "filename": "sdl2-compat-2.32.74.sequoia.bottle.tar.gz",
+          "local_filename": "sdl2-compat--2.32.74.sequoia.bottle.tar.gz",
+          "sha256": "255e0727c8838c55d895e6a3eb19d023049f4b4e3b624fbddc49ca8ee081c55d",
           "tab": {
-            "homebrew_version": "6.0.18",
+            "homebrew_version": "7.0.7",
             "changed_files": [],
-            "source_modified_time": 1788366335,
+            "linkage_files": [
+              "lib/libSDL2-2.0.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790981284,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "sdl3",
-                "version": "3.4.16",
+                "version": "3.4.18",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.4.16",
+                "pkg_version": "3.4.18",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -47,31 +51,32 @@
               "preferred_perl": "5.34"
             }
           },
+          "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+              "SPDXRef-Package-SPDXRef-sdl3-3.4.18",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.4.18",
                 "name": "sdl3",
-                "versionInfo": "3.4.16",
+                "versionInfo": "3.4.18",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Zlib",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/sdl3-3.4.16.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/sdl3-3.4.18.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9dc29b325dcf7a0acfacd6fb415251792750b219a5db765624514ddc185f438d"
+                    "checksumValue": "6376f2cb500dc8cfc4872e04033b807f1ab511659a36982bf83d3172560c143f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sdl3@3.4.16",
+                    "referenceLocator": "pkg:brew/sdl3@3.4.18",
                     "referenceType": "purl"
                   }
                 ]
@@ -91,7 +96,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.4.16",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.4.18",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-sdl2-compat"
               },
@@ -224,7 +229,7 @@
             "share/aclocal/sdl2.m4",
             "share/licenses/sdl2-compat/LICENSE.txt"
           ],
-          "installed_size": 3233582
+          "installed_size": 3232669
         }
       }
     }

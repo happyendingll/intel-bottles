@@ -2,27 +2,27 @@
   "lmod": {
     "formula": {
       "name": "lmod",
-      "pkg_version": "9.4.2",
+      "pkg_version": "9.4.2_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/l/lmod.rb",
       "tap_git_path": "Formula/l/lmod.rb",
-      "tap_git_revision": "b96c013e81808bbe2bccaa831c8769fe165b7ec1",
+      "tap_git_revision": "e8ca1b1f890aea400b40c7e76973d2d224d37dcf",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Lua-based environment modules system to modify PATH variable",
       "license": "MIT",
       "homepage": "https://lmod.readthedocs.io"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-14T19:33:10Z",
+      "date": "2026-10-04T09:40:38Z",
       "tags": {
         "sequoia": {
-          "filename": "lmod-9.4.2.sequoia.bottle.tar.gz",
-          "local_filename": "lmod--9.4.2.sequoia.bottle.tar.gz",
-          "sha256": "0ddbb07cb89f184615cb6e4fefea9b9f833ea2c33cecbf9b211ceb75c6da6186",
+          "filename": "lmod-9.4.2_1.sequoia.bottle.tar.gz",
+          "local_filename": "lmod--9.4.2_1.sequoia.bottle.tar.gz",
+          "sha256": "d61caf0baafe6acc5a6bf6d1b1e75e06ebea402b6db2dc3886110a684362daa2",
           "tab": {
-            "homebrew_version": "7.0.1",
+            "homebrew_version": "7.0.7",
             "changed_files": [
               "init/bash",
               "init/csh",
@@ -90,31 +90,13 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "ca-certificates",
-                "version": "2026-08-13",
-                "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2026-08-13",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
                 "full_name": "tcl-tk",
-                "version": "9.0.4",
+                "version": "9.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.0.4",
+                "pkg_version": "9.1.0",
                 "declared_directly": true,
-                "compatibility_version": 1
+                "compatibility_version": 2
               }
             ],
             "arch": "x86_64",
@@ -130,53 +112,29 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-tcl-tk-9.1.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-                "name": "ca-certificates",
-                "versionInfo": "2026-08-13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-tcl-tk-9.1.0",
+                "name": "tcl-tk",
+                "versionInfo": "9.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "licenseConcluded": "TCL",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/tcl-tk-9.1.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                    "checksumValue": "9ff52bf189aa6b8f874e411d44b41dd954361bab4f660a42c7093cb5daafb368"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/tcl-tk@9.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -196,12 +154,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-lmod"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-tcl-tk-9.1.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lmod"
               },
@@ -519,7 +472,7 @@
             "tools/strict.lua",
             "tools/string_utils.lua"
           ],
-          "installed_size": 2882846
+          "installed_size": 2882742
         }
       }
     }
