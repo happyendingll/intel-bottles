@@ -2,25 +2,25 @@
   "technitium-dns": {
     "formula": {
       "name": "technitium-dns",
-      "pkg_version": "15.5.1",
+      "pkg_version": "15.6.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/t/technitium-dns.rb",
       "tap_git_path": "Formula/t/technitium-dns.rb",
-      "tap_git_revision": "86a7f62ac8a0880012c02541baae74b4e11cb6a0",
+      "tap_git_revision": "3743f5dcf6a8a9d4a95307a9f9c86435fc745a51",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Self host a DNS server for privacy & security",
       "license": "GPL-3.0-or-later",
       "homepage": "https://technitium.com/dns/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-09-29T15:37:24Z",
+      "date": "2026-10-05T00:16:43Z",
       "tags": {
         "sequoia": {
-          "filename": "technitium-dns-15.5.1.sequoia.bottle.tar.gz",
-          "local_filename": "technitium-dns--15.5.1.sequoia.bottle.tar.gz",
-          "sha256": "babf25c216920b55945408ba8eb66b22f80e3272cd8e028be775c089ae24d351",
+          "filename": "technitium-dns-15.6.0.sequoia.bottle.tar.gz",
+          "local_filename": "technitium-dns--15.6.0.sequoia.bottle.tar.gz",
+          "sha256": "bebb5fbda3a3726dadf3d1abd68e127d7e385fcd05ce6cad4293e09ad5a7e05f",
           "tab": {
             "homebrew_version": "7.0.7",
             "changed_files": [
@@ -30,7 +30,7 @@
             ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1790420406,
+            "source_modified_time": 1791034432,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -62,10 +62,10 @@
               },
               {
                 "full_name": "openssl@3",
-                "version": "3.6.4",
-                "revision": 1,
+                "version": "3.6.5",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4_1",
+                "pkg_version": "3.6.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -80,17 +80,18 @@
               },
               {
                 "full_name": "libmsquic",
-                "version": "2.6.1",
+                "version": "2.6.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.6.1",
+                "pkg_version": "2.6.2",
                 "declared_directly": true
               },
               {
                 "full_name": "technitium-library",
-                "version": "15.5.1",
+                "version": "15.6.0",
                 "revision": 0,
-                "pkg_version": "15.5.1",
+                "bottle_rebuild": 0,
+                "pkg_version": "15.6.0",
                 "declared_directly": true
               }
             ],
@@ -108,9 +109,10 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
               "SPDXRef-Package-SPDXRef-dotnet-10.0.401",
-              "SPDXRef-Package-SPDXRef-libmsquic-2.6.1",
+              "SPDXRef-Package-SPDXRef-libmsquic-2.6.2",
+              "SPDXRef-Package-SPDXRef-technitium-library-15.6.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -138,24 +140,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
                 "name": "openssl@3",
-                "versionInfo": "3.6.4_1",
+                "versionInfo": "3.6.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4_1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d63b0bbe503c00db050f52f5f2172deba5e0233a30cbd0059622bf53ce9be9c3"
+                    "checksumValue": "9ed9599d2df434ad6706bb4065ab5cf758030b4d9b461ae96f9677fa7a500a0f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4_1",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -184,24 +186,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libmsquic-2.6.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libmsquic-2.6.2",
                 "name": "libmsquic",
-                "versionInfo": "2.6.1",
+                "versionInfo": "2.6.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/libmsquic-2.6.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libmsquic-2.6.2.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "63e560e637640f40024fbc7b3a27f0ab1caa50d21743987fa1cf7f9094b4a68a"
+                    "checksumValue": "7be599d48c768c46ba0ad202d300160e58e51c730135261ff1f8475019fc9095"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libmsquic@2.6.1",
+                    "referenceLocator": "pkg:brew/libmsquic@2.6.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-technitium-library-15.6.0",
+                "name": "technitium-library",
+                "versionInfo": "15.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-only",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/technitium-library-15.6.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5ec4a613fa2e575077d3847eaccce55a4bc393d011a9aa4d181618aec4257b16"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/technitium-library@15.6.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -226,7 +251,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-technitium-dns"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-technitium-dns"
               },
@@ -236,7 +261,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-technitium-dns"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libmsquic-2.6.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libmsquic-2.6.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-technitium-dns"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-technitium-library-15.6.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-technitium-dns"
               },
@@ -355,7 +385,7 @@
             "sh.brew.technitium-dns.plist",
             "sh.brew.technitium-dns.service"
           ],
-          "installed_size": 14187513
+          "installed_size": 14195652
         }
       }
     }
