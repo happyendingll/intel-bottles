@@ -1,0 +1,138 @@
+{
+  "vulkan-utility-libraries": {
+    "formula": {
+      "name": "vulkan-utility-libraries",
+      "pkg_version": "1.4.363.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/v/vulkan-utility-libraries.rb",
+      "tap_git_path": "Formula/v/vulkan-utility-libraries.rb",
+      "tap_git_revision": "98273c34586af7eb11ec31e20a01cb3e02480863",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Utility Libraries for Vulkan",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/KhronosGroup/Vulkan-Utility-Libraries"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-05T02:00:49Z",
+      "tags": {
+        "sequoia": {
+          "filename": "vulkan-utility-libraries-1.4.363.0.sequoia.bottle.tar.gz",
+          "local_filename": "vulkan-utility-libraries--1.4.363.0.sequoia.bottle.tar.gz",
+          "sha256": "98002c3d781582b48f3ed8808d99ebb282cdb2bfe6e79f3158fbd8bebebc41ee",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789695601,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "vulkan-headers",
+                "version": "1.4.363.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.363.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-vulkan-headers-1.4.363.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-vulkan-headers-1.4.363.0",
+                "name": "vulkan-headers",
+                "versionInfo": "1.4.363.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/vulkan-headers-1.4.363.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "dd208d73636f78cbf021a554f3549689e2b04f4a0d0da3f9e2cf010df72e5a25"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/vulkan-headers@1.4.363.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-vulkan-headers-1.4.363.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vulkan-utility-libraries"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-vulkan-utility-libraries-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/vulkan-utility-libraries.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "include/vulkan/layer/vk_layer_settings.h",
+            "include/vulkan/layer/vk_layer_settings.hpp",
+            "include/vulkan/utility/vk_concurrent_unordered_map.hpp",
+            "include/vulkan/utility/vk_dispatch_table.h",
+            "include/vulkan/utility/vk_format_utils.h",
+            "include/vulkan/utility/vk_safe_struct.hpp",
+            "include/vulkan/utility/vk_safe_struct_utils.hpp",
+            "include/vulkan/utility/vk_small_containers.hpp",
+            "include/vulkan/utility/vk_sparse_range_map.hpp",
+            "include/vulkan/utility/vk_struct_helper.hpp",
+            "include/vulkan/vk_enum_string_helper.h",
+            "lib/cmake/VulkanUtilityLibraries/VulkanUtilityLibraries-targets-release.cmake",
+            "lib/cmake/VulkanUtilityLibraries/VulkanUtilityLibraries-targets.cmake",
+            "lib/cmake/VulkanUtilityLibraries/VulkanUtilityLibrariesConfig.cmake",
+            "lib/cmake/VulkanUtilityLibraries/VulkanUtilityLibrariesConfigVersion.cmake",
+            "lib/libVulkanLayerSettings.a",
+            "lib/libVulkanSafeStruct.a",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 8362459
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,325 @@
+{
+  "xmlrpc-c": {
+    "formula": {
+      "name": "xmlrpc-c",
+      "pkg_version": "1.64.04",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/x/xmlrpc-c.rb",
+      "tap_git_path": "Formula/x/xmlrpc-c.rb",
+      "tap_git_revision": "98273c34586af7eb11ec31e20a01cb3e02480863",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Lightweight RPC library (based on XML and HTTP)",
+      "license": "BSD-3-Clause",
+      "homepage": "https://xmlrpc-c.sourceforge.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-05T02:03:15Z",
+      "tags": {
+        "sequoia": {
+          "filename": "xmlrpc-c-1.64.04.sequoia.bottle.tar.gz",
+          "local_filename": "xmlrpc-c--1.64.04.sequoia.bottle.tar.gz",
+          "sha256": "5de88384e6550c32071cef75ed5dd1dd1330122571f173a35f13a543d0b9a33c",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "bin/xmlrpc-c-config",
+              "lib/pkgconfig/xmlrpc++.pc",
+              "lib/pkgconfig/xmlrpc.pc",
+              "lib/pkgconfig/xmlrpc_abyss++.pc",
+              "lib/pkgconfig/xmlrpc_abyss.pc",
+              "lib/pkgconfig/xmlrpc_client++.pc",
+              "lib/pkgconfig/xmlrpc_client.pc",
+              "lib/pkgconfig/xmlrpc_openssl.pc",
+              "lib/pkgconfig/xmlrpc_server++.pc",
+              "lib/pkgconfig/xmlrpc_server.pc",
+              "lib/pkgconfig/xmlrpc_server_abyss.pc",
+              "lib/pkgconfig/xmlrpc_server_cgi.pc",
+              "lib/pkgconfig/xmlrpc_server_pstream++.pc",
+              "lib/pkgconfig/xmlrpc_util++.pc",
+              "lib/pkgconfig/xmlrpc_util.pc"
+            ],
+            "linkage_files": [
+              "lib/libxmlrpc++.9.64.dylib",
+              "lib/libxmlrpc.3.64.dylib",
+              "lib/libxmlrpc_abyss++.9.64.dylib",
+              "lib/libxmlrpc_abyss.3.64.dylib",
+              "lib/libxmlrpc_client++.9.64.dylib",
+              "lib/libxmlrpc_client.3.64.dylib",
+              "lib/libxmlrpc_cpp.9.64.dylib",
+              "lib/libxmlrpc_openssl.1.64.dylib",
+              "lib/libxmlrpc_packetsocket.9.64.dylib",
+              "lib/libxmlrpc_server++.9.64.dylib",
+              "lib/libxmlrpc_server.3.64.dylib",
+              "lib/libxmlrpc_server_abyss++.9.64.dylib",
+              "lib/libxmlrpc_server_abyss.3.64.dylib",
+              "lib/libxmlrpc_server_cgi++.9.64.dylib",
+              "lib/libxmlrpc_server_cgi.3.64.dylib",
+              "lib/libxmlrpc_server_pstream++.9.64.dylib",
+              "lib/libxmlrpc_util++.9.64.dylib",
+              "lib/libxmlrpc_util.4.64.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790267933,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.5",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "name": "openssl@3",
+                "versionInfo": "3.6.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9ed9599d2df434ad6706bb4065ab5cf758030b4d9b461ae96f9677fa7a500a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xmlrpc-c"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xmlrpc-c"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-xmlrpc-c-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/xmlrpc-c-config"
+          ],
+          "all_files": [
+            ".brew/xmlrpc-c.rb",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/xmlrpc-c-config",
+            "include/XmlRpcCpp.h",
+            "include/xmlrpc-c/AbyssChanSwitch.hpp",
+            "include/xmlrpc-c/AbyssChanSwitchUnix.hpp",
+            "include/xmlrpc-c/AbyssEnvironment.hpp",
+            "include/xmlrpc-c/AbyssServer.hpp",
+            "include/xmlrpc-c/abyss.h",
+            "include/xmlrpc-c/abyss_reqhandler_xmlrpc.hpp",
+            "include/xmlrpc-c/abyss_unixsock.h",
+            "include/xmlrpc-c/abyss_winsock.h",
+            "include/xmlrpc-c/base.h",
+            "include/xmlrpc-c/base.hpp",
+            "include/xmlrpc-c/base64.hpp",
+            "include/xmlrpc-c/c_util.h",
+            "include/xmlrpc-c/client.h",
+            "include/xmlrpc-c/client.hpp",
+            "include/xmlrpc-c/client_global.h",
+            "include/xmlrpc-c/client_simple.hpp",
+            "include/xmlrpc-c/client_transport.hpp",
+            "include/xmlrpc-c/config.h",
+            "include/xmlrpc-c/girerr.hpp",
+            "include/xmlrpc-c/girmem.hpp",
+            "include/xmlrpc-c/inttypes.h",
+            "include/xmlrpc-c/json.h",
+            "include/xmlrpc-c/oldcppwrapper.hpp",
+            "include/xmlrpc-c/oldxmlrpc.h",
+            "include/xmlrpc-c/packetsocket.hpp",
+            "include/xmlrpc-c/registry.hpp",
+            "include/xmlrpc-c/server.h",
+            "include/xmlrpc-c/server_abyss.h",
+            "include/xmlrpc-c/server_abyss.hpp",
+            "include/xmlrpc-c/server_cgi.h",
+            "include/xmlrpc-c/server_pstream.hpp",
+            "include/xmlrpc-c/server_w32httpsys.h",
+            "include/xmlrpc-c/timeout.hpp",
+            "include/xmlrpc-c/transport.h",
+            "include/xmlrpc-c/util.h",
+            "include/xmlrpc-c/xml.hpp",
+            "include/xmlrpc.h",
+            "include/xmlrpc_abyss.h",
+            "include/xmlrpc_cgi.h",
+            "include/xmlrpc_client.h",
+            "include/xmlrpc_server.h",
+            "include/xmlrpc_server_w32httpsys.h",
+            "lib/libxmlrpc++.9.64.dylib",
+            "lib/libxmlrpc++.9.dylib",
+            "lib/libxmlrpc++.a",
+            "lib/libxmlrpc++.dylib",
+            "lib/libxmlrpc.3.64.dylib",
+            "lib/libxmlrpc.3.dylib",
+            "lib/libxmlrpc.a",
+            "lib/libxmlrpc.dylib",
+            "lib/libxmlrpc_abyss++.9.64.dylib",
+            "lib/libxmlrpc_abyss++.9.dylib",
+            "lib/libxmlrpc_abyss++.a",
+            "lib/libxmlrpc_abyss++.dylib",
+            "lib/libxmlrpc_abyss.3.64.dylib",
+            "lib/libxmlrpc_abyss.3.dylib",
+            "lib/libxmlrpc_abyss.a",
+            "lib/libxmlrpc_abyss.dylib",
+            "lib/libxmlrpc_client++.9.64.dylib",
+            "lib/libxmlrpc_client++.9.dylib",
+            "lib/libxmlrpc_client++.a",
+            "lib/libxmlrpc_client++.dylib",
+            "lib/libxmlrpc_client.3.64.dylib",
+            "lib/libxmlrpc_client.3.dylib",
+            "lib/libxmlrpc_client.a",
+            "lib/libxmlrpc_client.dylib",
+            "lib/libxmlrpc_cpp.9.64.dylib",
+            "lib/libxmlrpc_cpp.9.dylib",
+            "lib/libxmlrpc_cpp.a",
+            "lib/libxmlrpc_cpp.dylib",
+            "lib/libxmlrpc_openssl.1.64.dylib",
+            "lib/libxmlrpc_openssl.1.dylib",
+            "lib/libxmlrpc_openssl.a",
+            "lib/libxmlrpc_openssl.dylib",
+            "lib/libxmlrpc_packetsocket.9.64.dylib",
+            "lib/libxmlrpc_packetsocket.9.dylib",
+            "lib/libxmlrpc_packetsocket.a",
+            "lib/libxmlrpc_packetsocket.dylib",
+            "lib/libxmlrpc_server++.9.64.dylib",
+            "lib/libxmlrpc_server++.9.dylib",
+            "lib/libxmlrpc_server++.a",
+            "lib/libxmlrpc_server++.dylib",
+            "lib/libxmlrpc_server.3.64.dylib",
+            "lib/libxmlrpc_server.3.dylib",
+            "lib/libxmlrpc_server.a",
+            "lib/libxmlrpc_server.dylib",
+            "lib/libxmlrpc_server_abyss++.9.64.dylib",
+            "lib/libxmlrpc_server_abyss++.9.dylib",
+            "lib/libxmlrpc_server_abyss++.a",
+            "lib/libxmlrpc_server_abyss++.dylib",
+            "lib/libxmlrpc_server_abyss.3.64.dylib",
+            "lib/libxmlrpc_server_abyss.3.dylib",
+            "lib/libxmlrpc_server_abyss.a",
+            "lib/libxmlrpc_server_abyss.dylib",
+            "lib/libxmlrpc_server_cgi++.9.64.dylib",
+            "lib/libxmlrpc_server_cgi++.9.dylib",
+            "lib/libxmlrpc_server_cgi++.a",
+            "lib/libxmlrpc_server_cgi++.dylib",
+            "lib/libxmlrpc_server_cgi.3.64.dylib",
+            "lib/libxmlrpc_server_cgi.3.dylib",
+            "lib/libxmlrpc_server_cgi.a",
+            "lib/libxmlrpc_server_cgi.dylib",
+            "lib/libxmlrpc_server_pstream++.9.64.dylib",
+            "lib/libxmlrpc_server_pstream++.9.dylib",
+            "lib/libxmlrpc_server_pstream++.a",
+            "lib/libxmlrpc_server_pstream++.dylib",
+            "lib/libxmlrpc_util++.9.64.dylib",
+            "lib/libxmlrpc_util++.9.dylib",
+            "lib/libxmlrpc_util++.a",
+            "lib/libxmlrpc_util++.dylib",
+            "lib/libxmlrpc_util.4.64.dylib",
+            "lib/libxmlrpc_util.4.dylib",
+            "lib/libxmlrpc_util.a",
+            "lib/libxmlrpc_util.dylib",
+            "lib/pkgconfig/xmlrpc++.pc",
+            "lib/pkgconfig/xmlrpc.pc",
+            "lib/pkgconfig/xmlrpc_abyss++.pc",
+            "lib/pkgconfig/xmlrpc_abyss.pc",
+            "lib/pkgconfig/xmlrpc_client++.pc",
+            "lib/pkgconfig/xmlrpc_client.pc",
+            "lib/pkgconfig/xmlrpc_openssl.pc",
+            "lib/pkgconfig/xmlrpc_server++.pc",
+            "lib/pkgconfig/xmlrpc_server.pc",
+            "lib/pkgconfig/xmlrpc_server_abyss.pc",
+            "lib/pkgconfig/xmlrpc_server_cgi.pc",
+            "lib/pkgconfig/xmlrpc_server_pstream++.pc",
+            "lib/pkgconfig/xmlrpc_util++.pc",
+            "lib/pkgconfig/xmlrpc_util.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 2101052
+        }
+      }
+    }
+  }
+}
