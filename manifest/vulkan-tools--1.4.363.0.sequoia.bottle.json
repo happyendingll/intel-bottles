@@ -1,0 +1,320 @@
+{
+  "vulkan-tools": {
+    "formula": {
+      "name": "vulkan-tools",
+      "pkg_version": "1.4.363.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/v/vulkan-tools.rb",
+      "tap_git_path": "Formula/v/vulkan-tools.rb",
+      "tap_git_revision": "11cae73a40d1ea69f71cc4d0a090efb397180803",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Vulkan utilities and tools",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/KhronosGroup/Vulkan-Tools"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-05T02:21:24Z",
+      "tags": {
+        "sequoia": {
+          "filename": "vulkan-tools-1.4.363.0.sequoia.bottle.tar.gz",
+          "local_filename": "vulkan-tools--1.4.363.0.sequoia.bottle.tar.gz",
+          "sha256": "28aec58ba656c7ef8d46e916bf5520a18e500d18b3e875e71ab844a145bf5222",
+          "tab": {
+            "homebrew_version": "7.0.7",
+            "changed_files": [
+              "bin/vkcube",
+              "bin/vkcubepp"
+            ],
+            "linkage_files": [
+              "cube/vkcube.app/Contents/Frameworks/libvulkan.1.4.363.dylib",
+              "cube/vkcube.app/Contents/MacOS/vkcube",
+              "cube/vkcubepp.app/Contents/Frameworks/libvulkan.1.4.363.dylib",
+              "cube/vkcubepp.app/Contents/MacOS/vkcubepp"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789704048,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "spirv-headers",
+                "version": "1.4.363.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.363.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "spirv-tools",
+                "version": "1.4.363.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.363.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glslang",
+                "version": "16.6.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "16.6.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "vulkan-headers",
+                "version": "1.4.363.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.363.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "vulkan-loader",
+                "version": "1.4.363.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.363.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "molten-vk",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-spirv-headers-1.4.363.0",
+              "SPDXRef-Package-SPDXRef-spirv-tools-1.4.363.0",
+              "SPDXRef-Package-SPDXRef-glslang-16.6.0",
+              "SPDXRef-Package-SPDXRef-vulkan-headers-1.4.363.0",
+              "SPDXRef-Package-SPDXRef-vulkan-loader-1.4.363.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-spirv-headers-1.4.363.0",
+                "name": "spirv-headers",
+                "versionInfo": "1.4.363.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/spirv-headers/blobs/sha256:281120edad71f06ccd2fb24cd1476382311664cfd914ee45380a336d58a4e157",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "281120edad71f06ccd2fb24cd1476382311664cfd914ee45380a336d58a4e157"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/spirv-headers@1.4.363.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-spirv-tools-1.4.363.0",
+                "name": "spirv-tools",
+                "versionInfo": "1.4.363.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3/spirv-tools-1.4.363.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b318b6ca88e12c80e535c65a7580f3e9f9f6c610d7dfb4ef501da25a8b1f5b6c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/spirv-tools@1.4.363.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glslang-16.6.0",
+                "name": "glslang",
+                "versionInfo": "16.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause AND GPL-3.0-or-later AND MIT AND Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/glslang-16.6.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "206699ed10d9d5f4c94e87bf8727d57fc2b38ff414d3699c9b368dd363fc6e8a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glslang@16.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-vulkan-headers-1.4.363.0",
+                "name": "vulkan-headers",
+                "versionInfo": "1.4.363.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/vulkan-headers-1.4.363.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "dd208d73636f78cbf021a554f3549689e2b04f4a0d0da3f9e2cf010df72e5a25"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/vulkan-headers@1.4.363.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-vulkan-loader-1.4.363.0",
+                "name": "vulkan-loader",
+                "versionInfo": "1.4.363.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3/vulkan-loader-1.4.363.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f278f1894f81ac7400aa0b5a5eaf13a022479a37be6d5c6eb0744aef878c7930"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/vulkan-loader@1.4.363.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-spirv-headers-1.4.363.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vulkan-tools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-spirv-tools-1.4.363.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vulkan-tools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glslang-16.6.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vulkan-tools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-vulkan-headers-1.4.363.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vulkan-tools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-vulkan-loader-1.4.363.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vulkan-tools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-vulkan-tools-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/vkcube",
+            "bin/vkcubepp",
+            "bin/vulkaninfo"
+          ],
+          "all_files": [
+            ".brew/vulkan-tools.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "README.md",
+            "bin/vkcube",
+            "bin/vkcubepp",
+            "bin/vulkaninfo",
+            "cube/vkcube.app/Contents/Frameworks/libMoltenVK.dylib",
+            "cube/vkcube.app/Contents/Frameworks/libvulkan.1.4.363.dylib",
+            "cube/vkcube.app/Contents/Frameworks/libvulkan.1.dylib",
+            "cube/vkcube.app/Contents/Info.plist",
+            "cube/vkcube.app/Contents/MacOS/vkcube",
+            "cube/vkcube.app/Contents/Resources/Main.storyboardc/Info.plist",
+            "cube/vkcube.app/Contents/Resources/Main.storyboardc/MainMenu.nib",
+            "cube/vkcube.app/Contents/Resources/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib",
+            "cube/vkcube.app/Contents/Resources/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib",
+            "cube/vkcube.app/Contents/Resources/VulkanIcon.icns",
+            "cube/vkcube.app/Contents/Resources/vulkan/icd.d/MoltenVK_icd.json",
+            "cube/vkcubepp.app/Contents/Frameworks/libMoltenVK.dylib",
+            "cube/vkcubepp.app/Contents/Frameworks/libvulkan.1.4.363.dylib",
+            "cube/vkcubepp.app/Contents/Frameworks/libvulkan.1.dylib",
+            "cube/vkcubepp.app/Contents/Info.plist",
+            "cube/vkcubepp.app/Contents/MacOS/vkcubepp",
+            "cube/vkcubepp.app/Contents/Resources/Main.storyboardc/Info.plist",
+            "cube/vkcubepp.app/Contents/Resources/Main.storyboardc/MainMenu.nib",
+            "cube/vkcubepp.app/Contents/Resources/Main.storyboardc/NSWindowController-B8D-0N-5wS.nib",
+            "cube/vkcubepp.app/Contents/Resources/Main.storyboardc/XfG-lQ-9wD-view-m2S-Jp-Qdl.nib",
+            "cube/vkcubepp.app/Contents/Resources/VulkanIcon.icns",
+            "cube/vkcubepp.app/Contents/Resources/vulkan/icd.d/MoltenVK_icd.json",
+            "lib/mock_icd/VkICD_mock_icd.json",
+            "lib/mock_icd/libVkICD_mock_icd.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 4125127
+        }
+      }
+    }
+  }
+}
