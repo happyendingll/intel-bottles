@@ -2,40 +2,41 @@
   "postgres-language-server": {
     "formula": {
       "name": "postgres-language-server",
-      "pkg_version": "0.26.0_1",
+      "pkg_version": "0.27.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/postgres-language-server.rb",
       "tap_git_path": "Formula/p/postgres-language-server.rb",
-      "tap_git_revision": "6ab0ff351f72ea0229c28dfa1f0c5981afae9bd0",
+      "tap_git_revision": "4097a850f5d53604e335fbd23fe861df0880be1d",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Language Server for Postgres",
       "license": "MIT",
       "homepage": "https://pg-language-server.com/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-02T04:08:55Z",
+      "date": "2026-10-06T08:01:05Z",
       "tags": {
         "sequoia": {
-          "filename": "postgres-language-server-0.26.0_1.sequoia.bottle.tar.gz",
-          "local_filename": "postgres-language-server--0.26.0_1.sequoia.bottle.tar.gz",
-          "sha256": "7dd5f241b1738c51edc878b3aa55d5079b9f0dda718372b381dcd71c3d2074d1",
+          "filename": "postgres-language-server-0.27.0.sequoia.bottle.tar.gz",
+          "local_filename": "postgres-language-server--0.27.0.sequoia.bottle.tar.gz",
+          "sha256": "f3a745aeb1e4d0db37d5b3a0260e411d04d67d625e47eb9bb69b22eaa4389325",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.8",
             "changed_files": [],
             "linkage_files": [
               "bin/postgres-language-server",
               "bin/postgrestools"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790626806,
+            "source_modified_time": 1791137000,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "libpg_query",
                 "version": "18.1.0",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "18.1.0",
                 "declared_directly": true,
                 "compatibility_version": 2
@@ -54,9 +55,33 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-libpg.5f.query-18.2e.1.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpg.5f.query-18.2e.1.2e.0",
+                "name": "libpg_query",
+                "versionInfo": "18.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause AND PostgreSQL",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libpg_query-18.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe03161138d80fe650b717ab368309ff2c12146faf972a38e8bea5dbafa38b70"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpg_query@18.1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
@@ -71,6 +96,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpg.5f.query-18.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-postgres-language-server"
+              },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
@@ -93,7 +123,7 @@
             "bin/postgrestools",
             "sbom.spdx.json"
           ],
-          "installed_size": 74977790
+          "installed_size": 79526037
         }
       }
     }
