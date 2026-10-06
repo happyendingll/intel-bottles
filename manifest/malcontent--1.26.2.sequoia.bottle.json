@@ -1,0 +1,125 @@
+{
+  "malcontent": {
+    "formula": {
+      "name": "malcontent",
+      "pkg_version": "1.26.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/malcontent.rb",
+      "tap_git_path": "Formula/m/malcontent.rb",
+      "tap_git_revision": "18e535a9c0a2ea58dc835495c2c5932169da9661",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Supply Chain Attack Detection, via context differential analysis and YARA",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/chainguard-dev/malcontent"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-06T01:22:17Z",
+      "tags": {
+        "sequoia": {
+          "filename": "malcontent-1.26.2.sequoia.bottle.tar.gz",
+          "local_filename": "malcontent--1.26.2.sequoia.bottle.tar.gz",
+          "sha256": "d55ff50c8fc39f861882b6e2fa253bb198152c91e1eea3051ced4e92cff30b32",
+          "tab": {
+            "homebrew_version": "7.0.8",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/mal"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791150183,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "yara-x",
+                "version": "1.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.21.0",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-yara-x-1.2e.21.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-yara-x-1.2e.21.2e.0",
+                "name": "yara-x",
+                "versionInfo": "1.21.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/yara-x-1.21.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4abc96d3f339af61976124c8fd089d14b5a31269c37a0690962160123bc99b98"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/yara-x@1.21.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-yara-x-1.2e.21.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-malcontent"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-malcontent-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/mal"
+          ],
+          "all_files": [
+            ".brew/malcontent.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/mal",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 42829713
+        }
+      }
+    }
+  }
+}
