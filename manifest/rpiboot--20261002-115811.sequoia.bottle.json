@@ -1,0 +1,113 @@
+{
+  "rpiboot": {
+    "formula": {
+      "name": "rpiboot",
+      "pkg_version": "20261002-115811",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rpiboot.rb",
+      "tap_git_path": "Formula/r/rpiboot.rb",
+      "tap_git_revision": "38625acf9434355a58d8c3e998bbcccc4fa2baff",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Raspberry Pi USB boot tool for Compute Modules",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/raspberrypi/usbboot"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-07T06:53:33Z",
+      "tags": {
+        "sequoia": {
+          "filename": "rpiboot-20261002-115811.sequoia.bottle.tar.gz",
+          "local_filename": "rpiboot--20261002-115811.sequoia.bottle.tar.gz",
+          "sha256": "8cb188a56c1144dea51c54abbfa08ba2041c9d8abcb89416021c5d79481b3b15",
+          "tab": {
+            "homebrew_version": "7.0.8",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/rpiboot"
+            ],
+            "binary_relocation_files": [
+              "bin/rpiboot"
+            ],
+            "source_modified_time": 1790942838,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libusb",
+                "version": "1.0.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.30",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "source": {
+              "scm_revision": "51006f8d77dbb99c408737825dd0d57285b7d00d"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/rpiboot",
+              "string": "/usr/local/Cellar/rpiboot/20261002-115811/share/rpiboot/mass-storage-gadget64/",
+              "offset": 15980
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-rpiboot-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/rpiboot"
+          ],
+          "all_files": [
+            ".brew/rpiboot.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "Readme.md",
+            "bin/rpiboot",
+            "sbom.spdx.json",
+            "share/rpiboot/mass-storage-gadget64/boot.img",
+            "share/rpiboot/mass-storage-gadget64/bootfiles.bin",
+            "share/rpiboot/mass-storage-gadget64/config.txt",
+            "share/rpiboot/msd/bootcode.bin",
+            "share/rpiboot/msd/start.elf"
+          ],
+          "installed_size": 32152933
+        }
+      }
+    }
+  }
+}

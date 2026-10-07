@@ -1,0 +1,678 @@
+{
+  "volk": {
+    "formula": {
+      "name": "volk",
+      "pkg_version": "3.3.0_3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/v/volk.rb",
+      "tap_git_path": "Formula/v/volk.rb",
+      "tap_git_revision": "38625acf9434355a58d8c3e998bbcccc4fa2baff",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Vector Optimized Library of Kernels",
+      "license": "LGPL-3.0-or-later",
+      "homepage": "https://www.libvolk.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-07T07:14:59Z",
+      "tags": {
+        "sequoia": {
+          "filename": "volk-3.3.0_3.sequoia.bottle.tar.gz",
+          "local_filename": "volk--3.3.0_3.sequoia.bottle.tar.gz",
+          "sha256": "21d53e9ff47236abce540e86ac45669f0f3470d91f6435bfe06c9f0166d8a924",
+          "tab": {
+            "homebrew_version": "7.0.8",
+            "changed_files": [
+              "bin/volk_modtool",
+              "lib/cmake/volk/VolkTargets-release.cmake",
+              "lib/pkgconfig/volk.pc"
+            ],
+            "linkage_files": [
+              "bin/volk-config-info",
+              "bin/volk_profile",
+              "lib/libvolk.3.3.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1770565256,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "cpu_features",
+                "version": "0.11.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.11.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "fmt",
+                "version": "12.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "12.2.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "orc",
+                "version": "0.4.44",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.4.44",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.6.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.14",
+                "version": "3.14.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.14.8",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-orc-0.2e.4.2e.44",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-orc-0.2e.4.2e.44",
+                "name": "orc",
+                "versionInfo": "0.4.44",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/orc-0.4.44.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d54e0f0f00cc40fe05d7fadf318a3ef08bf5836f0ac7d1223f7b3ae11850db9c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/orc@0.4.44",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
+                "name": "openssl@3",
+                "versionInfo": "3.6.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9ed9599d2df434ad6706bb4065ab5cf758030b4d9b461ae96f9677fa7a500a0f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8",
+                "name": "python@3.14",
+                "versionInfo": "3.14.8",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/python%403.14-3.14.8.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5f7cf5e3903c4cc6a0d297389be06e649c77b9f09c463526641db8d2b13ca255"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.8",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-orc-0.2e.4.2e.44",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-volk"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-volk"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-volk"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.6.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-volk"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-volk"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-volk"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-volk"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-volk"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-volk"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-volk"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-volk-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/volk_modtool",
+            "bin/volk_profile",
+            "bin/volk-config-info"
+          ],
+          "all_files": [
+            ".brew/volk.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/volk-config-info",
+            "bin/volk_modtool",
+            "bin/volk_profile",
+            "include/volk/constants.h",
+            "include/volk/saturation_arithmetic.h",
+            "include/volk/volk.h",
+            "include/volk/volk_16i_32fc_dot_prod_32fc.h",
+            "include/volk/volk_16i_branch_4_state_8.h",
+            "include/volk/volk_16i_convert_8i.h",
+            "include/volk/volk_16i_max_star_16i.h",
+            "include/volk/volk_16i_max_star_horizontal_16i.h",
+            "include/volk/volk_16i_permute_and_scalar_add.h",
+            "include/volk/volk_16i_s32f_convert_32f.h",
+            "include/volk/volk_16i_x2_add_saturated_16i.h",
+            "include/volk/volk_16i_x4_quad_max_star_16i.h",
+            "include/volk/volk_16i_x5_add_quad_16i_x4.h",
+            "include/volk/volk_16ic_convert_32fc.h",
+            "include/volk/volk_16ic_deinterleave_16i_x2.h",
+            "include/volk/volk_16ic_deinterleave_real_16i.h",
+            "include/volk/volk_16ic_deinterleave_real_8i.h",
+            "include/volk/volk_16ic_magnitude_16i.h",
+            "include/volk/volk_16ic_s32f_deinterleave_32f_x2.h",
+            "include/volk/volk_16ic_s32f_deinterleave_real_32f.h",
+            "include/volk/volk_16ic_s32f_magnitude_32f.h",
+            "include/volk/volk_16ic_x2_dot_prod_16ic.h",
+            "include/volk/volk_16ic_x2_multiply_16ic.h",
+            "include/volk/volk_16u_byteswap.h",
+            "include/volk/volk_16u_byteswappuppet_16u.h",
+            "include/volk/volk_16u_x2_add_saturated_16u.h",
+            "include/volk/volk_32f_64f_add_64f.h",
+            "include/volk/volk_32f_64f_multiply_64f.h",
+            "include/volk/volk_32f_8u_polarbutterfly_32f.h",
+            "include/volk/volk_32f_8u_polarbutterflypuppet_32f.h",
+            "include/volk/volk_32f_accumulator_s32f.h",
+            "include/volk/volk_32f_acos_32f.h",
+            "include/volk/volk_32f_asin_32f.h",
+            "include/volk/volk_32f_atan_32f.h",
+            "include/volk/volk_32f_binary_slicer_32i.h",
+            "include/volk/volk_32f_binary_slicer_8i.h",
+            "include/volk/volk_32f_convert_64f.h",
+            "include/volk/volk_32f_cos_32f.h",
+            "include/volk/volk_32f_exp_32f.h",
+            "include/volk/volk_32f_expfast_32f.h",
+            "include/volk/volk_32f_index_max_16u.h",
+            "include/volk/volk_32f_index_max_32u.h",
+            "include/volk/volk_32f_index_min_16u.h",
+            "include/volk/volk_32f_index_min_32u.h",
+            "include/volk/volk_32f_invsqrt_32f.h",
+            "include/volk/volk_32f_log2_32f.h",
+            "include/volk/volk_32f_null_32f.h",
+            "include/volk/volk_32f_reciprocal_32f.h",
+            "include/volk/volk_32f_s32f_32f_fm_detect_32f.h",
+            "include/volk/volk_32f_s32f_add_32f.h",
+            "include/volk/volk_32f_s32f_calc_spectral_noise_floor_32f.h",
+            "include/volk/volk_32f_s32f_clamppuppet_32f.h",
+            "include/volk/volk_32f_s32f_convert_16i.h",
+            "include/volk/volk_32f_s32f_convert_32i.h",
+            "include/volk/volk_32f_s32f_convert_8i.h",
+            "include/volk/volk_32f_s32f_convertpuppet_8u.h",
+            "include/volk/volk_32f_s32f_mod_rangepuppet_32f.h",
+            "include/volk/volk_32f_s32f_multiply_32f.h",
+            "include/volk/volk_32f_s32f_normalize.h",
+            "include/volk/volk_32f_s32f_power_32f.h",
+            "include/volk/volk_32f_s32f_s32f_mod_range_32f.h",
+            "include/volk/volk_32f_s32f_stddev_32f.h",
+            "include/volk/volk_32f_s32f_x2_clamp_32f.h",
+            "include/volk/volk_32f_s32f_x2_convert_8u.h",
+            "include/volk/volk_32f_sin_32f.h",
+            "include/volk/volk_32f_sincos_32f_x2.h",
+            "include/volk/volk_32f_sqrt_32f.h",
+            "include/volk/volk_32f_stddev_and_mean_32f_x2.h",
+            "include/volk/volk_32f_tan_32f.h",
+            "include/volk/volk_32f_tanh_32f.h",
+            "include/volk/volk_32f_x2_add_32f.h",
+            "include/volk/volk_32f_x2_divide_32f.h",
+            "include/volk/volk_32f_x2_dot_prod_16i.h",
+            "include/volk/volk_32f_x2_dot_prod_32f.h",
+            "include/volk/volk_32f_x2_fm_detectpuppet_32f.h",
+            "include/volk/volk_32f_x2_interleave_32fc.h",
+            "include/volk/volk_32f_x2_max_32f.h",
+            "include/volk/volk_32f_x2_min_32f.h",
+            "include/volk/volk_32f_x2_multiply_32f.h",
+            "include/volk/volk_32f_x2_pow_32f.h",
+            "include/volk/volk_32f_x2_powpuppet_32f.h",
+            "include/volk/volk_32f_x2_s32f_interleave_16ic.h",
+            "include/volk/volk_32f_x2_subtract_32f.h",
+            "include/volk/volk_32f_x3_sum_of_poly_32f.h",
+            "include/volk/volk_32fc_32f_add_32fc.h",
+            "include/volk/volk_32fc_32f_dot_prod_32fc.h",
+            "include/volk/volk_32fc_32f_multiply_32fc.h",
+            "include/volk/volk_32fc_accumulator_s32fc.h",
+            "include/volk/volk_32fc_conjugate_32fc.h",
+            "include/volk/volk_32fc_convert_16ic.h",
+            "include/volk/volk_32fc_deinterleave_32f_x2.h",
+            "include/volk/volk_32fc_deinterleave_64f_x2.h",
+            "include/volk/volk_32fc_deinterleave_imag_32f.h",
+            "include/volk/volk_32fc_deinterleave_real_32f.h",
+            "include/volk/volk_32fc_deinterleave_real_64f.h",
+            "include/volk/volk_32fc_index_max_16u.h",
+            "include/volk/volk_32fc_index_max_32u.h",
+            "include/volk/volk_32fc_index_min_16u.h",
+            "include/volk/volk_32fc_index_min_32u.h",
+            "include/volk/volk_32fc_magnitude_32f.h",
+            "include/volk/volk_32fc_magnitude_squared_32f.h",
+            "include/volk/volk_32fc_s32f_atan2_32f.h",
+            "include/volk/volk_32fc_s32f_deinterleave_real_16i.h",
+            "include/volk/volk_32fc_s32f_magnitude_16i.h",
+            "include/volk/volk_32fc_s32f_power_32fc.h",
+            "include/volk/volk_32fc_s32f_power_spectral_densitypuppet_32f.h",
+            "include/volk/volk_32fc_s32f_power_spectrum_32f.h",
+            "include/volk/volk_32fc_s32f_x2_power_spectral_density_32f.h",
+            "include/volk/volk_32fc_s32fc_multiply2_32fc.h",
+            "include/volk/volk_32fc_s32fc_multiply_32fc.h",
+            "include/volk/volk_32fc_s32fc_rotator2puppet_32fc.h",
+            "include/volk/volk_32fc_s32fc_x2_rotator2_32fc.h",
+            "include/volk/volk_32fc_s32fc_x2_rotator_32fc.h",
+            "include/volk/volk_32fc_x2_add_32fc.h",
+            "include/volk/volk_32fc_x2_conjugate_dot_prod_32fc.h",
+            "include/volk/volk_32fc_x2_divide_32fc.h",
+            "include/volk/volk_32fc_x2_dot_prod_32fc.h",
+            "include/volk/volk_32fc_x2_multiply_32fc.h",
+            "include/volk/volk_32fc_x2_multiply_conjugate_32fc.h",
+            "include/volk/volk_32fc_x2_s32f_square_dist_scalar_mult_32f.h",
+            "include/volk/volk_32fc_x2_s32fc_multiply_conjugate_add2_32fc.h",
+            "include/volk/volk_32fc_x2_s32fc_multiply_conjugate_add_32fc.h",
+            "include/volk/volk_32fc_x2_square_dist_32f.h",
+            "include/volk/volk_32i_s32f_convert_32f.h",
+            "include/volk/volk_32i_x2_and_32i.h",
+            "include/volk/volk_32i_x2_or_32i.h",
+            "include/volk/volk_32u_byteswap.h",
+            "include/volk/volk_32u_byteswappuppet_32u.h",
+            "include/volk/volk_32u_popcnt.h",
+            "include/volk/volk_32u_popcntpuppet_32u.h",
+            "include/volk/volk_32u_reverse_32u.h",
+            "include/volk/volk_64f_convert_32f.h",
+            "include/volk/volk_64f_x2_add_64f.h",
+            "include/volk/volk_64f_x2_dot_prod_64f.h",
+            "include/volk/volk_64f_x2_max_64f.h",
+            "include/volk/volk_64f_x2_min_64f.h",
+            "include/volk/volk_64f_x2_multiply_64f.h",
+            "include/volk/volk_64u_byteswap.h",
+            "include/volk/volk_64u_byteswappuppet_64u.h",
+            "include/volk/volk_64u_popcnt.h",
+            "include/volk/volk_64u_popcntpuppet_64u.h",
+            "include/volk/volk_8i_convert_16i.h",
+            "include/volk/volk_8i_s32f_convert_32f.h",
+            "include/volk/volk_8i_x2_add_saturated_8i.h",
+            "include/volk/volk_8ic_deinterleave_16i_x2.h",
+            "include/volk/volk_8ic_deinterleave_real_16i.h",
+            "include/volk/volk_8ic_deinterleave_real_8i.h",
+            "include/volk/volk_8ic_s32f_deinterleave_32f_x2.h",
+            "include/volk/volk_8ic_s32f_deinterleave_real_32f.h",
+            "include/volk/volk_8ic_x2_multiply_conjugate_16ic.h",
+            "include/volk/volk_8ic_x2_s32f_multiply_conjugate_32fc.h",
+            "include/volk/volk_8u_conv_k7_r2puppet_8u.h",
+            "include/volk/volk_8u_x2_add_saturated_8u.h",
+            "include/volk/volk_8u_x2_encodeframepolar_8u.h",
+            "include/volk/volk_8u_x3_encodepolar_8u_x2.h",
+            "include/volk/volk_8u_x3_encodepolarpuppet_8u.h",
+            "include/volk/volk_8u_x4_conv_k7_r2_8u.h",
+            "include/volk/volk_alloc.hh",
+            "include/volk/volk_avx2_fma_intrinsics.h",
+            "include/volk/volk_avx2_intrinsics.h",
+            "include/volk/volk_avx512_intrinsics.h",
+            "include/volk/volk_avx_intrinsics.h",
+            "include/volk/volk_common.h",
+            "include/volk/volk_complex.h",
+            "include/volk/volk_config_fixed.h",
+            "include/volk/volk_cpu.h",
+            "include/volk/volk_malloc.h",
+            "include/volk/volk_neon_intrinsics.h",
+            "include/volk/volk_prefs.h",
+            "include/volk/volk_sse3_intrinsics.h",
+            "include/volk/volk_sse_intrinsics.h",
+            "include/volk/volk_typedefs.h",
+            "include/volk/volk_version.h",
+            "lib/cmake/volk/VolkConfig.cmake",
+            "lib/cmake/volk/VolkConfigVersion.cmake",
+            "lib/cmake/volk/VolkTargets-release.cmake",
+            "lib/cmake/volk/VolkTargets.cmake",
+            "lib/libvolk.3.3.0.dylib",
+            "lib/libvolk.3.3.dylib",
+            "lib/libvolk.dylib",
+            "lib/pkgconfig/volk.pc",
+            "lib/python3.14/site-packages/volk_modtool/__init__.py",
+            "lib/python3.14/site-packages/volk_modtool/cfg.py",
+            "lib/python3.14/site-packages/volk_modtool/volk_modtool_generate.py",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 6187024
+        }
+      }
+    }
+  }
+}
