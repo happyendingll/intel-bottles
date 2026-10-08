@@ -1,0 +1,159 @@
+{
+  "nanomsgxx": {
+    "formula": {
+      "name": "nanomsgxx",
+      "pkg_version": "0.2_4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/n/nanomsgxx.rb",
+      "tap_git_path": "Formula/n/nanomsgxx.rb",
+      "tap_git_revision": "b15f143673000f037f82dcf4c618ee93eb3132d7",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Nanomsg binding for C++11",
+      "license": "MIT",
+      "homepage": "https://achille-roussel.github.io/nanomsgxx/doc/nanomsgxx.7.html"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-08T07:07:42Z",
+      "tags": {
+        "sequoia": {
+          "filename": "nanomsgxx-0.2_4.sequoia.bottle.tar.gz",
+          "local_filename": "nanomsgxx--0.2_4.sequoia.bottle.tar.gz",
+          "sha256": "e950d4569ddc366a202626b8ae94aa14a272b00b04a9e06cea25627bcf04656a",
+          "tab": {
+            "homebrew_version": "7.0.8",
+            "changed_files": [
+              "lib/pkgconfig/libnnxx.pc"
+            ],
+            "linkage_files": [
+              "lib/libnnxx.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1463366035,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "nanomsg",
+                "version": "1.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-nanomsg-1.2e.3.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-nanomsg-1.2e.3.2e.0",
+                "name": "nanomsg",
+                "versionInfo": "1.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/nanomsg-1.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "91e723962fade50884be1ee0f682c9c4f063b214e9bf0d835db18d1e8b1d4848"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/nanomsg@1.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-nanomsg-1.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-nanomsgxx"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-nanomsgxx-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/nanomsgxx.rb",
+            "AUTHORS",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README",
+            "TODO",
+            "include/nanomsg/ext/nnxx_ext.h",
+            "include/nnxx/bus.h",
+            "include/nnxx/chrono.h",
+            "include/nnxx/error.h",
+            "include/nnxx/inproc.h",
+            "include/nnxx/ipc.h",
+            "include/nnxx/message",
+            "include/nnxx/message.h",
+            "include/nnxx/message_control.h",
+            "include/nnxx/message_istream.h",
+            "include/nnxx/message_istream.hpp",
+            "include/nnxx/message_iterator.h",
+            "include/nnxx/message_ostream.h",
+            "include/nnxx/message_ostream.hpp",
+            "include/nnxx/message_streambuf.h",
+            "include/nnxx/message_streambuf.hpp",
+            "include/nnxx/nn.h",
+            "include/nnxx/pair.h",
+            "include/nnxx/pipeline.h",
+            "include/nnxx/poll.h",
+            "include/nnxx/pubsub.h",
+            "include/nnxx/reqrep.h",
+            "include/nnxx/socket",
+            "include/nnxx/socket.h",
+            "include/nnxx/socket.hpp",
+            "include/nnxx/survey.h",
+            "include/nnxx/tcp.h",
+            "include/nnxx/testing",
+            "include/nnxx/timeout.h",
+            "include/nnxx/unittest.h",
+            "lib/libnnxx.dylib",
+            "lib/pkgconfig/libnnxx.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 163459
+        }
+      }
+    }
+  }
+}

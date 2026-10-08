@@ -1,0 +1,104 @@
+{
+  "vvdec": {
+    "formula": {
+      "name": "vvdec",
+      "pkg_version": "3.2.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/v/vvdec.rb",
+      "tap_git_path": "Formula/v/vvdec.rb",
+      "tap_git_revision": "b15f143673000f037f82dcf4c618ee93eb3132d7",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Fraunhofer Versatile Video Decoder",
+      "license": "BSD-3-Clause-Clear",
+      "homepage": "https://www.hhi.fraunhofer.de/en/departments/vca/technologies-and-solutions/h266-vvc.html"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-08T07:22:25Z",
+      "tags": {
+        "sequoia": {
+          "filename": "vvdec-3.2.1.sequoia.bottle.tar.gz",
+          "local_filename": "vvdec--3.2.1.sequoia.bottle.tar.gz",
+          "sha256": "51e800e97bbb2fa23185221e0b065d0626f8278ff7e39951fa7bd769346403e3",
+          "tab": {
+            "homebrew_version": "7.0.8",
+            "changed_files": [
+              "lib/cmake/vvdec/vvdecTargets-shared-release.cmake",
+              "lib/pkgconfig/libvvdec.pc"
+            ],
+            "linkage_files": [
+              "bin/vvdecapp",
+              "lib/libvvdec.3.2.1.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791363932,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-vvdec-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/vvdecapp"
+          ],
+          "all_files": [
+            ".brew/vvdec.rb",
+            "AUTHORS.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "README.md",
+            "bin/vvdecapp",
+            "include/vvdec/sei.h",
+            "include/vvdec/version.h",
+            "include/vvdec/vvdec.h",
+            "include/vvdec/vvdecDecl.h",
+            "lib/cmake/vvdec/vvdecConfig.cmake",
+            "lib/cmake/vvdec/vvdecConfigVersion.cmake",
+            "lib/cmake/vvdec/vvdecTargets-shared-release.cmake",
+            "lib/cmake/vvdec/vvdecTargets-shared.cmake",
+            "lib/libvvdec.3.2.1.dylib",
+            "lib/libvvdec.3.dylib",
+            "lib/libvvdec.dylib",
+            "lib/pkgconfig/libvvdec.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1666739
+        }
+      }
+    }
+  }
+}

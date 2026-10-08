@@ -1,0 +1,364 @@
+{
+  "libzip": {
+    "formula": {
+      "name": "libzip",
+      "pkg_version": "1.12",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libzip.rb",
+      "tap_git_path": "Formula/lib/libzip.rb",
+      "tap_git_revision": "b15f143673000f037f82dcf4c618ee93eb3132d7",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "C library for reading, creating, and modifying zip archives",
+      "license": "BSD-3-Clause",
+      "homepage": "https://libzip.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-08T06:56:13Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libzip-1.12.sequoia.bottle.tar.gz",
+          "local_filename": "libzip--1.12.sequoia.bottle.tar.gz",
+          "sha256": "44014c9d0a0cd531f91c1a9fe22e0be78c72332557ac6a0a3aef66941edca9a6",
+          "tab": {
+            "homebrew_version": "7.0.8",
+            "changed_files": [
+              "lib/pkgconfig/libzip.pc"
+            ],
+            "linkage_files": [
+              "bin/zipcmp",
+              "bin/zipmerge",
+              "bin/ziptool",
+              "lib/libzip.5.6.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791382562,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libzip"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libzip"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libzip"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libzip-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/zipmerge",
+            "bin/ziptool",
+            "bin/zipcmp"
+          ],
+          "all_files": [
+            ".brew/libzip.rb",
+            "AUTHORS",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NEWS.md",
+            "README.md",
+            "TODO.md",
+            "bin/zipcmp",
+            "bin/zipmerge",
+            "bin/ziptool",
+            "include/zip.h",
+            "include/zipconf.h",
+            "lib/cmake/libzip/libzip-bin-targets-release.cmake",
+            "lib/cmake/libzip/libzip-bin-targets.cmake",
+            "lib/cmake/libzip/libzip-config-version.cmake",
+            "lib/cmake/libzip/libzip-config.cmake",
+            "lib/cmake/libzip/libzip-targets-release.cmake",
+            "lib/cmake/libzip/libzip-targets.cmake",
+            "lib/cmake/libzip/modules/FindNettle.cmake",
+            "lib/cmake/libzip/modules/Findzstd.cmake",
+            "lib/libzip.5.6.dylib",
+            "lib/libzip.5.dylib",
+            "lib/libzip.dylib",
+            "lib/pkgconfig/libzip.pc",
+            "sbom.spdx.json",
+            "share/man/man1/zipcmp.1",
+            "share/man/man1/zipmerge.1",
+            "share/man/man1/ziptool.1",
+            "share/man/man3/ZIP_SOURCE_GET_ARGS.3",
+            "share/man/man3/libzip.3",
+            "share/man/man3/zip_add.3",
+            "share/man/man3/zip_add_dir.3",
+            "share/man/man3/zip_close.3",
+            "share/man/man3/zip_compression_method_supported.3",
+            "share/man/man3/zip_delete.3",
+            "share/man/man3/zip_dir_add.3",
+            "share/man/man3/zip_discard.3",
+            "share/man/man3/zip_encryption_method_supported.3",
+            "share/man/man3/zip_error_clear.3",
+            "share/man/man3/zip_error_code_system.3",
+            "share/man/man3/zip_error_code_zip.3",
+            "share/man/man3/zip_error_fini.3",
+            "share/man/man3/zip_error_get.3",
+            "share/man/man3/zip_error_get_sys_type.3",
+            "share/man/man3/zip_error_init.3",
+            "share/man/man3/zip_error_init_with_code.3",
+            "share/man/man3/zip_error_set.3",
+            "share/man/man3/zip_error_set_from_source.3",
+            "share/man/man3/zip_error_strerror.3",
+            "share/man/man3/zip_error_system_type.3",
+            "share/man/man3/zip_error_to_data.3",
+            "share/man/man3/zip_error_to_str.3",
+            "share/man/man3/zip_errors.3",
+            "share/man/man3/zip_fclose.3",
+            "share/man/man3/zip_fdopen.3",
+            "share/man/man3/zip_file_add.3",
+            "share/man/man3/zip_file_attributes_init.3",
+            "share/man/man3/zip_file_error_clear.3",
+            "share/man/man3/zip_file_error_get.3",
+            "share/man/man3/zip_file_extra_field_delete.3",
+            "share/man/man3/zip_file_extra_field_delete_by_id.3",
+            "share/man/man3/zip_file_extra_field_get.3",
+            "share/man/man3/zip_file_extra_field_get_by_id.3",
+            "share/man/man3/zip_file_extra_field_set.3",
+            "share/man/man3/zip_file_extra_fields_count.3",
+            "share/man/man3/zip_file_extra_fields_count_by_id.3",
+            "share/man/man3/zip_file_get_comment.3",
+            "share/man/man3/zip_file_get_error.3",
+            "share/man/man3/zip_file_get_external_attributes.3",
+            "share/man/man3/zip_file_is_seekable.3",
+            "share/man/man3/zip_file_rename.3",
+            "share/man/man3/zip_file_replace.3",
+            "share/man/man3/zip_file_set_comment.3",
+            "share/man/man3/zip_file_set_dostime.3",
+            "share/man/man3/zip_file_set_encryption.3",
+            "share/man/man3/zip_file_set_external_attributes.3",
+            "share/man/man3/zip_file_set_mtime.3",
+            "share/man/man3/zip_file_strerror.3",
+            "share/man/man3/zip_fopen.3",
+            "share/man/man3/zip_fopen_encrypted.3",
+            "share/man/man3/zip_fopen_index.3",
+            "share/man/man3/zip_fopen_index_encrypted.3",
+            "share/man/man3/zip_fread.3",
+            "share/man/man3/zip_fseek.3",
+            "share/man/man3/zip_ftell.3",
+            "share/man/man3/zip_get_archive_comment.3",
+            "share/man/man3/zip_get_archive_flag.3",
+            "share/man/man3/zip_get_error.3",
+            "share/man/man3/zip_get_file_comment.3",
+            "share/man/man3/zip_get_name.3",
+            "share/man/man3/zip_get_num_entries.3",
+            "share/man/man3/zip_get_num_files.3",
+            "share/man/man3/zip_libzip_version.3",
+            "share/man/man3/zip_name_locate.3",
+            "share/man/man3/zip_open.3",
+            "share/man/man3/zip_open_from_source.3",
+            "share/man/man3/zip_register_cancel_callback_with_state.3",
+            "share/man/man3/zip_register_progress_callback.3",
+            "share/man/man3/zip_register_progress_callback_with_state.3",
+            "share/man/man3/zip_rename.3",
+            "share/man/man3/zip_replace.3",
+            "share/man/man3/zip_set_archive_comment.3",
+            "share/man/man3/zip_set_archive_flag.3",
+            "share/man/man3/zip_set_default_password.3",
+            "share/man/man3/zip_set_file_comment.3",
+            "share/man/man3/zip_set_file_compression.3",
+            "share/man/man3/zip_source_at_eof.3",
+            "share/man/man3/zip_source_begin_write.3",
+            "share/man/man3/zip_source_begin_write_cloning.3",
+            "share/man/man3/zip_source_buffer.3",
+            "share/man/man3/zip_source_buffer_create.3",
+            "share/man/man3/zip_source_buffer_fragment.3",
+            "share/man/man3/zip_source_buffer_fragment_create.3",
+            "share/man/man3/zip_source_close.3",
+            "share/man/man3/zip_source_commit_write.3",
+            "share/man/man3/zip_source_error.3",
+            "share/man/man3/zip_source_file.3",
+            "share/man/man3/zip_source_file_create.3",
+            "share/man/man3/zip_source_filep.3",
+            "share/man/man3/zip_source_filep_create.3",
+            "share/man/man3/zip_source_free.3",
+            "share/man/man3/zip_source_function.3",
+            "share/man/man3/zip_source_function_create.3",
+            "share/man/man3/zip_source_is_deleted.3",
+            "share/man/man3/zip_source_is_seekable.3",
+            "share/man/man3/zip_source_keep.3",
+            "share/man/man3/zip_source_layered.3",
+            "share/man/man3/zip_source_layered_create.3",
+            "share/man/man3/zip_source_make_command_bitmap.3",
+            "share/man/man3/zip_source_open.3",
+            "share/man/man3/zip_source_pass_to_lower_layer.3",
+            "share/man/man3/zip_source_read.3",
+            "share/man/man3/zip_source_rollback_write.3",
+            "share/man/man3/zip_source_seek.3",
+            "share/man/man3/zip_source_seek_compute_offset.3",
+            "share/man/man3/zip_source_seek_write.3",
+            "share/man/man3/zip_source_stat.3",
+            "share/man/man3/zip_source_tell.3",
+            "share/man/man3/zip_source_tell_write.3",
+            "share/man/man3/zip_source_win32a.3",
+            "share/man/man3/zip_source_win32a_create.3",
+            "share/man/man3/zip_source_win32handle.3",
+            "share/man/man3/zip_source_win32handle_create.3",
+            "share/man/man3/zip_source_win32w.3",
+            "share/man/man3/zip_source_win32w_create.3",
+            "share/man/man3/zip_source_window_create.3",
+            "share/man/man3/zip_source_write.3",
+            "share/man/man3/zip_source_zip.3",
+            "share/man/man3/zip_source_zip_create.3",
+            "share/man/man3/zip_source_zip_file.3",
+            "share/man/man3/zip_source_zip_file_create.3",
+            "share/man/man3/zip_stat.3",
+            "share/man/man3/zip_stat_index.3",
+            "share/man/man3/zip_stat_init.3",
+            "share/man/man3/zip_strerror.3",
+            "share/man/man3/zip_unchange.3",
+            "share/man/man3/zip_unchange_all.3",
+            "share/man/man3/zip_unchange_archive.3",
+            "share/man/man5/zip.5",
+            "share/man/man5/zip_error.5",
+            "share/man/man5/zip_file.5",
+            "share/man/man5/zip_source.5"
+          ],
+          "installed_size": 763151
+        }
+      }
+    }
+  }
+}

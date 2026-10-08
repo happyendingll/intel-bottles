@@ -1,0 +1,825 @@
+{
+  "xorg-server": {
+    "formula": {
+      "name": "xorg-server",
+      "pkg_version": "21.1.25",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/x/xorg-server.rb",
+      "tap_git_path": "Formula/x/xorg-server.rb",
+      "tap_git_revision": "b15f143673000f037f82dcf4c618ee93eb3132d7",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "X Window System display server",
+      "license": "MIT AND APSL-2.0",
+      "homepage": "https://www.x.org"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-08T07:26:28Z",
+      "tags": {
+        "sequoia": {
+          "filename": "xorg-server-21.1.25.sequoia.bottle.tar.gz",
+          "local_filename": "xorg-server--21.1.25.sequoia.bottle.tar.gz",
+          "sha256": "de4db17f46d04f2b5bc2f9cf7251e1ff3b6a028031b8b61c0c81c2291bf868ef",
+          "tab": {
+            "homebrew_version": "7.0.8",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/Xephyr",
+              "bin/Xnest",
+              "bin/Xvfb",
+              "libexec/X11.app/Contents/MacOS/X11.bin"
+            ],
+            "binary_relocation_files": [
+              "bin/Xephyr",
+              "bin/Xnest",
+              "bin/Xvfb",
+              "libexec/X11.app/Contents/MacOS/X11.bin"
+            ],
+            "source_modified_time": 1791337247,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "xorgproto",
+                "version": "2026.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libx11",
+                "version": "1.8.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.13",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxext",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxfixes",
+                "version": "6.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.0.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.59",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.59",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "freetype",
+                "version": "2.14.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.14.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libfontenc",
+                "version": "1.1.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.9",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxfont2",
+                "version": "2.0.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.0.9",
+                "declared_directly": true
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "z3",
+                "version": "5.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.1.0",
+                "declared_directly": false,
+                "compatibility_version": 4
+              },
+              {
+                "full_name": "llvm",
+                "version": "23.1.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.2",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "spirv-llvm-translator",
+                "version": "23.1.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.2",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "spirv-tools",
+                "version": "1.4.363.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.363.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xcb-util-keysyms",
+                "version": "0.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.4.1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "molten-vk",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mesa",
+                "version": "26.2.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "26.2.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libice",
+                "version": "1.1.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libsm",
+                "version": "1.2.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxt",
+                "version": "1.3.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxmu",
+                "version": "1.3.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xauth",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xcb-util",
+                "version": "0.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.4.1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "xcb-util-image",
+                "version": "0.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.4.1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "xcb-util-renderutil",
+                "version": "0.3.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.3.10",
+                "declared_directly": true
+              },
+              {
+                "full_name": "xcb-util-wm",
+                "version": "0.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.4.2",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libxkbfile",
+                "version": "1.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xkbcomp",
+                "version": "1.5.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "xkeyboard-config",
+                "version": "2.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.48",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libapplewm",
+                "version": "1.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/Xephyr",
+              "string": "/usr/local/opt/xkbcomp/bin",
+              "offset": 1406072
+            },
+            {
+              "path": "bin/Xvfb",
+              "string": "/usr/local/opt/xkbcomp/bin",
+              "offset": 1238565
+            },
+            {
+              "path": "bin/Xnest",
+              "string": "/usr/local/opt/xkbcomp/bin",
+              "offset": 1006317
+            },
+            {
+              "path": "libexec/X11.app/Contents/MacOS/X11.bin",
+              "string": "/usr/local/opt/xkbcomp/bin",
+              "offset": 1430112
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.2",
+              "SPDXRef-Package-SPDXRef-spirv-llvm-translator-23.2e.1.2e.2",
+              "SPDXRef-Package-SPDXRef-spirv-tools-1.2e.4.2e.363.2e.0",
+              "SPDXRef-Package-SPDXRef-mesa-26.2e.2.2e.4",
+              "SPDXRef-Package-SPDXRef-xkeyboard-config-2.2e.48",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/xorgproto-2026.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "0d98eefb40005082d7c0bdc684951f1221d9caaba753a44034a0e930bbe7d9b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "name": "libx11",
+                "versionInfo": "1.8.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libx11-1.8.13.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9d7831ffb5cb71a304ef0c98d59b3fe38f56e42c48d7521dfd9040ef7631bd86"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "name": "libpng",
+                "versionInfo": "1.6.59",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libpng-1.6.59.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "0af47c587a33d8f7f6aebdf4653f35897ec0f223104e5186edaef52dc2e17caa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.2",
+                "name": "llvm",
+                "versionInfo": "23.1.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/llvm-23.1.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fe936f60388d6ec767e8b8ad79f24bf018808d49c2a0bc19339e26f19c348b19"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/llvm@23.1.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-spirv-llvm-translator-23.2e.1.2e.2",
+                "name": "spirv-llvm-translator",
+                "versionInfo": "23.1.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/spirv-llvm-translator-23.1.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6de2a09033d547155ce850bd13207a2158e12028f039da7185c07ecc38672c1"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/spirv-llvm-translator@23.1.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-spirv-tools-1.2e.4.2e.363.2e.0",
+                "name": "spirv-tools",
+                "versionInfo": "1.4.363.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3/spirv-tools-1.4.363.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b318b6ca88e12c80e535c65a7580f3e9f9f6c610d7dfb4ef501da25a8b1f5b6c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/spirv-tools@1.4.363.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mesa-26.2e.2.2e.4",
+                "name": "mesa",
+                "versionInfo": "26.2.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT AND Apache-2.0 AND BSD-2-Clause AND BSD-3-Clause AND BSL-1.0 AND HPND AND HPND-sell-variant AND ICU AND MIT-Khronos-old AND SGI-B-2.0 AND LicenseRef-Homebrew-public-domain AND (GPL-1.0-or-later WITH Linux-syscall-note) AND (GPL-2.0-only WITH Linux-syscall-note)",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mesa-26.2.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "197ae8894ea9fad758244fb58f0c36d2d8b508600d4238036d8fe4bd44db95b6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mesa@26.2.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xkeyboard-config-2.2e.48",
+                "name": "xkeyboard-config",
+                "versionInfo": "2.48",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/xkeyboard-config/blobs/sha256:38ecdc9a6c476d429383108b2424d6e160c1bd31f768ae93ad1ae33e57490025",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "38ecdc9a6c476d429383108b2424d6e160c1bd31f768ae93ad1ae33e57490025"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xkeyboard-config@2.48",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xorg-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xorg-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xorg-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xorg-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xorg-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xorg-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xorg-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-spirv-llvm-translator-23.2e.1.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xorg-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-spirv-tools-1.2e.4.2e.363.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xorg-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mesa-26.2e.2.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xorg-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xkeyboard-config-2.2e.48",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xorg-server"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-xorg-server-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/Xephyr",
+            "bin/Xquartz",
+            "bin/Xvfb",
+            "bin/Xnest",
+            "bin/X"
+          ],
+          "all_files": [
+            ".brew/xorg-server.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/X",
+            "bin/Xephyr",
+            "bin/Xnest",
+            "bin/Xquartz",
+            "bin/Xvfb",
+            "lib/xorg/protocol.txt",
+            "libexec/X11.app/Contents/Info.plist",
+            "libexec/X11.app/Contents/MacOS/X11",
+            "libexec/X11.app/Contents/MacOS/X11.bin",
+            "libexec/X11.app/Contents/MacOS/X11.sh",
+            "libexec/X11.app/Contents/PkgInfo",
+            "libexec/X11.app/Contents/Resources/Dutch.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/Dutch.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/English.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/English.lproj/main.nib/designable.nib",
+            "libexec/X11.app/Contents/Resources/English.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/French.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/French.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/German.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/German.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/Italian.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/Italian.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/Japanese.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/Japanese.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/Spanish.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/Spanish.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/X11.icns",
+            "libexec/X11.app/Contents/Resources/ar.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/ar.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/ca.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/ca.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/cs.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/cs.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/da.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/da.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/el.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/el.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/fi.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/fi.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/he.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/he.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/hr.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/hr.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/hu.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/hu.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/ko.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/ko.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/no.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/no.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/pl.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/pl.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/pt.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/pt.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/pt_PT.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/pt_PT.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/ro.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/ro.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/ru.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/ru.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/sk.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/sk.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/sv.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/sv.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/th.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/th.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/tr.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/tr.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/uk.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/uk.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/zh_CN.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/zh_CN.lproj/main.nib/keyedobjects.nib",
+            "libexec/X11.app/Contents/Resources/zh_TW.lproj/Localizable.strings",
+            "libexec/X11.app/Contents/Resources/zh_TW.lproj/main.nib/keyedobjects.nib",
+            "sbom.spdx.json",
+            "share/X11/XQuartz/defaults.plist",
+            "share/man/man1/Xephyr.1",
+            "share/man/man1/Xnest.1",
+            "share/man/man1/Xquartz.1",
+            "share/man/man1/Xserver.1",
+            "share/man/man1/Xvfb.1"
+          ],
+          "installed_size": 8960084
+        }
+      }
+    }
+  }
+}
