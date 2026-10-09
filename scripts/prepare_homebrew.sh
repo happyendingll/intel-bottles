@@ -9,6 +9,21 @@ if [ "${CI:-}" != "true" ] && [ "${ALLOW_LOCAL_PREPARE:-}" != "1" ]; then
 fi
 : "${HOMEBREW_CORE_GIT_REMOTE:?HOMEBREW_CORE_GIT_REMOTE must be set}"
 
+# The macos-15 runner image preinstalls azure-cli as a formula, but upstream
+# migrated it to homebrew/cask. When `brew install` scans installed formulae,
+# resolving that old rack now recurses in Formulary.tap_formula_name_type until
+# Ruby raises SystemStackError. Hide the rack on disposable CI runners before
+# any build uses the updated core tap. No pipeline job needs the Azure CLI.
+if [ "${CI:-}" = "true" ]; then
+  AZURE_CLI_RACK="$(brew --cellar)/azure-cli"
+  if [ -d "$AZURE_CLI_RACK" ]; then
+    : "${RUNNER_TEMP:?RUNNER_TEMP must be set on CI}"
+    mkdir -p "$RUNNER_TEMP/removed-homebrew-racks"
+    mv "$AZURE_CLI_RACK" "$RUNNER_TEMP/removed-homebrew-racks/azure-cli"
+    echo "removed migrated azure-cli formula from the runner Cellar"
+  fi
+fi
+
 # Runner images can lag behind homebrew-core. For example, core started using
 # Formula#python3 before the macos-15 image's bundled brew contained that helper.
 # Update brew itself without `brew update`, whose stash/pop of local tap changes can
