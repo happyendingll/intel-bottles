@@ -1,0 +1,463 @@
+{
+  "mariadb-connector-c": {
+    "formula": {
+      "name": "mariadb-connector-c",
+      "pkg_version": "3.4.11_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mariadb-connector-c.rb",
+      "tap_git_path": "Formula/m/mariadb-connector-c.rb",
+      "tap_git_revision": "ff108cbe9100325dcd621cf40c9056411587633d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "MariaDB database connector for C applications",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://mariadb.org/download/?tab=connector&prod=connector-c"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-09T08:52:11Z",
+      "tags": {
+        "sequoia": {
+          "filename": "mariadb-connector-c-3.4.11_1.sequoia.bottle.tar.gz",
+          "local_filename": "mariadb-connector-c--3.4.11_1.sequoia.bottle.tar.gz",
+          "sha256": "eb8b734247e397b6e79a60e1c38fb934b2b4576c7d25f1d20f86f17a120cd118",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "include/mariadb/mariadb_version.h",
+              "lib/pkgconfig/libmariadb.pc"
+            ],
+            "linkage_files": [
+              "lib/libmariadb.3.dylib",
+              "lib/mariadb/plugin/caching_sha2_password.so",
+              "lib/mariadb/plugin/client_ed25519.so",
+              "lib/mariadb/plugin/parsec.so",
+              "lib/mariadb/plugin/sha256_password.so",
+              "lib/mariadb/plugin/zstd.so"
+            ],
+            "binary_relocation_files": [
+              "bin/mariadb_config",
+              "lib/libmariadb.3.dylib",
+              "lib/libmariadbclient.a"
+            ],
+            "source_modified_time": 1790087958,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/mariadb_config",
+              "string": "/usr/local/Cellar/mariadb-connector-c/3.4.11_1",
+              "offset": 4464
+            },
+            {
+              "path": "lib/libmariadbclient.a",
+              "string": "/usr/local/Cellar/mariadb-connector-c/3.4.11_1/lib/mariadb/plugin",
+              "offset": 316919
+            },
+            {
+              "path": "lib/libmariadb.3.dylib",
+              "string": "/usr/local/Cellar/mariadb-connector-c/3.4.11_1/lib/mariadb/plugin",
+              "offset": 185092
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mariadb-connector-c"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mariadb-connector-c"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mariadb-connector-c"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mariadb-connector-c"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mariadb-connector-c"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-mariadb-connector-c-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/mysql_config",
+            "bin/mariadb_config"
+          ],
+          "all_files": [
+            ".brew/mariadb-connector-c.rb",
+            "COPYING.LIB",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/mariadb_config",
+            "bin/mysql_config",
+            "include/mariadb/errmsg.h",
+            "include/mariadb/ma_list.h",
+            "include/mariadb/ma_pvio.h",
+            "include/mariadb/ma_tls.h",
+            "include/mariadb/mariadb/ma_io.h",
+            "include/mariadb/mariadb_com.h",
+            "include/mariadb/mariadb_ctype.h",
+            "include/mariadb/mariadb_dyncol.h",
+            "include/mariadb/mariadb_rpl.h",
+            "include/mariadb/mariadb_stmt.h",
+            "include/mariadb/mariadb_version.h",
+            "include/mariadb/mysql/client_plugin.h",
+            "include/mariadb/mysql/plugin_auth.h",
+            "include/mariadb/mysql.h",
+            "include/mariadb/mysqld_error.h",
+            "lib/libmariadb.3.dylib",
+            "lib/libmariadb.a",
+            "lib/libmariadb.dylib",
+            "lib/libmariadbclient.a",
+            "lib/libmysqlclient.a",
+            "lib/libmysqlclient.dylib",
+            "lib/libmysqlclient_r.a",
+            "lib/libmysqlclient_r.dylib",
+            "lib/mariadb/libmariadb.3.dylib",
+            "lib/mariadb/libmariadb.dylib",
+            "lib/mariadb/libmysqlclient.dylib",
+            "lib/mariadb/libmysqlclient_r.dylib",
+            "lib/mariadb/plugin/auth_gssapi_client.so",
+            "lib/mariadb/plugin/caching_sha2_password.so",
+            "lib/mariadb/plugin/client_ed25519.so",
+            "lib/mariadb/plugin/dialog.so",
+            "lib/mariadb/plugin/mysql_clear_password.so",
+            "lib/mariadb/plugin/parsec.so",
+            "lib/mariadb/plugin/remote_io.so",
+            "lib/mariadb/plugin/sha256_password.so",
+            "lib/mariadb/plugin/zstd.so",
+            "lib/pkgconfig/libmariadb.pc",
+            "sbom.spdx.json",
+            "share/man/man3/mariadb_cancel.3.gz",
+            "share/man/man3/mariadb_connection.3.gz",
+            "share/man/man3/mariadb_dyncol_check.3.gz",
+            "share/man/man3/mariadb_dyncol_column_cmp_named.3.gz",
+            "share/man/man3/mariadb_dyncol_column_count.3.gz",
+            "share/man/man3/mariadb_dyncol_create_many_named.3.gz",
+            "share/man/man3/mariadb_dyncol_create_many_num.3.gz",
+            "share/man/man3/mariadb_dyncol_exists_named.3.gz",
+            "share/man/man3/mariadb_dyncol_exists_num.3.gz",
+            "share/man/man3/mariadb_dyncol_free.3.gz",
+            "share/man/man3/mariadb_dyncol_list_named.3.gz",
+            "share/man/man3/mariadb_dyncol_list_num.3.gz",
+            "share/man/man3/mariadb_dyncol_unpack.3.gz",
+            "share/man/man3/mariadb_dyncol_update_many_named.3.gz",
+            "share/man/man3/mariadb_dyncol_update_many_num.3.gz",
+            "share/man/man3/mariadb_get_infov.3.gz",
+            "share/man/man3/mariadb_reconnect.3.gz",
+            "share/man/man3/mariadb_rpl_close.3.gz",
+            "share/man/man3/mariadb_rpl_fetch.3.gz",
+            "share/man/man3/mariadb_rpl_get_optionsv.3.gz",
+            "share/man/man3/mariadb_rpl_open.3.gz",
+            "share/man/man3/mariadb_rpl_optionsv.3.gz",
+            "share/man/man3/mariadb_stmt_execute_direct.3.gz",
+            "share/man/man3/mariadb_stmt_fetch_fields.3.gz",
+            "share/man/man3/mysql_affected_rows.3.gz",
+            "share/man/man3/mysql_autocommit.3.gz",
+            "share/man/man3/mysql_change_user.3.gz",
+            "share/man/man3/mysql_close.3.gz",
+            "share/man/man3/mysql_commit.3.gz",
+            "share/man/man3/mysql_data_seek.3.gz",
+            "share/man/man3/mysql_errno.3.gz",
+            "share/man/man3/mysql_error.3.gz",
+            "share/man/man3/mysql_fetch_field.3.gz",
+            "share/man/man3/mysql_fetch_field_direct.3.gz",
+            "share/man/man3/mysql_fetch_fields.3.gz",
+            "share/man/man3/mysql_fetch_lengths.3.gz",
+            "share/man/man3/mysql_fetch_row.3.gz",
+            "share/man/man3/mysql_field_count.3.gz",
+            "share/man/man3/mysql_field_seek.3.gz",
+            "share/man/man3/mysql_field_tell.3.gz",
+            "share/man/man3/mysql_free_result.3.gz",
+            "share/man/man3/mysql_get_character_set_info.3.gz",
+            "share/man/man3/mysql_get_client_info.3.gz",
+            "share/man/man3/mysql_get_client_version.3.gz",
+            "share/man/man3/mysql_get_host_info.3.gz",
+            "share/man/man3/mysql_get_proto_info.3.gz",
+            "share/man/man3/mysql_get_server_info.3.gz",
+            "share/man/man3/mysql_get_server_version.3.gz",
+            "share/man/man3/mysql_get_socket.3.gz",
+            "share/man/man3/mysql_get_ssl_cipher.3.gz",
+            "share/man/man3/mysql_hex_string.3.gz",
+            "share/man/man3/mysql_info.3.gz",
+            "share/man/man3/mysql_init.3.gz",
+            "share/man/man3/mysql_kill.3.gz",
+            "share/man/man3/mysql_more_results.3.gz",
+            "share/man/man3/mysql_next_result.3.gz",
+            "share/man/man3/mysql_num_fields.3.gz",
+            "share/man/man3/mysql_num_rows.3.gz",
+            "share/man/man3/mysql_options.3.gz",
+            "share/man/man3/mysql_options4.3.gz",
+            "share/man/man3/mysql_optionsv.3.gz",
+            "share/man/man3/mysql_ping.3.gz",
+            "share/man/man3/mysql_query.3.gz",
+            "share/man/man3/mysql_read_query_result.3.gz",
+            "share/man/man3/mysql_real_connect.3.gz",
+            "share/man/man3/mysql_real_escape_string.3.gz",
+            "share/man/man3/mysql_real_query.3.gz",
+            "share/man/man3/mysql_refresh.3.gz",
+            "share/man/man3/mysql_reset_connection.3.gz",
+            "share/man/man3/mysql_rollback.3.gz",
+            "share/man/man3/mysql_row_seek.3.gz",
+            "share/man/man3/mysql_row_tell.3.gz",
+            "share/man/man3/mysql_select_db.3.gz",
+            "share/man/man3/mysql_send_query.3.gz",
+            "share/man/man3/mysql_server_end.3.gz",
+            "share/man/man3/mysql_server_init.3.gz",
+            "share/man/man3/mysql_session_track_get_first.3.gz",
+            "share/man/man3/mysql_session_track_get_next.3.gz",
+            "share/man/man3/mysql_set_character_set.3.gz",
+            "share/man/man3/mysql_set_server_option.3.gz",
+            "share/man/man3/mysql_shutdown.3.gz",
+            "share/man/man3/mysql_sqlstate.3.gz",
+            "share/man/man3/mysql_ssl_set.3.gz",
+            "share/man/man3/mysql_stat.3.gz",
+            "share/man/man3/mysql_stmt_affected_rows.3.gz",
+            "share/man/man3/mysql_stmt_attr_get.3.gz",
+            "share/man/man3/mysql_stmt_attr_set.3.gz",
+            "share/man/man3/mysql_stmt_bind_param.3.gz",
+            "share/man/man3/mysql_stmt_bind_result.3.gz",
+            "share/man/man3/mysql_stmt_close.3.gz",
+            "share/man/man3/mysql_stmt_data_seek.3.gz",
+            "share/man/man3/mysql_stmt_errno.3.gz",
+            "share/man/man3/mysql_stmt_error.3.gz",
+            "share/man/man3/mysql_stmt_execute.3.gz",
+            "share/man/man3/mysql_stmt_fetch.3.gz",
+            "share/man/man3/mysql_stmt_fetch_column.3.gz",
+            "share/man/man3/mysql_stmt_field_count.3.gz",
+            "share/man/man3/mysql_stmt_free_result.3.gz",
+            "share/man/man3/mysql_stmt_init.3.gz",
+            "share/man/man3/mysql_stmt_insert_id.3.gz",
+            "share/man/man3/mysql_stmt_more_results.3.gz",
+            "share/man/man3/mysql_stmt_next_result.3.gz",
+            "share/man/man3/mysql_stmt_num_rows.3.gz",
+            "share/man/man3/mysql_stmt_param_count.3.gz",
+            "share/man/man3/mysql_stmt_param_metadata.3.gz",
+            "share/man/man3/mysql_stmt_prepare.3.gz",
+            "share/man/man3/mysql_stmt_reset.3.gz",
+            "share/man/man3/mysql_stmt_result_metadata.3.gz",
+            "share/man/man3/mysql_stmt_row_seek.3.gz",
+            "share/man/man3/mysql_stmt_row_tell.3.gz",
+            "share/man/man3/mysql_stmt_send_long_data.3.gz",
+            "share/man/man3/mysql_stmt_sqlstate.3.gz",
+            "share/man/man3/mysql_stmt_store_result.3.gz",
+            "share/man/man3/mysql_stmt_warning_count.3.gz",
+            "share/man/man3/mysql_store_result.3.gz",
+            "share/man/man3/mysql_thread_end.3.gz",
+            "share/man/man3/mysql_thread_id.3.gz",
+            "share/man/man3/mysql_thread_init.3.gz",
+            "share/man/man3/mysql_use_result.3.gz",
+            "share/man/man3/mysql_warning_count.3.gz"
+          ],
+          "installed_size": 1207373
+        }
+      }
+    }
+  }
+}

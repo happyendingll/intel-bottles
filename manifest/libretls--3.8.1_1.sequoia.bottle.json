@@ -1,0 +1,253 @@
+{
+  "libretls": {
+    "formula": {
+      "name": "libretls",
+      "pkg_version": "3.8.1_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libretls.rb",
+      "tap_git_path": "Formula/lib/libretls.rb",
+      "tap_git_revision": "ff108cbe9100325dcd621cf40c9056411587633d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Libtls for OpenSSL",
+      "license": "ISC",
+      "homepage": "https://git.causal.agency/libretls/about/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-09T08:40:52Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libretls-3.8.1_1.sequoia.bottle.tar.gz",
+          "local_filename": "libretls--3.8.1_1.sequoia.bottle.tar.gz",
+          "sha256": "f5058e1b42b52075e14ad64005b60cdfcb976fd9c2d5d4d2ab35828774e10e85",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/libtls.pc"
+            ],
+            "linkage_files": [
+              "lib/libtls.28.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1697067231,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libretls"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libretls"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libretls-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libretls.rb",
+            "INSTALL_RECEIPT.json",
+            "include/tls.h",
+            "lib/libtls.28.dylib",
+            "lib/libtls.a",
+            "lib/libtls.dylib",
+            "lib/pkgconfig/libtls.pc",
+            "sbom.spdx.json",
+            "share/man/man3/tls_accept_cbs.3",
+            "share/man/man3/tls_accept_fds.3",
+            "share/man/man3/tls_accept_socket.3",
+            "share/man/man3/tls_client.3",
+            "share/man/man3/tls_close.3",
+            "share/man/man3/tls_config_add_keypair_file.3",
+            "share/man/man3/tls_config_add_keypair_mem.3",
+            "share/man/man3/tls_config_add_keypair_ocsp_file.3",
+            "share/man/man3/tls_config_add_keypair_ocsp_mem.3",
+            "share/man/man3/tls_config_add_ticket_key.3",
+            "share/man/man3/tls_config_clear_keys.3",
+            "share/man/man3/tls_config_error.3",
+            "share/man/man3/tls_config_free.3",
+            "share/man/man3/tls_config_insecure_noverifycert.3",
+            "share/man/man3/tls_config_insecure_noverifyname.3",
+            "share/man/man3/tls_config_insecure_noverifytime.3",
+            "share/man/man3/tls_config_new.3",
+            "share/man/man3/tls_config_ocsp_require_stapling.3",
+            "share/man/man3/tls_config_parse_protocols.3",
+            "share/man/man3/tls_config_prefer_ciphers_client.3",
+            "share/man/man3/tls_config_prefer_ciphers_server.3",
+            "share/man/man3/tls_config_set_alpn.3",
+            "share/man/man3/tls_config_set_ca_file.3",
+            "share/man/man3/tls_config_set_ca_mem.3",
+            "share/man/man3/tls_config_set_ca_path.3",
+            "share/man/man3/tls_config_set_cert_file.3",
+            "share/man/man3/tls_config_set_cert_mem.3",
+            "share/man/man3/tls_config_set_ciphers.3",
+            "share/man/man3/tls_config_set_crl_file.3",
+            "share/man/man3/tls_config_set_crl_mem.3",
+            "share/man/man3/tls_config_set_dheparams.3",
+            "share/man/man3/tls_config_set_ecdhecurves.3",
+            "share/man/man3/tls_config_set_key_file.3",
+            "share/man/man3/tls_config_set_key_mem.3",
+            "share/man/man3/tls_config_set_keypair_file.3",
+            "share/man/man3/tls_config_set_keypair_mem.3",
+            "share/man/man3/tls_config_set_keypair_ocsp_file.3",
+            "share/man/man3/tls_config_set_keypair_ocsp_mem.3",
+            "share/man/man3/tls_config_set_ocsp_staple_file.3",
+            "share/man/man3/tls_config_set_ocsp_staple_mem.3",
+            "share/man/man3/tls_config_set_protocols.3",
+            "share/man/man3/tls_config_set_session_fd.3",
+            "share/man/man3/tls_config_set_session_id.3",
+            "share/man/man3/tls_config_set_session_lifetime.3",
+            "share/man/man3/tls_config_set_verify_depth.3",
+            "share/man/man3/tls_config_verify.3",
+            "share/man/man3/tls_config_verify_client.3",
+            "share/man/man3/tls_config_verify_client_optional.3",
+            "share/man/man3/tls_configure.3",
+            "share/man/man3/tls_conn_alpn_selected.3",
+            "share/man/man3/tls_conn_cipher.3",
+            "share/man/man3/tls_conn_cipher_strength.3",
+            "share/man/man3/tls_conn_servername.3",
+            "share/man/man3/tls_conn_session_resumed.3",
+            "share/man/man3/tls_conn_version.3",
+            "share/man/man3/tls_connect.3",
+            "share/man/man3/tls_connect_cbs.3",
+            "share/man/man3/tls_connect_fds.3",
+            "share/man/man3/tls_connect_servername.3",
+            "share/man/man3/tls_connect_socket.3",
+            "share/man/man3/tls_default_ca_cert_file.3",
+            "share/man/man3/tls_error.3",
+            "share/man/man3/tls_free.3",
+            "share/man/man3/tls_handshake.3",
+            "share/man/man3/tls_init.3",
+            "share/man/man3/tls_load_file.3",
+            "share/man/man3/tls_ocsp_process_response.3",
+            "share/man/man3/tls_peer_cert_chain_pem.3",
+            "share/man/man3/tls_peer_cert_contains_name.3",
+            "share/man/man3/tls_peer_cert_hash.3",
+            "share/man/man3/tls_peer_cert_issuer.3",
+            "share/man/man3/tls_peer_cert_notafter.3",
+            "share/man/man3/tls_peer_cert_notbefore.3",
+            "share/man/man3/tls_peer_cert_provided.3",
+            "share/man/man3/tls_peer_cert_subject.3",
+            "share/man/man3/tls_peer_ocsp_cert_status.3",
+            "share/man/man3/tls_peer_ocsp_crl_reason.3",
+            "share/man/man3/tls_peer_ocsp_next_update.3",
+            "share/man/man3/tls_peer_ocsp_response_status.3",
+            "share/man/man3/tls_peer_ocsp_result.3",
+            "share/man/man3/tls_peer_ocsp_revocation_time.3",
+            "share/man/man3/tls_peer_ocsp_this_update.3",
+            "share/man/man3/tls_peer_ocsp_url.3",
+            "share/man/man3/tls_read.3",
+            "share/man/man3/tls_reset.3",
+            "share/man/man3/tls_server.3",
+            "share/man/man3/tls_unload_file.3",
+            "share/man/man3/tls_write.3"
+          ],
+          "installed_size": 731375
+        }
+      }
+    }
+  }
+}

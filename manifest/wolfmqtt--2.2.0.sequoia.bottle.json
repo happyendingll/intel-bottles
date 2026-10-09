@@ -1,0 +1,160 @@
+{
+  "wolfmqtt": {
+    "formula": {
+      "name": "wolfmqtt",
+      "pkg_version": "2.2.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/w/wolfmqtt.rb",
+      "tap_git_path": "Formula/w/wolfmqtt.rb",
+      "tap_git_revision": "ff108cbe9100325dcd621cf40c9056411587633d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Small, fast, portable MQTT client C implementation",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://www.wolfssl.com"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-09T09:25:53Z",
+      "tags": {
+        "sequoia": {
+          "filename": "wolfmqtt-2.2.0.sequoia.bottle.tar.gz",
+          "local_filename": "wolfmqtt--2.2.0.sequoia.bottle.tar.gz",
+          "sha256": "3d731c95958d162abe6459bdcf037bfdfcc4d16233e9617849950d6aabdc90b9",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "bin/wolfmqtt-config"
+            ],
+            "linkage_files": [
+              "lib/libwolfmqtt.20.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791408649,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "wolfssl",
+                "version": "5.9.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.9.4",
+                "declared_directly": true,
+                "compatibility_version": 2
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-wolfssl-5.2e.9.2e.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-wolfssl-5.2e.9.2e.4",
+                "name": "wolfssl",
+                "versionInfo": "5.9.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/wolfssl-5.9.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "47e5ee394a737da92413d299d7c2e57d99fed5eb093c20e0e9d818e4c125ab36"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/wolfssl@5.9.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-wolfssl-5.2e.9.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-wolfmqtt"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-wolfmqtt-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/wolfmqtt-config"
+          ],
+          "all_files": [
+            ".brew/wolfmqtt.rb",
+            "COPYING",
+            "ChangeLog.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/wolfmqtt-config",
+            "include/wolfmqtt/mqtt_broker.h",
+            "include/wolfmqtt/mqtt_client.h",
+            "include/wolfmqtt/mqtt_packet.h",
+            "include/wolfmqtt/mqtt_sn_client.h",
+            "include/wolfmqtt/mqtt_sn_packet.h",
+            "include/wolfmqtt/mqtt_socket.h",
+            "include/wolfmqtt/mqtt_types.h",
+            "include/wolfmqtt/options.h",
+            "include/wolfmqtt/version.h",
+            "include/wolfmqtt/visibility.h",
+            "include/wolfmqtt/vs_settings.h",
+            "lib/libwolfmqtt.20.dylib",
+            "lib/libwolfmqtt.dylib",
+            "sbom.spdx.json",
+            "share/doc/wolfmqtt/example/awsiot.c",
+            "share/doc/wolfmqtt/example/azureiothub.c",
+            "share/doc/wolfmqtt/example/fwclient.c",
+            "share/doc/wolfmqtt/example/fwpush.c",
+            "share/doc/wolfmqtt/example/mqtt-pub.c",
+            "share/doc/wolfmqtt/example/mqtt-sub.c",
+            "share/doc/wolfmqtt/example/mqttclient.c",
+            "share/doc/wolfmqtt/example/mqttexample.c",
+            "share/doc/wolfmqtt/example/mqttnet.c",
+            "share/doc/wolfmqtt/example/mqttport.c",
+            "share/doc/wolfmqtt/example/mqttsimple.c",
+            "share/doc/wolfmqtt/example/multithread.c",
+            "share/doc/wolfmqtt/example/nbclient.c",
+            "share/doc/wolfmqtt/example/sn-client.c",
+            "share/doc/wolfmqtt/example/sn-client_qos-1.c",
+            "share/doc/wolfmqtt/example/sn-multithread.c",
+            "share/doc/wolfmqtt/example/wiot.c"
+          ],
+          "installed_size": 812730
+        }
+      }
+    }
+  }
+}

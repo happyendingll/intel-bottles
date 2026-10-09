@@ -1,0 +1,173 @@
+{
+  "memtier_benchmark": {
+    "formula": {
+      "name": "memtier_benchmark",
+      "pkg_version": "2.5.2_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/memtier_benchmark.rb",
+      "tap_git_path": "Formula/m/memtier_benchmark.rb",
+      "tap_git_revision": "ff108cbe9100325dcd621cf40c9056411587633d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Redis and Memcache traffic generation and benchmarking tool",
+      "license": "(GPL-2.0-or-later WITH cryptsetup-OpenSSL-exception) AND (CC0-1.0 OR BSD-2-Clause)",
+      "homepage": "https://github.com/redis/memtier_benchmark"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-09T08:53:24Z",
+      "tags": {
+        "sequoia": {
+          "filename": "memtier_benchmark-2.5.2_1.sequoia.bottle.tar.gz",
+          "local_filename": "memtier_benchmark--2.5.2_1.sequoia.bottle.tar.gz",
+          "sha256": "19cd955288a90d27579da37a429c165b1a0c8a0a5b8466182c76613ae05da8e7",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/memtier_benchmark"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791321604,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libevent",
+                "version": "2.1.13",
+                "revision": 1,
+                "pkg_version": "2.1.13_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-memtier.5f.benchmark"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-memtier.5f.benchmark"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-memtier.5f.benchmark-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/memtier_benchmark"
+          ],
+          "all_files": [
+            ".brew/memtier_benchmark.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/memtier_benchmark",
+            "sbom.spdx.json",
+            "share/bash-completion/completions/memtier_benchmark",
+            "share/man/man1/memtier_benchmark.1"
+          ],
+          "installed_size": 684921
+        }
+      }
+    }
+  }
+}

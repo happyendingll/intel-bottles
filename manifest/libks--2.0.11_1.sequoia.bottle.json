@@ -1,0 +1,205 @@
+{
+  "libks": {
+    "formula": {
+      "name": "libks",
+      "pkg_version": "2.0.11_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libks.rb",
+      "tap_git_path": "Formula/lib/libks.rb",
+      "tap_git_revision": "ff108cbe9100325dcd621cf40c9056411587633d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Foundational support for signalwire C products",
+      "license": "MIT AND BSD-3-Clause AND HPND AND LicenseRef-Homebrew-public-domain",
+      "homepage": "https://github.com/signalwire/libks"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-09T09:11:50Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libks-2.0.11_1.sequoia.bottle.tar.gz",
+          "local_filename": "libks--2.0.11_1.sequoia.bottle.tar.gz",
+          "sha256": "d140db4caf278cb50aa59ec65e9e8de3e924c3875504fcc72f2de58c7fecde03",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "README",
+              "lib/pkgconfig/libks2.pc"
+            ],
+            "linkage_files": [
+              "lib/libks2.2.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1779302091,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libks"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libks"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libks-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libks.rb",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "copyright",
+            "include/libks2/libks/cmake/AddLibBacktrace.cmake",
+            "include/libks2/libks/cmake/FindPCRE.cmake",
+            "include/libks2/libks/cmake/LibKS2Config-release.cmake",
+            "include/libks2/libks/cmake/LibKS2Config.cmake",
+            "include/libks2/libks/cmake/ksutil.cmake",
+            "include/libks2/libks/ks.h",
+            "include/libks2/libks/ks_acl.h",
+            "include/libks2/libks/ks_atomic.h",
+            "include/libks2/libks/ks_base64.h",
+            "include/libks2/libks/ks_buffer.h",
+            "include/libks2/libks/ks_config.h",
+            "include/libks2/libks/ks_debug.h",
+            "include/libks2/libks/ks_dso.h",
+            "include/libks2/libks/ks_env.h",
+            "include/libks2/libks/ks_hash.h",
+            "include/libks2/libks/ks_hep.h",
+            "include/libks2/libks/ks_json.h",
+            "include/libks2/libks/ks_json_check.h",
+            "include/libks2/libks/ks_json_schema.h",
+            "include/libks2/libks/ks_log.h",
+            "include/libks2/libks/ks_metrics.h",
+            "include/libks2/libks/ks_platform.h",
+            "include/libks2/libks/ks_pool.h",
+            "include/libks2/libks/ks_printf.h",
+            "include/libks2/libks/ks_q.h",
+            "include/libks2/libks/ks_sb.h",
+            "include/libks2/libks/ks_socket.h",
+            "include/libks2/libks/ks_ssl.h",
+            "include/libks2/libks/ks_string.h",
+            "include/libks2/libks/ks_thread_pool.h",
+            "include/libks2/libks/ks_threadmutex.h",
+            "include/libks2/libks/ks_time.h",
+            "include/libks2/libks/ks_tls.h",
+            "include/libks2/libks/ks_types.h",
+            "include/libks2/libks/ks_utf8.h",
+            "include/libks2/libks/ks_uuid.h",
+            "include/libks2/libks/kws.h",
+            "include/libks2/libks/simclist.h",
+            "lib/libks2.2.dylib",
+            "lib/libks2.dylib",
+            "lib/pkgconfig/libks2.pc",
+            "sbom.spdx.json",
+            "share/doc/libks2/copyright"
+          ],
+          "installed_size": 410658
+        }
+      }
+    }
+  }
+}
