@@ -81,18 +81,10 @@ jobs:
             exit 1
           fi
 
-      - name: Patch LLVM for a single-stage build
-        if: inputs.llvm_single_stage && matrix.entry.formula == 'llvm'
-        run: |
-          formula="$(brew --repo homebrew/core)/Formula/l/llvm.rb"
-          python3 scripts/patch_llvm_single_stage.py "$formula"
-          brew ruby -- -c "$formula"
-          git -C "$(brew --repo homebrew/core)" diff --check -- Formula/l/llvm.rb
-          git -C "$(brew --repo homebrew/core)" diff -- Formula/l/llvm.rb
-
       - name: Build and bottle
         env:
           BOTTLE_OUT_DIR: ${{ github.workspace }}/bottles
+          LLVM_SINGLE_STAGE: ${{ inputs.llvm_single_stage }}
         run: ./scripts/build_root.sh "${{ matrix.entry.formula }}"
 
       - name: Upload bottles

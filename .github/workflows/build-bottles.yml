@@ -111,11 +111,12 @@ jobs:
             python3 - <<'PY' >> "$GITHUB_OUTPUT"
           import json, os, sys
           sys.path.insert(0, "scripts")
-          from plan_targets import runner_for
-          names = os.environ["OVERRIDE"].split()
-          print(f"wave0={json.dumps([runner_for(n) for n in names])}")
-          for i in range(1, 5):
-              print(f"wave{i}=[]")
+          from plan_targets import MAX_WAVES, dependency_map, levels, runner_for
+          names = list(dict.fromkeys(os.environ["OVERRIDE"].split()))
+          depth = levels(dependency_map(names))
+          for i in range(MAX_WAVES):
+              entries = [runner_for(n) for n in names if depth.get(n, 0) == i]
+              print(f"wave{i}={json.dumps(entries)}")
           print(f"missing_count={len(names)}")
           PY
           else

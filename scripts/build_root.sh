@@ -101,6 +101,18 @@ fi
 echo "==> $ROOT: building $(echo "$TODO" | wc -l | tr -d ' ') formula(e) in dependency order"
 echo "$TODO" | sed 's/^/      /'
 
+# LLVM can be an unbottled dependency of another root (notably rust). Apply the
+# same non-PGO patch whenever this job will actually build LLVM from source.
+# Checking only the matrix root misses that case and can exceed the runner's
+# 350-minute job limit while Homebrew performs its multi-stage PGO build.
+if [ "${LLVM_SINGLE_STAGE:-false}" = "true" ] && grep -Fxq llvm <<< "$TODO"; then
+  llvm_formula="$(brew --repo homebrew/core)/Formula/l/llvm.rb"
+  python3 "$SCRIPT_DIR/patch_llvm_single_stage.py" "$llvm_formula"
+  brew ruby -- -c "$llvm_formula"
+  git -C "$(brew --repo homebrew/core)" diff --check -- Formula/l/llvm.rb
+  git -C "$(brew --repo homebrew/core)" diff -- Formula/l/llvm.rb
+fi
+
 cd "$OUT_DIR"
 
 for formula in $TODO; do
