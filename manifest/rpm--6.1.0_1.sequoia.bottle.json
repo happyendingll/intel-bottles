@@ -1,0 +1,968 @@
+{
+  "rpm": {
+    "formula": {
+      "name": "rpm",
+      "pkg_version": "6.1.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rpm.rb",
+      "tap_git_path": "Formula/r/rpm.rb",
+      "tap_git_revision": "b0130c153ae65cc13a7567b5a23f16a0f890eafd",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Standard unix software packaging tool",
+      "license": "GPL-2.0-or-later AND LGPL-2.0-or-later",
+      "homepage": "https://rpm.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-10T13:44:20Z",
+      "tags": {
+        "sequoia": {
+          "filename": "rpm-6.1.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "rpm--6.1.0_1.sequoia.bottle.tar.gz",
+          "sha256": "a02bad66608a76bb301e9e0004a6b9d7c142d76194cc0c65a6499448f9f5fc84",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/rpm/pkgconfigdeps.sh",
+              "lib/cmake/rpm/rpm-config.cmake",
+              "lib/cmake/rpm/rpm-targets.cmake",
+              "lib/pkgconfig/rpm-sequoia.pc",
+              "lib/pkgconfig/rpm.pc",
+              "lib/rpm/macros",
+              "lib/rpm/rpmpopt-6.1.0",
+              "lib/rpm/rpmrc"
+            ],
+            "linkage_files": [
+              "bin/rpm",
+              "bin/rpm2archive",
+              "bin/rpmbuild",
+              "bin/rpmdb",
+              "bin/rpmgraph",
+              "bin/rpmkeys",
+              "bin/rpmlua",
+              "bin/rpmsign",
+              "bin/rpmsort",
+              "bin/rpmspec",
+              "bin/rpmuncompress",
+              "lib/librpm.10.8.0.dylib",
+              "lib/librpm_sequoia.1.10.2.dylib",
+              "lib/librpmbuild.10.8.0.dylib",
+              "lib/librpmio.10.8.0.dylib",
+              "lib/librpmsign.10.8.0.dylib",
+              "lib/python3.14/site-packages/rpm/_rpm.so",
+              "lib/rpm/rpmdeps",
+              "lib/rpm/rpmdump"
+            ],
+            "binary_relocation_files": [
+              "lib/librpm.10.8.0.dylib",
+              "lib/librpmio.10.8.0.dylib"
+            ],
+            "source_modified_time": 1787215081,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libb2",
+                "version": "0.98.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.98.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libarchive",
+                "version": "3.8.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.8.9",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libmagic",
+                "version": "5.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.48",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lua",
+                "version": "5.5.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.5.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              },
+              {
+                "full_name": "pkgconf",
+                "version": "3.0.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.7",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "popt",
+                "version": "1.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.19",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libomp",
+                "version": "23.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/librpm.10.8.0.dylib",
+              "string": "/usr/local/Cellar/rpm/6.1.0_1/share/locale",
+              "offset": 376990
+            },
+            {
+              "path": "lib/librpm.10.8.0.dylib",
+              "string": "/usr/local/Cellar/rpm/6.1.0_1/bin",
+              "offset": 377065
+            },
+            {
+              "path": "lib/librpmio.10.8.0.dylib",
+              "string": "/usr/local/Cellar/rpm/6.1.0_1/lib/rpm",
+              "offset": 134340
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
+                "name": "pkgconf",
+                "versionInfo": "3.0.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pkgconf-3.0.7.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4541713529fcd083637bf6aa528241ce334d90e461b1b9923aedd328a35a15b5"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pkgconf@3.0.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.3",
+                "name": "libomp",
+                "versionInfo": "23.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libomp-23.1.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e85f610dbfcc89fbb868f01bbcce324a71b218db5fe7f253c28966863bfea8cc"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libomp@23.1.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-rpm"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-rpm-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/rpmverify",
+            "bin/rpmspec",
+            "bin/rpm-setup-autosign",
+            "bin/rpmuncompress",
+            "bin/rpmdb",
+            "bin/rpmbuild",
+            "bin/rpmquery",
+            "bin/rpmsort",
+            "bin/rpmsign",
+            "bin/rpmkeys",
+            "bin/rpm2cpio",
+            "bin/rpmlua",
+            "bin/rpmgraph",
+            "bin/rpm2archive",
+            "bin/rpm",
+            "bin/gendiff"
+          ],
+          "all_files": [
+            ".brew/rpm.rb",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/gendiff",
+            "bin/rpm",
+            "bin/rpm-setup-autosign",
+            "bin/rpm2archive",
+            "bin/rpm2cpio",
+            "bin/rpmbuild",
+            "bin/rpmdb",
+            "bin/rpmgraph",
+            "bin/rpmkeys",
+            "bin/rpmlua",
+            "bin/rpmquery",
+            "bin/rpmsign",
+            "bin/rpmsort",
+            "bin/rpmspec",
+            "bin/rpmuncompress",
+            "bin/rpmverify",
+            "include/rpm/argv.h",
+            "include/rpm/header.h",
+            "include/rpm/rpmarchive.h",
+            "include/rpm/rpmbase64.h",
+            "include/rpm/rpmbuild.h",
+            "include/rpm/rpmcallback.h",
+            "include/rpm/rpmcli.h",
+            "include/rpm/rpmcrypto.h",
+            "include/rpm/rpmdb.h",
+            "include/rpm/rpmds.h",
+            "include/rpm/rpmfc.h",
+            "include/rpm/rpmfi.h",
+            "include/rpm/rpmfiles.h",
+            "include/rpm/rpmfileutil.h",
+            "include/rpm/rpmio.h",
+            "include/rpm/rpmkeyring.h",
+            "include/rpm/rpmlib.h",
+            "include/rpm/rpmlog.h",
+            "include/rpm/rpmmacro.h",
+            "include/rpm/rpmpgp.h",
+            "include/rpm/rpmplugin.h",
+            "include/rpm/rpmprob.h",
+            "include/rpm/rpmps.h",
+            "include/rpm/rpmsign.h",
+            "include/rpm/rpmspec.h",
+            "include/rpm/rpmsq.h",
+            "include/rpm/rpmstring.h",
+            "include/rpm/rpmstrpool.h",
+            "include/rpm/rpmsw.h",
+            "include/rpm/rpmtag.h",
+            "include/rpm/rpmtd.h",
+            "include/rpm/rpmte.h",
+            "include/rpm/rpmts.h",
+            "include/rpm/rpmtypes.h",
+            "include/rpm/rpmurl.h",
+            "include/rpm/rpmutil.h",
+            "include/rpm/rpmver.h",
+            "lib/cmake/rpm/rpm-config-version.cmake",
+            "lib/cmake/rpm/rpm-config.cmake",
+            "lib/cmake/rpm/rpm-targets-release.cmake",
+            "lib/cmake/rpm/rpm-targets.cmake",
+            "lib/librpm.10.8.0.dylib",
+            "lib/librpm.10.dylib",
+            "lib/librpm.dylib",
+            "lib/librpm_sequoia.1.10.2.dylib",
+            "lib/librpm_sequoia.1.dylib",
+            "lib/librpm_sequoia.dylib",
+            "lib/librpmbuild.10.8.0.dylib",
+            "lib/librpmbuild.10.dylib",
+            "lib/librpmbuild.dylib",
+            "lib/librpmio.10.8.0.dylib",
+            "lib/librpmio.10.dylib",
+            "lib/librpmio.dylib",
+            "lib/librpmsign.10.8.0.dylib",
+            "lib/librpmsign.10.dylib",
+            "lib/librpmsign.dylib",
+            "lib/pkgconfig/rpm-sequoia.pc",
+            "lib/pkgconfig/rpm.pc",
+            "lib/python3.14/site-packages/rpm/__init__.py",
+            "lib/python3.14/site-packages/rpm/_rpm.so",
+            "lib/python3.14/site-packages/rpm/transaction.py",
+            "lib/python3.14/site-packages/rpm-6.1.0-py3.14.egg-info",
+            "lib/rpm/brp-compress",
+            "lib/rpm/brp-remove-la-files",
+            "lib/rpm/brp-strip",
+            "lib/rpm/brp-strip-comment-note",
+            "lib/rpm/brp-strip-static-archive",
+            "lib/rpm/check-buildroot",
+            "lib/rpm/check-files",
+            "lib/rpm/check-prereqs",
+            "lib/rpm/check-rpaths",
+            "lib/rpm/check-rpaths-worker",
+            "lib/rpm/fileattrs/debuginfo.attr",
+            "lib/rpm/fileattrs/desktop.attr",
+            "lib/rpm/fileattrs/elf.attr",
+            "lib/rpm/fileattrs/font.attr",
+            "lib/rpm/fileattrs/metainfo.attr",
+            "lib/rpm/fileattrs/ocaml.attr",
+            "lib/rpm/fileattrs/pkgconfig.attr",
+            "lib/rpm/fileattrs/rpm_lua.attr",
+            "lib/rpm/fileattrs/rpm_macro.attr",
+            "lib/rpm/fileattrs/script.attr",
+            "lib/rpm/fileattrs/sysusers.attr",
+            "lib/rpm/fileattrs/usergroup.attr",
+            "lib/rpm/find-lang.sh",
+            "lib/rpm/find-provides",
+            "lib/rpm/find-requires",
+            "lib/rpm/fontconfig.prov",
+            "lib/rpm/macros",
+            "lib/rpm/ocamldeps.sh",
+            "lib/rpm/pkgconfigdeps.sh",
+            "lib/rpm/platform/aarch64-darwin/macros",
+            "lib/rpm/platform/alpha-darwin/macros",
+            "lib/rpm/platform/alphaev5-darwin/macros",
+            "lib/rpm/platform/alphaev56-darwin/macros",
+            "lib/rpm/platform/alphaev6-darwin/macros",
+            "lib/rpm/platform/alphaev67-darwin/macros",
+            "lib/rpm/platform/alphapca56-darwin/macros",
+            "lib/rpm/platform/amd64-darwin/macros",
+            "lib/rpm/platform/armv3l-darwin/macros",
+            "lib/rpm/platform/armv4b-darwin/macros",
+            "lib/rpm/platform/armv4l-darwin/macros",
+            "lib/rpm/platform/armv5tejl-darwin/macros",
+            "lib/rpm/platform/armv5tel-darwin/macros",
+            "lib/rpm/platform/armv5tl-darwin/macros",
+            "lib/rpm/platform/armv6hl-darwin/macros",
+            "lib/rpm/platform/armv6l-darwin/macros",
+            "lib/rpm/platform/armv7hl-darwin/macros",
+            "lib/rpm/platform/armv7hnl-darwin/macros",
+            "lib/rpm/platform/armv7l-darwin/macros",
+            "lib/rpm/platform/armv8hl-darwin/macros",
+            "lib/rpm/platform/armv8l-darwin/macros",
+            "lib/rpm/platform/athlon-darwin/macros",
+            "lib/rpm/platform/e2k-darwin/macros",
+            "lib/rpm/platform/e2k16c-darwin/macros",
+            "lib/rpm/platform/e2k1cp-darwin/macros",
+            "lib/rpm/platform/e2k2c3-darwin/macros",
+            "lib/rpm/platform/e2k8c-darwin/macros",
+            "lib/rpm/platform/e2k8c2-darwin/macros",
+            "lib/rpm/platform/e2kv4-darwin/macros",
+            "lib/rpm/platform/e2kv5-darwin/macros",
+            "lib/rpm/platform/e2kv6-darwin/macros",
+            "lib/rpm/platform/geode-darwin/macros",
+            "lib/rpm/platform/i386-darwin/macros",
+            "lib/rpm/platform/i486-darwin/macros",
+            "lib/rpm/platform/i586-darwin/macros",
+            "lib/rpm/platform/i686-darwin/macros",
+            "lib/rpm/platform/ia32e-darwin/macros",
+            "lib/rpm/platform/ia64-darwin/macros",
+            "lib/rpm/platform/loongarch64-darwin/macros",
+            "lib/rpm/platform/m68k-darwin/macros",
+            "lib/rpm/platform/mips-darwin/macros",
+            "lib/rpm/platform/mips64-darwin/macros",
+            "lib/rpm/platform/mips64el-darwin/macros",
+            "lib/rpm/platform/mips64r6-darwin/macros",
+            "lib/rpm/platform/mips64r6el-darwin/macros",
+            "lib/rpm/platform/mipsel-darwin/macros",
+            "lib/rpm/platform/mipsr6-darwin/macros",
+            "lib/rpm/platform/mipsr6el-darwin/macros",
+            "lib/rpm/platform/noarch-darwin/macros",
+            "lib/rpm/platform/pentium3-darwin/macros",
+            "lib/rpm/platform/pentium4-darwin/macros",
+            "lib/rpm/platform/ppc-darwin/macros",
+            "lib/rpm/platform/ppc32dy4-darwin/macros",
+            "lib/rpm/platform/ppc64-darwin/macros",
+            "lib/rpm/platform/ppc64iseries-darwin/macros",
+            "lib/rpm/platform/ppc64le-darwin/macros",
+            "lib/rpm/platform/ppc64p7-darwin/macros",
+            "lib/rpm/platform/ppc64pseries-darwin/macros",
+            "lib/rpm/platform/ppc8260-darwin/macros",
+            "lib/rpm/platform/ppc8560-darwin/macros",
+            "lib/rpm/platform/ppciseries-darwin/macros",
+            "lib/rpm/platform/ppcpseries-darwin/macros",
+            "lib/rpm/platform/riscv64-darwin/macros",
+            "lib/rpm/platform/s390-darwin/macros",
+            "lib/rpm/platform/s390x-darwin/macros",
+            "lib/rpm/platform/sh-darwin/macros",
+            "lib/rpm/platform/sh3-darwin/macros",
+            "lib/rpm/platform/sh4-darwin/macros",
+            "lib/rpm/platform/sh4a-darwin/macros",
+            "lib/rpm/platform/sparc-darwin/macros",
+            "lib/rpm/platform/sparc64-darwin/macros",
+            "lib/rpm/platform/sparc64v-darwin/macros",
+            "lib/rpm/platform/sparcv8-darwin/macros",
+            "lib/rpm/platform/sparcv9-darwin/macros",
+            "lib/rpm/platform/sparcv9v-darwin/macros",
+            "lib/rpm/platform/x86_64-darwin/macros",
+            "lib/rpm/platform/x86_64_v2-darwin/macros",
+            "lib/rpm/platform/x86_64_v3-darwin/macros",
+            "lib/rpm/platform/x86_64_v4-darwin/macros",
+            "lib/rpm/rpm-setup-autosign",
+            "lib/rpm/rpm.daily",
+            "lib/rpm/rpm.log",
+            "lib/rpm/rpm.supp",
+            "lib/rpm/rpm2cpio.sh",
+            "lib/rpm/rpm_macros_provides.sh",
+            "lib/rpm/rpmdb_dump",
+            "lib/rpm/rpmdb_load",
+            "lib/rpm/rpmdeps",
+            "lib/rpm/rpmdump",
+            "lib/rpm/rpmpopt-6.1.0",
+            "lib/rpm/rpmrc",
+            "lib/rpm/rpmuncompress",
+            "lib/rpm/script.req",
+            "lib/rpm/sysusers.sh",
+            "lib/rpm/tgpg",
+            "sbom.spdx.json",
+            "share/doc/rpm/CONTRIBUTING.md",
+            "share/doc/rpm/COPYING",
+            "share/doc/rpm/CREDITS",
+            "share/doc/rpm/INSTALL",
+            "share/doc/rpm/README",
+            "share/doc/rpm/about.md",
+            "share/doc/rpm/arch_dependencies.md",
+            "share/doc/rpm/autosetup.md",
+            "share/doc/rpm/boolean_dependencies.md",
+            "share/doc/rpm/buildprocess.md",
+            "share/doc/rpm/buildsystem.md",
+            "share/doc/rpm/conditionalbuilds.md",
+            "share/doc/rpm/dependencies.md",
+            "share/doc/rpm/dependency_generators.md",
+            "share/doc/rpm/devel_documentation.md",
+            "share/doc/rpm/dynamic_specs.md",
+            "share/doc/rpm/examples/fnlookup.py",
+            "share/doc/rpm/examples/rpm-e.py",
+            "share/doc/rpm/examples/rpm-i.py",
+            "share/doc/rpm/examples/rpm-q.py",
+            "share/doc/rpm/examples/rpm-qa.py",
+            "share/doc/rpm/examples/rpm-qi.py",
+            "share/doc/rpm/examples/rpmls.py",
+            "share/doc/rpm/examples/rpmunpack.py",
+            "share/doc/rpm/examples/srpmspec.py",
+            "share/doc/rpm/file_triggers.md",
+            "share/doc/rpm/format_header.md",
+            "share/doc/rpm/format_lead.md",
+            "share/doc/rpm/format_v3.md",
+            "share/doc/rpm/format_v4.md",
+            "share/doc/rpm/format_v6.md",
+            "share/doc/rpm/index.md",
+            "share/doc/rpm/large_files.md",
+            "share/doc/rpm/lua.md",
+            "share/doc/rpm/macros.md",
+            "share/doc/rpm/more_dependencies.md",
+            "share/doc/rpm/philosophy.md",
+            "share/doc/rpm/plugins.md",
+            "share/doc/rpm/queryformat.md",
+            "share/doc/rpm/relocatable.md",
+            "share/doc/rpm/scriptlet_expansion.md",
+            "share/doc/rpm/signatures_digests.md",
+            "share/doc/rpm/spec.md",
+            "share/doc/rpm/tags.md",
+            "share/doc/rpm/triggers.md",
+            "share/doc/rpm/tsort.md",
+            "share/doc/rpm/users_and_groups.md",
+            "share/locale/ar/LC_MESSAGES/rpm.mo",
+            "share/locale/br/LC_MESSAGES/rpm.mo",
+            "share/locale/ca/LC_MESSAGES/rpm.mo",
+            "share/locale/cmn/LC_MESSAGES/rpm.mo",
+            "share/locale/cs/LC_MESSAGES/rpm.mo",
+            "share/locale/da/LC_MESSAGES/rpm.mo",
+            "share/locale/de/LC_MESSAGES/rpm.mo",
+            "share/locale/el/LC_MESSAGES/rpm.mo",
+            "share/locale/eo/LC_MESSAGES/rpm.mo",
+            "share/locale/es/LC_MESSAGES/rpm.mo",
+            "share/locale/fi/LC_MESSAGES/rpm.mo",
+            "share/locale/fr/LC_MESSAGES/rpm.mo",
+            "share/locale/gu/LC_MESSAGES/rpm.mo",
+            "share/locale/he/LC_MESSAGES/rpm.mo",
+            "share/locale/id/LC_MESSAGES/rpm.mo",
+            "share/locale/ie/LC_MESSAGES/rpm.mo",
+            "share/locale/is/LC_MESSAGES/rpm.mo",
+            "share/locale/it/LC_MESSAGES/rpm.mo",
+            "share/locale/ja/LC_MESSAGES/rpm.mo",
+            "share/locale/ka/LC_MESSAGES/rpm.mo",
+            "share/locale/ko/LC_MESSAGES/rpm.mo",
+            "share/locale/ms/LC_MESSAGES/rpm.mo",
+            "share/locale/nb/LC_MESSAGES/rpm.mo",
+            "share/locale/nl/LC_MESSAGES/rpm.mo",
+            "share/locale/pa/LC_MESSAGES/rpm.mo",
+            "share/locale/pl/LC_MESSAGES/rpm.mo",
+            "share/locale/pt/LC_MESSAGES/rpm.mo",
+            "share/locale/pt_BR/LC_MESSAGES/rpm.mo",
+            "share/locale/ru/LC_MESSAGES/rpm.mo",
+            "share/locale/si/LC_MESSAGES/rpm.mo",
+            "share/locale/sk/LC_MESSAGES/rpm.mo",
+            "share/locale/sl/LC_MESSAGES/rpm.mo",
+            "share/locale/sr/LC_MESSAGES/rpm.mo",
+            "share/locale/sr@latin/LC_MESSAGES/rpm.mo",
+            "share/locale/sv/LC_MESSAGES/rpm.mo",
+            "share/locale/te/LC_MESSAGES/rpm.mo",
+            "share/locale/tr/LC_MESSAGES/rpm.mo",
+            "share/locale/uk/LC_MESSAGES/rpm.mo",
+            "share/locale/vi/LC_MESSAGES/rpm.mo",
+            "share/locale/zh_CN/LC_MESSAGES/rpm.mo",
+            "share/locale/zh_TW/LC_MESSAGES/rpm.mo",
+            "share/man/man1/elfdeps.1",
+            "share/man/man1/gendiff.1",
+            "share/man/man1/rpm-setup-autosign.1",
+            "share/man/man1/rpm2archive.1",
+            "share/man/man1/rpm2cpio.1",
+            "share/man/man1/rpmbuild.1",
+            "share/man/man1/rpmdeps.1",
+            "share/man/man1/rpmgraph.1",
+            "share/man/man1/rpmlua.1",
+            "share/man/man1/rpmsign.1",
+            "share/man/man1/rpmsort.1",
+            "share/man/man1/rpmspec.1",
+            "share/man/man1/rpmuncompress.1",
+            "share/man/man5/rpm-config.5",
+            "share/man/man5/rpm-macrofile.5",
+            "share/man/man5/rpm-manifest.5",
+            "share/man/man5/rpm-rpmrc.5",
+            "share/man/man5/rpmbuild-config.5",
+            "share/man/man7/rpm-dependency-generators.7",
+            "share/man/man7/rpm-design.7",
+            "share/man/man7/rpm-lua.7",
+            "share/man/man7/rpm-macros.7",
+            "share/man/man7/rpm-payloadflags.7",
+            "share/man/man7/rpm-queryformat.7",
+            "share/man/man7/rpm-scriptlets.7",
+            "share/man/man7/rpm-sysusers.7",
+            "share/man/man7/rpm-version.7",
+            "share/man/man8/rpm-common.8",
+            "share/man/man8/rpm.8",
+            "share/man/man8/rpmdb.8",
+            "share/man/man8/rpmkeys.8"
+          ],
+          "installed_size": 8123579
+        }
+      }
+    }
+  }
+}

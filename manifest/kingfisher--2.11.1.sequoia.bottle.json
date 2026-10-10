@@ -1,0 +1,129 @@
+{
+  "kingfisher": {
+    "formula": {
+      "name": "kingfisher",
+      "pkg_version": "2.11.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/k/kingfisher.rb",
+      "tap_git_path": "Formula/k/kingfisher.rb",
+      "tap_git_revision": "b0130c153ae65cc13a7567b5a23f16a0f890eafd",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "MongoDB's blazingly fast secret scanning and validation tool",
+      "license": "Apache-2.0",
+      "homepage": "https://mongodb.github.io/kingfisher/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-10T13:13:33Z",
+      "tags": {
+        "sequoia": {
+          "filename": "kingfisher-2.11.1.sequoia.bottle.tar.gz",
+          "local_filename": "kingfisher--2.11.1.sequoia.bottle.tar.gz",
+          "sha256": "41efcd6eed3f2f70ea881ed316dd59aa7ee10f5144cfb974dac2c6a987f154e6",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/kingfisher"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791409124,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "aws-lc",
+                "version": "5.11.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.11.0",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-aws-lc-5.2e.11.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-lc-5.2e.11.2e.0",
+                "name": "aws-lc",
+                "versionInfo": "5.11.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 AND ISC AND OpenSSL AND MIT AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/aws-lc-5.11.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "953eaacee9db3c579b74deb3c760a823e4818861447f28e0ea410e7c2aacbe19"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-lc@5.11.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-lc-5.2e.11.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-kingfisher"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-kingfisher-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/kingfisher"
+          ],
+          "all_files": [
+            ".brew/kingfisher.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NOTICE",
+            "README.md",
+            "bin/kingfisher",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 29750414
+        }
+      }
+    }
+  }
+}
