@@ -1,0 +1,337 @@
+{
+  "cnats": {
+    "formula": {
+      "name": "cnats",
+      "pkg_version": "3.14.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cnats.rb",
+      "tap_git_path": "Formula/c/cnats.rb",
+      "tap_git_revision": "2e736d3ea76f6195fd8671a85721cbaf904728ba",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "C client for the NATS messaging system",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/nats-io/nats.c"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-09T23:11:29Z",
+      "tags": {
+        "sequoia": {
+          "filename": "cnats-3.14.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "cnats--3.14.0_1.sequoia.bottle.tar.gz",
+          "sha256": "eceef71dd1f135b513ffc83dd72b03cc886cfe7c2ff7341a51b1d1446ee474ab",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/libnats.pc"
+            ],
+            "linkage_files": [
+              "lib/libnats.3.14.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1789667860,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libevent",
+                "version": "2.1.13",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.13_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libuv",
+                "version": "1.53.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.53.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": false,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "protobuf",
+                "version": "36.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "36.2",
+                "declared_directly": false,
+                "compatibility_version": 7
+              },
+              {
+                "full_name": "protobuf-c",
+                "version": "1.5.2",
+                "revision": 20,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.2_20",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+              "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
+              "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+              "SPDXRef-Package-SPDXRef-protobuf-c-1.2e.5.2e.2.5f.20",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "name": "libevent",
+                "versionInfo": "2.1.13_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libevent-2.1.13_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "633c29ac9023fd7a922d4204f529f117d0c3bb96bb70279a75cbabe4e6f3655e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libevent@2.1.13_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
+                "name": "libuv",
+                "versionInfo": "1.53.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libuv-1.53.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2378d10bb8de9b4b5c842db3903822a5854ae0b0d5d01e5731defdddec18154b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libuv@1.53.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "name": "protobuf",
+                "versionInfo": "36.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "23c1b997672d8c907b7493086a0a785b885dcaf68851cd6d2a1e96d9f116314a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf@36.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-c-1.2e.5.2e.2.5f.20",
+                "name": "protobuf-c",
+                "versionInfo": "1.5.2_20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-c-1.5.2_20.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "89692fd803a65686cb530cd300e7e7553dd1a4bfd46e8dcb91927b942163f0d2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf-c@1.5.2_20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cnats"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cnats"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cnats"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cnats"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cnats"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-c-1.2e.5.2e.2.5f.20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cnats"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-cnats-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/cnats.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/nats/adapters/libevent.h",
+            "include/nats/adapters/libuv.h",
+            "include/nats/nats.h",
+            "include/nats/status.h",
+            "include/nats/version.h",
+            "include/nats.h",
+            "lib/cmake/cnats/cnats-config-release.cmake",
+            "lib/cmake/cnats/cnats-config-version.cmake",
+            "lib/cmake/cnats/cnats-config.cmake",
+            "lib/libnats.3.14.0.dylib",
+            "lib/libnats.3.14.dylib",
+            "lib/libnats.dylib",
+            "lib/libnats_static.a",
+            "lib/pkgconfig/libnats.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1578936
+        }
+      }
+    }
+  }
+}

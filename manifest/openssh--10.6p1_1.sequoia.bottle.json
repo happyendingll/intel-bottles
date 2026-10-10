@@ -1,0 +1,737 @@
+{
+  "openssh": {
+    "formula": {
+      "name": "openssh",
+      "pkg_version": "10.6p1_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openssh.rb",
+      "tap_git_path": "Formula/o/openssh.rb",
+      "tap_git_revision": "2e736d3ea76f6195fd8671a85721cbaf904728ba",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "OpenBSD freely-licensed SSH connectivity tools",
+      "license": "SSH-OpenSSH",
+      "homepage": "https://www.openssh.com/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-10T01:15:23Z",
+      "tags": {
+        "sequoia": {
+          "filename": "openssh-10.6p1_1.sequoia.bottle.tar.gz",
+          "local_filename": "openssh--10.6p1_1.sequoia.bottle.tar.gz",
+          "sha256": "b63d46f62c798f53ffc43e496ad5b53a9ef2b1cc29c8b78036becae22973d5b3",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              ".bottle/etc/ssh/sshd_config",
+              "share/man/man5/sshd_config.5"
+            ],
+            "linkage_files": [
+              "bin/scp",
+              "bin/sftp",
+              "bin/ssh",
+              "bin/ssh-add",
+              "bin/ssh-agent",
+              "bin/ssh-keygen",
+              "bin/ssh-keyscan",
+              "libexec/sftp-server",
+              "libexec/ssh-keysign",
+              "libexec/ssh-pkcs11-helper",
+              "libexec/ssh-sk-helper",
+              "libexec/sshd-auth",
+              "libexec/sshd-session",
+              "sbin/sshd"
+            ],
+            "binary_relocation_files": [
+              "bin/scp",
+              "bin/sftp",
+              "bin/ssh",
+              "bin/ssh-add",
+              "bin/ssh-agent",
+              "bin/ssh-keygen",
+              "bin/ssh-keyscan",
+              "libexec/sftp-server",
+              "libexec/ssh-keysign",
+              "libexec/ssh-pkcs11-helper",
+              "libexec/ssh-sk-helper",
+              "libexec/sshd-auth",
+              "libexec/sshd-session",
+              "sbin/sshd"
+            ],
+            "source_modified_time": 1791276331,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.53.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.53.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.14",
+                "version": "3.14.8",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.14.8_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ldns",
+                "version": "1.9.2",
+                "revision": 1,
+                "pkg_version": "1.9.2_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libcbor",
+                "version": "0.14.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.14.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libfido2",
+                "version": "1.17.0",
+                "revision": 1,
+                "pkg_version": "1.17.0_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/ssh-keyscan",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-pkcs11-helper",
+              "offset": 413249
+            },
+            {
+              "path": "bin/ssh-keyscan",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-sk-helper",
+              "offset": 413810
+            },
+            {
+              "path": "bin/ssh-keyscan",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 427337
+            },
+            {
+              "path": "bin/sftp",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/bin/ssh",
+              "offset": 148768
+            },
+            {
+              "path": "bin/sftp",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 167827
+            },
+            {
+              "path": "bin/ssh-agent",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-sk-helper",
+              "offset": 333982
+            },
+            {
+              "path": "bin/ssh-agent",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-pkcs11-helper",
+              "offset": 334077
+            },
+            {
+              "path": "bin/ssh-agent",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 348249
+            },
+            {
+              "path": "bin/ssh",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-keysign",
+              "offset": 723239
+            },
+            {
+              "path": "bin/ssh",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-sk-helper",
+              "offset": 733614
+            },
+            {
+              "path": "bin/ssh",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 762124
+            },
+            {
+              "path": "bin/ssh-add",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-pkcs11-helper",
+              "offset": 345332
+            },
+            {
+              "path": "bin/ssh-add",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-sk-helper",
+              "offset": 345893
+            },
+            {
+              "path": "bin/ssh-add",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 356575
+            },
+            {
+              "path": "bin/ssh-keygen",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-sk-helper",
+              "offset": 443295
+            },
+            {
+              "path": "bin/ssh-keygen",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 455368
+            },
+            {
+              "path": "bin/scp",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/bin/ssh",
+              "offset": 140832
+            },
+            {
+              "path": "bin/scp",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 156887
+            },
+            {
+              "path": "libexec/sshd-session",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/sshd-session",
+              "offset": 748880
+            },
+            {
+              "path": "libexec/sshd-session",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/sshd-auth",
+              "offset": 748936
+            },
+            {
+              "path": "libexec/sshd-session",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 772362
+            },
+            {
+              "path": "libexec/sshd-session",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-pkcs11-helper",
+              "offset": 796774
+            },
+            {
+              "path": "libexec/sshd-session",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-sk-helper",
+              "offset": 797316
+            },
+            {
+              "path": "libexec/ssh-pkcs11-helper",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-sk-helper",
+              "offset": 319384
+            },
+            {
+              "path": "libexec/ssh-pkcs11-helper",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 326829
+            },
+            {
+              "path": "libexec/ssh-keysign",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-pkcs11-helper",
+              "offset": 388547
+            },
+            {
+              "path": "libexec/ssh-keysign",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-sk-helper",
+              "offset": 389097
+            },
+            {
+              "path": "libexec/ssh-keysign",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 398231
+            },
+            {
+              "path": "libexec/sshd-auth",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/sshd-session",
+              "offset": 719474
+            },
+            {
+              "path": "libexec/sshd-auth",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/sshd-auth",
+              "offset": 719530
+            },
+            {
+              "path": "libexec/sshd-auth",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 742865
+            },
+            {
+              "path": "libexec/sshd-auth",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-pkcs11-helper",
+              "offset": 763722
+            },
+            {
+              "path": "libexec/sshd-auth",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-sk-helper",
+              "offset": 764278
+            },
+            {
+              "path": "libexec/sftp-server",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 105629
+            },
+            {
+              "path": "libexec/ssh-sk-helper",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 312437
+            },
+            {
+              "path": "sbin/sshd",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/sshd-session",
+              "offset": 440283
+            },
+            {
+              "path": "sbin/sshd",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/sshd-auth",
+              "offset": 440339
+            },
+            {
+              "path": "sbin/sshd",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-pkcs11-helper",
+              "offset": 458214
+            },
+            {
+              "path": "sbin/sshd",
+              "string": "/usr/local/Cellar/openssh/10.6p1_1/libexec/ssh-sk-helper",
+              "offset": 458775
+            },
+            {
+              "path": "sbin/sshd",
+              "string": "/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/Cellar/openssh/10.6p1_1/bin",
+              "offset": 467473
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "name": "sqlite",
+                "versionInfo": "3.53.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
+                "name": "python@3.14",
+                "versionInfo": "3.14.8_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/python%403.14-3.14.8_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "08b2b24a1d282d38d87cb014049867b43fb290fe7b2dda027c6d6a722073d4b4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.8_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openssh"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openssh"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openssh"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openssh"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openssh"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openssh"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openssh"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openssh"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openssh"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-openssh-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/ssh-keyscan",
+            "bin/sftp",
+            "bin/slogin",
+            "bin/ssh-agent",
+            "bin/ssh",
+            "bin/ssh-add",
+            "bin/ssh-keygen",
+            "bin/scp",
+            "sbin/sshd"
+          ],
+          "all_files": [
+            ".bottle/etc/ssh/moduli",
+            ".bottle/etc/ssh/org.openssh.sshd.sb",
+            ".bottle/etc/ssh/ssh_config",
+            ".bottle/etc/ssh/ssh_host_ecdsa_key",
+            ".bottle/etc/ssh/ssh_host_ecdsa_key.pub",
+            ".bottle/etc/ssh/ssh_host_ed25519_key",
+            ".bottle/etc/ssh/ssh_host_ed25519_key.pub",
+            ".bottle/etc/ssh/ssh_host_mldsa44_ed25519_key",
+            ".bottle/etc/ssh/ssh_host_mldsa44_ed25519_key.pub",
+            ".bottle/etc/ssh/ssh_host_rsa_key",
+            ".bottle/etc/ssh/ssh_host_rsa_key.pub",
+            ".bottle/etc/ssh/sshd_config",
+            ".brew/openssh.rb",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENCE",
+            "README",
+            "README.md",
+            "TODO",
+            "bin/scp",
+            "bin/sftp",
+            "bin/slogin",
+            "bin/ssh",
+            "bin/ssh-add",
+            "bin/ssh-agent",
+            "bin/ssh-keygen",
+            "bin/ssh-keyscan",
+            "libexec/sftp-server",
+            "libexec/ssh-keysign",
+            "libexec/ssh-pkcs11-helper",
+            "libexec/ssh-sk-helper",
+            "libexec/sshd-auth",
+            "libexec/sshd-session",
+            "sbin/sshd",
+            "sbom.spdx.json",
+            "share/man/man1/scp.1",
+            "share/man/man1/sftp.1",
+            "share/man/man1/ssh-add.1",
+            "share/man/man1/ssh-agent.1",
+            "share/man/man1/ssh-keygen.1",
+            "share/man/man1/ssh-keyscan.1",
+            "share/man/man1/ssh.1",
+            "share/man/man5/moduli.5",
+            "share/man/man5/ssh_config.5",
+            "share/man/man5/sshd_config.5",
+            "share/man/man8/sftp-server.8",
+            "share/man/man8/ssh-keysign.8",
+            "share/man/man8/ssh-pkcs11-helper.8",
+            "share/man/man8/ssh-sk-helper.8",
+            "share/man/man8/sshd.8"
+          ],
+          "installed_size": 8179304
+        }
+      }
+    }
+  }
+}

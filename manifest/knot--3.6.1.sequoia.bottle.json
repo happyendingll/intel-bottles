@@ -1,0 +1,979 @@
+{
+  "knot": {
+    "formula": {
+      "name": "knot",
+      "pkg_version": "3.6.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/k/knot.rb",
+      "tap_git_path": "Formula/k/knot.rb",
+      "tap_git_revision": "2e736d3ea76f6195fd8671a85721cbaf904728ba",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "High-performance authoritative-only DNS server",
+      "license": "GPL-3.0-or-later AND 0BSD AND BSD-3-Clause AND LGPL-2.0-or-later AND MIT",
+      "homepage": "https://www.knot-dns.cz/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-09T23:55:39Z",
+      "tags": {
+        "sequoia": {
+          "filename": "knot-3.6.1.sequoia.bottle.tar.gz",
+          "local_filename": "knot--3.6.1.sequoia.bottle.tar.gz",
+          "sha256": "914bfe8b57490f14dfc0238e31b55551cec13e833da3d6e520c2b62b07a474d6",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              ".bottle/etc/knot.conf",
+              "lib/pkgconfig/knotd.pc",
+              "lib/pkgconfig/libknot.pc",
+              "lib/pkgconfig/libzscanner.pc",
+              "sh.brew.knot.plist",
+              "sh.brew.knot.service"
+            ],
+            "linkage_files": [
+              "bin/kdig",
+              "bin/khost",
+              "bin/knsec3hash",
+              "bin/knsupdate",
+              "bin/kzonecheck",
+              "bin/kzonesign",
+              "lib/libknot.17.dylib",
+              "lib/libzscanner.5.dylib",
+              "sbin/kcatalogprint",
+              "sbin/keymgr",
+              "sbin/kjournalprint",
+              "sbin/knotc",
+              "sbin/knotd"
+            ],
+            "binary_relocation_files": [
+              "bin/kdig",
+              "bin/khost",
+              "bin/knsec3hash",
+              "bin/knsupdate",
+              "bin/kzonecheck",
+              "bin/kzonesign",
+              "lib/libknot.17.dylib",
+              "lib/libknot.a",
+              "sbin/kcatalogprint",
+              "sbin/keymgr",
+              "sbin/kjournalprint",
+              "sbin/knotc",
+              "sbin/knotd"
+            ],
+            "source_modified_time": 1791528573,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libevent",
+                "version": "2.1.13",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.13_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fstrm",
+                "version": "0.6.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.6.1",
+                "declared_directly": true
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.13",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.8.13_2",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libnghttp2",
+                "version": "1.70.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.70.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lmdb",
+                "version": "1.0.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": false,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "protobuf",
+                "version": "36.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "36.2",
+                "declared_directly": false,
+                "compatibility_version": 7
+              },
+              {
+                "full_name": "protobuf-c",
+                "version": "1.5.2",
+                "revision": 20,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.2_20",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "userspace-rcu",
+                "version": "0.15.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.15.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/knsec3hash",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 11089
+            },
+            {
+              "path": "bin/khost",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 384913
+            },
+            {
+              "path": "bin/kzonecheck",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 541391
+            },
+            {
+              "path": "bin/kdig",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 905542
+            },
+            {
+              "path": "bin/kzonesign",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 546351
+            },
+            {
+              "path": "bin/knsupdate",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 374543
+            },
+            {
+              "path": "sbin/kjournalprint",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 549535
+            },
+            {
+              "path": "sbin/knotd",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 621355
+            },
+            {
+              "path": "sbin/knotc",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 649023
+            },
+            {
+              "path": "sbin/kcatalogprint",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 544207
+            },
+            {
+              "path": "sbin/keymgr",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 584079
+            },
+            {
+              "path": "lib/libknot.a",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 504803
+            },
+            {
+              "path": "lib/libknot.17.dylib",
+              "string": "-n     Configure:-n  '--disable-silent-rules' '--with-configdir=/usr/local/etc' '--with-storage=/usr/local/var/knot' '--with-rundir=/usr/local/var/run/knot' '--with-module-dnstap' '--enable-dnstap' '--enable-quic' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/knot/3.6.1' '--libdir=/usr/local/Cellar/knot/3.6.1/lib' 'CC=clang' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/libevent/lib/pkgconfig:/usr/local/opt/fstrm/lib/pkgconfig:/usr/local/opt/gmp/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libtasn1/lib/pkgconfig:/usr/local/opt/nettle/lib/pkgconfig:/usr/local/opt/p11-kit/lib/pkgconfig:/usr/local/opt/gnutls/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/lmdb/lib/pkgconfig:/usr/local/opt/abseil/lib/pkgconfig:/usr/local/opt/protobuf/lib/pkgconfig:/usr/local/opt/protobuf-c/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_",
+              "offset": 480783
+            },
+            {
+              "path": "bin/kzonesign",
+              "string": "/usr/local/etc/knot.conf",
+              "offset": 489936
+            },
+            {
+              "path": "sbin/kjournalprint",
+              "string": "/usr/local/etc/knot.conf",
+              "offset": 493633
+            },
+            {
+              "path": "sbin/knotd",
+              "string": "/usr/local/etc/knot.conf",
+              "offset": 557578
+            },
+            {
+              "path": "sbin/knotc",
+              "string": "/usr/local/etc/knot.conf",
+              "offset": 585391
+            },
+            {
+              "path": "sbin/kcatalogprint",
+              "string": "/usr/local/etc/knot.conf",
+              "offset": 488254
+            },
+            {
+              "path": "sbin/keymgr",
+              "string": "/usr/local/etc/knot.conf",
+              "offset": 527761
+            },
+            {
+              "path": "bin/kzonecheck",
+              "string": "/usr/local/var/knot",
+              "offset": 495357
+            },
+            {
+              "path": "bin/kdig",
+              "string": "/usr/local/var/knot",
+              "offset": 825421
+            },
+            {
+              "path": "bin/kzonesign",
+              "string": "/usr/local/var/knot",
+              "offset": 499981
+            },
+            {
+              "path": "sbin/kjournalprint",
+              "string": "/usr/local/var/knot",
+              "offset": 503159
+            },
+            {
+              "path": "sbin/knotd",
+              "string": "/usr/local/var/knot",
+              "offset": 567900
+            },
+            {
+              "path": "sbin/knotc",
+              "string": "/usr/local/var/knot",
+              "offset": 596813
+            },
+            {
+              "path": "sbin/kcatalogprint",
+              "string": "/usr/local/var/knot",
+              "offset": 497773
+            },
+            {
+              "path": "sbin/keymgr",
+              "string": "/usr/local/var/knot",
+              "offset": 537946
+            },
+            {
+              "path": "bin/kzonecheck",
+              "string": "/usr/local/var/run/knot",
+              "offset": 494972
+            },
+            {
+              "path": "bin/kdig",
+              "string": "/usr/local/var/run/knot",
+              "offset": 825036
+            },
+            {
+              "path": "bin/kzonesign",
+              "string": "/usr/local/var/run/knot",
+              "offset": 499596
+            },
+            {
+              "path": "sbin/kjournalprint",
+              "string": "/usr/local/var/run/knot",
+              "offset": 502780
+            },
+            {
+              "path": "sbin/knotd",
+              "string": "/usr/local/var/run/knot",
+              "offset": 567554
+            },
+            {
+              "path": "sbin/knotc",
+              "string": "/usr/local/var/run/knot",
+              "offset": 596428
+            },
+            {
+              "path": "sbin/kcatalogprint",
+              "string": "/usr/local/var/run/knot",
+              "offset": 497388
+            },
+            {
+              "path": "sbin/keymgr",
+              "string": "/usr/local/var/run/knot",
+              "offset": 537561
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
+              "SPDXRef-Package-SPDXRef-lmdb-1.2e.0.2e.2",
+              "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+              "SPDXRef-Package-SPDXRef-protobuf-c-1.2e.5.2e.2.5f.20",
+              "SPDXRef-Package-SPDXRef-userspace-rcu-0.2e.15.2e.7",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "name": "libevent",
+                "versionInfo": "2.1.13_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libevent-2.1.13_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "633c29ac9023fd7a922d4204f529f117d0c3bb96bb70279a75cbabe4e6f3655e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libevent@2.1.13_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "name": "p11-kit",
+                "versionInfo": "0.26.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/p11-kit-0.26.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ee01fce79642e0693fd6bb9024aeb3e684bddfcf797ad6cb9ba8907c24742162"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/p11-kit@0.26.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
+                "name": "libnghttp2",
+                "versionInfo": "1.70.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libnghttp2-1.70.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5fc34d9e93ddb24b1c2cbb83a0beee5e3524a0d96c18b4a64cf32762681b2b65"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libnghttp2@1.70.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lmdb-1.2e.0.2e.2",
+                "name": "lmdb",
+                "versionInfo": "1.0.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "OLDAP-2.8",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/lmdb-1.0.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "506f4ed2a2c037bc39751ef9edaa56c448af6f85b9e3e310685622fda1f909d4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lmdb@1.0.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "name": "protobuf",
+                "versionInfo": "36.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "23c1b997672d8c907b7493086a0a785b885dcaf68851cd6d2a1e96d9f116314a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf@36.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-c-1.2e.5.2e.2.5f.20",
+                "name": "protobuf-c",
+                "versionInfo": "1.5.2_20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-c-1.5.2_20.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "89692fd803a65686cb530cd300e7e7553dd1a4bfd46e8dcb91927b942163f0d2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf-c@1.5.2_20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-userspace-rcu-0.2e.15.2e.7",
+                "name": "userspace-rcu",
+                "versionInfo": "0.15.7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later AND MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/userspace-rcu-0.15.7.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2693be2f9333e0de1878c7d5db16d70cd5bec2578d6085f769ff727ec204b9e0"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/userspace-rcu@0.15.7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lmdb-1.2e.0.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-c-1.2e.5.2e.2.5f.20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-userspace-rcu-0.2e.15.2e.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-knot"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-knot-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/knsec3hash",
+            "bin/khost",
+            "bin/kzonecheck",
+            "bin/kdig",
+            "bin/kzonesign",
+            "bin/knsupdate",
+            "sbin/kjournalprint",
+            "sbin/knotd",
+            "sbin/knotc",
+            "sbin/kcatalogprint",
+            "sbin/keymgr"
+          ],
+          "all_files": [
+            ".bottle/etc/knot.conf",
+            ".brew/knot.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "bin/kdig",
+            "bin/khost",
+            "bin/knsec3hash",
+            "bin/knsupdate",
+            "bin/kzonecheck",
+            "bin/kzonesign",
+            "include/knot/module.h",
+            "include/libknot/attribute.h",
+            "include/libknot/codes.h",
+            "include/libknot/consts.h",
+            "include/libknot/control/control.h",
+            "include/libknot/cookies.h",
+            "include/libknot/db/db.h",
+            "include/libknot/db/db_lmdb.h",
+            "include/libknot/db/db_trie.h",
+            "include/libknot/descriptor.h",
+            "include/libknot/dname.h",
+            "include/libknot/dnssec/binary.h",
+            "include/libknot/dnssec/crypto.h",
+            "include/libknot/dnssec/digest.h",
+            "include/libknot/dnssec/key.h",
+            "include/libknot/dnssec/keyid.h",
+            "include/libknot/dnssec/keystore.h",
+            "include/libknot/dnssec/keytag.h",
+            "include/libknot/dnssec/nsec.h",
+            "include/libknot/dnssec/pem.h",
+            "include/libknot/dnssec/random.h",
+            "include/libknot/dnssec/sign.h",
+            "include/libknot/dnssec/tsig.h",
+            "include/libknot/dynarray.h",
+            "include/libknot/endian.h",
+            "include/libknot/errcode.h",
+            "include/libknot/error.h",
+            "include/libknot/libknot.h",
+            "include/libknot/lookup.h",
+            "include/libknot/mm_ctx.h",
+            "include/libknot/packet/compr.h",
+            "include/libknot/packet/pkt.h",
+            "include/libknot/packet/rrset-wire.h",
+            "include/libknot/packet/wire.h",
+            "include/libknot/probe/data.h",
+            "include/libknot/probe/probe.h",
+            "include/libknot/quic/quic.h",
+            "include/libknot/quic/quic_conn.h",
+            "include/libknot/quic/tls.h",
+            "include/libknot/quic/tls_common.h",
+            "include/libknot/rdata.h",
+            "include/libknot/rdataset.h",
+            "include/libknot/rrset-dump.h",
+            "include/libknot/rrset.h",
+            "include/libknot/rrtype/dnskey.h",
+            "include/libknot/rrtype/ds.h",
+            "include/libknot/rrtype/naptr.h",
+            "include/libknot/rrtype/nsec.h",
+            "include/libknot/rrtype/nsec3.h",
+            "include/libknot/rrtype/nsec3param.h",
+            "include/libknot/rrtype/opt.h",
+            "include/libknot/rrtype/rdname.h",
+            "include/libknot/rrtype/rrsig.h",
+            "include/libknot/rrtype/soa.h",
+            "include/libknot/rrtype/svcb.h",
+            "include/libknot/rrtype/tsig.h",
+            "include/libknot/rrtype/zonemd.h",
+            "include/libknot/tsig-op.h",
+            "include/libknot/tsig.h",
+            "include/libknot/version.h",
+            "include/libknot/wire.h",
+            "include/libknot/xdp/tcp_iobuf.h",
+            "include/libknot/xdp.h",
+            "include/libknot/yparser/yparser.h",
+            "include/libknot/yparser/ypformat.h",
+            "include/libknot/yparser/ypschema.h",
+            "include/libknot/yparser/yptrafo.h",
+            "include/libzscanner/error.h",
+            "include/libzscanner/scanner.h",
+            "include/libzscanner/version.h",
+            "lib/libknot.17.dylib",
+            "lib/libknot.a",
+            "lib/libknot.dylib",
+            "lib/libzscanner.5.dylib",
+            "lib/libzscanner.a",
+            "lib/libzscanner.dylib",
+            "lib/pkgconfig/knotd.pc",
+            "lib/pkgconfig/libknot.pc",
+            "lib/pkgconfig/libzscanner.pc",
+            "sbin/kcatalogprint",
+            "sbin/keymgr",
+            "sbin/kjournalprint",
+            "sbin/knotc",
+            "sbin/knotd",
+            "sbom.spdx.json",
+            "sh.brew.knot.plist",
+            "sh.brew.knot.service",
+            "share/doc/knot/_static/admon_caution_48.png",
+            "share/doc/knot/_static/admon_important_48.png",
+            "share/doc/knot/_static/admon_note_48.png",
+            "share/doc/knot/_static/admon_tip_48.png",
+            "share/doc/knot/_static/admon_warning_48.png",
+            "share/doc/knot/_static/admons.css",
+            "share/doc/knot/_static/base-stemmer.js",
+            "share/doc/knot/_static/basic.css",
+            "share/doc/knot/_static/doctools.js",
+            "share/doc/knot/_static/documentation_options.js",
+            "share/doc/knot/_static/english-stemmer.js",
+            "share/doc/knot/_static/file.png",
+            "share/doc/knot/_static/language_data.js",
+            "share/doc/knot/_static/logo.svg",
+            "share/doc/knot/_static/main.css",
+            "share/doc/knot/_static/minus.png",
+            "share/doc/knot/_static/nature.css",
+            "share/doc/knot/_static/plus.png",
+            "share/doc/knot/_static/pygments.css",
+            "share/doc/knot/_static/searchtools.js",
+            "share/doc/knot/_static/sphinx_highlight.js",
+            "share/doc/knot/index.html",
+            "share/man/man1/kdig.1",
+            "share/man/man1/khost.1",
+            "share/man/man1/knsec3hash.1",
+            "share/man/man1/knsupdate.1",
+            "share/man/man1/kzonecheck.1",
+            "share/man/man1/kzonesign.1",
+            "share/man/man5/knot.conf.5",
+            "share/man/man8/kcatalogprint.8",
+            "share/man/man8/keymgr.8",
+            "share/man/man8/kjournalprint.8",
+            "share/man/man8/knotc.8",
+            "share/man/man8/knotd.8"
+          ],
+          "installed_size": 12592234
+        }
+      }
+    }
+  }
+}
