@@ -2,27 +2,27 @@
   "lldb": {
     "formula": {
       "name": "lldb",
-      "pkg_version": "23.1.2",
+      "pkg_version": "23.1.3",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/l/lldb.rb",
       "tap_git_path": "Formula/l/lldb.rb",
-      "tap_git_revision": "75e0bd6346cd554413f57fdd33fa593e47defd85",
+      "tap_git_revision": "fbd9c7ccc75439ed80525d2a5f1f1bebcb50dcd1",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Next generation, high-performance debugger",
       "license": "Apache-2.0 WITH LLVM-exception",
       "homepage": "https://lldb.llvm.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-09-25T13:36:11Z",
+      "date": "2026-10-10T08:43:40Z",
       "tags": {
         "sequoia": {
-          "filename": "lldb-23.1.2.sequoia.bottle.tar.gz",
-          "local_filename": "lldb--23.1.2.sequoia.bottle.tar.gz",
-          "sha256": "ec3aeb3bd26d1a70d864f9603ed47cc3849d15804585c2ec7a3fada8dc7815bb",
+          "filename": "lldb-23.1.3.sequoia.bottle.tar.gz",
+          "local_filename": "lldb--23.1.3.sequoia.bottle.tar.gz",
+          "sha256": "e0cb9e2fe8dce25dcc93c0c973bddd466c93dcb43478477b70efeebcd148ae49",
           "tab": {
-            "homebrew_version": "7.0.6",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "include/lldb/Host/Config.h"
             ],
@@ -36,13 +36,13 @@
               "bin/lldb-server",
               "bin/lldb-tblgen",
               "bin/yaml2macho-core",
-              "lib/liblldb.23.1.2.dylib",
+              "lib/liblldb.23.1.3.dylib",
               "lib/liblldbPluginScriptInterpreterPython.23.1.dylib"
             ],
             "binary_relocation_files": [
-              "lib/liblldb.23.1.2.dylib"
+              "lib/liblldb.23.1.3.dylib"
             ],
-            "source_modified_time": 1789873207,
+            "source_modified_time": 1791272331,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -82,12 +82,21 @@
               },
               {
                 "full_name": "llvm",
-                "version": "23.1.2",
-                "revision": 0,
+                "version": "23.1.3",
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "23.1.2",
+                "pkg_version": "23.1.3_1",
                 "declared_directly": true,
                 "compatibility_version": 2
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "mpdecimal",
@@ -99,22 +108,12 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "ca-certificates",
-                "version": "2026-08-13",
-                "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2026-08-13",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": false,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": false
               },
               {
                 "full_name": "readline",
@@ -136,10 +135,10 @@
               },
               {
                 "full_name": "python@3.14",
-                "version": "3.14.7",
-                "revision": 0,
+                "version": "3.14.8",
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.14.7",
+                "pkg_version": "3.14.8_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -156,28 +155,28 @@
           },
           "binary_relocation_diagnostics": [
             {
-              "path": "lib/liblldb.23.1.2.dylib",
+              "path": "lib/liblldb.23.1.3.dylib",
               "string": "/usr/local/opt/python@3.14/Frameworks/Python.framework/Versions/3.14/lib/libpython3.14.dylib",
-              "offset": 8920347
+              "offset": 8920379
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-llvm-23.1.2",
-              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-              "SPDXRef-Package-SPDXRef-readline-8.3.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
-              "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.3.5f.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -200,7 +199,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -223,7 +222,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -246,30 +245,53 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.1.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.3.5f.1",
                 "name": "llvm",
-                "versionInfo": "23.1.2",
+                "versionInfo": "23.1.3_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/llvm-23.1.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/llvm-23.1.3_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "fe936f60388d6ec767e8b8ad79f24bf018808d49c2a0bc19339e26f19c348b19"
+                    "checksumValue": "ba19651862709c32968611aa68020293e9c9b532456476d41bafad6dd1c3a7dc"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/llvm@23.1.2",
+                    "referenceLocator": "pkg:brew/llvm@23.1.3_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "name": "mpdecimal",
                 "versionInfo": "4.0.1",
                 "filesAnalyzed": false,
@@ -292,53 +314,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-                "name": "ca-certificates",
-                "versionInfo": "2026-08-13",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "name": "readline",
                 "versionInfo": "8.3.6",
                 "filesAnalyzed": false,
@@ -361,7 +360,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "name": "sqlite",
                 "versionInfo": "3.53.4",
                 "filesAnalyzed": false,
@@ -384,24 +383,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
                 "name": "python@3.14",
-                "versionInfo": "3.14.7",
+                "versionInfo": "3.14.8_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/python%403.14-3.14.8_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb"
+                    "checksumValue": "08b2b24a1d282d38d87cb014049867b43fb290fe7b2dda027c6d6a722073d4b4"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.14@3.14.7",
+                    "referenceLocator": "pkg:brew/python%403.14@3.14.8_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -421,52 +420,52 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lldb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lldb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lldb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.1.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.3.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lldb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lldb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lldb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lldb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lldb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.53.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lldb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.8.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-lldb"
               },
@@ -1192,7 +1191,7 @@
             "include/lldb/lldb-public.h",
             "include/lldb/lldb-types.h",
             "include/lldb/lldb-versioning.h",
-            "lib/liblldb.23.1.2.dylib",
+            "lib/liblldb.23.1.3.dylib",
             "lib/liblldb.23.1.dylib",
             "lib/liblldb.dylib",
             "lib/liblldbPluginScriptInterpreterPython.23.1.dylib",
@@ -1236,7 +1235,7 @@
             "lib/python3.14/site-packages/lldb/utils/symbolication.py",
             "sbom.spdx.json"
           ],
-          "installed_size": 30373289
+          "installed_size": 30373868
         }
       }
     }

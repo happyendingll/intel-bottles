@@ -2,27 +2,27 @@
   "ttyd": {
     "formula": {
       "name": "ttyd",
-      "pkg_version": "1.7.7_13",
+      "pkg_version": "1.7.7_14",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/t/ttyd.rb",
       "tap_git_path": "Formula/t/ttyd.rb",
-      "tap_git_revision": "226f50b0d29c3e8823e458d5c71553eba8eb7432",
+      "tap_git_revision": "fbd9c7ccc75439ed80525d2a5f1f1bebcb50dcd1",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Command-line tool for sharing terminal over the web",
       "license": "MIT",
       "homepage": "https://tsl0922.github.io/ttyd/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-09-29T04:14:13Z",
+      "date": "2026-10-10T08:46:05Z",
       "tags": {
         "sequoia": {
-          "filename": "ttyd-1.7.7_13.sequoia.bottle.tar.gz",
-          "local_filename": "ttyd--1.7.7_13.sequoia.bottle.tar.gz",
-          "sha256": "dc07589f04081c634af8b9ce2f503c1540e6c886e1ee5972ed46277141f2dc43",
+          "filename": "ttyd-1.7.7_14.sequoia.bottle.tar.gz",
+          "local_filename": "ttyd--1.7.7_14.sequoia.bottle.tar.gz",
+          "sha256": "e58b953bf24d157d390288507b62cc18d87d49b401e3255705065d186fd596cb",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
               "bin/ttyd"
@@ -51,20 +51,19 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
-                "revision": 1,
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4_1",
-                "declared_directly": true,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": true
               },
               {
                 "full_name": "libevent",
                 "version": "2.1.13",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.1.13",
+                "pkg_version": "2.1.13_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -80,9 +79,9 @@
               {
                 "full_name": "libwebsockets",
                 "version": "5.0.0",
-                "revision": 1,
+                "revision": 2,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.0.0_1",
+                "pkg_version": "5.0.0_2",
                 "declared_directly": true,
                 "compatibility_version": 6
               }
@@ -100,22 +99,23 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/ttyd",
-              "string": "/usr/local/Cellar/libwebsockets/5.0.0_1/lib",
-              "offset": 353110
+              "string": "/usr/local/Cellar/libwebsockets/5.0.0_2/lib",
+              "offset": 353142
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
-              "SPDXRef-Package-SPDXRef-libuv-1.53.0",
-              "SPDXRef-Package-SPDXRef-libwebsockets-5.0.0_1",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+              "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
+              "SPDXRef-Package-SPDXRef-libwebsockets-5.2e.0.2e.0.5f.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -161,30 +161,53 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4_1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d63b0bbe503c00db050f52f5f2172deba5e0233a30cbd0059622bf53ce9be9c3"
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4_1",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "name": "libevent",
+                "versionInfo": "2.1.13_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libevent-2.1.13_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "633c29ac9023fd7a922d4204f529f117d0c3bb96bb70279a75cbabe4e6f3655e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libevent@2.1.13_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
                 "name": "libuv",
                 "versionInfo": "1.53.0",
                 "filesAnalyzed": false,
@@ -207,24 +230,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libwebsockets-5.0.0_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libwebsockets-5.2e.0.2e.0.5f.2",
                 "name": "libwebsockets",
-                "versionInfo": "5.0.0_1",
+                "versionInfo": "5.0.0_2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/libwebsockets-5.0.0_1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libwebsockets-5.0.0_2.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "eadfbf2893c0e0456a82a2620f15e227893215d3fa71a1c87cc60fd0c96698dc"
+                    "checksumValue": "d4d18df4b299d5554558ba48b16f51480391db580f3f93f4ea000a16407c354c"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libwebsockets@5.0.0_1",
+                    "referenceLocator": "pkg:brew/libwebsockets@5.0.0_2",
                     "referenceType": "purl"
                   }
                 ]
@@ -244,7 +267,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ttyd"
               },
@@ -254,17 +277,22 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-ttyd"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ttyd"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.53.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ttyd"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libwebsockets-5.0.0_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ttyd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libwebsockets-5.2e.0.2e.0.5f.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ttyd"
               },
@@ -287,7 +315,7 @@
             "sbom.spdx.json",
             "share/man/man1/ttyd.1"
           ],
-          "installed_size": 695069
+          "installed_size": 695147
         }
       }
     }
