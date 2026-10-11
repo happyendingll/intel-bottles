@@ -2,27 +2,27 @@
   "strongswan": {
     "formula": {
       "name": "strongswan",
-      "pkg_version": "6.1.0",
+      "pkg_version": "6.1.0_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/strongswan.rb",
       "tap_git_path": "Formula/s/strongswan.rb",
-      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_revision": "f2d7d2f8ac3c6e25be9cd0f608d8535d39dc8c23",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "VPN based on IPsec",
       "license": "GPL-2.0-or-later",
       "homepage": "https://www.strongswan.org"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-09-14T16:43:19Z",
+      "date": "2026-10-11T22:47:12Z",
       "tags": {
         "sequoia": {
-          "filename": "strongswan-6.1.0.sequoia.bottle.tar.gz",
-          "local_filename": "strongswan--6.1.0.sequoia.bottle.tar.gz",
-          "sha256": "c5a337baf89d6c38932aac040fb3f76af033231d50975698ea8f81f9b04583d8",
+          "filename": "strongswan-6.1.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "strongswan--6.1.0_1.sequoia.bottle.tar.gz",
+          "sha256": "d56ce0877045ae269c6ef1c9bb13bb18534eafd3701a565aa319b30bf526f9b4",
           "tab": {
-            "homebrew_version": "7.0.1",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "bin/ipsec",
               "libexec/ipsec/_updown",
@@ -51,21 +51,20 @@
             "runtime_dependencies": [
               {
                 "full_name": "ca-certificates",
-                "version": "2026-08-13",
+                "version": "2026-09-25",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "2026-08-13",
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4",
-                "declared_directly": true,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": true
               }
             ],
             "arch": "x86_64",
@@ -81,12 +80,12 @@
           "binary_relocation_diagnostics": [
             {
               "path": "libexec/ipsec/starter",
-              "string": "/usr/local/Cellar/strongswan/6.1.0/libexec/ipsec/charon",
-              "offset": 38581
+              "string": "/usr/local/Cellar/strongswan/6.1.0_1/libexec/ipsec/charon",
+              "offset": 38591
             },
             {
               "path": "lib/ipsec/libstrongswan.0.dylib",
-              "string": "/usr/local/Cellar/strongswan/6.1.0/lib/ipsec/plugins",
+              "string": "/usr/local/Cellar/strongswan/6.1.0_1/lib/ipsec/plugins",
               "offset": 259410
             },
             {
@@ -97,53 +96,53 @@
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "name": "ca-certificates",
-                "versionInfo": "2026-08-13",
+                "versionInfo": "2026-09-25",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "37f5c1413f65c05d86e1279d76699f5d27ad77f8126f5776db13f3d64ee3d010"
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-08-13",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3b83467dedc41654696949707aac6b140fc3c1182b85d7aee590ec980cceaafd"
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
@@ -163,12 +162,12 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-08-13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-strongswan"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-strongswan"
               },
@@ -371,7 +370,7 @@
             "share/strongswan/templates/config/strongswan.d/starter.conf",
             "share/strongswan/templates/config/strongswan.d/swanctl.conf"
           ],
-          "installed_size": 3217597
+          "installed_size": 3213042
         }
       }
     }
