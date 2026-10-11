@@ -1,0 +1,235 @@
+{
+  "pure-ftpd": {
+    "formula": {
+      "name": "pure-ftpd",
+      "pkg_version": "1.0.54_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pure-ftpd.rb",
+      "tap_git_path": "Formula/p/pure-ftpd.rb",
+      "tap_git_revision": "096e339a1b0538b9d77f79b856f742a0224d17d6",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Secure and efficient FTP server",
+      "license": "BSD-2-Clause AND BSD-3-Clause AND BSD-4-Clause AND ISC",
+      "homepage": "https://www.pureftpd.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-11T04:57:17Z",
+      "tags": {
+        "sequoia": {
+          "filename": "pure-ftpd-1.0.54_1.sequoia.bottle.tar.gz",
+          "local_filename": "pure-ftpd--1.0.54_1.sequoia.bottle.tar.gz",
+          "sha256": "ab1ba8f329737998f585c72bc8ebe8e63eb457f832b6c23690b7345cb8da914c",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              ".bottle/etc/pure-ftpd.conf",
+              "sh.brew.pure-ftpd.plist",
+              "sh.brew.pure-ftpd.service",
+              "share/doc/pure-ftpd/pure-ftpd.conf"
+            ],
+            "linkage_files": [
+              "bin/pure-pw",
+              "bin/pure-pwconvert",
+              "bin/pure-statsdecode",
+              "sbin/pure-authd",
+              "sbin/pure-certd",
+              "sbin/pure-ftpd",
+              "sbin/pure-ftpwho",
+              "sbin/pure-mrtginfo",
+              "sbin/pure-quotacheck",
+              "sbin/pure-uploadscript"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1777365562,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libsodium",
+                "version": "1.0.22",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.22",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pure-ftpd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pure-ftpd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-pure-ftpd-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/pure-pw",
+            "bin/pure-pwconvert",
+            "bin/pure-statsdecode",
+            "sbin/pure-certd",
+            "sbin/pure-ftpd",
+            "sbin/pure-authd",
+            "sbin/pure-ftpwho",
+            "sbin/pure-quotacheck",
+            "sbin/pure-uploadscript",
+            "sbin/pure-mrtginfo"
+          ],
+          "all_files": [
+            ".bottle/etc/pure-ftpd.conf",
+            ".brew/pure-ftpd.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "HISTORY",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "bin/pure-pw",
+            "bin/pure-pwconvert",
+            "bin/pure-statsdecode",
+            "sbin/pure-authd",
+            "sbin/pure-certd",
+            "sbin/pure-ftpd",
+            "sbin/pure-ftpwho",
+            "sbin/pure-mrtginfo",
+            "sbin/pure-quotacheck",
+            "sbin/pure-uploadscript",
+            "sbom.spdx.json",
+            "sh.brew.pure-ftpd.plist",
+            "sh.brew.pure-ftpd.service",
+            "share/doc/pure-ftpd/FAQ",
+            "share/doc/pure-ftpd/README.Authentication-Modules",
+            "share/doc/pure-ftpd/README.Configuration-File",
+            "share/doc/pure-ftpd/README.LDAP",
+            "share/doc/pure-ftpd/README.MacOS-X",
+            "share/doc/pure-ftpd/README.MySQL",
+            "share/doc/pure-ftpd/README.PGSQL",
+            "share/doc/pure-ftpd/README.TLS",
+            "share/doc/pure-ftpd/README.Virtual-Users",
+            "share/doc/pure-ftpd/pure-ftpd.conf",
+            "share/doc/pure-ftpd/pureftpd-ldap.conf",
+            "share/doc/pure-ftpd/pureftpd-mysql.conf",
+            "share/doc/pure-ftpd/pureftpd-pgsql.conf",
+            "share/doc/pure-ftpd/pureftpd.schema",
+            "share/man/man8/pure-authd.8",
+            "share/man/man8/pure-certd.8",
+            "share/man/man8/pure-ftpd.8",
+            "share/man/man8/pure-ftpwho.8",
+            "share/man/man8/pure-mrtginfo.8",
+            "share/man/man8/pure-pw.8",
+            "share/man/man8/pure-pwconvert.8",
+            "share/man/man8/pure-quotacheck.8",
+            "share/man/man8/pure-statsdecode.8",
+            "share/man/man8/pure-uploadscript.8"
+          ],
+          "installed_size": 745289
+        }
+      }
+    }
+  }
+}

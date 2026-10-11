@@ -1,0 +1,252 @@
+{
+  "icecast": {
+    "formula": {
+      "name": "icecast",
+      "pkg_version": "2.4.4_4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/i/icecast.rb",
+      "tap_git_path": "Formula/i/icecast.rb",
+      "tap_git_revision": "096e339a1b0538b9d77f79b856f742a0224d17d6",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Streaming MP3 audio server",
+      "license": "GPL-2.0-only",
+      "homepage": "https://icecast.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-11T03:28:33Z",
+      "tags": {
+        "sequoia": {
+          "filename": "icecast-2.4.4_4.sequoia.bottle.tar.gz",
+          "local_filename": "icecast--2.4.4_4.sequoia.bottle.tar.gz",
+          "sha256": "0e73b9f9d8b1ec4d653963e6745eac48cfc62ee5de8f0afa5337095de124763f",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              ".bottle/etc/icecast.xml",
+              "share/icecast/doc/icecast.xml.dist",
+              "share/icecast/doc/icecast_minimal.xml.dist",
+              "share/icecast/doc/icecast_shoutcast_compat.xml.dist",
+              "share/icecast/doc/icecast_urlauth.xml.dist"
+            ],
+            "linkage_files": [
+              "bin/icecast"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1541020548,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libogg",
+                "version": "1.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libvorbis",
+                "version": "1.3.7",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.3.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-icecast"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-icecast"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-icecast-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/icecast"
+          ],
+          "all_files": [
+            ".bottle/etc/icecast.xml",
+            ".brew/icecast.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "TODO",
+            "bin/icecast",
+            "sbom.spdx.json",
+            "share/doc/icecast/AUTHORS",
+            "share/doc/icecast/COPYING",
+            "share/doc/icecast/ChangeLog",
+            "share/doc/icecast/NEWS",
+            "share/doc/icecast/README",
+            "share/doc/icecast/TODO",
+            "share/doc/icecast/admin-interface.html",
+            "share/doc/icecast/assets/css/style.css",
+            "share/doc/icecast/assets/font/FiraMono-Bold.eot",
+            "share/doc/icecast/assets/font/FiraMono-Bold.woff",
+            "share/doc/icecast/assets/font/FiraMono-Regular.eot",
+            "share/doc/icecast/assets/font/FiraMono-Regular.woff",
+            "share/doc/icecast/assets/font/FiraSans-Bold.eot",
+            "share/doc/icecast/assets/font/FiraSans-Bold.woff",
+            "share/doc/icecast/assets/font/FiraSans-BoldItalic.eot",
+            "share/doc/icecast/assets/font/FiraSans-BoldItalic.woff",
+            "share/doc/icecast/assets/font/FiraSans-Italic.eot",
+            "share/doc/icecast/assets/font/FiraSans-Italic.woff",
+            "share/doc/icecast/assets/font/FiraSans-Regular.eot",
+            "share/doc/icecast/assets/font/FiraSans-Regular.woff",
+            "share/doc/icecast/assets/img/xiph-community.svg",
+            "share/doc/icecast/auth.html",
+            "share/doc/icecast/basic-setup.html",
+            "share/doc/icecast/changes.html",
+            "share/doc/icecast/config-file.html",
+            "share/doc/icecast/faq.html",
+            "share/doc/icecast/glossary.html",
+            "share/doc/icecast/img/listener_auth1.png",
+            "share/doc/icecast/img/listener_auth2.png",
+            "share/doc/icecast/img/listener_auth3.png",
+            "share/doc/icecast/img/masterslave.png",
+            "share/doc/icecast/img/relay.png",
+            "share/doc/icecast/index.html",
+            "share/doc/icecast/introduction.html",
+            "share/doc/icecast/relaying.html",
+            "share/doc/icecast/server-stats.html",
+            "share/doc/icecast/win32.html",
+            "share/doc/icecast/yp.html",
+            "share/icecast/admin/listclients.xsl",
+            "share/icecast/admin/listmounts.xsl",
+            "share/icecast/admin/manageauth.xsl",
+            "share/icecast/admin/moveclients.xsl",
+            "share/icecast/admin/response.xsl",
+            "share/icecast/admin/stats.xsl",
+            "share/icecast/admin/updatemetadata.xsl",
+            "share/icecast/admin/vclt.xsl",
+            "share/icecast/admin/xspf.xsl",
+            "share/icecast/doc/icecast.xml.dist",
+            "share/icecast/doc/icecast_minimal.xml.dist",
+            "share/icecast/doc/icecast_shoutcast_compat.xml.dist",
+            "share/icecast/doc/icecast_urlauth.xml.dist",
+            "share/icecast/web/auth.xsl",
+            "share/icecast/web/icecast.png",
+            "share/icecast/web/key.png",
+            "share/icecast/web/server_version.xsl",
+            "share/icecast/web/status-json.xsl",
+            "share/icecast/web/status.xsl",
+            "share/icecast/web/style.css",
+            "share/icecast/web/tunein.png",
+            "share/icecast/web/xml2json.xslt"
+          ],
+          "installed_size": 2357095
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,441 @@
+{
+  "libhttpserver": {
+    "formula": {
+      "name": "libhttpserver",
+      "pkg_version": "2.0.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libhttpserver.rb",
+      "tap_git_path": "Formula/lib/libhttpserver.rb",
+      "tap_git_revision": "096e339a1b0538b9d77f79b856f742a0224d17d6",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "C++ library of embedded Rest HTTP server",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://github.com/etr/libhttpserver"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-11T04:10:23Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libhttpserver-2.0.1.sequoia.bottle.tar.gz",
+          "local_filename": "libhttpserver--2.0.1.sequoia.bottle.tar.gz",
+          "sha256": "32ef4327707446a9fb9e13d9ca6005f0615987870ac7cf28f78f6e98e177e265",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/libhttpserver.pc"
+            ],
+            "linkage_files": [
+              "lib/libhttpserver.2.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791585836,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.13",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.8.13_2",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libmicrohttpd",
+                "version": "1.0.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.10",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "name": "p11-kit",
+                "versionInfo": "0.26.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/p11-kit-0.26.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ee01fce79642e0693fd6bb9024aeb3e684bddfcf797ad6cb9ba8907c24742162"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/p11-kit@0.26.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libhttpserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libhttpserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libhttpserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libhttpserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libhttpserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libhttpserver"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libhttpserver-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libhttpserver.rb",
+            "AUTHORS",
+            "COPYING.LESSER",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/httpserver/body_kind.hpp",
+            "include/httpserver/constants.hpp",
+            "include/httpserver/cookie.hpp",
+            "include/httpserver/create_test_request.hpp",
+            "include/httpserver/create_webserver.hpp",
+            "include/httpserver/create_webserver_setters.hpp",
+            "include/httpserver/feature_unavailable.hpp",
+            "include/httpserver/file_info.hpp",
+            "include/httpserver/hook_action.hpp",
+            "include/httpserver/hook_context.hpp",
+            "include/httpserver/hook_handle.hpp",
+            "include/httpserver/hook_phase.hpp",
+            "include/httpserver/http_arg_value.hpp",
+            "include/httpserver/http_method.hpp",
+            "include/httpserver/http_request.hpp",
+            "include/httpserver/http_resource.hpp",
+            "include/httpserver/http_response.hpp",
+            "include/httpserver/http_utils.hpp",
+            "include/httpserver/http_utils_helpers.hpp",
+            "include/httpserver/iovec_entry.hpp",
+            "include/httpserver/ip_representation.hpp",
+            "include/httpserver/webserver.hpp",
+            "include/httpserver/webserver_hooks.hpp",
+            "include/httpserver/webserver_routes.hpp",
+            "include/httpserver/webserver_runtime.hpp",
+            "include/httpserver/webserver_websocket.hpp",
+            "include/httpserver/websocket_handler.hpp",
+            "include/httpserver.hpp",
+            "include/httpserverpp",
+            "lib/libhttpserver.2.dylib",
+            "lib/libhttpserver.a",
+            "lib/libhttpserver.dylib",
+            "lib/pkgconfig/libhttpserver.pc",
+            "sbom.spdx.json",
+            "share/cmake/Modules/FindLibHttpServer.cmake",
+            "share/libhttpserver/examples/Makefile.am",
+            "share/libhttpserver/examples/Makefile.in",
+            "share/libhttpserver/examples/README.md",
+            "share/libhttpserver/examples/allowing_disallowing_methods.cpp",
+            "share/libhttpserver/examples/args_processing.cpp",
+            "share/libhttpserver/examples/basic_authentication.cpp",
+            "share/libhttpserver/examples/benchmark_nodelay.cpp",
+            "share/libhttpserver/examples/benchmark_select.cpp",
+            "share/libhttpserver/examples/benchmark_threads.cpp",
+            "share/libhttpserver/examples/binary_buffer_response.cpp",
+            "share/libhttpserver/examples/centralized_authentication.cpp",
+            "share/libhttpserver/examples/cert.pem",
+            "share/libhttpserver/examples/clf_access_log.cpp",
+            "share/libhttpserver/examples/client_cert_auth.cpp",
+            "share/libhttpserver/examples/custom_access_log.cpp",
+            "share/libhttpserver/examples/custom_error.cpp",
+            "share/libhttpserver/examples/daemon_info.cpp",
+            "share/libhttpserver/examples/deferred_with_accumulator.cpp",
+            "share/libhttpserver/examples/denied_ip_log.cpp",
+            "share/libhttpserver/examples/digest_authentication.cpp",
+            "share/libhttpserver/examples/early_413.cpp",
+            "share/libhttpserver/examples/empty_response_example.cpp",
+            "share/libhttpserver/examples/external_event_loop.cpp",
+            "share/libhttpserver/examples/file_upload.cpp",
+            "share/libhttpserver/examples/file_upload_with_callback.cpp",
+            "share/libhttpserver/examples/handlers.cpp",
+            "share/libhttpserver/examples/hello_with_get_arg.cpp",
+            "share/libhttpserver/examples/hello_world.cpp",
+            "share/libhttpserver/examples/iovec_response_example.cpp",
+            "share/libhttpserver/examples/key.pem",
+            "share/libhttpserver/examples/minimal_deferred.cpp",
+            "share/libhttpserver/examples/minimal_file_response.cpp",
+            "share/libhttpserver/examples/minimal_https.cpp",
+            "share/libhttpserver/examples/minimal_https_psk.cpp",
+            "share/libhttpserver/examples/minimal_ip_access_control.cpp",
+            "share/libhttpserver/examples/per_route_auth.cpp",
+            "share/libhttpserver/examples/pipe_response_example.cpp",
+            "share/libhttpserver/examples/service.cpp",
+            "share/libhttpserver/examples/setting_headers.cpp",
+            "share/libhttpserver/examples/shared_state.cpp",
+            "share/libhttpserver/examples/test_content",
+            "share/libhttpserver/examples/turbo_mode.cpp",
+            "share/libhttpserver/examples/url_registration.cpp",
+            "share/libhttpserver/examples/websocket_echo.cpp",
+            "share/man/man3/libhttpserver.3"
+          ],
+          "installed_size": 2822926
+        }
+      }
+    }
+  }
+}

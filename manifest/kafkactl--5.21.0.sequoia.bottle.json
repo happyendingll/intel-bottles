@@ -1,0 +1,90 @@
+{
+  "kafkactl": {
+    "formula": {
+      "name": "kafkactl",
+      "pkg_version": "5.21.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/k/kafkactl.rb",
+      "tap_git_path": "Formula/k/kafkactl.rb",
+      "tap_git_revision": "096e339a1b0538b9d77f79b856f742a0224d17d6",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "CLI for managing Apache Kafka",
+      "license": "Apache-2.0",
+      "homepage": "https://deviceinsight.github.io/kafkactl/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-11T03:40:58Z",
+      "tags": {
+        "sequoia": {
+          "filename": "kafkactl-5.21.0.sequoia.bottle.tar.gz",
+          "local_filename": "kafkactl--5.21.0.sequoia.bottle.tar.gz",
+          "sha256": "91a4fec1383ddf7def5c4b3a98f5fed7013f344c7f7b7bfdd0e1f6724b71ea3f",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791525987,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-kafkactl-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/kafkactl"
+          ],
+          "all_files": [
+            ".brew/kafkactl.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.adoc",
+            "bin/kafkactl",
+            "etc/bash_completion.d/kafkactl",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/kafkactl.fish",
+            "share/pwsh/completions/_kafkactl.ps1",
+            "share/zsh/site-functions/_kafkactl"
+          ],
+          "installed_size": 25191012
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,221 @@
+{
+  "kcov": {
+    "formula": {
+      "name": "kcov",
+      "pkg_version": "43_2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/k/kcov.rb",
+      "tap_git_path": "Formula/k/kcov.rb",
+      "tap_git_revision": "096e339a1b0538b9d77f79b856f742a0224d17d6",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Code coverage tester for compiled programs, Python, and shell scripts",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://simonkagstrom.github.io/kcov/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-11T03:44:49Z",
+      "tags": {
+        "sequoia": {
+          "filename": "kcov-43_2.sequoia.bottle.tar.gz",
+          "local_filename": "kcov--43_2.sequoia.bottle.tar.gz",
+          "sha256": "a7ee65241bb1ca42327dd587c1fea0ca721c6148133e9de2201eafa6c4b1b3fa",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/kcov"
+            ],
+            "binary_relocation_files": [
+              "bin/kcov"
+            ],
+            "source_modified_time": 1721759437,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "dwarfutils",
+                "version": "2.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/kcov",
+              "string": "/usr/local/opt/openssl@4/lib/libssl.4.dylib",
+              "offset": 256800
+            },
+            {
+              "path": "bin/kcov",
+              "string": "/usr/local/opt/openssl@4/lib/libcrypto.4.dylib",
+              "offset": 256872
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-dwarfutils-2.2e.3.2e.3",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-dwarfutils-2.2e.3.2e.3",
+                "name": "dwarfutils",
+                "versionInfo": "2.3.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause AND LGPL-2.1-or-later AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/dwarfutils-2.3.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e74a53a0902dc6ae4cc6d32f5696d4a4a622abc73e34011e678a7eb9d9d0f5fa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/dwarfutils@2.3.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-dwarfutils-2.2e.3.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-kcov"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-kcov"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-kcov"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-kcov-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/kcov"
+          ],
+          "all_files": [
+            ".brew/kcov.rb",
+            "COPYING",
+            "COPYING.externals",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "README.md",
+            "bin/kcov",
+            "sbom.spdx.json",
+            "share/doc/kcov/COPYING",
+            "share/doc/kcov/COPYING.externals",
+            "share/doc/kcov/ChangeLog",
+            "share/man/man1/kcov.1"
+          ],
+          "installed_size": 927156
+        }
+      }
+    }
+  }
+}

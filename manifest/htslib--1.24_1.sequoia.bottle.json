@@ -1,0 +1,193 @@
+{
+  "htslib": {
+    "formula": {
+      "name": "htslib",
+      "pkg_version": "1.24_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/h/htslib.rb",
+      "tap_git_path": "Formula/h/htslib.rb",
+      "tap_git_revision": "096e339a1b0538b9d77f79b856f742a0224d17d6",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "C library for high-throughput sequencing data formats",
+      "license": "MIT AND BSD-3-Clause",
+      "homepage": "https://www.htslib.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-11T03:26:54Z",
+      "tags": {
+        "sequoia": {
+          "filename": "htslib-1.24_1.sequoia.bottle.tar.gz",
+          "local_filename": "htslib--1.24_1.sequoia.bottle.tar.gz",
+          "sha256": "647a784a706bfb31a1e30328283abfcfab7abdc44d933ba7531d6cea1ab76d4c",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/htslib.pc"
+            ],
+            "linkage_files": [
+              "bin/annot-tsv",
+              "bin/bgzip",
+              "bin/htsfile",
+              "bin/tabix",
+              "lib/libhts.1.24.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1783590953,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libdeflate",
+                "version": "1.26",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.26",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-htslib"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-htslib-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/tabix",
+            "bin/ref-cache",
+            "bin/htsfile",
+            "bin/annot-tsv",
+            "bin/bgzip"
+          ],
+          "all_files": [
+            ".brew/htslib.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NEWS",
+            "README",
+            "bin/annot-tsv",
+            "bin/bgzip",
+            "bin/htsfile",
+            "bin/ref-cache",
+            "bin/tabix",
+            "include/htslib/bgzf.h",
+            "include/htslib/cram.h",
+            "include/htslib/faidx.h",
+            "include/htslib/hfile.h",
+            "include/htslib/hts.h",
+            "include/htslib/hts_alloc.h",
+            "include/htslib/hts_defs.h",
+            "include/htslib/hts_endian.h",
+            "include/htslib/hts_expr.h",
+            "include/htslib/hts_log.h",
+            "include/htslib/hts_os.h",
+            "include/htslib/kbitset.h",
+            "include/htslib/kfunc.h",
+            "include/htslib/khash.h",
+            "include/htslib/khash_str2int.h",
+            "include/htslib/klist.h",
+            "include/htslib/knetfile.h",
+            "include/htslib/kroundup.h",
+            "include/htslib/kseq.h",
+            "include/htslib/ksort.h",
+            "include/htslib/kstring.h",
+            "include/htslib/regidx.h",
+            "include/htslib/sam.h",
+            "include/htslib/synced_bcf_reader.h",
+            "include/htslib/tbx.h",
+            "include/htslib/thread_pool.h",
+            "include/htslib/vcf.h",
+            "include/htslib/vcf_sweep.h",
+            "include/htslib/vcfutils.h",
+            "lib/libhts.1.24.dylib",
+            "lib/libhts.3.dylib",
+            "lib/libhts.a",
+            "lib/libhts.dylib",
+            "lib/pkgconfig/htslib.pc",
+            "sbom.spdx.json",
+            "share/man/man1/annot-tsv.1",
+            "share/man/man1/bgzip.1",
+            "share/man/man1/htsfile.1",
+            "share/man/man1/ref-cache.1",
+            "share/man/man1/tabix.1",
+            "share/man/man5/faidx.5",
+            "share/man/man5/sam.5",
+            "share/man/man5/vcf.5",
+            "share/man/man7/htslib-s3-plugin.7"
+          ],
+          "installed_size": 6350257
+        }
+      }
+    }
+  }
+}

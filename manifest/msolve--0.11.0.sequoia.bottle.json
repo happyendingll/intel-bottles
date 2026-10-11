@@ -1,0 +1,243 @@
+{
+  "msolve": {
+    "formula": {
+      "name": "msolve",
+      "pkg_version": "0.11.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/msolve.rb",
+      "tap_git_path": "Formula/m/msolve.rb",
+      "tap_git_revision": "096e339a1b0538b9d77f79b856f742a0224d17d6",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Library for Polynomial System Solving through Algebraic Methods",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://msolve.lip6.fr"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-11T04:38:09Z",
+      "tags": {
+        "sequoia": {
+          "filename": "msolve-0.11.0.sequoia.bottle.tar.gz",
+          "local_filename": "msolve--0.11.0.sequoia.bottle.tar.gz",
+          "sha256": "d1d9d75b73fd2e5a79ac70b655dec42b12a771f01f35690a9f153ec1dd34b564",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/msolve.pc"
+            ],
+            "linkage_files": [
+              "bin/msolve",
+              "lib/libmsolve.4.dylib",
+              "lib/libneogb.4.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791534819,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpfr",
+                "version": "4.2.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.2.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "flint",
+                "version": "3.6.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.6.0",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "libomp",
+                "version": "23.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+              "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+                "name": "mpfr",
+                "versionInfo": "4.2.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/mpfr/blobs/sha256:ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpfr@4.2.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.3",
+                "name": "libomp",
+                "versionInfo": "23.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libomp-23.1.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e85f610dbfcc89fbb868f01bbcce324a71b218db5fe7f253c28966863bfea8cc"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libomp@23.1.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-msolve"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-msolve"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-msolve"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-msolve-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/msolve"
+          ],
+          "all_files": [
+            ".brew/msolve.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/msolve",
+            "include/msolve/fglm/fglm.h",
+            "include/msolve/msolve/msolve-data.h",
+            "include/msolve/msolve/msolve-version.h",
+            "include/msolve/msolve/msolve.h",
+            "include/msolve/neogb/basis.h",
+            "include/msolve/neogb/data.h",
+            "include/msolve/neogb/engine.h",
+            "include/msolve/neogb/f4.h",
+            "include/msolve/neogb/f4sat.h",
+            "include/msolve/neogb/hash.h",
+            "include/msolve/neogb/io.h",
+            "include/msolve/neogb/libneogb.h",
+            "include/msolve/neogb/meta_data.h",
+            "include/msolve/neogb/modular.h",
+            "include/msolve/neogb/nf.h",
+            "include/msolve/neogb/sba.h",
+            "include/msolve/neogb/sort_r.h",
+            "include/msolve/neogb/tools.h",
+            "include/msolve/neogb/update.h",
+            "include/msolve/usolve/libusolve.h",
+            "lib/libmsolve.4.dylib",
+            "lib/libmsolve.a",
+            "lib/libmsolve.dylib",
+            "lib/libneogb.4.dylib",
+            "lib/libneogb.a",
+            "lib/libneogb.dylib",
+            "lib/pkgconfig/msolve.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1322351
+        }
+      }
+    }
+  }
+}
