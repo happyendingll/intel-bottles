@@ -1,0 +1,104 @@
+{
+  "tinycbor": {
+    "formula": {
+      "name": "tinycbor",
+      "pkg_version": "7.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/tinycbor.rb",
+      "tap_git_path": "Formula/t/tinycbor.rb",
+      "tap_git_revision": "a8eebec3bf6d72f2a996c924be7c0ac1e1e9436f",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Concise Binary Object Representation (CBOR) Library",
+      "license": "MIT",
+      "homepage": "https://github.com/intel/tinycbor"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-12T13:00:21Z",
+      "tags": {
+        "sequoia": {
+          "filename": "tinycbor-7.0.sequoia.bottle.tar.gz",
+          "local_filename": "tinycbor--7.0.sequoia.bottle.tar.gz",
+          "sha256": "8647bb8b8f69ef3c3e542934460c9ac878d1d9ceed0ab4d6fcafb51fecbfeaa8",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/cmake/tinycbor/TinyCBOR-targets-release.cmake",
+              "lib/cmake/tinycbor/TinyCBOR-targets.cmake",
+              "lib/pkgconfig/tinycbor.pc"
+            ],
+            "linkage_files": [
+              "lib/libtinycbor.0.7.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1771435507,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-tinycbor-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/cbordump"
+          ],
+          "all_files": [
+            ".brew/tinycbor.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README",
+            "TODO",
+            "bin/cbordump",
+            "include/tinycbor/cbor.h",
+            "include/tinycbor/tinycbor-export.h",
+            "include/tinycbor/tinycbor-version.h",
+            "lib/cmake/tinycbor/TinyCBOR-targets-release.cmake",
+            "lib/cmake/tinycbor/TinyCBOR-targets.cmake",
+            "lib/cmake/tinycbor/tinycbor-config-version.cmake",
+            "lib/cmake/tinycbor/tinycbor-config.cmake",
+            "lib/libtinycbor.0.7.0.dylib",
+            "lib/libtinycbor.0.dylib",
+            "lib/libtinycbor.a",
+            "lib/libtinycbor.dylib",
+            "lib/pkgconfig/tinycbor.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 137899
+        }
+      }
+    }
+  }
+}

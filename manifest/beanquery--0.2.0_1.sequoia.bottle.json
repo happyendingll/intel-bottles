@@ -1,0 +1,794 @@
+{
+  "beanquery": {
+    "formula": {
+      "name": "beanquery",
+      "pkg_version": "0.2.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/b/beanquery.rb",
+      "tap_git_path": "Formula/b/beanquery.rb",
+      "tap_git_revision": "a8eebec3bf6d72f2a996c924be7c0ac1e1e9436f",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Customizable lightweight SQL query tool",
+      "license": "GPL-2.0-only",
+      "homepage": "https://github.com/beancount/beanquery"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-12T12:18:33Z",
+      "tags": {
+        "sequoia": {
+          "filename": "beanquery-0.2.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "beanquery--0.2.0_1.sequoia.bottle.tar.gz",
+          "sha256": "1945896b849208fd3f5f792d31f81de72bd084d8f0a50ef178cc396a57dbbd6c",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "libexec/bin/bean-check",
+              "libexec/bin/bean-doctor",
+              "libexec/bin/bean-example",
+              "libexec/bin/bean-format",
+              "libexec/bin/bean-query",
+              "libexec/bin/g2e",
+              "libexec/bin/tatsu",
+              "libexec/bin/treeify",
+              "libexec/pyvenv.cfg"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1742848075,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.54.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.15",
+                "version": "3.15.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.15.0",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
+                "name": "sqlite",
+                "versionInfo": "3.54.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/sqlite-3.54.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "952154941d6bc3fc5304e11a048bfb8386e180be16fec04b799cccf543bc1667"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
+                "name": "python@3.15",
+                "versionInfo": "3.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/python%403.15-3.15.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d665a0f135591a60e1801430f2beadd2b4edb4daa048f48acf6bd61ff8a8ad3f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.15@3.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-beanquery"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-beanquery"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-beanquery"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-beanquery"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-beanquery"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-beanquery"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-beanquery"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-beanquery"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-beanquery"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-beanquery-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/bean-query"
+          ],
+          "all_files": [
+            ".brew/beanquery.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.rst",
+            "bin/bean-query",
+            "etc/bash_completion.d/bean-query",
+            "libexec/.gitignore",
+            "libexec/bin/bean-check",
+            "libexec/bin/bean-doctor",
+            "libexec/bin/bean-example",
+            "libexec/bin/bean-format",
+            "libexec/bin/bean-query",
+            "libexec/bin/g2e",
+            "libexec/bin/python",
+            "libexec/bin/python3",
+            "libexec/bin/python3.15",
+            "libexec/bin/tatsu",
+            "libexec/bin/treeify",
+            "libexec/lib/python3.15/site-packages/beancount/VERSION",
+            "libexec/lib/python3.15/site-packages/beancount/__init__.py",
+            "libexec/lib/python3.15/site-packages/beancount/api.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/__init__.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/account.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/account_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/account_types.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/account_types_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/amount.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/amount_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/compare.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/compare_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/convert.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/convert_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/data.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/data_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/display_context.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/display_context_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/distribution.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/distribution_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/flags.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/flags_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/getters.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/getters_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/interpolate.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/interpolate_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/inventory.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/inventory_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/number.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/number_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/position.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/position_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/prices.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/prices_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/realization.py",
+            "libexec/lib/python3.15/site-packages/beancount/core/realization_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/loader.py",
+            "libexec/lib/python3.15/site-packages/beancount/loader_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/__init__.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/balance.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/balance_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/basicops.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/basicops_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/compress.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/compress_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/documents.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/documents_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/find_prices.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/find_prices_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/lifetimes.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/lifetimes_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/pad.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/pad_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/summarize.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/summarize_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/validation.py",
+            "libexec/lib/python3.15/site-packages/beancount/ops/validation_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/__init__.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/_parser.cpython-315-darwin.so",
+            "libexec/lib/python3.15/site-packages/beancount/parser/booking.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/booking_full.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/booking_full_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/booking_method.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/booking_method_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/booking_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/cmptest.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/cmptest_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/context.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/context_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/decimal.c",
+            "libexec/lib/python3.15/site-packages/beancount/parser/decimal.h",
+            "libexec/lib/python3.15/site-packages/beancount/parser/grammar.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/grammar.y",
+            "libexec/lib/python3.15/site-packages/beancount/parser/grammar_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/hashsrc.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/hashsrc_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/lexer.l",
+            "libexec/lib/python3.15/site-packages/beancount/parser/lexer.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/lexer_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/macros.h",
+            "libexec/lib/python3.15/site-packages/beancount/parser/options.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/options_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/parser.c",
+            "libexec/lib/python3.15/site-packages/beancount/parser/parser.h",
+            "libexec/lib/python3.15/site-packages/beancount/parser/parser.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/parser_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/printer.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/printer_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/tokens.h",
+            "libexec/lib/python3.15/site-packages/beancount/parser/version.py",
+            "libexec/lib/python3.15/site-packages/beancount/parser/version_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/__init__.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/auto.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/auto_accounts.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/auto_accounts_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/auto_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/check_average_cost.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/check_average_cost_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/check_closing.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/check_closing_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/check_commodity.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/check_commodity_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/check_drained.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/check_drained_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/close_tree.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/close_tree_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/coherent_cost.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/coherent_cost_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/commodity_attr.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/commodity_attr_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/currency_accounts.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/currency_accounts_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/implicit_prices.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/implicit_prices_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/leafonly.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/leafonly_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/noduplicates.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/noduplicates_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/nounused.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/nounused_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/onecommodity.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/onecommodity_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/pedantic.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/pedantic_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/sellgains.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/sellgains_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/unique_prices.py",
+            "libexec/lib/python3.15/site-packages/beancount/plugins/unique_prices_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/projects/__init__.py",
+            "libexec/lib/python3.15/site-packages/beancount/projects/export.py",
+            "libexec/lib/python3.15/site-packages/beancount/projects/export_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/py.typed",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/__init__.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/check.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/check_examples_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/check_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/deps.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/deps_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/directories.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/directories_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/doctor.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/doctor_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/example.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/example_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/format.py",
+            "libexec/lib/python3.15/site-packages/beancount/scripts/format_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/tools/__init__.py",
+            "libexec/lib/python3.15/site-packages/beancount/tools/treeify.py",
+            "libexec/lib/python3.15/site-packages/beancount/tools/treeify_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/__init__.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/bisect_key.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/bisect_key_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/defdict.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/defdict_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/encryption.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/encryption_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/file_utils.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/file_utils_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/import_utils.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/import_utils_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/invariants.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/invariants_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/memo.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/memo_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/misc_utils.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/misc_utils_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/pager.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/pager_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/table.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/table_test.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/test_utils.py",
+            "libexec/lib/python3.15/site-packages/beancount/utils/test_utils_test.py",
+            "libexec/lib/python3.15/site-packages/beancount-3.2.3.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/beancount-3.2.3.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/beancount-3.2.3.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/beancount-3.2.3.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/beancount-3.2.3.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/beanquery/__init__.py",
+            "libexec/lib/python3.15/site-packages/beanquery/__main__.py",
+            "libexec/lib/python3.15/site-packages/beanquery/compiler.py",
+            "libexec/lib/python3.15/site-packages/beanquery/cursor.py",
+            "libexec/lib/python3.15/site-packages/beanquery/cursor_test.py",
+            "libexec/lib/python3.15/site-packages/beanquery/errors.py",
+            "libexec/lib/python3.15/site-packages/beanquery/hashable.py",
+            "libexec/lib/python3.15/site-packages/beanquery/hashable_test.py",
+            "libexec/lib/python3.15/site-packages/beanquery/numberify.py",
+            "libexec/lib/python3.15/site-packages/beanquery/numberify_test.py",
+            "libexec/lib/python3.15/site-packages/beanquery/parser/__init__.py",
+            "libexec/lib/python3.15/site-packages/beanquery/parser/ast.py",
+            "libexec/lib/python3.15/site-packages/beanquery/parser/parser.py",
+            "libexec/lib/python3.15/site-packages/beanquery/parser_test.py",
+            "libexec/lib/python3.15/site-packages/beanquery/query.py",
+            "libexec/lib/python3.15/site-packages/beanquery/query_compile.py",
+            "libexec/lib/python3.15/site-packages/beanquery/query_compile_test.py",
+            "libexec/lib/python3.15/site-packages/beanquery/query_env.py",
+            "libexec/lib/python3.15/site-packages/beanquery/query_env_test.py",
+            "libexec/lib/python3.15/site-packages/beanquery/query_execute.py",
+            "libexec/lib/python3.15/site-packages/beanquery/query_execute_test.py",
+            "libexec/lib/python3.15/site-packages/beanquery/query_render.py",
+            "libexec/lib/python3.15/site-packages/beanquery/query_render_test.py",
+            "libexec/lib/python3.15/site-packages/beanquery/query_test.py",
+            "libexec/lib/python3.15/site-packages/beanquery/render/beancount.py",
+            "libexec/lib/python3.15/site-packages/beanquery/render/csv.py",
+            "libexec/lib/python3.15/site-packages/beanquery/render/text.py",
+            "libexec/lib/python3.15/site-packages/beanquery/shell.py",
+            "libexec/lib/python3.15/site-packages/beanquery/shell_test.py",
+            "libexec/lib/python3.15/site-packages/beanquery/sources/beancount.py",
+            "libexec/lib/python3.15/site-packages/beanquery/sources/csv.py",
+            "libexec/lib/python3.15/site-packages/beanquery/sources/memory.py",
+            "libexec/lib/python3.15/site-packages/beanquery/sources/test.py",
+            "libexec/lib/python3.15/site-packages/beanquery/tables.py",
+            "libexec/lib/python3.15/site-packages/beanquery/types.py",
+            "libexec/lib/python3.15/site-packages/beanquery/types_test.py",
+            "libexec/lib/python3.15/site-packages/beanquery-0.2.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/beanquery-0.2.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/beanquery-0.2.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/beanquery-0.2.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/beanquery-0.2.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/beanquery-0.2.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/beanquery-0.2.0.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/click/__init__.py",
+            "libexec/lib/python3.15/site-packages/click/_compat.py",
+            "libexec/lib/python3.15/site-packages/click/_termui_impl.py",
+            "libexec/lib/python3.15/site-packages/click/_textwrap.py",
+            "libexec/lib/python3.15/site-packages/click/_utils.py",
+            "libexec/lib/python3.15/site-packages/click/_winconsole.py",
+            "libexec/lib/python3.15/site-packages/click/core.py",
+            "libexec/lib/python3.15/site-packages/click/decorators.py",
+            "libexec/lib/python3.15/site-packages/click/exceptions.py",
+            "libexec/lib/python3.15/site-packages/click/formatting.py",
+            "libexec/lib/python3.15/site-packages/click/globals.py",
+            "libexec/lib/python3.15/site-packages/click/parser.py",
+            "libexec/lib/python3.15/site-packages/click/py.typed",
+            "libexec/lib/python3.15/site-packages/click/shell_completion.py",
+            "libexec/lib/python3.15/site-packages/click/termui.py",
+            "libexec/lib/python3.15/site-packages/click/testing.py",
+            "libexec/lib/python3.15/site-packages/click/types.py",
+            "libexec/lib/python3.15/site-packages/click/utils.py",
+            "libexec/lib/python3.15/site-packages/click-8.5.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/click-8.5.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/click-8.5.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/click-8.5.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/click-8.5.0.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.15/site-packages/dateutil/__init__.py",
+            "libexec/lib/python3.15/site-packages/dateutil/_common.py",
+            "libexec/lib/python3.15/site-packages/dateutil/_version.py",
+            "libexec/lib/python3.15/site-packages/dateutil/easter.py",
+            "libexec/lib/python3.15/site-packages/dateutil/parser/__init__.py",
+            "libexec/lib/python3.15/site-packages/dateutil/parser/_parser.py",
+            "libexec/lib/python3.15/site-packages/dateutil/parser/isoparser.py",
+            "libexec/lib/python3.15/site-packages/dateutil/relativedelta.py",
+            "libexec/lib/python3.15/site-packages/dateutil/rrule.py",
+            "libexec/lib/python3.15/site-packages/dateutil/tz/__init__.py",
+            "libexec/lib/python3.15/site-packages/dateutil/tz/_common.py",
+            "libexec/lib/python3.15/site-packages/dateutil/tz/_factories.py",
+            "libexec/lib/python3.15/site-packages/dateutil/tz/tz.py",
+            "libexec/lib/python3.15/site-packages/dateutil/tz/win.py",
+            "libexec/lib/python3.15/site-packages/dateutil/tzwin.py",
+            "libexec/lib/python3.15/site-packages/dateutil/utils.py",
+            "libexec/lib/python3.15/site-packages/dateutil/zoneinfo/__init__.py",
+            "libexec/lib/python3.15/site-packages/dateutil/zoneinfo/dateutil-zoneinfo.tar.gz",
+            "libexec/lib/python3.15/site-packages/dateutil/zoneinfo/rebuild.py",
+            "libexec/lib/python3.15/site-packages/docs/conf.py",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/zip-safe",
+            "libexec/lib/python3.15/site-packages/regex/__init__.py",
+            "libexec/lib/python3.15/site-packages/regex/_main.py",
+            "libexec/lib/python3.15/site-packages/regex/_regex.cpython-315-darwin.so",
+            "libexec/lib/python3.15/site-packages/regex/_regex_core.py",
+            "libexec/lib/python3.15/site-packages/regex/tests/test_regex.py",
+            "libexec/lib/python3.15/site-packages/regex-2026.9.29.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/regex-2026.9.29.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/regex-2026.9.29.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/regex-2026.9.29.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/regex-2026.9.29.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.15/site-packages/regex-2026.9.29.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/six-1.17.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/six-1.17.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/six-1.17.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/six-1.17.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/six-1.17.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/six-1.17.0.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/six.py",
+            "libexec/lib/python3.15/site-packages/tatsu/__init__.py",
+            "libexec/lib/python3.15/site-packages/tatsu/__main__.py",
+            "libexec/lib/python3.15/site-packages/tatsu/_config.py",
+            "libexec/lib/python3.15/site-packages/tatsu/_version.py",
+            "libexec/lib/python3.15/site-packages/tatsu/ast.py",
+            "libexec/lib/python3.15/site-packages/tatsu/bootstrap.py",
+            "libexec/lib/python3.15/site-packages/tatsu/buffering.py",
+            "libexec/lib/python3.15/site-packages/tatsu/codegen/__init__.py",
+            "libexec/lib/python3.15/site-packages/tatsu/codegen/cgbase.py",
+            "libexec/lib/python3.15/site-packages/tatsu/codegen/objectmodel.py",
+            "libexec/lib/python3.15/site-packages/tatsu/codegen/python.py",
+            "libexec/lib/python3.15/site-packages/tatsu/codegen/rendering.py",
+            "libexec/lib/python3.15/site-packages/tatsu/collections/__init__.py",
+            "libexec/lib/python3.15/site-packages/tatsu/collections/boundeddict.py",
+            "libexec/lib/python3.15/site-packages/tatsu/color.py",
+            "libexec/lib/python3.15/site-packages/tatsu/contexts.py",
+            "libexec/lib/python3.15/site-packages/tatsu/diagrams.py",
+            "libexec/lib/python3.15/site-packages/tatsu/exceptions.py",
+            "libexec/lib/python3.15/site-packages/tatsu/g2e/__init__.py",
+            "libexec/lib/python3.15/site-packages/tatsu/g2e/__main__.py",
+            "libexec/lib/python3.15/site-packages/tatsu/g2e/antlr.ebnf",
+            "libexec/lib/python3.15/site-packages/tatsu/g2e/semantics.py",
+            "libexec/lib/python3.15/site-packages/tatsu/g2e/tool.py",
+            "libexec/lib/python3.15/site-packages/tatsu/grammars.py",
+            "libexec/lib/python3.15/site-packages/tatsu/infos.py",
+            "libexec/lib/python3.15/site-packages/tatsu/leftrec.py",
+            "libexec/lib/python3.15/site-packages/tatsu/mixins/__init__.py",
+            "libexec/lib/python3.15/site-packages/tatsu/mixins/indent.py",
+            "libexec/lib/python3.15/site-packages/tatsu/model.py",
+            "libexec/lib/python3.15/site-packages/tatsu/ngcodegen/__init__.py",
+            "libexec/lib/python3.15/site-packages/tatsu/ngcodegen/objectmodel.py",
+            "libexec/lib/python3.15/site-packages/tatsu/ngcodegen/python.py",
+            "libexec/lib/python3.15/site-packages/tatsu/objectmodel.py",
+            "libexec/lib/python3.15/site-packages/tatsu/parser.py",
+            "libexec/lib/python3.15/site-packages/tatsu/parser_semantics.py",
+            "libexec/lib/python3.15/site-packages/tatsu/parserconfig.py",
+            "libexec/lib/python3.15/site-packages/tatsu/parsing.py",
+            "libexec/lib/python3.15/site-packages/tatsu/semantics.py",
+            "libexec/lib/python3.15/site-packages/tatsu/synth.py",
+            "libexec/lib/python3.15/site-packages/tatsu/tokenizing.py",
+            "libexec/lib/python3.15/site-packages/tatsu/tool.py",
+            "libexec/lib/python3.15/site-packages/tatsu/util/__init__.py",
+            "libexec/lib/python3.15/site-packages/tatsu/util/_common.py",
+            "libexec/lib/python3.15/site-packages/tatsu/util/asjson.py",
+            "libexec/lib/python3.15/site-packages/tatsu/util/misc.py",
+            "libexec/lib/python3.15/site-packages/tatsu/util/parproc.py",
+            "libexec/lib/python3.15/site-packages/tatsu/util/testing.py",
+            "libexec/lib/python3.15/site-packages/tatsu/util/unicode_characters.py",
+            "libexec/lib/python3.15/site-packages/tatsu/walkers.py",
+            "libexec/lib/python3.15/site-packages/tatsu_lts-5.16.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/tatsu_lts-5.16.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/tatsu_lts-5.16.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/tatsu_lts-5.16.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/tatsu_lts-5.16.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/tatsu_lts-5.16.0.dist-info/licenses/LICENSE",
+            "libexec/pyvenv.cfg",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/bean-query.fish",
+            "share/zsh/site-functions/_bean-query"
+          ],
+          "installed_size": 4606828
+        }
+      }
+    }
+  }
+}
