@@ -1,0 +1,840 @@
+{
+  "manticoresearch": {
+    "formula": {
+      "name": "manticoresearch",
+      "pkg_version": "29.9.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/manticoresearch.rb",
+      "tap_git_path": "Formula/m/manticoresearch.rb",
+      "tap_git_revision": "37dad11ce2477efe60e27f01f848f7142d887e95",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Open source text search engine",
+      "license": "GPL-3.0-or-later AND (Unlicense OR MIT)",
+      "homepage": "https://manticoresearch.com"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-13T03:02:07Z",
+      "tags": {
+        "sequoia": {
+          "filename": "manticoresearch-29.9.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "manticoresearch--29.9.0_1.sequoia.bottle.tar.gz",
+          "sha256": "99764674dd34db213a788fb584a1996cb8494a38108380cb4bc87d66dd45eabf",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "sh.brew.manticoresearch.plist",
+              "sh.brew.manticoresearch.service"
+            ],
+            "linkage_files": [
+              "bin/index_converter",
+              "bin/indexer",
+              "bin/indextool",
+              "bin/searchd",
+              "bin/spelldump",
+              "bin/wordbreaker"
+            ],
+            "binary_relocation_files": [
+              "bin/index_converter",
+              "bin/indexer",
+              "bin/indextool",
+              "bin/searchd",
+              "bin/spelldump",
+              "bin/wordbreaker"
+            ],
+            "source_modified_time": 1789038155,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "boost",
+                "version": "1.92.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.92.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "cctz",
+                "version": "2.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.5",
+                "declared_directly": true
+              },
+              {
+                "full_name": "croaring",
+                "version": "5.2.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.2.3",
+                "declared_directly": true
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              },
+              {
+                "full_name": "krb5",
+                "version": "1.22.2",
+                "revision": 2,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.22.2_2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpq",
+                "version": "18.6",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "18.6_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mariadb-connector-c",
+                "version": "3.4.11",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.11_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": false,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "re2",
+                "version": "2025-11-05",
+                "revision": 2,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025-11-05_2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "m4",
+                "version": "1.4.21",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.21",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtool",
+                "version": "2.6.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.6.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "unixodbc",
+                "version": "2.3.14",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.14",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xxhash",
+                "version": "0.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.8.4",
+                "declared_directly": true
+              },
+              {
+                "full_name": "curl",
+                "version": "8.22.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.22.0_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/searchd",
+              "string": "/usr/local/opt/curl/lib/libcurl.4.dylib",
+              "offset": 16672436
+            },
+            {
+              "path": "bin/searchd",
+              "string": "/usr/local/opt/zstd/lib/libzstd.1.dylib",
+              "offset": 16716253
+            },
+            {
+              "path": "bin/indexer",
+              "string": "/usr/local/opt/unixodbc/lib/libodbc.2.dylib",
+              "offset": 10921470
+            },
+            {
+              "path": "bin/indexer",
+              "string": "/usr/local/opt/libpq/lib/libpq.5.dylib",
+              "offset": 10924030
+            },
+            {
+              "path": "bin/indexer",
+              "string": "/usr/local/opt/mariadb-connector-c/lib/libmysqlclient.dylib",
+              "offset": 10924495
+            },
+            {
+              "path": "bin/searchd",
+              "string": "/usr/local/Cellar/manticoresearch/29.9.0_1/share/manticore",
+              "offset": 16797663
+            },
+            {
+              "path": "bin/searchd",
+              "string": "/usr/local/Cellar/openssl@4/4.0.3/lib/ossl-modules",
+              "offset": 17021983
+            },
+            {
+              "path": "bin/wordbreaker",
+              "string": "/usr/local/Cellar/manticoresearch/29.9.0_1/share/manticore",
+              "offset": 10776928
+            },
+            {
+              "path": "bin/index_converter",
+              "string": "/usr/local/Cellar/manticoresearch/29.9.0_1/share/manticore",
+              "offset": 10917106
+            },
+            {
+              "path": "bin/spelldump",
+              "string": "/usr/local/Cellar/manticoresearch/29.9.0_1/share/manticore",
+              "offset": 10793792
+            },
+            {
+              "path": "bin/indextool",
+              "string": "/usr/local/Cellar/manticoresearch/29.9.0_1/share/manticore",
+              "offset": 10853582
+            },
+            {
+              "path": "bin/indexer",
+              "string": "/usr/local/Cellar/manticoresearch/29.9.0_1/share/manticore",
+              "offset": 10912539
+            },
+            {
+              "path": "bin/searchd",
+              "string": "/usr/local/etc/manticoresearch/manticore.conf",
+              "offset": 16727729
+            },
+            {
+              "path": "bin/wordbreaker",
+              "string": "/usr/local/etc/manticoresearch/manticore.conf",
+              "offset": 10705409
+            },
+            {
+              "path": "bin/index_converter",
+              "string": "/usr/local/etc/manticoresearch/manticore.conf",
+              "offset": 10844657
+            },
+            {
+              "path": "bin/spelldump",
+              "string": "/usr/local/etc/manticoresearch/manticore.conf",
+              "offset": 10722273
+            },
+            {
+              "path": "bin/indextool",
+              "string": "/usr/local/etc/manticoresearch/manticore.conf",
+              "offset": 10781537
+            },
+            {
+              "path": "bin/indexer",
+              "string": "/usr/local/etc/manticoresearch/manticore.conf",
+              "offset": 10840977
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-croaring-5.2e.2.2e.3",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-libpq-18.2e.6.5f.1",
+              "SPDXRef-Package-SPDXRef-mariadb-connector-c-3.2e.4.2e.11.5f.1",
+              "SPDXRef-Package-SPDXRef-m4-1.2e.4.2e.21",
+              "SPDXRef-Package-SPDXRef-libtool-2.2e.6.2e.2",
+              "SPDXRef-Package-SPDXRef-xxhash-0.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-curl-8.2e.22.2e.0.5f.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-croaring-5.2e.2.2e.3",
+                "name": "croaring",
+                "versionInfo": "5.2.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/croaring-5.2.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "37da8ab0f3607f0968c5025877eb5320501d2505d95eed68a2cae782dada8905"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/croaring@5.2.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
+                "name": "krb5",
+                "versionInfo": "1.22.2_2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause AND BSD-2-Clause-first-lines AND BSD-3-Clause AND BSD-4-Clause AND Brian-Gladman-2-Clause AND CMU-Mach-nodoc AND FSFULLRWD AND HPND AND HPND-export2-US AND HPND-export-US AND HPND-export-US-acknowledgement AND HPND-export-US-modify AND ISC AND MIT AND MIT-CMU AND OLDAP-2.8 AND OpenVision AND (BSD-2-Clause OR GPL-2.0-or-later)",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/krb5-1.22.2_2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "768507b1ca7a66dd14d39ceb8c2d9d52a98ae27264c714826faf84af84c14a26"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/krb5@1.22.2_2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpq-18.2e.6.5f.1",
+                "name": "libpq",
+                "versionInfo": "18.6_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "PostgreSQL",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libpq-18.6_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2b2e1413a1b633784949e50ba411d79c943e6ece2820cb901c7440ff25cca19f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpq@18.6_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mariadb-connector-c-3.2e.4.2e.11.5f.1",
+                "name": "mariadb-connector-c",
+                "versionInfo": "3.4.11_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/mariadb-connector-c-3.4.11_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "eb8b734247e397b6e79a60e1c38fb934b2b4576c7d25f1d20f86f17a120cd118"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mariadb-connector-c@3.4.11_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-m4-1.2e.4.2e.21",
+                "name": "m4",
+                "versionInfo": "1.4.21",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/m4/blobs/sha256:9956d5e742750c93d61a27ac209e7dfe7a6e0de2dfbc2ea73210741eb2e51461",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9956d5e742750c93d61a27ac209e7dfe7a6e0de2dfbc2ea73210741eb2e51461"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/m4@1.4.21",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtool-2.2e.6.2e.2",
+                "name": "libtool",
+                "versionInfo": "2.6.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:205e69efbbd83ca9ff421c98a0063bd20b64690b44248d0398bd6deb941cf81b",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "205e69efbbd83ca9ff421c98a0063bd20b64690b44248d0398bd6deb941cf81b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtool@2.6.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xxhash-0.2e.8.2e.4",
+                "name": "xxhash",
+                "versionInfo": "0.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xxhash-0.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b7e422b8ae270b8cbf5c19dbdcd2f39d902e859117b3896f71d38d0888b18b10"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xxhash@0.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-curl-8.2e.22.2e.0.5f.1",
+                "name": "curl",
+                "versionInfo": "8.22.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "curl",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/curl-8.22.0_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "36d179d9d2db281d3177db4a1309e7c723a2acd45de0bd172d7c9ffa7fa8eb3d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/curl@8.22.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-croaring-5.2e.2.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpq-18.2e.6.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mariadb-connector-c-3.2e.4.2e.11.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-m4-1.2e.4.2e.21",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtool-2.2e.6.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xxhash-0.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-curl-8.2e.22.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-manticoresearch-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/searchd",
+            "bin/wordbreaker",
+            "bin/index_converter",
+            "bin/spelldump",
+            "bin/indextool",
+            "bin/indexer"
+          ],
+          "all_files": [
+            ".bottle/etc/manticoresearch/manticore.conf",
+            ".brew/manticoresearch.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/index_converter",
+            "bin/indexer",
+            "bin/indextool",
+            "bin/searchd",
+            "bin/spelldump",
+            "bin/wordbreaker",
+            "include/manticore/sphinxudf.h",
+            "sbom.spdx.json",
+            "sh.brew.manticoresearch.plist",
+            "sh.brew.manticoresearch.service",
+            "share/manticore/stopwords/af",
+            "share/manticore/stopwords/ar",
+            "share/manticore/stopwords/bg",
+            "share/manticore/stopwords/bn",
+            "share/manticore/stopwords/ca",
+            "share/manticore/stopwords/ckb",
+            "share/manticore/stopwords/cz",
+            "share/manticore/stopwords/da",
+            "share/manticore/stopwords/de",
+            "share/manticore/stopwords/el",
+            "share/manticore/stopwords/en",
+            "share/manticore/stopwords/eo",
+            "share/manticore/stopwords/es",
+            "share/manticore/stopwords/et",
+            "share/manticore/stopwords/eu",
+            "share/manticore/stopwords/fa",
+            "share/manticore/stopwords/fi",
+            "share/manticore/stopwords/fr",
+            "share/manticore/stopwords/ga",
+            "share/manticore/stopwords/gl",
+            "share/manticore/stopwords/he",
+            "share/manticore/stopwords/hi",
+            "share/manticore/stopwords/hr",
+            "share/manticore/stopwords/hu",
+            "share/manticore/stopwords/hy",
+            "share/manticore/stopwords/id",
+            "share/manticore/stopwords/it",
+            "share/manticore/stopwords/ja",
+            "share/manticore/stopwords/ko",
+            "share/manticore/stopwords/la",
+            "share/manticore/stopwords/languages_list.txt",
+            "share/manticore/stopwords/lt",
+            "share/manticore/stopwords/lv",
+            "share/manticore/stopwords/mr",
+            "share/manticore/stopwords/nl",
+            "share/manticore/stopwords/no",
+            "share/manticore/stopwords/pl",
+            "share/manticore/stopwords/pt",
+            "share/manticore/stopwords/ro",
+            "share/manticore/stopwords/ru",
+            "share/manticore/stopwords/sk",
+            "share/manticore/stopwords/sl",
+            "share/manticore/stopwords/so",
+            "share/manticore/stopwords/st",
+            "share/manticore/stopwords/sv",
+            "share/manticore/stopwords/sw",
+            "share/manticore/stopwords/th",
+            "share/manticore/stopwords/tr",
+            "share/manticore/stopwords/yo",
+            "share/manticore/stopwords/zh",
+            "share/manticore/stopwords/zu"
+          ],
+          "installed_size": 131648672
+        }
+      }
+    }
+  }
+}

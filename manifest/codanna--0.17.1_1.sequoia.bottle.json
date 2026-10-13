@@ -1,0 +1,224 @@
+{
+  "codanna": {
+    "formula": {
+      "name": "codanna",
+      "pkg_version": "0.17.1_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/codanna.rb",
+      "tap_git_path": "Formula/c/codanna.rb",
+      "tap_git_revision": "37dad11ce2477efe60e27f01f848f7142d887e95",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Code intelligence system with semantic search",
+      "license": "Apache-2.0",
+      "homepage": "https://docs.codanna.sh/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-13T01:01:46Z",
+      "tags": {
+        "sequoia": {
+          "filename": "codanna-0.17.1_1.sequoia.bottle.tar.gz",
+          "local_filename": "codanna--0.17.1_1.sequoia.bottle.tar.gz",
+          "sha256": "1d1eef3c28b4730e18f293a2b6c3e5e91743f0229585503be2bce016d4864388",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/codanna"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791756081,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": false,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "protobuf",
+                "version": "36.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "36.2",
+                "declared_directly": false,
+                "compatibility_version": 7
+              },
+              {
+                "full_name": "onnx",
+                "version": "1.23.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.23.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "re2",
+                "version": "2025-11-05",
+                "revision": 2,
+                "bottle_rebuild": 0,
+                "pkg_version": "2025-11-05_2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "onnxruntime",
+                "version": "1.31.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.31.0",
+                "declared_directly": true,
+                "compatibility_version": 10
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+              "SPDXRef-Package-SPDXRef-onnx-1.2e.23.2e.2",
+              "SPDXRef-Package-SPDXRef-onnxruntime-1.2e.31.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "name": "protobuf",
+                "versionInfo": "36.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "23c1b997672d8c907b7493086a0a785b885dcaf68851cd6d2a1e96d9f116314a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf@36.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-onnx-1.2e.23.2e.2",
+                "name": "onnx",
+                "versionInfo": "1.23.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/onnx-1.23.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5265cf616ed409baca79b4b8dd4a53e99164e1a4a25fa995606562cded5938bd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/onnx@1.23.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-onnxruntime-1.2e.31.2e.0",
+                "name": "onnxruntime",
+                "versionInfo": "1.31.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/onnxruntime-1.31.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3a929f81ad4d9a0635c9702f9152ba307c7598e47740dedc3e00861dc7ca7f97"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/onnxruntime@1.31.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-codanna"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-onnx-1.2e.23.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-codanna"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-onnxruntime-1.2e.31.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-codanna"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-codanna-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/codanna"
+          ],
+          "all_files": [
+            ".brew/codanna.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NOTICE",
+            "README.md",
+            "bin/codanna",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 65538856
+        }
+      }
+    }
+  }
+}
