@@ -2,31 +2,31 @@
   "archi-steam-farm": {
     "formula": {
       "name": "archi-steam-farm",
-      "pkg_version": "6.3.10.3",
+      "pkg_version": "6.3.10.4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/archi-steam-farm.rb",
       "tap_git_path": "Formula/a/archi-steam-farm.rb",
-      "tap_git_revision": "6ab0ff351f72ea0229c28dfa1f0c5981afae9bd0",
+      "tap_git_revision": "d1e3fe1709768d3e3e8f043f5cb2d379c4a2ef14",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Application for idling Steam cards from multiple accounts simultaneously",
       "license": "Apache-2.0",
       "homepage": "https://github.com/JustArchiNET/ArchiSteamFarm"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-01T21:15:11Z",
+      "date": "2026-10-13T07:40:12Z",
       "tags": {
         "sequoia": {
-          "filename": "archi-steam-farm-6.3.10.3.sequoia.bottle.tar.gz",
-          "local_filename": "archi-steam-farm--6.3.10.3.sequoia.bottle.tar.gz",
-          "sha256": "4f462e65314eb9489590908f44e800ce091e0b2b9f8cbae36f203daa118b5b8e",
+          "filename": "archi-steam-farm-6.3.10.4.sequoia.bottle.tar.gz",
+          "local_filename": "archi-steam-farm--6.3.10.4.sequoia.bottle.tar.gz",
+          "sha256": "8761bc54c2d3dcb5d036bb6e60f5eb1c176956ed81a75d769eb01fddd06ae123",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1790427445,
+            "source_modified_time": 1791808095,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -57,26 +57,25 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.5",
+                "full_name": "openssl@4",
+                "version": "4.0.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.5",
-                "declared_directly": false,
-                "compatibility_version": 1
+                "pkg_version": "4.0.3",
+                "declared_directly": false
               },
               {
                 "full_name": "dotnet",
                 "version": "10.0.401",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "10.0.401",
+                "pkg_version": "10.0.401_1",
                 "declared_directly": true,
                 "compatibility_version": 7
               }
             ],
             "source": {
-              "scm_revision": "27bd1d5dbdc8c4897eaaed0e3246d10ffe18b0ad"
+              "scm_revision": "515d2fb28e921e9736c6036ebabbef7bdc76f977"
             },
             "arch": "x86_64",
             "built_on": {
@@ -92,8 +91,8 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-              "SPDXRef-Package-SPDXRef-dotnet-10.0.401",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-dotnet-10.2e.0.2e.401.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -121,47 +120,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-                "name": "openssl@3",
-                "versionInfo": "3.6.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.5.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9ed9599d2df434ad6706bb4065ab5cf758030b4d9b461ae96f9677fa7a500a0f"
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-dotnet-10.0.401",
+                "SPDXID": "SPDXRef-Package-SPDXRef-dotnet-10.2e.0.2e.401.5f.1",
                 "name": "dotnet",
-                "versionInfo": "10.0.401",
+                "versionInfo": "10.0.401_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/dotnet-10.0.401.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/dotnet-10.0.401_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e75481b8feca2b2ecc92ea8978a8a74453fbe173c88f27c5aef3cfd7529bb92b"
+                    "checksumValue": "423075577c950ee34d3f2665ec78fff3457063651630ede2adca4104ce28944e"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/dotnet@10.0.401",
+                    "referenceLocator": "pkg:brew/dotnet@10.0.401_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -186,12 +185,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-archi-steam-farm"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-archi-steam-farm"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-dotnet-10.0.401",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-dotnet-10.2e.0.2e.401.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-archi-steam-farm"
               },
@@ -382,7 +381,7 @@
             "libexec/www/scripts/main.141d65d.bundle.js.LICENSE.txt",
             "sbom.spdx.json"
           ],
-          "installed_size": 21707622
+          "installed_size": 21708134
         }
       }
     }
