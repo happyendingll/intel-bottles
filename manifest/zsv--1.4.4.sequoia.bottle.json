@@ -1,0 +1,181 @@
+{
+  "zsv": {
+    "formula": {
+      "name": "zsv",
+      "pkg_version": "1.4.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/z/zsv.rb",
+      "tap_git_path": "Formula/z/zsv.rb",
+      "tap_git_revision": "0edabe156a5f32f75c585807178ff78c8445c77b",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Tabular data swiss-army knife CLI",
+      "license": "MIT",
+      "homepage": "https://github.com/liquidaty/zsv"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-13T10:07:36Z",
+      "tags": {
+        "sequoia": {
+          "filename": "zsv-1.4.4.sequoia.bottle.tar.gz",
+          "local_filename": "zsv--1.4.4.sequoia.bottle.tar.gz",
+          "sha256": "99d690a3858116f3174413609bb7ef7b3959aa18174d023b206da9d706fa05c2",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/zsv"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791651050,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "oniguruma",
+                "version": "6.9.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.9.10",
+                "declared_directly": false
+              },
+              {
+                "full_name": "jq",
+                "version": "1.8.2",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.8.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.49",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.49",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "name": "pcre2",
+                "versionInfo": "10.49",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.49.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a15c4625444924cb9c0c52dc427dfc576a8433855527a2fb1a6be2bff6751567"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zsv"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-zsv-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/zsv"
+          ],
+          "all_files": [
+            ".brew/zsv.rb",
+            "AUTHORS",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/zsv",
+            "include/zsv/api.h",
+            "include/zsv/common.h",
+            "include/zsv/ext/implementation.h",
+            "include/zsv/ext/implementation_private.h",
+            "include/zsv/ext/sheet.h",
+            "include/zsv/ext.h",
+            "include/zsv/utils/appname.h",
+            "include/zsv/utils/arg.h",
+            "include/zsv/utils/cache.h",
+            "include/zsv/utils/clock.h",
+            "include/zsv/utils/compiler.h",
+            "include/zsv/utils/db.h",
+            "include/zsv/utils/dirs.h",
+            "include/zsv/utils/dl.h",
+            "include/zsv/utils/emcc/fs_api.h",
+            "include/zsv/utils/err.h",
+            "include/zsv/utils/file-mem.h",
+            "include/zsv/utils/file.h",
+            "include/zsv/utils/jq.h",
+            "include/zsv/utils/json.h",
+            "include/zsv/utils/mem.h",
+            "include/zsv/utils/memmem.h",
+            "include/zsv/utils/os.h",
+            "include/zsv/utils/output.h",
+            "include/zsv/utils/overwrite.h",
+            "include/zsv/utils/overwrite_writer.h",
+            "include/zsv/utils/prop.h",
+            "include/zsv/utils/rng.h",
+            "include/zsv/utils/signal.h",
+            "include/zsv/utils/sql.h",
+            "include/zsv/utils/string.h",
+            "include/zsv/utils/utf8.h",
+            "include/zsv/utils/win/dl.h",
+            "include/zsv/utils/writer.h",
+            "include/zsv/zsv_export.h",
+            "include/zsv.h",
+            "lib/libzsv.a",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1696857
+        }
+      }
+    }
+  }
+}

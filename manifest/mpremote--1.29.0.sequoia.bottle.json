@@ -1,0 +1,509 @@
+{
+  "mpremote": {
+    "formula": {
+      "name": "mpremote",
+      "pkg_version": "1.29.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mpremote.rb",
+      "tap_git_path": "Formula/m/mpremote.rb",
+      "tap_git_revision": "0edabe156a5f32f75c585807178ff78c8445c77b",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Tool for interacting remotely with MicroPython devices",
+      "license": "MIT",
+      "homepage": "https://docs.micropython.org/en/latest/reference/mpremote.html"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-13T09:14:13Z",
+      "tags": {
+        "sequoia": {
+          "filename": "mpremote-1.29.0.sequoia.bottle.tar.gz",
+          "local_filename": "mpremote--1.29.0.sequoia.bottle.tar.gz",
+          "sha256": "e6bd27e469482d04c9bab153640ae48d89d7eb4dca9d5f93b8da186374ee6812",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "libexec/bin/mpremote",
+              "libexec/bin/pyserial-miniterm",
+              "libexec/bin/pyserial-ports",
+              "libexec/pyvenv.cfg"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787579694,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.54.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.15",
+                "version": "3.15.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.15.0",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
+                "name": "sqlite",
+                "versionInfo": "3.54.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/sqlite-3.54.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "952154941d6bc3fc5304e11a048bfb8386e180be16fec04b799cccf543bc1667"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
+                "name": "python@3.15",
+                "versionInfo": "3.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/python%403.15-3.15.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d665a0f135591a60e1801430f2beadd2b4edb4daa048f48acf6bd61ff8a8ad3f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.15@3.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpremote"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpremote"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpremote"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpremote"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpremote"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpremote"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpremote"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpremote"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpremote"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-mpremote-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/mpremote"
+          ],
+          "all_files": [
+            ".brew/mpremote.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/mpremote",
+            "libexec/.gitignore",
+            "libexec/bin/mpremote",
+            "libexec/bin/pyserial-miniterm",
+            "libexec/bin/pyserial-ports",
+            "libexec/bin/python",
+            "libexec/bin/python3",
+            "libexec/bin/python3.15",
+            "libexec/lib/python3.15/site-packages/mpremote/__init__.py",
+            "libexec/lib/python3.15/site-packages/mpremote/__main__.py",
+            "libexec/lib/python3.15/site-packages/mpremote/commands.py",
+            "libexec/lib/python3.15/site-packages/mpremote/console.py",
+            "libexec/lib/python3.15/site-packages/mpremote/main.py",
+            "libexec/lib/python3.15/site-packages/mpremote/mip.py",
+            "libexec/lib/python3.15/site-packages/mpremote/mp_errno.py",
+            "libexec/lib/python3.15/site-packages/mpremote/repl.py",
+            "libexec/lib/python3.15/site-packages/mpremote/romfs.py",
+            "libexec/lib/python3.15/site-packages/mpremote/transport.py",
+            "libexec/lib/python3.15/site-packages/mpremote/transport_serial.py",
+            "libexec/lib/python3.15/site-packages/mpremote-1.29.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/mpremote-1.29.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/mpremote-1.29.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/mpremote-1.29.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/mpremote-1.29.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/mpremote-1.29.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/platformdirs/__init__.py",
+            "libexec/lib/python3.15/site-packages/platformdirs/__main__.py",
+            "libexec/lib/python3.15/site-packages/platformdirs/_xdg.py",
+            "libexec/lib/python3.15/site-packages/platformdirs/android.py",
+            "libexec/lib/python3.15/site-packages/platformdirs/api.py",
+            "libexec/lib/python3.15/site-packages/platformdirs/ios.py",
+            "libexec/lib/python3.15/site-packages/platformdirs/macos.py",
+            "libexec/lib/python3.15/site-packages/platformdirs/py.typed",
+            "libexec/lib/python3.15/site-packages/platformdirs/pytest_plugin.py",
+            "libexec/lib/python3.15/site-packages/platformdirs/testing.py",
+            "libexec/lib/python3.15/site-packages/platformdirs/unix.py",
+            "libexec/lib/python3.15/site-packages/platformdirs/version.py",
+            "libexec/lib/python3.15/site-packages/platformdirs/windows.py",
+            "libexec/lib/python3.15/site-packages/platformdirs-4.12.4.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/platformdirs-4.12.4.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/platformdirs-4.12.4.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/platformdirs-4.12.4.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/platformdirs-4.12.4.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/platformdirs-4.12.4.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/pyserial-3.5.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/pyserial-3.5.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/pyserial-3.5.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/pyserial-3.5.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/pyserial-3.5.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/pyserial-3.5.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.15/site-packages/pyserial-3.5.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/serial/__init__.py",
+            "libexec/lib/python3.15/site-packages/serial/__main__.py",
+            "libexec/lib/python3.15/site-packages/serial/rfc2217.py",
+            "libexec/lib/python3.15/site-packages/serial/rs485.py",
+            "libexec/lib/python3.15/site-packages/serial/serialcli.py",
+            "libexec/lib/python3.15/site-packages/serial/serialjava.py",
+            "libexec/lib/python3.15/site-packages/serial/serialposix.py",
+            "libexec/lib/python3.15/site-packages/serial/serialutil.py",
+            "libexec/lib/python3.15/site-packages/serial/serialwin32.py",
+            "libexec/lib/python3.15/site-packages/serial/threaded/__init__.py",
+            "libexec/lib/python3.15/site-packages/serial/tools/__init__.py",
+            "libexec/lib/python3.15/site-packages/serial/tools/hexlify_codec.py",
+            "libexec/lib/python3.15/site-packages/serial/tools/list_ports.py",
+            "libexec/lib/python3.15/site-packages/serial/tools/list_ports_common.py",
+            "libexec/lib/python3.15/site-packages/serial/tools/list_ports_linux.py",
+            "libexec/lib/python3.15/site-packages/serial/tools/list_ports_osx.py",
+            "libexec/lib/python3.15/site-packages/serial/tools/list_ports_posix.py",
+            "libexec/lib/python3.15/site-packages/serial/tools/list_ports_windows.py",
+            "libexec/lib/python3.15/site-packages/serial/tools/miniterm.py",
+            "libexec/lib/python3.15/site-packages/serial/urlhandler/__init__.py",
+            "libexec/lib/python3.15/site-packages/serial/urlhandler/protocol_alt.py",
+            "libexec/lib/python3.15/site-packages/serial/urlhandler/protocol_cp2110.py",
+            "libexec/lib/python3.15/site-packages/serial/urlhandler/protocol_hwgrep.py",
+            "libexec/lib/python3.15/site-packages/serial/urlhandler/protocol_loop.py",
+            "libexec/lib/python3.15/site-packages/serial/urlhandler/protocol_rfc2217.py",
+            "libexec/lib/python3.15/site-packages/serial/urlhandler/protocol_socket.py",
+            "libexec/lib/python3.15/site-packages/serial/urlhandler/protocol_spy.py",
+            "libexec/lib/python3.15/site-packages/serial/win32.py",
+            "libexec/pyvenv.cfg",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 608586
+        }
+      }
+    }
+  }
+}
