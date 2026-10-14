@@ -15,6 +15,7 @@ Emits tab-separated instructions on stdout:
 """
 
 import json
+import subprocess
 import sys
 from pathlib import Path
 
@@ -47,10 +48,20 @@ def main() -> None:
         print("manifest is empty", file=sys.stderr)
         return
 
-    upstream = brewinfo.pkg_versions(sorted({e["name"] for e in entries}))
+    core_repo = Path(
+        subprocess.check_output(["brew", "--repo", "homebrew/core"], text=True).strip()
+    )
+    # Formula[name] can still resolve a cached/installed formula after upstream removes
+    # its Ruby file. Check the checkout itself before trusting brew's version lookup.
+    present = [e for e in entries if e["path"] and (core_repo / e["path"]).is_file()]
+    present_entries = {(e["json"], e["name"]) for e in present}
+    upstream = brewinfo.pkg_versions(sorted({e["name"] for e in present}))
 
     current, held, dropped = [], [], []
     for entry in entries:
+        if (entry["json"], entry["name"]) not in present_entries:
+            dropped.append((entry["name"], "no longer in homebrew-core"))
+            continue
         now = upstream.get(entry["name"])
         if now is None:
             dropped.append((entry["name"], "no longer in homebrew-core"))
