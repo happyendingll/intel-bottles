@@ -69,7 +69,9 @@ else
   # awk intentionally accepts a plan with no APPLY rows. grep under `set -o pipefail`
   # would turn that valid empty case into a sync failure.
   JSONS="$(printf '%s\n' "$PLAN" | awk -F '\t' '$1 == "APPLY" { print $2 }' | tr '\n' ' ')"
-  if [ -n "${JSONS// /}" ]; then
+  # awk emits nothing when there are no APPLY rows. Avoid ${JSONS// /}: on the
+  # macOS runner's Bash 3.2, replacing spaces in ~200 KB of paths takes hours.
+  if [ -n "$JSONS" ]; then
     echo "==> re-applying bottle blocks"
     # shellcheck disable=SC2086 -- our own paths, no whitespace
     brew bottle --merge --write --no-commit $JSONS
