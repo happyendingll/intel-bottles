@@ -1,0 +1,187 @@
+{
+  "libyang": {
+    "formula": {
+      "name": "libyang",
+      "pkg_version": "6.4.13",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libyang.rb",
+      "tap_git_path": "Formula/lib/libyang.rb",
+      "tap_git_revision": "98e46156c913d7d3cbfdd012ee128629dd96da72",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "YANG data modeling language library",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/CESNET/libyang"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-15T05:44:19Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libyang-6.4.13.sequoia.bottle.tar.gz",
+          "local_filename": "libyang--6.4.13.sequoia.bottle.tar.gz",
+          "sha256": "700d8eee1f1d289a9dc25654d2e002d7c0e2d77baee5733570991254d31fdd9b",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "include/libyang/ly_config.h",
+              "lib/pkgconfig/libyang.pc"
+            ],
+            "linkage_files": [
+              "bin/yanglint",
+              "bin/yangre",
+              "lib/libyang.5.11.11.dylib"
+            ],
+            "binary_relocation_files": [
+              "lib/libyang.5.11.11.dylib"
+            ],
+            "source_modified_time": 1791977429,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "pcre2",
+                "version": "10.49",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.49",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/libyang.5.11.11.dylib",
+              "string": "/usr/local/Cellar/libyang/6.4.13/share/yang/modules/libyang",
+              "offset": 912091
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "name": "pcre2",
+                "versionInfo": "10.49",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.49.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a15c4625444924cb9c0c52dc427dfc576a8433855527a2fb1a6be2bff6751567"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libyang"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libyang-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/yangre",
+            "bin/yanglint"
+          ],
+          "all_files": [
+            ".brew/libyang.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/yanglint",
+            "bin/yangre",
+            "include/libyang/context.h",
+            "include/libyang/dict.h",
+            "include/libyang/hash_table.h",
+            "include/libyang/in.h",
+            "include/libyang/libyang.h",
+            "include/libyang/log.h",
+            "include/libyang/ly_array.h",
+            "include/libyang/ly_config.h",
+            "include/libyang/metadata.h",
+            "include/libyang/out.h",
+            "include/libyang/parser_data.h",
+            "include/libyang/parser_schema.h",
+            "include/libyang/plugins.h",
+            "include/libyang/plugins_exts.h",
+            "include/libyang/plugins_types.h",
+            "include/libyang/printer_data.h",
+            "include/libyang/printer_schema.h",
+            "include/libyang/semver.h",
+            "include/libyang/set.h",
+            "include/libyang/tree_data.h",
+            "include/libyang/tree_schema.h",
+            "include/libyang/utils.h",
+            "include/libyang/version.h",
+            "lib/libyang.5.11.11.dylib",
+            "lib/libyang.5.dylib",
+            "lib/libyang.dylib",
+            "lib/pkgconfig/libyang.pc",
+            "sbom.spdx.json",
+            "share/man/man1/yanglint.1",
+            "share/man/man1/yangre.1",
+            "share/yang/modules/libyang/default@2025-06-18.yang",
+            "share/yang/modules/libyang/ietf-datastores@2018-02-14.yang",
+            "share/yang/modules/libyang/ietf-inet-types@2025-12-22.yang",
+            "share/yang/modules/libyang/ietf-sid-file@2024-07-31.yang",
+            "share/yang/modules/libyang/ietf-yang-library-augmentedby@2025-05-28.yang",
+            "share/yang/modules/libyang/ietf-yang-library-semver@2025-09-29.yang",
+            "share/yang/modules/libyang/ietf-yang-library-status@2025-09-16.yang",
+            "share/yang/modules/libyang/ietf-yang-library@2019-01-04.yang",
+            "share/yang/modules/libyang/ietf-yang-metadata@2016-08-05.yang",
+            "share/yang/modules/libyang/ietf-yang-revisions@2025-09-16.yang",
+            "share/yang/modules/libyang/ietf-yang-schema-comparison-output@2026-09-02.yang",
+            "share/yang/modules/libyang/ietf-yang-schema-comparison@2026-09-02.yang",
+            "share/yang/modules/libyang/ietf-yang-schema-mount@2019-01-14.yang",
+            "share/yang/modules/libyang/ietf-yang-semver@2026-03-03.yang",
+            "share/yang/modules/libyang/ietf-yang-structure-ext@2020-06-17.yang",
+            "share/yang/modules/libyang/ietf-yang-types@2025-12-22.yang",
+            "share/yang/modules/libyang/yang@2025-01-29.yang"
+          ],
+          "installed_size": 2010392
+        }
+      }
+    }
+  }
+}

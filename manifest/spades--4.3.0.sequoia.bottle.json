@@ -1,0 +1,809 @@
+{
+  "spades": {
+    "formula": {
+      "name": "spades",
+      "pkg_version": "4.3.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/spades.rb",
+      "tap_git_path": "Formula/s/spades.rb",
+      "tap_git_revision": "98e46156c913d7d3cbfdd012ee128629dd96da72",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "De novo genome sequence assembly",
+      "license": "GPL-2.0-only",
+      "homepage": "https://ablab.github.io/spades/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-15T06:49:05Z",
+      "tags": {
+        "sequoia": {
+          "filename": "spades-4.3.0.sequoia.bottle.tar.gz",
+          "local_filename": "spades--4.3.0.sequoia.bottle.tar.gz",
+          "sha256": "afdc9da49c8ca486faf5c914653038a0384531ef745615b6598fd0a647349ff4",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "bin/spades.py",
+              "bin/spades_init.py",
+              "lib/pkgconfig/gmock.pc",
+              "lib/pkgconfig/gmock_main.pc",
+              "lib/pkgconfig/gtest.pc",
+              "lib/pkgconfig/gtest_main.pc"
+            ],
+            "linkage_files": [
+              "bin/spades-convert-bin-to-fasta",
+              "bin/spades-core",
+              "bin/spades-corrector-core",
+              "bin/spades-gbuilder",
+              "bin/spades-gfa-split",
+              "bin/spades-gmapper",
+              "bin/spades-gsimplifier",
+              "bin/spades-hammer",
+              "bin/spades-ionhammer",
+              "bin/spades-kmer-estimating",
+              "bin/spades-kmercount",
+              "bin/spades-read-filter"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1781467630,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.54.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.15",
+                "version": "3.15.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.15.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libomp",
+                "version": "23.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
+              "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
+                "name": "sqlite",
+                "versionInfo": "3.54.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/sqlite-3.54.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "952154941d6bc3fc5304e11a048bfb8386e180be16fec04b799cccf543bc1667"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
+                "name": "python@3.15",
+                "versionInfo": "3.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/python%403.15-3.15.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d665a0f135591a60e1801430f2beadd2b4edb4daa048f48acf6bd61ff8a8ad3f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.15@3.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.3",
+                "name": "libomp",
+                "versionInfo": "23.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libomp-23.1.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e85f610dbfcc89fbb868f01bbcce324a71b218db5fe7f253c28966863bfea8cc"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libomp@23.1.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-spades"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-spades"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-spades"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-spades"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-spades"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-spades"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-spades"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-spades"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-spades"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-spades"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-spades-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/spades-gsimplifier",
+            "bin/spades-gmapper",
+            "bin/spades.py",
+            "bin/spades-gbuilder",
+            "bin/spades-gfa-split",
+            "bin/spades-corrector-core",
+            "bin/spades_init.py",
+            "bin/spades-bwa",
+            "bin/plasmidspades.py",
+            "bin/spades-kmer-estimating",
+            "bin/spades-core",
+            "bin/rnaspades.py",
+            "bin/spades-hammer",
+            "bin/spades-convert-bin-to-fasta",
+            "bin/spades-read-filter",
+            "bin/rnaviralspades.py",
+            "bin/spades-ionhammer",
+            "bin/metaplasmidspades.py",
+            "bin/spades-kmercount",
+            "bin/metaviralspades.py",
+            "bin/coronaspades.py",
+            "bin/metaspades.py"
+          ],
+          "all_files": [
+            ".brew/spades.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/coronaspades.py",
+            "bin/metaplasmidspades.py",
+            "bin/metaspades.py",
+            "bin/metaviralspades.py",
+            "bin/plasmidspades.py",
+            "bin/rnaspades.py",
+            "bin/rnaviralspades.py",
+            "bin/spades-bwa",
+            "bin/spades-convert-bin-to-fasta",
+            "bin/spades-core",
+            "bin/spades-corrector-core",
+            "bin/spades-gbuilder",
+            "bin/spades-gfa-split",
+            "bin/spades-gmapper",
+            "bin/spades-gsimplifier",
+            "bin/spades-hammer",
+            "bin/spades-ionhammer",
+            "bin/spades-kmer-estimating",
+            "bin/spades-kmercount",
+            "bin/spades-read-filter",
+            "bin/spades.py",
+            "bin/spades_init.py",
+            "changelog.md",
+            "include/gmock/gmock-actions.h",
+            "include/gmock/gmock-cardinalities.h",
+            "include/gmock/gmock-function-mocker.h",
+            "include/gmock/gmock-matchers.h",
+            "include/gmock/gmock-more-actions.h",
+            "include/gmock/gmock-more-matchers.h",
+            "include/gmock/gmock-nice-strict.h",
+            "include/gmock/gmock-spec-builders.h",
+            "include/gmock/gmock.h",
+            "include/gmock/internal/custom/README.md",
+            "include/gmock/internal/custom/gmock-generated-actions.h",
+            "include/gmock/internal/custom/gmock-matchers.h",
+            "include/gmock/internal/custom/gmock-port.h",
+            "include/gmock/internal/gmock-internal-utils.h",
+            "include/gmock/internal/gmock-port.h",
+            "include/gmock/internal/gmock-pp.h",
+            "include/gtest/gtest-assertion-result.h",
+            "include/gtest/gtest-death-test.h",
+            "include/gtest/gtest-matchers.h",
+            "include/gtest/gtest-message.h",
+            "include/gtest/gtest-param-test.h",
+            "include/gtest/gtest-printers.h",
+            "include/gtest/gtest-spi.h",
+            "include/gtest/gtest-test-part.h",
+            "include/gtest/gtest-typed-test.h",
+            "include/gtest/gtest.h",
+            "include/gtest/gtest_pred_impl.h",
+            "include/gtest/gtest_prod.h",
+            "include/gtest/internal/custom/README.md",
+            "include/gtest/internal/custom/gtest-port.h",
+            "include/gtest/internal/custom/gtest-printers.h",
+            "include/gtest/internal/custom/gtest.h",
+            "include/gtest/internal/gtest-death-test-internal.h",
+            "include/gtest/internal/gtest-filepath.h",
+            "include/gtest/internal/gtest-internal.h",
+            "include/gtest/internal/gtest-param-util.h",
+            "include/gtest/internal/gtest-port-arch.h",
+            "include/gtest/internal/gtest-port.h",
+            "include/gtest/internal/gtest-string.h",
+            "include/gtest/internal/gtest-type-util.h",
+            "include/lexy/_detail/any_ref.hpp",
+            "include/lexy/_detail/assert.hpp",
+            "include/lexy/_detail/buffer_builder.hpp",
+            "include/lexy/_detail/code_point.hpp",
+            "include/lexy/_detail/config.hpp",
+            "include/lexy/_detail/detect.hpp",
+            "include/lexy/_detail/integer_sequence.hpp",
+            "include/lexy/_detail/invoke.hpp",
+            "include/lexy/_detail/iterator.hpp",
+            "include/lexy/_detail/lazy_init.hpp",
+            "include/lexy/_detail/memory_resource.hpp",
+            "include/lexy/_detail/nttp_string.hpp",
+            "include/lexy/_detail/stateless_lambda.hpp",
+            "include/lexy/_detail/std.hpp",
+            "include/lexy/_detail/string_view.hpp",
+            "include/lexy/_detail/swar.hpp",
+            "include/lexy/_detail/tuple.hpp",
+            "include/lexy/_detail/type_name.hpp",
+            "include/lexy/_detail/unicode_database.hpp",
+            "include/lexy/action/base.hpp",
+            "include/lexy/action/match.hpp",
+            "include/lexy/action/parse.hpp",
+            "include/lexy/action/parse_as_tree.hpp",
+            "include/lexy/action/scan.hpp",
+            "include/lexy/action/trace.hpp",
+            "include/lexy/action/validate.hpp",
+            "include/lexy/callback/adapter.hpp",
+            "include/lexy/callback/aggregate.hpp",
+            "include/lexy/callback/base.hpp",
+            "include/lexy/callback/bind.hpp",
+            "include/lexy/callback/bit_cast.hpp",
+            "include/lexy/callback/composition.hpp",
+            "include/lexy/callback/constant.hpp",
+            "include/lexy/callback/container.hpp",
+            "include/lexy/callback/fold.hpp",
+            "include/lexy/callback/forward.hpp",
+            "include/lexy/callback/integer.hpp",
+            "include/lexy/callback/noop.hpp",
+            "include/lexy/callback/object.hpp",
+            "include/lexy/callback/string.hpp",
+            "include/lexy/callback.hpp",
+            "include/lexy/code_point.hpp",
+            "include/lexy/dsl/any.hpp",
+            "include/lexy/dsl/ascii.hpp",
+            "include/lexy/dsl/base.hpp",
+            "include/lexy/dsl/bits.hpp",
+            "include/lexy/dsl/bom.hpp",
+            "include/lexy/dsl/brackets.hpp",
+            "include/lexy/dsl/branch.hpp",
+            "include/lexy/dsl/byte.hpp",
+            "include/lexy/dsl/capture.hpp",
+            "include/lexy/dsl/case_folding.hpp",
+            "include/lexy/dsl/char_class.hpp",
+            "include/lexy/dsl/choice.hpp",
+            "include/lexy/dsl/code_point.hpp",
+            "include/lexy/dsl/combination.hpp",
+            "include/lexy/dsl/context_counter.hpp",
+            "include/lexy/dsl/context_flag.hpp",
+            "include/lexy/dsl/context_identifier.hpp",
+            "include/lexy/dsl/delimited.hpp",
+            "include/lexy/dsl/digit.hpp",
+            "include/lexy/dsl/effect.hpp",
+            "include/lexy/dsl/eof.hpp",
+            "include/lexy/dsl/error.hpp",
+            "include/lexy/dsl/expression.hpp",
+            "include/lexy/dsl/flags.hpp",
+            "include/lexy/dsl/follow.hpp",
+            "include/lexy/dsl/identifier.hpp",
+            "include/lexy/dsl/if.hpp",
+            "include/lexy/dsl/integer.hpp",
+            "include/lexy/dsl/list.hpp",
+            "include/lexy/dsl/literal.hpp",
+            "include/lexy/dsl/lookahead.hpp",
+            "include/lexy/dsl/loop.hpp",
+            "include/lexy/dsl/member.hpp",
+            "include/lexy/dsl/newline.hpp",
+            "include/lexy/dsl/operator.hpp",
+            "include/lexy/dsl/option.hpp",
+            "include/lexy/dsl/parse_as.hpp",
+            "include/lexy/dsl/parse_tree_node.hpp",
+            "include/lexy/dsl/peek.hpp",
+            "include/lexy/dsl/position.hpp",
+            "include/lexy/dsl/production.hpp",
+            "include/lexy/dsl/punctuator.hpp",
+            "include/lexy/dsl/recover.hpp",
+            "include/lexy/dsl/repeat.hpp",
+            "include/lexy/dsl/return.hpp",
+            "include/lexy/dsl/scan.hpp",
+            "include/lexy/dsl/separator.hpp",
+            "include/lexy/dsl/sequence.hpp",
+            "include/lexy/dsl/sign.hpp",
+            "include/lexy/dsl/subgrammar.hpp",
+            "include/lexy/dsl/symbol.hpp",
+            "include/lexy/dsl/terminator.hpp",
+            "include/lexy/dsl/times.hpp",
+            "include/lexy/dsl/token.hpp",
+            "include/lexy/dsl/unicode.hpp",
+            "include/lexy/dsl/until.hpp",
+            "include/lexy/dsl/whitespace.hpp",
+            "include/lexy/dsl.hpp",
+            "include/lexy/encoding.hpp",
+            "include/lexy/error.hpp",
+            "include/lexy/grammar.hpp",
+            "include/lexy/input/argv_input.hpp",
+            "include/lexy/input/base.hpp",
+            "include/lexy/input/buffer.hpp",
+            "include/lexy/input/file.hpp",
+            "include/lexy/input/lexeme_input.hpp",
+            "include/lexy/input/parse_tree_input.hpp",
+            "include/lexy/input/range_input.hpp",
+            "include/lexy/input/string_input.hpp",
+            "include/lexy/input_location.hpp",
+            "include/lexy/lexeme.hpp",
+            "include/lexy/parse_tree.hpp",
+            "include/lexy/token.hpp",
+            "include/lexy/visualize.hpp",
+            "include/lexy_ext/compiler_explorer.hpp",
+            "include/lexy_ext/parse_tree_algorithm.hpp",
+            "include/lexy_ext/parse_tree_doctest.hpp",
+            "include/lexy_ext/report_error.hpp",
+            "include/lexy_ext/shell.hpp",
+            "lib/cmake/GTest/GTestConfig.cmake",
+            "lib/cmake/GTest/GTestConfigVersion.cmake",
+            "lib/cmake/GTest/GTestTargets-release.cmake",
+            "lib/cmake/GTest/GTestTargets.cmake",
+            "lib/cmake/lexy/lexyConfig.cmake",
+            "lib/cmake/lexy/lexyConfigVersion.cmake",
+            "lib/cmake/lexy/lexyTargets-release.cmake",
+            "lib/cmake/lexy/lexyTargets.cmake",
+            "lib/libgmock.a",
+            "lib/libgmock_main.a",
+            "lib/libgtest.a",
+            "lib/libgtest_main.a",
+            "lib/liblexy_file.a",
+            "lib/pkgconfig/gmock.pc",
+            "lib/pkgconfig/gmock_main.pc",
+            "lib/pkgconfig/gtest.pc",
+            "lib/pkgconfig/gtest_main.pc",
+            "sbom.spdx.json",
+            "share/spades/GPLv2.txt",
+            "share/spades/LICENSE",
+            "share/spades/README.md",
+            "share/spades/VERSION",
+            "share/spades/biosynthetic_spades_hmms/AMP.hmm.gz",
+            "share/spades/biosynthetic_spades_hmms/AT.hmm.gz",
+            "share/spades/biosynthetic_spades_hmms/CStart.hmm.gz",
+            "share/spades/biosynthetic_spades_hmms/KR.hmm.gz",
+            "share/spades/biosynthetic_spades_hmms/KS.hmm.gz",
+            "share/spades/biosynthetic_spades_hmms/TE.hmm.gz",
+            "share/spades/configs/corrector/corrector.info",
+            "share/spades/configs/debruijn/careful_mda_mode.info",
+            "share/spades/configs/debruijn/careful_mode.info",
+            "share/spades/configs/debruijn/config.info",
+            "share/spades/configs/debruijn/construction.info",
+            "share/spades/configs/debruijn/detail_info_printer.info",
+            "share/spades/configs/debruijn/distance_estimation.info",
+            "share/spades/configs/debruijn/hmm_mode.info",
+            "share/spades/configs/debruijn/isolate_mode.info",
+            "share/spades/configs/debruijn/large_genome_mode.info",
+            "share/spades/configs/debruijn/mda_mode.info",
+            "share/spades/configs/debruijn/meta_mode.info",
+            "share/spades/configs/debruijn/metaplasmid_mode.info",
+            "share/spades/configs/debruijn/metaviral_mode.info",
+            "share/spades/configs/debruijn/pe_params.info",
+            "share/spades/configs/debruijn/plasmid_mode.info",
+            "share/spades/configs/debruijn/rna_mode.info",
+            "share/spades/configs/debruijn/rnaviral_mode.info",
+            "share/spades/configs/debruijn/sewage_mode.info",
+            "share/spades/configs/debruijn/simplification.info",
+            "share/spades/configs/debruijn/toy.info",
+            "share/spades/configs/hammer/config.info",
+            "share/spades/configs/ionhammer/ionhammer.cfg",
+            "share/spades/coronaspades_hmms/Pfam-A.SARS-CoV-2.hmm.gz",
+            "share/spades/coronaspades_hmms/Phan-CoV.hmm.gz",
+            "share/spades/pyyaml3/__init__.py",
+            "share/spades/pyyaml3/composer.py",
+            "share/spades/pyyaml3/constructor.py",
+            "share/spades/pyyaml3/cyaml.py",
+            "share/spades/pyyaml3/dumper.py",
+            "share/spades/pyyaml3/emitter.py",
+            "share/spades/pyyaml3/error.py",
+            "share/spades/pyyaml3/events.py",
+            "share/spades/pyyaml3/loader.py",
+            "share/spades/pyyaml3/nodes.py",
+            "share/spades/pyyaml3/parser.py",
+            "share/spades/pyyaml3/reader.py",
+            "share/spades/pyyaml3/representer.py",
+            "share/spades/pyyaml3/resolver.py",
+            "share/spades/pyyaml3/scanner.py",
+            "share/spades/pyyaml3/serializer.py",
+            "share/spades/pyyaml3/tokens.py",
+            "share/spades/sewage/usher_barcodes.csv",
+            "share/spades/spades_pipeline/__init__.py",
+            "share/spades/spades_pipeline/commands_parser.py",
+            "share/spades/spades_pipeline/common/SeqIO.py",
+            "share/spades/spades_pipeline/common/__init__.py",
+            "share/spades/spades_pipeline/common/alignment.py",
+            "share/spades/spades_pipeline/common/parallel_launcher.py",
+            "share/spades/spades_pipeline/common/sam_parser.py",
+            "share/spades/spades_pipeline/executors/__init__.py",
+            "share/spades/spades_pipeline/executors/executor_base.py",
+            "share/spades/spades_pipeline/executors/executor_local.py",
+            "share/spades/spades_pipeline/executors/executor_mpi.py",
+            "share/spades/spades_pipeline/executors/executor_save_mpi_sh.py",
+            "share/spades/spades_pipeline/executors/executor_save_yaml.py",
+            "share/spades/spades_pipeline/executors/executor_slurm.py",
+            "share/spades/spades_pipeline/file_operations.py",
+            "share/spades/spades_pipeline/options_parser.py",
+            "share/spades/spades_pipeline/options_storage.py",
+            "share/spades/spades_pipeline/process_cfg.py",
+            "share/spades/spades_pipeline/stages/__init__.py",
+            "share/spades/spades_pipeline/stages/before_start_stage.py",
+            "share/spades/spades_pipeline/stages/breaking_scaffolds_stage.py",
+            "share/spades/spades_pipeline/stages/check_test_stage.py",
+            "share/spades/spades_pipeline/stages/correction_stage.py",
+            "share/spades/spades_pipeline/stages/error_correction_stage.py",
+            "share/spades/spades_pipeline/stages/pipeline.py",
+            "share/spades/spades_pipeline/stages/preprocess_reads_stage.py",
+            "share/spades/spades_pipeline/stages/scaffold_correction_stage.py",
+            "share/spades/spades_pipeline/stages/spades_iteration_stage.py",
+            "share/spades/spades_pipeline/stages/spades_stage.py",
+            "share/spades/spades_pipeline/stages/stage.py",
+            "share/spades/spades_pipeline/stages/terminating_stage.py",
+            "share/spades/spades_pipeline/supplemetary/__init__.py",
+            "share/spades/spades_pipeline/supplemetary/breaking_scaffolds_script.py",
+            "share/spades/spades_pipeline/supplemetary/check_test_script.py",
+            "share/spades/spades_pipeline/supplemetary/compress_all.py",
+            "share/spades/spades_pipeline/supplemetary/copy_files.py",
+            "share/spades/spades_pipeline/supplemetary/correction_iteration_script.py",
+            "share/spades/spades_pipeline/supplemetary/plasmid_glue.py",
+            "share/spades/spades_pipeline/supplemetary/preprocess_contigs.py",
+            "share/spades/spades_pipeline/supplemetary/preprocess_interlaced_reads.py",
+            "share/spades/spades_pipeline/support.py",
+            "share/spades/spades_pipeline/tests/__init__.py",
+            "share/spades/spades_pipeline/tests/test_error_codes.py",
+            "share/spades/test_dataset/ecoli_1K_1.fq.gz",
+            "share/spades/test_dataset/ecoli_1K_2.fq.gz",
+            "share/spades/test_dataset/genes_1K.gff",
+            "share/spades/test_dataset/genes_1K.txt",
+            "share/spades/test_dataset/operons_1K.gff",
+            "share/spades/test_dataset/operons_1K.txt",
+            "share/spades/test_dataset/reference_1K.fa.gz",
+            "share/spades/test_dataset_plasmid/pl1.fq.gz",
+            "share/spades/test_dataset_plasmid/pl2.fq.gz"
+          ],
+          "installed_size": 54512947
+        }
+      }
+    }
+  }
+}

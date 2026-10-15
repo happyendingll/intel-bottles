@@ -1,0 +1,201 @@
+{
+  "sentencepiece": {
+    "formula": {
+      "name": "sentencepiece",
+      "pkg_version": "0.2.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sentencepiece.rb",
+      "tap_git_path": "Formula/s/sentencepiece.rb",
+      "tap_git_revision": "98e46156c913d7d3cbfdd012ee128629dd96da72",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Unsupervised text tokenizer and detokenizer",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/google/sentencepiece"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-15T06:38:35Z",
+      "tags": {
+        "sequoia": {
+          "filename": "sentencepiece-0.2.2.sequoia.bottle.tar.gz",
+          "local_filename": "sentencepiece--0.2.2.sequoia.bottle.tar.gz",
+          "sha256": "a91a6bb98e53228466fa770a55d4e963410f4273ff4671b20f4d9c8f25097aee",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/sentencepiece.pc"
+            ],
+            "linkage_files": [
+              "bin/spm_decode",
+              "bin/spm_encode",
+              "bin/spm_export_vocab",
+              "bin/spm_normalize",
+              "bin/spm_train",
+              "lib/libsentencepiece.0.0.0.dylib",
+              "lib/libsentencepiece_train.0.0.0.dylib"
+            ],
+            "binary_relocation_files": [
+              "lib/libsentencepiece.0.0.0.dylib",
+              "lib/libsentencepiece.a"
+            ],
+            "source_modified_time": 1782924763,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "protobuf",
+                "version": "36.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "36.2",
+                "declared_directly": true,
+                "compatibility_version": 7
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/libsentencepiece.a",
+              "string": "/usr/local/Cellar/sentencepiece/0.2.2/share/sentencepiece",
+              "offset": 813153
+            },
+            {
+              "path": "lib/libsentencepiece.0.0.0.dylib",
+              "string": "/usr/local/Cellar/sentencepiece/0.2.2/share/sentencepiece",
+              "offset": 343043
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "name": "protobuf",
+                "versionInfo": "36.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "23c1b997672d8c907b7493086a0a785b885dcaf68851cd6d2a1e96d9f116314a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf@36.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sentencepiece"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-sentencepiece-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/spm_normalize",
+            "bin/spm_export_vocab",
+            "bin/spm_decode",
+            "bin/spm_encode",
+            "bin/spm_train"
+          ],
+          "all_files": [
+            ".brew/sentencepiece.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/spm_decode",
+            "bin/spm_encode",
+            "bin/spm_export_vocab",
+            "bin/spm_normalize",
+            "bin/spm_train",
+            "include/sentencepiece.pb.h",
+            "include/sentencepiece_processor.h",
+            "include/sentencepiece_trainer.h",
+            "lib/libsentencepiece.0.0.0.dylib",
+            "lib/libsentencepiece.0.dylib",
+            "lib/libsentencepiece.a",
+            "lib/libsentencepiece.dylib",
+            "lib/libsentencepiece_train.0.0.0.dylib",
+            "lib/libsentencepiece_train.0.dylib",
+            "lib/libsentencepiece_train.a",
+            "lib/libsentencepiece_train.dylib",
+            "lib/pkgconfig/sentencepiece.pc",
+            "sbom.spdx.json",
+            "share/sentencepiece/data/Scripts.txt",
+            "share/sentencepiece/data/botchan.txt",
+            "share/sentencepiece/data/botchan_1000_bpe.model",
+            "share/sentencepiece/data/gen_unicode_scripts_code.pl",
+            "share/sentencepiece/data/ids_denorm.tsv",
+            "share/sentencepiece/data/ids_norm.tsv",
+            "share/sentencepiece/data/korean_hangul_jamo.tsv",
+            "share/sentencepiece/data/nfc.tsv",
+            "share/sentencepiece/data/nfc_cf.tsv",
+            "share/sentencepiece/data/nfd.tsv",
+            "share/sentencepiece/data/nfd_cf.tsv",
+            "share/sentencepiece/data/nfkc.bin",
+            "share/sentencepiece/data/nfkc.tsv",
+            "share/sentencepiece/data/nfkc_cf.bin",
+            "share/sentencepiece/data/nfkc_cf.tsv",
+            "share/sentencepiece/data/nfkd.tsv",
+            "share/sentencepiece/data/nfkd_cf.tsv",
+            "share/sentencepiece/data/nmt_nfkc.bin",
+            "share/sentencepiece/data/nmt_nfkc.tsv",
+            "share/sentencepiece/data/nmt_nfkc_cf.bin",
+            "share/sentencepiece/data/nmt_nfkc_cf.tsv",
+            "share/sentencepiece/data/test_oss_model.model",
+            "share/sentencepiece/data/wagahaiwa_nekodearu.txt",
+            "share/sentencepiece/data/wagahaiwa_nekodearu_2000_bpe_byte.model"
+          ],
+          "installed_size": 49976596
+        }
+      }
+    }
+  }
+}
