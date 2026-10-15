@@ -1,0 +1,638 @@
+{
+  "libxmlsec1": {
+    "formula": {
+      "name": "libxmlsec1",
+      "pkg_version": "1.3.12_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libxmlsec1.rb",
+      "tap_git_path": "Formula/lib/libxmlsec1.rb",
+      "tap_git_revision": "52cb27f5b7cf081917113d1874b39739ea7a7542",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "XML security library",
+      "license": "MIT",
+      "homepage": "https://www.aleksey.com/xmlsec/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-14T17:02:04Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libxmlsec1-1.3.12_1.sequoia.bottle.tar.gz",
+          "local_filename": "libxmlsec1--1.3.12_1.sequoia.bottle.tar.gz",
+          "sha256": "edf85152a63435e6e8cde625ee0141b2651794626c37866b7d0050a961d61e35",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "bin/xmlsec1-config",
+              "lib/pkgconfig/xmlsec1-gnutls.pc",
+              "lib/pkgconfig/xmlsec1-openssl.pc",
+              "lib/pkgconfig/xmlsec1.pc",
+              "lib/xmlsec1Conf.sh"
+            ],
+            "linkage_files": [
+              "bin/xmlsec1",
+              "lib/libxmlsec1-gnutls.10312.dylib",
+              "lib/libxmlsec1-openssl.10312.dylib",
+              "lib/libxmlsec1.10312.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1782143614,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.13",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.8.13_2",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxml2",
+                "version": "2.15.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.15.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-libxml2-2.2e.15.2e.4",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "name": "p11-kit",
+                "versionInfo": "0.26.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/p11-kit-0.26.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ee01fce79642e0693fd6bb9024aeb3e684bddfcf797ad6cb9ba8907c24742162"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/p11-kit@0.26.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxml2-2.2e.15.2e.4",
+                "name": "libxml2",
+                "versionInfo": "2.15.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libxml2-2.15.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1e057faeea57ce4cf9ec27c0b80f44e241ca971b3c2770d91a1e0a58ddf08716"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxml2@2.15.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxmlsec1"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxmlsec1"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxmlsec1"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxmlsec1"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxmlsec1"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxmlsec1"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxmlsec1"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxml2-2.2e.15.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxmlsec1"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libxmlsec1"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libxmlsec1-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/xmlsec1",
+            "bin/xmlsec1-config"
+          ],
+          "all_files": [
+            ".brew/libxmlsec1.rb",
+            "AUTHORS.md",
+            "COPYING",
+            "ChangeLog",
+            "Copyright",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "TODO",
+            "bin/xmlsec1",
+            "bin/xmlsec1-config",
+            "include/xmlsec1/xmlsec/app.h",
+            "include/xmlsec1/xmlsec/base64.h",
+            "include/xmlsec1/xmlsec/bn.h",
+            "include/xmlsec1/xmlsec/buffer.h",
+            "include/xmlsec1/xmlsec/crypto.h",
+            "include/xmlsec1/xmlsec/dl.h",
+            "include/xmlsec1/xmlsec/errors.h",
+            "include/xmlsec1/xmlsec/exports.h",
+            "include/xmlsec1/xmlsec/gnutls/app.h",
+            "include/xmlsec1/xmlsec/gnutls/crypto.h",
+            "include/xmlsec1/xmlsec/gnutls/keysstore.h",
+            "include/xmlsec1/xmlsec/gnutls/symbols.h",
+            "include/xmlsec1/xmlsec/gnutls/x509.h",
+            "include/xmlsec1/xmlsec/io.h",
+            "include/xmlsec1/xmlsec/keyinfo.h",
+            "include/xmlsec1/xmlsec/keys.h",
+            "include/xmlsec1/xmlsec/keysdata.h",
+            "include/xmlsec1/xmlsec/keysmngr.h",
+            "include/xmlsec1/xmlsec/list.h",
+            "include/xmlsec1/xmlsec/membuf.h",
+            "include/xmlsec1/xmlsec/nodeset.h",
+            "include/xmlsec1/xmlsec/openssl/app.h",
+            "include/xmlsec1/xmlsec/openssl/crypto.h",
+            "include/xmlsec1/xmlsec/openssl/evp.h",
+            "include/xmlsec1/xmlsec/openssl/keysstore.h",
+            "include/xmlsec1/xmlsec/openssl/symbols.h",
+            "include/xmlsec1/xmlsec/openssl/x509.h",
+            "include/xmlsec1/xmlsec/parser.h",
+            "include/xmlsec1/xmlsec/private.h",
+            "include/xmlsec1/xmlsec/strings.h",
+            "include/xmlsec1/xmlsec/templates.h",
+            "include/xmlsec1/xmlsec/transforms.h",
+            "include/xmlsec1/xmlsec/version.h",
+            "include/xmlsec1/xmlsec/x509.h",
+            "include/xmlsec1/xmlsec/xmldsig.h",
+            "include/xmlsec1/xmlsec/xmlenc.h",
+            "include/xmlsec1/xmlsec/xmlsec.h",
+            "include/xmlsec1/xmlsec/xmltree.h",
+            "lib/libxmlsec1-gnutls.10312.dylib",
+            "lib/libxmlsec1-gnutls.a",
+            "lib/libxmlsec1-gnutls.dylib",
+            "lib/libxmlsec1-openssl.10312.dylib",
+            "lib/libxmlsec1-openssl.a",
+            "lib/libxmlsec1-openssl.dylib",
+            "lib/libxmlsec1.10312.dylib",
+            "lib/libxmlsec1.a",
+            "lib/libxmlsec1.dylib",
+            "lib/pkgconfig/xmlsec1-gnutls.pc",
+            "lib/pkgconfig/xmlsec1-openssl.pc",
+            "lib/pkgconfig/xmlsec1.pc",
+            "lib/xmlsec1Conf.sh",
+            "sbom.spdx.json",
+            "share/aclocal/xmlsec1.m4",
+            "share/doc/xmlsec1/api/index.md",
+            "share/doc/xmlsec1/api/xmlsec_core.md",
+            "share/doc/xmlsec1/api/xmlsec_core_app.md",
+            "share/doc/xmlsec1/api/xmlsec_core_base64.md",
+            "share/doc/xmlsec1/api/xmlsec_core_bn.md",
+            "share/doc/xmlsec1/api/xmlsec_core_buffer.md",
+            "share/doc/xmlsec1/api/xmlsec_core_dl.md",
+            "share/doc/xmlsec1/api/xmlsec_core_errors.md",
+            "share/doc/xmlsec1/api/xmlsec_core_helpers.md",
+            "share/doc/xmlsec1/api/xmlsec_core_io.md",
+            "share/doc/xmlsec1/api/xmlsec_core_keyinfo.md",
+            "share/doc/xmlsec1/api/xmlsec_core_keys.md",
+            "share/doc/xmlsec1/api/xmlsec_core_keysdata.md",
+            "share/doc/xmlsec1/api/xmlsec_core_keysmngr.md",
+            "share/doc/xmlsec1/api/xmlsec_core_list.md",
+            "share/doc/xmlsec1/api/xmlsec_core_membuf.md",
+            "share/doc/xmlsec1/api/xmlsec_core_nodeset.md",
+            "share/doc/xmlsec1/api/xmlsec_core_parser.md",
+            "share/doc/xmlsec1/api/xmlsec_core_templates.md",
+            "share/doc/xmlsec1/api/xmlsec_core_transforms.md",
+            "share/doc/xmlsec1/api/xmlsec_core_xmldsig.md",
+            "share/doc/xmlsec1/api/xmlsec_core_xmlenc.md",
+            "share/doc/xmlsec1/api/xmlsec_core_xmltree.md",
+            "share/doc/xmlsec1/api/xmlsec_gcrypt.md",
+            "share/doc/xmlsec1/api/xmlsec_gcrypt_app.md",
+            "share/doc/xmlsec1/api/xmlsec_gcrypt_crypto.md",
+            "share/doc/xmlsec1/api/xmlsec_gnutls.md",
+            "share/doc/xmlsec1/api/xmlsec_gnutls_app.md",
+            "share/doc/xmlsec1/api/xmlsec_gnutls_crypto.md",
+            "share/doc/xmlsec1/api/xmlsec_gnutls_keysstore.md",
+            "share/doc/xmlsec1/api/xmlsec_gnutls_x509.md",
+            "share/doc/xmlsec1/api/xmlsec_mscng.md",
+            "share/doc/xmlsec1/api/xmlsec_mscng_app.md",
+            "share/doc/xmlsec1/api/xmlsec_mscng_certkeys.md",
+            "share/doc/xmlsec1/api/xmlsec_mscng_crypto.md",
+            "share/doc/xmlsec1/api/xmlsec_mscng_keysstore.md",
+            "share/doc/xmlsec1/api/xmlsec_mscng_x509.md",
+            "share/doc/xmlsec1/api/xmlsec_mscrypto.md",
+            "share/doc/xmlsec1/api/xmlsec_mscrypto_app.md",
+            "share/doc/xmlsec1/api/xmlsec_mscrypto_certkeys.md",
+            "share/doc/xmlsec1/api/xmlsec_mscrypto_crypto.md",
+            "share/doc/xmlsec1/api/xmlsec_mscrypto_keysstore.md",
+            "share/doc/xmlsec1/api/xmlsec_mscrypto_x509.md",
+            "share/doc/xmlsec1/api/xmlsec_nss.md",
+            "share/doc/xmlsec1/api/xmlsec_nss_app.md",
+            "share/doc/xmlsec1/api/xmlsec_nss_crypto.md",
+            "share/doc/xmlsec1/api/xmlsec_nss_keysstore.md",
+            "share/doc/xmlsec1/api/xmlsec_nss_pkikeys.md",
+            "share/doc/xmlsec1/api/xmlsec_nss_x509.md",
+            "share/doc/xmlsec1/api/xmlsec_openssl.md",
+            "share/doc/xmlsec1/api/xmlsec_openssl_app.md",
+            "share/doc/xmlsec1/api/xmlsec_openssl_crypto.md",
+            "share/doc/xmlsec1/api/xmlsec_openssl_keysstore.md",
+            "share/doc/xmlsec1/api/xmlsec_openssl_x509.md",
+            "share/doc/xmlsec1/bugs.md",
+            "share/doc/xmlsec1/c14n.md",
+            "share/doc/xmlsec1/documentation.md",
+            "share/doc/xmlsec1/download.md",
+            "share/doc/xmlsec1/examples/decrypt1.md",
+            "share/doc/xmlsec1/examples/decrypt2.md",
+            "share/doc/xmlsec1/examples/decrypt3.md",
+            "share/doc/xmlsec1/examples/encrypt1.md",
+            "share/doc/xmlsec1/examples/encrypt2.md",
+            "share/doc/xmlsec1/examples/encrypt3.md",
+            "share/doc/xmlsec1/examples/index.md",
+            "share/doc/xmlsec1/examples/sign1.md",
+            "share/doc/xmlsec1/examples/sign2.md",
+            "share/doc/xmlsec1/examples/sign3.md",
+            "share/doc/xmlsec1/examples/sign4.md",
+            "share/doc/xmlsec1/examples/verify-saml.md",
+            "share/doc/xmlsec1/examples/verify1.md",
+            "share/doc/xmlsec1/examples/verify2.md",
+            "share/doc/xmlsec1/examples/verify3.md",
+            "share/doc/xmlsec1/examples/verify4.md",
+            "share/doc/xmlsec1/faq.md",
+            "share/doc/xmlsec1/index.md",
+            "share/doc/xmlsec1/key-formats.md",
+            "share/doc/xmlsec1/news.md",
+            "share/doc/xmlsec1/related.md",
+            "share/doc/xmlsec1/tutorial/appendix.md",
+            "share/doc/xmlsec1/tutorial/compiling-and-linking.md",
+            "share/doc/xmlsec1/tutorial/creating-templates.md",
+            "share/doc/xmlsec1/tutorial/images/encryption-structure.png",
+            "share/doc/xmlsec1/tutorial/images/key.png",
+            "share/doc/xmlsec1/tutorial/images/keysmngr.png",
+            "share/doc/xmlsec1/tutorial/images/sign-enc-model.png",
+            "share/doc/xmlsec1/tutorial/images/signature-structure.png",
+            "share/doc/xmlsec1/tutorial/images/structure.png",
+            "share/doc/xmlsec1/tutorial/images/transform.png",
+            "share/doc/xmlsec1/tutorial/images/transforms-chain.png",
+            "share/doc/xmlsec1/tutorial/images/verif-dec-model.png",
+            "share/doc/xmlsec1/tutorial/index.md",
+            "share/doc/xmlsec1/tutorial/init-and-shutdown.md",
+            "share/doc/xmlsec1/tutorial/install.md",
+            "share/doc/xmlsec1/tutorial/sign-and-encrypt.md",
+            "share/doc/xmlsec1/tutorial/using-contexts.md",
+            "share/doc/xmlsec1/tutorial/using-keys.md",
+            "share/doc/xmlsec1/tutorial/using-keysmngr.md",
+            "share/doc/xmlsec1/tutorial/using-transforms.md",
+            "share/doc/xmlsec1/tutorial/using-x509-certs.md",
+            "share/doc/xmlsec1/tutorial/verify-and-decrypt.md",
+            "share/doc/xmlsec1/xmldsig.md",
+            "share/doc/xmlsec1/xmlenc.md",
+            "share/doc/xmlsec1/xmlsec-man.md",
+            "share/man/man1/xmlsec1-config.1",
+            "share/man/man1/xmlsec1.1"
+          ],
+          "installed_size": 4673414
+        }
+      }
+    }
+  }
+}
