@@ -1,57 +1,39 @@
 {
-  "synergy-core": {
+  "qtcanvaspainter": {
     "formula": {
-      "name": "synergy-core",
-      "pkg_version": "1.21.4_1",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/synergy-core.rb",
-      "tap_git_path": "Formula/s/synergy-core.rb",
-      "tap_git_revision": "fbd9c7ccc75439ed80525d2a5f1f1bebcb50dcd1",
+      "name": "qtcanvaspainter",
+      "pkg_version": "6.12.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtcanvaspainter.rb",
+      "tap_git_path": "Formula/q/qtcanvaspainter.rb",
+      "tap_git_revision": "c869398a7a03510bbc609383848c8b002be15a83",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Synergy, the keyboard and mouse sharing tool",
-      "license": "GPL-2.0-only WITH openvpn-openssl-exception",
-      "homepage": "https://symless.com/synergy"
+      "desc": "Accelerated 2D painting solution for Qt Quick and QRhi-based render targets",
+      "license": "GPL-3.0-only AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND Zlib",
+      "homepage": "https://www.qt.io/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-10T08:44:34Z",
+      "date": "2026-10-15T03:59:55Z",
       "tags": {
         "sequoia": {
-          "filename": "synergy-core-1.21.4_1.sequoia.bottle.tar.gz",
-          "local_filename": "synergy-core--1.21.4_1.sequoia.bottle.tar.gz",
-          "sha256": "bdca04a11aa95a760d16661acb4bde18f7f5bc561e609024bccecb2f3feaa60f",
+          "filename": "qtcanvaspainter-6.12.0.sequoia.bottle.tar.gz",
+          "local_filename": "qtcanvaspainter--6.12.0.sequoia.bottle.tar.gz",
+          "sha256": "65ebc5125ccae7d2e660d41b1ce0a7d33ffe1736c0319083843e08c2d00224cb",
           "tab": {
             "homebrew_version": "7.0.9",
-            "changed_files": [
-              "sh.brew.synergy-core.plist",
-              "sh.brew.synergy-core.service"
-            ],
+            "changed_files": [],
             "linkage_files": [
-              "Synergy.app/Contents/MacOS/Synergy",
-              "Synergy.app/Contents/MacOS/synergy-core"
+              "bin/qcshadergen",
+              "lib/QtCanvas2D.framework/Versions/A/QtCanvas2D",
+              "lib/QtCanvasPainter.framework/Versions/A/QtCanvasPainter",
+              "share/qt/qml/QtCanvas2D/libcanvas2dplugin.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790547589,
+            "source_modified_time": 1790432799,
             "compiler": "clang",
             "runtime_dependencies": [
-              {
-                "full_name": "ca-certificates",
-                "version": "2026-09-25",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "openssl@4",
-                "version": "4.0.3",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
-                "declared_directly": true
-              },
               {
                 "full_name": "brotli",
                 "version": "1.2.0",
@@ -90,10 +72,10 @@
               },
               {
                 "full_name": "freetype",
-                "version": "2.14.3",
+                "version": "2.15.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.14.3",
+                "pkg_version": "2.15.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -291,6 +273,23 @@
                 "declared_directly": false
               },
               {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": false
+              },
+              {
                 "full_name": "lz4",
                 "version": "1.10.0",
                 "revision": 0,
@@ -318,10 +317,28 @@
               },
               {
                 "full_name": "qtbase",
-                "version": "6.11.2",
-                "revision": 1,
+                "version": "6.12.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.11.2_1",
+                "pkg_version": "6.12.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtsvg",
+                "version": "6.12.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.12.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtdeclarative",
+                "version": "6.12.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.12.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -339,10 +356,8 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
-              "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+              "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
               "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
@@ -354,59 +369,17 @@
               "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
               "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.2e.11.2e.2.5f.1",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-                "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
-                "name": "openssl@4",
-                "versionInfo": "4.0.3",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "name": "libpng",
@@ -431,24 +404,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "name": "freetype",
-                "versionInfo": "2.14.3",
+                "versionInfo": "2.15.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "FTL",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/freetype-2.14.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/freetype-2.15.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "924f2250dade81864326c3b1d53af4753701f8f6d7505fa351585c1c878e2027"
+                    "checksumValue": "4e4afd4578b19fdc9b4419887a321b7f8ee5b4fd63d7ea86a63233e3bc0a4495"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/freetype@2.14.3",
+                    "referenceLocator": "pkg:brew/freetype@2.15.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -707,6 +680,52 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
@@ -776,24 +795,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.11.2e.2.5f.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
                 "name": "qtbase",
-                "versionInfo": "6.11.2_1",
+                "versionInfo": "6.12.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/qtbase-6.11.2_1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtbase-6.12.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a548b6551cdba991562c74b2683db76fd7186e0704ad119cc4ef63d20d6c1226"
+                    "checksumValue": "8d769fec864e77b1b39a8bdd35b372930733a5e64f04cd589c041c9b00d40d0e"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.11.2_1",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "name": "qtsvg",
+                "versionInfo": "6.12.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtsvg-6.12.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "862cba1bec1a8cd9dddea1e162f38a4291cfdc1a6ef452a577ad9a34332529d4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtsvg@6.12.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
+                "name": "qtdeclarative",
+                "versionInfo": "6.12.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtdeclarative-6.12.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b7fa1ec42a52623dab7659bce2e3232aff900f724f9df03fba788c06157597e1"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/qtdeclarative@6.12.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -813,145 +878,333 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
-              },
-              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.14.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.11.2e.2.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-synergy-core"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtcanvaspainter"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-synergy-core-src"
+                "relatedSpdxElement": "SPDXRef-Archive-qtcanvaspainter-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/synergy-core",
-            "bin/synergy"
+            "bin/qcshadergen"
           ],
           "all_files": [
-            ".brew/synergy-core.rb",
+            ".brew/qtcanvaspainter.rb",
             "INSTALL_RECEIPT.json",
-            "LICENSE",
-            "README.md",
-            "Synergy.app/Contents/Info.plist",
-            "Synergy.app/Contents/MacOS/Synergy",
-            "Synergy.app/Contents/MacOS/synergy-core",
-            "Synergy.app/Contents/Resources/LICENSE",
-            "Synergy.app/Contents/Resources/LICENSE_EXCEPTION",
-            "Synergy.app/Contents/Resources/Readme.md",
-            "Synergy.app/Contents/Resources/Security.md",
-            "Synergy.app/Contents/Resources/Synergy.icns",
-            "Synergy.app/Contents/Resources/translations/deskflow_en.qm",
-            "Synergy.app/Contents/Resources/translations/deskflow_es.qm",
-            "Synergy.app/Contents/Resources/translations/deskflow_it.qm",
-            "Synergy.app/Contents/Resources/translations/deskflow_ja.qm",
-            "Synergy.app/Contents/Resources/translations/deskflow_ko.qm",
-            "Synergy.app/Contents/Resources/translations/deskflow_ru.qm",
-            "Synergy.app/Contents/Resources/translations/deskflow_zh_CN.qm",
-            "Synergy.app/Contents/Resources/translations/qt_en.qm",
-            "Synergy.app/Contents/Resources/translations/qt_es.qm",
-            "Synergy.app/Contents/Resources/translations/qt_it.qm",
-            "Synergy.app/Contents/Resources/translations/qt_ja.qm",
-            "Synergy.app/Contents/Resources/translations/qt_ko.qm",
-            "Synergy.app/Contents/Resources/translations/qt_ru.qm",
-            "Synergy.app/Contents/Resources/translations/qt_zh_CN.qm",
-            "bin/synergy",
-            "bin/synergy-core",
+            "bin/qcshadergen",
+            "include/QtCanvas2D/QtCanvas2D",
+            "include/QtCanvas2D/QtCanvas2DDepends",
+            "include/QtCanvas2D/QtCanvas2DVersion",
+            "include/QtCanvas2D/qtcanvas2dexports.h",
+            "include/QtCanvas2D/qtcanvas2dversion.h",
+            "include/QtCanvasPainter/QCanvasBoxGradient",
+            "include/QtCanvasPainter/QCanvasBoxShadow",
+            "include/QtCanvasPainter/QCanvasBrush",
+            "include/QtCanvasPainter/QCanvasConicalGradient",
+            "include/QtCanvasPainter/QCanvasCustomBrush",
+            "include/QtCanvasPainter/QCanvasGradient",
+            "include/QtCanvasPainter/QCanvasGradientStop",
+            "include/QtCanvasPainter/QCanvasGradientStops",
+            "include/QtCanvasPainter/QCanvasGridPattern",
+            "include/QtCanvasPainter/QCanvasImage",
+            "include/QtCanvasPainter/QCanvasImagePattern",
+            "include/QtCanvasPainter/QCanvasLinearGradient",
+            "include/QtCanvasPainter/QCanvasOffscreenCanvas",
+            "include/QtCanvasPainter/QCanvasPainter",
+            "include/QtCanvasPainter/QCanvasPainterFactory",
+            "include/QtCanvasPainter/QCanvasPainterItem",
+            "include/QtCanvasPainter/QCanvasPainterItemRenderer",
+            "include/QtCanvasPainter/QCanvasPainterWidget",
+            "include/QtCanvasPainter/QCanvasPath",
+            "include/QtCanvasPainter/QCanvasRadialGradient",
+            "include/QtCanvasPainter/QCanvasRhiPaintDriver",
+            "include/QtCanvasPainter/QtCanvasPainter",
+            "include/QtCanvasPainter/QtCanvasPainterDepends",
+            "include/QtCanvasPainter/QtCanvasPainterVersion",
+            "include/QtCanvasPainter/qcanvasboxgradient.h",
+            "include/QtCanvasPainter/qcanvasboxshadow.h",
+            "include/QtCanvasPainter/qcanvasbrush.h",
+            "include/QtCanvasPainter/qcanvasconicalgradient.h",
+            "include/QtCanvasPainter/qcanvascustombrush.h",
+            "include/QtCanvasPainter/qcanvasgradient.h",
+            "include/QtCanvasPainter/qcanvasgridpattern.h",
+            "include/QtCanvasPainter/qcanvasimage.h",
+            "include/QtCanvasPainter/qcanvasimagepattern.h",
+            "include/QtCanvasPainter/qcanvaslineargradient.h",
+            "include/QtCanvasPainter/qcanvasoffscreencanvas.h",
+            "include/QtCanvasPainter/qcanvaspainter.h",
+            "include/QtCanvasPainter/qcanvaspainterfactory.h",
+            "include/QtCanvasPainter/qcanvaspainteritem.h",
+            "include/QtCanvasPainter/qcanvaspainteritemrenderer.h",
+            "include/QtCanvasPainter/qcanvaspainterwidget.h",
+            "include/QtCanvasPainter/qcanvaspath.h",
+            "include/QtCanvasPainter/qcanvasradialgradient.h",
+            "include/QtCanvasPainter/qcanvasrhipaintdriver.h",
+            "include/QtCanvasPainter/qtcanvaspainterexports.h",
+            "include/QtCanvasPainter/qtcanvaspainterglobal.h",
+            "include/QtCanvasPainter/qtcanvaspainterversion.h",
+            "lib/QtCanvas2D.framework/QtCanvas2D",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/6.12.0/QtCanvas2D/private/qcanvas2dbrushvaluetype_p.h",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/6.12.0/QtCanvas2D/private/qcanvas2dcommandbuffer_p.h",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/6.12.0/QtCanvas2D/private/qcanvas2dcontext_p.h",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/6.12.0/QtCanvas2D/private/qcanvas2ditem_p.h",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/6.12.0/QtCanvas2D/private/qcanvas2ditemrenderer_p.h",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/6.12.0/QtCanvas2D/private/qcanvas2dpathvaluetype_p.h",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/6.12.0/QtCanvas2D/private/qcanvas2dtransformvaluetype_p.h",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/6.12.0/QtCanvas2D/private/qcanvas2dutils_p.h",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/6.12.0/QtCanvas2D/private/qtcanvas2dglobal_p.h",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/QtCanvas2D",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/QtCanvas2DDepends",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/QtCanvas2DVersion",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/qtcanvas2dexports.h",
+            "lib/QtCanvas2D.framework/Versions/A/Headers/qtcanvas2dversion.h",
+            "lib/QtCanvas2D.framework/Versions/A/QtCanvas2D",
+            "lib/QtCanvas2D.framework/Versions/A/Resources/Info.plist",
+            "lib/QtCanvas2D.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtCanvas2D.framework/Versions/A/Resources/QtCanvas2D.prl",
+            "lib/QtCanvasPainter.framework/QtCanvasPainter",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvasboxshadow_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvasbrush_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvascustombrush_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvasdebugcountervisualizer_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvasgradient_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvasgridpattern_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvasimage_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvasimagepattern_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvasoffscreencanvas_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvaspainter_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvaspainterfactory_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvaspainteritem_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvaspainteritemrenderer_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvaspainterwidget_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvaspath_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcanvasrhipaintdriver_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcareaallocator_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcdistancefieldglyphcache_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcpaint_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcpainterengine_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcpainterengineutils_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcpainterrhirenderer_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcrhicolorglyphcache_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qcrhidistancefieldglyphcache_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qctextlayout_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/6.12.0/QtCanvasPainter/private/qtcanvaspainterglobal_p.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasBoxGradient",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasBoxShadow",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasBrush",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasConicalGradient",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasCustomBrush",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasGradient",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasGradientStop",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasGradientStops",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasGridPattern",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasImage",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasImagePattern",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasLinearGradient",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasOffscreenCanvas",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasPainter",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasPainterFactory",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasPainterItem",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasPainterItemRenderer",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasPainterWidget",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasPath",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasRadialGradient",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QCanvasRhiPaintDriver",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QtCanvasPainter",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QtCanvasPainterDepends",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/QtCanvasPainterVersion",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvasboxgradient.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvasboxshadow.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvasbrush.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvasconicalgradient.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvascustombrush.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvasgradient.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvasgridpattern.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvasimage.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvasimagepattern.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvaslineargradient.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvasoffscreencanvas.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvaspainter.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvaspainterfactory.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvaspainteritem.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvaspainteritemrenderer.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvaspainterwidget.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvaspath.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvasradialgradient.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qcanvasrhipaintdriver.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qtcanvaspainterexports.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qtcanvaspainterglobal.h",
+            "lib/QtCanvasPainter.framework/Versions/A/Headers/qtcanvaspainterversion.h",
+            "lib/QtCanvasPainter.framework/Versions/A/QtCanvasPainter",
+            "lib/QtCanvasPainter.framework/Versions/A/Resources/Info.plist",
+            "lib/QtCanvasPainter.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtCanvasPainter.framework/Versions/A/Resources/QtCanvasPainter.prl",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtCanvasPainterTestsConfig.cmake",
+            "lib/cmake/Qt6Canvas2DPrivate/Qt6Canvas2DPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Canvas2DPrivate/Qt6Canvas2DPrivateConfig.cmake",
+            "lib/cmake/Qt6Canvas2DPrivate/Qt6Canvas2DPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6Canvas2DPrivate/Qt6Canvas2DPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Canvas2DPrivate/Qt6Canvas2DPrivateDependencies.cmake",
+            "lib/cmake/Qt6Canvas2DPrivate/Qt6Canvas2DPrivateTargets-release.cmake",
+            "lib/cmake/Qt6Canvas2DPrivate/Qt6Canvas2DPrivateTargets.cmake",
+            "lib/cmake/Qt6Canvas2DPrivate/Qt6Canvas2DPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Canvas2DPrivate/Qt6Canvas2DPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Canvas2DPrivate/Qt6Canvas2DPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6CanvasPainter/Qt6CanvasPainterAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6CanvasPainter/Qt6CanvasPainterConfig.cmake",
+            "lib/cmake/Qt6CanvasPainter/Qt6CanvasPainterConfigVersion.cmake",
+            "lib/cmake/Qt6CanvasPainter/Qt6CanvasPainterConfigVersionImpl.cmake",
+            "lib/cmake/Qt6CanvasPainter/Qt6CanvasPainterDependencies.cmake",
+            "lib/cmake/Qt6CanvasPainter/Qt6CanvasPainterTargets-release.cmake",
+            "lib/cmake/Qt6CanvasPainter/Qt6CanvasPainterTargets.cmake",
+            "lib/cmake/Qt6CanvasPainter/Qt6CanvasPainterTargetsPrecheck.cmake",
+            "lib/cmake/Qt6CanvasPainter/Qt6CanvasPainterVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6CanvasPainter/Qt6CanvasPainterVersionlessTargets.cmake",
+            "lib/cmake/Qt6CanvasPainterPrivate/Qt6CanvasPainterPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6CanvasPainterPrivate/Qt6CanvasPainterPrivateConfig.cmake",
+            "lib/cmake/Qt6CanvasPainterPrivate/Qt6CanvasPainterPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6CanvasPainterPrivate/Qt6CanvasPainterPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6CanvasPainterPrivate/Qt6CanvasPainterPrivateDependencies.cmake",
+            "lib/cmake/Qt6CanvasPainterPrivate/Qt6CanvasPainterPrivateTargets.cmake",
+            "lib/cmake/Qt6CanvasPainterPrivate/Qt6CanvasPainterPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6CanvasPainterPrivate/Qt6CanvasPainterPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6CanvasPainterPrivate/Qt6CanvasPainterPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6CanvasPainterTools/Qt6CanvasPainterMacros.cmake",
+            "lib/cmake/Qt6CanvasPainterTools/Qt6CanvasPainterToolsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6CanvasPainterTools/Qt6CanvasPainterToolsConfig.cmake",
+            "lib/cmake/Qt6CanvasPainterTools/Qt6CanvasPainterToolsConfigVersion.cmake",
+            "lib/cmake/Qt6CanvasPainterTools/Qt6CanvasPainterToolsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6CanvasPainterTools/Qt6CanvasPainterToolsDependencies.cmake",
+            "lib/cmake/Qt6CanvasPainterTools/Qt6CanvasPainterToolsTargets-release.cmake",
+            "lib/cmake/Qt6CanvasPainterTools/Qt6CanvasPainterToolsTargets.cmake",
+            "lib/cmake/Qt6CanvasPainterTools/Qt6CanvasPainterToolsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6CanvasPainterTools/Qt6CanvasPainterToolsVersionlessTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6canvas2dpluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6canvas2dpluginConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6canvas2dpluginConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6canvas2dpluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6canvas2dpluginTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6canvas2dpluginTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6canvas2dpluginTargetsPrecheck.cmake",
+            "lib/pkgconfig/Qt6CanvasPainter.pc",
             "sbom.spdx.json",
-            "sh.brew.synergy-core.plist",
-            "sh.brew.synergy-core.service"
+            "share/qt/metatypes/qt6canvas2dprivate_metatypes.json",
+            "share/qt/metatypes/qt6canvaspainter_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_canvas2d_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_canvaspainter.pri",
+            "share/qt/mkspecs/modules/qt_lib_canvaspainter_private.pri",
+            "share/qt/modules/Canvas2DPrivate.json",
+            "share/qt/modules/CanvasPainter.json",
+            "share/qt/qml/QtCanvas2D/libcanvas2dplugin.dylib",
+            "share/qt/qml/QtCanvas2D/plugins.qmltypes",
+            "share/qt/qml/QtCanvas2D/qmldir",
+            "share/qt/sbom/qtcanvaspainter-6.12.0.spdx"
           ],
-          "installed_size": 5233854
+          "installed_size": 1997721
         }
       }
     }
