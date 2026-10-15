@@ -1,15 +1,17 @@
-# 预热失败原因归档（2026-09-23）
+# 预热失败原因归档（更新于 2026-10-16）
 
 本报告最初逐一核对 2026-09-23 当日 [`prewarm-failures.txt`](../prewarm-failures.txt) 中的 94 个 Formula，依据历史 `warm-bottles` job 日志归类。2026-09-28～29 的三次手动补编（[第一批](https://github.com/happyendingll/intel-bottles/actions/runs/36398508359)、[第二批](https://github.com/happyendingll/intel-bottles/actions/runs/36435197899)、[第三批](https://github.com/happyendingll/intel-bottles/actions/runs/36532738876)）覆盖原“约 60 分钟达到 job 上限”的 43 个包：其中 39 个构建 job 成功，已从本失败报告和当前隔离文件移除；余下 4 个依据新日志重新归类，留下 55 个历史记录。
 
-2026-10-15 更新：核对[自动编译链路报告 issue](https://github.com/happyendingll/intel-bottles/issues/2) 中 2026-09-22 起的“新增失败或超时”，按要求排除 2026-10-09 那次报告。其余报告共列出 35 个不同的新增项：5 个已经在下文，30 个此前未归档。其中 `nift` 后来手动补编成功并移出隔离文件，本次不再加入；其余 29 个依据各自的 warm build job 日志加入，合计 84 个历史记录。构建 job 成功不等于 bottle 已发布。每个包只计入一个类别；类别沿用原报告顺序。包名链接直达对应 GitHub Actions job。
+2026-10-15 更新：核对[自动编译链路报告 issue](https://github.com/happyendingll/intel-bottles/issues/2) 中 2026-09-22 起的“新增失败或超时”，按要求排除 2026-10-09 那次报告。其余报告共列出 35 个不同的新增项：5 个已经在下文，30 个此前未归档。其中 `nift` 后来手动补编成功并移出隔离文件，本次不再加入；其余 29 个依据各自的 warm build job 日志加入，当时合计 84 个历史记录。
+
+2026-10-16 更新：[最近一次手动 build-bottles](https://github.com/happyendingll/intel-bottles/actions/runs/38706697355) 指定重试 9 个包。`aptos`、`gerbil-scheme`、`julia`、`nushell`、`mcp-atlassian`、`vite-plus`、`scipy` 的 bottle 均在 [wave0 发布 job](https://github.com/happyendingll/intel-bottles/actions/runs/38706697355/job/116539517082) 中验证、上传，并将 bottle 配置推送到 Homebrew fork；`mapproxy` 已有同版本 bottle，本次判定无需重建。这 8 个包从失败归档移除。`mlkit` 重试失败，按新日志重新归类。现存 76 个历史失败记录。每个包只计入一个类别；类别沿用原报告顺序。包名链接直达对应 GitHub Actions job。
 
 这是历史失败记录，不表示 Formula 现在仍缺官方 bottle，也不表示下次重试必然失败。尤其是接近 60 分钟被取消的 job，日志没有证明其源码无法编译；网络故障和 GitHub Artifact 上传故障也应与源码编译错误区分。日志不可用或输出不足时，明确标为无法确认。
 
 | 类别 | 包数 |
 |---|---:|
 | 其他：独有原因或证据不足 | 23 |
-| 依赖或构建组件不支持 Intel | 9 |
+| 依赖或构建组件不支持 Intel | 10 |
 | 缺少或版本不符的构建工具、模块或头文件 | 7 |
 | Formula 安装或链接冲突 | 5 |
 | 网络连接、解析或 TLS 校验失败 | 8 |
@@ -19,8 +21,8 @@
 | 编译后上传 Artifact 失败 | 5 |
 | 编译器不支持 `_Float16` | 2 |
 | 接近 6 小时被取消，未见编译错误 | 2 |
-| 约 60 分钟达到 job 上限 | 9 |
-| **合计** | **84** |
+| 约 60 分钟达到 job 上限 | 0 |
+| **合计** | **76** |
 
 ## 1. 其他：独有原因或证据不足（23）
 
@@ -46,14 +48,15 @@
 - [r](https://github.com/happyendingll/intel-bottles/actions/runs/37198923782/job/111426575145)：`r-app` Cask 定义调用了不支持的 `on_catalina`，尚未进入源码编译。
 - [unisonlang](https://github.com/happyendingll/intel-bottles/actions/runs/37198923782/job/111426576011)：Formula 安装过程两次抛出 `NameError: uninitialized constant ...::Timeout`。
 
-## 2. 依赖或构建组件不支持 Intel（9）
+## 2. 依赖或构建组件不支持 Intel（10）
 
-这些包的依赖 graalvm、podman 或 mlx 等明确要求 Apple Silicon，当前 Intel runner 无法满足。
+这些包的源码、依赖或构建组件要求 Apple Silicon，或缺少 Intel macOS 所需的原生二进制，当前 Intel runner 无法满足。
 
 [astra](https://github.com/happyendingll/intel-bottles/actions/runs/35437021616/job/105881407050)、[astro](https://github.com/happyendingll/intel-bottles/actions/runs/34805622247/job/103856965524)、[cljfmt](https://github.com/happyendingll/intel-bottles/actions/runs/34930853524/job/104313226484)、[crip](https://github.com/happyendingll/intel-bottles/actions/runs/35067144987/job/104700194162)、[mlx-lm](https://github.com/happyendingll/intel-bottles/actions/runs/34805622247/job/103856969124)、[rapid-mlx](https://github.com/happyendingll/intel-bottles/actions/runs/34878878555/job/104093074702)、[signal-cli](https://github.com/happyendingll/intel-bottles/actions/runs/34775066010/job/103798616434)。
 
 - [podman-compose](https://github.com/happyendingll/intel-bottles/actions/runs/38370103518/job/115205129693)：安装依赖 `podman` 时，Formula 明确要求 arm64。
 - [teleport](https://github.com/happyendingll/intel-bottles/actions/runs/37198923782/job/111426575863)：构建 Web 资源时，`@pnpm/exe@11.20.0` 报告没有 `darwin-x64` 原生二进制。
+- [mlkit](https://github.com/happyendingll/intel-bottles/actions/runs/38706697355/job/116415532401)：手动补编两次均在 `./configure` 阶段报 `macOS requires Apple Silicon and a native arm64 shell`，没有进入源码编译。
 
 ## 3. 缺少或版本不符的构建工具、模块或头文件（7）
 
@@ -114,16 +117,6 @@
 
 两项都接近 GitHub 托管 runner 的 6 小时上限，但日志仅能确认“被取消”，不能据此断言源码无法编译。
 
-## 12. 约 60 分钟达到 job 上限（9）
+## 12. 约 60 分钟达到 job 上限（0）
 
-原有 43 项中，39 项的手动补编 job 成功，余下 4 项已依据新日志移至上述类别。以下新增 job 都在约 60 分钟时被取消；单次超时本身不能证明源码编译失败。
-
-- [aptos](https://github.com/happyendingll/intel-bottles/actions/runs/36145982275/job/108107637728)：`cargo install --path=crates/aptos --profile=cli` 运行中被取消。
-- [gerbil-scheme](https://github.com/happyendingll/intel-bottles/actions/runs/36217678552/job/108336963407)：`make` 运行中被取消。
-- [mlkit](https://github.com/happyendingll/intel-bottles/actions/runs/36217678552/job/108336964808)：已进入 `make mlkit_libs`，随后被取消。
-- [julia](https://github.com/happyendingll/intel-bottles/actions/runs/36353990178/job/108718201195)：源码 `make` 运行中被取消。
-- [nushell](https://github.com/happyendingll/intel-bottles/actions/runs/36353990178/job/108718201897)：`cargo install` 多次运行，最终被取消；主日志没有明确的源码错误。
-- [mcp-atlassian](https://github.com/happyendingll/intel-bottles/actions/runs/36825948985/job/110251996379)：pip 安装依赖期间被取消；主日志没有明确的源码错误。
-- [vite-plus](https://github.com/happyendingll/intel-bottles/actions/runs/36993032606/job/110794187427)：源码编译完成，正在制作 bottle 时被取消；取消后 Artifact 上传成功，但 job 仍为取消，不能视作 bottle 已发布。
-- [mapproxy](https://github.com/happyendingll/intel-bottles/actions/runs/37099086050/job/111135092082)：已生成 bottle 文件，在 job 上限附近被取消；取消后的 Artifact 上传成功，不能据此认定发布成功。
-- [scipy](https://github.com/happyendingll/intel-bottles/actions/runs/38247113449/job/114804385926)：pip 安装构建期间被取消。
+原有 43 项中，39 项的手动补编 job 成功，余下 4 项已依据新日志移至上述类别。2026-10-15 手动重试前，本分类另有 9 项：7 项完成 bottle 发布，`mapproxy` 已有同版本 bottle，`mlkit` 则确认不支持 Intel 并移至第 2 类。本分类暂时没有未解决项；单次超时本身不能证明源码编译失败。
