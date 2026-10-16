@@ -1,0 +1,93 @@
+{
+  "toxiproxy": {
+    "formula": {
+      "name": "toxiproxy",
+      "pkg_version": "2.13.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/toxiproxy.rb",
+      "tap_git_path": "Formula/t/toxiproxy.rb",
+      "tap_git_revision": "763fa5b6693d0f49fd29242baaa7c77877d9154d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "TCP proxy to simulate network & system conditions for chaos & resiliency testing",
+      "license": "MIT",
+      "homepage": "https://github.com/shopify/toxiproxy"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-16T14:49:36Z",
+      "tags": {
+        "sequoia": {
+          "filename": "toxiproxy-2.13.0.sequoia.bottle.tar.gz",
+          "local_filename": "toxiproxy--2.13.0.sequoia.bottle.tar.gz",
+          "sha256": "5b941cba8f9d43e3a68a09d1be80f0d178ac055d1bbb9b99e6efe8c0b1d39f9a",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "sh.brew.toxiproxy.plist",
+              "sh.brew.toxiproxy.service"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792000280,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-toxiproxy-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/toxiproxy-cli",
+            "bin/toxiproxy-server"
+          ],
+          "all_files": [
+            ".brew/toxiproxy.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/toxiproxy-cli",
+            "bin/toxiproxy-server",
+            "sbom.spdx.json",
+            "sh.brew.toxiproxy.plist",
+            "sh.brew.toxiproxy.service"
+          ],
+          "installed_size": 23572840
+        }
+      }
+    }
+  }
+}
