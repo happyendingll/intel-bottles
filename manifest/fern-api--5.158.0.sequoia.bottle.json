@@ -1,32 +1,35 @@
 {
-  "varlock": {
+  "fern-api": {
     "formula": {
-      "name": "varlock",
-      "pkg_version": "1.22.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/v/varlock.rb",
-      "tap_git_path": "Formula/v/varlock.rb",
-      "tap_git_revision": "438fe5cff97d254283696395506ffb38e023e9c0",
+      "name": "fern-api",
+      "pkg_version": "5.158.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/fern-api.rb",
+      "tap_git_path": "Formula/f/fern-api.rb",
+      "tap_git_revision": "05d42d2aabe8d025492bb558b2aca5b3197a08a2",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Add declarative schema to .env files using @env-spec decorator comments",
-      "license": "MIT",
-      "homepage": "https://varlock.dev"
+      "desc": "Stripe-level SDKs and Docs for your API",
+      "license": "Apache-2.0",
+      "homepage": "https://buildwithfern.com/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
-      "cellar": "any_skip_relocation",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-12T05:15:50Z",
+      "date": "2026-10-16T11:16:31Z",
       "tags": {
         "sequoia": {
-          "filename": "varlock-1.22.0.sequoia.bottle.tar.gz",
-          "local_filename": "varlock--1.22.0.sequoia.bottle.tar.gz",
-          "sha256": "d71917f26cd0ea8543f04f7030aa9429604665b3ead4072f278f076d86628f1a",
+          "filename": "fern-api-5.158.0.sequoia.bottle.tar.gz",
+          "local_filename": "fern-api--5.158.0.sequoia.bottle.tar.gz",
+          "sha256": "4003e921301024f104fc0af7cc2eb1c35d896da3ca12b77f7073acb55f3ec9d4",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
-              "libexec/lib/node_modules/varlock/bin/cli.js"
+              "libexec/lib/node_modules/fern-api/cli.cjs",
+              "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/cli.js"
             ],
-            "linkage_files": [],
+            "linkage_files": [
+              "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml-darwin-x64/baml.darwin-x64.node"
+            ],
             "binary_relocation_files": [],
             "source_modified_time": 499162500,
             "compiler": "clang",
@@ -60,19 +63,19 @@
               },
               {
                 "full_name": "simdutf",
-                "version": "9.2.1",
-                "revision": 1,
+                "version": "9.3.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.2.1_1",
+                "pkg_version": "9.3.0",
                 "declared_directly": false,
-                "compatibility_version": 6
+                "compatibility_version": 7
               },
               {
                 "full_name": "ada-url",
                 "version": "4.0.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.0",
+                "pkg_version": "4.0.0_1",
                 "declared_directly": false,
                 "compatibility_version": 2
               },
@@ -142,9 +145,9 @@
               {
                 "full_name": "merve",
                 "version": "1.2.2",
-                "revision": 3,
+                "revision": 4,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.2.2_3",
+                "pkg_version": "1.2.2_4",
                 "declared_directly": false
               },
               {
@@ -174,10 +177,10 @@
               },
               {
                 "full_name": "simdjson",
-                "version": "5.0.3",
+                "version": "5.0.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.0.3",
+                "pkg_version": "5.0.5",
                 "declared_directly": false
               },
               {
@@ -244,10 +247,10 @@
               },
               {
                 "full_name": "node",
-                "version": "26.11.1",
+                "version": "26.12.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.11.1",
+                "pkg_version": "26.12.0",
                 "declared_directly": true
               }
             ],
@@ -264,66 +267,66 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-simdutf-9.2e.2.2e.1.5f.1",
-              "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0",
+              "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-hdrhistogram.5f.c-0.2e.12.2e.0",
               "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
               "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
-              "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.3",
+              "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.4",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
-              "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.5",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-node-26.2e.11.2e.1",
+              "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.2.2e.1.5f.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.0",
                 "name": "simdutf",
-                "versionInfo": "9.2.1_1",
+                "versionInfo": "9.3.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/simdutf-9.2.1_1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/simdutf-9.3.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3d04cac42b6ba30f6dd4480f379dead4fceaaa8a2d8961c7ebb071d0f07aa0e9"
+                    "checksumValue": "5a8578e204e63808bb67cd8824152eaa0e1a82207ad84ced484711ed9dc68a53"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdutf@9.2.1_1",
+                    "referenceLocator": "pkg:brew/simdutf@9.3.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
                 "name": "ada-url",
-                "versionInfo": "4.0.0",
+                "versionInfo": "4.0.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/ada-url-4.0.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/ada-url-4.0.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3b10ab8de8116ff9373fc4a50537b8626c70a43f77e2acfbcf27972e3ad097df"
+                    "checksumValue": "1cef79ad2d7c7d66ff9153f5a4ac7bd7b7cecbfb4f87e2a53d16c0a2508f5982"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ada-url@4.0.0",
+                    "referenceLocator": "pkg:brew/ada-url@4.0.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -398,24 +401,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.4",
                 "name": "merve",
-                "versionInfo": "1.2.2_3",
+                "versionInfo": "1.2.2_4",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/merve-1.2.2_3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/merve-1.2.2_4.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "f82e08219f89cc7751616adeeb0a94aeeae31e68e7247608e5361f6ffe405f91"
+                    "checksumValue": "baf09b2cff528621066d154dc17f266c2f6420804f541aaf5eecab9d0c889ec0"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/merve@1.2.2_3",
+                    "referenceLocator": "pkg:brew/merve@1.2.2_4",
                     "referenceType": "purl"
                   }
                 ]
@@ -467,24 +470,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.5",
                 "name": "simdjson",
-                "versionInfo": "5.0.3",
+                "versionInfo": "5.0.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/simdjson-5.0.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/simdjson-5.0.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "92b2a9f58aedc840c7f8e3ac65275caa6f9f75ecf25af37d0602de3a996ebf34"
+                    "checksumValue": "1a311cd6de85730c10f52d36ea0e52ff5e016c99c74a3ae427a362bbdab2a328"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdjson@5.0.3",
+                    "referenceLocator": "pkg:brew/simdjson@5.0.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -605,24 +608,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.11.2e.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.0",
                 "name": "node",
-                "versionInfo": "26.11.1",
+                "versionInfo": "26.12.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/node-26.11.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/node-26.12.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3a88f1bd3946a069aa96b87b2579ab6bc6f2375a50943fb64b0e18d1ff2d3b53"
+                    "checksumValue": "92a0467cd9d9de13c08a68e6f34252a63d3ccf5a07cd7340c073823f49b7983b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/node@26.11.1",
+                    "referenceLocator": "pkg:brew/node@26.12.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -642,275 +645,133 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.2.2e.1.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-hdrhistogram.5f.c-0.2e.12.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.11.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-varlock"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-varlock-src"
+                "relatedSpdxElement": "SPDXRef-Archive-fern-api-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/varlock"
+            "bin/fern"
           ],
           "all_files": [
-            ".brew/varlock.rb",
+            ".brew/fern-api.rb",
             "INSTALL_RECEIPT.json",
-            "README.md",
-            "bin/varlock",
-            "libexec/bin/varlock",
-            "libexec/lib/node_modules/varlock/BUNDLED_ICONS_LICENSES.md",
-            "libexec/lib/node_modules/varlock/README.md",
-            "libexec/lib/node_modules/varlock/bin/cli.js",
-            "libexec/lib/node_modules/varlock/dist/audit.command-DNkkwJ7g.mjs",
-            "libexec/lib/node_modules/varlock/dist/audit.command-DNkkwJ7g.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/auto-load.d.mts",
-            "libexec/lib/node_modules/varlock/dist/auto-load.mjs",
-            "libexec/lib/node_modules/varlock/dist/auto-load.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/cache-CHzq-mEx.mjs",
-            "libexec/lib/node_modules/varlock/dist/cache-CHzq-mEx.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/cache.command-Bzmw7uf-.mjs",
-            "libexec/lib/node_modules/varlock/dist/cache.command-Bzmw7uf-.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/check-bun-version-0JcxH97I.mjs",
-            "libexec/lib/node_modules/varlock/dist/check-bun-version-0JcxH97I.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/child-exit-D2fQSLNA.mjs",
-            "libexec/lib/node_modules/varlock/dist/child-exit-D2fQSLNA.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/cli/cli-executable.d.mts",
-            "libexec/lib/node_modules/varlock/dist/cli/cli-executable.mjs",
-            "libexec/lib/node_modules/varlock/dist/cli/cli-executable.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/cli-child-marker-BjEHegcL.mjs",
-            "libexec/lib/node_modules/varlock/dist/cli-child-marker-BjEHegcL.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/codegen.command-DKrMVqne.mjs",
-            "libexec/lib/node_modules/varlock/dist/codegen.command-DKrMVqne.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/debug-CxbRqOuE.mjs",
-            "libexec/lib/node_modules/varlock/dist/debug-CxbRqOuE.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/detect-runtime-CQeZFGPb.cjs",
-            "libexec/lib/node_modules/varlock/dist/detect-runtime-CQeZFGPb.cjs.map",
-            "libexec/lib/node_modules/varlock/dist/detect-runtime-WB-lS6-N.mjs",
-            "libexec/lib/node_modules/varlock/dist/detect-runtime-WB-lS6-N.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/dotenv-compat.d.mts",
-            "libexec/lib/node_modules/varlock/dist/dotenv-compat.mjs",
-            "libexec/lib/node_modules/varlock/dist/duration-BtxvOG1Z.mjs",
-            "libexec/lib/node_modules/varlock/dist/duration-BtxvOG1Z.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/empty-config-check-Dt6zpdrJ.mjs",
-            "libexec/lib/node_modules/varlock/dist/empty-config-check-Dt6zpdrJ.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/encrypt.command-BIECGP-G.mjs",
-            "libexec/lib/node_modules/varlock/dist/encrypt.command-BIECGP-G.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/env-DaeLXABy.mjs",
-            "libexec/lib/node_modules/varlock/dist/env-DaeLXABy.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/env-NoeOQ3_I.cjs",
-            "libexec/lib/node_modules/varlock/dist/env-NoeOQ3_I.cjs.map",
-            "libexec/lib/node_modules/varlock/dist/env-graph-B_99dQaZ.mjs",
-            "libexec/lib/node_modules/varlock/dist/env-graph-B_99dQaZ.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/env-graph-DCBoLztE.d.mts",
-            "libexec/lib/node_modules/varlock/dist/env-source-fingerprint-lMFwkB8f.mjs",
-            "libexec/lib/node_modules/varlock/dist/env-source-fingerprint-lMFwkB8f.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/exec-helpers-CITF4Iui.mjs",
-            "libexec/lib/node_modules/varlock/dist/exec-helpers-CITF4Iui.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/explain.command-C7hUSf5y.mjs",
-            "libexec/lib/node_modules/varlock/dist/explain.command-C7hUSf5y.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/flatten.command-1Ktu859r.mjs",
-            "libexec/lib/node_modules/varlock/dist/flatten.command-1Ktu859r.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/freeze.command-BfN0z96V.mjs",
-            "libexec/lib/node_modules/varlock/dist/freeze.command-BfN0z96V.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/frozen-env-cli-6l6pP1eB.mjs",
-            "libexec/lib/node_modules/varlock/dist/frozen-env-cli-6l6pP1eB.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/frozen-env-file-oA7U841t.mjs",
-            "libexec/lib/node_modules/varlock/dist/frozen-env-file-oA7U841t.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/generate-key.command-C5JT3vbr.mjs",
-            "libexec/lib/node_modules/varlock/dist/generate-key.command-C5JT3vbr.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/git-utils-ILDxkHaz.mjs",
-            "libexec/lib/node_modules/varlock/dist/git-utils-ILDxkHaz.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/gunshi-type-utils-lgKhaP9M.mjs",
-            "libexec/lib/node_modules/varlock/dist/help.command-Dw3n1efs.mjs",
-            "libexec/lib/node_modules/varlock/dist/help.command-Dw3n1efs.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/index.d.mts",
-            "libexec/lib/node_modules/varlock/dist/index.mjs",
-            "libexec/lib/node_modules/varlock/dist/index.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/init.command-CHF3daDt.mjs",
-            "libexec/lib/node_modules/varlock/dist/init.command-CHF3daDt.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/injected-env-reuse-ELesCac9.mjs",
-            "libexec/lib/node_modules/varlock/dist/injected-env-reuse-ELesCac9.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/install-detection-VYSbMdZg.mjs",
-            "libexec/lib/node_modules/varlock/dist/install-detection-VYSbMdZg.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/install-plugin.command-DhWq39fU.mjs",
-            "libexec/lib/node_modules/varlock/dist/install-plugin.command-DhWq39fU.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/item-filter-DXoeWmPb.mjs",
-            "libexec/lib/node_modules/varlock/dist/item-filter-DXoeWmPb.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/keychain.command-CU9ga0GP.mjs",
-            "libexec/lib/node_modules/varlock/dist/keychain.command-CU9ga0GP.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/lib/exec-sync-varlock.cjs",
-            "libexec/lib/node_modules/varlock/dist/lib/exec-sync-varlock.cjs.map",
-            "libexec/lib/node_modules/varlock/dist/lib/exec-sync-varlock.d.cts",
-            "libexec/lib/node_modules/varlock/dist/lib/exec-sync-varlock.d.mts",
-            "libexec/lib/node_modules/varlock/dist/lib/exec-sync-varlock.mjs",
-            "libexec/lib/node_modules/varlock/dist/lib/exec-sync-varlock.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/lib-9pgAiMKV.mjs",
-            "libexec/lib/node_modules/varlock/dist/lib-9pgAiMKV.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/load-graph-BaWGWLZK.mjs",
-            "libexec/lib/node_modules/varlock/dist/load-graph-BaWGWLZK.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/load.command-D3OcIfEp.mjs",
-            "libexec/lib/node_modules/varlock/dist/load.command-D3OcIfEp.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/local-encrypt-DBbx1B5c.mjs",
-            "libexec/lib/node_modules/varlock/dist/local-encrypt-DBbx1B5c.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/lock.command-DY6CLGGw.mjs",
-            "libexec/lib/node_modules/varlock/dist/lock.command-DY6CLGGw.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/noop-cache-store-DTYI4j1D.mjs",
-            "libexec/lib/node_modules/varlock/dist/noop-cache-store-DTYI4j1D.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/package-json-config-B53clvqR.mjs",
-            "libexec/lib/node_modules/varlock/dist/package-json-config-B53clvqR.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/patch-console-BmcwkSIE.mjs",
-            "libexec/lib/node_modules/varlock/dist/patch-console-BmcwkSIE.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/patch-console-Dxss5Efy.d.mts",
-            "libexec/lib/node_modules/varlock/dist/plugin-context-DWgJArxE.mjs",
-            "libexec/lib/node_modules/varlock/dist/plugin-context-DWgJArxE.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/plugin-lib.d.mts",
-            "libexec/lib/node_modules/varlock/dist/plugin-lib.mjs",
-            "libexec/lib/node_modules/varlock/dist/plugin-lib.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/printenv.command-DYLyXJ1n.mjs",
-            "libexec/lib/node_modules/varlock/dist/printenv.command-DYLyXJ1n.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/prompts-d0fqfZRq.mjs",
-            "libexec/lib/node_modules/varlock/dist/prompts-d0fqfZRq.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/proxy.command-BQB5hiRn.mjs",
-            "libexec/lib/node_modules/varlock/dist/proxy.command-BQB5hiRn.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/redact-stream-BjpxXrDA.mjs",
-            "libexec/lib/node_modules/varlock/dist/redact-stream-BjpxXrDA.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/redaction-0_hs1EgL.mjs",
-            "libexec/lib/node_modules/varlock/dist/redaction-0_hs1EgL.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/resolution-context-4xJGHD54.mjs",
-            "libexec/lib/node_modules/varlock/dist/resolution-context-4xJGHD54.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/reveal.command-BtXGIKt_.mjs",
-            "libexec/lib/node_modules/varlock/dist/reveal.command-BtXGIKt_.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/rolldown-runtime-VH7oDXx4.cjs",
-            "libexec/lib/node_modules/varlock/dist/run.command-BhUOC1Eo.mjs",
-            "libexec/lib/node_modules/varlock/dist/run.command-BhUOC1Eo.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/runtime/crypto.cjs",
-            "libexec/lib/node_modules/varlock/dist/runtime/crypto.cjs.map",
-            "libexec/lib/node_modules/varlock/dist/runtime/crypto.d.cts",
-            "libexec/lib/node_modules/varlock/dist/runtime/crypto.d.mts",
-            "libexec/lib/node_modules/varlock/dist/runtime/crypto.mjs",
-            "libexec/lib/node_modules/varlock/dist/runtime/crypto.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/runtime/env.cjs",
-            "libexec/lib/node_modules/varlock/dist/runtime/env.d.cts",
-            "libexec/lib/node_modules/varlock/dist/runtime/env.d.mts",
-            "libexec/lib/node_modules/varlock/dist/runtime/env.mjs",
-            "libexec/lib/node_modules/varlock/dist/runtime/init-edge.cjs",
-            "libexec/lib/node_modules/varlock/dist/runtime/init-edge.d.cts",
-            "libexec/lib/node_modules/varlock/dist/runtime/init-server.cjs",
-            "libexec/lib/node_modules/varlock/dist/runtime/init-server.d.cts",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-console.cjs",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-console.cjs.map",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-console.d.cts",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-console.d.mts",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-console.mjs",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-response.d.mts",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-response.mjs",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-response.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-server-response.cjs",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-server-response.cjs.map",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-server-response.d.cts",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-server-response.d.mts",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-server-response.mjs",
-            "libexec/lib/node_modules/varlock/dist/runtime/patch-server-response.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/scan.command-CcFOaMhD.mjs",
-            "libexec/lib/node_modules/varlock/dist/scan.command-CcFOaMhD.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/telemetry.command-sqI3m-6Z.mjs",
-            "libexec/lib/node_modules/varlock/dist/telemetry.command-sqI3m-6Z.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/ttl-parser-2JW8fgXE.mjs",
-            "libexec/lib/node_modules/varlock/dist/ttl-parser-2JW8fgXE.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/typegen.command-DC6fU_ms.mjs",
-            "libexec/lib/node_modules/varlock/dist/typegen.command-DC6fU_ms.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/well-known-env-keys-CMBs3RIw.mjs",
-            "libexec/lib/node_modules/varlock/dist/well-known-env-keys-CMBs3RIw.mjs.map",
-            "libexec/lib/node_modules/varlock/dist/wsl-detect-Ouxnf7V7.mjs",
-            "libexec/lib/node_modules/varlock/dist/wsl-detect-Ouxnf7V7.mjs.map",
-            "libexec/lib/node_modules/varlock/node_modules/@varlock/native-helper-darwin/README.md",
-            "libexec/lib/node_modules/varlock/node_modules/@varlock/native-helper-darwin/VarlockEnclave.app/Contents/CodeResources",
-            "libexec/lib/node_modules/varlock/node_modules/@varlock/native-helper-darwin/VarlockEnclave.app/Contents/Info.plist",
-            "libexec/lib/node_modules/varlock/node_modules/@varlock/native-helper-darwin/VarlockEnclave.app/Contents/MacOS/varlock-local-encrypt",
-            "libexec/lib/node_modules/varlock/node_modules/@varlock/native-helper-darwin/VarlockEnclave.app/Contents/Resources/AppIcon.icns",
-            "libexec/lib/node_modules/varlock/node_modules/@varlock/native-helper-darwin/VarlockEnclave.app/Contents/Resources/varlock-menu-locked.pdf",
-            "libexec/lib/node_modules/varlock/node_modules/@varlock/native-helper-darwin/VarlockEnclave.app/Contents/Resources/varlock-menu-unlocked.pdf",
-            "libexec/lib/node_modules/varlock/node_modules/@varlock/native-helper-darwin/VarlockEnclave.app/Contents/_CodeSignature/CodeResources",
-            "libexec/lib/node_modules/varlock/node_modules/@varlock/native-helper-darwin/package.json",
-            "libexec/lib/node_modules/varlock/package.json",
-            "libexec/lib/node_modules/varlock/skills/varlock/SKILL.md",
+            "LICENSE",
+            "bin/fern",
+            "libexec/bin/fern",
+            "libexec/lib/node_modules/fern-api/LICENSE",
+            "libexec/lib/node_modules/fern-api/cli.cjs",
+            "libexec/lib/node_modules/fern-api/node_modules/.bin/baml",
+            "libexec/lib/node_modules/fern-api/node_modules/.bin/baml-cli",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/LICENSE",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/README.md",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/async_context_vars.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/async_context_vars.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/browser.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/browser.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/cli.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/errors.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/errors.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/index.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/index.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/logging.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/logging.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/native.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/native.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/package.json",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/safe_imports.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/safe_imports.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/stream.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/stream.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/type_builder.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/type_builder.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml-darwin-x64/README.md",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml-darwin-x64/baml.darwin-x64.node",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml-darwin-x64/package.json",
+            "libexec/lib/node_modules/fern-api/node_modules/@scarf/scarf/LICENSE",
+            "libexec/lib/node_modules/fern-api/node_modules/@scarf/scarf/README.md",
+            "libexec/lib/node_modules/fern-api/node_modules/@scarf/scarf/package.json",
+            "libexec/lib/node_modules/fern-api/node_modules/@scarf/scarf/report.js",
+            "libexec/lib/node_modules/fern-api/package.json",
             "sbom.spdx.json"
           ],
-          "installed_size": 5762232
+          "installed_size": 74160084
         }
       }
     }

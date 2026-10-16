@@ -1,32 +1,32 @@
 {
-  "supabase": {
+  "vacuum": {
     "formula": {
-      "name": "supabase",
-      "pkg_version": "2.120.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/supabase.rb",
-      "tap_git_path": "Formula/s/supabase.rb",
-      "tap_git_revision": "e8c4b49f7a87f21d514c6d9a1c730eecdbc15eb5",
+      "name": "vacuum",
+      "pkg_version": "0.33.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/v/vacuum.rb",
+      "tap_git_path": "Formula/v/vacuum.rb",
+      "tap_git_revision": "05d42d2aabe8d025492bb558b2aca5b3197a08a2",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Postgres development platform",
+      "desc": "World's fastest OpenAPI & Swagger linter",
       "license": "MIT",
-      "homepage": "https://supabase.com/docs/reference/cli/about"
+      "homepage": "https://quobix.com/vacuum/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-07T01:56:31Z",
+      "date": "2026-10-16T12:17:35Z",
       "tags": {
         "sequoia": {
-          "filename": "supabase-2.120.0.sequoia.bottle.tar.gz",
-          "local_filename": "supabase--2.120.0.sequoia.bottle.tar.gz",
-          "sha256": "bee61b3634470ed0ee143bf8201ce1d3090e61050c25170f6882629688bf5c1a",
+          "filename": "vacuum-0.33.1.sequoia.bottle.tar.gz",
+          "local_filename": "vacuum--0.33.1.sequoia.bottle.tar.gz",
+          "sha256": "88e914194efbf28714420296ca65b2547a90213be1692d15abcf1b6ec23315cf",
           "tab": {
-            "homebrew_version": "7.0.8",
+            "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1791303058,
+            "source_modified_time": 1792064738,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -62,23 +62,26 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-supabase-src"
+                "relatedSpdxElement": "SPDXRef-Archive-vacuum-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/supabase"
+            "bin/vacuum"
           ],
           "all_files": [
-            ".brew/supabase.rb",
+            ".brew/vacuum.rb",
             "INSTALL_RECEIPT.json",
+            "LICENSE",
             "README.md",
-            "bin/supabase",
-            "libexec/supabase",
-            "libexec/supabase-go",
-            "sbom.spdx.json"
+            "bin/vacuum",
+            "etc/bash_completion.d/vacuum",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/vacuum.fish",
+            "share/pwsh/completions/_vacuum.ps1",
+            "share/zsh/site-functions/_vacuum"
           ],
-          "installed_size": 129249762
+          "installed_size": 73290466
         }
       }
     }

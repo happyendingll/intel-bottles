@@ -2,45 +2,36 @@
   "chronograf": {
     "formula": {
       "name": "chronograf",
-      "pkg_version": "1.11.5",
+      "pkg_version": "1.11.6",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/c/chronograf.rb",
       "tap_git_path": "Formula/c/chronograf.rb",
-      "tap_git_revision": "0009dac952d7c4894752a034bb875a99fb5c7d87",
+      "tap_git_revision": "05d42d2aabe8d025492bb558b2aca5b3197a08a2",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Open source monitoring and visualization UI for the TICK stack",
       "license": "AGPL-3.0-or-later",
       "homepage": "https://docs.influxdata.com/chronograf/latest/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-01T07:09:34Z",
+      "date": "2026-10-16T11:23:30Z",
       "tags": {
         "sequoia": {
-          "filename": "chronograf-1.11.5.sequoia.bottle.tar.gz",
-          "local_filename": "chronograf--1.11.5.sequoia.bottle.tar.gz",
-          "sha256": "51f609a3c997e3b13e58e21f45be8dc13d2f7b7320167a7a6dbebf7511154b30",
+          "filename": "chronograf-1.11.6.sequoia.bottle.tar.gz",
+          "local_filename": "chronograf--1.11.6.sequoia.bottle.tar.gz",
+          "sha256": "7a708498edabcf574e7f3ee3837f55494fe64e1231afea675dcaf66cdd4f1db7",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.9",
             "changed_files": [
               "sh.brew.chronograf.plist",
               "sh.brew.chronograf.service"
             ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1789549222,
+            "source_modified_time": 1792044521,
             "compiler": "clang",
             "runtime_dependencies": [
-              {
-                "full_name": "mpdecimal",
-                "version": "4.0.1",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "4.0.1",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
               {
                 "full_name": "ca-certificates",
                 "version": "2026-09-25",
@@ -51,13 +42,21 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.5",
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.5",
+                "pkg_version": "4.0.1",
                 "declared_directly": false,
                 "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": false
               },
               {
                 "full_name": "readline",
@@ -70,10 +69,10 @@
               },
               {
                 "full_name": "sqlite",
-                "version": "3.53.4",
+                "version": "3.54.0",
                 "revision": 0,
-                "bottle_rebuild": 1,
-                "pkg_version": "3.53.4",
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -104,28 +103,27 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "python@3.14",
-                "version": "3.14.7",
+                "full_name": "python@3.15",
+                "version": "3.15.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.14.7",
-                "declared_directly": false,
-                "compatibility_version": 1
+                "pkg_version": "3.15.0",
+                "declared_directly": false
               },
               {
                 "full_name": "influxdb",
-                "version": "3.11.5",
+                "version": "3.12.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.11.5",
+                "pkg_version": "3.12.1",
                 "declared_directly": true
               },
               {
                 "full_name": "kapacitor",
-                "version": "1.8.7",
+                "version": "1.8.8",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.8.7",
+                "pkg_version": "1.8.8",
                 "declared_directly": true
               }
             ],
@@ -142,43 +140,20 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-              "SPDXRef-Package-SPDXRef-readline-8.3.6",
-              "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
-              "SPDXRef-Package-SPDXRef-influxdb-3.11.5",
-              "SPDXRef-Package-SPDXRef-kapacitor-1.8.7",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
+              "SPDXRef-Package-SPDXRef-influxdb-3.2e.12.2e.1",
+              "SPDXRef-Package-SPDXRef-kapacitor-1.2e.8.2e.8",
               "SPDXRef-Compiler"
             ],
             "packages": [
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
-                "name": "mpdecimal",
-                "versionInfo": "4.0.1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "name": "ca-certificates",
@@ -203,30 +178,53 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
-                "name": "openssl@3",
-                "versionInfo": "3.6.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.5.sequoia.bottle.tar.gz",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9ed9599d2df434ad6706bb4065ab5cf758030b4d9b461ae96f9677fa7a500a0f"
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.5",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "name": "readline",
                 "versionInfo": "8.3.6",
                 "filesAnalyzed": false,
@@ -249,30 +247,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
                 "name": "sqlite",
-                "versionInfo": "3.53.4",
+                "versionInfo": "3.54.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "blessing",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/sqlite/blobs/sha256:f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/sqlite-3.54.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "f6752e93c0ddf55d10ae3aaea01d280be9632855649caa87daf1371fa6e26eb4"
+                    "checksumValue": "952154941d6bc3fc5304e11a048bfb8386e180be16fec04b799cccf543bc1667"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sqlite@3.53.4",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -295,7 +293,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -318,7 +316,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -341,70 +339,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
-                "name": "python@3.14",
-                "versionInfo": "3.14.7",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
+                "name": "python@3.15",
+                "versionInfo": "3.15.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/python/3.14/blobs/sha256:5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/python%403.15-3.15.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5ba706261f57e69d8aeabc910c06862c00224dba129925c2d8a73af9b0f88fdb"
+                    "checksumValue": "d665a0f135591a60e1801430f2beadd2b4edb4daa048f48acf6bd61ff8a8ad3f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.14@3.14.7",
+                    "referenceLocator": "pkg:brew/python%403.15@3.15.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-influxdb-3.11.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-influxdb-3.2e.12.2e.1",
                 "name": "influxdb",
-                "versionInfo": "3.11.5",
+                "versionInfo": "3.12.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/influxdb-3.11.5.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/influxdb-3.12.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "578bbf155f9fb4e9b98f806c68a19fdf0099778868ef9f7ddf20e9eb40689f92"
+                    "checksumValue": "f8f50101bc71bb500b65b4aae92dacc6d87bf5ee3c7ba9fda2447673911a97e8"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/influxdb@3.11.5",
+                    "referenceLocator": "pkg:brew/influxdb@3.12.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-kapacitor-1.8.7",
+                "SPDXID": "SPDXRef-Package-SPDXRef-kapacitor-1.2e.8.2e.8",
                 "name": "kapacitor",
-                "versionInfo": "1.8.7",
+                "versionInfo": "1.8.8",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/kapacitor-1.8.7.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/kapacitor-1.8.8.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "66fa5fea9a55c51612c7309c248a8243e025bce1e43e2e8501826018856b5a76"
+                    "checksumValue": "27a3d24c74c22c0dcaa4ae64dbcea89ef5ddadcb54fbacbd6af66473f9d2ad32"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/kapacitor@1.8.7",
+                    "referenceLocator": "pkg:brew/kapacitor@1.8.8",
                     "referenceType": "purl"
                   }
                 ]
@@ -424,57 +422,57 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.0.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-chronograf"
-              },
-              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-chronograf"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-chronograf"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-chronograf"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.53.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-chronograf"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-chronograf"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-chronograf"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-chronograf"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python@3.14-3.14.7",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-chronograf"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-influxdb-3.11.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-chronograf"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-kapacitor-1.8.7",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-influxdb-3.2e.12.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-chronograf"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-kapacitor-1.2e.8.2e.8",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-chronograf"
               },
@@ -501,7 +499,7 @@
             "sh.brew.chronograf.plist",
             "sh.brew.chronograf.service"
           ],
-          "installed_size": 133586053
+          "installed_size": 133614656
         }
       }
     }
