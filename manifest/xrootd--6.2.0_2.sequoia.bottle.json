@@ -2,25 +2,25 @@
   "xrootd": {
     "formula": {
       "name": "xrootd",
-      "pkg_version": "6.2.0_1",
+      "pkg_version": "6.2.0_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/x/xrootd.rb",
       "tap_git_path": "Formula/x/xrootd.rb",
-      "tap_git_revision": "2e736d3ea76f6195fd8671a85721cbaf904728ba",
+      "tap_git_revision": "5268c4da9e9397e145dfb150a31e2486096c67c3",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "High performance, scalable, fault-tolerant access to data",
       "license": "LGPL-3.0-or-later",
       "homepage": "https://xrootd.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-10T03:45:40Z",
+      "date": "2026-10-16T06:51:50Z",
       "tags": {
         "sequoia": {
-          "filename": "xrootd-6.2.0_1.sequoia.bottle.tar.gz",
-          "local_filename": "xrootd--6.2.0_1.sequoia.bottle.tar.gz",
-          "sha256": "1dcac7f7bbc5c4f17f3fe347605e261a0c10f1d7d208dec638d45dd7ffeb46a3",
+          "filename": "xrootd-6.2.0_2.sequoia.bottle.tar.gz",
+          "local_filename": "xrootd--6.2.0_2.sequoia.bottle.tar.gz",
+          "sha256": "25a62f8c52cf3daaf5e1d899d4248bf82970e34a53aca3d6504c18fb9fe4532a",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -80,6 +80,7 @@
                 "full_name": "davix",
                 "version": "0.9.0",
                 "revision": 1,
+                "bottle_rebuild": 0,
                 "pkg_version": "0.9.0_1",
                 "declared_directly": true
               },
@@ -120,10 +121,10 @@
               },
               {
                 "full_name": "libzip",
-                "version": "1.12",
-                "revision": 1,
+                "version": "1.12.1",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.12_1",
+                "pkg_version": "1.12.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -152,11 +153,12 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-davix-0.2e.9.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-libzip-1.2e.12.5f.1",
+              "SPDXRef-Package-SPDXRef-libzip-1.2e.12.2e.1",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Compiler"
             ],
@@ -203,6 +205,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-davix-0.2e.9.2e.0.5f.1",
+                "name": "davix",
+                "versionInfo": "0.9.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/davix-0.9.0_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b03fc4941e2066041962ea99268f908209808dfdbbf221bfe442e9da2450463"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/davix@0.9.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -300,24 +325,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libzip-1.2e.12.5f.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libzip-1.2e.12.2e.1",
                 "name": "libzip",
-                "versionInfo": "1.12_1",
+                "versionInfo": "1.12.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libzip-1.12_1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libzip-1.12.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "678bdb81811386c3670419c615a656d409ab2add7e39293e910784364d620a35"
+                    "checksumValue": "de3c1693a53ceee82cc3464277061b03333757a119023d59ac0afa8e44bf60db"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libzip@1.12_1",
+                    "referenceLocator": "pkg:brew/libzip@1.12.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -370,6 +395,11 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-xrootd"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-davix-0.2e.9.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xrootd"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-xrootd"
@@ -390,7 +420,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-xrootd"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libzip-1.2e.12.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libzip-1.2e.12.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-xrootd"
               },
@@ -772,28 +802,28 @@
             "lib/libXrdXml.6.dylib",
             "lib/libXrdXml.dylib",
             "lib/libXrdXrootd-6.so",
-            "lib/python3.14/site-packages/XRootD/__init__.py",
-            "lib/python3.14/site-packages/XRootD/client/__init__.py",
-            "lib/python3.14/site-packages/XRootD/client/_version.py",
-            "lib/python3.14/site-packages/XRootD/client/copyprocess.py",
-            "lib/python3.14/site-packages/XRootD/client/env.py",
-            "lib/python3.14/site-packages/XRootD/client/file.py",
-            "lib/python3.14/site-packages/XRootD/client/filesystem.py",
-            "lib/python3.14/site-packages/XRootD/client/finalize.py",
-            "lib/python3.14/site-packages/XRootD/client/flags.py",
-            "lib/python3.14/site-packages/XRootD/client/glob_funcs.py",
-            "lib/python3.14/site-packages/XRootD/client/py.typed",
-            "lib/python3.14/site-packages/XRootD/client/responses.py",
-            "lib/python3.14/site-packages/XRootD/client/tape.py",
-            "lib/python3.14/site-packages/XRootD/client/url.py",
-            "lib/python3.14/site-packages/XRootD/client/utils.py",
-            "lib/python3.14/site-packages/pyxrootd/__init__.py",
-            "lib/python3.14/site-packages/pyxrootd/client.cpython-314-darwin.so",
-            "lib/python3.14/site-packages/xrootd-6.2.0.dist-info/INSTALLER",
-            "lib/python3.14/site-packages/xrootd-6.2.0.dist-info/METADATA",
-            "lib/python3.14/site-packages/xrootd-6.2.0.dist-info/REQUESTED",
-            "lib/python3.14/site-packages/xrootd-6.2.0.dist-info/WHEEL",
-            "lib/python3.14/site-packages/xrootd-6.2.0.dist-info/top_level.txt",
+            "lib/python3.15/site-packages/XRootD/__init__.py",
+            "lib/python3.15/site-packages/XRootD/client/__init__.py",
+            "lib/python3.15/site-packages/XRootD/client/_version.py",
+            "lib/python3.15/site-packages/XRootD/client/copyprocess.py",
+            "lib/python3.15/site-packages/XRootD/client/env.py",
+            "lib/python3.15/site-packages/XRootD/client/file.py",
+            "lib/python3.15/site-packages/XRootD/client/filesystem.py",
+            "lib/python3.15/site-packages/XRootD/client/finalize.py",
+            "lib/python3.15/site-packages/XRootD/client/flags.py",
+            "lib/python3.15/site-packages/XRootD/client/glob_funcs.py",
+            "lib/python3.15/site-packages/XRootD/client/py.typed",
+            "lib/python3.15/site-packages/XRootD/client/responses.py",
+            "lib/python3.15/site-packages/XRootD/client/tape.py",
+            "lib/python3.15/site-packages/XRootD/client/url.py",
+            "lib/python3.15/site-packages/XRootD/client/utils.py",
+            "lib/python3.15/site-packages/pyxrootd/__init__.py",
+            "lib/python3.15/site-packages/pyxrootd/client.cpython-315-darwin.so",
+            "lib/python3.15/site-packages/xrootd-6.2.0.dist-info/INSTALLER",
+            "lib/python3.15/site-packages/xrootd-6.2.0.dist-info/METADATA",
+            "lib/python3.15/site-packages/xrootd-6.2.0.dist-info/REQUESTED",
+            "lib/python3.15/site-packages/xrootd-6.2.0.dist-info/WHEEL",
+            "lib/python3.15/site-packages/xrootd-6.2.0.dist-info/top_level.txt",
             "sbom.spdx.json",
             "share/man/man1/xrdadler32.1",
             "share/man/man1/xrdcopy.1",
@@ -819,7 +849,7 @@
             "share/xrootd/utils/netchk",
             "share/xrootd/utils/xrdcp-tpc.sh"
           ],
-          "installed_size": 13711790
+          "installed_size": 13711827
         }
       }
     }
