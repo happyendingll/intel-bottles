@@ -1,0 +1,317 @@
+{
+  "cyrus-sasl": {
+    "formula": {
+      "name": "cyrus-sasl",
+      "pkg_version": "2.1.28_4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cyrus-sasl.rb",
+      "tap_git_path": "Formula/c/cyrus-sasl.rb",
+      "tap_git_revision": "4577d0ca36f5b1bdeb364a40bd1c9d119bf68171",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Simple Authentication and Security Layer",
+      "license": "BSD-3-Clause-Attribution",
+      "homepage": "https://www.cyrusimap.org/sasl/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-15T21:49:58Z",
+      "tags": {
+        "sequoia": {
+          "filename": "cyrus-sasl-2.1.28_4.sequoia.bottle.tar.gz",
+          "local_filename": "cyrus-sasl--2.1.28_4.sequoia.bottle.tar.gz",
+          "sha256": "2621e9e25ae7b4cb66f7e0cd9f9142e275d989cdf93ecc59374eceef3c047547",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/libsasl2.pc"
+            ],
+            "linkage_files": [
+              "lib/libsasl2.3.dylib",
+              "lib/sasl2/libdigestmd5.3.so",
+              "lib/sasl2/libgs2.3.so",
+              "lib/sasl2/libgssapiv2.3.so",
+              "lib/sasl2/libotp.3.so",
+              "lib/sasl2/libscram.3.so",
+              "sbin/pluginviewer",
+              "sbin/saslauthd",
+              "sbin/sasldblistusers2",
+              "sbin/saslpasswd2"
+            ],
+            "binary_relocation_files": [
+              "lib/libsasl2.3.dylib",
+              "sbin/pluginviewer"
+            ],
+            "source_modified_time": 1645222627,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              },
+              {
+                "full_name": "krb5",
+                "version": "1.22.2",
+                "revision": 2,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.22.2_2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "sbin/pluginviewer",
+              "string": "/usr/local/Cellar/cyrus-sasl/2.1.28_4/lib/sasl2",
+              "offset": 9666
+            },
+            {
+              "path": "lib/libsasl2.3.dylib",
+              "string": "/usr/local/Cellar/cyrus-sasl/2.1.28_4/lib/sasl2",
+              "offset": 70005
+            },
+            {
+              "path": "lib/libsasl2.3.dylib",
+              "string": "/usr/local/Cellar/cyrus-sasl/2.1.28_4/lib/sasl2:/usr/local/Cellar/cyrus-sasl/2.1.28_4/etc/sasl2",
+              "offset": 70068
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
+                "name": "krb5",
+                "versionInfo": "1.22.2_2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause AND BSD-2-Clause-first-lines AND BSD-3-Clause AND BSD-4-Clause AND Brian-Gladman-2-Clause AND CMU-Mach-nodoc AND FSFULLRWD AND HPND AND HPND-export2-US AND HPND-export-US AND HPND-export-US-acknowledgement AND HPND-export-US-modify AND ISC AND MIT AND MIT-CMU AND OLDAP-2.8 AND OpenVision AND (BSD-2-Clause OR GPL-2.0-or-later)",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/krb5-1.22.2_2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "768507b1ca7a66dd14d39ceb8c2d9d52a98ae27264c714826faf84af84c14a26"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/krb5@1.22.2_2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cyrus-sasl"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cyrus-sasl"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-cyrus-sasl"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-cyrus-sasl-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "sbin/pluginviewer",
+            "sbin/saslauthd",
+            "sbin/sasldblistusers2",
+            "sbin/saslpasswd2",
+            "sbin/testsaslauthd"
+          ],
+          "all_files": [
+            ".brew/cyrus-sasl.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "include/sasl/hmac-md5.h",
+            "include/sasl/md5.h",
+            "include/sasl/md5global.h",
+            "include/sasl/prop.h",
+            "include/sasl/sasl.h",
+            "include/sasl/saslplug.h",
+            "include/sasl/saslutil.h",
+            "lib/libsasl2.3.dylib",
+            "lib/libsasl2.dylib",
+            "lib/pkgconfig/libsasl2.pc",
+            "lib/sasl2/libanonymous.3.so",
+            "lib/sasl2/libanonymous.so",
+            "lib/sasl2/libcrammd5.3.so",
+            "lib/sasl2/libcrammd5.so",
+            "lib/sasl2/libdigestmd5.3.so",
+            "lib/sasl2/libdigestmd5.so",
+            "lib/sasl2/libgs2.3.so",
+            "lib/sasl2/libgs2.so",
+            "lib/sasl2/libgssapiv2.3.so",
+            "lib/sasl2/libgssapiv2.so",
+            "lib/sasl2/libotp.3.so",
+            "lib/sasl2/libotp.so",
+            "lib/sasl2/libplain.3.so",
+            "lib/sasl2/libplain.so",
+            "lib/sasl2/libsasldb.3.so",
+            "lib/sasl2/libsasldb.so",
+            "lib/sasl2/libscram.3.so",
+            "lib/sasl2/libscram.so",
+            "sbin/pluginviewer",
+            "sbin/saslauthd",
+            "sbin/sasldblistusers2",
+            "sbin/saslpasswd2",
+            "sbin/testsaslauthd",
+            "sbom.spdx.json",
+            "share/man/man3/sasl.3",
+            "share/man/man3/sasl_authorize_t.3",
+            "share/man/man3/sasl_auxprop.3",
+            "share/man/man3/sasl_auxprop_getctx.3",
+            "share/man/man3/sasl_auxprop_request.3",
+            "share/man/man3/sasl_callbacks.3",
+            "share/man/man3/sasl_canon_user_t.3",
+            "share/man/man3/sasl_chalprompt_t.3",
+            "share/man/man3/sasl_checkapop.3",
+            "share/man/man3/sasl_checkpass.3",
+            "share/man/man3/sasl_client_init.3",
+            "share/man/man3/sasl_client_new.3",
+            "share/man/man3/sasl_client_start.3",
+            "share/man/man3/sasl_client_step.3",
+            "share/man/man3/sasl_decode.3",
+            "share/man/man3/sasl_dispose.3",
+            "share/man/man3/sasl_done.3",
+            "share/man/man3/sasl_encode.3",
+            "share/man/man3/sasl_encodev.3",
+            "share/man/man3/sasl_errdetail.3",
+            "share/man/man3/sasl_errors.3",
+            "share/man/man3/sasl_errstring.3",
+            "share/man/man3/sasl_getconfpath_t.3",
+            "share/man/man3/sasl_getopt_t.3",
+            "share/man/man3/sasl_getpath_t.3",
+            "share/man/man3/sasl_getprop.3",
+            "share/man/man3/sasl_getrealm_t.3",
+            "share/man/man3/sasl_getsecret_t.3",
+            "share/man/man3/sasl_getsimple_t.3",
+            "share/man/man3/sasl_global_listmech.3",
+            "share/man/man3/sasl_idle.3",
+            "share/man/man3/sasl_listmech.3",
+            "share/man/man3/sasl_log_t.3",
+            "share/man/man3/sasl_server_init.3",
+            "share/man/man3/sasl_server_new.3",
+            "share/man/man3/sasl_server_start.3",
+            "share/man/man3/sasl_server_step.3",
+            "share/man/man3/sasl_server_userdb_checkpass_t.3",
+            "share/man/man3/sasl_server_userdb_setpass_t.3",
+            "share/man/man3/sasl_setpass.3",
+            "share/man/man3/sasl_setprop.3",
+            "share/man/man3/sasl_user_exists.3",
+            "share/man/man3/sasl_verifyfile_t.3",
+            "share/man/man8/pluginviewer.8",
+            "share/man/man8/saslauthd.8",
+            "share/man/man8/sasldblistusers2.8",
+            "share/man/man8/saslpasswd2.8",
+            "share/man/man8/testsaslauthd.8"
+          ],
+          "installed_size": 971478
+        }
+      }
+    }
+  }
+}
