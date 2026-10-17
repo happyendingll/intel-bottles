@@ -1,0 +1,520 @@
+{
+  "gloox": {
+    "formula": {
+      "name": "gloox",
+      "pkg_version": "1.0.28",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gloox.rb",
+      "tap_git_path": "Formula/g/gloox.rb",
+      "tap_git_revision": "06b7ce6785af1bf13a65173c3484de829dda52f1",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "C++ Jabber/XMPP library that handles the low-level protocol",
+      "license": "GPL-3.0-only WITH openvpn-openssl-exception",
+      "homepage": "https://camaya.net/gloox/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-17T08:04:07Z",
+      "tags": {
+        "sequoia": {
+          "filename": "gloox-1.0.28.sequoia.bottle.tar.gz",
+          "local_filename": "gloox--1.0.28.sequoia.bottle.tar.gz",
+          "sha256": "1f35a4dbfe4481b1b8e766c6bde77375ca0df77d23294cd851740bbde2599b90",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "bin/gloox-config",
+              "lib/pkgconfig/gloox.pc"
+            ],
+            "linkage_files": [
+              "lib/libgloox.18.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1700654689,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.4.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.13",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.8.13_2",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libidn",
+                "version": "1.44",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.44",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "name": "libunistring",
+                "versionInfo": "1.4.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "name": "p11-kit",
+                "versionInfo": "0.26.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/p11-kit-0.26.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ee01fce79642e0693fd6bb9024aeb3e684bddfcf797ad6cb9ba8907c24742162"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/p11-kit@0.26.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gloox"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gloox"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gloox"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gloox"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gloox"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gloox"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-gloox-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/gloox-config"
+          ],
+          "all_files": [
+            ".brew/gloox.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README",
+            "TODO",
+            "bin/gloox-config",
+            "include/gloox/adhoc.h",
+            "include/gloox/adhoccommandprovider.h",
+            "include/gloox/adhochandler.h",
+            "include/gloox/adhocplugin.h",
+            "include/gloox/amp.h",
+            "include/gloox/annotations.h",
+            "include/gloox/annotationshandler.h",
+            "include/gloox/atomicrefcount.h",
+            "include/gloox/attention.h",
+            "include/gloox/base64.h",
+            "include/gloox/bookmarkhandler.h",
+            "include/gloox/bookmarkstorage.h",
+            "include/gloox/bytestream.h",
+            "include/gloox/bytestreamdatahandler.h",
+            "include/gloox/bytestreamhandler.h",
+            "include/gloox/capabilities.h",
+            "include/gloox/carbons.h",
+            "include/gloox/chatstate.h",
+            "include/gloox/chatstatefilter.h",
+            "include/gloox/chatstatehandler.h",
+            "include/gloox/client.h",
+            "include/gloox/clientbase.h",
+            "include/gloox/component.h",
+            "include/gloox/compressionbase.h",
+            "include/gloox/compressiondatahandler.h",
+            "include/gloox/compressiondefault.h",
+            "include/gloox/connectionbase.h",
+            "include/gloox/connectionbosh.h",
+            "include/gloox/connectiondatahandler.h",
+            "include/gloox/connectionhandler.h",
+            "include/gloox/connectionhttpproxy.h",
+            "include/gloox/connectionlistener.h",
+            "include/gloox/connectionsocks5proxy.h",
+            "include/gloox/connectiontcpbase.h",
+            "include/gloox/connectiontcpclient.h",
+            "include/gloox/connectiontcpserver.h",
+            "include/gloox/connectiontls.h",
+            "include/gloox/connectiontlsserver.h",
+            "include/gloox/dataform.h",
+            "include/gloox/dataformfield.h",
+            "include/gloox/dataformfieldcontainer.h",
+            "include/gloox/dataformitem.h",
+            "include/gloox/dataformreported.h",
+            "include/gloox/delayeddelivery.h",
+            "include/gloox/disco.h",
+            "include/gloox/discohandler.h",
+            "include/gloox/disconodehandler.h",
+            "include/gloox/error.h",
+            "include/gloox/event.h",
+            "include/gloox/eventdispatcher.h",
+            "include/gloox/eventhandler.h",
+            "include/gloox/featureneg.h",
+            "include/gloox/flexoff.h",
+            "include/gloox/flexoffhandler.h",
+            "include/gloox/forward.h",
+            "include/gloox/gloox.h",
+            "include/gloox/glooxversion.h",
+            "include/gloox/gpgencrypted.h",
+            "include/gloox/gpgsigned.h",
+            "include/gloox/inbandbytestream.h",
+            "include/gloox/instantmucroom.h",
+            "include/gloox/iodata.h",
+            "include/gloox/iq.h",
+            "include/gloox/iqhandler.h",
+            "include/gloox/jid.h",
+            "include/gloox/jinglecontent.h",
+            "include/gloox/jinglefiletransfer.h",
+            "include/gloox/jingleiceudp.h",
+            "include/gloox/jingleplugin.h",
+            "include/gloox/jinglepluginfactory.h",
+            "include/gloox/jinglesession.h",
+            "include/gloox/jinglesessionhandler.h",
+            "include/gloox/jinglesessionmanager.h",
+            "include/gloox/lastactivity.h",
+            "include/gloox/lastactivityhandler.h",
+            "include/gloox/linklocal.h",
+            "include/gloox/linklocalclient.h",
+            "include/gloox/linklocalhandler.h",
+            "include/gloox/linklocalmanager.h",
+            "include/gloox/loghandler.h",
+            "include/gloox/logsink.h",
+            "include/gloox/macros.h",
+            "include/gloox/md5.h",
+            "include/gloox/message.h",
+            "include/gloox/messageevent.h",
+            "include/gloox/messageeventfilter.h",
+            "include/gloox/messageeventhandler.h",
+            "include/gloox/messagefilter.h",
+            "include/gloox/messagehandler.h",
+            "include/gloox/messagesession.h",
+            "include/gloox/messagesessionhandler.h",
+            "include/gloox/mucinvitationhandler.h",
+            "include/gloox/mucroom.h",
+            "include/gloox/mucroomconfighandler.h",
+            "include/gloox/mucroomhandler.h",
+            "include/gloox/mutex.h",
+            "include/gloox/mutexguard.h",
+            "include/gloox/nickname.h",
+            "include/gloox/oob.h",
+            "include/gloox/parser.h",
+            "include/gloox/presence.h",
+            "include/gloox/presencehandler.h",
+            "include/gloox/privacyitem.h",
+            "include/gloox/privacylisthandler.h",
+            "include/gloox/privacymanager.h",
+            "include/gloox/privatexml.h",
+            "include/gloox/privatexmlhandler.h",
+            "include/gloox/pubsub.h",
+            "include/gloox/pubsubevent.h",
+            "include/gloox/pubsubitem.h",
+            "include/gloox/pubsubmanager.h",
+            "include/gloox/pubsubresulthandler.h",
+            "include/gloox/receipt.h",
+            "include/gloox/registration.h",
+            "include/gloox/registrationhandler.h",
+            "include/gloox/resource.h",
+            "include/gloox/rosteritem.h",
+            "include/gloox/rosterlistener.h",
+            "include/gloox/rostermanager.h",
+            "include/gloox/search.h",
+            "include/gloox/searchhandler.h",
+            "include/gloox/sha.h",
+            "include/gloox/shim.h",
+            "include/gloox/sihandler.h",
+            "include/gloox/simanager.h",
+            "include/gloox/siprofileft.h",
+            "include/gloox/siprofilefthandler.h",
+            "include/gloox/siprofilehandler.h",
+            "include/gloox/socks5bytestream.h",
+            "include/gloox/socks5bytestreammanager.h",
+            "include/gloox/socks5bytestreamserver.h",
+            "include/gloox/softwareversion.h",
+            "include/gloox/stanza.h",
+            "include/gloox/stanzaextension.h",
+            "include/gloox/statisticshandler.h",
+            "include/gloox/subscription.h",
+            "include/gloox/subscriptionhandler.h",
+            "include/gloox/tag.h",
+            "include/gloox/taghandler.h",
+            "include/gloox/tlsbase.h",
+            "include/gloox/tlsdefault.h",
+            "include/gloox/tlshandler.h",
+            "include/gloox/uniquemucroom.h",
+            "include/gloox/util.h",
+            "include/gloox/vcard.h",
+            "include/gloox/vcardhandler.h",
+            "include/gloox/vcardmanager.h",
+            "include/gloox/vcardupdate.h",
+            "include/gloox/xhtmlim.h",
+            "lib/libgloox.18.dylib",
+            "lib/libgloox.a",
+            "lib/libgloox.dylib",
+            "lib/pkgconfig/gloox.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 13142184
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,199 @@
+{
+  "duo_unix": {
+    "formula": {
+      "name": "duo_unix",
+      "pkg_version": "2.3.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/duo_unix.rb",
+      "tap_git_path": "Formula/d/duo_unix.rb",
+      "tap_git_revision": "06b7ce6785af1bf13a65173c3484de829dda52f1",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Two-factor authentication for SSH",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://www.duosecurity.com/docs/duounix"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-17T08:00:37Z",
+      "tags": {
+        "sequoia": {
+          "filename": "duo_unix-2.3.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "duo_unix--2.3.0_1.sequoia.bottle.tar.gz",
+          "sha256": "252421bf362be638878b2987c5175c0eb4fa5704a06960895579d279fc609586",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/libduo.pc"
+            ],
+            "linkage_files": [
+              "lib/pam/pam_duo.so",
+              "sbin/login_duo"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1786537966,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-duo.5f.unix"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-duo.5f.unix"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-duo.5f.unix-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "sbin/duo_unix_support.sh",
+            "sbin/login_duo"
+          ],
+          "all_files": [
+            ".bottle/etc/login_duo.conf",
+            ".bottle/etc/pam_duo.conf",
+            ".brew/duo_unix.rb",
+            "AUTHORS",
+            "CHANGES",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "include/duo/common_ini_test.h",
+            "include/duo/duo.h",
+            "include/duo/duo_private.h",
+            "include/duo/shell.h",
+            "include/duo/unity.h",
+            "include/duo/util.h",
+            "lib/pam/pam_duo.so",
+            "lib/pkgconfig/libduo.pc",
+            "sbin/duo_unix_support.sh",
+            "sbin/login_duo",
+            "sbom.spdx.json",
+            "share/LICENSES/Apache-2.0.txt",
+            "share/LICENSES/BSD-2-Clause.txt",
+            "share/LICENSES/BSD-3-Clause.txt",
+            "share/LICENSES/BSD-4-Clause.txt",
+            "share/LICENSES/FSFAP.txt",
+            "share/LICENSES/FSFULLR.txt",
+            "share/LICENSES/GPL-1.0-only.txt",
+            "share/LICENSES/GPL-2.0-with-classpath-exception.txt",
+            "share/LICENSES/LicenseRef-URLEnc-MIT.txt",
+            "share/LICENSES/MIT.txt",
+            "share/LICENSES/SSH-short.txt",
+            "share/doc/duo_unix/AUTHORS",
+            "share/doc/duo_unix/CHANGES",
+            "share/doc/duo_unix/CONTRIBUTING.md",
+            "share/doc/duo_unix/README.md",
+            "share/doc/duo_unix/build-date",
+            "share/doc/duo_unix/duo_unix_support/README.md",
+            "share/man/man3/duo.3",
+            "share/man/man8/login_duo.8",
+            "share/man/man8/pam_duo.8"
+          ],
+          "installed_size": 443835
+        }
+      }
+    }
+  }
+}

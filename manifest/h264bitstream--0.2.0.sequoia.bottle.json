@@ -1,0 +1,100 @@
+{
+  "h264bitstream": {
+    "formula": {
+      "name": "h264bitstream",
+      "pkg_version": "0.2.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/h/h264bitstream.rb",
+      "tap_git_path": "Formula/h/h264bitstream.rb",
+      "tap_git_revision": "06b7ce6785af1bf13a65173c3484de829dda52f1",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Library for reading and writing H264 video streams",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://h264bitstream.sourceforge.net/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-17T08:04:25Z",
+      "tags": {
+        "sequoia": {
+          "filename": "h264bitstream-0.2.0.sequoia.bottle.tar.gz",
+          "local_filename": "h264bitstream--0.2.0.sequoia.bottle.tar.gz",
+          "sha256": "00ebd40b1b794493585189021366f6d13ee6231892692d1ede8edfc531cf48de",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "lib/pkgconfig/libh264bitstream.pc"
+            ],
+            "linkage_files": [
+              "bin/h264_analyze",
+              "lib/libh264bitstream.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1492710160,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-h264bitstream-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/h264_analyze"
+          ],
+          "all_files": [
+            ".brew/h264bitstream.rb",
+            "CHANGES",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "TODO",
+            "bin/h264_analyze",
+            "include/h264bitstream/bs.h",
+            "include/h264bitstream/h264_avcc.h",
+            "include/h264bitstream/h264_sei.h",
+            "include/h264bitstream/h264_stream.h",
+            "lib/libh264bitstream.0.dylib",
+            "lib/libh264bitstream.a",
+            "lib/libh264bitstream.dylib",
+            "lib/pkgconfig/libh264bitstream.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 348051
+        }
+      }
+    }
+  }
+}

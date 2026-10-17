@@ -1,0 +1,115 @@
+{
+  "wmbusmeters": {
+    "formula": {
+      "name": "wmbusmeters",
+      "pkg_version": "3.1.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/w/wmbusmeters.rb",
+      "tap_git_path": "Formula/w/wmbusmeters.rb",
+      "tap_git_revision": "06b7ce6785af1bf13a65173c3484de829dda52f1",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Read wired or wireless mbus protocol to acquire utility meter readings",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://github.com/wmbusmeters/wmbusmeters"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-17T08:13:34Z",
+      "tags": {
+        "sequoia": {
+          "filename": "wmbusmeters-3.1.0.sequoia.bottle.tar.gz",
+          "local_filename": "wmbusmeters--3.1.0.sequoia.bottle.tar.gz",
+          "sha256": "589d9eaee82a173e31c2cbdc2098227d40a8744200960a5cbf14a8a70a7a0faa",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "sh.brew.wmbusmeters.plist",
+              "sh.brew.wmbusmeters.service"
+            ],
+            "linkage_files": [
+              "bin/wmbusmeters"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792144022,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libusb",
+                "version": "1.0.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.30",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "librtlsdr",
+                "version": "2.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.0.3",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-wmbusmeters-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/wmbusmeters",
+            "bin/wmbusmetersd"
+          ],
+          "all_files": [
+            ".brew/wmbusmeters.rb",
+            "CHANGES",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/wmbusmeters",
+            "bin/wmbusmetersd",
+            "sbom.spdx.json",
+            "sh.brew.wmbusmeters.plist",
+            "sh.brew.wmbusmeters.service",
+            "share/man/man1/wmbusmeters.1"
+          ],
+          "installed_size": 2354173
+        }
+      }
+    }
+  }
+}
