@@ -1,32 +1,35 @@
 {
-  "kubectl-radar": {
+  "traefik": {
     "formula": {
-      "name": "kubectl-radar",
-      "pkg_version": "1.16.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/k/kubectl-radar.rb",
-      "tap_git_path": "Formula/k/kubectl-radar.rb",
-      "tap_git_revision": "d857d282886499325926131338283d43c94b64f0",
+      "name": "traefik",
+      "pkg_version": "3.7.15",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/traefik.rb",
+      "tap_git_path": "Formula/t/traefik.rb",
+      "tap_git_revision": "7e25dd0ec79e7321b9adcd66547947ad5ede1d8a",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Missing open-source Kubernetes UI with a built-in MCP server for AI agents",
-      "license": "Apache-2.0",
-      "homepage": "https://radarhq.io"
+      "desc": "Modern reverse proxy",
+      "license": "MIT",
+      "homepage": "https://traefik.io/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-08T00:04:12Z",
+      "date": "2026-10-17T06:15:46Z",
       "tags": {
         "sequoia": {
-          "filename": "kubectl-radar-1.16.0.sequoia.bottle.tar.gz",
-          "local_filename": "kubectl-radar--1.16.0.sequoia.bottle.tar.gz",
-          "sha256": "1691405cf4125119c82b6985470972da58835723b81bac4830b41142939bf864",
+          "filename": "traefik-3.7.15.sequoia.bottle.tar.gz",
+          "local_filename": "traefik--3.7.15.sequoia.bottle.tar.gz",
+          "sha256": "a2ace94bb79b8a95ec4e823e2c75c303f17d8aba56f29c692f5cc06645919fa6",
           "tab": {
-            "homebrew_version": "7.0.8",
-            "changed_files": [],
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "sh.brew.traefik.plist",
+              "sh.brew.traefik.service"
+            ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1791378623,
+            "source_modified_time": 1792075270,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -62,24 +65,25 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-kubectl-radar-src"
+                "relatedSpdxElement": "SPDXRef-Archive-traefik-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/kubectl-radar",
-            "bin/radar"
+            "bin/traefik"
           ],
           "all_files": [
-            ".brew/kubectl-radar.rb",
+            ".brew/traefik.rb",
+            "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
-            "LICENSE",
+            "LICENSE.md",
             "README.md",
-            "bin/kubectl-radar",
-            "bin/radar",
-            "sbom.spdx.json"
+            "bin/traefik",
+            "sbom.spdx.json",
+            "sh.brew.traefik.plist",
+            "sh.brew.traefik.service"
           ],
-          "installed_size": 194399850
+          "installed_size": 182564015
         }
       }
     }

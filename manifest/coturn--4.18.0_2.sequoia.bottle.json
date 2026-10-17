@@ -2,25 +2,25 @@
   "coturn": {
     "formula": {
       "name": "coturn",
-      "pkg_version": "4.18.0_1",
+      "pkg_version": "4.18.0_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/c/coturn.rb",
       "tap_git_path": "Formula/c/coturn.rb",
-      "tap_git_revision": "ff108cbe9100325dcd621cf40c9056411587633d",
+      "tap_git_revision": "7e25dd0ec79e7321b9adcd66547947ad5ede1d8a",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Free open source implementation of TURN and STUN Server",
       "license": "BSD-3-Clause",
       "homepage": "https://github.com/coturn/coturn"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-09T08:46:06Z",
+      "date": "2026-10-17T04:55:16Z",
       "tags": {
         "sequoia": {
-          "filename": "coturn-4.18.0_1.sequoia.bottle.tar.gz",
-          "local_filename": "coturn--4.18.0_1.sequoia.bottle.tar.gz",
-          "sha256": "4330ee07c5b25333451b427e2e61e711b507bb41ad18cc0131aae902cfb9d66c",
+          "filename": "coturn-4.18.0_2.sequoia.bottle.tar.gz",
+          "local_filename": "coturn--4.18.0_2.sequoia.bottle.tar.gz",
+          "sha256": "293aae255fdde21796e660d22c8678d55dad355da4cf270d9a41636392e20ae0",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -59,16 +59,18 @@
               },
               {
                 "full_name": "hiredis",
-                "version": "1.4.1",
-                "revision": 1,
-                "pkg_version": "1.4.1_1",
+                "version": "1.5.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.0",
                 "declared_directly": true,
-                "compatibility_version": 2
+                "compatibility_version": 3
               },
               {
                 "full_name": "libevent",
                 "version": "2.1.13",
                 "revision": 1,
+                "bottle_rebuild": 0,
                 "pkg_version": "2.1.13_1",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -86,6 +88,7 @@
                 "full_name": "krb5",
                 "version": "1.22.2",
                 "revision": 2,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.22.2_2",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -103,6 +106,7 @@
                 "full_name": "libpq",
                 "version": "18.6",
                 "revision": 1,
+                "bottle_rebuild": 0,
                 "pkg_version": "18.6_1",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -123,7 +127,11 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-hiredis-1.2e.5.2e.0",
+              "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+              "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-libpq-18.2e.6.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -174,6 +182,75 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-hiredis-1.2e.5.2e.0",
+                "name": "hiredis",
+                "versionInfo": "1.5.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/hiredis-1.5.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5a868f27e4cb751bac69e0b9da9939106bfc2cc90862d7abbe3ade1c25a58f6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/hiredis@1.5.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "name": "libevent",
+                "versionInfo": "2.1.13_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libevent-2.1.13_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "633c29ac9023fd7a922d4204f529f117d0c3bb96bb70279a75cbabe4e6f3655e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libevent@2.1.13_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
+                "name": "krb5",
+                "versionInfo": "1.22.2_2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause AND BSD-2-Clause-first-lines AND BSD-3-Clause AND BSD-4-Clause AND Brian-Gladman-2-Clause AND CMU-Mach-nodoc AND FSFULLRWD AND HPND AND HPND-export2-US AND HPND-export-US AND HPND-export-US-acknowledgement AND HPND-export-US-modify AND ISC AND MIT AND MIT-CMU AND OLDAP-2.8 AND OpenVision AND (BSD-2-Clause OR GPL-2.0-or-later)",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/krb5-1.22.2_2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "768507b1ca7a66dd14d39ceb8c2d9d52a98ae27264c714826faf84af84c14a26"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/krb5@1.22.2_2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "name": "readline",
                 "versionInfo": "8.3.6",
@@ -192,6 +269,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpq-18.2e.6.5f.1",
+                "name": "libpq",
+                "versionInfo": "18.6_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "PostgreSQL",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libpq-18.6_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2b2e1413a1b633784949e50ba411d79c943e6ece2820cb901c7440ff25cca19f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpq@18.6_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -221,7 +321,27 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-coturn"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-hiredis-1.2e.5.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-coturn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-coturn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-coturn"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-coturn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpq-18.2e.6.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-coturn"
               },
@@ -360,7 +480,7 @@
             "share/turnserver/testredisdbsetup.sh",
             "share/turnserver/testsqldbsetup.sql"
           ],
-          "installed_size": 2618966
+          "installed_size": 2619072
         }
       }
     }

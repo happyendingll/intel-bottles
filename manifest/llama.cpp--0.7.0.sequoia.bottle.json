@@ -2,25 +2,25 @@
   "llama.cpp": {
     "formula": {
       "name": "llama.cpp",
-      "pkg_version": "0.6.0_1",
+      "pkg_version": "0.7.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/l/llama.cpp.rb",
       "tap_git_path": "Formula/l/llama.cpp.rb",
-      "tap_git_revision": "438fe5cff97d254283696395506ffb38e023e9c0",
+      "tap_git_revision": "7e25dd0ec79e7321b9adcd66547947ad5ede1d8a",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "LLM inference in C/C++",
       "license": "MIT",
       "homepage": "https://llama.app"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-12T01:51:00Z",
+      "date": "2026-10-17T05:27:26Z",
       "tags": {
         "sequoia": {
-          "filename": "llama.cpp-0.6.0_1.sequoia.bottle.tar.gz",
-          "local_filename": "llama.cpp--0.6.0_1.sequoia.bottle.tar.gz",
-          "sha256": "e42d09ba600f80b0366777cadca619987bc3d62cd5b3846ebfcebc7973e48e14",
+          "filename": "llama.cpp-0.7.0.sequoia.bottle.tar.gz",
+          "local_filename": "llama.cpp--0.7.0.sequoia.bottle.tar.gz",
+          "sha256": "e67419c7544ea85a8bc574c977df50f6ea25494f252009184c456b2d96aaea71",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [
@@ -67,17 +67,17 @@
               "lib/libllama-batched-bench-impl.dylib",
               "lib/libllama-bench-impl.dylib",
               "lib/libllama-cli-impl.dylib",
-              "lib/libllama-common.0.6.0.dylib",
+              "lib/libllama-common.0.7.0.dylib",
               "lib/libllama-completion-impl.dylib",
               "lib/libllama-fit-params-impl.dylib",
               "lib/libllama-perplexity-impl.dylib",
               "lib/libllama-quantize-impl.dylib",
               "lib/libllama-server-impl.dylib",
-              "lib/libllama.0.6.0.dylib",
-              "lib/libmtmd.0.6.0.dylib"
+              "lib/libllama.0.7.0.dylib",
+              "lib/libmtmd.0.7.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791213231,
+            "source_modified_time": 1792072102,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -91,10 +91,10 @@
               },
               {
                 "full_name": "ggml",
-                "version": "0.26.0",
+                "version": "0.27.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.26.0",
+                "pkg_version": "0.27.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -117,7 +117,7 @@
               }
             ],
             "source": {
-              "scm_revision": "d81235049384534c167caea52b85a694f6103d14"
+              "scm_revision": "620d2225cc436ab0b001e3200e590e3b286ef9ab"
             },
             "arch": "x86_64",
             "built_on": {
@@ -133,7 +133,7 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.3",
-              "SPDXRef-Package-SPDXRef-ggml-0.2e.26.2e.0",
+              "SPDXRef-Package-SPDXRef-ggml-0.2e.27.2e.0",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Compiler"
@@ -163,24 +163,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ggml-0.2e.26.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ggml-0.2e.27.2e.0",
                 "name": "ggml",
-                "versionInfo": "0.26.0",
+                "versionInfo": "0.27.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/ggml-0.26.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/ggml-0.27.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5dfeb3c158c8c8f7c521c9ebcaea8f27701c2bfdde8de1696a28c2493c4ee678"
+                    "checksumValue": "7d7ffc510d7e4b64264ec91cb360af1c2388eb14c2abdfc33a7c61bdca3b8f66"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ggml@0.26.0",
+                    "referenceLocator": "pkg:brew/ggml@0.27.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -251,7 +251,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-llama.2e.cpp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ggml-0.2e.26.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ggml-0.2e.27.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-llama.2e.cpp"
               },
@@ -364,7 +364,7 @@
             "lib/libllama-batched-bench-impl.dylib",
             "lib/libllama-bench-impl.dylib",
             "lib/libllama-cli-impl.dylib",
-            "lib/libllama-common.0.6.0.dylib",
+            "lib/libllama-common.0.7.0.dylib",
             "lib/libllama-common.0.dylib",
             "lib/libllama-common.dylib",
             "lib/libllama-completion-impl.dylib",
@@ -372,17 +372,17 @@
             "lib/libllama-perplexity-impl.dylib",
             "lib/libllama-quantize-impl.dylib",
             "lib/libllama-server-impl.dylib",
-            "lib/libllama.0.6.0.dylib",
+            "lib/libllama.0.7.0.dylib",
             "lib/libllama.0.dylib",
             "lib/libllama.dylib",
-            "lib/libmtmd.0.6.0.dylib",
+            "lib/libmtmd.0.7.0.dylib",
             "lib/libmtmd.0.dylib",
             "lib/libmtmd.dylib",
             "lib/pkgconfig/llama.pc",
             "sbom.spdx.json",
             "share/llama.cpp/test-sampling.cpp"
           ],
-          "installed_size": 19277090
+          "installed_size": 19652366
         }
       }
     }

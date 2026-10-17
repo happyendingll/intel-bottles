@@ -2,33 +2,33 @@
   "aws-c-mqtt": {
     "formula": {
       "name": "aws-c-mqtt",
-      "pkg_version": "1.1.1",
+      "pkg_version": "1.1.2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-c-mqtt.rb",
       "tap_git_path": "Formula/a/aws-c-mqtt.rb",
-      "tap_git_revision": "30132921b450f85e7a425c14be8d59c998782f7d",
+      "tap_git_revision": "7e25dd0ec79e7321b9adcd66547947ad5ede1d8a",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "C99 implementation of the MQTT 3.1.1 specification",
       "license": "Apache-2.0",
       "homepage": "https://github.com/awslabs/aws-c-mqtt"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-11T20:54:12Z",
+      "date": "2026-10-17T04:50:16Z",
       "tags": {
         "sequoia": {
-          "filename": "aws-c-mqtt-1.1.1.sequoia.bottle.tar.gz",
-          "local_filename": "aws-c-mqtt--1.1.1.sequoia.bottle.tar.gz",
-          "sha256": "bb64041db64086c3bd52e4c35cf4f93cf08a285432f26d0b2d63abf055e50fcf",
+          "filename": "aws-c-mqtt-1.1.2.sequoia.bottle.tar.gz",
+          "local_filename": "aws-c-mqtt--1.1.2.sequoia.bottle.tar.gz",
+          "sha256": "faba8058d218233dc47ea30d79be2a892037d07ad8f220a684478a8829fc5aa1",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
-              "lib/libaws-c-mqtt.1.1.1.dylib"
+              "lib/libaws-c-mqtt.1.1.2.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791565455,
+            "source_modified_time": 1792093562,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -94,10 +94,10 @@
               },
               {
                 "full_name": "aws-c-http",
-                "version": "1.1.0",
+                "version": "1.1.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.1.0",
+                "pkg_version": "1.1.1",
                 "declared_directly": true,
                 "compatibility_version": 3
               }
@@ -122,7 +122,7 @@
               "SPDXRef-Package-SPDXRef-aws-c-compression-1.2e.0.2e.0",
               "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.11.5f.1",
               "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.0",
-              "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.1.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -288,24 +288,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.1.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.1.2e.1",
                 "name": "aws-c-http",
-                "versionInfo": "1.1.0",
+                "versionInfo": "1.1.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/aws-c-http-1.1.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/aws-c-http-1.1.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "c11f321211b2554539303b77426fdca659ebfd87dc66ccc0e0d0c45579eeb216"
+                    "checksumValue": "a9b6d52ac5ba22444d3953698a78a7a5749e40051c7f8ac11a97bc4c8cebe052"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/aws-c-http@1.1.0",
+                    "referenceLocator": "pkg:brew/aws-c-http@1.1.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -360,7 +360,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-aws-c-mqtt"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.1.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.1.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-aws-c-mqtt"
               },
@@ -391,12 +391,12 @@
             "lib/cmake/aws-c-mqtt/aws-c-mqtt-config.cmake",
             "lib/cmake/aws-c-mqtt/shared/aws-c-mqtt-targets-release.cmake",
             "lib/cmake/aws-c-mqtt/shared/aws-c-mqtt-targets.cmake",
-            "lib/libaws-c-mqtt.1.1.1.dylib",
+            "lib/libaws-c-mqtt.1.1.2.dylib",
             "lib/libaws-c-mqtt.1.1.dylib",
             "lib/libaws-c-mqtt.dylib",
             "sbom.spdx.json"
           ],
-          "installed_size": 467372
+          "installed_size": 471468
         }
       }
     }
