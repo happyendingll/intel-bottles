@@ -1,0 +1,132 @@
+{
+  "golangci-lint": {
+    "formula": {
+      "name": "golangci-lint",
+      "pkg_version": "2.15.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/golangci-lint.rb",
+      "tap_git_path": "Formula/g/golangci-lint.rb",
+      "tap_git_revision": "f9fc6d55471172814dc42b9c534b2214b4727535",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Fast linters runner for Go",
+      "license": "GPL-3.0-only",
+      "homepage": "https://golangci-lint.run/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-16T21:22:57Z",
+      "tags": {
+        "sequoia": {
+          "filename": "golangci-lint-2.15.0.sequoia.bottle.tar.gz",
+          "local_filename": "golangci-lint--2.15.0.sequoia.bottle.tar.gz",
+          "sha256": "cb053edd9aee056335254f3031fb7ffa28439047c3daaca9b6c2bbff018d79f0",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792147914,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "go",
+                "version": "1.27.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.27.2",
+                "declared_directly": true,
+                "compatibility_version": 12
+              }
+            ],
+            "source": {
+              "scm_revision": "25c5369a93aacb8cccea0d46e1569ca4a194564d"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-go-1.2e.27.2e.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-go-1.2e.27.2e.2",
+                "name": "go",
+                "versionInfo": "1.27.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/go-1.27.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d26ba4ea1f76cca1fb0b4088a404fdf54b25dd881a34763fb547145e8c5f7ebe"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/go@1.27.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-go-1.2e.27.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-golangci-lint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-golangci-lint-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/golangci-lint"
+          ],
+          "all_files": [
+            ".brew/golangci-lint.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/golangci-lint",
+            "etc/bash_completion.d/golangci-lint",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/golangci-lint.fish",
+            "share/pwsh/completions/_golangci-lint.ps1",
+            "share/zsh/site-functions/_golangci-lint"
+          ],
+          "installed_size": 47178872
+        }
+      }
+    }
+  }
+}
