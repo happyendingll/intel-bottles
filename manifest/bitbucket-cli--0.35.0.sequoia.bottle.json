@@ -1,34 +1,32 @@
 {
-  "sqlite-rsync": {
+  "bitbucket-cli": {
     "formula": {
-      "name": "sqlite-rsync",
-      "pkg_version": "3.54.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sqlite-rsync.rb",
-      "tap_git_path": "Formula/s/sqlite-rsync.rb",
-      "tap_git_revision": "a8eebec3bf6d72f2a996c924be7c0ac1e1e9436f",
+      "name": "bitbucket-cli",
+      "pkg_version": "0.35.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/b/bitbucket-cli.rb",
+      "tap_git_path": "Formula/b/bitbucket-cli.rb",
+      "tap_git_revision": "0d4711c585f80319d2bad33cbfbdd172eec6c7e3",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "SQLite remote copy tool",
-      "license": "blessing",
-      "homepage": "https://www.sqlite.org/"
+      "desc": "CLI for Bitbucket Cloud and Data Center",
+      "license": "MIT",
+      "homepage": "https://github.com/avivsinai/bitbucket-cli"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
-      "cellar": "any",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-12T13:00:33Z",
+      "date": "2026-10-18T18:02:25Z",
       "tags": {
         "sequoia": {
-          "filename": "sqlite-rsync-3.54.0.sequoia.bottle.tar.gz",
-          "local_filename": "sqlite-rsync--3.54.0.sequoia.bottle.tar.gz",
-          "sha256": "f3ca62a184e792eb8c3c198fd8a34fe4ee8318aa4dc11fdced50820ffc8245e6",
+          "filename": "bitbucket-cli-0.35.0.sequoia.bottle.tar.gz",
+          "local_filename": "bitbucket-cli--0.35.0.sequoia.bottle.tar.gz",
+          "sha256": "e3f07cb7be074cde26f6d925342fb8e4c637b81543e488391e411544b9429c17",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [],
-            "linkage_files": [
-              "bin/sqlite3_rsync"
-            ],
+            "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1791562482,
+            "source_modified_time": 1792311105,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -64,22 +62,27 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-sqlite-rsync-src"
+                "relatedSpdxElement": "SPDXRef-Archive-bitbucket-cli-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/sqlite3_rsync"
+            "bin/bkt"
           ],
           "all_files": [
-            ".brew/sqlite-rsync.rb",
+            ".brew/bitbucket-cli.rb",
+            "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
-            "LICENSE.md",
+            "LICENSE",
             "README.md",
-            "bin/sqlite3_rsync",
-            "sbom.spdx.json"
+            "bin/bkt",
+            "etc/bash_completion.d/bkt",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/bkt.fish",
+            "share/pwsh/completions/_bkt.ps1",
+            "share/zsh/site-functions/_bkt"
           ],
-          "installed_size": 907789
+          "installed_size": 16169894
         }
       }
     }
