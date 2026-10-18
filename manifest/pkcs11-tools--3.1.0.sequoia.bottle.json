@@ -1,0 +1,310 @@
+{
+  "pkcs11-tools": {
+    "formula": {
+      "name": "pkcs11-tools",
+      "pkg_version": "3.1.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pkcs11-tools.rb",
+      "tap_git_path": "Formula/p/pkcs11-tools.rb",
+      "tap_git_revision": "4d53f432ded2a845f8870540c2db0aa482dbb38d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Tools to manage objects on PKCS#11 crypotographic tokens",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/Mastercard/pkcs11-tools"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-18T09:47:25Z",
+      "tags": {
+        "sequoia": {
+          "filename": "pkcs11-tools-3.1.0.sequoia.bottle.tar.gz",
+          "local_filename": "pkcs11-tools--3.1.0.sequoia.bottle.tar.gz",
+          "sha256": "479fc09d5b604fd22bdc87ebb0ec08f4de0da9849e09e77a3b11e845e048a7ca",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [
+              "bin/with_nss",
+              "bin/with_softhsm",
+              "share/zsh/site-functions/_p11tools"
+            ],
+            "linkage_files": [
+              "bin/masqreq",
+              "bin/p11cat",
+              "bin/p11cp",
+              "bin/p11importcert",
+              "bin/p11importdata",
+              "bin/p11importpubk",
+              "bin/p11init",
+              "bin/p11kcv",
+              "bin/p11keycomp",
+              "bin/p11keygen",
+              "bin/p11ls",
+              "bin/p11mkcert",
+              "bin/p11more",
+              "bin/p11mv",
+              "bin/p11od",
+              "bin/p11req",
+              "bin/p11rewrap",
+              "bin/p11rm",
+              "bin/p11setattr",
+              "bin/p11slotinfo",
+              "bin/p11unwrap",
+              "bin/p11wrap"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1787563208,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-09-25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-09-25",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "name": "ca-certificates",
+                "versionInfo": "2026-09-25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pkcs11-tools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pkcs11-tools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-pkcs11-tools-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/p11cat",
+            "bin/p11od",
+            "bin/with_aws",
+            "bin/p11more",
+            "bin/with_luna",
+            "bin/masqreq",
+            "bin/with_beid",
+            "bin/p11importdata",
+            "bin/p11setattr",
+            "bin/p11rewrap",
+            "bin/p11init",
+            "bin/p11importcert",
+            "bin/p11slotinfo",
+            "bin/p11keycomp",
+            "bin/with_yubico",
+            "bin/with_utimaco",
+            "bin/with_nss",
+            "bin/p11req",
+            "bin/p11keygen",
+            "bin/p11rm",
+            "bin/with_softhsm",
+            "bin/with_pkcs11_common",
+            "bin/p11cp",
+            "bin/p11ls",
+            "bin/p11mv",
+            "bin/p11importpubk",
+            "bin/with_nfast",
+            "bin/p11mkcert",
+            "bin/p11wrap",
+            "bin/p11kcv",
+            "bin/p11unwrap",
+            "bin/with_kryoptic"
+          ],
+          "all_files": [
+            ".brew/pkcs11-tools.rb",
+            "CHANGELOG.md",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/masqreq",
+            "bin/p11cat",
+            "bin/p11cp",
+            "bin/p11importcert",
+            "bin/p11importdata",
+            "bin/p11importpubk",
+            "bin/p11init",
+            "bin/p11kcv",
+            "bin/p11keycomp",
+            "bin/p11keygen",
+            "bin/p11ls",
+            "bin/p11mkcert",
+            "bin/p11more",
+            "bin/p11mv",
+            "bin/p11od",
+            "bin/p11req",
+            "bin/p11rewrap",
+            "bin/p11rm",
+            "bin/p11setattr",
+            "bin/p11slotinfo",
+            "bin/p11unwrap",
+            "bin/p11wrap",
+            "bin/with_aws",
+            "bin/with_beid",
+            "bin/with_kryoptic",
+            "bin/with_luna",
+            "bin/with_nfast",
+            "bin/with_nss",
+            "bin/with_pkcs11_common",
+            "bin/with_softhsm",
+            "bin/with_utimaco",
+            "bin/with_yubico",
+            "sbom.spdx.json",
+            "share/bash-completion/completions/p11-common",
+            "share/bash-completion/completions/p11cat",
+            "share/bash-completion/completions/p11cp",
+            "share/bash-completion/completions/p11importcert",
+            "share/bash-completion/completions/p11importdata",
+            "share/bash-completion/completions/p11importpubk",
+            "share/bash-completion/completions/p11init",
+            "share/bash-completion/completions/p11kcv",
+            "share/bash-completion/completions/p11keycomp",
+            "share/bash-completion/completions/p11keygen",
+            "share/bash-completion/completions/p11ls",
+            "share/bash-completion/completions/p11mkcert",
+            "share/bash-completion/completions/p11more",
+            "share/bash-completion/completions/p11mv",
+            "share/bash-completion/completions/p11od",
+            "share/bash-completion/completions/p11req",
+            "share/bash-completion/completions/p11rewrap",
+            "share/bash-completion/completions/p11rm",
+            "share/bash-completion/completions/p11setattr",
+            "share/bash-completion/completions/p11slotinfo",
+            "share/bash-completion/completions/p11unwrap",
+            "share/bash-completion/completions/p11wrap",
+            "share/man/man1/masqreq.1",
+            "share/man/man1/p11cat.1",
+            "share/man/man1/p11cp.1",
+            "share/man/man1/p11importcert.1",
+            "share/man/man1/p11importdata.1",
+            "share/man/man1/p11importpubk.1",
+            "share/man/man1/p11init.1",
+            "share/man/man1/p11kcv.1",
+            "share/man/man1/p11keycomp.1",
+            "share/man/man1/p11keygen.1",
+            "share/man/man1/p11ls.1",
+            "share/man/man1/p11mkcert.1",
+            "share/man/man1/p11more.1",
+            "share/man/man1/p11mv.1",
+            "share/man/man1/p11od.1",
+            "share/man/man1/p11req.1",
+            "share/man/man1/p11rewrap.1",
+            "share/man/man1/p11rm.1",
+            "share/man/man1/p11setattr.1",
+            "share/man/man1/p11slotinfo.1",
+            "share/man/man1/p11unwrap.1",
+            "share/man/man1/p11wrap.1",
+            "share/man/man1/with_aws.1",
+            "share/man/man1/with_beid.1",
+            "share/man/man1/with_kryoptic.1",
+            "share/man/man1/with_luna.1",
+            "share/man/man1/with_nfast.1",
+            "share/man/man1/with_nss.1",
+            "share/man/man1/with_pkcs11_common.1",
+            "share/man/man1/with_softhsm.1",
+            "share/man/man1/with_utimaco.1",
+            "share/man/man1/with_yubico.1",
+            "share/man/man5/pkcs11-wrap.5",
+            "share/man/man5/pkcs11rc.5",
+            "share/man/man7/pkcs11-tools.7",
+            "share/zsh/site-functions/_p11tools"
+          ],
+          "installed_size": 3555674
+        }
+      }
+    }
+  }
+}

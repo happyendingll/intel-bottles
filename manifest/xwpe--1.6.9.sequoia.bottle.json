@@ -1,0 +1,162 @@
+{
+  "xwpe": {
+    "formula": {
+      "name": "xwpe",
+      "pkg_version": "1.6.9",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/x/xwpe.rb",
+      "tap_git_path": "Formula/x/xwpe.rb",
+      "tap_git_revision": "4d53f432ded2a845f8870540c2db0aa482dbb38d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Borland-style IDE clone with LSP/DAP support (terminal UI)",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://codeberg.org/mendezr/xwpe"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-18T09:46:57Z",
+      "tags": {
+        "sequoia": {
+          "filename": "xwpe-1.6.9.sequoia.bottle.tar.gz",
+          "local_filename": "xwpe--1.6.9.sequoia.bottle.tar.gz",
+          "sha256": "d8b5c054e341ff0be8f8def4940ce06cc8d56aff3afbd54a5656eff50d1c76c9",
+          "tab": {
+            "homebrew_version": "7.0.9",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/we"
+            ],
+            "binary_relocation_files": [
+              "bin/we"
+            ],
+            "source_modified_time": 1783462098,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": true
+              },
+              {
+                "full_name": "libvterm",
+                "version": "0.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.3.3",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/we",
+              "string": "/usr/local/Cellar/xwpe/1.6.9/share/info",
+              "offset": 406481
+            },
+            {
+              "path": "bin/we",
+              "string": "/usr/local/Cellar/xwpe/1.6.9/lib/xwpe",
+              "offset": 407130
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xwpe"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-xwpe-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/wpe",
+            "bin/we"
+          ],
+          "all_files": [
+            ".brew/xwpe.rb",
+            "AUTHORS",
+            "CHANGELOG",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "README.md",
+            "bin/we",
+            "bin/wpe",
+            "lib/xwpe/help.key",
+            "lib/xwpe/help.xwpe",
+            "lib/xwpe/syntax_def",
+            "sbom.spdx.json",
+            "share/applications/xwpe.desktop",
+            "share/icons/hicolor/scalable/apps/xwpe.svg",
+            "share/info/xwpe.info",
+            "share/man/man1/we.1",
+            "share/man/man1/wpe.1",
+            "share/man/man1/xwe.1",
+            "share/man/man1/xwpe.1",
+            "share/metainfo/io.codeberg.mendezr.xwpe.metainfo.xml"
+          ],
+          "installed_size": 1022917
+        }
+      }
+    }
+  }
+}
