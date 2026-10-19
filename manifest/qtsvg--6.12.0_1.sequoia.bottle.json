@@ -1,13 +1,13 @@
 {
-  "qtserialport": {
+  "qtsvg": {
     "formula": {
-      "name": "qtserialport",
-      "pkg_version": "6.12.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtserialport.rb",
-      "tap_git_path": "Formula/q/qtserialport.rb",
-      "tap_git_revision": "cbd68e2e181168ef9bc8bf3249a727bf2f6458f9",
+      "name": "qtsvg",
+      "pkg_version": "6.12.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtsvg.rb",
+      "tap_git_path": "Formula/q/qtsvg.rb",
+      "tap_git_revision": "b192837813e851fe77322240dd707ea2202a9fc0",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Provides classes to interact with hardware and virtual serial ports",
+      "desc": "Classes for displaying the contents of SVG files",
       "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
       "homepage": "https://www.qt.io/"
     },
@@ -15,20 +15,23 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-15T02:39:13Z",
+      "date": "2026-10-19T02:42:31Z",
       "tags": {
         "sequoia": {
-          "filename": "qtserialport-6.12.0.sequoia.bottle.tar.gz",
-          "local_filename": "qtserialport--6.12.0.sequoia.bottle.tar.gz",
-          "sha256": "4be0101848e2f3e186f8ba352d2edeb017a642c5e82cd0c85b628ffb38ef16a6",
+          "filename": "qtsvg-6.12.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "qtsvg--6.12.0_1.sequoia.bottle.tar.gz",
+          "sha256": "a3dac3a9ca5680a40007f821f2175454a5eedef8be11deea22b27d23fc2fcd6a",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
-              "lib/QtSerialPort.framework/Versions/A/QtSerialPort"
+              "lib/QtSvg.framework/Versions/A/QtSvg",
+              "lib/QtSvgWidgets.framework/Versions/A/QtSvgWidgets",
+              "share/qt/plugins/iconengines/libqsvgicon.dylib",
+              "share/qt/plugins/imageformats/libqsvg.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790417503,
+            "source_modified_time": 1790417501,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -95,10 +98,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -167,10 +170,10 @@
               },
               {
                 "full_name": "libx11",
-                "version": "1.8.13",
+                "version": "1.8.14",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.8.13",
+                "pkg_version": "1.8.14",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -185,10 +188,10 @@
               },
               {
                 "full_name": "libxrender",
-                "version": "0.9.12",
+                "version": "0.9.13",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.9.12",
+                "pkg_version": "0.9.13",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -315,9 +318,9 @@
               {
                 "full_name": "qtbase",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -339,11 +342,12 @@
               "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
               "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
-              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+              "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
               "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
@@ -353,7 +357,7 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -450,24 +454,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libunistring-1.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                    "checksumValue": "8854773975603bc6243e11dc7d95fb33bba3e348337d95c44411052ef8870097"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -542,24 +546,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "name": "libx11",
-                "versionInfo": "1.8.13",
+                "versionInfo": "1.8.14",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libx11-1.8.13.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libx11-1.8.14.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9d7831ffb5cb71a304ef0c98d59b3fe38f56e42c48d7521dfd9040ef7631bd86"
+                    "checksumValue": "e53db342dd19bf07f170e998863ca89e2b4f12bd1b30198fbb520604bd6177f4"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceLocator": "pkg:brew/libx11@1.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "name": "libxrender",
+                "versionInfo": "0.9.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libxrender-0.9.13.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4c48c40d6ee48dfd2f902ae0ed966c38c811c2ac2771559c67d6ac7c5f17c390"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxrender@0.9.13",
                     "referenceType": "purl"
                   }
                 ]
@@ -772,24 +799,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "name": "qtbase",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtbase-6.12.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtbase-6.12.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8d769fec864e77b1b39a8bdd35b372930733a5e64f04cd589c041c9b00d40d0e"
+                    "checksumValue": "b43792d2487af245b275413bd499d7e4c274d5df446c7a6d0db61df96f8fc699"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -811,168 +838,246 @@
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialport"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtsvg"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-qtserialport-src"
+                "relatedSpdxElement": "SPDXRef-Archive-qtsvg-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/qtserialport.rb",
+            ".brew/qtsvg.rb",
             "INSTALL_RECEIPT.json",
-            "include/QtSerialPort/QSerialPort",
-            "include/QtSerialPort/QSerialPortInfo",
-            "include/QtSerialPort/QtSerialPort",
-            "include/QtSerialPort/QtSerialPortDepends",
-            "include/QtSerialPort/QtSerialPortVersion",
-            "include/QtSerialPort/qserialport.h",
-            "include/QtSerialPort/qserialportglobal.h",
-            "include/QtSerialPort/qserialportinfo.h",
-            "include/QtSerialPort/qtserialport-config.h",
-            "include/QtSerialPort/qtserialportexports.h",
-            "include/QtSerialPort/qtserialportversion.h",
-            "lib/QtSerialPort.framework/QtSerialPort",
-            "lib/QtSerialPort.framework/Versions/A/Headers/6.12.0/QtSerialPort/private/qserialport_p.h",
-            "lib/QtSerialPort.framework/Versions/A/Headers/6.12.0/QtSerialPort/private/qserialportinfo_p.h",
-            "lib/QtSerialPort.framework/Versions/A/Headers/6.12.0/QtSerialPort/private/qtserialport-config_p.h",
-            "lib/QtSerialPort.framework/Versions/A/Headers/QSerialPort",
-            "lib/QtSerialPort.framework/Versions/A/Headers/QSerialPortInfo",
-            "lib/QtSerialPort.framework/Versions/A/Headers/QtSerialPort",
-            "lib/QtSerialPort.framework/Versions/A/Headers/QtSerialPortDepends",
-            "lib/QtSerialPort.framework/Versions/A/Headers/QtSerialPortVersion",
-            "lib/QtSerialPort.framework/Versions/A/Headers/qserialport.h",
-            "lib/QtSerialPort.framework/Versions/A/Headers/qserialportglobal.h",
-            "lib/QtSerialPort.framework/Versions/A/Headers/qserialportinfo.h",
-            "lib/QtSerialPort.framework/Versions/A/Headers/qtserialport-config.h",
-            "lib/QtSerialPort.framework/Versions/A/Headers/qtserialportexports.h",
-            "lib/QtSerialPort.framework/Versions/A/Headers/qtserialportversion.h",
-            "lib/QtSerialPort.framework/Versions/A/QtSerialPort",
-            "lib/QtSerialPort.framework/Versions/A/Resources/Info.plist",
-            "lib/QtSerialPort.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtSerialPort.framework/Versions/A/Resources/QtSerialPort.prl",
-            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtSerialPortTestsConfig.cmake",
-            "lib/cmake/Qt6SerialPort/Qt6SerialPortAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6SerialPort/Qt6SerialPortConfig.cmake",
-            "lib/cmake/Qt6SerialPort/Qt6SerialPortConfigVersion.cmake",
-            "lib/cmake/Qt6SerialPort/Qt6SerialPortConfigVersionImpl.cmake",
-            "lib/cmake/Qt6SerialPort/Qt6SerialPortDependencies.cmake",
-            "lib/cmake/Qt6SerialPort/Qt6SerialPortTargets-release.cmake",
-            "lib/cmake/Qt6SerialPort/Qt6SerialPortTargets.cmake",
-            "lib/cmake/Qt6SerialPort/Qt6SerialPortTargetsPrecheck.cmake",
-            "lib/cmake/Qt6SerialPort/Qt6SerialPortVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6SerialPort/Qt6SerialPortVersionlessTargets.cmake",
-            "lib/cmake/Qt6SerialPortPrivate/Qt6SerialPortPrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6SerialPortPrivate/Qt6SerialPortPrivateConfig.cmake",
-            "lib/cmake/Qt6SerialPortPrivate/Qt6SerialPortPrivateConfigVersion.cmake",
-            "lib/cmake/Qt6SerialPortPrivate/Qt6SerialPortPrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6SerialPortPrivate/Qt6SerialPortPrivateDependencies.cmake",
-            "lib/cmake/Qt6SerialPortPrivate/Qt6SerialPortPrivateTargets.cmake",
-            "lib/cmake/Qt6SerialPortPrivate/Qt6SerialPortPrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6SerialPortPrivate/Qt6SerialPortPrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6SerialPortPrivate/Qt6SerialPortPrivateVersionlessTargets.cmake",
-            "lib/pkgconfig/Qt6SerialPort.pc",
+            "include/QtSvg/QSvgGenerator",
+            "include/QtSvg/QSvgRenderer",
+            "include/QtSvg/QtSvg",
+            "include/QtSvg/QtSvgDepends",
+            "include/QtSvg/QtSvgVersion",
+            "include/QtSvg/qsvggenerator.h",
+            "include/QtSvg/qsvgrenderer.h",
+            "include/QtSvg/qtsvgexports.h",
+            "include/QtSvg/qtsvgglobal.h",
+            "include/QtSvg/qtsvgversion.h",
+            "include/QtSvgWidgets/QGraphicsSvgItem",
+            "include/QtSvgWidgets/QSvgWidget",
+            "include/QtSvgWidgets/QtSvgWidgets",
+            "include/QtSvgWidgets/QtSvgWidgetsDepends",
+            "include/QtSvgWidgets/QtSvgWidgetsVersion",
+            "include/QtSvgWidgets/qgraphicssvgitem.h",
+            "include/QtSvgWidgets/qsvgwidget.h",
+            "include/QtSvgWidgets/qtsvgwidgetsexports.h",
+            "include/QtSvgWidgets/qtsvgwidgetsglobal.h",
+            "include/QtSvgWidgets/qtsvgwidgetsversion.h",
+            "lib/QtSvg.framework/QtSvg",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgabstractanimation_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvganimate_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvganimatedproperty_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvganimator_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgcssanimation_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgcsseasing_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgcsshandler_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgcssproperties_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgcssvalues_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgdocument_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgeasinginterface_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgfilter_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgfont_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvggraphics_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvghandler_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvghelper_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgnode_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgpaintserver_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgstructure_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgstyle_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgstyleselector_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qsvgvisitor_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/6.12.0/QtSvg/private/qtsvgglobal_p.h",
+            "lib/QtSvg.framework/Versions/A/Headers/QSvgGenerator",
+            "lib/QtSvg.framework/Versions/A/Headers/QSvgRenderer",
+            "lib/QtSvg.framework/Versions/A/Headers/QtSvg",
+            "lib/QtSvg.framework/Versions/A/Headers/QtSvgDepends",
+            "lib/QtSvg.framework/Versions/A/Headers/QtSvgVersion",
+            "lib/QtSvg.framework/Versions/A/Headers/qsvggenerator.h",
+            "lib/QtSvg.framework/Versions/A/Headers/qsvgrenderer.h",
+            "lib/QtSvg.framework/Versions/A/Headers/qtsvgexports.h",
+            "lib/QtSvg.framework/Versions/A/Headers/qtsvgglobal.h",
+            "lib/QtSvg.framework/Versions/A/Headers/qtsvgversion.h",
+            "lib/QtSvg.framework/Versions/A/QtSvg",
+            "lib/QtSvg.framework/Versions/A/Resources/Info.plist",
+            "lib/QtSvg.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtSvg.framework/Versions/A/Resources/QtSvg.prl",
+            "lib/QtSvgWidgets.framework/QtSvgWidgets",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/QGraphicsSvgItem",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/QSvgWidget",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/QtSvgWidgets",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/QtSvgWidgetsDepends",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/QtSvgWidgetsVersion",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/qgraphicssvgitem.h",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/qsvgwidget.h",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/qtsvgwidgetsexports.h",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/qtsvgwidgetsglobal.h",
+            "lib/QtSvgWidgets.framework/Versions/A/Headers/qtsvgwidgetsversion.h",
+            "lib/QtSvgWidgets.framework/Versions/A/QtSvgWidgets",
+            "lib/QtSvgWidgets.framework/Versions/A/Resources/Info.plist",
+            "lib/QtSvgWidgets.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtSvgWidgets.framework/Versions/A/Resources/QtSvgWidgets.prl",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtSvgTestsConfig.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfigVersion.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-release.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginConfigVersion.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-release.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake",
+            "lib/cmake/Qt6Gui/Qt6QSvgPluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgConfig.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgConfigVersion.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgDependencies.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgTargets-release.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgTargets.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Svg/Qt6SvgVersionlessTargets.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfig.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateDependencies.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateTargets.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6SvgPrivate/Qt6SvgPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsConfig.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsConfigVersion.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsDependencies.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsTargets-release.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsTargets.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6SvgWidgets/Qt6SvgWidgetsVersionlessTargets.cmake",
+            "lib/pkgconfig/Qt6Svg.pc",
+            "lib/pkgconfig/Qt6SvgWidgets.pc",
             "sbom.spdx.json",
-            "share/qt/metatypes/qt6serialport_metatypes.json",
-            "share/qt/mkspecs/modules/qt_lib_serialport.pri",
-            "share/qt/mkspecs/modules/qt_lib_serialport_private.pri",
-            "share/qt/modules/SerialPort.json",
-            "share/qt/sbom/qtserialport-6.12.0.spdx"
+            "share/qt/metatypes/qt6svg_metatypes.json",
+            "share/qt/metatypes/qt6svgwidgets_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_svg.pri",
+            "share/qt/mkspecs/modules/qt_lib_svg_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_svgwidgets.pri",
+            "share/qt/modules/Svg.json",
+            "share/qt/modules/SvgWidgets.json",
+            "share/qt/plugins/iconengines/libqsvgicon.dylib",
+            "share/qt/plugins/imageformats/libqsvg.dylib",
+            "share/qt/sbom/qtsvg-6.12.0.spdx"
           ],
-          "installed_size": 280265
+          "installed_size": 1113110
         }
       }
     }
