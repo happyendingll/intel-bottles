@@ -1,47 +1,39 @@
 {
-  "qt5compat": {
+  "qtquicktimeline": {
     "formula": {
-      "name": "qt5compat",
-      "pkg_version": "6.12.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qt5compat.rb",
-      "tap_git_path": "Formula/q/qt5compat.rb",
-      "tap_git_revision": "c869398a7a03510bbc609383848c8b002be15a83",
+      "name": "qtquicktimeline",
+      "pkg_version": "6.12.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtquicktimeline.rb",
+      "tap_git_path": "Formula/q/qtquicktimeline.rb",
+      "tap_git_revision": "faec1836c4d6526249817087b54ce37059734ecc",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Qt 5 Core APIs that were removed in Qt 6",
-      "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-2-Clause AND BSD-3-Clause",
+      "desc": "Enables keyframe-based animations and parameterization",
+      "license": "GPL-3.0-only AND BSD-3-Clause",
       "homepage": "https://www.qt.io/"
     },
     "bottle": {
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-15T04:05:09Z",
+      "date": "2026-10-19T04:45:55Z",
       "tags": {
         "sequoia": {
-          "filename": "qt5compat-6.12.0.sequoia.bottle.tar.gz",
-          "local_filename": "qt5compat--6.12.0.sequoia.bottle.tar.gz",
-          "sha256": "5497976bf93f56aa7f0b9196df81b186f8f74341e9706176809c9b5b1290cac0",
+          "filename": "qtquicktimeline-6.12.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "qtquicktimeline--6.12.0_1.sequoia.bottle.tar.gz",
+          "sha256": "c8f3bff7efaa3a1c889ec4adafb5c15bce10add34cb891f1b5a6939f06812849",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
-              "lib/QtCore5Compat.framework/Versions/A/QtCore5Compat",
-              "share/qt/qml/Qt5Compat/GraphicalEffects/libqtgraphicaleffectsplugin.dylib",
-              "share/qt/qml/Qt5Compat/GraphicalEffects/private/libqtgraphicaleffectsprivateplugin.dylib"
+              "lib/QtQuickTimeline.framework/Versions/A/QtQuickTimeline",
+              "lib/QtQuickTimelineBlendTrees.framework/Versions/A/QtQuickTimelineBlendTrees",
+              "share/qt/qml/QtQuick/Timeline/BlendTrees/libqtquicktimelineblendtreesplugin.dylib",
+              "share/qt/qml/QtQuick/Timeline/libqtquicktimelineplugin.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790432814,
+            "source_modified_time": 1790432823,
             "compiler": "clang",
             "runtime_dependencies": [
-              {
-                "full_name": "icu4c@78",
-                "version": "78.3",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "78.3",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
               {
                 "full_name": "brotli",
                 "version": "1.2.0",
@@ -106,10 +98,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -178,10 +170,10 @@
               },
               {
                 "full_name": "libx11",
-                "version": "1.8.13",
+                "version": "1.8.14",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.8.13",
+                "pkg_version": "1.8.14",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -196,10 +188,10 @@
               },
               {
                 "full_name": "libxrender",
-                "version": "0.9.12",
+                "version": "0.9.13",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.9.12",
+                "pkg_version": "0.9.13",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -235,6 +227,15 @@
                 "bottle_rebuild": 0,
                 "pkg_version": "1.3.15",
                 "declared_directly": false
+              },
+              {
+                "full_name": "icu4c@78",
+                "version": "78.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "78.3",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "harfbuzz",
@@ -317,36 +318,26 @@
               {
                 "full_name": "qtbase",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtsvg",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtdeclarative",
                 "version": "6.12.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "qtshadertools",
-                "version": "6.12.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "revision": 1,
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -368,11 +359,12 @@
               "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
               "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
-              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+              "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
               "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
@@ -382,10 +374,8 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtshadertools-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -482,24 +472,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libunistring-1.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                    "checksumValue": "8854773975603bc6243e11dc7d95fb33bba3e348337d95c44411052ef8870097"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -574,24 +564,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "name": "libx11",
-                "versionInfo": "1.8.13",
+                "versionInfo": "1.8.14",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libx11-1.8.13.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libx11-1.8.14.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9d7831ffb5cb71a304ef0c98d59b3fe38f56e42c48d7521dfd9040ef7631bd86"
+                    "checksumValue": "e53db342dd19bf07f170e998863ca89e2b4f12bd1b30198fbb520604bd6177f4"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceLocator": "pkg:brew/libx11@1.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "name": "libxrender",
+                "versionInfo": "0.9.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libxrender-0.9.13.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4c48c40d6ee48dfd2f902ae0ed966c38c811c2ac2771559c67d6ac7c5f17c390"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxrender@0.9.13",
                     "referenceType": "purl"
                   }
                 ]
@@ -804,93 +817,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "name": "qtbase",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtbase-6.12.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtbase-6.12.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8d769fec864e77b1b39a8bdd35b372930733a5e64f04cd589c041c9b00d40d0e"
+                    "checksumValue": "b43792d2487af245b275413bd499d7e4c274d5df446c7a6d0db61df96f8fc699"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
                 "name": "qtsvg",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtsvg-6.12.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtsvg-6.12.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "862cba1bec1a8cd9dddea1e162f38a4291cfdc1a6ef452a577ad9a34332529d4"
+                    "checksumValue": "a3dac3a9ca5680a40007f821f2175454a5eedef8be11deea22b27d23fc2fcd6a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtsvg@6.12.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
-                "name": "qtdeclarative",
-                "versionInfo": "6.12.0",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtdeclarative-6.12.0.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "b7fa1ec42a52623dab7659bce2e3232aff900f724f9df03fba788c06157597e1"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtdeclarative@6.12.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtshadertools-6.2e.12.2e.0",
-                "name": "qtshadertools",
-                "versionInfo": "6.12.0",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND (Apache-2.0 AND MIT-Khronos-old) AND (BSD-3-Clause AND MIT-Khronos-old AND Apache-2.0 AND AML-glslang AND (GPL-3.0-or-later WITH Bison-exception-2.2)) AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtshadertools-6.12.0.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "7221e3b6a9e44440ed73e8c211ad734722f0892bdf1a7f638de1bb5ed0e8ba88"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtshadertools@6.12.0",
+                    "referenceLocator": "pkg:brew/qtsvg@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -912,301 +879,235 @@
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtshadertools-6.2e.12.2e.0",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qt5compat"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtquicktimeline"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-qt5compat-src"
+                "relatedSpdxElement": "SPDXRef-Archive-qtquicktimeline-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/qt5compat.rb",
+            ".brew/qtquicktimeline.rb",
             "INSTALL_RECEIPT.json",
-            "include/QtCore5Compat/QBinaryJson",
-            "include/QtCore5Compat/QLinkedList",
-            "include/QtCore5Compat/QLinkedListData",
-            "include/QtCore5Compat/QLinkedListIterator",
-            "include/QtCore5Compat/QLinkedListNode",
-            "include/QtCore5Compat/QMutableLinkedListIterator",
-            "include/QtCore5Compat/QRegExp",
-            "include/QtCore5Compat/QStringRef",
-            "include/QtCore5Compat/QTextCodec",
-            "include/QtCore5Compat/QTextDecoder",
-            "include/QtCore5Compat/QTextEncoder",
-            "include/QtCore5Compat/QXmlAttributes",
-            "include/QtCore5Compat/QXmlContentHandler",
-            "include/QtCore5Compat/QXmlDTDHandler",
-            "include/QtCore5Compat/QXmlDeclHandler",
-            "include/QtCore5Compat/QXmlDefaultHandler",
-            "include/QtCore5Compat/QXmlEntityResolver",
-            "include/QtCore5Compat/QXmlErrorHandler",
-            "include/QtCore5Compat/QXmlInputSource",
-            "include/QtCore5Compat/QXmlLexicalHandler",
-            "include/QtCore5Compat/QXmlLocator",
-            "include/QtCore5Compat/QXmlNamespaceSupport",
-            "include/QtCore5Compat/QXmlParseException",
-            "include/QtCore5Compat/QXmlReader",
-            "include/QtCore5Compat/QXmlSimpleReader",
-            "include/QtCore5Compat/QtCore5Compat",
-            "include/QtCore5Compat/QtCore5CompatDepends",
-            "include/QtCore5Compat/QtCore5CompatVersion",
-            "include/QtCore5Compat/qbinaryjson.h",
-            "include/QtCore5Compat/qcore5global.h",
-            "include/QtCore5Compat/qlinkedlist.h",
-            "include/QtCore5Compat/qregexp.h",
-            "include/QtCore5Compat/qstringref.h",
-            "include/QtCore5Compat/qtcore5compat-config.h",
-            "include/QtCore5Compat/qtcore5compatexports.h",
-            "include/QtCore5Compat/qtcore5compatversion.h",
-            "include/QtCore5Compat/qtextcodec.h",
-            "include/QtCore5Compat/qxml.h",
-            "lib/QtCore5Compat.framework/QtCore5Compat",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qbinaryjson_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qbinaryjsonarray_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qbinaryjsonobject_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qbinaryjsonvalue_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qcodecmacros_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qicucodec_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qisciicodec_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qlatincodec_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qsimplecodec_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qtcore5compat-config_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qtextcodec_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qtsciicodec_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qutfcodec_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/6.12.0/QtCore5Compat/private/qxml_p.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QBinaryJson",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QLinkedList",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QLinkedListData",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QLinkedListIterator",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QLinkedListNode",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QMutableLinkedListIterator",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QRegExp",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QStringRef",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QTextCodec",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QTextDecoder",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QTextEncoder",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlAttributes",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlContentHandler",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlDTDHandler",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlDeclHandler",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlDefaultHandler",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlEntityResolver",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlErrorHandler",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlInputSource",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlLexicalHandler",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlLocator",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlNamespaceSupport",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlParseException",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlReader",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QXmlSimpleReader",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QtCore5Compat",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QtCore5CompatDepends",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/QtCore5CompatVersion",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/qbinaryjson.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/qcore5global.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/qlinkedlist.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/qregexp.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/qstringref.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/qtcore5compat-config.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/qtcore5compatexports.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/qtcore5compatversion.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/qtextcodec.h",
-            "lib/QtCore5Compat.framework/Versions/A/Headers/qxml.h",
-            "lib/QtCore5Compat.framework/Versions/A/QtCore5Compat",
-            "lib/QtCore5Compat.framework/Versions/A/Resources/Info.plist",
-            "lib/QtCore5Compat.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtCore5Compat.framework/Versions/A/Resources/QtCore5Compat.prl",
-            "lib/cmake/Qt6/FindWrapIconv.cmake",
-            "lib/cmake/Qt6BuildInternals/StandaloneTests/Qt5CompatTestsConfig.cmake",
-            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfig.cmake",
-            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfigVersion.cmake",
-            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatDependencies.cmake",
-            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargets-release.cmake",
-            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargets.cmake",
-            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatTargetsPrecheck.cmake",
-            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6Core5Compat/Qt6Core5CompatVersionlessTargets.cmake",
-            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateConfig.cmake",
-            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateConfigVersion.cmake",
-            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateDependencies.cmake",
-            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateTargets.cmake",
-            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6Core5CompatPrivate/Qt6Core5CompatPrivateVersionlessTargets.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginConfig.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginConfigVersion.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginTargets-release.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginTargets.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectspluginTargetsPrecheck.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateConfig.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateConfigVersion.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateTargets-release.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateTargets.cmake",
-            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtgraphicaleffectsprivateTargetsPrecheck.cmake",
-            "lib/pkgconfig/Qt6Core5Compat.pc",
+            "include/QtQuickTimeline/QtQuickTimeline",
+            "include/QtQuickTimeline/QtQuickTimelineDepends",
+            "include/QtQuickTimeline/QtQuickTimelineVersion",
+            "include/QtQuickTimeline/qtquicktimelineexports.h",
+            "include/QtQuickTimeline/qtquicktimelineglobal.h",
+            "include/QtQuickTimeline/qtquicktimelineversion.h",
+            "include/QtQuickTimelineBlendTrees/QtQuickTimelineBlendTrees",
+            "include/QtQuickTimelineBlendTrees/QtQuickTimelineBlendTreesDepends",
+            "include/QtQuickTimelineBlendTrees/QtQuickTimelineBlendTreesVersion",
+            "include/QtQuickTimelineBlendTrees/qtquicktimelineblendtreesexports.h",
+            "include/QtQuickTimelineBlendTrees/qtquicktimelineblendtreesglobal.h",
+            "include/QtQuickTimelineBlendTrees/qtquicktimelineblendtreesversion.h",
+            "lib/QtQuickTimeline.framework/QtQuickTimeline",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/6.12.0/QtQuickTimeline/private/qquickkeyframe_p.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/6.12.0/QtQuickTimeline/private/qquickkeyframedatautils_p.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/6.12.0/QtQuickTimeline/private/qquicktimeline_p.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/6.12.0/QtQuickTimeline/private/qquicktimelineanimation_p.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/6.12.0/QtQuickTimeline/private/qtquicktimelineglobal_p.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/QtQuickTimeline",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/QtQuickTimelineDepends",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/QtQuickTimelineVersion",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/qtquicktimelineexports.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/qtquicktimelineglobal.h",
+            "lib/QtQuickTimeline.framework/Versions/A/Headers/qtquicktimelineversion.h",
+            "lib/QtQuickTimeline.framework/Versions/A/QtQuickTimeline",
+            "lib/QtQuickTimeline.framework/Versions/A/Resources/Info.plist",
+            "lib/QtQuickTimeline.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtQuickTimeline.framework/Versions/A/Resources/QtQuickTimeline.prl",
+            "lib/QtQuickTimelineBlendTrees.framework/QtQuickTimelineBlendTrees",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/6.12.0/QtQuickTimelineBlendTrees/private/qblendanimationnode_p.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/6.12.0/QtQuickTimelineBlendTrees/private/qblendtreenode_p.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/6.12.0/QtQuickTimelineBlendTrees/private/qtimelineanimationnode_p.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/6.12.0/QtQuickTimelineBlendTrees/private/qtquicktimelineblendtreesglobal_p.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/QtQuickTimelineBlendTrees",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/QtQuickTimelineBlendTreesDepends",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/QtQuickTimelineBlendTreesVersion",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/qtquicktimelineblendtreesexports.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/qtquicktimelineblendtreesglobal.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Headers/qtquicktimelineblendtreesversion.h",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/QtQuickTimelineBlendTrees",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Resources/Info.plist",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtQuickTimelineBlendTrees.framework/Versions/A/Resources/QtQuickTimelineBlendTrees.prl",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtQuickTimelineTestsConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelineblendtreespluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6qtquicktimelinepluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineConfig.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineConfigVersion.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineConfigVersionImpl.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineDependencies.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineTargets-release.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineTargets.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineTargetsPrecheck.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6QuickTimeline/Qt6QuickTimelineVersionlessTargets.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesConfig.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesConfigVersion.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesConfigVersionImpl.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesDependencies.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesTargets-release.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesTargets.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesTargetsPrecheck.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTrees/Qt6QuickTimelineBlendTreesVersionlessTargets.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateConfig.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateDependencies.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateTargets.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6QuickTimelineBlendTreesPrivate/Qt6QuickTimelineBlendTreesPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateConfig.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateConfigVersion.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateDependencies.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateTargets.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6QuickTimelinePrivate/Qt6QuickTimelinePrivateVersionlessTargets.cmake",
+            "lib/pkgconfig/Qt6QuickTimeline.pc",
+            "lib/pkgconfig/Qt6QuickTimelineBlendTrees.pc",
             "sbom.spdx.json",
-            "share/qt/metatypes/qt6core5compat_metatypes.json",
-            "share/qt/mkspecs/modules/qt_lib_core5compat.pri",
-            "share/qt/mkspecs/modules/qt_lib_core5compat_private.pri",
-            "share/qt/modules/Core5Compat.json",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/Blend.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/BrightnessContrast.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/ColorOverlay.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/Colorize.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/ConicalGradient.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/Desaturate.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/DirectionalBlur.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/Displace.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/DropShadow.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/FastBlur.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/GammaAdjust.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/GaussianBlur.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/Glow.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/HueSaturation.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/InnerShadow.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/LevelAdjust.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/LinearGradient.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/MaskedBlur.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/OpacityMask.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/RadialBlur.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/RadialGradient.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/RectangularGlow.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/RecursiveBlur.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/ThresholdMask.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/ZoomBlur.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/libqtgraphicaleffectsplugin.dylib",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/private/DropShadowBase.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/private/FastGlow.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/private/FastInnerShadow.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/private/GaussianDirectionalBlur.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/private/GaussianGlow.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/private/GaussianInnerShadow.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/private/GaussianMaskedBlur.qml",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/private/libqtgraphicaleffectsprivateplugin.dylib",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/private/plugins.qmltypes",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/private/qmldir",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/qmldir",
-            "share/qt/qml/Qt5Compat/GraphicalEffects/qtgraphicaleffectsplugin.qmltypes",
-            "share/qt/sbom/qt5compat-6.12.0.spdx"
+            "share/qt/metatypes/qt6quicktimeline_metatypes.json",
+            "share/qt/metatypes/qt6quicktimelineblendtrees_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_quicktimeline.pri",
+            "share/qt/mkspecs/modules/qt_lib_quicktimeline_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_quicktimelineblendtrees.pri",
+            "share/qt/mkspecs/modules/qt_lib_quicktimelineblendtrees_private.pri",
+            "share/qt/modules/QuickTimeline.json",
+            "share/qt/modules/QuickTimelineBlendTrees.json",
+            "share/qt/qml/QtQuick/Timeline/BlendTrees/libqtquicktimelineblendtreesplugin.dylib",
+            "share/qt/qml/QtQuick/Timeline/BlendTrees/plugins.qmltypes",
+            "share/qt/qml/QtQuick/Timeline/BlendTrees/qmldir",
+            "share/qt/qml/QtQuick/Timeline/libqtquicktimelineplugin.dylib",
+            "share/qt/qml/QtQuick/Timeline/plugins.qmltypes",
+            "share/qt/qml/QtQuick/Timeline/qmldir",
+            "share/qt/sbom/qtquicktimeline-6.12.0.spdx"
           ],
-          "installed_size": 3529042
+          "installed_size": 545368
         }
       }
     }

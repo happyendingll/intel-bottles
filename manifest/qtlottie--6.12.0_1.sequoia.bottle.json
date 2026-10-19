@@ -1,13 +1,13 @@
 {
-  "qthttpserver": {
+  "qtlottie": {
     "formula": {
-      "name": "qthttpserver",
-      "pkg_version": "6.12.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qthttpserver.rb",
-      "tap_git_path": "Formula/q/qthttpserver.rb",
-      "tap_git_revision": "c869398a7a03510bbc609383848c8b002be15a83",
+      "name": "qtlottie",
+      "pkg_version": "6.12.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtlottie.rb",
+      "tap_git_path": "Formula/q/qtlottie.rb",
+      "tap_git_revision": "faec1836c4d6526249817087b54ce37059734ecc",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Framework for embedding an HTTP server into a Qt application",
+      "desc": "Display graphics and animations exported by the Bodymovin plugin",
       "license": "GPL-3.0-only AND BSD-3-Clause",
       "homepage": "https://www.qt.io/"
     },
@@ -15,20 +15,26 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-15T04:07:54Z",
+      "date": "2026-10-19T04:47:28Z",
       "tags": {
         "sequoia": {
-          "filename": "qthttpserver-6.12.0.sequoia.bottle.tar.gz",
-          "local_filename": "qthttpserver--6.12.0.sequoia.bottle.tar.gz",
-          "sha256": "55a0b39c2ead82c8ae322d05edefe62717c97bf42c3d9a267a47da7694b45046",
+          "filename": "qtlottie-6.12.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "qtlottie--6.12.0_1.sequoia.bottle.tar.gz",
+          "sha256": "104d5d1b8f20e10933d001455c758646232ccff4e67bd43f0ddc7f596b7b3b24",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
-              "lib/QtHttpServer.framework/Versions/A/QtHttpServer"
+              "bin/lottietoqml",
+              "lib/QtLottie.framework/Versions/A/QtLottie",
+              "lib/QtLottieVectorImageGenerator.framework/Versions/A/QtLottieVectorImageGenerator",
+              "lib/QtLottieVectorImageHelpers.framework/Versions/A/QtLottieVectorImageHelpers",
+              "share/qt/plugins/vectorimageformats/libqlottievectorimage.dylib",
+              "share/qt/qml/Qt/labs/lottieqt/VectorImageHelpers/liblottievectorimagehelpersplugin.dylib",
+              "share/qt/qml/Qt/labs/lottieqt/liblottieplugin.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790503899,
+            "source_modified_time": 1790434743,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -95,10 +101,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -167,10 +173,10 @@
               },
               {
                 "full_name": "libx11",
-                "version": "1.8.13",
+                "version": "1.8.14",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.8.13",
+                "pkg_version": "1.8.14",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -185,10 +191,10 @@
               },
               {
                 "full_name": "libxrender",
-                "version": "0.9.12",
+                "version": "0.9.13",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.9.12",
+                "pkg_version": "0.9.13",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -315,35 +321,34 @@
               {
                 "full_name": "qtbase",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtsvg",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "qtdeclarative",
                 "version": "6.12.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
-                "declared_directly": false,
+                "revision": 1,
+                "pkg_version": "6.12.0_1",
+                "declared_directly": true,
                 "compatibility_version": 1
               },
               {
-                "full_name": "qtwebsockets",
+                "full_name": "qtquicktimeline",
                 "version": "6.12.0",
-                "revision": 0,
-                "pkg_version": "6.12.0",
+                "revision": 1,
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -365,11 +370,12 @@
               "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
               "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
-              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+              "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
               "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
@@ -379,9 +385,8 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -478,24 +483,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libunistring-1.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                    "checksumValue": "8854773975603bc6243e11dc7d95fb33bba3e348337d95c44411052ef8870097"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -570,24 +575,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "name": "libx11",
-                "versionInfo": "1.8.13",
+                "versionInfo": "1.8.14",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libx11-1.8.13.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libx11-1.8.14.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9d7831ffb5cb71a304ef0c98d59b3fe38f56e42c48d7521dfd9040ef7631bd86"
+                    "checksumValue": "e53db342dd19bf07f170e998863ca89e2b4f12bd1b30198fbb520604bd6177f4"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceLocator": "pkg:brew/libx11@1.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "name": "libxrender",
+                "versionInfo": "0.9.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libxrender-0.9.13.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4c48c40d6ee48dfd2f902ae0ed966c38c811c2ac2771559c67d6ac7c5f17c390"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxrender@0.9.13",
                     "referenceType": "purl"
                   }
                 ]
@@ -800,70 +828,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "name": "qtbase",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtbase-6.12.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtbase-6.12.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8d769fec864e77b1b39a8bdd35b372930733a5e64f04cd589c041c9b00d40d0e"
+                    "checksumValue": "b43792d2487af245b275413bd499d7e4c274d5df446c7a6d0db61df96f8fc699"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
                 "name": "qtsvg",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtsvg-6.12.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtsvg-6.12.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "862cba1bec1a8cd9dddea1e162f38a4291cfdc1a6ef452a577ad9a34332529d4"
+                    "checksumValue": "a3dac3a9ca5680a40007f821f2175454a5eedef8be11deea22b27d23fc2fcd6a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtsvg@6.12.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
-                "name": "qtdeclarative",
-                "versionInfo": "6.12.0",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-2-Clause AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtdeclarative-6.12.0.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "b7fa1ec42a52623dab7659bce2e3232aff900f724f9df03fba788c06157597e1"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtdeclarative@6.12.0",
+                    "referenceLocator": "pkg:brew/qtsvg@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -885,220 +890,312 @@
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtdeclarative-6.2e.12.2e.0",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qthttpserver"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtlottie"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-qthttpserver-src"
+                "relatedSpdxElement": "SPDXRef-Archive-qtlottie-src"
               }
             ]
           },
-          "path_exec_files": [],
-          "all_files": [
-            ".brew/qthttpserver.rb",
-            "INSTALL_RECEIPT.json",
-            "include/QtHttpServer/QAbstractHttpServer",
-            "include/QtHttpServer/QHttpServer",
-            "include/QtHttpServer/QHttpServerConfiguration",
-            "include/QtHttpServer/QHttpServerRequest",
-            "include/QtHttpServer/QHttpServerResponder",
-            "include/QtHttpServer/QHttpServerResponse",
-            "include/QtHttpServer/QHttpServerRouter",
-            "include/QtHttpServer/QHttpServerRouterRule",
-            "include/QtHttpServer/QHttpServerRouterViewTraits",
-            "include/QtHttpServer/QHttpServerWebSocketUpgradeResponse",
-            "include/QtHttpServer/QtHttpServer",
-            "include/QtHttpServer/QtHttpServerDepends",
-            "include/QtHttpServer/QtHttpServerVersion",
-            "include/QtHttpServer/qabstracthttpserver.h",
-            "include/QtHttpServer/qhttpserver.h",
-            "include/QtHttpServer/qhttpserverconfiguration.h",
-            "include/QtHttpServer/qhttpserverrequest.h",
-            "include/QtHttpServer/qhttpserverresponder.h",
-            "include/QtHttpServer/qhttpserverresponse.h",
-            "include/QtHttpServer/qhttpserverrouter.h",
-            "include/QtHttpServer/qhttpserverrouterrule.h",
-            "include/QtHttpServer/qhttpserverrouterviewtraits.h",
-            "include/QtHttpServer/qhttpserverviewtraits_impl.h",
-            "include/QtHttpServer/qhttpserverwebsocketupgraderesponse.h",
-            "include/QtHttpServer/qthttpserverexports.h",
-            "include/QtHttpServer/qthttpserverglobal.h",
-            "include/QtHttpServer/qthttpserverversion.h",
-            "lib/QtHttpServer.framework/QtHttpServer",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qabstracthttpserver_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserver_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverhttp1protocolhandler_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverhttp2protocolhandler_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverliterals_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverparser_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverrequest_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverrequestfilter_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverresponder_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverresponse_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverrouter_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverrouterrule_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/6.12.0/QtHttpServer/private/qhttpserverstream_p.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QAbstractHttpServer",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServer",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerConfiguration",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerRequest",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerResponder",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerResponse",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerRouter",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerRouterRule",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerRouterViewTraits",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QHttpServerWebSocketUpgradeResponse",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QtHttpServer",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QtHttpServerDepends",
-            "lib/QtHttpServer.framework/Versions/A/Headers/QtHttpServerVersion",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qabstracthttpserver.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserver.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverconfiguration.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverrequest.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverresponder.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverresponse.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverrouter.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverrouterrule.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverrouterviewtraits.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverviewtraits_impl.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qhttpserverwebsocketupgraderesponse.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qthttpserverexports.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qthttpserverglobal.h",
-            "lib/QtHttpServer.framework/Versions/A/Headers/qthttpserverversion.h",
-            "lib/QtHttpServer.framework/Versions/A/QtHttpServer",
-            "lib/QtHttpServer.framework/Versions/A/Resources/Info.plist",
-            "lib/QtHttpServer.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtHttpServer.framework/Versions/A/Resources/QtHttpServer.prl",
-            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtHttpServerTestsConfig.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerConfig.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerConfigVersion.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerConfigVersionImpl.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerDependencies.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerTargets-release.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerTargets.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerTargetsPrecheck.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6HttpServer/Qt6HttpServerVersionlessTargets.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateConfig.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateConfigVersion.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateDependencies.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateTargets.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6HttpServerPrivate/Qt6HttpServerPrivateVersionlessTargets.cmake",
-            "lib/pkgconfig/Qt6HttpServer.pc",
-            "sbom.spdx.json",
-            "share/qt/metatypes/qt6httpserver_metatypes.json",
-            "share/qt/mkspecs/modules/qt_lib_httpserver.pri",
-            "share/qt/mkspecs/modules/qt_lib_httpserver_private.pri",
-            "share/qt/modules/HttpServer.json",
-            "share/qt/sbom/qthttpserver-6.12.0.spdx"
+          "path_exec_files": [
+            "bin/lottietoqml"
           ],
-          "installed_size": 486133
+          "all_files": [
+            ".brew/qtlottie.rb",
+            "INSTALL_RECEIPT.json",
+            "bin/lottietoqml",
+            "include/QtLottie/QtLottie",
+            "include/QtLottie/QtLottieDepends",
+            "include/QtLottie/QtLottieVersion",
+            "include/QtLottie/qtlottie-config.h",
+            "include/QtLottie/qtlottieexports.h",
+            "include/QtLottie/qtlottieversion.h",
+            "include/QtLottieVectorImageGenerator/QtLottieVectorImageGenerator",
+            "include/QtLottieVectorImageGenerator/QtLottieVectorImageGeneratorDepends",
+            "include/QtLottieVectorImageGenerator/QtLottieVectorImageGeneratorVersion",
+            "include/QtLottieVectorImageGenerator/qtlottievectorimagegeneratorexports.h",
+            "include/QtLottieVectorImageGenerator/qtlottievectorimagegeneratorversion.h",
+            "include/QtLottieVectorImageHelpers/QtLottieVectorImageHelpers",
+            "include/QtLottieVectorImageHelpers/QtLottieVectorImageHelpersDepends",
+            "include/QtLottieVectorImageHelpers/QtLottieVectorImageHelpersVersion",
+            "include/QtLottieVectorImageHelpers/qtlottievectorimagehelpersexports.h",
+            "include/QtLottieVectorImageHelpers/qtlottievectorimagehelpersversion.h",
+            "lib/QtLottie.framework/QtLottie",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qbatchrenderer_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qbeziereasing_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieanimation_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottiebase_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottiebasictransform_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieconstants_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieellipse_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottiefill_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottiefilleffect_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieflatlayers_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottiefreeformshape_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottiegfill_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottiegradientholder_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottiegroup_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottiegstroke_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieimage_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottielayer_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottiepolystar_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieprecomplayer_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieprecomposition_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieproperty_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottierasterrenderer_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottierect_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottierenderer_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottierepeater_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottierepeatertransform_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieroot_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieround_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieshape_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieshapelayer_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottieshapetransform_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottiespatialproperty_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottiestroke_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottietextlayer_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottietrimpath_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qlottievectorimagecontroller_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/6.12.0/QtLottie/private/qtlottie-config_p.h",
+            "lib/QtLottie.framework/Versions/A/Headers/QtLottie",
+            "lib/QtLottie.framework/Versions/A/Headers/QtLottieDepends",
+            "lib/QtLottie.framework/Versions/A/Headers/QtLottieVersion",
+            "lib/QtLottie.framework/Versions/A/Headers/qtlottie-config.h",
+            "lib/QtLottie.framework/Versions/A/Headers/qtlottieexports.h",
+            "lib/QtLottie.framework/Versions/A/Headers/qtlottieversion.h",
+            "lib/QtLottie.framework/Versions/A/QtLottie",
+            "lib/QtLottie.framework/Versions/A/Resources/Info.plist",
+            "lib/QtLottie.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtLottie.framework/Versions/A/Resources/QtLottie.prl",
+            "lib/QtLottieVectorImageGenerator.framework/QtLottieVectorImageGenerator",
+            "lib/QtLottieVectorImageGenerator.framework/Versions/A/Headers/6.12.0/QtLottieVectorImageGenerator/private/qlottievisitor_p.h",
+            "lib/QtLottieVectorImageGenerator.framework/Versions/A/Headers/QtLottieVectorImageGenerator",
+            "lib/QtLottieVectorImageGenerator.framework/Versions/A/Headers/QtLottieVectorImageGeneratorDepends",
+            "lib/QtLottieVectorImageGenerator.framework/Versions/A/Headers/QtLottieVectorImageGeneratorVersion",
+            "lib/QtLottieVectorImageGenerator.framework/Versions/A/Headers/qtlottievectorimagegeneratorexports.h",
+            "lib/QtLottieVectorImageGenerator.framework/Versions/A/Headers/qtlottievectorimagegeneratorversion.h",
+            "lib/QtLottieVectorImageGenerator.framework/Versions/A/QtLottieVectorImageGenerator",
+            "lib/QtLottieVectorImageGenerator.framework/Versions/A/Resources/Info.plist",
+            "lib/QtLottieVectorImageGenerator.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtLottieVectorImageGenerator.framework/Versions/A/Resources/QtLottieVectorImageGenerator.prl",
+            "lib/QtLottieVectorImageHelpers.framework/QtLottieVectorImageHelpers",
+            "lib/QtLottieVectorImageHelpers.framework/Versions/A/Headers/6.12.0/QtLottieVectorImageHelpers/private/qquicklayeritem_p.h",
+            "lib/QtLottieVectorImageHelpers.framework/Versions/A/Headers/QtLottieVectorImageHelpers",
+            "lib/QtLottieVectorImageHelpers.framework/Versions/A/Headers/QtLottieVectorImageHelpersDepends",
+            "lib/QtLottieVectorImageHelpers.framework/Versions/A/Headers/QtLottieVectorImageHelpersVersion",
+            "lib/QtLottieVectorImageHelpers.framework/Versions/A/Headers/qtlottievectorimagehelpersexports.h",
+            "lib/QtLottieVectorImageHelpers.framework/Versions/A/Headers/qtlottievectorimagehelpersversion.h",
+            "lib/QtLottieVectorImageHelpers.framework/Versions/A/QtLottieVectorImageHelpers",
+            "lib/QtLottieVectorImageHelpers.framework/Versions/A/Resources/Info.plist",
+            "lib/QtLottieVectorImageHelpers.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtLottieVectorImageHelpers.framework/Versions/A/Resources/QtLottieVectorImageHelpers.prl",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtLottieTestsConfig.cmake",
+            "lib/cmake/Qt6Lottie/Qt6LottieAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Lottie/Qt6LottieConfig.cmake",
+            "lib/cmake/Qt6Lottie/Qt6LottieConfigVersion.cmake",
+            "lib/cmake/Qt6Lottie/Qt6LottieConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Lottie/Qt6LottieDependencies.cmake",
+            "lib/cmake/Qt6Lottie/Qt6LottieTargets-release.cmake",
+            "lib/cmake/Qt6Lottie/Qt6LottieTargets.cmake",
+            "lib/cmake/Qt6Lottie/Qt6LottieTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Lottie/Qt6LottieVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6Lottie/Qt6LottieVersionlessTargets.cmake",
+            "lib/cmake/Qt6LottiePrivate/Qt6LottiePrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6LottiePrivate/Qt6LottiePrivateConfig.cmake",
+            "lib/cmake/Qt6LottiePrivate/Qt6LottiePrivateConfigVersion.cmake",
+            "lib/cmake/Qt6LottiePrivate/Qt6LottiePrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6LottiePrivate/Qt6LottiePrivateDependencies.cmake",
+            "lib/cmake/Qt6LottiePrivate/Qt6LottiePrivateTargets.cmake",
+            "lib/cmake/Qt6LottiePrivate/Qt6LottiePrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6LottiePrivate/Qt6LottiePrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6LottiePrivate/Qt6LottiePrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6LottieTools/Qt6LottieToQmlMacros.cmake",
+            "lib/cmake/Qt6LottieTools/Qt6LottieToolsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6LottieTools/Qt6LottieToolsConfig.cmake",
+            "lib/cmake/Qt6LottieTools/Qt6LottieToolsConfigVersion.cmake",
+            "lib/cmake/Qt6LottieTools/Qt6LottieToolsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6LottieTools/Qt6LottieToolsDependencies.cmake",
+            "lib/cmake/Qt6LottieTools/Qt6LottieToolsTargets-release.cmake",
+            "lib/cmake/Qt6LottieTools/Qt6LottieToolsTargets.cmake",
+            "lib/cmake/Qt6LottieTools/Qt6LottieToolsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6LottieTools/Qt6LottieToolsVersionlessTargets.cmake",
+            "lib/cmake/Qt6LottieVectorImageGeneratorPrivate/Qt6LottieVectorImageGeneratorPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6LottieVectorImageGeneratorPrivate/Qt6LottieVectorImageGeneratorPrivateConfig.cmake",
+            "lib/cmake/Qt6LottieVectorImageGeneratorPrivate/Qt6LottieVectorImageGeneratorPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6LottieVectorImageGeneratorPrivate/Qt6LottieVectorImageGeneratorPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6LottieVectorImageGeneratorPrivate/Qt6LottieVectorImageGeneratorPrivateDependencies.cmake",
+            "lib/cmake/Qt6LottieVectorImageGeneratorPrivate/Qt6LottieVectorImageGeneratorPrivateTargets-release.cmake",
+            "lib/cmake/Qt6LottieVectorImageGeneratorPrivate/Qt6LottieVectorImageGeneratorPrivateTargets.cmake",
+            "lib/cmake/Qt6LottieVectorImageGeneratorPrivate/Qt6LottieVectorImageGeneratorPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6LottieVectorImageGeneratorPrivate/Qt6LottieVectorImageGeneratorPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6LottieVectorImageGeneratorPrivate/Qt6LottieVectorImageGeneratorPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpers/Qt6LottieVectorImageHelpersAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpers/Qt6LottieVectorImageHelpersConfig.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpers/Qt6LottieVectorImageHelpersConfigVersion.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpers/Qt6LottieVectorImageHelpersConfigVersionImpl.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpers/Qt6LottieVectorImageHelpersDependencies.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpers/Qt6LottieVectorImageHelpersTargets-release.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpers/Qt6LottieVectorImageHelpersTargets.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpers/Qt6LottieVectorImageHelpersTargetsPrecheck.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpers/Qt6LottieVectorImageHelpersVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpers/Qt6LottieVectorImageHelpersVersionlessTargets.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpersPrivate/Qt6LottieVectorImageHelpersPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpersPrivate/Qt6LottieVectorImageHelpersPrivateConfig.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpersPrivate/Qt6LottieVectorImageHelpersPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpersPrivate/Qt6LottieVectorImageHelpersPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpersPrivate/Qt6LottieVectorImageHelpersPrivateDependencies.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpersPrivate/Qt6LottieVectorImageHelpersPrivateTargets.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpersPrivate/Qt6LottieVectorImageHelpersPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpersPrivate/Qt6LottieVectorImageHelpersPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6LottieVectorImageHelpersPrivate/Qt6LottieVectorImageHelpersPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottieVectorImageHelperspluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottieVectorImageHelperspluginConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottieVectorImageHelperspluginConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottieVectorImageHelperspluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottieVectorImageHelperspluginTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottieVectorImageHelperspluginTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottieVectorImageHelperspluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottiepluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottiepluginConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottiepluginConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottiepluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottiepluginTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottiepluginTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6LottiepluginTargetsPrecheck.cmake",
+            "lib/cmake/Qt6Quick/Qt6QLottieVectorImagePluginAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Quick/Qt6QLottieVectorImagePluginConfig.cmake",
+            "lib/cmake/Qt6Quick/Qt6QLottieVectorImagePluginConfigVersion.cmake",
+            "lib/cmake/Qt6Quick/Qt6QLottieVectorImagePluginConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Quick/Qt6QLottieVectorImagePluginTargets-release.cmake",
+            "lib/cmake/Qt6Quick/Qt6QLottieVectorImagePluginTargets.cmake",
+            "lib/cmake/Qt6Quick/Qt6QLottieVectorImagePluginTargetsPrecheck.cmake",
+            "lib/pkgconfig/Qt6Lottie.pc",
+            "lib/pkgconfig/Qt6LottieVectorImageHelpers.pc",
+            "sbom.spdx.json",
+            "share/qt/metatypes/qt6lottie_metatypes.json",
+            "share/qt/metatypes/qt6lottievectorimagegeneratorprivate_metatypes.json",
+            "share/qt/metatypes/qt6lottievectorimagehelpers_metatypes.json",
+            "share/qt/mkspecs/modules/qt_lib_lottie.pri",
+            "share/qt/mkspecs/modules/qt_lib_lottie_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_lottievectorimagegenerator_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_lottievectorimagehelpers.pri",
+            "share/qt/mkspecs/modules/qt_lib_lottievectorimagehelpers_private.pri",
+            "share/qt/modules/Lottie.json",
+            "share/qt/modules/LottieVectorImageGeneratorPrivate.json",
+            "share/qt/modules/LottieVectorImageHelpers.json",
+            "share/qt/plugins/vectorimageformats/libqlottievectorimage.dylib",
+            "share/qt/qml/Qt/labs/lottieqt/Lottie.qmltypes",
+            "share/qt/qml/Qt/labs/lottieqt/VectorImageHelpers/liblottievectorimagehelpersplugin.dylib",
+            "share/qt/qml/Qt/labs/lottieqt/VectorImageHelpers/plugins.qmltypes",
+            "share/qt/qml/Qt/labs/lottieqt/VectorImageHelpers/qmldir",
+            "share/qt/qml/Qt/labs/lottieqt/liblottieplugin.dylib",
+            "share/qt/qml/Qt/labs/lottieqt/qmldir",
+            "share/qt/sbom/qtlottie-6.12.0.spdx"
+          ],
+          "installed_size": 1463143
         }
       }
     }

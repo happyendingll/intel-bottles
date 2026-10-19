@@ -1,13 +1,13 @@
 {
-  "qtserialbus": {
+  "qtremoteobjects": {
     "formula": {
-      "name": "qtserialbus",
-      "pkg_version": "6.12.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtserialbus.rb",
-      "tap_git_path": "Formula/q/qtserialbus.rb",
-      "tap_git_revision": "a3af6278c08eda67b93bea080fd58148a817e0eb",
+      "name": "qtremoteobjects",
+      "pkg_version": "6.12.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qtremoteobjects.rb",
+      "tap_git_path": "Formula/q/qtremoteobjects.rb",
+      "tap_git_revision": "faec1836c4d6526249817087b54ce37059734ecc",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Provides access to serial industrial bus interfaces",
+      "desc": "Provides APIs for inter-process communication",
       "license": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause",
       "homepage": "https://www.qt.io/"
     },
@@ -15,25 +15,23 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-15T02:57:04Z",
+      "date": "2026-10-19T05:34:03Z",
       "tags": {
         "sequoia": {
-          "filename": "qtserialbus-6.12.0.sequoia.bottle.tar.gz",
-          "local_filename": "qtserialbus--6.12.0.sequoia.bottle.tar.gz",
-          "sha256": "a260cc58705f3c5f279488904dd835445e99a78bf9721694eefc843343bded88",
+          "filename": "qtremoteobjects-6.12.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "qtremoteobjects--6.12.0_1.sequoia.bottle.tar.gz",
+          "sha256": "51ee45ef3ed9178f57959c19e1a978eeb5a8dfb88863e0241cef7dfa98222540",
           "tab": {
             "homebrew_version": "7.0.9",
             "changed_files": [],
             "linkage_files": [
-              "bin/canbusutil",
-              "lib/QtSerialBus.framework/Versions/A/QtSerialBus",
-              "share/qt/plugins/canbus/libqtpassthrucanbus.dylib",
-              "share/qt/plugins/canbus/libqtpeakcanbus.dylib",
-              "share/qt/plugins/canbus/libqttinycanbus.dylib",
-              "share/qt/plugins/canbus/libqtvirtualcanbus.dylib"
+              "lib/QtRemoteObjects.framework/Versions/A/QtRemoteObjects",
+              "lib/QtRemoteObjectsQml.framework/Versions/A/QtRemoteObjectsQml",
+              "share/qt/libexec/repc",
+              "share/qt/qml/QtRemoteObjects/libdeclarative_remoteobjectsplugin.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790419420,
+            "source_modified_time": 1790432818,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -100,10 +98,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -172,10 +170,10 @@
               },
               {
                 "full_name": "libx11",
-                "version": "1.8.13",
+                "version": "1.8.14",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.8.13",
+                "pkg_version": "1.8.14",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -190,10 +188,10 @@
               },
               {
                 "full_name": "libxrender",
-                "version": "0.9.12",
+                "version": "0.9.13",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.9.12",
+                "pkg_version": "0.9.13",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -320,18 +318,26 @@
               {
                 "full_name": "qtbase",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
-                "full_name": "qtserialport",
+                "full_name": "qtsvg",
                 "version": "6.12.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.12.0",
+                "pkg_version": "6.12.0_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "qtdeclarative",
+                "version": "6.12.0",
+                "revision": 1,
+                "pkg_version": "6.12.0_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -353,11 +359,12 @@
               "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
               "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
-              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+              "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
+              "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
               "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
@@ -367,8 +374,8 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-qtserialport-6.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -465,24 +472,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libunistring-1.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                    "checksumValue": "8854773975603bc6243e11dc7d95fb33bba3e348337d95c44411052ef8870097"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -557,24 +564,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "name": "libx11",
-                "versionInfo": "1.8.13",
+                "versionInfo": "1.8.14",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libx11-1.8.13.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libx11-1.8.14.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9d7831ffb5cb71a304ef0c98d59b3fe38f56e42c48d7521dfd9040ef7631bd86"
+                    "checksumValue": "e53db342dd19bf07f170e998863ca89e2b4f12bd1b30198fbb520604bd6177f4"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libx11@1.8.13",
+                    "referenceLocator": "pkg:brew/libx11@1.8.14",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "name": "libxrender",
+                "versionInfo": "0.9.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libxrender-0.9.13.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4c48c40d6ee48dfd2f902ae0ed966c38c811c2ac2771559c67d6ac7c5f17c390"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxrender@0.9.13",
                     "referenceType": "purl"
                   }
                 ]
@@ -787,47 +817,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "name": "qtbase",
-                "versionInfo": "6.12.0",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND (GPL-3.0-only WITH Qt-GPL-exception-1.0) AND BSD-3-Clause AND GFDL-1.3-no-invariants-only",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtbase-6.12.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtbase-6.12.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8d769fec864e77b1b39a8bdd35b372930733a5e64f04cd589c041c9b00d40d0e"
+                    "checksumValue": "b43792d2487af245b275413bd499d7e4c274d5df446c7a6d0db61df96f8fc699"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtbase@6.12.0",
+                    "referenceLocator": "pkg:brew/qtbase@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-qtserialport-6.2e.12.2e.0",
-                "name": "qtserialport",
-                "versionInfo": "6.12.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
+                "name": "qtsvg",
+                "versionInfo": "6.12.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "(LGPL-3.0-only OR GPL-2.0-only OR GPL-3.0-only) AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtserialport-6.12.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/qtsvg-6.12.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4be0101848e2f3e186f8ba352d2edeb017a642c5e82cd0c85b628ffb38ef16a6"
+                    "checksumValue": "a3dac3a9ca5680a40007f821f2175454a5eedef8be11deea22b27d23fc2fcd6a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/qtserialport@6.12.0",
+                    "referenceLocator": "pkg:brew/qtsvg@6.12.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -849,316 +879,334 @@
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.13",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-md4c-0.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtbase-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-qtserialport-6.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-qtsvg-6.2e.12.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-qtserialbus"
+                "relatedSpdxElement": "SPDXRef-Bottle-qtremoteobjects"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-qtserialbus-src"
+                "relatedSpdxElement": "SPDXRef-Archive-qtremoteobjects-src"
               }
             ]
           },
-          "path_exec_files": [
-            "bin/canbusutil"
-          ],
+          "path_exec_files": [],
           "all_files": [
-            ".brew/qtserialbus.rb",
+            ".brew/qtremoteobjects.rb",
             "INSTALL_RECEIPT.json",
-            "bin/canbusutil",
-            "include/QtSerialBus/QCanBus",
-            "include/QtSerialBus/QCanBusDevice",
-            "include/QtSerialBus/QCanBusDeviceInfo",
-            "include/QtSerialBus/QCanBusFactory",
-            "include/QtSerialBus/QCanBusFrame",
-            "include/QtSerialBus/QCanDbcFileParser",
-            "include/QtSerialBus/QCanFrameProcessor",
-            "include/QtSerialBus/QCanMessageDescription",
-            "include/QtSerialBus/QCanSignalDescription",
-            "include/QtSerialBus/QCanUniqueIdDescription",
-            "include/QtSerialBus/QModbusClient",
-            "include/QtSerialBus/QModbusDataUnit",
-            "include/QtSerialBus/QModbusDataUnitMap",
-            "include/QtSerialBus/QModbusDevice",
-            "include/QtSerialBus/QModbusDeviceIdentification",
-            "include/QtSerialBus/QModbusExceptionResponse",
-            "include/QtSerialBus/QModbusPdu",
-            "include/QtSerialBus/QModbusReply",
-            "include/QtSerialBus/QModbusRequest",
-            "include/QtSerialBus/QModbusResponse",
-            "include/QtSerialBus/QModbusRtuSerialClient",
-            "include/QtSerialBus/QModbusRtuSerialMaster",
-            "include/QtSerialBus/QModbusRtuSerialServer",
-            "include/QtSerialBus/QModbusRtuSerialSlave",
-            "include/QtSerialBus/QModbusServer",
-            "include/QtSerialBus/QModbusTcpClient",
-            "include/QtSerialBus/QModbusTcpConnectionObserver",
-            "include/QtSerialBus/QModbusTcpServer",
-            "include/QtSerialBus/QtSerialBus",
-            "include/QtSerialBus/QtSerialBusDepends",
-            "include/QtSerialBus/QtSerialBusVersion",
-            "include/QtSerialBus/qcanbus.h",
-            "include/QtSerialBus/qcanbusdevice.h",
-            "include/QtSerialBus/qcanbusdeviceinfo.h",
-            "include/QtSerialBus/qcanbusfactory.h",
-            "include/QtSerialBus/qcanbusframe.h",
-            "include/QtSerialBus/qcancommondefinitions.h",
-            "include/QtSerialBus/qcandbcfileparser.h",
-            "include/QtSerialBus/qcanframeprocessor.h",
-            "include/QtSerialBus/qcanmessagedescription.h",
-            "include/QtSerialBus/qcansignaldescription.h",
-            "include/QtSerialBus/qcanuniqueiddescription.h",
-            "include/QtSerialBus/qmodbusclient.h",
-            "include/QtSerialBus/qmodbusdataunit.h",
-            "include/QtSerialBus/qmodbusdevice.h",
-            "include/QtSerialBus/qmodbusdeviceidentification.h",
-            "include/QtSerialBus/qmodbuspdu.h",
-            "include/QtSerialBus/qmodbusreply.h",
-            "include/QtSerialBus/qmodbusrtuserialclient.h",
-            "include/QtSerialBus/qmodbusrtuserialserver.h",
-            "include/QtSerialBus/qmodbusserver.h",
-            "include/QtSerialBus/qmodbustcpclient.h",
-            "include/QtSerialBus/qmodbustcpserver.h",
-            "include/QtSerialBus/qtserialbus-config.h",
-            "include/QtSerialBus/qtserialbusexports.h",
-            "include/QtSerialBus/qtserialbusglobal.h",
-            "include/QtSerialBus/qtserialbusversion.h",
-            "lib/QtSerialBus.framework/QtSerialBus",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qcanbusdevice_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qcanbusdeviceinfo_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qcandbcfileparser_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qcanframeprocessor_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qcanmessagedescription_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qcansignaldescription_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qcanuniqueiddescription_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qmodbus_symbols_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qmodbusadu_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qmodbusclient_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qmodbuscommevent_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qmodbusdevice_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qmodbusrtuserialclient_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qmodbusrtuserialserver_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qmodbusserver_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qmodbustcpclient_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qmodbustcpserver_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/6.12.0/QtSerialBus/private/qtserialbus-config_p.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QCanBus",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QCanBusDevice",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QCanBusDeviceInfo",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QCanBusFactory",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QCanBusFrame",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QCanDbcFileParser",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QCanFrameProcessor",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QCanMessageDescription",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QCanSignalDescription",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QCanUniqueIdDescription",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusClient",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusDataUnit",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusDataUnitMap",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusDevice",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusDeviceIdentification",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusExceptionResponse",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusPdu",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusReply",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusRequest",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusResponse",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusRtuSerialClient",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusRtuSerialMaster",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusRtuSerialServer",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusRtuSerialSlave",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusServer",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusTcpClient",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusTcpConnectionObserver",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QModbusTcpServer",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QtSerialBus",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QtSerialBusDepends",
-            "lib/QtSerialBus.framework/Versions/A/Headers/QtSerialBusVersion",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qcanbus.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qcanbusdevice.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qcanbusdeviceinfo.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qcanbusfactory.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qcanbusframe.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qcancommondefinitions.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qcandbcfileparser.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qcanframeprocessor.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qcanmessagedescription.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qcansignaldescription.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qcanuniqueiddescription.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qmodbusclient.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qmodbusdataunit.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qmodbusdevice.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qmodbusdeviceidentification.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qmodbuspdu.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qmodbusreply.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qmodbusrtuserialclient.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qmodbusrtuserialserver.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qmodbusserver.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qmodbustcpclient.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qmodbustcpserver.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qtserialbus-config.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qtserialbusexports.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qtserialbusglobal.h",
-            "lib/QtSerialBus.framework/Versions/A/Headers/qtserialbusversion.h",
-            "lib/QtSerialBus.framework/Versions/A/QtSerialBus",
-            "lib/QtSerialBus.framework/Versions/A/Resources/Info.plist",
-            "lib/QtSerialBus.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
-            "lib/QtSerialBus.framework/Versions/A/Resources/QtSerialBus.prl",
-            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtSerialBusTestsConfig.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PassThruCanBusPluginAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PassThruCanBusPluginConfig.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PassThruCanBusPluginConfigVersion.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PassThruCanBusPluginConfigVersionImpl.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PassThruCanBusPluginTargets-release.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PassThruCanBusPluginTargets.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PassThruCanBusPluginTargetsPrecheck.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PeakCanBusPluginAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PeakCanBusPluginConfig.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PeakCanBusPluginConfigVersion.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PeakCanBusPluginConfigVersionImpl.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PeakCanBusPluginTargets-release.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PeakCanBusPluginTargets.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6PeakCanBusPluginTargetsPrecheck.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6SerialBusAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6SerialBusConfig.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6SerialBusConfigVersion.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6SerialBusConfigVersionImpl.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6SerialBusDependencies.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6SerialBusPlugins.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6SerialBusTargets-release.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6SerialBusTargets.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6SerialBusTargetsPrecheck.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6SerialBusVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6SerialBusVersionlessTargets.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6TinyCanBusPluginAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6TinyCanBusPluginConfig.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6TinyCanBusPluginConfigVersion.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6TinyCanBusPluginConfigVersionImpl.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6TinyCanBusPluginTargets-release.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6TinyCanBusPluginTargets.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6TinyCanBusPluginTargetsPrecheck.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6VirtualCanBusPluginAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6VirtualCanBusPluginConfig.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6VirtualCanBusPluginConfigVersion.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6VirtualCanBusPluginConfigVersionImpl.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6VirtualCanBusPluginTargets-release.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6VirtualCanBusPluginTargets.cmake",
-            "lib/cmake/Qt6SerialBus/Qt6VirtualCanBusPluginTargetsPrecheck.cmake",
-            "lib/cmake/Qt6SerialBusPrivate/Qt6SerialBusPrivateAdditionalTargetInfo.cmake",
-            "lib/cmake/Qt6SerialBusPrivate/Qt6SerialBusPrivateConfig.cmake",
-            "lib/cmake/Qt6SerialBusPrivate/Qt6SerialBusPrivateConfigVersion.cmake",
-            "lib/cmake/Qt6SerialBusPrivate/Qt6SerialBusPrivateConfigVersionImpl.cmake",
-            "lib/cmake/Qt6SerialBusPrivate/Qt6SerialBusPrivateDependencies.cmake",
-            "lib/cmake/Qt6SerialBusPrivate/Qt6SerialBusPrivateTargets.cmake",
-            "lib/cmake/Qt6SerialBusPrivate/Qt6SerialBusPrivateTargetsPrecheck.cmake",
-            "lib/cmake/Qt6SerialBusPrivate/Qt6SerialBusPrivateVersionlessAliasTargets.cmake",
-            "lib/cmake/Qt6SerialBusPrivate/Qt6SerialBusPrivateVersionlessTargets.cmake",
-            "lib/pkgconfig/Qt6SerialBus.pc",
+            "include/QtRemoteObjects/QAbstractItemModelReplica",
+            "include/QtRemoteObjects/QConnectionAbstractServer",
+            "include/QtRemoteObjects/QIntHash",
+            "include/QtRemoteObjects/QRemoteObjectAbstractPersistedStore",
+            "include/QtRemoteObjects/QRemoteObjectDynamicReplica",
+            "include/QtRemoteObjects/QRemoteObjectHost",
+            "include/QtRemoteObjects/QRemoteObjectHostBase",
+            "include/QtRemoteObjects/QRemoteObjectNode",
+            "include/QtRemoteObjects/QRemoteObjectPendingCall",
+            "include/QtRemoteObjects/QRemoteObjectPendingCallWatcher",
+            "include/QtRemoteObjects/QRemoteObjectPendingReply",
+            "include/QtRemoteObjects/QRemoteObjectRegistry",
+            "include/QtRemoteObjects/QRemoteObjectRegistryHost",
+            "include/QtRemoteObjects/QRemoteObjectReplica",
+            "include/QtRemoteObjects/QRemoteObjectSettingsStore",
+            "include/QtRemoteObjects/QRemoteObjectSourceLocation",
+            "include/QtRemoteObjects/QRemoteObjectSourceLocationInfo",
+            "include/QtRemoteObjects/QRemoteObjectSourceLocations",
+            "include/QtRemoteObjects/QtROClientFactory",
+            "include/QtRemoteObjects/QtROClientIoDevice",
+            "include/QtRemoteObjects/QtROIoDeviceBase",
+            "include/QtRemoteObjects/QtROServerFactory",
+            "include/QtRemoteObjects/QtROServerIoDevice",
+            "include/QtRemoteObjects/QtRemoteObjects",
+            "include/QtRemoteObjects/QtRemoteObjectsDepends",
+            "include/QtRemoteObjects/QtRemoteObjectsVersion",
+            "include/QtRemoteObjects/qconnectionfactories.h",
+            "include/QtRemoteObjects/qremoteobjectabstractitemmodelreplica.h",
+            "include/QtRemoteObjects/qremoteobjectdynamicreplica.h",
+            "include/QtRemoteObjects/qremoteobjectnode.h",
+            "include/QtRemoteObjects/qremoteobjectpendingcall.h",
+            "include/QtRemoteObjects/qremoteobjectregistry.h",
+            "include/QtRemoteObjects/qremoteobjectreplica.h",
+            "include/QtRemoteObjects/qremoteobjectsettingsstore.h",
+            "include/QtRemoteObjects/qremoteobjectsource.h",
+            "include/QtRemoteObjects/qtremoteobjectglobal.h",
+            "include/QtRemoteObjects/qtremoteobjects-config.h",
+            "include/QtRemoteObjects/qtremoteobjectsexports.h",
+            "include/QtRemoteObjects/qtremoteobjectsversion.h",
+            "include/QtRemoteObjects/repparser.h",
+            "include/QtRemoteObjectsQml/QtRemoteObjectsQml",
+            "include/QtRemoteObjectsQml/QtRemoteObjectsQmlDepends",
+            "include/QtRemoteObjectsQml/QtRemoteObjectsQmlVersion",
+            "include/QtRemoteObjectsQml/qtremoteobjectsqmlversion.h",
+            "include/QtRepParser/QtRepParser",
+            "include/QtRepParser/QtRepParserDepends",
+            "include/QtRepParser/QtRepParserVersion",
+            "include/QtRepParser/parser.g",
+            "include/QtRepParser/qregexparser.h",
+            "include/QtRepParser/qtrepparserversion.h",
+            "lib/QtRemoteObjects.framework/QtRemoteObjects",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qconnection_local_backend_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qconnection_tcpip_backend_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qconnectionfactories_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectabstractitemmodeladapter_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectabstractitemmodelreplica_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectabstractitemmodeltypes_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectcontainers_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectnode_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectpacket_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectpendingcall_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectregistrysource_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectreplica_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectrepparser_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectsource_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectsourceio_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qremoteobjectstructs_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/qtremoteobjects-config_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/6.12.0/QtRemoteObjects/private/rep_grammar_p.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QAbstractItemModelReplica",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QConnectionAbstractServer",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QIntHash",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectAbstractPersistedStore",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectDynamicReplica",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectHost",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectHostBase",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectNode",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectPendingCall",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectPendingCallWatcher",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectPendingReply",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectRegistry",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectRegistryHost",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectReplica",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectSettingsStore",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectSourceLocation",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectSourceLocationInfo",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QRemoteObjectSourceLocations",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtROClientFactory",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtROClientIoDevice",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtROIoDeviceBase",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtROServerFactory",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtROServerIoDevice",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtRemoteObjects",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtRemoteObjectsDepends",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/QtRemoteObjectsVersion",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qconnectionfactories.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectabstractitemmodelreplica.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectdynamicreplica.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectnode.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectpendingcall.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectregistry.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectreplica.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectsettingsstore.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qremoteobjectsource.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qtremoteobjectglobal.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qtremoteobjects-config.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qtremoteobjectsexports.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/qtremoteobjectsversion.h",
+            "lib/QtRemoteObjects.framework/Versions/A/Headers/repparser.h",
+            "lib/QtRemoteObjects.framework/Versions/A/QtRemoteObjects",
+            "lib/QtRemoteObjects.framework/Versions/A/Resources/Info.plist",
+            "lib/QtRemoteObjects.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtRemoteObjects.framework/Versions/A/Resources/QtRemoteObjects.prl",
+            "lib/QtRemoteObjectsQml.framework/QtRemoteObjectsQml",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Headers/6.12.0/QtRemoteObjectsQml/private/qremoteobjectsqml_p.h",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Headers/QtRemoteObjectsQml",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Headers/QtRemoteObjectsQmlDepends",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Headers/QtRemoteObjectsQmlVersion",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Headers/qtremoteobjectsqmlversion.h",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/QtRemoteObjectsQml",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Resources/Info.plist",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Resources/PrivacyInfo.xcprivacy",
+            "lib/QtRemoteObjectsQml.framework/Versions/A/Resources/QtRemoteObjectsQml.prl",
+            "lib/cmake/Qt6BuildInternals/StandaloneTests/QtRemoteObjectsTestsConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsConfig.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsConfigVersion.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsTargets-release.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsTargets.cmake",
+            "lib/cmake/Qt6Qml/QmlPlugins/Qt6declarative_remoteobjectsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsConfig.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsConfigVersion.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsDependencies.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsMacros.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsTargets-release.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsTargets.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6RemoteObjects/Qt6RemoteObjectsVersionlessTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateConfig.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateDependencies.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsPrivate/Qt6RemoteObjectsPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlConfig.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlConfigVersion.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlConfigVersionImpl.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlDependencies.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlTargets-release.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsQml/Qt6RemoteObjectsQmlVersionlessTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateConfig.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateConfigVersion.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateConfigVersionImpl.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateDependencies.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsQmlPrivate/Qt6RemoteObjectsQmlPrivateVersionlessTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsConfig.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsConfigVersion.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsConfigVersionImpl.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsDependencies.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsTargets-release.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsTargets.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RemoteObjectsTools/Qt6RemoteObjectsToolsVersionlessTargets.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserAdditionalTargetInfo.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserConfig.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserConfigVersion.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserConfigVersionImpl.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserDependencies.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserTargets.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserTargetsPrecheck.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserVersionlessAliasTargets.cmake",
+            "lib/cmake/Qt6RepParser/Qt6RepParserVersionlessTargets.cmake",
+            "lib/pkgconfig/Qt6RemoteObjects.pc",
+            "lib/pkgconfig/Qt6RemoteObjectsQml.pc",
+            "lib/pkgconfig/Qt6RepParser.pc",
             "sbom.spdx.json",
-            "share/qt/metatypes/qt6serialbus_metatypes.json",
-            "share/qt/mkspecs/modules/qt_lib_serialbus.pri",
-            "share/qt/mkspecs/modules/qt_lib_serialbus_private.pri",
-            "share/qt/modules/SerialBus.json",
-            "share/qt/plugins/canbus/libqtpassthrucanbus.dylib",
-            "share/qt/plugins/canbus/libqtpeakcanbus.dylib",
-            "share/qt/plugins/canbus/libqttinycanbus.dylib",
-            "share/qt/plugins/canbus/libqtvirtualcanbus.dylib",
-            "share/qt/sbom/qtserialbus-6.12.0.spdx"
+            "share/qt/libexec/repc",
+            "share/qt/metatypes/qt6remoteobjects_metatypes.json",
+            "share/qt/metatypes/qt6remoteobjectsqml_metatypes.json",
+            "share/qt/mkspecs/features/remoteobjects_repc.prf",
+            "share/qt/mkspecs/features/repcclient.pri",
+            "share/qt/mkspecs/features/repccommon.pri",
+            "share/qt/mkspecs/features/repcmerged.pri",
+            "share/qt/mkspecs/features/repcserver.pri",
+            "share/qt/mkspecs/features/repparser.prf",
+            "share/qt/mkspecs/modules/qt_lib_remoteobjects.pri",
+            "share/qt/mkspecs/modules/qt_lib_remoteobjects_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_remoteobjectsqml.pri",
+            "share/qt/mkspecs/modules/qt_lib_remoteobjectsqml_private.pri",
+            "share/qt/mkspecs/modules/qt_lib_repparser.pri",
+            "share/qt/modules/RemoteObjects.json",
+            "share/qt/modules/RemoteObjectsQml.json",
+            "share/qt/modules/RepParser.json",
+            "share/qt/qml/QtRemoteObjects/libdeclarative_remoteobjectsplugin.dylib",
+            "share/qt/qml/QtRemoteObjects/plugins.qmltypes",
+            "share/qt/qml/QtRemoteObjects/qmldir",
+            "share/qt/sbom/qtremoteobjects-6.12.0.spdx"
           ],
-          "installed_size": 1204213
+          "installed_size": 2355208
         }
       }
     }
