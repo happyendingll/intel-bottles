@@ -1,0 +1,236 @@
+{
+  "execline": {
+    "formula": {
+      "name": "execline",
+      "pkg_version": "2.10.0.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/e/execline.rb",
+      "tap_git_path": "Formula/e/execline.rb",
+      "tap_git_revision": "35e087e95de3946fc0f4cf0af86a266948a16027",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Interpreter-less scripting language",
+      "license": "ISC",
+      "homepage": "https://skarnet.org/software/execline/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-20T06:31:13Z",
+      "tags": {
+        "sequoia": {
+          "filename": "execline-2.10.0.0.sequoia.bottle.tar.gz",
+          "local_filename": "execline--2.10.0.0.sequoia.bottle.tar.gz",
+          "sha256": "8f2c4e635c0558467bee5c22293e34930b26b5c163a0c56a155066a0628feb27",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [
+              "include/execline/config.h",
+              "lib/pkgconfig/libexecline.pc"
+            ],
+            "linkage_files": [
+              "lib/libexecline.2.10.0.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792378727,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "skalibs",
+                "version": "2.16.0.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.16.0.0",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-skalibs-2.2e.16.2e.0.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-skalibs-2.2e.16.2e.0.2e.0",
+                "name": "skalibs",
+                "versionInfo": "2.16.0.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3/skalibs-2.16.0.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5100090d403212835eedb55501417f51b63ede408fa15311af6d7f7e1ce71967"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/skalibs@2.16.0.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-skalibs-2.2e.16.2e.0.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-execline"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-execline-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/background",
+            "bin/umask",
+            "bin/pipeline",
+            "bin/getpid",
+            "bin/forx",
+            "bin/export-array",
+            "bin/wait",
+            "bin/unexport",
+            "bin/fdmove",
+            "bin/multidefine",
+            "bin/forbacktickx",
+            "bin/eltest",
+            "bin/tryexec",
+            "bin/envfile",
+            "bin/define",
+            "bin/foreground",
+            "bin/importas",
+            "bin/backtick",
+            "bin/withstdinas",
+            "bin/if",
+            "bin/getcwd",
+            "bin/shift",
+            "bin/fdblock",
+            "bin/homeof",
+            "bin/piperw",
+            "bin/trap",
+            "bin/fdswap",
+            "bin/heredoc",
+            "bin/forstdin",
+            "bin/ifthenelse",
+            "bin/dollarat",
+            "bin/redirfd",
+            "bin/elgetpositionals",
+            "bin/ifelse",
+            "bin/fdreserve",
+            "bin/elgetopt",
+            "bin/multisubstitute",
+            "bin/execlineb",
+            "bin/emptyenv",
+            "bin/exec",
+            "bin/ifte",
+            "bin/fdclose",
+            "bin/exit",
+            "bin/case",
+            "bin/loopwhilex",
+            "bin/cd",
+            "bin/export",
+            "bin/elglob",
+            "bin/dollarsharp",
+            "bin/runblock"
+          ],
+          "all_files": [
+            ".brew/execline.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "bin/background",
+            "bin/backtick",
+            "bin/case",
+            "bin/cd",
+            "bin/define",
+            "bin/dollarat",
+            "bin/dollarsharp",
+            "bin/elgetopt",
+            "bin/elgetpositionals",
+            "bin/elglob",
+            "bin/eltest",
+            "bin/emptyenv",
+            "bin/envfile",
+            "bin/exec",
+            "bin/execlineb",
+            "bin/exit",
+            "bin/export",
+            "bin/export-array",
+            "bin/fdblock",
+            "bin/fdclose",
+            "bin/fdmove",
+            "bin/fdreserve",
+            "bin/fdswap",
+            "bin/forbacktickx",
+            "bin/foreground",
+            "bin/forstdin",
+            "bin/forx",
+            "bin/getcwd",
+            "bin/getpid",
+            "bin/heredoc",
+            "bin/homeof",
+            "bin/if",
+            "bin/ifelse",
+            "bin/ifte",
+            "bin/ifthenelse",
+            "bin/importas",
+            "bin/loopwhilex",
+            "bin/multidefine",
+            "bin/multisubstitute",
+            "bin/pipeline",
+            "bin/piperw",
+            "bin/redirfd",
+            "bin/runblock",
+            "bin/shift",
+            "bin/trap",
+            "bin/tryexec",
+            "bin/umask",
+            "bin/unexport",
+            "bin/wait",
+            "bin/withstdinas",
+            "include/execline/config.h",
+            "include/execline/execline.h",
+            "lib/libexecline.2.10.0.0.dylib",
+            "lib/libexecline.2.10.dylib",
+            "lib/libexecline.522.dylib",
+            "lib/libexecline.a",
+            "lib/libexecline.dylib",
+            "lib/pkgconfig/libexecline.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1222816
+        }
+      }
+    }
+  }
+}
