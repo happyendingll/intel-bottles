@@ -1,0 +1,264 @@
+{
+  "s6-rc": {
+    "formula": {
+      "name": "s6-rc",
+      "pkg_version": "0.8.0.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/s6-rc.rb",
+      "tap_git_path": "Formula/s/s6-rc.rb",
+      "tap_git_revision": "d6618fc1ab14caa6a89eed697d1f3d4ee6ce537d",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Process supervision suite",
+      "license": "ISC",
+      "homepage": "https://skarnet.org/software/s6-rc/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-20T06:40:10Z",
+      "tags": {
+        "sequoia": {
+          "filename": "s6-rc-0.8.0.2.sequoia.bottle.tar.gz",
+          "local_filename": "s6-rc--0.8.0.2.sequoia.bottle.tar.gz",
+          "sha256": "5ef650050aaadf36b442f1115ee981354dc7d69725c48c9eecf27196e09621da",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [
+              "include/s6-rc/config.h",
+              "lib/pkgconfig/libs6rc.pc",
+              "lib/pkgconfig/libs6rcrepo.pc"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [
+              "bin/s6-rc-init",
+              "bin/s6-rc-update"
+            ],
+            "source_modified_time": 1792417186,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "skalibs",
+                "version": "2.16.0.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.16.0.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "execline",
+                "version": "2.10.0.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10.0.0",
+                "declared_directly": true
+              },
+              {
+                "full_name": "s6",
+                "version": "2.15.1.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.15.1.1",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/s6-rc-init",
+              "string": "/usr/local/Cellar/s6/2.15.1.1/libexec/s6-ftrigrd",
+              "offset": 35784
+            },
+            {
+              "path": "bin/s6-rc-update",
+              "string": "/usr/local/Cellar/s6/2.15.1.1/libexec/s6-ftrigrd",
+              "offset": 89463
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-skalibs-2.2e.16.2e.0.2e.0",
+              "SPDXRef-Package-SPDXRef-execline-2.2e.10.2e.0.2e.0",
+              "SPDXRef-Package-SPDXRef-s6-2.2e.15.2e.1.2e.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-skalibs-2.2e.16.2e.0.2e.0",
+                "name": "skalibs",
+                "versionInfo": "2.16.0.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3/skalibs-2.16.0.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5100090d403212835eedb55501417f51b63ede408fa15311af6d7f7e1ce71967"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/skalibs@2.16.0.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-execline-2.2e.10.2e.0.2e.0",
+                "name": "execline",
+                "versionInfo": "2.10.0.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3/execline-2.10.0.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8f2c4e635c0558467bee5c22293e34930b26b5c163a0c56a155066a0628feb27"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/execline@2.10.0.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-s6-2.2e.15.2e.1.2e.1",
+                "name": "s6",
+                "versionInfo": "2.15.1.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3/s6-2.15.1.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1424904c3dce505f5d56cdd35c947d499d56f6b95676641b8d0d5a55bc2849ec"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/s6@2.15.1.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-skalibs-2.2e.16.2e.0.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-s6-rc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-execline-2.2e.10.2e.0.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-s6-rc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-s6-2.2e.15.2e.1.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-s6-rc"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-s6-rc-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/s6-rc-set-install",
+            "bin/s6-rc-init",
+            "bin/s6-rc-set-copy",
+            "bin/s6-rc-dryrun",
+            "bin/s6-rc-db",
+            "bin/s6-rc-format-upgrade",
+            "bin/s6-rc-update",
+            "bin/s6-rc",
+            "bin/s6-rc-set-fix",
+            "bin/s6-rc-set-new",
+            "bin/s6-rc-repo-init",
+            "bin/s6-rc-compile",
+            "bin/s6-rc-set-change",
+            "bin/s6-rc-repo-sync",
+            "bin/s6-rc-set-commit",
+            "bin/s6-rc-set-delete",
+            "bin/s6-rc-set-status",
+            "bin/s6-rc-repo-list"
+          ],
+          "all_files": [
+            ".brew/s6-rc.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "bin/s6-rc",
+            "bin/s6-rc-compile",
+            "bin/s6-rc-db",
+            "bin/s6-rc-dryrun",
+            "bin/s6-rc-format-upgrade",
+            "bin/s6-rc-init",
+            "bin/s6-rc-repo-init",
+            "bin/s6-rc-repo-list",
+            "bin/s6-rc-repo-sync",
+            "bin/s6-rc-set-change",
+            "bin/s6-rc-set-commit",
+            "bin/s6-rc-set-copy",
+            "bin/s6-rc-set-delete",
+            "bin/s6-rc-set-fix",
+            "bin/s6-rc-set-install",
+            "bin/s6-rc-set-new",
+            "bin/s6-rc-set-status",
+            "bin/s6-rc-update",
+            "include/s6-rc/config.h",
+            "include/s6-rc/repo.h",
+            "include/s6-rc/s6rc-constants.h",
+            "include/s6-rc/s6rc-db.h",
+            "include/s6-rc/s6rc-servicedir.h",
+            "include/s6-rc/s6rc-utils.h",
+            "include/s6-rc/s6rc.h",
+            "lib/libs6rc.a",
+            "lib/libs6rcrepo.a",
+            "lib/pkgconfig/libs6rc.pc",
+            "lib/pkgconfig/libs6rcrepo.pc",
+            "libexec/s6-rc-fdholder-filler",
+            "libexec/s6-rc-oneshot-run",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1076577
+        }
+      }
+    }
+  }
+}
