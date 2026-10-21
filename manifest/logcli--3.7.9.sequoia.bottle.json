@@ -1,0 +1,88 @@
+{
+  "logcli": {
+    "formula": {
+      "name": "logcli",
+      "pkg_version": "3.7.9",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/l/logcli.rb",
+      "tap_git_path": "Formula/l/logcli.rb",
+      "tap_git_revision": "0687b4d2ee65d412acfdc698449b403edd9b833f",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Run LogQL queries against a Loki server",
+      "license": "AGPL-3.0-only",
+      "homepage": "https://grafana.com/oss/loki"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-21T20:38:02Z",
+      "tags": {
+        "sequoia": {
+          "filename": "logcli-3.7.9.sequoia.bottle.tar.gz",
+          "local_filename": "logcli--3.7.9.sequoia.bottle.tar.gz",
+          "sha256": "a15847863e859982de71f273ab808051d383487c5c23b973e8582f2355669451",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792531295,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-logcli-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/logcli"
+          ],
+          "all_files": [
+            ".brew/logcli.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/logcli",
+            "etc/bash_completion.d/logcli",
+            "sbom.spdx.json",
+            "share/zsh/site-functions/_logcli"
+          ],
+          "installed_size": 127119869
+        }
+      }
+    }
+  }
+}
