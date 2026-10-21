@@ -1,0 +1,291 @@
+{
+  "xml-security-c": {
+    "formula": {
+      "name": "xml-security-c",
+      "pkg_version": "3.0.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/x/xml-security-c.rb",
+      "tap_git_path": "Formula/x/xml-security-c.rb",
+      "tap_git_revision": "961681a163a2559fa6da3254c7fd455208dae320",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Implementation of primary security standards for XML",
+      "license": "Apache-2.0",
+      "homepage": "https://santuario.apache.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-21T01:08:35Z",
+      "tags": {
+        "sequoia": {
+          "filename": "xml-security-c-3.0.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "xml-security-c--3.0.0_1.sequoia.bottle.tar.gz",
+          "sha256": "5a7c477396f19a6d8295d7dcfd5bdb5d70ff39c780b6f92eecc9034e3b1b30e8",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [
+              "lib/pkgconfig/xml-security-c.pc"
+            ],
+            "linkage_files": [
+              "bin/xsec-c14n",
+              "bin/xsec-checksig",
+              "bin/xsec-cipher",
+              "bin/xsec-siginf",
+              "bin/xsec-templatesign",
+              "bin/xsec-txfmout",
+              "bin/xsec-xtest",
+              "lib/libxml-security-c.30.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1729087940,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-10-20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-10-20",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              },
+              {
+                "full_name": "xerces-c",
+                "version": "3.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.3.0",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "name": "ca-certificates",
+                "versionInfo": "2026-10-20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xml-security-c"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xml-security-c"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-xml-security-c-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/xsec-c14n",
+            "bin/xsec-txfmout",
+            "bin/xsec-checksig",
+            "bin/xsec-siginf",
+            "bin/xsec-templatesign",
+            "bin/xsec-cipher",
+            "bin/xsec-xtest"
+          ],
+          "all_files": [
+            ".brew/xml-security-c.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "NOTICE.txt",
+            "bin/xsec-c14n",
+            "bin/xsec-checksig",
+            "bin/xsec-cipher",
+            "bin/xsec-siginf",
+            "bin/xsec-templatesign",
+            "bin/xsec-txfmout",
+            "bin/xsec-xtest",
+            "include/xsec/canon/XSECC14n20010315.hpp",
+            "include/xsec/canon/XSECCanon.hpp",
+            "include/xsec/canon/XSECXMLNSStack.hpp",
+            "include/xsec/dsig/DSIGAlgorithmHandlerDefault.hpp",
+            "include/xsec/dsig/DSIGConstants.hpp",
+            "include/xsec/dsig/DSIGKeyInfo.hpp",
+            "include/xsec/dsig/DSIGKeyInfoDEREncoded.hpp",
+            "include/xsec/dsig/DSIGKeyInfoExt.hpp",
+            "include/xsec/dsig/DSIGKeyInfoList.hpp",
+            "include/xsec/dsig/DSIGKeyInfoMgmtData.hpp",
+            "include/xsec/dsig/DSIGKeyInfoName.hpp",
+            "include/xsec/dsig/DSIGKeyInfoPGPData.hpp",
+            "include/xsec/dsig/DSIGKeyInfoSPKIData.hpp",
+            "include/xsec/dsig/DSIGKeyInfoValue.hpp",
+            "include/xsec/dsig/DSIGKeyInfoX509.hpp",
+            "include/xsec/dsig/DSIGObject.hpp",
+            "include/xsec/dsig/DSIGReference.hpp",
+            "include/xsec/dsig/DSIGReferenceList.hpp",
+            "include/xsec/dsig/DSIGSignature.hpp",
+            "include/xsec/dsig/DSIGSignedInfo.hpp",
+            "include/xsec/dsig/DSIGTransform.hpp",
+            "include/xsec/dsig/DSIGTransformBase64.hpp",
+            "include/xsec/dsig/DSIGTransformC14n.hpp",
+            "include/xsec/dsig/DSIGTransformEnvelope.hpp",
+            "include/xsec/dsig/DSIGTransformList.hpp",
+            "include/xsec/dsig/DSIGTransformXPath.hpp",
+            "include/xsec/dsig/DSIGTransformXPathFilter.hpp",
+            "include/xsec/dsig/DSIGTransformXSL.hpp",
+            "include/xsec/dsig/DSIGXPathFilterExpr.hpp",
+            "include/xsec/enc/OpenSSL/OpenSSLCryptoBase64.hpp",
+            "include/xsec/enc/OpenSSL/OpenSSLCryptoHash.hpp",
+            "include/xsec/enc/OpenSSL/OpenSSLCryptoHashHMAC.hpp",
+            "include/xsec/enc/OpenSSL/OpenSSLCryptoKeyDSA.hpp",
+            "include/xsec/enc/OpenSSL/OpenSSLCryptoKeyEC.hpp",
+            "include/xsec/enc/OpenSSL/OpenSSLCryptoKeyHMAC.hpp",
+            "include/xsec/enc/OpenSSL/OpenSSLCryptoKeyRSA.hpp",
+            "include/xsec/enc/OpenSSL/OpenSSLCryptoProvider.hpp",
+            "include/xsec/enc/OpenSSL/OpenSSLCryptoSymmetricKey.hpp",
+            "include/xsec/enc/OpenSSL/OpenSSLCryptoX509.hpp",
+            "include/xsec/enc/OpenSSL/OpenSSLSupport.hpp",
+            "include/xsec/enc/XSCrypt/XSCryptCryptoBase64.hpp",
+            "include/xsec/enc/XSECCryptoBase64.hpp",
+            "include/xsec/enc/XSECCryptoException.hpp",
+            "include/xsec/enc/XSECCryptoHash.hpp",
+            "include/xsec/enc/XSECCryptoKey.hpp",
+            "include/xsec/enc/XSECCryptoKeyDSA.hpp",
+            "include/xsec/enc/XSECCryptoKeyEC.hpp",
+            "include/xsec/enc/XSECCryptoKeyHMAC.hpp",
+            "include/xsec/enc/XSECCryptoKeyRSA.hpp",
+            "include/xsec/enc/XSECCryptoProvider.hpp",
+            "include/xsec/enc/XSECCryptoSymmetricKey.hpp",
+            "include/xsec/enc/XSECCryptoUtils.hpp",
+            "include/xsec/enc/XSECCryptoX509.hpp",
+            "include/xsec/enc/XSECKeyInfoResolver.hpp",
+            "include/xsec/enc/XSECKeyInfoResolverDefault.hpp",
+            "include/xsec/framework/XSECAlgorithmHandler.hpp",
+            "include/xsec/framework/XSECAlgorithmMapper.hpp",
+            "include/xsec/framework/XSECConfig.hpp",
+            "include/xsec/framework/XSECDefs.hpp",
+            "include/xsec/framework/XSECEnv.hpp",
+            "include/xsec/framework/XSECError.hpp",
+            "include/xsec/framework/XSECException.hpp",
+            "include/xsec/framework/XSECProvider.hpp",
+            "include/xsec/framework/XSECURIResolver.hpp",
+            "include/xsec/framework/XSECURIResolverXerces.hpp",
+            "include/xsec/framework/XSECVersion.hpp",
+            "include/xsec/framework/XSECW32Config.hpp",
+            "include/xsec/transformers/TXFMBase.hpp",
+            "include/xsec/transformers/TXFMBase64.hpp",
+            "include/xsec/transformers/TXFMC14n.hpp",
+            "include/xsec/transformers/TXFMChain.hpp",
+            "include/xsec/transformers/TXFMChar.hpp",
+            "include/xsec/transformers/TXFMCipher.hpp",
+            "include/xsec/transformers/TXFMConcatChains.hpp",
+            "include/xsec/transformers/TXFMDocObject.hpp",
+            "include/xsec/transformers/TXFMEnvelope.hpp",
+            "include/xsec/transformers/TXFMHash.hpp",
+            "include/xsec/transformers/TXFMOutputFile.hpp",
+            "include/xsec/transformers/TXFMParser.hpp",
+            "include/xsec/transformers/TXFMSB.hpp",
+            "include/xsec/transformers/TXFMURL.hpp",
+            "include/xsec/utils/XSECBinTXFMInputStream.hpp",
+            "include/xsec/utils/XSECNameSpaceExpander.hpp",
+            "include/xsec/utils/XSECPlatformUtils.hpp",
+            "include/xsec/utils/XSECSafeBuffer.hpp",
+            "include/xsec/utils/XSECSafeBufferFormatter.hpp",
+            "include/xsec/utils/XSECTXFMInputSource.hpp",
+            "include/xsec/utils/XSECXPathNodeList.hpp",
+            "include/xsec/xenc/XENCCipher.hpp",
+            "include/xsec/xenc/XENCCipherData.hpp",
+            "include/xsec/xenc/XENCCipherReference.hpp",
+            "include/xsec/xenc/XENCCipherValue.hpp",
+            "include/xsec/xenc/XENCEncryptedData.hpp",
+            "include/xsec/xenc/XENCEncryptedKey.hpp",
+            "include/xsec/xenc/XENCEncryptedType.hpp",
+            "include/xsec/xenc/XENCEncryptionMethod.hpp",
+            "lib/libxml-security-c.30.dylib",
+            "lib/libxml-security-c.dylib",
+            "lib/pkgconfig/xml-security-c.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1346833
+        }
+      }
+    }
+  }
+}
