@@ -1,0 +1,156 @@
+{
+  "gperftools": {
+    "formula": {
+      "name": "gperftools",
+      "pkg_version": "2.19",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gperftools.rb",
+      "tap_git_path": "Formula/g/gperftools.rb",
+      "tap_git_revision": "3721fd95273a6e2667ba203e9b6a243f662c1a59",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Multi-threaded malloc() and performance analysis tools",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/gperftools/gperftools"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-21T07:06:37Z",
+      "tags": {
+        "sequoia": {
+          "filename": "gperftools-2.19.sequoia.bottle.tar.gz",
+          "local_filename": "gperftools--2.19.sequoia.bottle.tar.gz",
+          "sha256": "f1980277c0acb4c2d262f84106bff23e3b1d99a5ec5556c997fba5756c456ae2",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [
+              "lib/pkgconfig/libprofiler.pc",
+              "lib/pkgconfig/libtcmalloc.pc",
+              "lib/pkgconfig/libtcmalloc_debug.pc",
+              "lib/pkgconfig/libtcmalloc_minimal.pc",
+              "lib/pkgconfig/libtcmalloc_minimal_debug.pc"
+            ],
+            "linkage_files": [
+              "lib/libprofiler.0.dylib",
+              "lib/libtcmalloc.4.dylib",
+              "lib/libtcmalloc_and_profiler.4.dylib",
+              "lib/libtcmalloc_debug.4.dylib",
+              "lib/libtcmalloc_minimal.4.dylib",
+              "lib/libtcmalloc_minimal_debug.4.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792515572,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-gperftools-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/gperftools.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "include/gperftools/heap-checker.h",
+            "include/gperftools/heap-profiler.h",
+            "include/gperftools/malloc_extension.h",
+            "include/gperftools/malloc_extension_c.h",
+            "include/gperftools/malloc_hook.h",
+            "include/gperftools/malloc_hook_c.h",
+            "include/gperftools/nallocx.h",
+            "include/gperftools/profiler.h",
+            "include/gperftools/stacktrace.h",
+            "include/gperftools/tcmalloc.h",
+            "lib/libprofiler.0.dylib",
+            "lib/libprofiler.a",
+            "lib/libprofiler.dylib",
+            "lib/libtcmalloc.4.dylib",
+            "lib/libtcmalloc.a",
+            "lib/libtcmalloc.dylib",
+            "lib/libtcmalloc_and_profiler.4.dylib",
+            "lib/libtcmalloc_and_profiler.a",
+            "lib/libtcmalloc_and_profiler.dylib",
+            "lib/libtcmalloc_debug.4.dylib",
+            "lib/libtcmalloc_debug.a",
+            "lib/libtcmalloc_debug.dylib",
+            "lib/libtcmalloc_minimal.4.dylib",
+            "lib/libtcmalloc_minimal.a",
+            "lib/libtcmalloc_minimal.dylib",
+            "lib/libtcmalloc_minimal_debug.4.dylib",
+            "lib/libtcmalloc_minimal_debug.a",
+            "lib/libtcmalloc_minimal_debug.dylib",
+            "lib/pkgconfig/libprofiler.pc",
+            "lib/pkgconfig/libtcmalloc.pc",
+            "lib/pkgconfig/libtcmalloc_debug.pc",
+            "lib/pkgconfig/libtcmalloc_minimal.pc",
+            "lib/pkgconfig/libtcmalloc_minimal_debug.pc",
+            "sbom.spdx.json",
+            "share/doc/gperftools/AUTHORS",
+            "share/doc/gperftools/COPYING",
+            "share/doc/gperftools/ChangeLog.old",
+            "share/doc/gperftools/INSTALL",
+            "share/doc/gperftools/NEWS",
+            "share/doc/gperftools/README",
+            "share/doc/gperftools/README_windows.txt",
+            "share/doc/gperftools/cpuprofile-fileformat.adoc",
+            "share/doc/gperftools/cpuprofile.adoc",
+            "share/doc/gperftools/heap-example1.png",
+            "share/doc/gperftools/heapprofile.adoc",
+            "share/doc/gperftools/overview.dot",
+            "share/doc/gperftools/overview.gif",
+            "share/doc/gperftools/pageheap.dot",
+            "share/doc/gperftools/pageheap.gif",
+            "share/doc/gperftools/pprof-test-big.gif",
+            "share/doc/gperftools/pprof-test.gif",
+            "share/doc/gperftools/pprof-vsnprintf-big.gif",
+            "share/doc/gperftools/pprof-vsnprintf.gif",
+            "share/doc/gperftools/pprof_integration.adoc",
+            "share/doc/gperftools/spanmap.dot",
+            "share/doc/gperftools/spanmap.gif",
+            "share/doc/gperftools/tcmalloc.adoc",
+            "share/doc/gperftools/threadheap.dot",
+            "share/doc/gperftools/threadheap.gif"
+          ],
+          "installed_size": 4300462
+        }
+      }
+    }
+  }
+}

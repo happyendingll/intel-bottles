@@ -1,0 +1,107 @@
+{
+  "openvi": {
+    "formula": {
+      "name": "openvi",
+      "pkg_version": "8.0.34",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openvi.rb",
+      "tap_git_path": "Formula/o/openvi.rb",
+      "tap_git_revision": "3721fd95273a6e2667ba203e9b6a243f662c1a59",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Portable OpenBSD vi for UNIX systems",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/johnsonjh/OpenVi"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-21T07:10:51Z",
+      "tags": {
+        "sequoia": {
+          "filename": "openvi-8.0.34.sequoia.bottle.tar.gz",
+          "local_filename": "openvi--8.0.34.sequoia.bottle.tar.gz",
+          "sha256": "ef0266f543fed5e2f00a66f8e3194c98b90b0c9be9f3b22fd656c67e5bb3ca5b",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/ovi"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792511869,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ncurses",
+                "version": "6.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-openvi-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/ovi",
+            "bin/oex",
+            "bin/oview"
+          ],
+          "all_files": [
+            ".brew/openvi.rb",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/oex",
+            "bin/ovi",
+            "bin/oview",
+            "libexec/ovi.recover",
+            "sbom.spdx.json",
+            "share/man/man1/oex.1",
+            "share/man/man1/ovi.1",
+            "share/man/man1/oview.1",
+            "share/man/man8/ovi.recover.8"
+          ],
+          "installed_size": 683092
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,182 @@
+{
+  "uftp": {
+    "formula": {
+      "name": "uftp",
+      "pkg_version": "5.0.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/u/uftp.rb",
+      "tap_git_path": "Formula/u/uftp.rb",
+      "tap_git_revision": "3721fd95273a6e2667ba203e9b6a243f662c1a59",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Secure, reliable, efficient multicast file transfer program",
+      "license": "GPL-3.0-or-later WITH openvpn-openssl-exception",
+      "homepage": "https://uftp-multicast.sourceforge.net/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-21T07:17:25Z",
+      "tags": {
+        "sequoia": {
+          "filename": "uftp-5.0.4.sequoia.bottle.tar.gz",
+          "local_filename": "uftp--5.0.4.sequoia.bottle.tar.gz",
+          "sha256": "8f8246689d2e6b7e621ba465ca9a7c550535acdc6f581d62d2e2a0f8dbaa9e7f",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [
+              "sh.brew.uftp.plist",
+              "sh.brew.uftp.service"
+            ],
+            "linkage_files": [
+              "bin/uftp",
+              "bin/uftp_keymgt",
+              "bin/uftpd",
+              "bin/uftpproxyd"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792449104,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-10-20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-10-20",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "name": "ca-certificates",
+                "versionInfo": "2026-10-20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-uftp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-uftp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-uftp-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/uftpd",
+            "bin/uftpproxyd",
+            "bin/uftp",
+            "bin/uftp_keymgt"
+          ],
+          "all_files": [
+            ".brew/uftp.rb",
+            "Changes.txt",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "ReadMe.txt",
+            "bin/uftp",
+            "bin/uftp_keymgt",
+            "bin/uftpd",
+            "bin/uftpproxyd",
+            "sbom.spdx.json",
+            "sh.brew.uftp.plist",
+            "sh.brew.uftp.service",
+            "share/man/man1/uftp.1",
+            "share/man/man1/uftp_keymgt.1",
+            "share/man/man1/uftpd.1",
+            "share/man/man1/uftpproxyd.1"
+          ],
+          "installed_size": 584398
+        }
+      }
+    }
+  }
+}
