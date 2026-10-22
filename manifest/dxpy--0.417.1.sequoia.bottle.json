@@ -1,0 +1,1495 @@
+{
+  "dxpy": {
+    "formula": {
+      "name": "dxpy",
+      "pkg_version": "0.417.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dxpy.rb",
+      "tap_git_path": "Formula/d/dxpy.rb",
+      "tap_git_revision": "af531c75684d13a72c7714aa5fae8dc831b9dcde",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "DNAnexus toolkit utilities and platform API bindings for Python",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/dnanexus/dx-toolkit"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-22T05:14:29Z",
+      "tags": {
+        "sequoia": {
+          "filename": "dxpy-0.417.1.sequoia.bottle.tar.gz",
+          "local_filename": "dxpy--0.417.1.sequoia.bottle.tar.gz",
+          "sha256": "5e7b97b79828930bca3e6e3e7cad3c2bf9bee3ffc6115898343d65dbf75e002f",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [
+              "libexec/bin/activate-global-python-argcomplete",
+              "libexec/bin/crc32c",
+              "libexec/bin/dx",
+              "libexec/bin/dx-app-wizard",
+              "libexec/bin/dx-build-app",
+              "libexec/bin/dx-build-applet",
+              "libexec/bin/dx-clone-asset",
+              "libexec/bin/dx-docker",
+              "libexec/bin/dx-download-all-inputs",
+              "libexec/bin/dx-fetch-bundled-depends",
+              "libexec/bin/dx-generate-dxapp",
+              "libexec/bin/dx-jobutil-add-output",
+              "libexec/bin/dx-jobutil-dxlink",
+              "libexec/bin/dx-jobutil-get-identity-token",
+              "libexec/bin/dx-jobutil-new-job",
+              "libexec/bin/dx-jobutil-parse-link",
+              "libexec/bin/dx-jobutil-report-error",
+              "libexec/bin/dx-log-stream",
+              "libexec/bin/dx-mount-all-inputs",
+              "libexec/bin/dx-notebook-reconnect",
+              "libexec/bin/dx-print-bash-vars",
+              "libexec/bin/dx-upload-all-outputs",
+              "libexec/bin/register-python-argcomplete",
+              "libexec/bin/wsdump",
+              "libexec/lib/python3.15/site-packages/homebrew_deps.pth",
+              "libexec/pyvenv.cfg"
+            ],
+            "linkage_files": [
+              "libexec/lib/python3.15/site-packages/_awscrt.abi3-darwin.so"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792440941,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "aws-c-common",
+                "version": "1.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.3",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-10-20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-10-20",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.0.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.3",
+                "declared_directly": false
+              },
+              {
+                "full_name": "aws-c-cal",
+                "version": "1.0.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.0_1",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "aws-c-compression",
+                "version": "1.0.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "s2n",
+                "version": "1.7.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.7.12",
+                "declared_directly": false
+              },
+              {
+                "full_name": "aws-c-io",
+                "version": "1.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.0",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "aws-c-http",
+                "version": "1.1.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.1",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "aws-c-sdkutils",
+                "version": "1.0.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "aws-c-auth",
+                "version": "1.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.1",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "aws-checksums",
+                "version": "1.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.1",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "aws-c-event-stream",
+                "version": "1.0.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.0_1",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "aws-c-mqtt",
+                "version": "1.1.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.2",
+                "declared_directly": true,
+                "compatibility_version": 4
+              },
+              {
+                "full_name": "aws-c-s3",
+                "version": "1.3.1",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.1_1",
+                "declared_directly": true,
+                "compatibility_version": 6
+              },
+              {
+                "full_name": "certifi",
+                "version": "2026.10.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026.10.19",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pycparser",
+                "version": "3.11",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.11",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cffi",
+                "version": "2.1.1",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.1_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cryptography",
+                "version": "50.0.2",
+                "revision": 2,
+                "bottle_rebuild": 0,
+                "pkg_version": "50.0.2_2",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.54.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "python@3.15",
+                "version": "3.15.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.15.0_1",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-aws-c-cal-1.2e.0.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-aws-c-compression-1.2e.0.2e.0",
+              "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.12",
+              "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.1.2e.1",
+              "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.0",
+              "SPDXRef-Package-SPDXRef-aws-c-auth-1.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-aws-checksums-1.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-aws-c-event-stream-1.2e.0.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.2",
+              "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.3.2e.1.5f.1",
+              "SPDXRef-Package-SPDXRef-certifi-2026.2e.10.2e.19",
+              "SPDXRef-Package-SPDXRef-pycparser-3.2e.11",
+              "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1.5f.1",
+              "SPDXRef-Package-SPDXRef-cryptography-50.2e.0.2e.2.5f.2",
+              "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0.5f.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.3",
+                "name": "aws-c-common",
+                "versionInfo": "1.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/aws-c-common-1.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f0e2d73297283468303a41dc48a3f9caa82f356f64b7d01a05d45dec80e4524b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-common@1.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "name": "ca-certificates",
+                "versionInfo": "2026-10-20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "name": "openssl@4",
+                "versionInfo": "4.0.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-cal-1.2e.0.2e.0.5f.1",
+                "name": "aws-c-cal",
+                "versionInfo": "1.0.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/aws-c-cal-1.0.0_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7805dbc2c0bea016c358cdad1b0f310adde53a2d4e8b4aa9da5ff79a1f9feff5"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-cal@1.0.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-compression-1.2e.0.2e.0",
+                "name": "aws-c-compression",
+                "versionInfo": "1.0.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/aws-c-compression-1.0.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b472d9e392ca703484ba0799c07b191bdcb6a800486abef5ab01fc20114f36d9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-compression@1.0.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.12",
+                "name": "s2n",
+                "versionInfo": "1.7.12",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/s2n-1.7.12.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "23694d518b739eb2b70e7de191067fce89f28953d724d337ba7eba04c3f70c21"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/s2n@1.7.12",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.0",
+                "name": "aws-c-io",
+                "versionInfo": "1.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/aws-c-io-1.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "77d4a08064263f433479860134443a5ab40f725f108023c2bbbe2749554402c8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-io@1.1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.1.2e.1",
+                "name": "aws-c-http",
+                "versionInfo": "1.1.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/aws-c-http-1.1.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a9b6d52ac5ba22444d3953698a78a7a5749e40051c7f8ac11a97bc4c8cebe052"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-http@1.1.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.0",
+                "name": "aws-c-sdkutils",
+                "versionInfo": "1.0.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/aws-c-sdkutils-1.0.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "10dd3c4920b8d4abdf193e8336f452eccbcdd42b8849a8763bf9e415d21cc2e3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-sdkutils@1.0.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-auth-1.2e.0.2e.1",
+                "name": "aws-c-auth",
+                "versionInfo": "1.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/aws-c-auth-1.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "526bcae64710f32b9c7da9531c42d9058ce952e991358ddbe3f7a224f792f56d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-auth@1.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-checksums-1.2e.0.2e.1",
+                "name": "aws-checksums",
+                "versionInfo": "1.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/aws-checksums-1.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "94d39f223a4234cbfc7479f3aee792a829b2b130aef907b256ef8547a9875c06"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-checksums@1.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-event-stream-1.2e.0.2e.0.5f.1",
+                "name": "aws-c-event-stream",
+                "versionInfo": "1.0.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/aws-c-event-stream-1.0.0_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2adcc414264e8b50e48766578d90a2f1e85b3a27f7bcb6ef5094a6f4cfdf33df"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-event-stream@1.0.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.2",
+                "name": "aws-c-mqtt",
+                "versionInfo": "1.1.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/aws-c-mqtt-1.1.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "faba8058d218233dc47ea30d79be2a892037d07ad8f220a684478a8829fc5aa1"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-mqtt@1.1.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.3.2e.1.5f.1",
+                "name": "aws-c-s3",
+                "versionInfo": "1.3.1_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/aws-c-s3-1.3.1_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "158145f39c4bd467bea4ba7dbfdf11ab7ec7134334854f4731827a792ca8901d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aws-c-s3@1.3.1_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-certifi-2026.2e.10.2e.19",
+                "name": "certifi",
+                "versionInfo": "2026.10.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/certifi/blobs/sha256:45011f7d0ff99c9f4945e2c5f9da4ce5d5027ff104c69bb563a70f826cb8d186",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "45011f7d0ff99c9f4945e2c5f9da4ce5d5027ff104c69bb563a70f826cb8d186"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/certifi@2026.10.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pycparser-3.2e.11",
+                "name": "pycparser",
+                "versionInfo": "3.11",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/pycparser/blobs/sha256:df35b6e61bc37678856474d9c9fc0eb38cf5da68d19ac8dcabe6b7a6c05d7acc",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "df35b6e61bc37678856474d9c9fc0eb38cf5da68d19ac8dcabe6b7a6c05d7acc"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pycparser@3.11",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1.5f.1",
+                "name": "cffi",
+                "versionInfo": "2.1.1_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT-0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/cffi-2.1.1_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b1ea07296a2220cf2c03d3642a297c779d36c5673c86ec8791244aa59ff85841"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/cffi@2.1.1_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cryptography-50.2e.0.2e.2.5f.2",
+                "name": "cryptography",
+                "versionInfo": "50.0.2_2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 OR BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/cryptography-50.0.2_2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7b9cc472990175b39131852a91cc3927e4dc8d31e60f4d83e33b596031c83e27"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/cryptography@50.0.2_2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
+                "name": "sqlite",
+                "versionInfo": "3.54.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/sqlite-3.54.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "46c164b4911c47b4b8a09c691146a1f863b9b5fea973c4907e179d92113d31b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0.5f.1",
+                "name": "python@3.15",
+                "versionInfo": "3.15.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Python-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/python%403.15-3.15.0_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "584243c10b19640a25b4ff44c5ebda9ed59662b5a8736df9122e09fbc7bdce60"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/python%403.15@3.15.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-common-1.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-cal-1.2e.0.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-compression-1.2e.0.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-s2n-1.2e.7.2e.12",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-io-1.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-http-1.2e.1.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-sdkutils-1.2e.0.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-auth-1.2e.0.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-checksums-1.2e.0.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-event-stream-1.2e.0.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.3.2e.1.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-certifi-2026.2e.10.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pycparser-3.2e.11",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cffi-2.2e.1.2e.1.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cryptography-50.2e.0.2e.2.5f.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.15-3.2e.15.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dxpy"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-dxpy-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/dx-print-bash-vars",
+            "bin/dx-docker",
+            "bin/dx-jobutil-new-job",
+            "bin/dx-jobutil-add-output",
+            "bin/dx-jobutil-get-identity-token",
+            "bin/dx-mount-all-inputs",
+            "bin/dx-jobutil-dxlink",
+            "bin/dx-log-stream",
+            "bin/dx-jobutil-report-error",
+            "bin/dx-fetch-bundled-depends",
+            "bin/dx",
+            "bin/dx-build-app",
+            "bin/dx-jobutil-parse-link",
+            "bin/dx-notebook-reconnect",
+            "bin/dx-generate-dxapp",
+            "bin/dx-clone-asset",
+            "bin/dx-app-wizard",
+            "bin/dx-build-applet",
+            "bin/dx-upload-all-outputs",
+            "bin/dx-download-all-inputs"
+          ],
+          "all_files": [
+            ".brew/dxpy.rb",
+            "INSTALL_RECEIPT.json",
+            "Readme.md",
+            "bin/dx",
+            "bin/dx-app-wizard",
+            "bin/dx-build-app",
+            "bin/dx-build-applet",
+            "bin/dx-clone-asset",
+            "bin/dx-docker",
+            "bin/dx-download-all-inputs",
+            "bin/dx-fetch-bundled-depends",
+            "bin/dx-generate-dxapp",
+            "bin/dx-jobutil-add-output",
+            "bin/dx-jobutil-dxlink",
+            "bin/dx-jobutil-get-identity-token",
+            "bin/dx-jobutil-new-job",
+            "bin/dx-jobutil-parse-link",
+            "bin/dx-jobutil-report-error",
+            "bin/dx-log-stream",
+            "bin/dx-mount-all-inputs",
+            "bin/dx-notebook-reconnect",
+            "bin/dx-print-bash-vars",
+            "bin/dx-upload-all-outputs",
+            "libexec/.gitignore",
+            "libexec/bin/activate-global-python-argcomplete",
+            "libexec/bin/crc32c",
+            "libexec/bin/dx",
+            "libexec/bin/dx-app-wizard",
+            "libexec/bin/dx-build-app",
+            "libexec/bin/dx-build-applet",
+            "libexec/bin/dx-clone-asset",
+            "libexec/bin/dx-docker",
+            "libexec/bin/dx-download-all-inputs",
+            "libexec/bin/dx-fetch-bundled-depends",
+            "libexec/bin/dx-generate-dxapp",
+            "libexec/bin/dx-jobutil-add-output",
+            "libexec/bin/dx-jobutil-dxlink",
+            "libexec/bin/dx-jobutil-get-identity-token",
+            "libexec/bin/dx-jobutil-new-job",
+            "libexec/bin/dx-jobutil-parse-link",
+            "libexec/bin/dx-jobutil-report-error",
+            "libexec/bin/dx-log-stream",
+            "libexec/bin/dx-mount-all-inputs",
+            "libexec/bin/dx-notebook-reconnect",
+            "libexec/bin/dx-print-bash-vars",
+            "libexec/bin/dx-upload-all-outputs",
+            "libexec/bin/python",
+            "libexec/bin/python3",
+            "libexec/bin/python3.15",
+            "libexec/bin/register-python-argcomplete",
+            "libexec/bin/wsdump",
+            "libexec/lib/python3.15/site-packages/_awscrt.abi3-darwin.so",
+            "libexec/lib/python3.15/site-packages/argcomplete/__init__.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/_check_console_script.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/_check_module.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/bash_completion.d/_python-argcomplete",
+            "libexec/lib/python3.15/site-packages/argcomplete/completers.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/exceptions.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/finders.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/io.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/lexers.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/packages/__init__.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/packages/_argparse.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/packages/_shlex.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/py.typed",
+            "libexec/lib/python3.15/site-packages/argcomplete/scripts/__init__.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/scripts/activate_global_python_argcomplete.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/scripts/register_python_argcomplete.py",
+            "libexec/lib/python3.15/site-packages/argcomplete/shell_integration.py",
+            "libexec/lib/python3.15/site-packages/argcomplete-3.7.2.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/argcomplete-3.7.2.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/argcomplete-3.7.2.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/argcomplete-3.7.2.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/argcomplete-3.7.2.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/argcomplete-3.7.2.dist-info/licenses/LICENSE.rst",
+            "libexec/lib/python3.15/site-packages/argcomplete-3.7.2.dist-info/licenses/NOTICE",
+            "libexec/lib/python3.15/site-packages/awscrt/__init__.py",
+            "libexec/lib/python3.15/site-packages/awscrt/_test.py",
+            "libexec/lib/python3.15/site-packages/awscrt/aio/__init__.py",
+            "libexec/lib/python3.15/site-packages/awscrt/aio/http.py",
+            "libexec/lib/python3.15/site-packages/awscrt/auth.py",
+            "libexec/lib/python3.15/site-packages/awscrt/aws_iot_metrics.py",
+            "libexec/lib/python3.15/site-packages/awscrt/cbor.py",
+            "libexec/lib/python3.15/site-packages/awscrt/checksums.py",
+            "libexec/lib/python3.15/site-packages/awscrt/common.py",
+            "libexec/lib/python3.15/site-packages/awscrt/crypto.py",
+            "libexec/lib/python3.15/site-packages/awscrt/eventstream/__init__.py",
+            "libexec/lib/python3.15/site-packages/awscrt/eventstream/rpc.py",
+            "libexec/lib/python3.15/site-packages/awscrt/exceptions.py",
+            "libexec/lib/python3.15/site-packages/awscrt/http.py",
+            "libexec/lib/python3.15/site-packages/awscrt/io.py",
+            "libexec/lib/python3.15/site-packages/awscrt/logging.py",
+            "libexec/lib/python3.15/site-packages/awscrt/mqtt.py",
+            "libexec/lib/python3.15/site-packages/awscrt/mqtt5.py",
+            "libexec/lib/python3.15/site-packages/awscrt/mqtt_request_response.py",
+            "libexec/lib/python3.15/site-packages/awscrt/s3.py",
+            "libexec/lib/python3.15/site-packages/awscrt/websocket.py",
+            "libexec/lib/python3.15/site-packages/awscrt-0.36.4.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/awscrt-0.36.4.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/awscrt-0.36.4.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/awscrt-0.36.4.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/awscrt-0.36.4.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/awscrt-0.36.4.dist-info/licenses/NOTICE",
+            "libexec/lib/python3.15/site-packages/awscrt-0.36.4.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/crc32c/__init__.py",
+            "libexec/lib/python3.15/site-packages/crc32c/_cli.py",
+            "libexec/lib/python3.15/site-packages/crc32c/_crc32c.cpython-315-darwin.so",
+            "libexec/lib/python3.15/site-packages/crc32c/_crc32c.pyi",
+            "libexec/lib/python3.15/site-packages/crc32c/_crc32hash.py",
+            "libexec/lib/python3.15/site-packages/crc32c/benchmark.py",
+            "libexec/lib/python3.15/site-packages/crc32c/ext/_crc32c.c",
+            "libexec/lib/python3.15/site-packages/crc32c/ext/checkarm.c",
+            "libexec/lib/python3.15/site-packages/crc32c/ext/checkarm.h",
+            "libexec/lib/python3.15/site-packages/crc32c/ext/checksse42.c",
+            "libexec/lib/python3.15/site-packages/crc32c/ext/checksse42.h",
+            "libexec/lib/python3.15/site-packages/crc32c/ext/common.h",
+            "libexec/lib/python3.15/site-packages/crc32c/ext/crc32c.h",
+            "libexec/lib/python3.15/site-packages/crc32c/ext/crc32c_adler.c",
+            "libexec/lib/python3.15/site-packages/crc32c/ext/crc32c_arm64.c",
+            "libexec/lib/python3.15/site-packages/crc32c/ext/crc32c_sw.c",
+            "libexec/lib/python3.15/site-packages/crc32c/py.typed",
+            "libexec/lib/python3.15/site-packages/crc32c-2.9.post0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/crc32c-2.9.post0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/crc32c-2.9.post0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/crc32c-2.9.post0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/crc32c-2.9.post0.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/crc32c-2.9.post0.dist-info/licenses/AUTHORS.google-crc32c",
+            "libexec/lib/python3.15/site-packages/crc32c-2.9.post0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/crc32c-2.9.post0.dist-info/licenses/LICENSE.google-crc32c",
+            "libexec/lib/python3.15/site-packages/crc32c-2.9.post0.dist-info/licenses/LICENSE.slice-by-8",
+            "libexec/lib/python3.15/site-packages/crc32c-2.9.post0.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/dateutil/__init__.py",
+            "libexec/lib/python3.15/site-packages/dateutil/_common.py",
+            "libexec/lib/python3.15/site-packages/dateutil/_version.py",
+            "libexec/lib/python3.15/site-packages/dateutil/easter.py",
+            "libexec/lib/python3.15/site-packages/dateutil/parser/__init__.py",
+            "libexec/lib/python3.15/site-packages/dateutil/parser/_parser.py",
+            "libexec/lib/python3.15/site-packages/dateutil/parser/isoparser.py",
+            "libexec/lib/python3.15/site-packages/dateutil/relativedelta.py",
+            "libexec/lib/python3.15/site-packages/dateutil/rrule.py",
+            "libexec/lib/python3.15/site-packages/dateutil/tz/__init__.py",
+            "libexec/lib/python3.15/site-packages/dateutil/tz/_common.py",
+            "libexec/lib/python3.15/site-packages/dateutil/tz/_factories.py",
+            "libexec/lib/python3.15/site-packages/dateutil/tz/tz.py",
+            "libexec/lib/python3.15/site-packages/dateutil/tz/win.py",
+            "libexec/lib/python3.15/site-packages/dateutil/tzwin.py",
+            "libexec/lib/python3.15/site-packages/dateutil/utils.py",
+            "libexec/lib/python3.15/site-packages/dateutil/zoneinfo/__init__.py",
+            "libexec/lib/python3.15/site-packages/dateutil/zoneinfo/dateutil-zoneinfo.tar.gz",
+            "libexec/lib/python3.15/site-packages/dateutil/zoneinfo/rebuild.py",
+            "libexec/lib/python3.15/site-packages/dxpy/__init__.py",
+            "libexec/lib/python3.15/site-packages/dxpy/api.py",
+            "libexec/lib/python3.15/site-packages/dxpy/app_builder.py",
+            "libexec/lib/python3.15/site-packages/dxpy/app_categories.py",
+            "libexec/lib/python3.15/site-packages/dxpy/asset_builder.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/__init__.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/apollo/__init__.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/apollo/cmd_line_options_validator.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/apollo/data_transformations.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/apollo/dataset.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/apollo/json_validation_by_schema.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/apollo/schemas/__init__.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/apollo/schemas/assay_filtering_conditions.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/apollo/schemas/assay_filtering_json_schemas.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/apollo/schemas/input_arguments_validation_schemas.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/apollo/vizclient.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/apollo/vizserver_filters_from_json_parser.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/apollo/vizserver_payload_builder.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/auth.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/download_all_inputs.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxanalysis.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxapp.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxapp_container_functions.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxapplet.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxdatabase.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxdatabase_functions.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxdataobject_functions.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxfile.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxfile_functions.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxglobalworkflow.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxjob.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxproject.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxrecord.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/dxworkflow.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/mount_all_inputs.py",
+            "libexec/lib/python3.15/site-packages/dxpy/bindings/search.py",
+            "libexec/lib/python3.15/site-packages/dxpy/cli/__init__.py",
+            "libexec/lib/python3.15/site-packages/dxpy/cli/cp.py",
+            "libexec/lib/python3.15/site-packages/dxpy/cli/dataset_utilities.py",
+            "libexec/lib/python3.15/site-packages/dxpy/cli/download.py",
+            "libexec/lib/python3.15/site-packages/dxpy/cli/exec_io.py",
+            "libexec/lib/python3.15/site-packages/dxpy/cli/help_messages.py",
+            "libexec/lib/python3.15/site-packages/dxpy/cli/org.py",
+            "libexec/lib/python3.15/site-packages/dxpy/cli/output_handling.py",
+            "libexec/lib/python3.15/site-packages/dxpy/cli/parsers.py",
+            "libexec/lib/python3.15/site-packages/dxpy/cli/workflow.py",
+            "libexec/lib/python3.15/site-packages/dxpy/compat.py",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/Homo_sapiens_genes_manifest.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/Homo_sapiens_genes_manifest_staging.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/Homo_sapiens_genes_manifest_staging_vep.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/Homo_sapiens_genes_manifest_vep.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/__init__.py",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/cohort_filter_payload.py",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/column_conditions.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/column_conversion.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/filter_to_payload.py",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/germline_utils.py",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/input_validation.py",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/input_validation_somatic.py",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/retrieve_allele_schema.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/retrieve_annotation_schema.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/retrieve_bins.py",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/retrieve_genotype_schema.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/return_columns_allele.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/return_columns_annotation.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/return_columns_genotype.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/return_columns_genotype_only.json",
+            "libexec/lib/python3.15/site-packages/dxpy/dx_extract_utils/somatic_filter_payload.py",
+            "libexec/lib/python3.15/site-packages/dxpy/dxlog.py",
+            "libexec/lib/python3.15/site-packages/dxpy/exceptions.py",
+            "libexec/lib/python3.15/site-packages/dxpy/executable_builder.py",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/ImageRef.py",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/ImageRefFactory.py",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/__init__.py",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/app_asset_projects_ids_prod.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/app_asset_projects_ids_staging.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/awscli_assets_24_10.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/awscli_assets_24_10.staging.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/awscli_assets_25_10.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/awscli_assets_25_10.staging.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/collect_images.py",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/default_nextflow_instance_types.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/nextaur_assets_24_10.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/nextaur_assets_24_10.staging.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/nextaur_assets_25_10.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/nextaur_assets_25_10.staging.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/nextflow_assets_24_10.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/nextflow_assets_24_10.staging.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/nextflow_assets_25_10.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/nextflow_assets_25_10.staging.json",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/nextflow_builder.py",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/nextflow_templates.py",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/nextflow_utils.py",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/validate_nextflow_assets.py",
+            "libexec/lib/python3.15/site-packages/dxpy/nextflow/versions.json",
+            "libexec/lib/python3.15/site-packages/dxpy/packages/__init__.py",
+            "libexec/lib/python3.15/site-packages/dxpy/scripts/__init__.py",
+            "libexec/lib/python3.15/site-packages/dxpy/scripts/dx.py",
+            "libexec/lib/python3.15/site-packages/dxpy/scripts/dx_app_wizard.py",
+            "libexec/lib/python3.15/site-packages/dxpy/scripts/dx_build_app.py",
+            "libexec/lib/python3.15/site-packages/dxpy/scripts/dx_build_applet.py",
+            "libexec/lib/python3.15/site-packages/dxpy/ssh_tunnel_app_support.py",
+            "libexec/lib/python3.15/site-packages/dxpy/system_requirements.py",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/__init__.py",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/bash.py",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/python.py",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/Readme.md",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/bash/basic/dxapp.json",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/bash/basic/src/code.sh",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/bash/parallelized/dxapp.json",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/bash/parallelized/src/code.sh",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/bash/scatter-process-gather/dxapp.json",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/bash/scatter-process-gather/src/code.sh",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/nextflow/dxapp.json",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/nextflow/src/nextflow.sh",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/python/basic/dxapp.json",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/python/basic/src/code.py",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/python/basic/test/test.py",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/python/parallelized/dxapp.json",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/python/parallelized/src/code.py",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/python/parallelized/test/test.py",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/python/scatter-process-gather/dxapp.json",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/python/scatter-process-gather/src/code.py",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/templates/python/scatter-process-gather/test/test.py",
+            "libexec/lib/python3.15/site-packages/dxpy/templating/utils.py",
+            "libexec/lib/python3.15/site-packages/dxpy/toolkit_version.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/__init__.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/batch_utils.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/completer.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/config.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/describe.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/exec_utils.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/executable_unbuilder.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/file_handle.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/file_load_utils.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/genomic_utils.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/job_log_client.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/local_exec_utils.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/pathmatch.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/pretty_print.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/printing.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/resolver.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/spelling_corrector.py",
+            "libexec/lib/python3.15/site-packages/dxpy/utils/version.py",
+            "libexec/lib/python3.15/site-packages/dxpy/workflow_builder.py",
+            "libexec/lib/python3.15/site-packages/dxpy-0.417.1.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/dxpy-0.417.1.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/dxpy-0.417.1.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/dxpy-0.417.1.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/dxpy-0.417.1.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/dxpy-0.417.1.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/homebrew_deps.pth",
+            "libexec/lib/python3.15/site-packages/psutil/__init__.py",
+            "libexec/lib/python3.15/site-packages/psutil/_common.py",
+            "libexec/lib/python3.15/site-packages/psutil/_ntuples.py",
+            "libexec/lib/python3.15/site-packages/psutil/_psaix.py",
+            "libexec/lib/python3.15/site-packages/psutil/_psbsd.py",
+            "libexec/lib/python3.15/site-packages/psutil/_pslinux.py",
+            "libexec/lib/python3.15/site-packages/psutil/_psosx.py",
+            "libexec/lib/python3.15/site-packages/psutil/_psposix.py",
+            "libexec/lib/python3.15/site-packages/psutil/_pssunos.py",
+            "libexec/lib/python3.15/site-packages/psutil/_psutil_osx.abi3-darwin.so",
+            "libexec/lib/python3.15/site-packages/psutil/_pswindows.py",
+            "libexec/lib/python3.15/site-packages/psutil-7.2.2.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/psutil-7.2.2.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/psutil-7.2.2.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/psutil-7.2.2.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/psutil-7.2.2.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/psutil-7.2.2.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/python_dateutil-2.9.0.post0.dist-info/zip-safe",
+            "libexec/lib/python3.15/site-packages/six-1.17.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/six-1.17.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/six-1.17.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/six-1.17.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/six-1.17.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/six-1.17.0.dist-info/top_level.txt",
+            "libexec/lib/python3.15/site-packages/six.py",
+            "libexec/lib/python3.15/site-packages/urllib3/__init__.py",
+            "libexec/lib/python3.15/site-packages/urllib3/_base_connection.py",
+            "libexec/lib/python3.15/site-packages/urllib3/_collections.py",
+            "libexec/lib/python3.15/site-packages/urllib3/_request_methods.py",
+            "libexec/lib/python3.15/site-packages/urllib3/_version.py",
+            "libexec/lib/python3.15/site-packages/urllib3/connection.py",
+            "libexec/lib/python3.15/site-packages/urllib3/connectionpool.py",
+            "libexec/lib/python3.15/site-packages/urllib3/contrib/__init__.py",
+            "libexec/lib/python3.15/site-packages/urllib3/contrib/emscripten/__init__.py",
+            "libexec/lib/python3.15/site-packages/urllib3/contrib/emscripten/connection.py",
+            "libexec/lib/python3.15/site-packages/urllib3/contrib/emscripten/emscripten_fetch_worker.js",
+            "libexec/lib/python3.15/site-packages/urllib3/contrib/emscripten/fetch.py",
+            "libexec/lib/python3.15/site-packages/urllib3/contrib/emscripten/request.py",
+            "libexec/lib/python3.15/site-packages/urllib3/contrib/emscripten/response.py",
+            "libexec/lib/python3.15/site-packages/urllib3/contrib/pyopenssl.py",
+            "libexec/lib/python3.15/site-packages/urllib3/contrib/pyopenssl.py.orig",
+            "libexec/lib/python3.15/site-packages/urllib3/contrib/socks.py",
+            "libexec/lib/python3.15/site-packages/urllib3/exceptions.py",
+            "libexec/lib/python3.15/site-packages/urllib3/fields.py",
+            "libexec/lib/python3.15/site-packages/urllib3/filepost.py",
+            "libexec/lib/python3.15/site-packages/urllib3/http2/__init__.py",
+            "libexec/lib/python3.15/site-packages/urllib3/http2/connection.py",
+            "libexec/lib/python3.15/site-packages/urllib3/http2/probe.py",
+            "libexec/lib/python3.15/site-packages/urllib3/poolmanager.py",
+            "libexec/lib/python3.15/site-packages/urllib3/py.typed",
+            "libexec/lib/python3.15/site-packages/urllib3/response.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/__init__.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/connection.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/proxy.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/request.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/response.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/retry.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/ssl_.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/ssl_match_hostname.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/ssltransport.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/timeout.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/url.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/util.py",
+            "libexec/lib/python3.15/site-packages/urllib3/util/wait.py",
+            "libexec/lib/python3.15/site-packages/urllib3-2.7.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/urllib3-2.7.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/urllib3-2.7.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/urllib3-2.7.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/urllib3-2.7.0.dist-info/licenses/LICENSE.txt",
+            "libexec/lib/python3.15/site-packages/websocket/__init__.py",
+            "libexec/lib/python3.15/site-packages/websocket/_abnf.py",
+            "libexec/lib/python3.15/site-packages/websocket/_app.py",
+            "libexec/lib/python3.15/site-packages/websocket/_cookiejar.py",
+            "libexec/lib/python3.15/site-packages/websocket/_core.py",
+            "libexec/lib/python3.15/site-packages/websocket/_dispatcher.py",
+            "libexec/lib/python3.15/site-packages/websocket/_exceptions.py",
+            "libexec/lib/python3.15/site-packages/websocket/_handshake.py",
+            "libexec/lib/python3.15/site-packages/websocket/_http.py",
+            "libexec/lib/python3.15/site-packages/websocket/_logging.py",
+            "libexec/lib/python3.15/site-packages/websocket/_socket.py",
+            "libexec/lib/python3.15/site-packages/websocket/_ssl_compat.py",
+            "libexec/lib/python3.15/site-packages/websocket/_url.py",
+            "libexec/lib/python3.15/site-packages/websocket/_utils.py",
+            "libexec/lib/python3.15/site-packages/websocket/_wsdump.py",
+            "libexec/lib/python3.15/site-packages/websocket/py.typed",
+            "libexec/lib/python3.15/site-packages/websocket/tests/__init__.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/data/header01.txt",
+            "libexec/lib/python3.15/site-packages/websocket/tests/data/header02.txt",
+            "libexec/lib/python3.15/site-packages/websocket/tests/data/header03.txt",
+            "libexec/lib/python3.15/site-packages/websocket/tests/echo-server.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_abnf.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_app.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_cookiejar.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_dispatcher.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_handshake_large_response.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_http.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_large_payloads.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_socket.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_socket_bugs.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_ssl_compat.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_ssl_edge_cases.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_url.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_utils.py",
+            "libexec/lib/python3.15/site-packages/websocket/tests/test_websocket.py",
+            "libexec/lib/python3.15/site-packages/websocket_client-1.9.0.dist-info/INSTALLER",
+            "libexec/lib/python3.15/site-packages/websocket_client-1.9.0.dist-info/METADATA",
+            "libexec/lib/python3.15/site-packages/websocket_client-1.9.0.dist-info/REQUESTED",
+            "libexec/lib/python3.15/site-packages/websocket_client-1.9.0.dist-info/WHEEL",
+            "libexec/lib/python3.15/site-packages/websocket_client-1.9.0.dist-info/entry_points.txt",
+            "libexec/lib/python3.15/site-packages/websocket_client-1.9.0.dist-info/licenses/LICENSE",
+            "libexec/lib/python3.15/site-packages/websocket_client-1.9.0.dist-info/top_level.txt",
+            "libexec/pyvenv.cfg",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 4683700
+        }
+      }
+    }
+  }
+}
