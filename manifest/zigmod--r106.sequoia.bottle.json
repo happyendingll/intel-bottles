@@ -2,31 +2,31 @@
   "zigmod": {
     "formula": {
       "name": "zigmod",
-      "pkg_version": "r105",
+      "pkg_version": "r106",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/z/zigmod.rb",
       "tap_git_path": "Formula/z/zigmod.rb",
-      "tap_git_revision": "ad7cc16162ad1162a0c514cd4f7e78cd8bac83de",
+      "tap_git_revision": "257b265f000f3e8a0bb8d28509226932b3effe11",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Package manager for the Zig programming language",
       "license": "MIT",
       "homepage": "https://nektro.github.io/zigmod/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-09-20T22:01:38Z",
+      "date": "2026-10-21T23:44:28Z",
       "tags": {
         "sequoia": {
-          "filename": "zigmod-r105.sequoia.bottle.tar.gz",
-          "local_filename": "zigmod--r105.sequoia.bottle.tar.gz",
-          "sha256": "78e822702f710d5a71b0cda496713a4f6179007811e891b784ec7fdb269eecb6",
+          "filename": "zigmod-r106.sequoia.bottle.tar.gz",
+          "local_filename": "zigmod--r106.sequoia.bottle.tar.gz",
+          "sha256": "7a4549966cc05cd9265bb06b8acc4372821c311011dcbb9331ee0c606f46d8a3",
           "tab": {
-            "homebrew_version": "7.0.4",
+            "homebrew_version": "7.0.10",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1788559499,
+            "source_modified_time": 1792310039,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -56,29 +56,27 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "llvm@21",
-                "version": "21.1.8",
+                "full_name": "llvm@22",
+                "version": "22.1.8",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "21.1.8",
-                "declared_directly": false,
-                "compatibility_version": 1
+                "pkg_version": "22.1.8",
+                "declared_directly": false
               },
               {
-                "full_name": "lld@21",
-                "version": "21.1.8",
-                "revision": 1,
+                "full_name": "lld@22",
+                "version": "22.1.8",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "21.1.8_1",
-                "declared_directly": false,
-                "compatibility_version": 1
+                "pkg_version": "22.1.8",
+                "declared_directly": false
               },
               {
                 "full_name": "zig",
-                "version": "0.16.0",
-                "revision": 1,
+                "version": "0.17.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.16.0_1",
+                "pkg_version": "0.17.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -96,15 +94,16 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-zig-0.16.0_1",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-llvm.40.22-22.2e.1.2e.8",
+              "SPDXRef-Package-SPDXRef-zig-0.2e.17.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -127,7 +126,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -150,7 +149,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -173,24 +172,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zig-0.16.0_1",
-                "name": "zig",
-                "versionInfo": "0.16.0_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-llvm.40.22-22.2e.1.2e.8",
+                "name": "llvm@22",
+                "versionInfo": "22.1.8",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/zig-0.16.0_1.sequoia.bottle.tar.gz",
+                "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/llvm%4022-22.1.8.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "2ba0019a37b574b330b792dd709ecc3a506a0e9d37ff46ed91239dca7f534508"
+                    "checksumValue": "d5c9576f00064855c612b13fa743c394a3b56f25595020f90b8c790d7e6b064a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/zig@0.16.0_1",
+                    "referenceLocator": "pkg:brew/llvm%4022@22.1.8",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zig-0.2e.17.2e.0",
+                "name": "zig",
+                "versionInfo": "0.17.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/zig-0.17.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "cc2971a60a1ca59b2603653ca366220aafc7f1e80e298c50ce79681a617611c3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zig@0.17.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -210,22 +232,27 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-zigmod"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-zigmod"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-zigmod"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zig-0.16.0_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm.40.22-22.2e.1.2e.8",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zigmod"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zig-0.2e.17.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-zigmod"
               },
@@ -247,7 +274,7 @@
             "bin/zigmod",
             "sbom.spdx.json"
           ],
-          "installed_size": 4685866
+          "installed_size": 4694847
         }
       }
     }

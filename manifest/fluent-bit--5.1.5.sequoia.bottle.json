@@ -2,10 +2,10 @@
   "fluent-bit": {
     "formula": {
       "name": "fluent-bit",
-      "pkg_version": "5.1.4",
+      "pkg_version": "5.1.5",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/f/fluent-bit.rb",
       "tap_git_path": "Formula/f/fluent-bit.rb",
-      "tap_git_revision": "f9fc6d55471172814dc42b9c534b2214b4727535",
+      "tap_git_revision": "257b265f000f3e8a0bb8d28509226932b3effe11",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Fast and Lightweight Logs and Metrics processor",
       "license": "Apache-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-16T20:36:47Z",
+      "date": "2026-10-21T22:40:24Z",
       "tags": {
         "sequoia": {
-          "filename": "fluent-bit-5.1.4.sequoia.bottle.tar.gz",
-          "local_filename": "fluent-bit--5.1.4.sequoia.bottle.tar.gz",
-          "sha256": "77ffa1e678541615c359367d45b9a507ae0191ff11d6abc9530da20b68719d3d",
+          "filename": "fluent-bit-5.1.5.sequoia.bottle.tar.gz",
+          "local_filename": "fluent-bit--5.1.5.sequoia.bottle.tar.gz",
+          "sha256": "642bc7f433bd88ef4c32c446585154ca2920f75953898c78b336876c5c876152",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "include/fluent-bit/tls/flb_tls_info.h"
             ],
@@ -31,7 +31,7 @@
               "lib/fluent-bit/libfluent-bit.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791931356,
+            "source_modified_time": 1792554706,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -45,19 +45,19 @@
               },
               {
                 "full_name": "luajit",
-                "version": "2.1.1791988261",
+                "version": "2.1.1792527110",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.1.1791988261",
+                "pkg_version": "2.1.1792527110",
                 "declared_directly": true,
-                "compatibility_version": 32
+                "compatibility_version": 34
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -92,55 +92,55 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-luajit-2.2e.1.2e.1791988261",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-luajit-2.2e.1.2e.1792527110",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-luajit-2.2e.1.2e.1791988261",
+                "SPDXID": "SPDXRef-Package-SPDXRef-luajit-2.2e.1.2e.1792527110",
                 "name": "luajit",
-                "versionInfo": "2.1.1791988261",
+                "versionInfo": "2.1.1792527110",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/luajit-2.1.1791988261.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/luajit-2.1.1792527110.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5a9251b841ada99c3953dd665b80d873e1226c17fb79f925397b5ba711c55415"
+                    "checksumValue": "9a6ecdbb7dccdff379bfee716083b263366b2407057e00d1b7cfbc71fa3ce5a8"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/luajit@2.1.1791988261",
+                    "referenceLocator": "pkg:brew/luajit@2.1.1792527110",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
@@ -206,12 +206,12 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-luajit-2.2e.1.2e.1791988261",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-luajit-2.2e.1.2e.1792527110",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-fluent-bit"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-fluent-bit"
               },
@@ -454,7 +454,7 @@
             "lib/fluent-bit/libfluent-bit.dylib",
             "sbom.spdx.json"
           ],
-          "installed_size": 22781302
+          "installed_size": 22817452
         }
       }
     }
