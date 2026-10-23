@@ -2,10 +2,10 @@
   "passenger": {
     "formula": {
       "name": "passenger",
-      "pkg_version": "6.2.1",
+      "pkg_version": "6.2.1_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/passenger.rb",
       "tap_git_path": "Formula/p/passenger.rb",
-      "tap_git_revision": "ec15b974c06304e4842a55a5787a9e588421060e",
+      "tap_git_revision": "bdccee48244e6b01596eb81ff528658f9bf7c31f",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Server for Ruby, Python, and Node.js apps via Apache/NGINX",
       "license": "MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-19T23:16:38Z",
+      "date": "2026-10-23T06:00:15Z",
       "tags": {
         "sequoia": {
-          "filename": "passenger-6.2.1.sequoia.bottle.tar.gz",
-          "local_filename": "passenger--6.2.1.sequoia.bottle.tar.gz",
-          "sha256": "843c08abdc2df567bc631f0ca71c1c8bc8dac3baf34a633b1c5cc1a380bee705",
+          "filename": "passenger-6.2.1_1.sequoia.bottle.tar.gz",
+          "local_filename": "passenger--6.2.1_1.sequoia.bottle.tar.gz",
+          "sha256": "cbe577328ff13ae27122ee508fe4fdb3c8d5259c548d5e0263656011fc677d26",
           "tab": {
             "homebrew_version": "7.0.10",
             "changed_files": [
@@ -37,7 +37,7 @@
             "linkage_files": [
               "libexec/buildout/apache2/mod_passenger.so",
               "libexec/buildout/support-binaries/PassengerAgent",
-              "libexec/buildout/support-binaries/nginx-1.31.7",
+              "libexec/buildout/support-binaries/nginx-1.31.8",
               "libexec/modules/ngx_http_passenger_module.so"
             ],
             "binary_relocation_files": [],
@@ -55,10 +55,10 @@
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -101,7 +101,7 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Package-SPDXRef-apr-util-1.2e.6.2e.5.5f.1",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
@@ -109,24 +109,24 @@
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
@@ -215,7 +215,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-passenger"
               },
@@ -447,7 +447,7 @@
             "libexec/buildout/support-binaries/SystemMetricsMain.o",
             "libexec/buildout/support-binaries/TempDirToucherMain.o",
             "libexec/buildout/support-binaries/WatchdogMain.o",
-            "libexec/buildout/support-binaries/nginx-1.31.7",
+            "libexec/buildout/support-binaries/nginx-1.31.8",
             "libexec/configure",
             "libexec/dev/colorize-logs",
             "libexec/dev/copy_boost_headers",
@@ -4682,7 +4682,7 @@
             "share/man/man8/passenger-memory-stats.8",
             "share/man/man8/passenger-status.8"
           ],
-          "installed_size": 187668574
+          "installed_size": 187668615
         }
       }
     }

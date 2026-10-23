@@ -2,27 +2,27 @@
   "bind": {
     "formula": {
       "name": "bind",
-      "pkg_version": "9.20.29_1",
+      "pkg_version": "9.20.30",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/b/bind.rb",
       "tap_git_path": "Formula/b/bind.rb",
-      "tap_git_revision": "2e736d3ea76f6195fd8671a85721cbaf904728ba",
+      "tap_git_revision": "bdccee48244e6b01596eb81ff528658f9bf7c31f",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Implementation of the DNS protocols",
       "license": "MPL-2.0",
       "homepage": "https://www.isc.org/bind/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-09T23:01:14Z",
+      "date": "2026-10-23T05:02:41Z",
       "tags": {
         "sequoia": {
-          "filename": "bind-9.20.29_1.sequoia.bottle.tar.gz",
-          "local_filename": "bind--9.20.29_1.sequoia.bottle.tar.gz",
-          "sha256": "4c526022c4c36ed354385971a0f64270df962a4b065cfff834474446c4f6cedf",
+          "filename": "bind-9.20.30.sequoia.bottle.tar.gz",
+          "local_filename": "bind--9.20.30.sequoia.bottle.tar.gz",
+          "sha256": "8b27db7b42bf3dcf312899ccdb729717872beddac82a6991842f97c51ca35e06",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "sh.brew.bind.plist",
               "sh.brew.bind.service"
@@ -52,11 +52,11 @@
               "bin/nsupdate",
               "lib/bind/filter-a.so",
               "lib/bind/filter-aaaa.so",
-              "lib/libdns-9.20.29.dylib",
-              "lib/libisc-9.20.29.dylib",
-              "lib/libisccc-9.20.29.dylib",
-              "lib/libisccfg-9.20.29.dylib",
-              "lib/libns-9.20.29.dylib",
+              "lib/libdns-9.20.30.dylib",
+              "lib/libisc-9.20.30.dylib",
+              "lib/libisccc-9.20.30.dylib",
+              "lib/libisccfg-9.20.30.dylib",
+              "lib/libns-9.20.30.dylib",
               "sbin/ddns-confgen",
               "sbin/named",
               "sbin/rndc",
@@ -65,12 +65,12 @@
             "binary_relocation_files": [
               "bin/dnssec-keygen",
               "bin/named-checkconf",
-              "lib/libns-9.20.29.dylib",
+              "lib/libns-9.20.30.dylib",
               "sbin/named",
               "sbin/rndc",
               "sbin/rndc-confgen"
             ],
-            "source_modified_time": 1789155814,
+            "source_modified_time": 1791810892,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -100,10 +100,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -145,10 +145,10 @@
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -183,23 +183,23 @@
           "binary_relocation_diagnostics": [
             {
               "path": "sbin/named",
-              "string": "'--sysconfdir=/usr/local/etc/bind' '--localstatedir=/usr/local/var' '--with-json-c' '--with-libidn2=/usr/local/opt/libidn2' '--with-openssl=/usr/local/opt/openssl@4' '--without-lmdb' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/bind/9.20.29_1' '--libdir=/usr/local/Cellar/bind/9.20.29_1/lib' 'CC=clang' 'CFLAGS=-DLIBXML_HAS_DEPRECATED_MEMORY_ALLOCATION_FUNCTIONS' 'PKG_CONFIG_PATH=/usr/local/opt/readline/lib/pkgconfig:/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/jemalloc/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/libuv/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
-              "offset": 321332
+              "string": "'--sysconfdir=/usr/local/etc/bind' '--localstatedir=/usr/local/var' '--with-json-c' '--with-libidn2=/usr/local/opt/libidn2' '--with-openssl=/usr/local/opt/openssl@4' '--without-lmdb' '--disable-debug' '--disable-dependency-tracking' '--prefix=/usr/local/Cellar/bind/9.20.30' '--libdir=/usr/local/Cellar/bind/9.20.30/lib' 'CC=clang' 'CFLAGS=-DLIBXML_HAS_DEPRECATED_MEMORY_ALLOCATION_FUNCTIONS' 'PKG_CONFIG_PATH=/usr/local/opt/readline/lib/pkgconfig:/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/jemalloc/lib/pkgconfig:/usr/local/opt/json-c/lib/pkgconfig:/usr/local/opt/libidn2/lib/pkgconfig:/usr/local/opt/libnghttp2/lib/pkgconfig:/usr/local/opt/libuv/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/userspace-rcu/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
+              "offset": 321194
             },
             {
-              "path": "lib/libns-9.20.29.dylib",
-              "string": "/usr/local/Cellar/bind/9.20.29_1/lib/bind",
-              "offset": 199633
+              "path": "lib/libns-9.20.30.dylib",
+              "string": "/usr/local/Cellar/bind/9.20.30/lib/bind",
+              "offset": 197025
             },
             {
               "path": "bin/dnssec-keygen",
               "string": "/usr/local/etc/bind/named.conf",
-              "offset": 36751
+              "offset": 36743
             },
             {
               "path": "bin/named-checkconf",
               "string": "/usr/local/etc/bind/named.conf",
-              "offset": 31392
+              "offset": 31412
             },
             {
               "path": "sbin/rndc-confgen",
@@ -209,17 +209,17 @@
             {
               "path": "sbin/rndc",
               "string": "/usr/local/etc/bind/rndc.key",
-              "offset": 30589
+              "offset": 30639
             },
             {
               "path": "sbin/named",
               "string": "/usr/local/etc/bind/named.conf",
-              "offset": 322192
+              "offset": 322050
             },
             {
               "path": "sbin/named",
               "string": "/usr/local/etc/bind/rndc.key",
-              "offset": 322223
+              "offset": 322081
             }
           ],
           "sbom": {
@@ -227,11 +227,11 @@
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-jemalloc-5.2e.4.2e.0",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
               "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
               "SPDXRef-Package-SPDXRef-userspace-rcu-0.2e.15.2e.7",
               "SPDXRef-Compiler"
@@ -307,24 +307,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libunistring-1.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                    "checksumValue": "8854773975603bc6243e11dc7d95fb33bba3e348337d95c44411052ef8870097"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -399,24 +399,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
@@ -497,7 +497,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-bind"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-bind"
               },
@@ -517,7 +517,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-bind"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-bind"
               },
@@ -793,7 +793,6 @@
             "include/isc/time.h",
             "include/isc/timer.h",
             "include/isc/tls.h",
-            "include/isc/tm.h",
             "include/isc/types.h",
             "include/isc/urcu.h",
             "include/isc/url.h",
@@ -834,15 +833,15 @@
             "include/ns/xfrout.h",
             "lib/bind/filter-a.so",
             "lib/bind/filter-aaaa.so",
-            "lib/libdns-9.20.29.dylib",
+            "lib/libdns-9.20.30.dylib",
             "lib/libdns.dylib",
-            "lib/libisc-9.20.29.dylib",
+            "lib/libisc-9.20.30.dylib",
             "lib/libisc.dylib",
-            "lib/libisccc-9.20.29.dylib",
+            "lib/libisccc-9.20.30.dylib",
             "lib/libisccc.dylib",
-            "lib/libisccfg-9.20.29.dylib",
+            "lib/libisccfg-9.20.30.dylib",
             "lib/libisccfg.dylib",
-            "lib/libns-9.20.29.dylib",
+            "lib/libns-9.20.30.dylib",
             "lib/libns.dylib",
             "sbin/ddns-confgen",
             "sbin/named",
@@ -885,7 +884,7 @@
             "share/man/man8/rndc.8",
             "share/man/man8/tsig-keygen.8"
           ],
-          "installed_size": 7274056
+          "installed_size": 7277486
         }
       }
     }
