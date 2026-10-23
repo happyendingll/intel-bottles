@@ -2,10 +2,10 @@
   "calm-cli": {
     "formula": {
       "name": "calm-cli",
-      "pkg_version": "1.64.0",
+      "pkg_version": "1.65.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/c/calm-cli.rb",
       "tap_git_path": "Formula/c/calm-cli.rb",
-      "tap_git_revision": "961681a163a2559fa6da3254c7fd455208dae320",
+      "tap_git_revision": "0438f9299a5ebd39dd4c8a52b169c26d4923a4fb",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "CLI allows you to interact with the Common Architecture Language Model (CALM)",
       "license": "Apache-2.0",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-20T20:13:49Z",
+      "date": "2026-10-23T09:41:52Z",
       "tags": {
         "sequoia": {
-          "filename": "calm-cli-1.64.0.sequoia.bottle.tar.gz",
-          "local_filename": "calm-cli--1.64.0.sequoia.bottle.tar.gz",
-          "sha256": "c64a114fda799fea01701ff09c4e7edbc1c8fd4824cffad72873ec22879294f1",
+          "filename": "calm-cli-1.65.0.sequoia.bottle.tar.gz",
+          "local_filename": "calm-cli--1.65.0.sequoia.bottle.tar.gz",
+          "sha256": "c0f6ca27bbc22f6b34e918fec9156470973f2f8221489999a643a9d94bdaaeca",
           "tab": {
             "homebrew_version": "7.0.10",
             "changed_files": [
@@ -117,10 +117,10 @@
               },
               {
                 "full_name": "brotli",
-                "version": "1.2.0",
+                "version": "1.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.2.0",
+                "pkg_version": "1.2.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -128,6 +128,7 @@
                 "full_name": "c-ares",
                 "version": "1.34.9",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.34.9",
                 "declared_directly": false,
                 "compatibility_version": 1
@@ -282,10 +283,10 @@
               },
               {
                 "full_name": "node",
-                "version": "26.12.0",
+                "version": "26.12.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.12.0",
+                "pkg_version": "26.12.1",
                 "declared_directly": true
               }
             ],
@@ -304,6 +305,8 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2",
               "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-c-ares-1.2e.34.2e.9",
               "SPDXRef-Package-SPDXRef-hdrhistogram.5f.c-0.2e.12.2e.1",
               "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
               "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
@@ -316,7 +319,7 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -362,6 +365,52 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/ada-url@4.0.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "name": "brotli",
+                "versionInfo": "1.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/brotli-1.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3727ba1da30425c234290f9665d73aa41a6684b5cf795d364d9526382f3580b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/brotli@1.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-c-ares-1.2e.34.2e.9",
+                "name": "c-ares",
+                "versionInfo": "1.34.9",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/c-ares-1.34.9.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1eb6108a6d08280ea1c020721d5f6bcc36f4d81d675320186a6432524d1f91d5"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/c-ares@1.34.9",
                     "referenceType": "purl"
                   }
                 ]
@@ -643,24 +692,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.1",
                 "name": "node",
-                "versionInfo": "26.12.0",
+                "versionInfo": "26.12.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/node-26.12.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/node-26.12.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "92a0467cd9d9de13c08a68e6f34252a63d3ccf5a07cd7340c073823f49b7983b"
+                    "checksumValue": "1800f523f0646da2cfaed084e63d001d29388addd061995c384d7cc87fa64686"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/node@26.12.0",
+                    "referenceLocator": "pkg:brew/node@26.12.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -686,6 +735,16 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-calm-cli"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-calm-cli"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-c-ares-1.2e.34.2e.9",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-calm-cli"
               },
@@ -750,7 +809,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-calm-cli"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-calm-cli"
               },
@@ -14124,7 +14183,7 @@
             "libexec/lib/node_modules/@finos/calm-cli/package.json",
             "sbom.spdx.json"
           ],
-          "installed_size": 269450335
+          "installed_size": 269451155
         }
       }
     }
