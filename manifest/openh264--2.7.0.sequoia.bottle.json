@@ -1,0 +1,94 @@
+{
+  "openh264": {
+    "formula": {
+      "name": "openh264",
+      "pkg_version": "2.7.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openh264.rb",
+      "tap_git_path": "Formula/o/openh264.rb",
+      "tap_git_revision": "2593eeb8de60aa5c746f2cdbf72ba6f617ac8aed",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "H.264 codec from Cisco",
+      "license": "BSD-2-Clause",
+      "homepage": "https://www.openh264.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-23T11:21:26Z",
+      "tags": {
+        "sequoia": {
+          "filename": "openh264-2.7.0.sequoia.bottle.tar.gz",
+          "local_filename": "openh264--2.7.0.sequoia.bottle.tar.gz",
+          "sha256": "9aabda238cd81b4b5484d8b51d35813543687e51d5a2b7889f91352e4d4b5de9",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [
+              "lib/pkgconfig/openh264.pc"
+            ],
+            "linkage_files": [
+              "lib/libopenh264.2.7.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791792852,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-openh264-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/openh264.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/wels/codec_api.h",
+            "include/wels/codec_app_def.h",
+            "include/wels/codec_def.h",
+            "include/wels/codec_ver.h",
+            "lib/libopenh264.2.7.0.dylib",
+            "lib/libopenh264.8.dylib",
+            "lib/libopenh264.dylib",
+            "lib/pkgconfig/openh264.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1124522
+        }
+      }
+    }
+  }
+}
