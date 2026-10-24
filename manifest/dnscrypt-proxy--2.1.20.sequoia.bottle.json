@@ -1,0 +1,99 @@
+{
+  "dnscrypt-proxy": {
+    "formula": {
+      "name": "dnscrypt-proxy",
+      "pkg_version": "2.1.20",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dnscrypt-proxy.rb",
+      "tap_git_path": "Formula/d/dnscrypt-proxy.rb",
+      "tap_git_revision": "43b17d4f756363cc6a43cc755f4207289902d253",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Secure communications between a client and a DNS resolver",
+      "license": "ISC",
+      "homepage": "https://dnscrypt.info"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-23T20:28:39Z",
+      "tags": {
+        "sequoia": {
+          "filename": "dnscrypt-proxy-2.1.20.sequoia.bottle.tar.gz",
+          "local_filename": "dnscrypt-proxy--2.1.20.sequoia.bottle.tar.gz",
+          "sha256": "d6b8f49ba1f7c82d05f80494107c889f040a62e4c3ed9d53fd537dd3b19d4bc4",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [
+              "sh.brew.dnscrypt-proxy.plist",
+              "sh.brew.dnscrypt-proxy.service"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792703325,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-dnscrypt-proxy-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "sbin/dnscrypt-proxy"
+          ],
+          "all_files": [
+            ".bottle/etc/dnscrypt-proxy.toml",
+            ".brew/dnscrypt-proxy.rb",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "sbin/dnscrypt-proxy",
+            "sbom.spdx.json",
+            "sh.brew.dnscrypt-proxy.plist",
+            "sh.brew.dnscrypt-proxy.service",
+            "share/dnscrypt-proxy/example-allowed-ips.txt",
+            "share/dnscrypt-proxy/example-allowed-names.txt",
+            "share/dnscrypt-proxy/example-blocked-ips.txt",
+            "share/dnscrypt-proxy/example-blocked-names.txt",
+            "share/dnscrypt-proxy/example-captive-portals.txt",
+            "share/dnscrypt-proxy/example-cloaking-rules.txt",
+            "share/dnscrypt-proxy/example-forwarding-rules.txt"
+          ],
+          "installed_size": 12936641
+        }
+      }
+    }
+  }
+}

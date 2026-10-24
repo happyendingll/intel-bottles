@@ -1,0 +1,149 @@
+{
+  "kubecfg": {
+    "formula": {
+      "name": "kubecfg",
+      "pkg_version": "0.41.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/k/kubecfg.rb",
+      "tap_git_path": "Formula/k/kubecfg.rb",
+      "tap_git_revision": "43b17d4f756363cc6a43cc755f4207289902d253",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Manage complex enterprise Kubernetes environments as code",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/kubecfg/kubecfg"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-23T22:42:12Z",
+      "tags": {
+        "sequoia": {
+          "filename": "kubecfg-0.41.0.sequoia.bottle.tar.gz",
+          "local_filename": "kubecfg--0.41.0.sequoia.bottle.tar.gz",
+          "sha256": "c9330d07752b84342ee9fa0c0e18d5919971b3e6326c3ffea55cfb0b48cba5f7",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792771401,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-kubecfg-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/kubecfg"
+          ],
+          "all_files": [
+            ".brew/kubecfg.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/kubecfg",
+            "etc/bash_completion.d/kubecfg",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/kubecfg.fish",
+            "share/kubecfg/configmap.jsonnet",
+            "share/kubecfg/duplicates.jsonnet",
+            "share/kubecfg/duplicates_literal.jsonnet",
+            "share/kubecfg/duplicates_version.jsonnet",
+            "share/kubecfg/example.libsonnet",
+            "share/kubecfg/extvar.file",
+            "share/kubecfg/extvars/feed/input.jsonnet",
+            "share/kubecfg/extvars/feed/sink.jsonnet",
+            "share/kubecfg/extvars/feed/top.jsonnet",
+            "share/kubecfg/extvars/feed/var.txt",
+            "share/kubecfg/extvars/helper.jsonnet",
+            "share/kubecfg/fff/.kubecfgrc.jsonnet",
+            "share/kubecfg/fff/one/two/demo.jsonnet",
+            "share/kubecfg/fffbad/.kubecfgrc.jsonnet",
+            "share/kubecfg/fffbad/one/demo.jsonnet",
+            "share/kubecfg/fffbad/two/.kubecfgrc.jsonnet",
+            "share/kubecfg/fffbad/two/demo.jsonnet",
+            "share/kubecfg/guestbook-overlay.jsonnet",
+            "share/kubecfg/guestbook.jsonnet",
+            "share/kubecfg/guestbook.yakl",
+            "share/kubecfg/helm_test.jsonnet",
+            "share/kubecfg/import_test.jsonnet",
+            "share/kubecfg/imported.jsonnet",
+            "share/kubecfg/k8s-libsonnet/README.md",
+            "share/kubecfg/k8s-libsonnet/dev.yakl",
+            "share/kubecfg/k8s-libsonnet/k8s.libsonnet",
+            "share/kubecfg/k8s-libsonnet/prod.yakl",
+            "share/kubecfg/k8s-libsonnet/redis.yaml",
+            "share/kubecfg/k8s-libsonnet/shop.yakl",
+            "share/kubecfg/k8s-libsonnet/testdata/k8s-libsonnet.LICENSE",
+            "share/kubecfg/k8s-libsonnet/testdata/k8s.libsonnet",
+            "share/kubecfg/k8s-libsonnet/testdata/shop-dev.yaml",
+            "share/kubecfg/k8s-libsonnet/testdata/shop-prod.yaml",
+            "share/kubecfg/k8s-libsonnet/testdata/shop.yaml",
+            "share/kubecfg/kubecfg_test.jsonnet",
+            "share/kubecfg/kustomize/test.jsonnet",
+            "share/kubecfg/lib/test.libsonnet",
+            "share/kubecfg/metacontroller/Makefile",
+            "share/kubecfg/metacontroller/api/go.mod",
+            "share/kubecfg/metacontroller/api/go.sum",
+            "share/kubecfg/metacontroller/api/types.go",
+            "share/kubecfg/metacontroller/jsonnet/sync.jsonnet",
+            "share/kubecfg/metacontroller/kustomization.yaml",
+            "share/kubecfg/metacontroller/manifests/compositeController.yaml",
+            "share/kubecfg/metacontroller/manifests/deployment.yaml",
+            "share/kubecfg/metacontroller/manifests/service.yaml",
+            "share/kubecfg/metacontroller/v1/crdv1.yaml",
+            "share/kubecfg/mysql-8.8.26.tgz",
+            "share/kubecfg/mysql-8.8.26.tgz.bin",
+            "share/kubecfg/namespace-overlay.jsonnet",
+            "share/kubecfg/overlay.json",
+            "share/kubecfg/pack/a/b/c/app.jsonnet",
+            "share/kubecfg/pack/a/d/e/base.libsonnet",
+            "share/kubecfg/pack/a/d/f/namespace.libsonnet",
+            "share/kubecfg/schema.pb",
+            "share/kubecfg/secret.jsonnet",
+            "share/kubecfg/simple.json",
+            "share/kubecfg/test.jsonnet",
+            "share/kubecfg/test.yaml",
+            "share/kubecfg/yakl_lib.yakl",
+            "share/kubecfg/yakl_test.yakl",
+            "share/zsh/site-functions/_kubecfg"
+          ],
+          "installed_size": 83584598
+        }
+      }
+    }
+  }
+}

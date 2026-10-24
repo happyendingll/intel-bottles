@@ -1,0 +1,88 @@
+{
+  "kubeseal": {
+    "formula": {
+      "name": "kubeseal",
+      "pkg_version": "0.41.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/k/kubeseal.rb",
+      "tap_git_path": "Formula/k/kubeseal.rb",
+      "tap_git_revision": "43b17d4f756363cc6a43cc755f4207289902d253",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Kubernetes controller and tool for one-way encrypted Secrets",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/bitnami/sealed-secrets"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-23T22:55:16Z",
+      "tags": {
+        "sequoia": {
+          "filename": "kubeseal-0.41.1.sequoia.bottle.tar.gz",
+          "local_filename": "kubeseal--0.41.1.sequoia.bottle.tar.gz",
+          "sha256": "725ffadc1c21d81b38c9e024803831608ca1261af3b502ae0c82d8361dc36826",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792757636,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "source": {
+              "scm_revision": "f845e8f80a1ff6d112e2116d552f4670bf22895c"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-kubeseal-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/kubeseal"
+          ],
+          "all_files": [
+            ".brew/kubeseal.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/kubeseal",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 56498555
+        }
+      }
+    }
+  }
+}
