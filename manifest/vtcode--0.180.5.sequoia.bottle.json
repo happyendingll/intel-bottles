@@ -1,44 +1,51 @@
 {
-  "xplr": {
+  "vtcode": {
     "formula": {
-      "name": "xplr",
-      "pkg_version": "1.1.2",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/x/xplr.rb",
-      "tap_git_path": "Formula/x/xplr.rb",
-      "tap_git_revision": "929ac9aa1ca8b35f8727314e10d77928b2b08a89",
+      "name": "vtcode",
+      "pkg_version": "0.180.5",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/v/vtcode.rb",
+      "tap_git_path": "Formula/v/vtcode.rb",
+      "tap_git_revision": "160dd0cb5c11ceefb0b2abcd7ea88b41404b2209",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Hackable, minimal, fast TUI file explorer",
-      "license": "MIT",
-      "homepage": "https://xplr.dev"
+      "desc": "CLI Semantic Coding Agent",
+      "license": "MIT OR Apache-2.0",
+      "homepage": "https://vinhnx.github.io"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
-      "cellar": "any",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
+      "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-09-16T06:01:19Z",
+      "date": "2026-10-24T08:56:45Z",
       "tags": {
         "sequoia": {
-          "filename": "xplr-1.1.2.sequoia.bottle.tar.gz",
-          "local_filename": "xplr--1.1.2.sequoia.bottle.tar.gz",
-          "sha256": "722eee36c821d701db9c41b80182fffb97c6131926b0db4b1df33595387e370d",
+          "filename": "vtcode-0.180.5.sequoia.bottle.tar.gz",
+          "local_filename": "vtcode--0.180.5.sequoia.bottle.tar.gz",
+          "sha256": "22b167f24af8cf2093e01921182ce0417d86a7782dbfd6b30797c15d9c5f8017",
           "tab": {
-            "homebrew_version": "7.0.2",
+            "homebrew_version": "7.0.10",
             "changed_files": [],
-            "linkage_files": [
-              "bin/xplr"
-            ],
+            "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1789472597,
+            "source_modified_time": 1153704088,
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "luajit",
-                "version": "2.1.1788856981",
+                "full_name": "pcre2",
+                "version": "10.49",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.1.1788856981",
+                "pkg_version": "10.49",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ripgrep",
+                "version": "15.2.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "15.2.0",
                 "declared_directly": true,
-                "compatibility_version": 30
+                "compatibility_version": 1
               }
             ],
             "arch": "x86_64",
@@ -54,29 +61,29 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-luajit-2.1.1788856981",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-luajit-2.1.1788856981",
-                "name": "luajit",
-                "versionInfo": "2.1.1788856981",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "name": "pcre2",
+                "versionInfo": "10.49",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/luajit-2.1.1788856981.sequoia.bottle.tar.gz",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.49.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b76ac90f46b617eb05f8900688c70e0bd96de56d146ca748b4f00ec7b3687dbf"
+                    "checksumValue": "a15c4625444924cb9c0c52dc427dfc576a8433855527a2fb1a6be2bff6751567"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/luajit@2.1.1788856981",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
                     "referenceType": "purl"
                   }
                 ]
@@ -96,31 +103,32 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-luajit-2.1.1788856981",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-xplr"
+                "relatedSpdxElement": "SPDXRef-Bottle-vtcode"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-xplr-src"
+                "relatedSpdxElement": "SPDXRef-Archive-vtcode-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/xplr"
+            "bin/vtcode"
           ],
           "all_files": [
-            ".brew/xplr.rb",
+            ".brew/vtcode.rb",
             ".crates.toml",
             ".crates2.json",
+            "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
-            "bin/xplr",
+            "bin/vtcode",
             "sbom.spdx.json"
           ],
-          "installed_size": 5774454
+          "installed_size": 49536662
         }
       }
     }

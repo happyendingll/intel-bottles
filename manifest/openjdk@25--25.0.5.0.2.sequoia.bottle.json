@@ -1,26 +1,26 @@
 {
-  "openjdk@21": {
+  "openjdk@25": {
     "formula": {
-      "name": "openjdk@21",
-      "pkg_version": "21.0.13",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openjdk@21.rb",
-      "tap_git_path": "Formula/o/openjdk@21.rb",
-      "tap_git_revision": "257b265f000f3e8a0bb8d28509226932b3effe11",
+      "name": "openjdk@25",
+      "pkg_version": "25.0.5.0.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openjdk@25.rb",
+      "tap_git_path": "Formula/o/openjdk@25.rb",
+      "tap_git_revision": "160dd0cb5c11ceefb0b2abcd7ea88b41404b2209",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Development kit for the Java programming language",
       "license": "GPL-2.0-only WITH Classpath-exception-2.0",
       "homepage": "https://openjdk.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-21T23:01:30Z",
+      "date": "2026-10-24T08:09:38Z",
       "tags": {
         "sequoia": {
-          "filename": "openjdk%4021-21.0.13.sequoia.bottle.tar.gz",
-          "local_filename": "openjdk@21--21.0.13.sequoia.bottle.tar.gz",
-          "sha256": "61743b51f383840d39b522c8cc26e0b6f41146abdc54c2f6f6104788bfc44bcb",
+          "filename": "openjdk%4025-25.0.5.0.2.sequoia.bottle.tar.gz",
+          "local_filename": "openjdk@25--25.0.5.0.2.sequoia.bottle.tar.gz",
+          "sha256": "baef2b0c93a889231094db6494c40486ae15173088796e447158254d54837a9d",
           "tab": {
             "homebrew_version": "7.0.10",
             "changed_files": [],
@@ -45,7 +45,6 @@
               "libexec/openjdk.jdk/Contents/Home/lib/libjsig.dylib",
               "libexec/openjdk.jdk/Contents/Home/lib/libjsound.dylib",
               "libexec/openjdk.jdk/Contents/Home/lib/liblcms.dylib",
-              "libexec/openjdk.jdk/Contents/Home/lib/lible.dylib",
               "libexec/openjdk.jdk/Contents/Home/lib/libmanagement.dylib",
               "libexec/openjdk.jdk/Contents/Home/lib/libmanagement_agent.dylib",
               "libexec/openjdk.jdk/Contents/Home/lib/libmanagement_ext.dylib",
@@ -69,15 +68,15 @@
               "libexec/openjdk.jdk/Contents/MacOS/libjli.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792411820,
+            "source_modified_time": 1792682694,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "brotli",
-                "version": "1.2.0",
+                "version": "1.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.2.0",
+                "pkg_version": "1.2.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -268,10 +267,10 @@
               },
               {
                 "full_name": "harfbuzz",
-                "version": "14.6.0",
+                "version": "15.0.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "14.6.0",
+                "pkg_version": "15.0.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -351,6 +350,7 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
               "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
@@ -363,7 +363,7 @@
               "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
               "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
-              "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
               "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
@@ -374,6 +374,29 @@
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "name": "brotli",
+                "versionInfo": "1.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/brotli-1.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3727ba1da30425c234290f9665d73aa41a6684b5cf795d364d9526382f3580b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/brotli@1.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "name": "libpng",
@@ -651,24 +674,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0",
                 "name": "harfbuzz",
-                "versionInfo": "14.6.0",
+                "versionInfo": "15.0.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/harfbuzz-14.6.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/harfbuzz-15.0.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "98c3a06c5746a575441d7d56df94fbac1b6dc0dbf5cf5275155325bba414cda1"
+                    "checksumValue": "52120a7b7534d24c9de009906ea23aed4b12ca273391cdcf84800332f60ddf5f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/harfbuzz@14.6.0",
+                    "referenceLocator": "pkg:brew/harfbuzz@15.0.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -849,109 +872,114 @@
             ],
             "relationships": [
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.21"
+                "relatedSpdxElement": "SPDXRef-Bottle-openjdk.40.25"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-openjdk.40.21-src"
+                "relatedSpdxElement": "SPDXRef-Archive-openjdk.40.25-src"
               }
             ]
           },
@@ -973,6 +1001,7 @@
             "bin/javac",
             "bin/keytool",
             "bin/jmod",
+            "bin/jnativescan",
             "bin/jmap",
             "bin/jshell",
             "bin/jstat",
@@ -987,7 +1016,7 @@
             "bin/jimage"
           ],
           "all_files": [
-            ".brew/openjdk@21.rb",
+            ".brew/openjdk@25.rb",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
@@ -1009,6 +1038,7 @@
             "bin/jlink",
             "bin/jmap",
             "bin/jmod",
+            "bin/jnativescan",
             "bin/jpackage",
             "bin/jps",
             "bin/jrunscript",
@@ -1046,6 +1076,7 @@
             "libexec/openjdk.jdk/Contents/Home/bin/jlink",
             "libexec/openjdk.jdk/Contents/Home/bin/jmap",
             "libexec/openjdk.jdk/Contents/Home/bin/jmod",
+            "libexec/openjdk.jdk/Contents/Home/bin/jnativescan",
             "libexec/openjdk.jdk/Contents/Home/bin/jpackage",
             "libexec/openjdk.jdk/Contents/Home/bin/jps",
             "libexec/openjdk.jdk/Contents/Home/bin/jrunscript",
@@ -1057,13 +1088,13 @@
             "libexec/openjdk.jdk/Contents/Home/bin/keytool",
             "libexec/openjdk.jdk/Contents/Home/bin/rmiregistry",
             "libexec/openjdk.jdk/Contents/Home/bin/serialver",
+            "libexec/openjdk.jdk/Contents/Home/conf/jaxp-strict.properties.template",
             "libexec/openjdk.jdk/Contents/Home/conf/jaxp.properties",
             "libexec/openjdk.jdk/Contents/Home/conf/logging.properties",
             "libexec/openjdk.jdk/Contents/Home/conf/management/jmxremote.access",
             "libexec/openjdk.jdk/Contents/Home/conf/management/jmxremote.password.template",
             "libexec/openjdk.jdk/Contents/Home/conf/management/management.properties",
             "libexec/openjdk.jdk/Contents/Home/conf/net.properties",
-            "libexec/openjdk.jdk/Contents/Home/conf/security/java.policy",
             "libexec/openjdk.jdk/Contents/Home/conf/security/java.security",
             "libexec/openjdk.jdk/Contents/Home/conf/security/policy/README.txt",
             "libexec/openjdk.jdk/Contents/Home/conf/security/policy/limited/default_US_export.policy",
@@ -1190,16 +1221,17 @@
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.crypto.ec.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.dynalink.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.editpad.jmod",
+            "libexec/openjdk.jdk/Contents/Home/jmods/jdk.graal.compiler.jmod",
+            "libexec/openjdk.jdk/Contents/Home/jmods/jdk.graal.compiler.management.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.hotspot.agent.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.httpserver.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.incubator.vector.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.internal.ed.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.internal.jvmstat.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.internal.le.jmod",
+            "libexec/openjdk.jdk/Contents/Home/jmods/jdk.internal.md.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.internal.opt.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.internal.vm.ci.jmod",
-            "libexec/openjdk.jdk/Contents/Home/jmods/jdk.internal.vm.compiler.jmod",
-            "libexec/openjdk.jdk/Contents/Home/jmods/jdk.internal.vm.compiler.management.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.jartool.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.javadoc.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.jcmd.jmod",
@@ -1221,7 +1253,6 @@
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.naming.rmi.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.net.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.nio.mapmode.jmod",
-            "libexec/openjdk.jdk/Contents/Home/jmods/jdk.random.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.sctp.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.security.auth.jmod",
             "libexec/openjdk.jdk/Contents/Home/jmods/jdk.security.jgss.jmod",
@@ -1233,7 +1264,6 @@
             "libexec/openjdk.jdk/Contents/Home/legal/java.base/ASSEMBLY_EXCEPTION",
             "libexec/openjdk.jdk/Contents/Home/legal/java.base/LICENSE",
             "libexec/openjdk.jdk/Contents/Home/legal/java.base/aes.md",
-            "libexec/openjdk.jdk/Contents/Home/legal/java.base/asm.md",
             "libexec/openjdk.jdk/Contents/Home/legal/java.base/c-libutl.md",
             "libexec/openjdk.jdk/Contents/Home/legal/java.base/cldr.md",
             "libexec/openjdk.jdk/Contents/Home/legal/java.base/icu.md",
@@ -1308,8 +1338,16 @@
             "libexec/openjdk.jdk/Contents/Home/legal/java.xml/bcel.md",
             "libexec/openjdk.jdk/Contents/Home/legal/java.xml/dom.md",
             "libexec/openjdk.jdk/Contents/Home/legal/java.xml/jcup.md",
+            "libexec/openjdk.jdk/Contents/Home/legal/java.xml/schema10part1.md",
+            "libexec/openjdk.jdk/Contents/Home/legal/java.xml/schema10part2.md",
             "libexec/openjdk.jdk/Contents/Home/legal/java.xml/xalan.md",
             "libexec/openjdk.jdk/Contents/Home/legal/java.xml/xerces.md",
+            "libexec/openjdk.jdk/Contents/Home/legal/java.xml/xhtml10.md",
+            "libexec/openjdk.jdk/Contents/Home/legal/java.xml/xhtml10schema.md",
+            "libexec/openjdk.jdk/Contents/Home/legal/java.xml/xhtml11.md",
+            "libexec/openjdk.jdk/Contents/Home/legal/java.xml/xhtml11schema.md",
+            "libexec/openjdk.jdk/Contents/Home/legal/java.xml/xmlspec.md",
+            "libexec/openjdk.jdk/Contents/Home/legal/java.xml/xmlxsd.md",
             "libexec/openjdk.jdk/Contents/Home/legal/java.xml.crypto/ADDITIONAL_LICENSE_INFO",
             "libexec/openjdk.jdk/Contents/Home/legal/java.xml.crypto/ASSEMBLY_EXCEPTION",
             "libexec/openjdk.jdk/Contents/Home/legal/java.xml.crypto/LICENSE",
@@ -1341,6 +1379,12 @@
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.editpad/ADDITIONAL_LICENSE_INFO",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.editpad/ASSEMBLY_EXCEPTION",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.editpad/LICENSE",
+            "libexec/openjdk.jdk/Contents/Home/legal/jdk.graal.compiler/ADDITIONAL_LICENSE_INFO",
+            "libexec/openjdk.jdk/Contents/Home/legal/jdk.graal.compiler/ASSEMBLY_EXCEPTION",
+            "libexec/openjdk.jdk/Contents/Home/legal/jdk.graal.compiler/LICENSE",
+            "libexec/openjdk.jdk/Contents/Home/legal/jdk.graal.compiler.management/ADDITIONAL_LICENSE_INFO",
+            "libexec/openjdk.jdk/Contents/Home/legal/jdk.graal.compiler.management/ASSEMBLY_EXCEPTION",
+            "libexec/openjdk.jdk/Contents/Home/legal/jdk.graal.compiler.management/LICENSE",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.hotspot.agent/ADDITIONAL_LICENSE_INFO",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.hotspot.agent/ASSEMBLY_EXCEPTION",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.hotspot.agent/LICENSE",
@@ -1360,6 +1404,10 @@
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.le/ASSEMBLY_EXCEPTION",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.le/LICENSE",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.le/jline.md",
+            "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.md/ADDITIONAL_LICENSE_INFO",
+            "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.md/ASSEMBLY_EXCEPTION",
+            "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.md/LICENSE",
+            "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.md/commonmark.md",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.opt/ADDITIONAL_LICENSE_INFO",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.opt/ASSEMBLY_EXCEPTION",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.opt/LICENSE",
@@ -1367,18 +1415,14 @@
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.vm.ci/ADDITIONAL_LICENSE_INFO",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.vm.ci/ASSEMBLY_EXCEPTION",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.vm.ci/LICENSE",
-            "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.vm.compiler/ADDITIONAL_LICENSE_INFO",
-            "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.vm.compiler/ASSEMBLY_EXCEPTION",
-            "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.vm.compiler/LICENSE",
-            "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.vm.compiler.management/ADDITIONAL_LICENSE_INFO",
-            "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.vm.compiler.management/ASSEMBLY_EXCEPTION",
-            "libexec/openjdk.jdk/Contents/Home/legal/jdk.internal.vm.compiler.management/LICENSE",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.jartool/ADDITIONAL_LICENSE_INFO",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.jartool/ASSEMBLY_EXCEPTION",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.jartool/LICENSE",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.javadoc/ADDITIONAL_LICENSE_INFO",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.javadoc/ASSEMBLY_EXCEPTION",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.javadoc/LICENSE",
+            "libexec/openjdk.jdk/Contents/Home/legal/jdk.javadoc/dejavufonts.md",
+            "libexec/openjdk.jdk/Contents/Home/legal/jdk.javadoc/highlightjs.md",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.javadoc/jquery.md",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.javadoc/jqueryUI.md",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.jcmd/ADDITIONAL_LICENSE_INFO",
@@ -1440,9 +1484,6 @@
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.nio.mapmode/ADDITIONAL_LICENSE_INFO",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.nio.mapmode/ASSEMBLY_EXCEPTION",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.nio.mapmode/LICENSE",
-            "libexec/openjdk.jdk/Contents/Home/legal/jdk.random/ADDITIONAL_LICENSE_INFO",
-            "libexec/openjdk.jdk/Contents/Home/legal/jdk.random/ASSEMBLY_EXCEPTION",
-            "libexec/openjdk.jdk/Contents/Home/legal/jdk.random/LICENSE",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.sctp/ADDITIONAL_LICENSE_INFO",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.sctp/ASSEMBLY_EXCEPTION",
             "libexec/openjdk.jdk/Contents/Home/legal/jdk.sctp/LICENSE",
@@ -1493,7 +1534,6 @@
             "libexec/openjdk.jdk/Contents/Home/lib/libjsig.dylib",
             "libexec/openjdk.jdk/Contents/Home/lib/libjsound.dylib",
             "libexec/openjdk.jdk/Contents/Home/lib/liblcms.dylib",
-            "libexec/openjdk.jdk/Contents/Home/lib/lible.dylib",
             "libexec/openjdk.jdk/Contents/Home/lib/libmanagement.dylib",
             "libexec/openjdk.jdk/Contents/Home/lib/libmanagement_agent.dylib",
             "libexec/openjdk.jdk/Contents/Home/lib/libmanagement_ext.dylib",
@@ -1517,77 +1557,22 @@
             "libexec/openjdk.jdk/Contents/Home/lib/psfontj2d.properties",
             "libexec/openjdk.jdk/Contents/Home/lib/security/blocked.certs",
             "libexec/openjdk.jdk/Contents/Home/lib/security/cacerts",
-            "libexec/openjdk.jdk/Contents/Home/lib/security/default.policy",
             "libexec/openjdk.jdk/Contents/Home/lib/security/public_suffix_list.dat",
             "libexec/openjdk.jdk/Contents/Home/lib/server/classes.jsa",
+            "libexec/openjdk.jdk/Contents/Home/lib/server/classes_coh.jsa",
             "libexec/openjdk.jdk/Contents/Home/lib/server/classes_nocoops.jsa",
+            "libexec/openjdk.jdk/Contents/Home/lib/server/classes_nocoops_coh.jsa",
             "libexec/openjdk.jdk/Contents/Home/lib/server/libjsig.dylib",
             "libexec/openjdk.jdk/Contents/Home/lib/server/libjvm.dylib",
             "libexec/openjdk.jdk/Contents/Home/lib/shaders.metallib",
             "libexec/openjdk.jdk/Contents/Home/lib/src.zip",
             "libexec/openjdk.jdk/Contents/Home/lib/tzdb.dat",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jar.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jarsigner.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/java.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/javac.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/javadoc.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/javap.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jcmd.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jconsole.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jdb.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jdeprscan.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jdeps.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jfr.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jhsdb.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jinfo.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jlink.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jmap.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jmod.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jpackage.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jps.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jrunscript.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jshell.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jstack.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jstat.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jstatd.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/jwebserver.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/keytool.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/rmiregistry.1",
-            "libexec/openjdk.jdk/Contents/Home/man/man1/serialver.1",
             "libexec/openjdk.jdk/Contents/Home/release",
             "libexec/openjdk.jdk/Contents/Info.plist",
             "libexec/openjdk.jdk/Contents/MacOS/libjli.dylib",
-            "sbom.spdx.json",
-            "share/man/man1/jar.1",
-            "share/man/man1/jarsigner.1",
-            "share/man/man1/java.1",
-            "share/man/man1/javac.1",
-            "share/man/man1/javadoc.1",
-            "share/man/man1/javap.1",
-            "share/man/man1/jcmd.1",
-            "share/man/man1/jconsole.1",
-            "share/man/man1/jdb.1",
-            "share/man/man1/jdeprscan.1",
-            "share/man/man1/jdeps.1",
-            "share/man/man1/jfr.1",
-            "share/man/man1/jhsdb.1",
-            "share/man/man1/jinfo.1",
-            "share/man/man1/jlink.1",
-            "share/man/man1/jmap.1",
-            "share/man/man1/jmod.1",
-            "share/man/man1/jpackage.1",
-            "share/man/man1/jps.1",
-            "share/man/man1/jrunscript.1",
-            "share/man/man1/jshell.1",
-            "share/man/man1/jstack.1",
-            "share/man/man1/jstat.1",
-            "share/man/man1/jstatd.1",
-            "share/man/man1/jwebserver.1",
-            "share/man/man1/keytool.1",
-            "share/man/man1/rmiregistry.1",
-            "share/man/man1/serialver.1"
+            "sbom.spdx.json"
           ],
-          "installed_size": 347389106
+          "installed_size": 390164226
         }
       }
     }
