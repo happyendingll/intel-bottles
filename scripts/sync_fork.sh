@@ -31,6 +31,13 @@ git fetch --quiet origin main
 git checkout -q -B main origin/main
 git read-tree --reset -u upstream/main
 
+# Upstream currently gives every macOS host an ARM-only JDK 27 Boot JDK. Keep
+# the Intel fix in the fork after each fresh upstream snapshot, so openjdk can
+# build from source and its downstream wave can pour the resulting bottle.
+python3 "$REPO_DIR/scripts/patch_openjdk_boot_jdk.py" "$CORE_REPO/Formula/o/openjdk.rb"
+brew ruby -- -c "$CORE_REPO/Formula/o/openjdk.rb"
+git diff --check -- Formula/o/openjdk.rb
+
 # Pin .github to whatever the fork already has, so our commits never touch workflow
 # files. FORK_TOKEN deliberately has only contents:write, and GitHub refuses a push
 # where a PAT without `workflow` scope creates or updates .github/workflows/*. Before

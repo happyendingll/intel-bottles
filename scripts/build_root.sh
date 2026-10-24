@@ -113,6 +113,15 @@ if [ "${LLVM_SINGLE_STAGE:-false}" = "true" ] && grep -Fxq llvm <<< "$TODO"; the
   git -C "$(brew --repo homebrew/core)" diff -- Formula/l/llvm.rb
 fi
 
+# A manual build may run before the next sync commits the Intel Boot JDK fix to
+# the fork. Patch this job's disposable tap when openjdk is in its build chain.
+if grep -Fxq openjdk <<< "$TODO"; then
+  openjdk_formula="$(brew --repo homebrew/core)/Formula/o/openjdk.rb"
+  python3 "$SCRIPT_DIR/patch_openjdk_boot_jdk.py" "$openjdk_formula"
+  brew ruby -- -c "$openjdk_formula"
+  git -C "$(brew --repo homebrew/core)" diff --check -- Formula/o/openjdk.rb
+fi
+
 cd "$OUT_DIR"
 
 for formula in $TODO; do
