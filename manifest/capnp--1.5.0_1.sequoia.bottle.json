@@ -1,0 +1,303 @@
+{
+  "capnp": {
+    "formula": {
+      "name": "capnp",
+      "pkg_version": "1.5.0_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/capnp.rb",
+      "tap_git_path": "Formula/c/capnp.rb",
+      "tap_git_revision": "e020e3e2757c91e3d6b732c9fd83b82ec661e1c0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Data interchange format and capability-based RPC system",
+      "license": "MIT",
+      "homepage": "https://capnproto.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-24T18:53:43Z",
+      "tags": {
+        "sequoia": {
+          "filename": "capnp-1.5.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "capnp--1.5.0_1.sequoia.bottle.tar.gz",
+          "sha256": "524ef1eba20f8d01d55bab582e9c87156d9c850b232fa3ff3658b88f2e5c382a",
+          "tab": {
+            "homebrew_version": "7.0.10",
+            "changed_files": [
+              "lib/pkgconfig/capnp-json.pc",
+              "lib/pkgconfig/capnp-rpc.pc",
+              "lib/pkgconfig/capnp-websocket.pc",
+              "lib/pkgconfig/capnp.pc",
+              "lib/pkgconfig/capnpc.pc",
+              "lib/pkgconfig/kj-async.pc",
+              "lib/pkgconfig/kj-gzip.pc",
+              "lib/pkgconfig/kj-http.pc",
+              "lib/pkgconfig/kj-test.pc",
+              "lib/pkgconfig/kj-tls.pc",
+              "lib/pkgconfig/kj.pc"
+            ],
+            "linkage_files": [
+              "lib/libcapnp-json.1.5.0.dylib",
+              "lib/libcapnp-rpc.1.5.0.dylib",
+              "lib/libcapnp-websocket.1.5.0.dylib",
+              "lib/libcapnp.1.5.0.dylib",
+              "lib/libcapnpc.1.5.0.dylib",
+              "lib/libkj-async.1.5.0.dylib",
+              "lib/libkj-gzip.1.5.0.dylib",
+              "lib/libkj-http.1.5.0.dylib",
+              "lib/libkj-test.1.5.0.dylib",
+              "lib/libkj-tls.1.5.0.dylib",
+              "lib/libkj.1.5.0.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/capnp"
+            ],
+            "source_modified_time": 1783636736,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "openssl@3",
+                "version": "3.5.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.5.9",
+                "declared_directly": false,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/capnp",
+              "string": "/usr/local/Cellar/capnp/1.5.0_1/include",
+              "offset": 114570
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.5.2e.9",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.5.2e.9",
+                "name": "openssl@3",
+                "versionInfo": "3.5.9",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/openssl%403-3.5.9.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ac8149f4cd1fc10ef386c00a3c422228fabe7d4d0da461e641622eb7cd49b68"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.5.9",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.5.2e.9",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-capnp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-capnp-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/capnpc-capnp",
+            "bin/capnp",
+            "bin/capnpc-c++",
+            "bin/capnpc"
+          ],
+          "all_files": [
+            ".brew/capnp.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/capnp",
+            "bin/capnpc",
+            "bin/capnpc-c++",
+            "bin/capnpc-capnp",
+            "include/capnp/any.h",
+            "include/capnp/blob.h",
+            "include/capnp/c++.capnp",
+            "include/capnp/c++.capnp.h",
+            "include/capnp/capability.h",
+            "include/capnp/common.h",
+            "include/capnp/compat/json.capnp",
+            "include/capnp/compat/json.capnp.h",
+            "include/capnp/compat/json.h",
+            "include/capnp/compat/std-iterator.h",
+            "include/capnp/compat/websocket-rpc.h",
+            "include/capnp/dynamic.h",
+            "include/capnp/endian.h",
+            "include/capnp/ez-rpc.h",
+            "include/capnp/generated-header-support.h",
+            "include/capnp/layout.h",
+            "include/capnp/list.h",
+            "include/capnp/membrane.h",
+            "include/capnp/message.h",
+            "include/capnp/orphan.h",
+            "include/capnp/persistent.capnp",
+            "include/capnp/persistent.capnp.h",
+            "include/capnp/pointer-helpers.h",
+            "include/capnp/pretty-print.h",
+            "include/capnp/raw-schema.h",
+            "include/capnp/rpc-prelude.h",
+            "include/capnp/rpc-twoparty.capnp",
+            "include/capnp/rpc-twoparty.capnp.h",
+            "include/capnp/rpc-twoparty.h",
+            "include/capnp/rpc.capnp",
+            "include/capnp/rpc.capnp.h",
+            "include/capnp/rpc.h",
+            "include/capnp/schema-lite.h",
+            "include/capnp/schema-loader.h",
+            "include/capnp/schema-parser.h",
+            "include/capnp/schema.capnp",
+            "include/capnp/schema.capnp.h",
+            "include/capnp/schema.h",
+            "include/capnp/serialize-async.h",
+            "include/capnp/serialize-packed.h",
+            "include/capnp/serialize-text.h",
+            "include/capnp/serialize.h",
+            "include/capnp/stream.capnp",
+            "include/capnp/stream.capnp.h",
+            "include/kj/arena.h",
+            "include/kj/array.h",
+            "include/kj/async-inl.h",
+            "include/kj/async-io.h",
+            "include/kj/async-prelude.h",
+            "include/kj/async-queue.h",
+            "include/kj/async-unix.h",
+            "include/kj/async-win32.h",
+            "include/kj/async.h",
+            "include/kj/cidr.h",
+            "include/kj/common.h",
+            "include/kj/compat/gtest.h",
+            "include/kj/compat/gzip.h",
+            "include/kj/compat/http.h",
+            "include/kj/compat/readiness-io.h",
+            "include/kj/compat/tls.h",
+            "include/kj/compat/url.h",
+            "include/kj/debug.h",
+            "include/kj/encoding.h",
+            "include/kj/exception.h",
+            "include/kj/filesystem.h",
+            "include/kj/function.h",
+            "include/kj/hash.h",
+            "include/kj/io.h",
+            "include/kj/list.h",
+            "include/kj/main.h",
+            "include/kj/map.h",
+            "include/kj/memory.h",
+            "include/kj/mutex.h",
+            "include/kj/one-of.h",
+            "include/kj/parse/char.h",
+            "include/kj/parse/common.h",
+            "include/kj/refcount.h",
+            "include/kj/source-location.h",
+            "include/kj/std/iostream.h",
+            "include/kj/string-tree.h",
+            "include/kj/string.h",
+            "include/kj/table.h",
+            "include/kj/test.h",
+            "include/kj/thread.h",
+            "include/kj/threadlocal.h",
+            "include/kj/time.h",
+            "include/kj/timer.h",
+            "include/kj/tuple.h",
+            "include/kj/units.h",
+            "include/kj/vector.h",
+            "include/kj/win32-api-version.h",
+            "include/kj/windows-sanity.h",
+            "lib/cmake/CapnProto/CapnProtoConfig.cmake",
+            "lib/cmake/CapnProto/CapnProtoConfigVersion.cmake",
+            "lib/cmake/CapnProto/CapnProtoMacros.cmake",
+            "lib/cmake/CapnProto/CapnProtoTargets-release.cmake",
+            "lib/cmake/CapnProto/CapnProtoTargets.cmake",
+            "lib/libcapnp-json.1.5.0.dylib",
+            "lib/libcapnp-json.a",
+            "lib/libcapnp-json.dylib",
+            "lib/libcapnp-rpc.1.5.0.dylib",
+            "lib/libcapnp-rpc.a",
+            "lib/libcapnp-rpc.dylib",
+            "lib/libcapnp-websocket.1.5.0.dylib",
+            "lib/libcapnp-websocket.a",
+            "lib/libcapnp-websocket.dylib",
+            "lib/libcapnp.1.5.0.dylib",
+            "lib/libcapnp.a",
+            "lib/libcapnp.dylib",
+            "lib/libcapnpc.1.5.0.dylib",
+            "lib/libcapnpc.a",
+            "lib/libcapnpc.dylib",
+            "lib/libkj-async.1.5.0.dylib",
+            "lib/libkj-async.a",
+            "lib/libkj-async.dylib",
+            "lib/libkj-gzip.1.5.0.dylib",
+            "lib/libkj-gzip.a",
+            "lib/libkj-gzip.dylib",
+            "lib/libkj-http.1.5.0.dylib",
+            "lib/libkj-http.a",
+            "lib/libkj-http.dylib",
+            "lib/libkj-test.1.5.0.dylib",
+            "lib/libkj-test.a",
+            "lib/libkj-test.dylib",
+            "lib/libkj-tls.1.5.0.dylib",
+            "lib/libkj-tls.a",
+            "lib/libkj-tls.dylib",
+            "lib/libkj.1.5.0.dylib",
+            "lib/libkj.a",
+            "lib/libkj.dylib",
+            "lib/pkgconfig/capnp-json.pc",
+            "lib/pkgconfig/capnp-rpc.pc",
+            "lib/pkgconfig/capnp-websocket.pc",
+            "lib/pkgconfig/capnp.pc",
+            "lib/pkgconfig/capnpc.pc",
+            "lib/pkgconfig/kj-async.pc",
+            "lib/pkgconfig/kj-gzip.pc",
+            "lib/pkgconfig/kj-http.pc",
+            "lib/pkgconfig/kj-test.pc",
+            "lib/pkgconfig/kj-tls.pc",
+            "lib/pkgconfig/kj.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 17323974
+        }
+      }
+    }
+  }
+}
