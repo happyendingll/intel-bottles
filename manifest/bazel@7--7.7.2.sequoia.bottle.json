@@ -1,44 +1,43 @@
 {
-  "nexus": {
+  "bazel@7": {
     "formula": {
-      "name": "nexus",
-      "pkg_version": "3.97.1-02",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/n/nexus.rb",
-      "tap_git_path": "Formula/n/nexus.rb",
-      "tap_git_revision": "af531c75684d13a72c7714aa5fae8dc831b9dcde",
+      "name": "bazel@7",
+      "pkg_version": "7.7.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/b/bazel@7.rb",
+      "tap_git_path": "Formula/b/bazel@7.rb",
+      "tap_git_revision": "6e6cc14be4225e4c9c7b6fbb4d12e0b8718361c9",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Repository manager for binary software components",
-      "license": "EPL-1.0",
-      "homepage": "https://www.sonatype.com/"
+      "desc": "Google's own build tool",
+      "license": "Apache-2.0",
+      "homepage": "https://bazel.build/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-22T07:20:29Z",
+      "date": "2026-10-25T05:01:47Z",
       "tags": {
         "sequoia": {
-          "filename": "nexus-3.97.1-02.sequoia.bottle.tar.gz",
-          "local_filename": "nexus--3.97.1-02.sequoia.bottle.tar.gz",
-          "sha256": "59eda172c8016f95422b305d3b8d42b2f1c62745ff8f7385183f90211c84d5a4",
+          "filename": "bazel%407-7.7.2.sequoia.bottle.tar.gz",
+          "local_filename": "bazel@7--7.7.2.sequoia.bottle.tar.gz",
+          "sha256": "37e35d6ea6380e3b085105bb8819c41fbab3eb2345effbfdf63b8816f7218397",
           "tab": {
             "homebrew_version": "7.0.10",
             "changed_files": [
-              "bin/nexus",
-              "sh.brew.nexus.plist",
-              "sh.brew.nexus.service"
+              "bin/bazel",
+              "bin/bazel-7.7.2"
             ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792527562,
+            "source_modified_time": 315532800,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "brotli",
-                "version": "1.2.0",
+                "version": "1.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.2.0",
+                "pkg_version": "1.2.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -229,10 +228,10 @@
               },
               {
                 "full_name": "harfbuzz",
-                "version": "14.6.0",
+                "version": "15.0.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "14.6.0",
+                "pkg_version": "15.0.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -299,18 +298,15 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "openjdk",
-                "version": "27",
+                "full_name": "openjdk@21",
+                "version": "21.0.13.0.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "27",
+                "pkg_version": "21.0.13.0.2",
                 "declared_directly": true,
-                "compatibility_version": 2
+                "compatibility_version": 1
               }
             ],
-            "source": {
-              "scm_revision": "eaff45d27427f5c0b430b887a7691161626eb9ed"
-            },
             "arch": "x86_64",
             "built_on": {
               "os": "Macintosh",
@@ -324,6 +320,7 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
               "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
@@ -336,7 +333,7 @@
               "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
               "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
-              "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
               "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
@@ -344,10 +341,33 @@
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
               "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
-              "SPDXRef-Package-SPDXRef-openjdk-27",
+              "SPDXRef-Package-SPDXRef-openjdk.40.21-21.2e.0.2e.13.2e.0.2e.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "name": "brotli",
+                "versionInfo": "1.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/brotli-1.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3727ba1da30425c234290f9665d73aa41a6684b5cf795d364d9526382f3580b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/brotli@1.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "name": "libpng",
@@ -625,24 +645,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0",
                 "name": "harfbuzz",
-                "versionInfo": "14.6.0",
+                "versionInfo": "15.0.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/harfbuzz-14.6.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/harfbuzz-15.0.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "98c3a06c5746a575441d7d56df94fbac1b6dc0dbf5cf5275155325bba414cda1"
+                    "checksumValue": "52120a7b7534d24c9de009906ea23aed4b12ca273391cdcf84800332f60ddf5f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/harfbuzz@14.6.0",
+                    "referenceLocator": "pkg:brew/harfbuzz@15.0.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -809,24 +829,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openjdk-27",
-                "name": "openjdk",
-                "versionInfo": "27",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openjdk.40.21-21.2e.0.2e.13.2e.0.2e.2",
+                "name": "openjdk@21",
+                "versionInfo": "21.0.13.0.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-only WITH Classpath-exception-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/openjdk-27.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openjdk%4021-21.0.13.0.2.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "06128feb33ca8d1d44a3f85eb2c03b5fa19a6a3eab11d64d9afaf3b23f5b9823"
+                    "checksumValue": "d3ae0b166a0b15339709d9d8c01fa89150bc987a01ffafdac0e0a073277a79e0"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openjdk@27",
+                    "referenceLocator": "pkg:brew/openjdk%4021@21.0.13.0.2",
                     "referenceType": "purl"
                   }
                 ]
@@ -846,151 +866,140 @@
             ],
             "relationships": [
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-14.2e.6.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openjdk-27",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openjdk.40.21-21.2e.0.2e.13.2e.0.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-nexus"
+                "relatedSpdxElement": "SPDXRef-Bottle-bazel.40.7"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-nexus-src"
+                "relatedSpdxElement": "SPDXRef-Archive-bazel.40.7-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/nexus"
+            "bin/bazel",
+            "bin/bazel-7.7.2"
           ],
           "all_files": [
-            ".brew/nexus.rb",
+            ".brew/bazel@7.rb",
             "INSTALL_RECEIPT.json",
-            "LICENSE.txt",
-            "README.md",
-            "bin/nexus",
-            "libexec/NOTICE.txt",
-            "libexec/OSS-LICENSE.txt",
-            "libexec/bin/nexus",
-            "libexec/bin/nexus-repository-core-3.97.1-02.jar",
-            "libexec/bin/setenv",
-            "libexec/deploy/.placeholder",
-            "libexec/etc/default-application.properties",
-            "libexec/etc/fabric/ehcache.xml",
-            "libexec/etc/fabric/mybatis.xml",
-            "libexec/etc/jetty/jetty-http.xml",
-            "libexec/etc/jetty/jetty-https-fips.xml",
-            "libexec/etc/jetty/jetty-https.xml",
-            "libexec/etc/jetty/jetty-requestlog.xml",
-            "libexec/etc/jetty/jetty.xml",
-            "libexec/etc/jetty/nexus-web.xml",
-            "libexec/etc/jetty/override-default-web.xml",
-            "libexec/etc/logback/logback.xml",
-            "libexec/etc/nexus-default.properties",
-            "libexec/etc/spring/java.util.logging.properties",
-            "libexec/etc/ssl/.placeholder",
+            "bin/bazel",
+            "bin/bazel-7.7.2",
+            "etc/bash_completion.d/bazel",
+            "libexec/bin/bazel",
+            "libexec/bin/bazel-7.7.2",
+            "libexec/bin/bazel-real",
             "sbom.spdx.json",
-            "sh.brew.nexus.plist",
-            "sh.brew.nexus.service"
+            "share/fish/vendor_completions.d/bazel.fish",
+            "share/zsh/site-functions/_bazel"
           ],
-          "installed_size": 187760843
+          "installed_size": 37532023
         }
       }
     }
