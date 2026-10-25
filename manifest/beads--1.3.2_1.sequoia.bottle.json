@@ -2,10 +2,10 @@
   "beads": {
     "formula": {
       "name": "beads",
-      "pkg_version": "1.3.2",
+      "pkg_version": "1.3.2_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/b/beads.rb",
       "tap_git_path": "Formula/b/beads.rb",
-      "tap_git_revision": "e020e3e2757c91e3d6b732c9fd83b82ec661e1c0",
+      "tap_git_revision": "78817a1e4a564b38503e53ec2dfed6842665a87e",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Memory upgrade for your coding agent",
       "license": "MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-24T18:26:58Z",
+      "date": "2026-10-25T19:36:07Z",
       "tags": {
         "sequoia": {
-          "filename": "beads-1.3.2.sequoia.bottle.tar.gz",
-          "local_filename": "beads--1.3.2.sequoia.bottle.tar.gz",
-          "sha256": "5cf49b22d8c15bf0ae940c1a522bcf6af8e058165a7f9b07ff24db8f84e8b3f2",
+          "filename": "beads-1.3.2_1.sequoia.bottle.tar.gz",
+          "local_filename": "beads--1.3.2_1.sequoia.bottle.tar.gz",
+          "sha256": "2b1f59bc438874a970c20b772a3afc57a7f44b01e51edb8c26816aed8248fafe",
           "tab": {
             "homebrew_version": "7.0.10",
             "changed_files": [],
@@ -32,20 +32,20 @@
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "dolt",
                 "version": "2.6.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.6.0",
+                "pkg_version": "2.6.0_1",
                 "declared_directly": true
               }
             ],
@@ -62,29 +62,53 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-dolt-2.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-dolt-2.2e.6.2e.0.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-dolt-2.2e.6.2e.0",
-                "name": "dolt",
-                "versionInfo": "2.6.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/dolt-2.6.0.sequoia.bottle.tar.gz",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "1384515ce64aa6744133c5bbf2d840145e546aaf79e9f4d708c45be8afa9c9dd"
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/dolt@2.6.0",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-dolt-2.2e.6.2e.0.5f.1",
+                "name": "dolt",
+                "versionInfo": "2.6.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/dolt-2.6.0_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7550cd4b8233f4ee8e998e268e93e119359e55637d0281762a711f2948684651"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/dolt@2.6.0_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -104,7 +128,12 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-dolt-2.2e.6.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-beads"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-dolt-2.2e.6.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-beads"
               },
@@ -133,7 +162,7 @@
             "share/pwsh/completions/_bd.ps1",
             "share/zsh/site-functions/_bd"
           ],
-          "installed_size": 152215715
+          "installed_size": 152215730
         }
       }
     }

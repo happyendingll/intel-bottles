@@ -2,27 +2,27 @@
   "libpq": {
     "formula": {
       "name": "libpq",
-      "pkg_version": "18.6_1",
+      "pkg_version": "18.6_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libpq.rb",
       "tap_git_path": "Formula/lib/libpq.rb",
-      "tap_git_revision": "ff108cbe9100325dcd621cf40c9056411587633d",
+      "tap_git_revision": "78817a1e4a564b38503e53ec2dfed6842665a87e",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Postgres C API library",
       "license": "PostgreSQL",
       "homepage": "https://www.postgresql.org/docs/current/libpq.html"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-09T08:45:32Z",
+      "date": "2026-10-25T19:36:17Z",
       "tags": {
         "sequoia": {
-          "filename": "libpq-18.6_1.sequoia.bottle.tar.gz",
-          "local_filename": "libpq--18.6_1.sequoia.bottle.tar.gz",
-          "sha256": "2b2e1413a1b633784949e50ba411d79c943e6ece2820cb901c7440ff25cca19f",
+          "filename": "libpq-18.6_2.sequoia.bottle.tar.gz",
+          "local_filename": "libpq--18.6_2.sequoia.bottle.tar.gz",
+          "sha256": "89da8d19e60bd862f522b74bc13734412e6d07a5473bddc5d1de528aa91e68ae",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "include/pg_config.h",
               "include/postgresql/server/pg_config.h",
@@ -107,35 +107,36 @@
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
+                "pkg_version": "4.1.0",
                 "declared_directly": true
               },
               {
                 "full_name": "krb5",
                 "version": "1.22.2",
                 "revision": 2,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.22.2_2",
                 "declared_directly": true,
                 "compatibility_version": 1
@@ -223,7 +224,7 @@
             },
             {
               "path": "bin/pg_config",
-              "string": "'--disable-debug' '--prefix=/usr/local/Cellar/libpq/18.6_1' '--with-gssapi' '--with-libcurl' '--with-openssl' '--libdir=/usr/local/opt/libpq/lib' '--includedir=/usr/local/opt/libpq/include' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib' 'CPPFLAGS=-I/usr/local/opt/readline/include' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@78/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/krb5/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
+              "string": "'--disable-debug' '--prefix=/usr/local/Cellar/libpq/18.6_2' '--with-gssapi' '--with-libcurl' '--with-openssl' '--libdir=/usr/local/opt/libpq/lib' '--includedir=/usr/local/opt/libpq/include' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib' 'CPPFLAGS=-I/usr/local/opt/readline/include' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@79/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/krb5/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
               "offset": 23552
             },
             {
@@ -508,7 +509,7 @@
             },
             {
               "path": "lib/libpgcommon.a",
-              "string": "'--disable-debug' '--prefix=/usr/local/Cellar/libpq/18.6_1' '--with-gssapi' '--with-libcurl' '--with-openssl' '--libdir=/usr/local/opt/libpq/lib' '--includedir=/usr/local/opt/libpq/include' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib' 'CPPFLAGS=-I/usr/local/opt/readline/include' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@78/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/krb5/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
+              "string": "'--disable-debug' '--prefix=/usr/local/Cellar/libpq/18.6_2' '--with-gssapi' '--with-libcurl' '--with-openssl' '--libdir=/usr/local/opt/libpq/lib' '--includedir=/usr/local/opt/libpq/include' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib' 'CPPFLAGS=-I/usr/local/opt/readline/include' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@79/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/krb5/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
               "offset": 35048
             },
             {
@@ -528,7 +529,7 @@
             },
             {
               "path": "lib/libpgcommon_shlib.a",
-              "string": "'--disable-debug' '--prefix=/usr/local/Cellar/libpq/18.6_1' '--with-gssapi' '--with-libcurl' '--with-openssl' '--libdir=/usr/local/opt/libpq/lib' '--includedir=/usr/local/opt/libpq/include' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib' 'CPPFLAGS=-I/usr/local/opt/readline/include' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@78/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/krb5/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
+              "string": "'--disable-debug' '--prefix=/usr/local/Cellar/libpq/18.6_2' '--with-gssapi' '--with-libcurl' '--with-openssl' '--libdir=/usr/local/opt/libpq/lib' '--includedir=/usr/local/opt/libpq/include' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib' 'CPPFLAGS=-I/usr/local/opt/readline/include' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@79/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/krb5/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
               "offset": 34320
             },
             {
@@ -553,165 +554,213 @@
             },
             {
               "path": "bin/pg_rewind",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/postgresql",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/postgresql",
               "offset": 93825
             },
             {
               "path": "bin/pg_rewind",
-              "string": "/usr/local/Cellar/libpq/18.6_1/bin",
+              "string": "/usr/local/Cellar/libpq/18.6_2/bin",
               "offset": 93873
             },
             {
               "path": "bin/pg_rewind",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/doc//postgresql",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/doc//postgresql",
               "offset": 94175
             },
             {
               "path": "bin/pg_rewind",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/man",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/man",
               "offset": 94228
             },
             {
               "path": "bin/ecpg",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/postgresql",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/postgresql",
               "offset": 840311
             },
             {
               "path": "bin/ecpg",
-              "string": "/usr/local/Cellar/libpq/18.6_1/bin",
+              "string": "/usr/local/Cellar/libpq/18.6_2/bin",
               "offset": 840359
             },
             {
               "path": "bin/ecpg",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/doc//postgresql",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/doc//postgresql",
               "offset": 840661
             },
             {
               "path": "bin/ecpg",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/man",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/man",
               "offset": 840714
             },
             {
               "path": "bin/pg_basebackup",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/postgresql",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/postgresql",
               "offset": 123397
             },
             {
               "path": "bin/pg_basebackup",
-              "string": "/usr/local/Cellar/libpq/18.6_1/bin",
+              "string": "/usr/local/Cellar/libpq/18.6_2/bin",
               "offset": 123445
             },
             {
               "path": "bin/pg_basebackup",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/doc//postgresql",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/doc//postgresql",
               "offset": 123747
             },
             {
               "path": "bin/pg_basebackup",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/man",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/man",
               "offset": 123800
             },
             {
               "path": "bin/pg_restore",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/postgresql",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/postgresql",
               "offset": 137079
             },
             {
               "path": "bin/pg_restore",
-              "string": "/usr/local/Cellar/libpq/18.6_1/bin",
+              "string": "/usr/local/Cellar/libpq/18.6_2/bin",
               "offset": 137127
             },
             {
               "path": "bin/pg_restore",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/doc//postgresql",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/doc//postgresql",
               "offset": 137429
             },
             {
               "path": "bin/pg_restore",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/man",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/man",
               "offset": 137482
             },
             {
               "path": "bin/pg_isready",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/postgresql",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/postgresql",
               "offset": 42432
             },
             {
               "path": "bin/pg_isready",
-              "string": "/usr/local/Cellar/libpq/18.6_1/bin",
+              "string": "/usr/local/Cellar/libpq/18.6_2/bin",
               "offset": 42480
             },
             {
               "path": "bin/pg_isready",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/doc//postgresql",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/doc//postgresql",
               "offset": 42782
             },
             {
               "path": "bin/pg_isready",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/man",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/man",
               "offset": 42835
             },
             {
               "path": "bin/createuser",
-              "string": "/usr/local/Cellar/libpq/18.6_1/share/postgresql",
+              "string": "/usr/local/Cellar/libpq/18.6_2/share/postgresql",
               "offset": 48088
             },
             {
               "path": "bin/createuser",
-              "string": "/usr/local/Cellar/libpq/18.6_1/bin",
+              "string": "/usr/local/Cellar/libpq/18.6_2/bin",
               "offset": 48136
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-                "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
-                "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "name": "ca-certificates",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "name": "openssl@4",
+                "versionInfo": "4.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
+                "name": "krb5",
+                "versionInfo": "1.22.2_2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause AND BSD-2-Clause-first-lines AND BSD-3-Clause AND BSD-4-Clause AND Brian-Gladman-2-Clause AND CMU-Mach-nodoc AND FSFULLRWD AND HPND AND HPND-export2-US AND HPND-export-US AND HPND-export-US-acknowledgement AND HPND-export-US-modify AND ISC AND MIT AND MIT-CMU AND OLDAP-2.8 AND OpenVision AND (BSD-2-Clause OR GPL-2.0-or-later)",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/krb5-1.22.2_2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "768507b1ca7a66dd14d39ceb8c2d9d52a98ae27264c714826faf84af84c14a26"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/krb5@1.22.2_2",
                     "referenceType": "purl"
                   }
                 ]
@@ -754,12 +803,22 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libpq"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libpq"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libpq"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libpq"
               },
@@ -3242,7 +3301,7 @@
             "share/postgresql/psqlrc.sample",
             "share/postgresql/system_constraints.sql"
           ],
-          "installed_size": 34156310
+          "installed_size": 34156338
         }
       }
     }

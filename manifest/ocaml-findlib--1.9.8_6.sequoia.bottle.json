@@ -2,27 +2,27 @@
   "ocaml-findlib": {
     "formula": {
       "name": "ocaml-findlib",
-      "pkg_version": "1.9.8_5",
+      "pkg_version": "1.9.8_6",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/o/ocaml-findlib.rb",
       "tap_git_path": "Formula/o/ocaml-findlib.rb",
-      "tap_git_revision": "88d726df051f7aaffe2e005fa9d0ff0d2a87f7b6",
+      "tap_git_revision": "78817a1e4a564b38503e53ec2dfed6842665a87e",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "OCaml library manager",
       "license": "MIT",
       "homepage": "http://projects.camlcity.org/projects/findlib.html"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-19T18:01:43Z",
+      "date": "2026-10-25T19:32:25Z",
       "tags": {
         "sequoia": {
-          "filename": "ocaml-findlib-1.9.8_5.sequoia.bottle.tar.gz",
-          "local_filename": "ocaml-findlib--1.9.8_5.sequoia.bottle.tar.gz",
-          "sha256": "e75d769f04f9aa9e6f909c01de32e76a5533a75031325a3eb12a679e2a93e923",
+          "filename": "ocaml-findlib-1.9.8_6.sequoia.bottle.tar.gz",
+          "local_filename": "ocaml-findlib--1.9.8_6.sequoia.bottle.tar.gz",
+          "sha256": "235e611c53598e65a0a6c0860695d3a11946499694299a364b7021dd3dd38fc9",
           "tab": {
-            "homebrew_version": "7.0.4",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "lib/ocaml/findlib/Makefile.config"
             ],
@@ -37,11 +37,12 @@
             "runtime_dependencies": [
               {
                 "full_name": "ocaml",
-                "version": "5.5.1",
+                "version": "5.5.2",
                 "revision": 0,
-                "pkg_version": "5.5.1",
+                "bottle_rebuild": 0,
+                "pkg_version": "5.5.2",
                 "declared_directly": true,
-                "compatibility_version": 4
+                "compatibility_version": 5
               }
             ],
             "arch": "x86_64",
@@ -57,9 +58,33 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ocaml-5.2e.5.2e.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ocaml-5.2e.5.2e.2",
+                "name": "ocaml",
+                "versionInfo": "5.5.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-only WITH OCaml-LGPL-linking-exception",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/ocaml-5.5.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "027748e0a7fa9a18034d26199fd404039045eddbac96308a8898faad065f3d64"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ocaml@5.5.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
@@ -74,6 +99,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ocaml-5.2e.5.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ocaml-findlib"
+              },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
@@ -131,7 +161,7 @@
             "libexec/findlib.conf",
             "sbom.spdx.json"
           ],
-          "installed_size": 2954153
+          "installed_size": 2958344
         }
       }
     }
