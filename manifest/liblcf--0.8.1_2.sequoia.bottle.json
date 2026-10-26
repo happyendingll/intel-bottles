@@ -1,0 +1,250 @@
+{
+  "liblcf": {
+    "formula": {
+      "name": "liblcf",
+      "pkg_version": "0.8.1_2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/liblcf.rb",
+      "tap_git_path": "Formula/lib/liblcf.rb",
+      "tap_git_revision": "ffdbb65d39834e60371d2aab1229511c12b48e96",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Library for RPG Maker 2000/2003 games data",
+      "license": "MIT",
+      "homepage": "https://easyrpg.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-26T09:33:16Z",
+      "tags": {
+        "sequoia": {
+          "filename": "liblcf-0.8.1_2.sequoia.bottle.tar.gz",
+          "local_filename": "liblcf--0.8.1_2.sequoia.bottle.tar.gz",
+          "sha256": "f33b269225a593696080c0ae6a360a72c468aaf2e4e9114993348631ccdef4ac",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              "lib/pkgconfig/liblcf.pc"
+            ],
+            "linkage_files": [
+              "bin/lcf2xml",
+              "bin/lcfstrings",
+              "lib/liblcf.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1744016102,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@79",
+                "version": "79.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "79.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "inih",
+                "version": "62",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "62",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-liblcf"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-liblcf-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/lcfstrings",
+            "bin/lcf2xml"
+          ],
+          "all_files": [
+            ".brew/liblcf.rb",
+            "AUTHORS.md",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/lcf2xml",
+            "bin/lcfstrings",
+            "include/lcf/config.h",
+            "include/lcf/context.h",
+            "include/lcf/dbarray.h",
+            "include/lcf/dbarrayalloc.h",
+            "include/lcf/dbbitarray.h",
+            "include/lcf/dbstring.h",
+            "include/lcf/encoder.h",
+            "include/lcf/enum_tags.h",
+            "include/lcf/flag_set.h",
+            "include/lcf/inireader.h",
+            "include/lcf/ldb/chunks.h",
+            "include/lcf/ldb/reader.h",
+            "include/lcf/lmt/chunks.h",
+            "include/lcf/lmt/reader.h",
+            "include/lcf/lmu/chunks.h",
+            "include/lcf/lmu/reader.h",
+            "include/lcf/log_handler.h",
+            "include/lcf/lsd/chunks.h",
+            "include/lcf/lsd/reader.h",
+            "include/lcf/reader_lcf.h",
+            "include/lcf/reader_util.h",
+            "include/lcf/reader_xml.h",
+            "include/lcf/rpg/actor.h",
+            "include/lcf/rpg/animation.h",
+            "include/lcf/rpg/animationcelldata.h",
+            "include/lcf/rpg/animationframe.h",
+            "include/lcf/rpg/animationtiming.h",
+            "include/lcf/rpg/attribute.h",
+            "include/lcf/rpg/battlecommand.h",
+            "include/lcf/rpg/battlecommands.h",
+            "include/lcf/rpg/battleranimation.h",
+            "include/lcf/rpg/battleranimationitemskill.h",
+            "include/lcf/rpg/battleranimationpose.h",
+            "include/lcf/rpg/battleranimationweapon.h",
+            "include/lcf/rpg/chipset.h",
+            "include/lcf/rpg/class.h",
+            "include/lcf/rpg/commonevent.h",
+            "include/lcf/rpg/database.h",
+            "include/lcf/rpg/encounter.h",
+            "include/lcf/rpg/enemy.h",
+            "include/lcf/rpg/enemyaction.h",
+            "include/lcf/rpg/equipment.h",
+            "include/lcf/rpg/event.h",
+            "include/lcf/rpg/eventcommand.h",
+            "include/lcf/rpg/eventpage.h",
+            "include/lcf/rpg/eventpagecondition.h",
+            "include/lcf/rpg/fwd.h",
+            "include/lcf/rpg/item.h",
+            "include/lcf/rpg/learning.h",
+            "include/lcf/rpg/map.h",
+            "include/lcf/rpg/mapinfo.h",
+            "include/lcf/rpg/movecommand.h",
+            "include/lcf/rpg/moveroute.h",
+            "include/lcf/rpg/music.h",
+            "include/lcf/rpg/parameters.h",
+            "include/lcf/rpg/rect.h",
+            "include/lcf/rpg/save.h",
+            "include/lcf/rpg/saveactor.h",
+            "include/lcf/rpg/savecommonevent.h",
+            "include/lcf/rpg/saveeasyrpgdata.h",
+            "include/lcf/rpg/saveeasyrpgtext.h",
+            "include/lcf/rpg/saveeasyrpgwindow.h",
+            "include/lcf/rpg/saveeventexecframe.h",
+            "include/lcf/rpg/saveeventexecstate.h",
+            "include/lcf/rpg/saveinventory.h",
+            "include/lcf/rpg/savemapevent.h",
+            "include/lcf/rpg/savemapeventbase.h",
+            "include/lcf/rpg/savemapinfo.h",
+            "include/lcf/rpg/savepanorama.h",
+            "include/lcf/rpg/savepartylocation.h",
+            "include/lcf/rpg/savepicture.h",
+            "include/lcf/rpg/savescreen.h",
+            "include/lcf/rpg/savesystem.h",
+            "include/lcf/rpg/savetarget.h",
+            "include/lcf/rpg/savetitle.h",
+            "include/lcf/rpg/savevehiclelocation.h",
+            "include/lcf/rpg/skill.h",
+            "include/lcf/rpg/sound.h",
+            "include/lcf/rpg/start.h",
+            "include/lcf/rpg/state.h",
+            "include/lcf/rpg/stringvariable.h",
+            "include/lcf/rpg/switch.h",
+            "include/lcf/rpg/system.h",
+            "include/lcf/rpg/terms.h",
+            "include/lcf/rpg/terrain.h",
+            "include/lcf/rpg/testbattler.h",
+            "include/lcf/rpg/treemap.h",
+            "include/lcf/rpg/troop.h",
+            "include/lcf/rpg/troopmember.h",
+            "include/lcf/rpg/trooppage.h",
+            "include/lcf/rpg/trooppagecondition.h",
+            "include/lcf/rpg/variable.h",
+            "include/lcf/saveopt.h",
+            "include/lcf/scope_guard.h",
+            "include/lcf/span.h",
+            "include/lcf/string_view.h",
+            "include/lcf/third_party/span.h",
+            "include/lcf/writer_lcf.h",
+            "include/lcf/writer_xml.h",
+            "lib/cmake/liblcf/Findinih.cmake",
+            "lib/cmake/liblcf/liblcf-config-version.cmake",
+            "lib/cmake/liblcf/liblcf-config.cmake",
+            "lib/cmake/liblcf/liblcf-targets-release.cmake",
+            "lib/cmake/liblcf/liblcf-targets.cmake",
+            "lib/liblcf.0.dylib",
+            "lib/liblcf.dylib",
+            "lib/pkgconfig/liblcf.pc",
+            "sbom.spdx.json",
+            "share/mime/packages/liblcf.xml"
+          ],
+          "installed_size": 2635068
+        }
+      }
+    }
+  }
+}

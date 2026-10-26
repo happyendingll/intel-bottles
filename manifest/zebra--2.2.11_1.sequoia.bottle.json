@@ -1,0 +1,713 @@
+{
+  "zebra": {
+    "formula": {
+      "name": "zebra",
+      "pkg_version": "2.2.11_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/z/zebra.rb",
+      "tap_git_path": "Formula/z/zebra.rb",
+      "tap_git_revision": "ffdbb65d39834e60371d2aab1229511c12b48e96",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Information management system",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://www.indexdata.com/resources/software/zebra/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-26T09:42:19Z",
+      "tags": {
+        "sequoia": {
+          "filename": "zebra-2.2.11_1.sequoia.bottle.tar.gz",
+          "local_filename": "zebra--2.2.11_1.sequoia.bottle.tar.gz",
+          "sha256": "7df62d89d3a2a3ebe20e22e82dcc7da88197b2296d53e3d8c80f584c513a80d1",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              "bin/idzebra-config-2.0",
+              "lib/pkgconfig/zebra.pc"
+            ],
+            "linkage_files": [
+              "bin/zebraidx-2.0",
+              "bin/zebrasrv-2.0",
+              "lib/idzebra-2.0/modules/mod-alvis.so",
+              "lib/idzebra-2.0/modules/mod-dom.so",
+              "lib/idzebra-2.0/modules/mod-grs-marc.so",
+              "lib/idzebra-2.0/modules/mod-grs-regx.so",
+              "lib/idzebra-2.0/modules/mod-grs-xml.so",
+              "lib/idzebra-2.0/modules/mod-safari.so",
+              "lib/idzebra-2.0/modules/mod-text.so",
+              "lib/libidzebra-2.0.0.dylib"
+            ],
+            "binary_relocation_files": [
+              "bin/zebraidx-2.0",
+              "bin/zebrasrv-2.0"
+            ],
+            "source_modified_time": 1779293134,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@79",
+                "version": "79.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "79.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-10-20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-10-20",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.13",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.8.13_2",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "yaz",
+                "version": "5.38.1",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.38.1_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/zebrasrv-2.0",
+              "string": "/usr/local/Cellar/zebra/2.2.11_1/share/idzebra-2.0/tab",
+              "offset": 23753
+            },
+            {
+              "path": "bin/zebrasrv-2.0",
+              "string": "/usr/local/Cellar/zebra/2.2.11_1/lib/idzebra-2.0/modules",
+              "offset": 23819
+            },
+            {
+              "path": "bin/zebraidx-2.0",
+              "string": "/usr/local/Cellar/zebra/2.2.11_1/share/idzebra-2.0/tab",
+              "offset": 19905
+            },
+            {
+              "path": "bin/zebraidx-2.0",
+              "string": "/usr/local/Cellar/zebra/2.2.11_1/lib/idzebra-2.0/modules",
+              "offset": 19971
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+              "SPDXRef-Package-SPDXRef-yaz-5.2e.38.2e.1.5f.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "name": "ca-certificates",
+                "versionInfo": "2026-10-20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "name": "libunistring",
+                "versionInfo": "1.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libunistring-1.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8854773975603bc6243e11dc7d95fb33bba3e348337d95c44411052ef8870097"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "name": "p11-kit",
+                "versionInfo": "0.26.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/p11-kit-0.26.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ee01fce79642e0693fd6bb9024aeb3e684bddfcf797ad6cb9ba8907c24742162"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/p11-kit@0.26.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-yaz-5.2e.38.2e.1.5f.1",
+                "name": "yaz",
+                "versionInfo": "5.38.1_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/yaz-5.38.1_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4bd023752788a0ac5e19ed761d0b1bb3849d313e435702388448f4a30a960b51"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/yaz@5.38.1_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zebra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zebra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zebra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zebra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zebra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zebra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zebra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-yaz-5.2e.38.2e.1.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-zebra"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-zebra-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/zebrasrv-2.0",
+            "bin/zebraidx-2.0",
+            "bin/zebraidx",
+            "bin/zebrasrv",
+            "bin/idzebra-config-2.0",
+            "bin/idzebra-abs2dom"
+          ],
+          "all_files": [
+            ".brew/zebra.rb",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.zebra",
+            "NEWS",
+            "README.md",
+            "TODO",
+            "bin/idzebra-abs2dom",
+            "bin/idzebra-config-2.0",
+            "bin/zebraidx",
+            "bin/zebraidx-2.0",
+            "bin/zebrasrv",
+            "bin/zebrasrv-2.0",
+            "include/idzebra-2.0/idzebra/api.h",
+            "include/idzebra-2.0/idzebra/bfile.h",
+            "include/idzebra-2.0/idzebra/data1.h",
+            "include/idzebra-2.0/idzebra/dict.h",
+            "include/idzebra-2.0/idzebra/flock.h",
+            "include/idzebra-2.0/idzebra/isam-codec.h",
+            "include/idzebra-2.0/idzebra/isamb.h",
+            "include/idzebra-2.0/idzebra/isamc.h",
+            "include/idzebra-2.0/idzebra/isams.h",
+            "include/idzebra-2.0/idzebra/recctrl.h",
+            "include/idzebra-2.0/idzebra/recgrs.h",
+            "include/idzebra-2.0/idzebra/res.h",
+            "include/idzebra-2.0/idzebra/snippet.h",
+            "include/idzebra-2.0/idzebra/util.h",
+            "include/idzebra-2.0/idzebra/version.h",
+            "lib/idzebra-2.0/modules/mod-alvis.a",
+            "lib/idzebra-2.0/modules/mod-alvis.so",
+            "lib/idzebra-2.0/modules/mod-dom.a",
+            "lib/idzebra-2.0/modules/mod-dom.so",
+            "lib/idzebra-2.0/modules/mod-grs-marc.a",
+            "lib/idzebra-2.0/modules/mod-grs-marc.so",
+            "lib/idzebra-2.0/modules/mod-grs-regx.a",
+            "lib/idzebra-2.0/modules/mod-grs-regx.so",
+            "lib/idzebra-2.0/modules/mod-grs-xml.a",
+            "lib/idzebra-2.0/modules/mod-grs-xml.so",
+            "lib/idzebra-2.0/modules/mod-safari.a",
+            "lib/idzebra-2.0/modules/mod-safari.so",
+            "lib/idzebra-2.0/modules/mod-text.a",
+            "lib/idzebra-2.0/modules/mod-text.so",
+            "lib/libidzebra-2.0.0.dylib",
+            "lib/libidzebra-2.0.a",
+            "lib/libidzebra-2.0.dylib",
+            "lib/pkgconfig/zebra.pc",
+            "sbom.spdx.json",
+            "share/aclocal/idzebra-2.0.m4",
+            "share/doc/idzebra-2.0/administration-extended-services.html",
+            "share/doc/idzebra-2.0/administration-ranking.html",
+            "share/doc/idzebra-2.0/administration.html",
+            "share/doc/idzebra-2.0/architecture-maincomponents.html",
+            "share/doc/idzebra-2.0/architecture-workflow.html",
+            "share/doc/idzebra-2.0/architecture.html",
+            "share/doc/idzebra-2.0/character-map-files.html",
+            "share/doc/idzebra-2.0/common/id.png",
+            "share/doc/idzebra-2.0/common/style1.css",
+            "share/doc/idzebra-2.0/domfilter.png",
+            "share/doc/idzebra-2.0/features.html",
+            "share/doc/idzebra-2.0/fields-and-charsets.html",
+            "share/doc/idzebra-2.0/file-ids.html",
+            "share/doc/idzebra-2.0/generic-ids.html",
+            "share/doc/idzebra-2.0/gpl-2.html",
+            "share/doc/idzebra-2.0/gpl-3.html",
+            "share/doc/idzebra-2.0/gpl.html",
+            "share/doc/idzebra-2.0/grs-conf.html",
+            "share/doc/idzebra-2.0/grs-exchange-formats.html",
+            "share/doc/idzebra-2.0/grs-extended-marc-indexing.html",
+            "share/doc/idzebra-2.0/grs-internal-representation.html",
+            "share/doc/idzebra-2.0/grs.html",
+            "share/doc/idzebra-2.0/icuchain-files.html",
+            "share/doc/idzebra-2.0/idzebra-abs2dom.html",
+            "share/doc/idzebra-2.0/idzebra-config.html",
+            "share/doc/idzebra-2.0/index.html",
+            "share/doc/idzebra-2.0/indexdata.html",
+            "share/doc/idzebra-2.0/installation-debian.html",
+            "share/doc/idzebra-2.0/installation-upgrade.html",
+            "share/doc/idzebra-2.0/installation-win32.html",
+            "share/doc/idzebra-2.0/installation.html",
+            "share/doc/idzebra-2.0/introduction-apps.html",
+            "share/doc/idzebra-2.0/introduction-support.html",
+            "share/doc/idzebra-2.0/introduction.html",
+            "share/doc/idzebra-2.0/license.html",
+            "share/doc/idzebra-2.0/locating-records.html",
+            "share/doc/idzebra-2.0/querymodel-cql-to-pqf.html",
+            "share/doc/idzebra-2.0/querymodel-rpn.html",
+            "share/doc/idzebra-2.0/querymodel-zebra.html",
+            "share/doc/idzebra-2.0/querymodel.html",
+            "share/doc/idzebra-2.0/record-model-alvisxslt-conf.html",
+            "share/doc/idzebra-2.0/record-model-alvisxslt.html",
+            "share/doc/idzebra-2.0/record-model-domxml-conf.html",
+            "share/doc/idzebra-2.0/record-model-domxml-pipeline.html",
+            "share/doc/idzebra-2.0/record-model-domxml.html",
+            "share/doc/idzebra-2.0/reference.html",
+            "share/doc/idzebra-2.0/register-location.html",
+            "share/doc/idzebra-2.0/shadow-registers.html",
+            "share/doc/idzebra-2.0/simple-indexing.html",
+            "share/doc/idzebra-2.0/special-retrieval.html",
+            "share/doc/idzebra-2.0/tutorial-oai-sru-pqf.html",
+            "share/doc/idzebra-2.0/tutorial-oai-sru-present.html",
+            "share/doc/idzebra-2.0/tutorial-oai-sru-searches.html",
+            "share/doc/idzebra-2.0/tutorial-oai-sru-yazfrontend.html",
+            "share/doc/idzebra-2.0/tutorial-oai-sru-zebra-indexes.html",
+            "share/doc/idzebra-2.0/tutorial-oai-z3950.html",
+            "share/doc/idzebra-2.0/tutorial.html",
+            "share/doc/idzebra-2.0/zebra-cfg.html",
+            "share/doc/idzebra-2.0/zebra.png",
+            "share/doc/idzebra-2.0/zebraidx.html",
+            "share/doc/idzebra-2.0/zebrasrv.html",
+            "share/idzebra-2.0/tab/bib1.att",
+            "share/idzebra-2.0/tab/dan1.att",
+            "share/idzebra-2.0/tab/danmarc.abs",
+            "share/idzebra-2.0/tab/danmarc.mar",
+            "share/idzebra-2.0/tab/default.idx",
+            "share/idzebra-2.0/tab/explain.abs",
+            "share/idzebra-2.0/tab/explain.att",
+            "share/idzebra-2.0/tab/explain.tag",
+            "share/idzebra-2.0/tab/generic.tag",
+            "share/idzebra-2.0/tab/gils-a.est",
+            "share/idzebra-2.0/tab/gils-b.est",
+            "share/idzebra-2.0/tab/gils-f.est",
+            "share/idzebra-2.0/tab/gils-g.est",
+            "share/idzebra-2.0/tab/gils-summary.map",
+            "share/idzebra-2.0/tab/gils-usmarc.map",
+            "share/idzebra-2.0/tab/gils-variant.est",
+            "share/idzebra-2.0/tab/gils.abs",
+            "share/idzebra-2.0/tab/gils.att",
+            "share/idzebra-2.0/tab/gils.tag",
+            "share/idzebra-2.0/tab/hci.flt",
+            "share/idzebra-2.0/tab/icu.idx",
+            "share/idzebra-2.0/tab/idxpath.att",
+            "share/idzebra-2.0/tab/mail.flt",
+            "share/idzebra-2.0/tab/marc21.abs",
+            "share/idzebra-2.0/tab/meta-b.est",
+            "share/idzebra-2.0/tab/meta-usmarc.map",
+            "share/idzebra-2.0/tab/meta.abs",
+            "share/idzebra-2.0/tab/meta.tag",
+            "share/idzebra-2.0/tab/news.flt",
+            "share/idzebra-2.0/tab/numeric.chr",
+            "share/idzebra-2.0/tab/nwi.flt",
+            "share/idzebra-2.0/tab/phrases-icu.xml",
+            "share/idzebra-2.0/tab/refer.flt",
+            "share/idzebra-2.0/tab/scan.chr",
+            "share/idzebra-2.0/tab/sgml.flt",
+            "share/idzebra-2.0/tab/soif.flt",
+            "share/idzebra-2.0/tab/string.chr",
+            "share/idzebra-2.0/tab/summary.abs",
+            "share/idzebra-2.0/tab/summary.tag",
+            "share/idzebra-2.0/tab/tagsetg.tag",
+            "share/idzebra-2.0/tab/tagsetm.tag",
+            "share/idzebra-2.0/tab/urx.chr",
+            "share/idzebra-2.0/tab/usmarc-b.est",
+            "share/idzebra-2.0/tab/usmarc.abs",
+            "share/idzebra-2.0/tab/usmarc.flt",
+            "share/idzebra-2.0/tab/usmarc.mar",
+            "share/idzebra-2.0/tab/usmarc.tag",
+            "share/idzebra-2.0/tab/var1.var",
+            "share/idzebra-2.0/tab/wais-b.est",
+            "share/idzebra-2.0/tab/wais-variant.est",
+            "share/idzebra-2.0/tab/wais.abs",
+            "share/idzebra-2.0/tab/words-icu-da.xml",
+            "share/idzebra-2.0/tab/words-icu.xml",
+            "share/idzebra-2.0-examples/gils/records/esdd0006.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0007.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0008.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0030.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0031.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0032.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0033.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0034.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0035.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0036.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0037.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0038.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0039.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0040.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0041.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0042.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0044.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0045.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0046.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0047.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0048.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0049.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0050.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0051.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0052.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0053.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0054.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0055.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0056.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0057.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0058.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0059.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0062.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0063.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0064.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0065.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0066.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0067.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0070.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0071.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0072.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0073.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0074.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0075.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0076.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0077.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0078.grs",
+            "share/idzebra-2.0-examples/gils/records/esdd0079.grs",
+            "share/idzebra-2.0-examples/gils/zebra.cfg",
+            "share/idzebra-2.0-examples/marc21/sample-marc",
+            "share/idzebra-2.0-examples/marc21/zebra.cfg",
+            "share/idzebra-2.0-examples/marcxml/MARC21slim2INDEX.xsl",
+            "share/idzebra-2.0-examples/marcxml/MARC21slim2MADS.xsl",
+            "share/idzebra-2.0-examples/marcxml/MARC21slim2MODS3-7.xsl",
+            "share/idzebra-2.0-examples/marcxml/MARC21slim2SRWDC.xsl",
+            "share/idzebra-2.0-examples/marcxml/MARC21slimUtils.xsl",
+            "share/idzebra-2.0-examples/marcxml/README",
+            "share/idzebra-2.0-examples/marcxml/collection-2.xml",
+            "share/idzebra-2.0-examples/marcxml/collection-clasmrc.xml",
+            "share/idzebra-2.0-examples/marcxml/collection-namemrc.xml",
+            "share/idzebra-2.0-examples/marcxml/collection-opera-43.xml",
+            "share/idzebra-2.0-examples/marcxml/collection-sandburg-1.xml",
+            "share/idzebra-2.0-examples/marcxml/collection-subjmrc.xml",
+            "share/idzebra-2.0-examples/marcxml/dom-config.xml",
+            "share/idzebra-2.0-examples/marcxml/identity.xsl",
+            "share/idzebra-2.0-examples/marcxml/yazgfs.xml",
+            "share/idzebra-2.0-examples/marcxml/zebra.cfg",
+            "share/idzebra-2.0-examples/marcxml/zebra.xsl",
+            "share/idzebra-2.0-examples/oai-pmh/README",
+            "share/idzebra-2.0-examples/oai-pmh/conf/cql2pqf.txt",
+            "share/idzebra-2.0-examples/oai-pmh/conf/dom-conf.xml",
+            "share/idzebra-2.0-examples/oai-pmh/conf/explain.xml",
+            "share/idzebra-2.0-examples/oai-pmh/conf/explain2cqlpqftxt.xsl",
+            "share/idzebra-2.0-examples/oai-pmh/conf/oai2dc.xsl",
+            "share/idzebra-2.0-examples/oai-pmh/conf/oai2index.xsl",
+            "share/idzebra-2.0-examples/oai-pmh/conf/oai2zebra.xsl",
+            "share/idzebra-2.0-examples/oai-pmh/conf/yazserver.xml",
+            "share/idzebra-2.0-examples/oai-pmh/conf/zebra.cfg",
+            "share/idzebra-2.0-examples/oai-pmh/data/debug-record.xml",
+            "share/idzebra-2.0-examples/oai-pmh/data/debug-utf8-record.xml",
+            "share/idzebra-2.0-examples/oai-pmh/data/fetch_OAI_data.sh",
+            "share/idzebra-2.0-examples/oai-pmh/data/oai-caltech.xml",
+            "share/man/man1/idzebra-abs2dom.1",
+            "share/man/man1/idzebra-config-2.0.1",
+            "share/man/man1/idzebra-config.1",
+            "share/man/man1/zebraidx-2.0.1",
+            "share/man/man1/zebraidx.1",
+            "share/man/man8/zebrasrv-2.0.8",
+            "share/man/man8/zebrasrv.8"
+          ],
+          "installed_size": 4662839
+        }
+      }
+    }
+  }
+}

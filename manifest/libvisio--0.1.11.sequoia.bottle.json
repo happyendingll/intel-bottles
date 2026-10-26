@@ -1,0 +1,161 @@
+{
+  "libvisio": {
+    "formula": {
+      "name": "libvisio",
+      "pkg_version": "0.1.11",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libvisio.rb",
+      "tap_git_path": "Formula/lib/libvisio.rb",
+      "tap_git_revision": "ffdbb65d39834e60371d2aab1229511c12b48e96",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Interpret and import Visio diagrams",
+      "license": "MPL-2.0",
+      "homepage": "https://wiki.documentfoundation.org/DLP/Libraries/libvisio"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-26T09:33:51Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libvisio-0.1.11.sequoia.bottle.tar.gz",
+          "local_filename": "libvisio--0.1.11.sequoia.bottle.tar.gz",
+          "sha256": "2c09cb3ea0a703f8044875ebc8363071a9ea4d6730c783247e2679ac3fc87343",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              "lib/pkgconfig/libvisio-0.1.pc"
+            ],
+            "linkage_files": [
+              "bin/vsd2raw",
+              "bin/vsd2text",
+              "bin/vsd2xhtml",
+              "bin/vss2raw",
+              "bin/vss2text",
+              "bin/vss2xhtml",
+              "lib/libvisio-0.1.1.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1779783756,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@79",
+                "version": "79.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "79.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "librevenge",
+                "version": "0.0.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.0.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libvisio"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libvisio-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/vss2xhtml",
+            "bin/vsd2text",
+            "bin/vss2text",
+            "bin/vsd2xhtml",
+            "bin/vss2raw",
+            "bin/vsd2raw"
+          ],
+          "all_files": [
+            ".brew/libvisio.rb",
+            "AUTHORS",
+            "COPYING.MPL",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "bin/vsd2raw",
+            "bin/vsd2text",
+            "bin/vsd2xhtml",
+            "bin/vss2raw",
+            "bin/vss2text",
+            "bin/vss2xhtml",
+            "include/libvisio-0.1/libvisio/VisioDocument.h",
+            "include/libvisio-0.1/libvisio/libvisio.h",
+            "lib/libvisio-0.1.1.dylib",
+            "lib/libvisio-0.1.dylib",
+            "lib/pkgconfig/libvisio-0.1.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1072209
+        }
+      }
+    }
+  }
+}
