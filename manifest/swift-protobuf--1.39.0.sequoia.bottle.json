@@ -1,0 +1,137 @@
+{
+  "swift-protobuf": {
+    "formula": {
+      "name": "swift-protobuf",
+      "pkg_version": "1.39.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/swift-protobuf.rb",
+      "tap_git_path": "Formula/s/swift-protobuf.rb",
+      "tap_git_revision": "6910fffaff52c04ed8cd3190dbed0d60a50ba2a4",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Plugin and runtime library for using protobuf with Swift",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/apple/swift-protobuf"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-10-26T15:43:27Z",
+      "tags": {
+        "sequoia": {
+          "filename": "swift-protobuf-1.39.0.sequoia.bottle.tar.gz",
+          "local_filename": "swift-protobuf--1.39.0.sequoia.bottle.tar.gz",
+          "sha256": "9ea63928fbc7d44c94f401c38c61fd63f7d0a3fc74458b4875ba6c5cbe98c3b3",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1791830223,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": false,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "protobuf",
+                "version": "36.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "36.2",
+                "declared_directly": true,
+                "compatibility_version": 7
+              }
+            ],
+            "source": {
+              "scm_revision": "3d537cb81aef272a03cb3be815439e9bf0eb3bd3"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "name": "protobuf",
+                "versionInfo": "36.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "23c1b997672d8c907b7493086a0a785b885dcaf68851cd6d2a1e96d9f116314a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf@36.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-swift-protobuf"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-swift-protobuf-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/protoc-gen-swift"
+          ],
+          "all_files": [
+            ".brew/swift-protobuf.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "README.md",
+            "bin/protoc-gen-swift",
+            "sbom.spdx.json",
+            "share/doc/swift-protobuf/PLUGIN.md"
+          ],
+          "installed_size": 4888669
+        }
+      }
+    }
+  }
+}
