@@ -2,31 +2,31 @@
   "protoc-gen-grpc-swift": {
     "formula": {
       "name": "protoc-gen-grpc-swift",
-      "pkg_version": "2.4.1",
+      "pkg_version": "2.5.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/protoc-gen-grpc-swift.rb",
       "tap_git_path": "Formula/p/protoc-gen-grpc-swift.rb",
-      "tap_git_revision": "e8456c61c78c0edcbc9727b8e654ff1b614687d0",
+      "tap_git_revision": "f7004b8eab9bb84f71e10e64afa9987b2c9a4e42",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Protoc plugin for generating gRPC Swift stubs",
       "license": "Apache-2.0",
       "homepage": "https://github.com/grpc/grpc-swift-protobuf"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-09-14T16:05:51Z",
+      "date": "2026-10-26T15:52:52Z",
       "tags": {
         "sequoia": {
-          "filename": "protoc-gen-grpc-swift-2.4.1.sequoia.bottle.tar.gz",
-          "local_filename": "protoc-gen-grpc-swift--2.4.1.sequoia.bottle.tar.gz",
-          "sha256": "67aa39a3e5862f78d4721303f87783fb7e17486baf9c4aa05f21b1391847a958",
+          "filename": "protoc-gen-grpc-swift-2.5.0.sequoia.bottle.tar.gz",
+          "local_filename": "protoc-gen-grpc-swift--2.5.0.sequoia.bottle.tar.gz",
+          "sha256": "c34d7e401925b871f6d38fdc6ae01e900010b13711953652e425eb81c8331014",
           "tab": {
-            "homebrew_version": "7.0.1",
+            "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1781565929,
+            "source_modified_time": 1791904379,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -40,19 +40,19 @@
               },
               {
                 "full_name": "protobuf",
-                "version": "36.1",
+                "version": "36.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "36.1",
+                "pkg_version": "36.2",
                 "declared_directly": true,
-                "compatibility_version": 6
+                "compatibility_version": 7
               },
               {
                 "full_name": "swift-protobuf",
-                "version": "1.38.1",
+                "version": "1.39.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.38.1",
+                "pkg_version": "1.39.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -70,29 +70,53 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-protobuf-36.1",
+              "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+              "SPDXRef-Package-SPDXRef-swift-protobuf-1.2e.39.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
                 "name": "protobuf",
-                "versionInfo": "36.1",
+                "versionInfo": "36.2",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.2.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "13dee552679936df9044ceadddb97cf54bd3ee5a26ad6b51b502ebae8b91818b"
+                    "checksumValue": "23c1b997672d8c907b7493086a0a785b885dcaf68851cd6d2a1e96d9f116314a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/protobuf@36.1",
+                    "referenceLocator": "pkg:brew/protobuf@36.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-swift-protobuf-1.2e.39.2e.0",
+                "name": "swift-protobuf",
+                "versionInfo": "1.39.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/swift-protobuf-1.39.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9ea63928fbc7d44c94f401c38c61fd63f7d0a3fc74458b4875ba6c5cbe98c3b3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/swift-protobuf@1.39.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -112,7 +136,12 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-protoc-gen-grpc-swift"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-swift-protobuf-1.2e.39.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-protoc-gen-grpc-swift"
               },
@@ -134,7 +163,7 @@
             "bin/protoc-gen-grpc-swift-2",
             "sbom.spdx.json"
           ],
-          "installed_size": 6547992
+          "installed_size": 6557606
         }
       }
     }
