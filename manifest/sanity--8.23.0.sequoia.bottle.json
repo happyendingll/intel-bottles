@@ -2,10 +2,10 @@
   "sanity": {
     "formula": {
       "name": "sanity",
-      "pkg_version": "8.22.1",
+      "pkg_version": "8.23.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sanity.rb",
       "tap_git_path": "Formula/s/sanity.rb",
-      "tap_git_revision": "e020e3e2757c91e3d6b732c9fd83b82ec661e1c0",
+      "tap_git_revision": "080495aaed34a5763f36ed75581527b1c60a57f4",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Command-line interface for Sanity",
       "license": "MIT",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-24T23:03:56Z",
+      "date": "2026-10-26T08:42:33Z",
       "tags": {
         "sequoia": {
-          "filename": "sanity-8.22.1.sequoia.bottle.tar.gz",
-          "local_filename": "sanity--8.22.1.sequoia.bottle.tar.gz",
-          "sha256": "d7d1ce9efdab6abd162f3dad357c42cee2a64ad1050074d7c3042d6e2e717527",
+          "filename": "sanity-8.23.0.sequoia.bottle.tar.gz",
+          "local_filename": "sanity--8.23.0.sequoia.bottle.tar.gz",
+          "sha256": "af0dc1091d19da19fc0f78aa8389f6ba43315840cb99319b05c4a8aa00056d4d",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "libexec/lib/node_modules/@sanity/cli/bin/run.js",
               "libexec/lib/node_modules/@sanity/cli/dist/hooks/prerun/flushTelemetry.worker.js",
@@ -114,20 +114,20 @@
                 "compatibility_version": 2
               },
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "simdutf",
                 "version": "9.3.2",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.3.2",
+                "pkg_version": "9.3.2_1",
                 "declared_directly": false,
                 "compatibility_version": 7
               },
@@ -230,10 +230,10 @@
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
+                "pkg_version": "4.1.0",
                 "declared_directly": false
               },
               {
@@ -309,9 +309,9 @@
               {
                 "full_name": "node",
                 "version": "26.12.1",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.12.1",
+                "pkg_version": "26.12.1_1",
                 "declared_directly": true
               }
             ],
@@ -328,7 +328,8 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2.5f.1",
               "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-c-ares-1.2e.34.2e.9",
@@ -337,36 +338,59 @@
               "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
               "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.4",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.5",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.1",
+              "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.1.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2",
-                "name": "simdutf",
-                "versionInfo": "9.3.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/simdutf-9.3.2.sequoia.bottle.tar.gz",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "933b8a70d91a76c8ed7778e6fd3378e9c5cca5f41623e2d6fc3165becd0c0329"
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdutf@9.3.2",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2.5f.1",
+                "name": "simdutf",
+                "versionInfo": "9.3.2_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 OR MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/simdutf-9.3.2_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "22a994c4dd4c76e6312d74db848edd35af6442ab1cb95f604b3a715591bcc139"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/simdutf@9.3.2_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -556,24 +580,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -717,24 +741,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.1.5f.1",
                 "name": "node",
-                "versionInfo": "26.12.1",
+                "versionInfo": "26.12.1_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/node-26.12.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/node-26.12.1_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "1800f523f0646da2cfaed084e63d001d29388addd061995c384d7cc87fa64686"
+                    "checksumValue": "b55dbd78c32e1fbf63b91ec5334d9c929a45fa2146f4249c65da3948a36d813a"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/node@26.12.1",
+                    "referenceLocator": "pkg:brew/node@26.12.1_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -754,7 +778,12 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sanity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-sanity"
               },
@@ -799,7 +828,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-sanity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-sanity"
               },
@@ -834,7 +863,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-sanity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.1.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-sanity"
               },
@@ -977,6 +1006,8 @@
             "libexec/lib/node_modules/@sanity/cli/dist/actions/debug/output.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/debug/types.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/debug/types.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/deploy/blueprintManaged.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/deploy/blueprintManaged.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/deploy/checkDir.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/deploy/checkDir.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/deploy/createUserApplication.js",
@@ -1149,12 +1180,16 @@
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/createAppCliConfig.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/createCliConfig.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/createCliConfig.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/init/createMediaLibraryCliConfig.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/init/createMediaLibraryCliConfig.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/createPackageManifest.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/createPackageManifest.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/createStudioConfig.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/createStudioConfig.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/determineAppTemplate.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/determineAppTemplate.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/init/determineMediaLibraryTemplate.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/init/determineMediaLibraryTemplate.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/env/createOrAppendEnvVars.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/env/createOrAppendEnvVars.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/env/parseAndUpdateEnvVars.js",
@@ -1177,6 +1212,8 @@
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/initNextJs.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/initStudio.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/initStudio.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/init/offerAspectPull.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/init/offerAspectPull.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/plan/getPlan.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/plan/getPlan.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/plan/verifyCoupon.js",
@@ -1225,6 +1262,8 @@
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/templates/getStarted.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/templates/index.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/templates/index.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/init/templates/mediaLibraryConfig.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/init/templates/mediaLibraryConfig.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/templates/moviedb.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/templates/moviedb.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/init/templates/nextjs/index.js",
@@ -1263,8 +1302,16 @@
             "libexec/lib/node_modules/@sanity/cli/dist/actions/mcp/validateEditorTokens.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/mcp/writeMCPConfig.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/mcp/writeMCPConfig.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/media/aspectName.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/media/aspectName.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/media/aspectSync/contract.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/media/aspectSync/contract.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/media/aspectSync/syncAspects.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/media/aspectSync/syncAspects.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/media/buildNdjsonIndex.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/media/buildNdjsonIndex.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/media/cliConfigFields.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/media/cliConfigFields.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/media/getMediaLibraryConfig.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/media/getMediaLibraryConfig.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/media/importAspects.js",
@@ -1275,6 +1322,10 @@
             "libexec/lib/node_modules/@sanity/cli/dist/actions/media/importMediaDebug.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/media/ingestMediaAssetFromUrlWithProgress.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/media/ingestMediaAssetFromUrlWithProgress.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/media/pullAspects.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/media/pullAspects.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/media/resolveMediaLibraryId.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/actions/media/resolveMediaLibraryId.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/migration/constants.js",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/migration/constants.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/actions/migration/ensureApiVersionFormat.js",
@@ -1481,6 +1532,12 @@
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/create.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/delete.js",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/delete.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/entries/get.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/entries/get.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/entries/list.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/entries/list.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/entries/rebuild.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/entries/rebuild.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/get.js",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/get.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/imports/create.js",
@@ -1493,10 +1550,24 @@
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/imports/get.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/imports/list.js",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/imports/list.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/issues/apply.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/issues/apply.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/issues/dismiss.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/issues/dismiss.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/issues/get.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/issues/get.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/issues/list.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/issues/list.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/issues/reopen.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/issues/reopen.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/issues/resolve.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/issues/resolve.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/jobs/get.js",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/jobs/get.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/list.js",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/list.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/query.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/context/query.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/refresh.js",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/refresh.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/context/update.js",
@@ -1605,6 +1676,10 @@
             "libexec/lib/node_modules/@sanity/cli/dist/commands/media/export.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/media/import.js",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/media/import.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/media/prune-aspect-data.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/media/prune-aspect-data.js.map",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/media/pull-aspects.js",
+            "libexec/lib/node_modules/@sanity/cli/dist/commands/media/pull-aspects.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/migrations/create.js",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/migrations/create.js.map",
             "libexec/lib/node_modules/@sanity/cli/dist/commands/migrations/list.js",
@@ -29581,6 +29656,10 @@
             "libexec/lib/node_modules/@sanity/cli/templates/get-started/plugins/sanity-plugin-tutorial/index.ts",
             "libexec/lib/node_modules/@sanity/cli/templates/get-started/schemaTypes/index.ts",
             "libexec/lib/node_modules/@sanity/cli/templates/get-started/static/.gitkeep",
+            "libexec/lib/node_modules/@sanity/cli/templates/media-library-config/README.md",
+            "libexec/lib/node_modules/@sanity/cli/templates/media-library-config/eslint.config.txt",
+            "libexec/lib/node_modules/@sanity/cli/templates/media-library-config/src/fields/caption.tsx",
+            "libexec/lib/node_modules/@sanity/cli/templates/media-library-config/src/fields/notes.tsx",
             "libexec/lib/node_modules/@sanity/cli/templates/moviedb/README.md",
             "libexec/lib/node_modules/@sanity/cli/templates/moviedb/schemaTypes/blockContent.js",
             "libexec/lib/node_modules/@sanity/cli/templates/moviedb/schemaTypes/castMember.js",
@@ -29734,7 +29813,7 @@
             "libexec/lib/node_modules/@sanity/cli/templates/shopify-online-storefront/utils/shopifyUrls.ts",
             "sbom.spdx.json"
           ],
-          "installed_size": 257333594
+          "installed_size": 257710716
         }
       }
     }

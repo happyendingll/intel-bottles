@@ -1,32 +1,35 @@
 {
-  "openlist": {
+  "dagu": {
     "formula": {
-      "name": "openlist",
-      "pkg_version": "4.2.8",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openlist.rb",
-      "tap_git_path": "Formula/o/openlist.rb",
-      "tap_git_revision": "e020e3e2757c91e3d6b732c9fd83b82ec661e1c0",
+      "name": "dagu",
+      "pkg_version": "2.22.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dagu.rb",
+      "tap_git_path": "Formula/d/dagu.rb",
+      "tap_git_revision": "080495aaed34a5763f36ed75581527b1c60a57f4",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "New AList fork addressing anti-trust issues",
-      "license": "AGPL-3.0-only",
-      "homepage": "https://doc.oplist.org/"
+      "desc": "Lightweight and powerful workflow engine",
+      "license": "GPL-3.0-only",
+      "homepage": "https://dagu.sh"
     },
     "bottle": {
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-24T21:26:46Z",
+      "date": "2026-10-26T08:06:13Z",
       "tags": {
         "sequoia": {
-          "filename": "openlist-4.2.8.sequoia.bottle.tar.gz",
-          "local_filename": "openlist--4.2.8.sequoia.bottle.tar.gz",
-          "sha256": "bd9d63441ee080e6f480b8cae0fad19714cc658f7260fa1298b6df5630a3ed85",
+          "filename": "dagu-2.22.3.sequoia.bottle.tar.gz",
+          "local_filename": "dagu--2.22.3.sequoia.bottle.tar.gz",
+          "sha256": "04650d8e16c51fd02b8518d690d6ae3d6e8bd0336900c59a07ffc8fb822d611c",
           "tab": {
             "homebrew_version": "7.0.10",
-            "changed_files": [],
+            "changed_files": [
+              "sh.brew.dagu.plist",
+              "sh.brew.dagu.service"
+            ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792834469,
+            "source_modified_time": 1792933405,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -62,22 +65,28 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-openlist-src"
+                "relatedSpdxElement": "SPDXRef-Archive-dagu-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/openlist"
+            "bin/dagu"
           ],
           "all_files": [
-            ".brew/openlist.rb",
+            ".brew/dagu.rb",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
-            "bin/openlist",
-            "sbom.spdx.json"
+            "bin/dagu",
+            "etc/bash_completion.d/dagu",
+            "sbom.spdx.json",
+            "sh.brew.dagu.plist",
+            "sh.brew.dagu.service",
+            "share/fish/vendor_completions.d/dagu.fish",
+            "share/pwsh/completions/_dagu.ps1",
+            "share/zsh/site-functions/_dagu"
           ],
-          "installed_size": 155523630
+          "installed_size": 182000542
         }
       }
     }

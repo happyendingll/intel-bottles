@@ -2,27 +2,27 @@
   "libphonenumber": {
     "formula": {
       "name": "libphonenumber",
-      "pkg_version": "9.0.41",
+      "pkg_version": "9.0.41_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libphonenumber.rb",
       "tap_git_path": "Formula/lib/libphonenumber.rb",
-      "tap_git_revision": "2e736d3ea76f6195fd8671a85721cbaf904728ba",
+      "tap_git_revision": "080495aaed34a5763f36ed75581527b1c60a57f4",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "C++ Phone Number library by Google",
       "license": "Apache-2.0",
       "homepage": "https://github.com/google/libphonenumber"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-10T00:04:49Z",
+      "date": "2026-10-26T08:10:32Z",
       "tags": {
         "sequoia": {
-          "filename": "libphonenumber-9.0.41.sequoia.bottle.tar.gz",
-          "local_filename": "libphonenumber--9.0.41.sequoia.bottle.tar.gz",
-          "sha256": "56ecef729ee0127dca51078e387a37e003eef72cbfe720c9c4c47f3093a60c3a",
+          "filename": "libphonenumber-9.0.41_1.sequoia.bottle.tar.gz",
+          "local_filename": "libphonenumber--9.0.41_1.sequoia.bottle.tar.gz",
+          "sha256": "1ef0ee76d5690a632e6274896b498733be37740a7a9ef1ab7f43841a7cb6f151",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "lib/cmake/libphonenumber/libphonenumber-targets.cmake"
             ],
@@ -44,11 +44,11 @@
                 "compatibility_version": 3
               },
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -81,9 +81,9 @@
               {
                 "full_name": "boost",
                 "version": "1.92.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.92.0",
+                "pkg_version": "1.92.0_1",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
@@ -110,13 +110,38 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
@@ -187,6 +212,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+                "name": "boost",
+                "versionInfo": "1.92.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSL-1.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/boost-1.92.0_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "83df3d2e7a39c19ac12d3405209bdaa598cacbc3ad0f2f1d869ab7835cf7a3a7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/boost@1.92.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
                 "name": "protobuf",
                 "versionInfo": "36.2",
@@ -224,6 +272,11 @@
             ],
             "relationships": [
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libphonenumber"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libphonenumber"
@@ -235,6 +288,11 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libphonenumber"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libphonenumber"
               },
@@ -305,7 +363,7 @@
             "lib/libphonenumber.dylib",
             "sbom.spdx.json"
           ],
-          "installed_size": 17655748
+          "installed_size": 17655764
         }
       }
     }
