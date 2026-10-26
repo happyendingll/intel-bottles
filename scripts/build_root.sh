@@ -105,7 +105,7 @@ if [ "$ROOT" = "swift-protobuf" ] || [ "$ROOT" = "protoc-gen-grpc-swift" ] || \
   export DEVELOPER_DIR="$xcode_app/Contents/Developer"
   swift_version="$(xcrun swift --version)"
   echo "selected $DEVELOPER_DIR: $swift_version"
-  if ! grep -Eq 'Swift version 6\.(2|3|4)(\.|$)' <<< "$swift_version"; then
+  if ! grep -Eq 'Swift version 6\.(2|3|4)([.[:space:]]|$)' <<< "$swift_version"; then
     echo "selected Xcode does not provide Swift 6.2 or newer" >&2
     exit 1
   fi
