@@ -90,7 +90,36 @@ fetch_with_limit() {
   fi
 }
 
+# swift-protobuf 1.39 needs Swift 6.2. The Intel Sequoia image defaults to
+# Xcode 16.4, so its Formula asks Homebrew to build Swift 6.4 from source.
+# Xcode 26 is already installed on that image and provides Swift 6.2. Select
+# it for this chain and remove only the Formula's OS-version fallback on this
+# disposable runner, before Homebrew resolves the dependency graph.
+if [ "$ROOT" = "swift-protobuf" ] || [ "$ROOT" = "protoc-gen-grpc-swift" ] || \
+    brew deps --formula -n --include-build "$ROOT" | grep -Fxq swift-protobuf; then
+  xcode_app="/Applications/Xcode_26.0.1.app"
+  if [ ! -d "$xcode_app/Contents/Developer" ]; then
+    echo "Xcode 26.0.1 is missing; cannot use Swift 6.2 for swift-protobuf" >&2
+    exit 1
+  fi
+  export DEVELOPER_DIR="$xcode_app/Contents/Developer"
+  swift_version="$(xcrun swift --version)"
+  echo "selected $DEVELOPER_DIR: $swift_version"
+  if ! grep -Eq 'Swift version 6\.(2|3|4)(\.|$)' <<< "$swift_version"; then
+    echo "selected Xcode does not provide Swift 6.2 or newer" >&2
+    exit 1
+  fi
+  swift_protobuf_formula="$(brew --repo homebrew/core)/Formula/s/swift-protobuf.rb"
+  python3 "$SCRIPT_DIR/patch_swift_protobuf_xcode.py" "$swift_protobuf_formula"
+  brew ruby -- -c "$swift_protobuf_formula"
+  git -C "$(brew --repo homebrew/core)" diff --check -- Formula/s/swift-protobuf.rb
+fi
+
 CHAIN="$(brew deps --formula -n --include-build "$ROOT"; echo "$ROOT")"
+if [ -n "${swift_protobuf_formula:-}" ] && grep -Fxq swift <<< "$CHAIN"; then
+  echo "Swift remains in $ROOT's build chain after selecting Xcode 26" >&2
+  exit 1
+fi
 TODO="$(python3 "$SCRIPT_DIR/filter_unbottled.py" $CHAIN)"
 
 if [ -z "$TODO" ]; then
