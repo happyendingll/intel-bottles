@@ -2,27 +2,27 @@
   "ncmpcpp": {
     "formula": {
       "name": "ncmpcpp",
-      "pkg_version": "0.10.1_8",
+      "pkg_version": "0.10.1_9",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/n/ncmpcpp.rb",
       "tap_git_path": "Formula/n/ncmpcpp.rb",
-      "tap_git_revision": "b96c013e81808bbe2bccaa831c8769fe165b7ec1",
+      "tap_git_revision": "3e6109717a40f19f5ce1911e045b74c3184335fa",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Ncurses-based client for the Music Player Daemon",
       "license": "GPL-2.0-or-later",
       "homepage": "https://rybczak.net/ncmpcpp/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-14T19:46:17Z",
+      "date": "2026-10-25T21:28:52Z",
       "tags": {
         "sequoia": {
-          "filename": "ncmpcpp-0.10.1_8.sequoia.bottle.tar.gz",
-          "local_filename": "ncmpcpp--0.10.1_8.sequoia.bottle.tar.gz",
-          "sha256": "7efa1537fdaca6efc1041a7c802df0952be81ae53598dc77ad032e5bbac7dcfe",
+          "filename": "ncmpcpp-0.10.1_9.sequoia.bottle.tar.gz",
+          "local_filename": "ncmpcpp--0.10.1_9.sequoia.bottle.tar.gz",
+          "sha256": "ac91a210c74f17ef0b34ed2c581013f101b1d3000fc60bcd296fc69dd11cd388",
           "tab": {
-            "homebrew_version": "7.0.1",
+            "homebrew_version": "7.0.10",
             "changed_files": [],
             "linkage_files": [
               "bin/ncmpcpp"
@@ -32,11 +32,11 @@
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -69,18 +69,17 @@
               {
                 "full_name": "boost",
                 "version": "1.92.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.92.0",
+                "revision": 1,
+                "pkg_version": "1.92.0_1",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
               {
                 "full_name": "libomp",
-                "version": "23.1.1",
+                "version": "23.1.4",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "23.1.1",
+                "pkg_version": "23.1.4",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -113,19 +112,19 @@
               },
               {
                 "full_name": "readline",
-                "version": "8.3.3",
+                "version": "8.3.6",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "8.3.3",
+                "pkg_version": "8.3.6",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "utf8cpp",
-                "version": "4.2.0",
+                "version": "4.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.2.0",
+                "pkg_version": "4.2.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -152,18 +151,42 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-libomp-23.1.1",
-              "SPDXRef-Package-SPDXRef-readline-8.3.3",
-              "SPDXRef-Package-SPDXRef-utf8cpp-4.2.0",
-              "SPDXRef-Package-SPDXRef-taglib-2.3.2",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.4",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-utf8cpp-4.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-taglib-2.2e.3.2e.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -186,7 +209,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -209,7 +232,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -232,76 +255,76 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.4",
                 "name": "libomp",
-                "versionInfo": "23.1.1",
+                "versionInfo": "23.1.4",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libomp-23.1.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libomp-23.1.4.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "f9006339f8009a14348931dfb50532f9b6962968266db7a3108178588bf8b703"
+                    "checksumValue": "a602dbde3d3aa941266f91dcd70adfc5154f644ab5c7c35dcd5ca7387a75cc6f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libomp@23.1.1",
+                    "referenceLocator": "pkg:brew/libomp@23.1.4",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "name": "readline",
-                "versionInfo": "8.3.3",
+                "versionInfo": "8.3.6",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-3.0-or-later",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/readline/blobs/sha256:fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "fd72a581442e1826e1386b8620e6ca5b75d858ded59d9fe60b9e0e9001675dc3"
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/readline@8.3.3",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-utf8cpp-4.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-utf8cpp-4.2e.2.2e.1",
                 "name": "utf8cpp",
-                "versionInfo": "4.2.0",
+                "versionInfo": "4.2.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSL-1.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/utf8cpp/blobs/sha256:cef5e702293797e4a9a9090c53cac59e979624dbe08e714ac0bbad8632c47bf3",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/utf8cpp/blobs/sha256:91979507787b320aa978b9fe793d1d72b5c50c7e73529897dbe5f09c75fb0e90",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "cef5e702293797e4a9a9090c53cac59e979624dbe08e714ac0bbad8632c47bf3"
+                    "checksumValue": "91979507787b320aa978b9fe793d1d72b5c50c7e73529897dbe5f09c75fb0e90"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/utf8cpp@4.2.0",
+                    "referenceLocator": "pkg:brew/utf8cpp@4.2.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-taglib-2.3.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-taglib-2.2e.3.2e.2",
                 "name": "taglib",
                 "versionInfo": "2.3.2",
                 "filesAnalyzed": false,
@@ -338,37 +361,42 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ncmpcpp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ncmpcpp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ncmpcpp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.1.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ncmpcpp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.3.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ncmpcpp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-utf8cpp-4.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ncmpcpp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-taglib-2.3.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-utf8cpp-4.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ncmpcpp"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-taglib-2.2e.3.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ncmpcpp"
               },
@@ -398,7 +426,7 @@
             "share/doc/ncmpcpp/config",
             "share/man/man1/ncmpcpp.1"
           ],
-          "installed_size": 3105656
+          "installed_size": 3105632
         }
       }
     }

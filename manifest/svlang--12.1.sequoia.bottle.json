@@ -2,27 +2,27 @@
   "svlang": {
     "formula": {
       "name": "svlang",
-      "pkg_version": "12.0",
+      "pkg_version": "12.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/svlang.rb",
       "tap_git_path": "Formula/s/svlang.rb",
-      "tap_git_revision": "dbf63e5acddfa4d45cb58e9c269ecf118dd38c7c",
+      "tap_git_revision": "3e6109717a40f19f5ce1911e045b74c3184335fa",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "SystemVerilog compiler and language services",
       "license": "MIT",
       "homepage": "https://sv-lang.com/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-02T12:31:40Z",
+      "date": "2026-10-25T22:13:50Z",
       "tags": {
         "sequoia": {
-          "filename": "svlang-12.0.sequoia.bottle.tar.gz",
-          "local_filename": "svlang--12.0.sequoia.bottle.tar.gz",
-          "sha256": "f9ec97e477cf0c8f08baef0949bda58a4e0cc6a127855c5180f3763732662cfd",
+          "filename": "svlang-12.1.sequoia.bottle.tar.gz",
+          "local_filename": "svlang--12.1.sequoia.bottle.tar.gz",
+          "sha256": "6680dcdc4685ff802ea1be8d0e1bfdd0241cfdb46c880c5e8ed5ff59b783e9f1",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.10",
             "changed_files": [
               "share/pkgconfig/sv-lang.pc"
             ],
@@ -34,15 +34,15 @@
               "bin/slang-unifdef"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790675674,
+            "source_modified_time": 1792931603,
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -75,9 +75,8 @@
               {
                 "full_name": "boost",
                 "version": "1.92.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.92.0",
+                "revision": 1,
+                "pkg_version": "1.92.0_1",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
@@ -92,10 +91,10 @@
               },
               {
                 "full_name": "mimalloc",
-                "version": "3.5.4",
+                "version": "3.6.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.5.4",
+                "pkg_version": "3.6.0",
                 "declared_directly": true
               },
               {
@@ -120,15 +119,39 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-mimalloc-3.5.4",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-mimalloc-3.2e.6.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -151,7 +174,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "name": "lz4",
                 "versionInfo": "1.10.0",
                 "filesAnalyzed": false,
@@ -174,7 +197,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -197,24 +220,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mimalloc-3.5.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-mimalloc-3.2e.6.2e.0",
                 "name": "mimalloc",
-                "versionInfo": "3.5.4",
+                "versionInfo": "3.6.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mimalloc-3.5.4.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/mimalloc-3.6.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "dc6a97b0067ff57a28f676ff4cdd2f2b0bbba77e0b070dc225d71f2eab3daac2"
+                    "checksumValue": "87e9bf735d67a49aa604ab34d48b34252e9668e7be80da0eb928ec6e9a796a01"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/mimalloc@3.5.4",
+                    "referenceLocator": "pkg:brew/mimalloc@3.6.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -234,22 +257,27 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-svlang"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-svlang"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-svlang"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mimalloc-3.5.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-svlang"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mimalloc-3.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-svlang"
               },
@@ -450,7 +478,7 @@
             "sbom.spdx.json",
             "share/pkgconfig/sv-lang.pc"
           ],
-          "installed_size": 59688539
+          "installed_size": 59833848
         }
       }
     }

@@ -2,10 +2,10 @@
   "gascity": {
     "formula": {
       "name": "gascity",
-      "pkg_version": "1.5.1",
+      "pkg_version": "1.5.1_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gascity.rb",
       "tap_git_path": "Formula/g/gascity.rb",
-      "tap_git_revision": "6e6cc14be4225e4c9c7b6fbb4d12e0b8718361c9",
+      "tap_git_revision": "3e6109717a40f19f5ce1911e045b74c3184335fa",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Orchestration-builder SDK for multi-agent coding workflows",
       "license": "MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-25T04:43:36Z",
+      "date": "2026-10-25T20:56:30Z",
       "tags": {
         "sequoia": {
-          "filename": "gascity-1.5.1.sequoia.bottle.tar.gz",
-          "local_filename": "gascity--1.5.1.sequoia.bottle.tar.gz",
-          "sha256": "85b174b594b3e4610c63d832860bf85b24308daff95b1877bcf77b4733698c4e",
+          "filename": "gascity-1.5.1_1.sequoia.bottle.tar.gz",
+          "local_filename": "gascity--1.5.1_1.sequoia.bottle.tar.gz",
+          "sha256": "821ba3096c9350f3c299a153aef7f33010d85841b6309dccf8873bf0bed521f9",
           "tab": {
             "homebrew_version": "7.0.10",
             "changed_files": [],
@@ -32,28 +32,28 @@
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
                 "full_name": "dolt",
                 "version": "2.6.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.6.0",
+                "pkg_version": "2.6.0_1",
                 "declared_directly": true
               },
               {
                 "full_name": "beads",
                 "version": "1.3.2",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.3.2",
+                "pkg_version": "1.3.2_1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -85,10 +85,10 @@
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
+                "pkg_version": "4.1.0",
                 "declared_directly": false
               },
               {
@@ -157,10 +157,11 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-dolt-2.2e.6.2e.0",
-              "SPDXRef-Package-SPDXRef-beads-1.2e.3.2e.2",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-dolt-2.2e.6.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-beads-1.2e.3.2e.2.5f.1",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
               "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
               "SPDXRef-Package-SPDXRef-jemalloc-5.2e.4.2e.0",
@@ -169,47 +170,70 @@
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-dolt-2.2e.6.2e.0",
-                "name": "dolt",
-                "versionInfo": "2.6.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/dolt-2.6.0.sequoia.bottle.tar.gz",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "1384515ce64aa6744133c5bbf2d840145e546aaf79e9f4d708c45be8afa9c9dd"
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/dolt@2.6.0",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-beads-1.2e.3.2e.2",
-                "name": "beads",
-                "versionInfo": "1.3.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-dolt-2.2e.6.2e.0.5f.1",
+                "name": "dolt",
+                "versionInfo": "2.6.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/beads-1.3.2.sequoia.bottle.tar.gz",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/dolt-2.6.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5cf49b22d8c15bf0ae940c1a522bcf6af8e058165a7f9b07ff24db8f84e8b3f2"
+                    "checksumValue": "7550cd4b8233f4ee8e998e268e93e119359e55637d0281762a711f2948684651"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/beads@1.3.2",
+                    "referenceLocator": "pkg:brew/dolt@2.6.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-beads-1.2e.3.2e.2.5f.1",
+                "name": "beads",
+                "versionInfo": "1.3.2_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/beads-1.3.2_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2b1f59bc438874a970c20b772a3afc57a7f44b01e51edb8c26816aed8248fafe"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/beads@1.3.2_1",
                     "referenceType": "purl"
                   }
                 ]
@@ -238,24 +262,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -367,12 +391,17 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-dolt-2.2e.6.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gascity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-beads-1.2e.3.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-dolt-2.2e.6.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-gascity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-beads-1.2e.3.2e.2.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gascity"
               },
@@ -382,7 +411,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gascity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gascity"
               },
@@ -425,7 +454,7 @@
             "bin/gc",
             "sbom.spdx.json"
           ],
-          "installed_size": 202779341
+          "installed_size": 202779358
         }
       }
     }

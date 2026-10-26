@@ -2,10 +2,10 @@
   "harfbuzz": {
     "formula": {
       "name": "harfbuzz",
-      "pkg_version": "15.0.0",
+      "pkg_version": "15.0.0_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/h/harfbuzz.rb",
       "tap_git_path": "Formula/h/harfbuzz.rb",
-      "tap_git_revision": "43b17d4f756363cc6a43cc755f4207289902d253",
+      "tap_git_revision": "3e6109717a40f19f5ce1911e045b74c3184335fa",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "OpenType text shaping engine",
       "license": "MIT",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-23T22:24:08Z",
+      "date": "2026-10-25T20:50:24Z",
       "tags": {
         "sequoia": {
-          "filename": "harfbuzz-15.0.0.sequoia.bottle.tar.gz",
-          "local_filename": "harfbuzz--15.0.0.sequoia.bottle.tar.gz",
-          "sha256": "52120a7b7534d24c9de009906ea23aed4b12ca273391cdcf84800332f60ddf5f",
+          "filename": "harfbuzz-15.0.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "harfbuzz--15.0.0_1.sequoia.bottle.tar.gz",
+          "sha256": "24ee9682885be9613afff8c4c75f86f7d3c9e83c5e710b289dad80acad007055",
           "tab": {
             "homebrew_version": "7.0.10",
             "changed_files": [
@@ -230,11 +230,11 @@
                 "declared_directly": true
               },
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -264,6 +264,7 @@
               "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
               "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -544,6 +545,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "16.4",
@@ -614,6 +638,11 @@
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-harfbuzz"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-harfbuzz"
               },
@@ -730,7 +759,7 @@
             "sbom.spdx.json",
             "share/gir-1.0/HarfBuzz-0.0.gir"
           ],
-          "installed_size": 17425554
+          "installed_size": 17425583
         }
       }
     }
