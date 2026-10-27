@@ -1,0 +1,255 @@
+{
+  "bcftools": {
+    "formula": {
+      "name": "bcftools",
+      "pkg_version": "1.25",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/b/bcftools.rb",
+      "tap_git_path": "Formula/b/bcftools.rb",
+      "tap_git_revision": "ef846d86a354aff7833ddc33acc6ffbd361233db",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Tools for BCF/VCF files and variant calling from samtools",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://www.htslib.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-27T23:00:14Z",
+      "tags": {
+        "sequoia": {
+          "filename": "bcftools-1.25.sequoia.bottle.tar.gz",
+          "local_filename": "bcftools--1.25.sequoia.bottle.tar.gz",
+          "sha256": "1e8656b1d191fb7f3d6a0bb379439791cc6209929c932bab86ae342db84db4b9",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/bcftools"
+            ],
+            "binary_relocation_files": [
+              "bin/bcftools"
+            ],
+            "source_modified_time": 1793088786,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gsl",
+                "version": "2.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.8",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libdeflate",
+                "version": "1.26",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.26",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "htslib",
+                "version": "1.24",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.24_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/bcftools",
+              "string": "/usr/local/Cellar/bcftools/1.25/libexec/bcftools",
+              "offset": 1021453
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-htslib-1.2e.24.5f.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-htslib-1.2e.24.5f.1",
+                "name": "htslib",
+                "versionInfo": "1.24_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3/htslib-1.24_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "647a784a706bfb31a1e30328283abfcfab7abdc44d933ba7531d6cea1ab76d4c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/htslib@1.24_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-bcftools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-htslib-1.2e.24.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-bcftools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-bcftools-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/plot-vcfstats",
+            "bin/run-roh.pl",
+            "bin/color-chrs.pl",
+            "bin/roh-viz",
+            "bin/bcftools",
+            "bin/gff2gff.py",
+            "bin/vcfutils.pl",
+            "bin/vrfs-variances",
+            "bin/plot-roh.py",
+            "bin/gff2gff",
+            "bin/guess-ploidy.py"
+          ],
+          "all_files": [
+            ".brew/bcftools.rb",
+            "AUTHORS",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NEWS",
+            "README",
+            "bin/bcftools",
+            "bin/color-chrs.pl",
+            "bin/gff2gff",
+            "bin/gff2gff.py",
+            "bin/guess-ploidy.py",
+            "bin/plot-roh.py",
+            "bin/plot-vcfstats",
+            "bin/roh-viz",
+            "bin/run-roh.pl",
+            "bin/vcfutils.pl",
+            "bin/vrfs-variances",
+            "libexec/bcftools/GTisec.so",
+            "libexec/bcftools/GTsubset.so",
+            "libexec/bcftools/ad-bias.so",
+            "libexec/bcftools/add-variantkey.so",
+            "libexec/bcftools/af-dist.so",
+            "libexec/bcftools/allele-length.so",
+            "libexec/bcftools/check-ploidy.so",
+            "libexec/bcftools/check-sparsity.so",
+            "libexec/bcftools/color-chrs.so",
+            "libexec/bcftools/contrast.so",
+            "libexec/bcftools/counts.so",
+            "libexec/bcftools/dosage.so",
+            "libexec/bcftools/fill-AN-AC.so",
+            "libexec/bcftools/fill-from-fasta.so",
+            "libexec/bcftools/fill-tags.so",
+            "libexec/bcftools/fixploidy.so",
+            "libexec/bcftools/fixref.so",
+            "libexec/bcftools/frameshifts.so",
+            "libexec/bcftools/guess-ploidy.so",
+            "libexec/bcftools/gvcfz.so",
+            "libexec/bcftools/impute-info.so",
+            "libexec/bcftools/indel-stats.so",
+            "libexec/bcftools/isecGT.so",
+            "libexec/bcftools/mendelian2.so",
+            "libexec/bcftools/missing2ref.so",
+            "libexec/bcftools/parental-origin.so",
+            "libexec/bcftools/prune.so",
+            "libexec/bcftools/remove-overlaps.so",
+            "libexec/bcftools/scatter.so",
+            "libexec/bcftools/setGT.so",
+            "libexec/bcftools/smpl-stats.so",
+            "libexec/bcftools/split-vep.so",
+            "libexec/bcftools/split.so",
+            "libexec/bcftools/tag2tag.so",
+            "libexec/bcftools/trio-dnm3.so",
+            "libexec/bcftools/trio-stats.so",
+            "libexec/bcftools/trio-switch-rate.so",
+            "libexec/bcftools/variant-distance.so",
+            "libexec/bcftools/variantkey-hex.so",
+            "libexec/bcftools/vcf2table.so",
+            "libexec/bcftools/vrfs.so",
+            "sbom.spdx.json",
+            "share/bcftools/query.vcf",
+            "share/man/man1/bcftools.1"
+          ],
+          "installed_size": 3092543
+        }
+      }
+    }
+  }
+}
