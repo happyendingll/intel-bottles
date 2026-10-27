@@ -2,27 +2,27 @@
   "oath-toolkit": {
     "formula": {
       "name": "oath-toolkit",
-      "pkg_version": "2.6.15",
+      "pkg_version": "2.6.15_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/o/oath-toolkit.rb",
       "tap_git_path": "Formula/o/oath-toolkit.rb",
-      "tap_git_revision": "52cb27f5b7cf081917113d1874b39739ea7a7542",
+      "tap_git_revision": "0a477386b8c83626c4f2274e9ee40a6b810e9cb2",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Tools for one-time password authentication systems",
       "license": "GPL-3.0-or-later AND LGPL-2.1-or-later",
       "homepage": "https://oath-toolkit.codeberg.page/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-14T17:05:17Z",
+      "date": "2026-10-27T13:43:44Z",
       "tags": {
         "sequoia": {
-          "filename": "oath-toolkit-2.6.15.sequoia.bottle.tar.gz",
-          "local_filename": "oath-toolkit--2.6.15.sequoia.bottle.tar.gz",
-          "sha256": "efb6a991d25864418c8725d6c1bfc0c250bd24eadb7329f3cf6f21f085ede8f9",
+          "filename": "oath-toolkit-2.6.15_1.sequoia.bottle.tar.gz",
+          "local_filename": "oath-toolkit--2.6.15_1.sequoia.bottle.tar.gz",
+          "sha256": "07dfe421cc42e36caea4261d96053d7a43caaa4df81e774b4c4ceae77c69ea4c",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "lib/pkgconfig/liboath.pc",
               "lib/pkgconfig/libpskc.pc",
@@ -61,10 +61,10 @@
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -79,10 +79,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -150,19 +150,20 @@
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
+                "pkg_version": "4.1.0",
                 "declared_directly": false
               },
               {
                 "full_name": "libxmlsec1",
-                "version": "1.3.12",
-                "revision": 1,
-                "pkg_version": "1.3.12_1",
+                "version": "1.3.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.13",
                 "declared_directly": true,
-                "compatibility_version": 4
+                "compatibility_version": 5
               }
             ],
             "arch": "x86_64",
@@ -178,7 +179,7 @@
           "binary_relocation_diagnostics": [
             {
               "path": "lib/libpskc.0.dylib",
-              "string": "/usr/local/Cellar/oath-toolkit/2.6.15/share/xml/pskc/catalog-pskc.xml",
+              "string": "/usr/local/Cellar/oath-toolkit/2.6.15_1/share/xml/pskc/catalog-pskc.xml",
               "offset": 25908
             }
           ],
@@ -186,13 +187,14 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-libxml2-2.2e.15.2e.4",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-libxmlsec1-1.2e.3.2e.13",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -243,24 +245,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
@@ -289,24 +291,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libunistring-1.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                    "checksumValue": "8854773975603bc6243e11dc7d95fb33bba3e348337d95c44411052ef8870097"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -381,24 +383,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxmlsec1-1.2e.3.2e.13",
+                "name": "libxmlsec1",
+                "versionInfo": "1.3.13",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/libxmlsec1-1.3.13.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "28ca652781c5ed5d33a7c45368f0df141c452966a31ee2982cb7dd6a85c9864a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxmlsec1@1.3.13",
                     "referenceType": "purl"
                   }
                 ]
@@ -428,7 +453,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-oath-toolkit"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-oath-toolkit"
               },
@@ -438,7 +463,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-oath-toolkit"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-oath-toolkit"
               },
@@ -458,7 +483,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-oath-toolkit"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-oath-toolkit"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxmlsec1-1.2e.3.2e.13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-oath-toolkit"
               },
@@ -690,7 +720,7 @@
             "share/xml/pskc/xenc-schema.xsd",
             "share/xml/pskc/xmldsig-core-schema.xsd"
           ],
-          "installed_size": 1750333
+          "installed_size": 1750382
         }
       }
     }
