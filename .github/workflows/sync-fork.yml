@@ -40,6 +40,8 @@ jobs:
             "https://x-access-token:${{ secrets.FORK_TOKEN }}@github.com/${FORK_REPO}.git"
 
       - name: Sync (retry once)
+        env:
+          SYNC_PLAN_PATH: ${{ runner.temp }}/sync-plan.tsv
         run: ./scripts/retry.sh ./scripts/sync_fork.sh
 
       - name: Record held refresh queue
@@ -57,7 +59,6 @@ jobs:
 
       - name: Retire obsolete manifests
         run: |
-          python3 scripts/apply_manifest.py > "$RUNNER_TEMP/sync-plan.tsv"
           python3 scripts/retire_manifests.py \
             --plan "$RUNNER_TEMP/sync-plan.tsv" \
             --candidates "$RUNNER_TEMP/retired-manifests"

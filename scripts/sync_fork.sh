@@ -52,6 +52,9 @@ git checkout origin/main -- .github >/dev/null 2>&1 || true
 echo "==> planning"
 cd "$REPO_DIR"
 PLAN="$(python3 scripts/apply_manifest.py)"
+if [ -n "${SYNC_PLAN_PATH:-}" ]; then
+  printf '%s\n' "$PLAN" > "$SYNC_PLAN_PATH"
+fi
 
 # targets.txt is a generated refresh queue, not the full maintained set. Every successful
 # bottle is represented by an active manifest; when one becomes stale, apply_manifest emits
