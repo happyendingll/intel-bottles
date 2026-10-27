@@ -2,27 +2,27 @@
   "hunspell": {
     "formula": {
       "name": "hunspell",
-      "pkg_version": "1.7.5",
+      "pkg_version": "1.7.6",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/h/hunspell.rb",
       "tap_git_path": "Formula/h/hunspell.rb",
-      "tap_git_revision": "18e535a9c0a2ea58dc835495c2c5932169da9661",
+      "tap_git_revision": "8840eb3a03996d822031121722297d3a2137e48c",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Spell checker and morphological analyzer",
       "license": "MPL-1.1 OR GPL-2.0-or-later OR LGPL-2.1-or-later",
       "homepage": "https://hunspell.github.io"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-06T00:58:55Z",
+      "date": "2026-10-27T10:40:14Z",
       "tags": {
         "sequoia": {
-          "filename": "hunspell-1.7.5.sequoia.bottle.tar.gz",
-          "local_filename": "hunspell--1.7.5.sequoia.bottle.tar.gz",
-          "sha256": "93708af003fe7f5532d3a852cb86073271304323eeeb34201b43cdb520be6bbb",
+          "filename": "hunspell-1.7.6.sequoia.bottle.tar.gz",
+          "local_filename": "hunspell--1.7.6.sequoia.bottle.tar.gz",
+          "sha256": "891b0f7ef451567a302204cecd9353282f84348fb6bf99c787bb7a741e25d23b",
           "tab": {
-            "homebrew_version": "7.0.8",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "lib/pkgconfig/hunspell.pc"
             ],
@@ -34,7 +34,7 @@
               "lib/libhunspell-1.7.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791139309,
+            "source_modified_time": 1793032198,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -56,10 +56,10 @@
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -88,7 +88,7 @@
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Compiler"
             ],
@@ -140,24 +140,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libunistring-1.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                    "checksumValue": "8854773975603bc6243e11dc7d95fb33bba3e348337d95c44411052ef8870097"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -210,7 +210,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-hunspell"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-hunspell"
               },
@@ -250,6 +250,7 @@
             "INSTALL_RECEIPT.json",
             "NEWS",
             "README",
+            "README.md",
             "bin/affixcompress",
             "bin/analyze",
             "bin/chmorph",
@@ -354,13 +355,14 @@
             "share/locale/zh_Hans/LC_MESSAGES/hunspell.mo",
             "share/locale/zh_Hant/LC_MESSAGES/hunspell.mo",
             "share/man/hu/man1/hunspell.1",
+            "share/man/hu/man5/hunspell.5",
             "share/man/man1/hunspell.1",
             "share/man/man1/hunzip.1",
             "share/man/man1/hzip.1",
             "share/man/man3/hunspell.3",
             "share/man/man5/hunspell.5"
           ],
-          "installed_size": 2353960
+          "installed_size": 2405673
         }
       }
     }

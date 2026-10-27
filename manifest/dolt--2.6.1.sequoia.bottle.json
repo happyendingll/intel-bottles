@@ -1,42 +1,47 @@
 {
-  "wails": {
+  "dolt": {
     "formula": {
-      "name": "wails",
-      "pkg_version": "2.17.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/w/wails.rb",
-      "tap_git_path": "Formula/w/wails.rb",
-      "tap_git_revision": "0d4711c585f80319d2bad33cbfbdd172eec6c7e3",
+      "name": "dolt",
+      "pkg_version": "2.6.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dolt.rb",
+      "tap_git_path": "Formula/d/dolt.rb",
+      "tap_git_revision": "8840eb3a03996d822031121722297d3a2137e48c",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Create beautiful applications using Go",
-      "license": "MIT",
-      "homepage": "https://wails.io"
+      "desc": "Git for Data",
+      "license": "Apache-2.0",
+      "homepage": "https://www.dolthub.com"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
-      "cellar": "any_skip_relocation",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
+      "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-18T18:23:13Z",
+      "date": "2026-10-27T10:22:31Z",
       "tags": {
         "sequoia": {
-          "filename": "wails-2.17.0.sequoia.bottle.tar.gz",
-          "local_filename": "wails--2.17.0.sequoia.bottle.tar.gz",
-          "sha256": "c5bb7ad7b3bfb8b26f91ac8a1b01907e197816f7356371492f2511677f148b90",
+          "filename": "dolt-2.6.1.sequoia.bottle.tar.gz",
+          "local_filename": "dolt--2.6.1.sequoia.bottle.tar.gz",
+          "sha256": "bf8e75403f6ae4e657ace04287a0eb6f88006316a81c40b0d62561e562e536f4",
           "tab": {
-            "homebrew_version": "7.0.9",
-            "changed_files": [],
-            "linkage_files": [],
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              "sh.brew.dolt.plist",
+              "sh.brew.dolt.service"
+            ],
+            "linkage_files": [
+              "bin/dolt"
+            ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792295570,
+            "source_modified_time": 1793035158,
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "go",
-                "version": "1.27.2",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.27.2",
+                "pkg_version": "79.1",
                 "declared_directly": true,
-                "compatibility_version": 12
+                "compatibility_version": 1
               }
             ],
             "arch": "x86_64",
@@ -52,29 +57,29 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-go-1.2e.27.2e.2",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-go-1.2e.27.2e.2",
-                "name": "go",
-                "versionInfo": "1.27.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/go-1.27.2.sequoia.bottle.tar.gz",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d26ba4ea1f76cca1fb0b4088a404fdf54b25dd881a34763fb547145e8c5f7ebe"
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/go@1.27.2",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -94,30 +99,32 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-go-1.2e.27.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-wails"
+                "relatedSpdxElement": "SPDXRef-Bottle-dolt"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-wails-src"
+                "relatedSpdxElement": "SPDXRef-Archive-dolt-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/wails"
+            "bin/dolt"
           ],
           "all_files": [
-            ".brew/wails.rb",
-            "CHANGELOG.md",
+            ".bottle/etc/dolt/config.yaml",
+            ".brew/dolt.rb",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
-            "bin/wails",
-            "sbom.spdx.json"
+            "bin/dolt",
+            "sbom.spdx.json",
+            "sh.brew.dolt.plist",
+            "sh.brew.dolt.service"
           ],
-          "installed_size": 27255804
+          "installed_size": 122123482
         }
       }
     }

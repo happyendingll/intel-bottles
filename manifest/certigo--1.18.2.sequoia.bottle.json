@@ -1,32 +1,32 @@
 {
-  "cloudlist": {
+  "certigo": {
     "formula": {
-      "name": "cloudlist",
-      "pkg_version": "1.5.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/cloudlist.rb",
-      "tap_git_path": "Formula/c/cloudlist.rb",
-      "tap_git_revision": "98e46156c913d7d3cbfdd012ee128629dd96da72",
+      "name": "certigo",
+      "pkg_version": "1.18.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/certigo.rb",
+      "tap_git_path": "Formula/c/certigo.rb",
+      "tap_git_revision": "8840eb3a03996d822031121722297d3a2137e48c",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Tool for listing assets from multiple cloud providers",
-      "license": "MIT",
-      "homepage": "https://github.com/projectdiscovery/cloudlist"
+      "desc": "Utility to examine and validate certificates in a variety of formats",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/square/certigo"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-15T05:09:58Z",
+      "date": "2026-10-27T10:09:28Z",
       "tags": {
         "sequoia": {
-          "filename": "cloudlist-1.5.0.sequoia.bottle.tar.gz",
-          "local_filename": "cloudlist--1.5.0.sequoia.bottle.tar.gz",
-          "sha256": "1e26208527f1d7784d864618f8e2ef62ec6f06924bd0ea50a312a1b82f907579",
+          "filename": "certigo-1.18.2.sequoia.bottle.tar.gz",
+          "local_filename": "certigo--1.18.2.sequoia.bottle.tar.gz",
+          "sha256": "2c907a3f6b9ddc055897a5bf55b4f37fbef8bad3ca3e32f220d328d1dce50ca0",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1791957652,
+            "source_modified_time": 1793051951,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -62,22 +62,24 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-cloudlist-src"
+                "relatedSpdxElement": "SPDXRef-Archive-certigo-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/cloudlist"
+            "bin/certigo"
           ],
           "all_files": [
-            ".brew/cloudlist.rb",
+            ".brew/certigo.rb",
             "INSTALL_RECEIPT.json",
-            "LICENSE.md",
+            "LICENSE",
             "README.md",
-            "bin/cloudlist",
-            "sbom.spdx.json"
+            "bin/certigo",
+            "etc/bash_completion.d/certigo",
+            "sbom.spdx.json",
+            "share/zsh/site-functions/_certigo"
           ],
-          "installed_size": 171048984
+          "installed_size": 21385774
         }
       }
     }

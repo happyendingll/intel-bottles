@@ -2,27 +2,27 @@
   "gsoap": {
     "formula": {
       "name": "gsoap",
-      "pkg_version": "2.8.145",
+      "pkg_version": "2.8.146",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/gsoap.rb",
       "tap_git_path": "Formula/g/gsoap.rb",
-      "tap_git_revision": "6c6bc37c958ec466c18b69557731fea7c97c3f08",
+      "tap_git_revision": "8840eb3a03996d822031121722297d3a2137e48c",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "SOAP stub and skeleton compiler for C and C++",
       "license": "GPL-2.0-or-later WITH openvpn-openssl-exception",
       "homepage": "https://www.genivia.com/products.html"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-22T21:50:50Z",
+      "date": "2026-10-27T10:30:52Z",
       "tags": {
         "sequoia": {
-          "filename": "gsoap-2.8.145.sequoia.bottle.tar.gz",
-          "local_filename": "gsoap--2.8.145.sequoia.bottle.tar.gz",
-          "sha256": "e420dd2094897ff8993a209f3567361d7241f1a81b5807e11e523224374d6cdd",
+          "filename": "gsoap-2.8.146.sequoia.bottle.tar.gz",
+          "local_filename": "gsoap--2.8.146.sequoia.bottle.tar.gz",
+          "sha256": "a5f37af26b29df14433a21e16d11f6123c97582f32041f92e3e8ac32a384ee63",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "lib/pkgconfig/gsoap++.pc",
               "lib/pkgconfig/gsoap.pc",
@@ -38,7 +38,7 @@
               "bin/soapcpp2",
               "bin/wsdl2h"
             ],
-            "source_modified_time": 1792592818,
+            "source_modified_time": 1793038384,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -52,10 +52,10 @@
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
+                "pkg_version": "4.1.0",
                 "declared_directly": true
               }
             ],
@@ -72,19 +72,19 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/soapcpp2",
-              "string": "/usr/local/Cellar/gsoap/2.8.145/share/gsoap/import",
+              "string": "/usr/local/Cellar/gsoap/2.8.146/share/gsoap/import",
               "offset": 651243
             },
             {
               "path": "bin/wsdl2h",
-              "string": "/usr/local/Cellar/gsoap/2.8.145/share/gsoap/WS",
-              "offset": 1047836
+              "string": "/usr/local/Cellar/gsoap/2.8.146/share/gsoap/WS",
+              "offset": 1047884
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -112,24 +112,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -154,7 +154,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-gsoap"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-gsoap"
               },
@@ -391,7 +391,7 @@
             "share/gsoap/plugin/wstapi.c",
             "share/gsoap/plugin/wstapi.h"
           ],
-          "installed_size": 7976721
+          "installed_size": 7977458
         }
       }
     }

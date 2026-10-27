@@ -1,32 +1,32 @@
 {
-  "conduit": {
+  "dnscontrol": {
     "formula": {
-      "name": "conduit",
-      "pkg_version": "0.20.5",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/conduit.rb",
-      "tap_git_path": "Formula/c/conduit.rb",
-      "tap_git_revision": "961681a163a2559fa6da3254c7fd455208dae320",
+      "name": "dnscontrol",
+      "pkg_version": "5.7.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dnscontrol.rb",
+      "tap_git_path": "Formula/d/dnscontrol.rb",
+      "tap_git_revision": "8840eb3a03996d822031121722297d3a2137e48c",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Streams data between data stores. Kafka Connect replacement. No JVM required",
-      "license": "Apache-2.0",
-      "homepage": "https://conduitio.github.io/"
+      "desc": "Synchronize your DNS to multiple providers from a simple DSL",
+      "license": "MIT",
+      "homepage": "https://dnscontrol.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-20T20:25:02Z",
+      "date": "2026-10-27T10:30:05Z",
       "tags": {
         "sequoia": {
-          "filename": "conduit-0.20.5.sequoia.bottle.tar.gz",
-          "local_filename": "conduit--0.20.5.sequoia.bottle.tar.gz",
-          "sha256": "2ef44345a58843bc8f2350c480a799d4bfcab7b771cbe2b6b5748db8b0a28e3a",
+          "filename": "dnscontrol-5.7.1.sequoia.bottle.tar.gz",
+          "local_filename": "dnscontrol--5.7.1.sequoia.bottle.tar.gz",
+          "sha256": "1b5f682dc680c132f41a821a1081697b9a4c07d26dd87c1c454df85b65c98aef",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792467918,
+            "source_modified_time": 1793028619,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -62,22 +62,24 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-conduit-src"
+                "relatedSpdxElement": "SPDXRef-Archive-dnscontrol-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/conduit"
+            "bin/dnscontrol"
           ],
           "all_files": [
-            ".brew/conduit.rb",
+            ".brew/dnscontrol.rb",
             "INSTALL_RECEIPT.json",
-            "LICENSE.md",
+            "LICENSE",
             "README.md",
-            "bin/conduit",
-            "sbom.spdx.json"
+            "bin/dnscontrol",
+            "etc/bash_completion.d/dnscontrol",
+            "sbom.spdx.json",
+            "share/zsh/site-functions/_dnscontrol"
           ],
-          "installed_size": 112514697
+          "installed_size": 135383602
         }
       }
     }
