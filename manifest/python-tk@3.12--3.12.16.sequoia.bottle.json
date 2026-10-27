@@ -1,43 +1,43 @@
 {
-  "python-gdbm@3.14": {
+  "python-tk@3.12": {
     "formula": {
-      "name": "python-gdbm@3.14",
-      "pkg_version": "3.14.9",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/python-gdbm@3.14.rb",
-      "tap_git_path": "Formula/p/python-gdbm@3.14.rb",
-      "tap_git_revision": "bdccee48244e6b01596eb81ff528658f9bf7c31f",
+      "name": "python-tk@3.12",
+      "pkg_version": "3.12.16",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/python-tk@3.12.rb",
+      "tap_git_path": "Formula/p/python-tk@3.12.rb",
+      "tap_git_revision": "bc121c94d6c86ac6cf3b69a589ada0290196b8cc",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Python interface to gdbm",
+      "desc": "Python interface to Tcl/Tk",
       "license": "Python-2.0",
       "homepage": "https://www.python.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-23T06:07:00Z",
+      "date": "2026-10-27T07:33:08Z",
       "tags": {
         "sequoia": {
-          "filename": "python-gdbm%403.14-3.14.9.sequoia.bottle.tar.gz",
-          "local_filename": "python-gdbm@3.14--3.14.9.sequoia.bottle.tar.gz",
-          "sha256": "4adfa12fe908077dc24a20f5a5cd83176ae52ea37f5f7fbe4a9875ca937fc28d",
+          "filename": "python-tk%403.12-3.12.16.sequoia.bottle.tar.gz",
+          "local_filename": "python-tk@3.12--3.12.16.sequoia.bottle.tar.gz",
+          "sha256": "f2ec1fbdb5bc0878ebe034c5763e6c9275b2c199d4ae3ec92f76367e20aafaff",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [
-              "libexec/_gdbm.cpython-314-darwin.so"
+              "libexec/_tkinter.cpython-312-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792562535,
+            "source_modified_time": 1792952677,
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "gdbm",
-                "version": "1.26",
+                "full_name": "mpdecimal",
+                "version": "4.0.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.26",
-                "declared_directly": true,
+                "pkg_version": "4.0.1",
+                "declared_directly": false,
                 "compatibility_version": 1
               },
               {
@@ -50,21 +50,13 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "mpdecimal",
-                "version": "4.0.1",
+                "full_name": "openssl@3",
+                "version": "3.5.9",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.1",
+                "pkg_version": "3.5.9",
                 "declared_directly": false,
                 "compatibility_version": 1
-              },
-              {
-                "full_name": "openssl@4",
-                "version": "4.0.3",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
-                "declared_directly": false
               },
               {
                 "full_name": "readline",
@@ -94,30 +86,31 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "lz4",
-                "version": "1.10.0",
+                "full_name": "python@3.12",
+                "version": "3.12.16",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.10.0",
-                "declared_directly": false
+                "pkg_version": "3.12.16",
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
-                "full_name": "zstd",
-                "version": "1.5.7",
-                "revision": 1,
+                "full_name": "libtommath",
+                "version": "1.3.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.5.7_1",
+                "pkg_version": "1.3.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
-                "full_name": "python@3.14",
-                "version": "3.14.9",
+                "full_name": "tcl-tk",
+                "version": "9.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.14.9",
+                "pkg_version": "9.1.0",
                 "declared_directly": true,
-                "compatibility_version": 1
+                "compatibility_version": 2
               }
             ],
             "arch": "x86_64",
@@ -133,38 +126,36 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-gdbm-1.2e.26",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.5.2e.9",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
-              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.9",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.12-3.2e.12.2e.16",
+              "SPDXRef-Package-SPDXRef-tcl-tk-9.2e.1.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gdbm-1.2e.26",
-                "name": "gdbm",
-                "versionInfo": "1.26",
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "name": "mpdecimal",
+                "versionInfo": "4.0.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "GPL-3.0-or-later",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/gdbm/blobs/sha256:cd2206fce6d0ecaaa40620b3aa6e73d5b227f444c10a2e9032813a50b6f89a52",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "cd2206fce6d0ecaaa40620b3aa6e73d5b227f444c10a2e9032813a50b6f89a52"
+                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/gdbm@1.26",
+                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -193,47 +184,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
-                "name": "mpdecimal",
-                "versionInfo": "4.0.1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/mpdecimal-4.0.1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "4180076700bcf66d948062ebaa584e628e1a493659d710c7f72ea54301e1d4aa"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/mpdecimal@4.0.1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
-                "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.5.2e.9",
+                "name": "openssl@3",
+                "versionInfo": "3.5.9",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/openssl%403-3.5.9.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                    "checksumValue": "7ac8149f4cd1fc10ef386c00a3c422228fabe7d4d0da461e641622eb7cd49b68"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%403@3.5.9",
                     "referenceType": "purl"
                   }
                 ]
@@ -308,70 +276,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
-                "name": "lz4",
-                "versionInfo": "1.10.0",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.10.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-                "name": "zstd",
-                "versionInfo": "1.5.7_1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.9",
-                "name": "python@3.14",
-                "versionInfo": "3.14.9",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.12-3.2e.12.2e.16",
+                "name": "python@3.12",
+                "versionInfo": "3.12.16",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/python%403.14-3.14.9.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/python%403.12-3.12.16.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "39d8fa396c1aad5ffd54b2eb0282a95ac6b9a28fdf32f2e9300769a70ba3a3e8"
+                    "checksumValue": "c786258462e2280dee6cda3e005b6ee9923f0c41ffd608156038ece9208b4e44"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.14@3.14.9",
+                    "referenceLocator": "pkg:brew/python%403.12@3.12.16",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-tcl-tk-9.2e.1.2e.0",
+                "name": "tcl-tk",
+                "versionInfo": "9.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "TCL",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/tcl-tk-9.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9ff52bf189aa6b8f874e411d44b41dd954361bab4f660a42c7093cb5daafb368"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/tcl-tk@9.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -391,72 +336,62 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gdbm-1.2e.26",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.12"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.12"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.5.2e.9",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.14"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.12"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.12"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.12"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.12"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.12-3.2e.12.2e.16",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.12"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-tcl-tk-9.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.14"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.14-3.2e.14.2e.9",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.14"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.12"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-python-gdbm.40.3.2e.14-src"
+                "relatedSpdxElement": "SPDXRef-Archive-python-tk.40.3.2e.12-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/python-gdbm@3.14.rb",
+            ".brew/python-tk@3.12.rb",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.rst",
-            "libexec/_gdbm.cpython-314-darwin.so",
+            "libexec/_tkinter.cpython-312-darwin.so",
             "sbom.spdx.json"
           ],
-          "installed_size": 60829
+          "installed_size": 100439
         }
       }
     }

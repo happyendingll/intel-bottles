@@ -1,45 +1,36 @@
 {
-  "python-gdbm@3.13": {
+  "python-tk@3.13": {
     "formula": {
-      "name": "python-gdbm@3.13",
-      "pkg_version": "3.13.17",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/python-gdbm@3.13.rb",
-      "tap_git_path": "Formula/p/python-gdbm@3.13.rb",
-      "tap_git_revision": "bdccee48244e6b01596eb81ff528658f9bf7c31f",
+      "name": "python-tk@3.13",
+      "pkg_version": "3.13.18",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/python-tk@3.13.rb",
+      "tap_git_path": "Formula/p/python-tk@3.13.rb",
+      "tap_git_revision": "bc121c94d6c86ac6cf3b69a589ada0290196b8cc",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Python interface to gdbm",
+      "desc": "Python interface to Tcl/Tk",
       "license": "Python-2.0",
       "homepage": "https://www.python.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-23T06:04:49Z",
+      "date": "2026-10-27T07:37:10Z",
       "tags": {
         "sequoia": {
-          "filename": "python-gdbm%403.13-3.13.17.sequoia.bottle.tar.gz",
-          "local_filename": "python-gdbm@3.13--3.13.17.sequoia.bottle.tar.gz",
-          "sha256": "f6285a556a9687a85f8a7b5b937e19d2ea8c505d50eebf449a46f71062ed5259",
+          "filename": "python-tk%403.13-3.13.18.sequoia.bottle.tar.gz",
+          "local_filename": "python-tk@3.13--3.13.18.sequoia.bottle.tar.gz",
+          "sha256": "e1b8375fd03aa80e7b6501d3b6f7b80cdf3f09849a399fe547587756028da864",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [
-              "libexec/_gdbm.cpython-313-darwin.so"
+              "libexec/_tkinter.cpython-313-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792590500,
+            "source_modified_time": 1792953083,
             "compiler": "clang",
             "runtime_dependencies": [
-              {
-                "full_name": "gdbm",
-                "version": "1.26",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.26",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
               {
                 "full_name": "mpdecimal",
                 "version": "4.0.1",
@@ -96,12 +87,30 @@
               },
               {
                 "full_name": "python@3.13",
-                "version": "3.13.17",
+                "version": "3.13.18",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.13.17",
+                "pkg_version": "3.13.18",
                 "declared_directly": true,
                 "compatibility_version": 1
+              },
+              {
+                "full_name": "libtommath",
+                "version": "1.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "tcl-tk",
+                "version": "9.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "9.1.0",
+                "declared_directly": true,
+                "compatibility_version": 2
               }
             ],
             "arch": "x86_64",
@@ -117,40 +126,17 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-gdbm-1.2e.26",
               "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.5.2e.9",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
-              "SPDXRef-Package-SPDXRef-python.40.3.2e.13-3.2e.13.2e.17",
+              "SPDXRef-Package-SPDXRef-python.40.3.2e.13-3.2e.13.2e.18",
+              "SPDXRef-Package-SPDXRef-tcl-tk-9.2e.1.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gdbm-1.2e.26",
-                "name": "gdbm",
-                "versionInfo": "1.26",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "GPL-3.0-or-later",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/gdbm/blobs/sha256:cd2206fce6d0ecaaa40620b3aa6e73d5b227f444c10a2e9032813a50b6f89a52",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "cd2206fce6d0ecaaa40620b3aa6e73d5b227f444c10a2e9032813a50b6f89a52"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/gdbm@1.26",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "name": "mpdecimal",
@@ -290,24 +276,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.13-3.2e.13.2e.17",
+                "SPDXID": "SPDXRef-Package-SPDXRef-python.40.3.2e.13-3.2e.13.2e.18",
                 "name": "python@3.13",
-                "versionInfo": "3.13.17",
+                "versionInfo": "3.13.18",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Python-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/python%403.13-3.13.17.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/python%403.13-3.13.18.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "92189de1d3fbb36e43153f34a353feb56e50f429184514118971ff0559e06f9b"
+                    "checksumValue": "9cc47a843be208b05e8b78545e808d811f5f08ca9f425aac9bce1de929208458"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/python%403.13@3.13.17",
+                    "referenceLocator": "pkg:brew/python%403.13@3.13.18",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-tcl-tk-9.2e.1.2e.0",
+                "name": "tcl-tk",
+                "versionInfo": "9.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "TCL",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/tcl-tk-9.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9ff52bf189aa6b8f874e411d44b41dd954361bab4f660a42c7093cb5daafb368"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/tcl-tk@9.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -327,62 +336,62 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gdbm-1.2e.26",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.13"
-              },
-              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-mpdecimal-4.2e.0.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.13"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.13"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.5.2e.9",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.13"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.13"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.13"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.13"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.13-3.2e.13.2e.17",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-python.40.3.2e.13-3.2e.13.2e.18",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-python-gdbm.40.3.2e.13"
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.13"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-tcl-tk-9.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-python-tk.40.3.2e.13"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-python-gdbm.40.3.2e.13-src"
+                "relatedSpdxElement": "SPDXRef-Archive-python-tk.40.3.2e.13-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/python-gdbm@3.13.rb",
+            ".brew/python-tk@3.13.rb",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.rst",
-            "libexec/_gdbm.cpython-313-darwin.so",
+            "libexec/_tkinter.cpython-313-darwin.so",
             "sbom.spdx.json"
           ],
-          "installed_size": 60422
+          "installed_size": 100546
         }
       }
     }
