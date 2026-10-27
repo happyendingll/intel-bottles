@@ -1,32 +1,36 @@
 {
-  "ruff": {
+  "rustls-ffi": {
     "formula": {
-      "name": "ruff",
-      "pkg_version": "0.17.2",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/ruff.rb",
-      "tap_git_path": "Formula/r/ruff.rb",
-      "tap_git_revision": "43b17d4f756363cc6a43cc755f4207289902d253",
+      "name": "rustls-ffi",
+      "pkg_version": "0.15.7",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rustls-ffi.rb",
+      "tap_git_path": "Formula/r/rustls-ffi.rb",
+      "tap_git_revision": "043b70251b93d77b268d7d1fe55c8ced7289671d",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Extremely fast Python linter, written in Rust",
-      "license": "MIT",
-      "homepage": "https://docs.astral.sh/ruff/"
+      "desc": "FFI bindings for the rustls TLS library",
+      "license": "Apache-2.0 OR MIT OR ISC",
+      "homepage": "https://github.com/rustls/rustls-ffi"
     },
     "bottle": {
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
-      "cellar": "any_skip_relocation",
+      "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-24T02:29:37Z",
+      "date": "2026-10-27T12:37:39Z",
       "tags": {
         "sequoia": {
-          "filename": "ruff-0.17.2.sequoia.bottle.tar.gz",
-          "local_filename": "ruff--0.17.2.sequoia.bottle.tar.gz",
-          "sha256": "0bfe7935089d18acfd9602f1fef1dda8772e524d921aa36bae27303318eba3d0",
+          "filename": "rustls-ffi-0.15.7.sequoia.bottle.tar.gz",
+          "local_filename": "rustls-ffi--0.15.7.sequoia.bottle.tar.gz",
+          "sha256": "c88aacb3bea60767a6dd67cc61285305da0f2bd453c2705dd0ae6088b13da542",
           "tab": {
-            "homebrew_version": "7.0.10",
-            "changed_files": [],
-            "linkage_files": [],
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              "lib/pkgconfig/rustls.pc"
+            ],
+            "linkage_files": [
+              "lib/librustls.0.15.7.dylib"
+            ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792691664,
+            "source_modified_time": 1793036593,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -62,28 +66,28 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-ruff-src"
+                "relatedSpdxElement": "SPDXRef-Archive-rustls-ffi-src"
               }
             ]
           },
-          "path_exec_files": [
-            "bin/ruff"
-          ],
+          "path_exec_files": [],
           "all_files": [
-            ".brew/ruff.rb",
-            ".crates.toml",
-            ".crates2.json",
+            ".brew/rustls-ffi.rb",
             "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
+            "LICENSE-APACHE",
+            "LICENSE-ISC",
+            "LICENSE-MIT",
             "README.md",
-            "bin/ruff",
-            "etc/bash_completion.d/ruff",
-            "sbom.spdx.json",
-            "share/fish/vendor_completions.d/ruff.fish",
-            "share/zsh/site-functions/_ruff"
+            "include/rustls.h",
+            "lib/librustls.0.15.7.dylib",
+            "lib/librustls.a",
+            "lib/librustls.dylib",
+            "lib/pkgconfig/rustls.pc",
+            "sbom.spdx.json"
           ],
-          "installed_size": 28920568
+          "installed_size": 23188725
         }
       }
     }

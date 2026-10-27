@@ -1,35 +1,32 @@
 {
-  "forgejo": {
+  "uv": {
     "formula": {
-      "name": "forgejo",
-      "pkg_version": "17.0.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/forgejo.rb",
-      "tap_git_path": "Formula/f/forgejo.rb",
-      "tap_git_revision": "7e25dd0ec79e7321b9adcd66547947ad5ede1d8a",
+      "name": "uv",
+      "pkg_version": "0.13.6",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/u/uv.rb",
+      "tap_git_path": "Formula/u/uv.rb",
+      "tap_git_revision": "043b70251b93d77b268d7d1fe55c8ced7289671d",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Self-hosted lightweight software forge",
-      "license": "GPL-3.0-or-later",
-      "homepage": "https://forgejo.org/"
+      "desc": "Extremely fast Python package installer and resolver, written in Rust",
+      "license": "Apache-2.0 OR MIT",
+      "homepage": "https://docs.astral.sh/uv/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-17T05:11:53Z",
+      "date": "2026-10-27T13:28:24Z",
       "tags": {
         "sequoia": {
-          "filename": "forgejo-17.0.0.sequoia.bottle.tar.gz",
-          "local_filename": "forgejo--17.0.0.sequoia.bottle.tar.gz",
-          "sha256": "0ea145f27d75e74161d2dd9f204a4f18d616c754c82c8ce27672bf342c9b4e91",
+          "filename": "uv-0.13.6.sequoia.bottle.tar.gz",
+          "local_filename": "uv--0.13.6.sequoia.bottle.tar.gz",
+          "sha256": "0964d1c17a5cdf265016127d21fb3aefad911d4844deffcbedbaba76208c7fff",
           "tab": {
-            "homebrew_version": "7.0.9",
-            "changed_files": [
-              "sh.brew.forgejo.plist",
-              "sh.brew.forgejo.service"
-            ],
+            "homebrew_version": "7.0.11",
+            "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792060617,
+            "source_modified_time": 1793059145,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -65,28 +62,34 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-forgejo-src"
+                "relatedSpdxElement": "SPDXRef-Archive-uv-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/forgejo"
+            "bin/uvx",
+            "bin/uv"
           ],
           "all_files": [
-            ".brew/forgejo.rb",
+            ".brew/uv.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
-            "LICENSE",
+            "LICENSE-APACHE",
+            "LICENSE-MIT",
             "README.md",
-            "bin/forgejo",
-            "etc/bash_completion.d/forgejo",
+            "bin/uv",
+            "bin/uvx",
+            "etc/bash_completion.d/uv",
+            "etc/bash_completion.d/uvx",
             "sbom.spdx.json",
-            "sh.brew.forgejo.plist",
-            "sh.brew.forgejo.service",
-            "share/fish/vendor_completions.d/forgejo.fish",
-            "share/pwsh/completions/forgejo",
-            "share/zsh/site-functions/_forgejo"
+            "share/fish/vendor_completions.d/uv.fish",
+            "share/fish/vendor_completions.d/uvx.fish",
+            "share/zsh/site-functions/_uv",
+            "share/zsh/site-functions/_uvx"
           ],
-          "installed_size": 119137684
+          "installed_size": 39307569
         }
       }
     }

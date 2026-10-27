@@ -2,10 +2,10 @@
   "manticoresearch": {
     "formula": {
       "name": "manticoresearch",
-      "pkg_version": "29.9.0_3",
+      "pkg_version": "29.9.0_4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/m/manticoresearch.rb",
       "tap_git_path": "Formula/m/manticoresearch.rb",
-      "tap_git_revision": "3e6109717a40f19f5ce1911e045b74c3184335fa",
+      "tap_git_revision": "043b70251b93d77b268d7d1fe55c8ced7289671d",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Open source text search engine",
       "license": "GPL-3.0-or-later AND (Unlicense OR MIT)",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-25T21:22:00Z",
+      "date": "2026-10-27T12:00:33Z",
       "tags": {
         "sequoia": {
-          "filename": "manticoresearch-29.9.0_3.sequoia.bottle.tar.gz",
-          "local_filename": "manticoresearch--29.9.0_3.sequoia.bottle.tar.gz",
-          "sha256": "bff892fcba237798a736d3c9cb693249c71bce28f0f243f4011e0baec50b84d2",
+          "filename": "manticoresearch-29.9.0_4.sequoia.bottle.tar.gz",
+          "local_filename": "manticoresearch--29.9.0_4.sequoia.bottle.tar.gz",
+          "sha256": "0686a7563ee144ebd36196b8a1160223b08c465b43f163893da02b74bbc5a27b",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "sh.brew.manticoresearch.plist",
               "sh.brew.manticoresearch.service"
@@ -85,6 +85,7 @@
                 "full_name": "boost",
                 "version": "1.92.0",
                 "revision": 1,
+                "bottle_rebuild": 0,
                 "pkg_version": "1.92.0_1",
                 "declared_directly": true,
                 "compatibility_version": 2
@@ -99,12 +100,12 @@
               },
               {
                 "full_name": "croaring",
-                "version": "5.3.2",
+                "version": "5.4.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.3.2",
+                "pkg_version": "5.4.0",
                 "declared_directly": true,
-                "compatibility_version": 1
+                "compatibility_version": 2
               },
               {
                 "full_name": "ca-certificates",
@@ -260,7 +261,7 @@
             },
             {
               "path": "bin/searchd",
-              "string": "/usr/local/Cellar/manticoresearch/29.9.0_3/share/manticore",
+              "string": "/usr/local/Cellar/manticoresearch/29.9.0_4/share/manticore",
               "offset": 16999439
             },
             {
@@ -270,27 +271,27 @@
             },
             {
               "path": "bin/wordbreaker",
-              "string": "/usr/local/Cellar/manticoresearch/29.9.0_3/share/manticore",
+              "string": "/usr/local/Cellar/manticoresearch/29.9.0_4/share/manticore",
               "offset": 10776928
             },
             {
               "path": "bin/index_converter",
-              "string": "/usr/local/Cellar/manticoresearch/29.9.0_3/share/manticore",
+              "string": "/usr/local/Cellar/manticoresearch/29.9.0_4/share/manticore",
               "offset": 10917106
             },
             {
               "path": "bin/spelldump",
-              "string": "/usr/local/Cellar/manticoresearch/29.9.0_3/share/manticore",
+              "string": "/usr/local/Cellar/manticoresearch/29.9.0_4/share/manticore",
               "offset": 10793792
             },
             {
               "path": "bin/indextool",
-              "string": "/usr/local/Cellar/manticoresearch/29.9.0_3/share/manticore",
+              "string": "/usr/local/Cellar/manticoresearch/29.9.0_4/share/manticore",
               "offset": 10853582
             },
             {
               "path": "bin/indexer",
-              "string": "/usr/local/Cellar/manticoresearch/29.9.0_3/share/manticore",
+              "string": "/usr/local/Cellar/manticoresearch/29.9.0_4/share/manticore",
               "offset": 10912539
             },
             {
@@ -330,7 +331,8 @@
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-croaring-5.2e.3.2e.2",
+              "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-croaring-5.2e.4.2e.0",
               "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
@@ -437,24 +439,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-croaring-5.2e.3.2e.2",
-                "name": "croaring",
-                "versionInfo": "5.3.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+                "name": "boost",
+                "versionInfo": "1.92.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/croaring-5.3.2.sequoia.bottle.tar.gz",
+                "licenseConcluded": "BSL-1.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/boost-1.92.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "021f1f02862f6383d4a3705a2e2e9c31ee78ee3e465d8cb711550fe55861e85e"
+                    "checksumValue": "83df3d2e7a39c19ac12d3405209bdaa598cacbc3ad0f2f1d869ab7835cf7a3a7"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/croaring@5.3.2",
+                    "referenceLocator": "pkg:brew/boost@1.92.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-croaring-5.2e.4.2e.0",
+                "name": "croaring",
+                "versionInfo": "5.4.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/croaring-5.4.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "361c0d51ea273520e68ba7ceabec117062d35ff9a755b108c29ca1ec417bbccb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/croaring@5.4.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -724,7 +749,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-croaring-5.2e.3.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-croaring-5.2e.4.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-manticoresearch"
               },
@@ -861,7 +891,7 @@
             "share/manticore/stopwords/zh",
             "share/manticore/stopwords/zu"
           ],
-          "installed_size": 131920824
+          "installed_size": 131920851
         }
       }
     }
