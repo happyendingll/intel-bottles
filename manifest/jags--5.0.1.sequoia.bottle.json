@@ -1,0 +1,613 @@
+{
+  "jags": {
+    "formula": {
+      "name": "jags",
+      "pkg_version": "5.0.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/j/jags.rb",
+      "tap_git_path": "Formula/j/jags.rb",
+      "tap_git_revision": "6fe534928201855a3e3e648daaf0d90ec032cbe2",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Just Another Gibbs Sampler for Bayesian MCMC simulation",
+      "license": "GPL-2.0-only",
+      "homepage": "https://mcmc-jags.sourceforge.io"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-27T08:18:18Z",
+      "tags": {
+        "sequoia": {
+          "filename": "jags-5.0.1.sequoia.bottle.tar.gz",
+          "local_filename": "jags--5.0.1.sequoia.bottle.tar.gz",
+          "sha256": "5de99162ba32d2530e9130dc24568a5a1a204ff5e11b1ee2148b8e497159d2d3",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              "bin/jags",
+              "lib/pkgconfig/jags.pc"
+            ],
+            "linkage_files": [
+              "lib/JAGS/modules-5/basemod.so",
+              "lib/JAGS/modules-5/bugs.so",
+              "lib/JAGS/modules-5/diag.so",
+              "lib/JAGS/modules-5/dic.so",
+              "lib/JAGS/modules-5/glm.so",
+              "lib/JAGS/modules-5/lecuyer.so",
+              "lib/JAGS/modules-5/mix.so",
+              "lib/JAGS/modules-5/msm.so",
+              "lib/libjags.5.dylib",
+              "lib/libjrmath.0.dylib",
+              "libexec/jags-terminal"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792953200,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "isl",
+                "version": "0.28",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.28",
+                "declared_directly": false
+              },
+              {
+                "full_name": "mpfr",
+                "version": "4.2.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.2.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libmpc",
+                "version": "1.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gcc",
+                "version": "16.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "16.2.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libomp",
+                "version": "23.1.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openblas",
+                "version": "0.3.34",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.3.34",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtool",
+                "version": "2.6.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.6.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-isl-0.2e.28",
+              "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+              "SPDXRef-Package-SPDXRef-libmpc-1.2e.4.2e.1",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-gcc-16.2e.2.2e.0",
+              "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.4",
+              "SPDXRef-Package-SPDXRef-libtool-2.2e.6.2e.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-isl-0.2e.28",
+                "name": "isl",
+                "versionInfo": "0.28",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/isl/blobs/sha256:dca49213f0e9bccffe590c7477de4455a0dfbb65ab542854b1c1f52abfa10213",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "dca49213f0e9bccffe590c7477de4455a0dfbb65ab542854b1c1f52abfa10213"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/isl@0.28",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+                "name": "mpfr",
+                "versionInfo": "4.2.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/mpfr/blobs/sha256:ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpfr@4.2.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libmpc-1.2e.4.2e.1",
+                "name": "libmpc",
+                "versionInfo": "1.4.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/libmpc/blobs/sha256:6c035aa0556baf634ceda0edc4415b6f03d675568873b6ffec4b8c6146639f44",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6c035aa0556baf634ceda0edc4415b6f03d675568873b6ffec4b8c6146639f44"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libmpc@1.4.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gcc-16.2e.2.2e.0",
+                "name": "gcc",
+                "versionInfo": "16.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later WITH GCC-exception-3.1",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gcc-16.2.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "927eeebb4f263103ae248ea2350e3f48211b747d3ea96e74a798b89a661eda77"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gcc@16.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.4",
+                "name": "libomp",
+                "versionInfo": "23.1.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libomp-23.1.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a602dbde3d3aa941266f91dcd70adfc5154f644ab5c7c35dcd5ca7387a75cc6f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libomp@23.1.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtool-2.2e.6.2e.2",
+                "name": "libtool",
+                "versionInfo": "2.6.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/libtool/blobs/sha256:205e69efbbd83ca9ff421c98a0063bd20b64690b44248d0398bd6deb941cf81b",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "205e69efbbd83ca9ff421c98a0063bd20b64690b44248d0398bd6deb941cf81b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libtool@2.6.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-jags"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-isl-0.2e.28",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-jags"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-jags"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libmpc-1.2e.4.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-jags"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-jags"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-jags"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-jags"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gcc-16.2e.2.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-jags"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-jags"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtool-2.2e.6.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-jags"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-jags-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/jags"
+          ],
+          "all_files": [
+            ".brew/jags.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "bin/jags",
+            "include/JAGS/Console.h",
+            "include/JAGS/JRmath.h",
+            "include/JAGS/compiler/Compiler.h",
+            "include/JAGS/compiler/Counter.h",
+            "include/JAGS/compiler/CounterTab.h",
+            "include/JAGS/compiler/LogicalFactory.h",
+            "include/JAGS/compiler/NodeFactory.h",
+            "include/JAGS/compiler/ObsFuncTab.h",
+            "include/JAGS/compiler/ParseTree.h",
+            "include/JAGS/distribution/ArrayDist.h",
+            "include/JAGS/distribution/DistError.h",
+            "include/JAGS/distribution/DistPtr.h",
+            "include/JAGS/distribution/DistTab.h",
+            "include/JAGS/distribution/Distribution.h",
+            "include/JAGS/distribution/RScalarDist.h",
+            "include/JAGS/distribution/ScalarDist.h",
+            "include/JAGS/distribution/VectorDist.h",
+            "include/JAGS/function/ArrayFunction.h",
+            "include/JAGS/function/ArrayLogDensity.h",
+            "include/JAGS/function/DFunction.h",
+            "include/JAGS/function/DPQFunction.h",
+            "include/JAGS/function/FuncError.h",
+            "include/JAGS/function/FuncTab.h",
+            "include/JAGS/function/Function.h",
+            "include/JAGS/function/FunctionPtr.h",
+            "include/JAGS/function/LinkFunction.h",
+            "include/JAGS/function/PFunction.h",
+            "include/JAGS/function/QFunction.h",
+            "include/JAGS/function/ScalarFunction.h",
+            "include/JAGS/function/ScalarLogDensity.h",
+            "include/JAGS/function/ScalarVectorFunction.h",
+            "include/JAGS/function/VectorFunction.h",
+            "include/JAGS/function/VectorLogDensity.h",
+            "include/JAGS/graph/AggNode.h",
+            "include/JAGS/graph/ArrayLogicalNode.h",
+            "include/JAGS/graph/ArrayStochasticNode.h",
+            "include/JAGS/graph/ConstantNode.h",
+            "include/JAGS/graph/DeterministicNode.h",
+            "include/JAGS/graph/Graph.h",
+            "include/JAGS/graph/GraphMarks.h",
+            "include/JAGS/graph/LinkNode.h",
+            "include/JAGS/graph/LogicalNode.h",
+            "include/JAGS/graph/MixTab.h",
+            "include/JAGS/graph/MixtureNode.h",
+            "include/JAGS/graph/MixtureNodeError.h",
+            "include/JAGS/graph/Node.h",
+            "include/JAGS/graph/NodeError.h",
+            "include/JAGS/graph/ScalarLogicalNode.h",
+            "include/JAGS/graph/ScalarStochasticNode.h",
+            "include/JAGS/graph/StochasticNode.h",
+            "include/JAGS/graph/VSLogicalNode.h",
+            "include/JAGS/graph/VectorLogicalNode.h",
+            "include/JAGS/graph/VectorStochasticNode.h",
+            "include/JAGS/matrix/blas.h",
+            "include/JAGS/matrix/lapack.h",
+            "include/JAGS/matrix/matrix.h",
+            "include/JAGS/model/BUGSModel.h",
+            "include/JAGS/model/CovMonitor.h",
+            "include/JAGS/model/ESSWeight.h",
+            "include/JAGS/model/MeanMonitor.h",
+            "include/JAGS/model/Model.h",
+            "include/JAGS/model/Monitor.h",
+            "include/JAGS/model/MonitorControl.h",
+            "include/JAGS/model/MonitorFactory.h",
+            "include/JAGS/model/MonitorInfo.h",
+            "include/JAGS/model/MonitorStat.h",
+            "include/JAGS/model/NodeArray.h",
+            "include/JAGS/model/NodeArraySubset.h",
+            "include/JAGS/model/StochasticIndex.h",
+            "include/JAGS/model/SymTab.h",
+            "include/JAGS/model/TraceMonitor.h",
+            "include/JAGS/model/TraceWeight.h",
+            "include/JAGS/model/VarMonitor.h",
+            "include/JAGS/model/WeightMonitor.h",
+            "include/JAGS/model/WeightedTraceMonitor.h",
+            "include/JAGS/module/Module.h",
+            "include/JAGS/module/ModuleError.h",
+            "include/JAGS/rng/RNG.h",
+            "include/JAGS/rng/RNGFactory.h",
+            "include/JAGS/rng/RmathRNG.h",
+            "include/JAGS/rng/TruncatedNormal.h",
+            "include/JAGS/sampler/GraphView.h",
+            "include/JAGS/sampler/ImmutableSampleMethod.h",
+            "include/JAGS/sampler/ImmutableSampler.h",
+            "include/JAGS/sampler/Linear.h",
+            "include/JAGS/sampler/Metropolis.h",
+            "include/JAGS/sampler/MutableSampleMethod.h",
+            "include/JAGS/sampler/MutableSampler.h",
+            "include/JAGS/sampler/RWMetropolis.h",
+            "include/JAGS/sampler/SampleMethodNoAdapt.h",
+            "include/JAGS/sampler/Sampler.h",
+            "include/JAGS/sampler/SamplerFactory.h",
+            "include/JAGS/sampler/SingletonFactory.h",
+            "include/JAGS/sampler/SingletonGraphView.h",
+            "include/JAGS/sampler/Slicer.h",
+            "include/JAGS/sampler/StepAdapter.h",
+            "include/JAGS/sampler/TemperedMetropolis.h",
+            "include/JAGS/sarray/Range.h",
+            "include/JAGS/sarray/RangeIterator.h",
+            "include/JAGS/sarray/SArray.h",
+            "include/JAGS/sarray/SimpleRange.h",
+            "include/JAGS/util/Factory.h",
+            "include/JAGS/util/dim.h",
+            "include/JAGS/util/integer.h",
+            "include/JAGS/util/logical.h",
+            "include/JAGS/util/nainf.h",
+            "include/JAGS/util/parallel.h",
+            "include/JAGS/version.h",
+            "lib/JAGS/modules-5/basemod.so",
+            "lib/JAGS/modules-5/bugs.so",
+            "lib/JAGS/modules-5/diag.so",
+            "lib/JAGS/modules-5/dic.so",
+            "lib/JAGS/modules-5/glm.so",
+            "lib/JAGS/modules-5/lecuyer.so",
+            "lib/JAGS/modules-5/mix.so",
+            "lib/JAGS/modules-5/msm.so",
+            "lib/libjags.5.dylib",
+            "lib/libjags.dylib",
+            "lib/libjrmath.0.dylib",
+            "lib/libjrmath.dylib",
+            "lib/pkgconfig/jags.pc",
+            "libexec/jags-terminal",
+            "sbom.spdx.json",
+            "share/man/man1/jags.1"
+          ],
+          "installed_size": 2718416
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,141 @@
+{
+  "tcpreplay": {
+    "formula": {
+      "name": "tcpreplay",
+      "pkg_version": "4.6.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/tcpreplay.rb",
+      "tap_git_path": "Formula/t/tcpreplay.rb",
+      "tap_git_revision": "6fe534928201855a3e3e648daaf0d90ec032cbe2",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Replay saved tcpdump files at arbitrary speeds",
+      "license": "BSD-2-Clause AND BSD-3-Clause AND BSD-4-Clause AND GPL-3.0-or-later AND ISC",
+      "homepage": "https://tcpreplay.appneta.com/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-27T08:17:11Z",
+      "tags": {
+        "sequoia": {
+          "filename": "tcpreplay-4.6.2.sequoia.bottle.tar.gz",
+          "local_filename": "tcpreplay--4.6.2.sequoia.bottle.tar.gz",
+          "sha256": "afbc161397825be739883e4b453f39518a51ed4ce7fec3f8b496bec75e57d0a8",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              "lib/pkgconfig/libtcpreplay.pc"
+            ],
+            "linkage_files": [
+              "bin/tcpbridge",
+              "bin/tcpreplay",
+              "bin/tcpreplay-edit",
+              "bin/tcprewrite"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1792979582,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libdnet",
+                "version": "1.18.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.18.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-tcpreplay-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/tcprewrite",
+            "bin/tcpbridge",
+            "bin/tcpreplay-edit",
+            "bin/tcpcapinfo",
+            "bin/tcpreplay",
+            "bin/tcpprep"
+          ],
+          "all_files": [
+            ".brew/tcpreplay.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/tcpbridge",
+            "bin/tcpcapinfo",
+            "bin/tcpprep",
+            "bin/tcpreplay",
+            "bin/tcpreplay-edit",
+            "bin/tcprewrite",
+            "include/tcpreplay/common/cache.h",
+            "include/tcpreplay/common/cidr.h",
+            "include/tcpreplay/common/dlt_names.h",
+            "include/tcpreplay/common/err.h",
+            "include/tcpreplay/common/fakepcap.h",
+            "include/tcpreplay/common/fakepcapnav.h",
+            "include/tcpreplay/common/fakepoll.h",
+            "include/tcpreplay/common/flows.h",
+            "include/tcpreplay/common/get.h",
+            "include/tcpreplay/common/interface.h",
+            "include/tcpreplay/common/list.h",
+            "include/tcpreplay/common/mac.h",
+            "include/tcpreplay/common/netmap.h",
+            "include/tcpreplay/common/pcap_dlt.h",
+            "include/tcpreplay/common/sendpacket.h",
+            "include/tcpreplay/common/services.h",
+            "include/tcpreplay/common/tcpdump.h",
+            "include/tcpreplay/common/timer.h",
+            "include/tcpreplay/common/txring.h",
+            "include/tcpreplay/common/utils.h",
+            "include/tcpreplay/common/xX.h",
+            "include/tcpreplay/common.h",
+            "include/tcpreplay/config.h",
+            "include/tcpreplay/defines.h",
+            "include/tcpreplay/tcpr.h",
+            "include/tcpreplay/tcpreplay.h",
+            "include/tcpreplay/tcpreplay_api.h",
+            "lib/libtcpreplay.a",
+            "lib/pkgconfig/libtcpreplay.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1578227
+        }
+      }
+    }
+  }
+}
