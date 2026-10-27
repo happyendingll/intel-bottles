@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
-"""Delete bottle assets belonging to manifests replaced by a successful build.
+"""Delete bottle assets belonging to explicitly retired or replaced manifests.
 
 This is intentionally narrower than prune_release_assets.py: CI supplies only the old
-manifests replaced in the current publish job.  Every candidate is checked against the
+manifests selected by the current workflow. Every candidate is checked against the
 post-push active manifest set before its Release asset is removed.
 """
 
@@ -20,6 +20,7 @@ from prune_release_assets import (
     gh_json,
     repository_from_remote,
     run,
+    verify_manifest_snapshot,
 )
 
 
@@ -35,9 +36,10 @@ def main() -> None:
 
     paths = sorted(args.candidates.glob("*.bottle.json"))
     if not paths:
-        print("no replaced manifests; nothing to delete")
+        print("no retired or replaced manifests; nothing to delete")
         return
 
+    verify_manifest_snapshot(repo)
     candidates = assets_from_manifests(paths, repo)
     active, manifest_count = active_assets(repo)
     obsolete = {
@@ -46,7 +48,7 @@ def main() -> None:
     obsolete = {tag: names for tag, names in obsolete.items() if names}
     retained = sum(len(names & active.get(tag, set())) for tag, names in candidates.items())
     print(
-        f"checked {len(paths)} replaced manifests against {manifest_count} active: "
+        f"checked {len(paths)} retired or replaced manifests against {manifest_count} active: "
         f"{sum(map(len, obsolete.values()))} obsolete, {retained} still referenced"
     )
 
@@ -75,10 +77,11 @@ def main() -> None:
                 sys.exit(f"Release asset has no numeric id: {tag}/{name}")
             deletions.append((tag, asset_id, name))
 
+    verify_manifest_snapshot(repo)
     for tag, asset_id, name in deletions:
-        print(f"deleting replaced bottle: {tag}/{name}")
+        print(f"deleting obsolete bottle: {tag}/{name}")
         run(["gh", "api", "--method", "DELETE", api_path(repo, f"releases/assets/{asset_id}")])
-    print(f"deleted {len(deletions)} replaced bottle assets")
+    print(f"deleted {len(deletions)} obsolete bottle assets")
 
 
 if __name__ == "__main__":

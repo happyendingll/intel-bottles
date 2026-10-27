@@ -23,15 +23,16 @@ _RUBY = """
 ENV["HOMEBREW_FORMULAE"].to_s.split.each do |name|
   begin
     formula = Formula[name]
-    puts "#{name}\\t#{formula.bottled? ? "bottled" : "needs"}\\t#{formula.pkg_version}"
+    all_bottle = formula.bottle_specification.tag?(Utils::Bottles.tag(:all))
+    puts "#{name}\\t#{formula.bottled? ? "bottled" : "needs"}\\t#{formula.pkg_version}\\t#{all_bottle ? "all" : ""}"
   rescue StandardError
-    puts "#{name}\\tmissing\\t"
+    puts "#{name}\\tmissing\\t\\t"
   end
 end
 """
 
 
-def _run(names: list[str]) -> list[tuple[str, str, str]]:
+def _run(names: list[str]) -> list[tuple[str, str, str, str]]:
     if not names:
         return []
     env = dict(os.environ)
@@ -46,14 +47,14 @@ def _run(names: list[str]) -> list[tuple[str, str, str]]:
     rows = []
     for line in proc.stdout.splitlines():
         parts = line.split("\t")
-        if len(parts) == 3:
-            rows.append((parts[0], parts[1], parts[2]))
+        if len(parts) == 4:
+            rows.append((parts[0], parts[1], parts[2], parts[3]))
     return rows
 
 
 def classify(names: list[str]) -> tuple[list[str], list[str], list[str]]:
     """Return (needs_bottle, bottled, missing), preserving the given order."""
-    status = {name: state for name, state, _ in _run(names)}
+    status = {name: state for name, state, _, _ in _run(names)}
     needs, bottled, missing = [], [], []
     for name in names:
         short = name.split("/")[-1]
@@ -70,5 +71,14 @@ def classify(names: list[str]) -> tuple[list[str], list[str], list[str]]:
 def pkg_versions(names: list[str]) -> dict[str, str]:
     """formula -> pkg_version (version plus _revision), as currently defined."""
     return {
-        name: version for name, state, version in _run(names) if state != "missing"
+        name: version for name, state, version, _ in _run(names) if state != "missing"
+    }
+
+
+def all_bottles(names: list[str]) -> set[str]:
+    """Current Formulae with a platform-independent bottle usable on this host."""
+    return {
+        name
+        for name, state, _, bottle_tag in _run(names)
+        if state == "bottled" and bottle_tag == "all"
     }

@@ -12,6 +12,7 @@ build writes the new bottle block back to the fork.
 Emits tab-separated instructions on stdout:
     APPLY <json_path>  for a manifest that still matches upstream
     HELD  <formula>    for a successfully bottled Formula whose version moved
+    DROP  <json_path>  <reason> for a manifest no longer needed
 """
 
 import json
@@ -54,23 +55,39 @@ def main() -> None:
     # Formula[name] can still resolve a cached/installed formula after upstream removes
     # its Ruby file. Check the checkout itself before trusting brew's version lookup.
     present = [e for e in entries if e["path"] and (core_repo / e["path"]).is_file()]
+    if len(present) * 2 < len(entries):
+        sys.exit(
+            f"only {len(present)} of {len(entries)} manifest Formula paths exist in "
+            f"{core_repo}; refusing to treat an incomplete core checkout as DROP"
+        )
     present_entries = {(e["json"], e["name"]) for e in present}
     upstream = brewinfo.pkg_versions(sorted({e["name"] for e in present}))
 
     current, held, dropped = [], [], []
     for entry in entries:
         if (entry["json"], entry["name"]) not in present_entries:
-            dropped.append((entry["name"], "no longer in homebrew-core"))
+            dropped.append((entry, "no longer in homebrew-core"))
             continue
         now = upstream.get(entry["name"])
         if now is None:
-            dropped.append((entry["name"], "no longer in homebrew-core"))
+            dropped.append((entry, "no longer in homebrew-core"))
         elif now == entry["version"]:
             current.append(entry)
         elif entry["revision"] and entry["path"]:
             held.append((entry, now))
         else:
-            dropped.append((entry["name"], "bottled before revisions were recorded"))
+            dropped.append((entry, "bottled before revisions were recorded"))
+
+    # When upstream supplies a portable `all` bottle for the new version, our old
+    # Intel-specific bottle is obsolete and there is nothing for CI to rebuild.
+    all_bottled = brewinfo.all_bottles(sorted({entry["name"] for entry, _ in held}))
+    still_held = []
+    for entry, now in held:
+        if entry["name"] in all_bottled:
+            dropped.append((entry, f"upstream {now} has an all bottle"))
+        else:
+            still_held.append((entry, now))
+    held = still_held
 
     # A held entry describes a stale manifest. Do not restore its old formula and do not
     # re-apply its old bottle: leaving upstream's version in the fork is what makes the
@@ -79,6 +96,8 @@ def main() -> None:
         print(f"APPLY\t{entry['json']}")
     for entry, _now in held:
         print(f"HELD\t{entry['name']}")
+    for entry, why in dropped:
+        print(f"DROP\t{entry['json']}\t{why}")
 
     print(
         f"\n{len(current)} at upstream version, {len(held)} held back, {len(dropped)} dropped",
@@ -90,8 +109,8 @@ def main() -> None:
             f"until CI bottles it",
             file=sys.stderr,
         )
-    for name, why in dropped:
-        print(f"  drop: {name} -- {why}", file=sys.stderr)
+    for entry, why in dropped:
+        print(f"  drop: {entry['name']} -- {why}", file=sys.stderr)
 
 
 if __name__ == "__main__":

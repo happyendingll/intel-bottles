@@ -60,8 +60,78 @@ class ApplyManifestTests(unittest.TestCase):
 
             versions.assert_called_once_with(["openssl@3"])
             self.assertIn("openssl@3--3.6.5.sequoia.bottle.json", output.getvalue())
-            self.assertNotIn("openssl@3.5", output.getvalue())
+            self.assertNotIn("APPLY\t" + str(manifest / "openssl@3.5--3.5.9.sequoia.bottle.json"), output.getvalue())
+            self.assertIn("DROP\t", output.getvalue())
             self.assertIn("drop: openssl@3.5 -- no longer in homebrew-core", errors.getvalue())
+
+    def test_stale_manifest_is_dropped_only_when_upstream_has_all_bottle(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            manifest = root / "manifest"
+            manifest.mkdir()
+            core = root / "homebrew-core"
+            for name in ("portable", "needs-build"):
+                formula = core / "Formula" / name[0] / f"{name}.rb"
+                formula.parent.mkdir(parents=True, exist_ok=True)
+                formula.write_text("class Example < Formula; end\n")
+                (manifest / f"{name}--1.0.sequoia.bottle.json").write_text(
+                    json.dumps(
+                        {
+                            name: {
+                                "formula": {
+                                    "pkg_version": "1.0",
+                                    "tap_git_path": f"Formula/{name[0]}/{name}.rb",
+                                    "tap_git_revision": "abc123",
+                                }
+                            }
+                        }
+                    )
+                )
+
+            output = io.StringIO()
+            with (
+                patch.object(MODULE, "MANIFEST", manifest),
+                patch.object(MODULE.subprocess, "check_output", return_value=str(core)),
+                patch.object(
+                    MODULE.brewinfo, "pkg_versions",
+                    return_value={"portable": "2.0", "needs-build": "2.0"},
+                ),
+                patch.object(MODULE.brewinfo, "all_bottles", return_value={"portable"}),
+                contextlib.redirect_stdout(output),
+                contextlib.redirect_stderr(io.StringIO()),
+            ):
+                MODULE.main()
+
+            plan = output.getvalue()
+            self.assertIn(f"DROP\t{manifest / 'portable--1.0.sequoia.bottle.json'}", plan)
+            self.assertIn("HELD\tneeds-build", plan)
+            self.assertNotIn("HELD\tportable", plan)
+
+    def test_incomplete_core_checkout_cannot_drop_every_manifest(self):
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            manifest = root / "manifest"
+            manifest.mkdir()
+            for name in ("a", "b", "c"):
+                (manifest / f"{name}--1.0.sequoia.bottle.json").write_text(
+                    json.dumps(
+                        {
+                            name: {
+                                "formula": {
+                                    "pkg_version": "1.0",
+                                    "tap_git_path": f"Formula/{name}/{name}.rb",
+                                    "tap_git_revision": "abc123",
+                                }
+                            }
+                        }
+                    )
+                )
+            with (
+                patch.object(MODULE, "MANIFEST", manifest),
+                patch.object(MODULE.subprocess, "check_output", return_value=str(root / "empty-core")),
+                self.assertRaisesRegex(SystemExit, "incomplete core checkout"),
+            ):
+                MODULE.main()
 
 
 if __name__ == "__main__":

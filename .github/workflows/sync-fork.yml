@@ -55,6 +55,28 @@ jobs:
             echo "targets.txt already matches the held queue"
           fi
 
+      - name: Retire obsolete manifests
+        run: |
+          python3 scripts/apply_manifest.py > "$RUNNER_TEMP/sync-plan.tsv"
+          python3 scripts/retire_manifests.py \
+            --plan "$RUNNER_TEMP/sync-plan.tsv" \
+            --candidates "$RUNNER_TEMP/retired-manifests"
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A -- manifest/
+          if ! git diff --cached --quiet; then
+            git commit -m "manifest: retire obsolete bottles ($(date -u +%Y-%m-%d))"
+            ./scripts/retry.sh git pull --rebase --autostash
+            ./scripts/retry.sh git push
+          fi
+
+      - name: Delete retired bottle assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: >-
+          ./scripts/retry.sh python3 scripts/delete_replaced_assets.py
+          --candidates "$RUNNER_TEMP/retired-manifests"
+
       - name: Capture pipeline baseline
         run: |
           python3 scripts/pipeline_context.py create \
