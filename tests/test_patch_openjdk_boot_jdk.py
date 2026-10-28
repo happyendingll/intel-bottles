@@ -14,6 +14,10 @@ def formula(arm_version: str = "27") -> str:
     return (
         "class Openjdk < Formula\n"
         '  url "https://github.com/openjdk/jdk27u/archive/refs/tags/jdk-27.0.1-ga.tar.gz"\n'
+        "  on_macos do\n"
+        "    depends_on xcode: :build # for metal\n"
+        "    depends_on arch: :arm64\n"
+        "  end\n"
         '  resource "boot-jdk" do\n'
         "    on_macos do\n"
         f'      url "https://download.java.net/java/GA/jdk{arm_version}/'
@@ -38,6 +42,8 @@ class PatchOpenJDKTests(unittest.TestCase):
                 self.assertIn(f"openjdk-{version}_macos-aarch64", patched)
                 self.assertIn(MODULE.INTEL_BOOT_URL, patched)
                 self.assertIn(MODULE.INTEL_BOOT_SHA256, patched)
+                self.assertNotIn("depends_on arch: :arm64", patched)
+                self.assertIn("depends_on xcode: :build", patched)
                 self.assertIn("https://example.com/linux-x64.tar.gz", patched)
                 self.assertEqual(MODULE.patch_text(patched), patched)
 
@@ -53,6 +59,11 @@ class PatchOpenJDKTests(unittest.TestCase):
     def test_fails_closed_when_openjdk_major_changes(self):
         changed = formula().replace("openjdk/jdk27u/", "openjdk/jdk28u/")
         with self.assertRaisesRegex(ValueError, "only valid for OpenJDK 27"):
+            MODULE.patch_text(changed)
+
+    def test_fails_closed_when_macos_dependencies_change(self):
+        changed = formula().replace("depends_on xcode: :build # for metal", "depends_on xcode: :build")
+        with self.assertRaisesRegex(ValueError, "unexpected macOS dependencies"):
             MODULE.patch_text(changed)
 
 

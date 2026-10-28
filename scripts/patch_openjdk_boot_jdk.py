@@ -1,9 +1,10 @@
 #!/usr/bin/env python3
-"""Use an Intel macOS Boot JDK when building the unversioned OpenJDK Formula.
+"""Keep the unversioned OpenJDK Formula usable on Intel macOS.
 
 The upstream Formula currently selects an aarch64 JDK for every macOS host.
 Keep its ARM resource unchanged, and use the last available macOS x64 JDK 26
-as the Boot JDK for building JDK 27 on our Intel runner.
+as the Boot JDK for building JDK 27 on our Intel runner. Upstream also blocks
+Intel installs outright; remove that guard so our existing bottle can be poured.
 """
 
 from __future__ import annotations
@@ -26,11 +27,29 @@ MACOS_RESOURCE = re.compile(
     r'      sha256 "(?P<sha256>[0-9a-f]{64})"\n'
     r'    end\n'
 )
+MACOS_ARCH_GUARD = (
+    "  on_macos do\n"
+    "    depends_on xcode: :build # for metal\n"
+    "    depends_on arch: :arm64\n"
+    "  end\n"
+)
+MACOS_WITHOUT_ARCH_GUARD = (
+    "  on_macos do\n"
+    "    depends_on xcode: :build # for metal\n"
+    "  end\n"
+)
 
 
 def patch_text(text: str) -> str:
     if not re.search(r'^  url "https://github\.com/openjdk/jdk27u/', text, re.MULTILINE):
         raise ValueError("Intel JDK 26 Boot JDK override is only valid for OpenJDK 27")
+    if text.count(MACOS_ARCH_GUARD) > 1:
+        raise ValueError("unexpected duplicate macOS architecture guard")
+    if MACOS_ARCH_GUARD in text:
+        text = text.replace(MACOS_ARCH_GUARD, MACOS_WITHOUT_ARCH_GUARD, 1)
+    elif MACOS_WITHOUT_ARCH_GUARD not in text:
+        raise ValueError("unexpected macOS dependencies; review upstream Formula")
+
     marker = '  resource "boot-jdk" do\n'
     if text.count(marker) != 1:
         raise ValueError("expected exactly one OpenJDK boot-jdk resource")
@@ -72,7 +91,7 @@ def main() -> None:
     patched = patch_text(original)
     if patched != original:
         args.formula.write_text(patched)
-        print(f"patched {args.formula}: macOS Intel uses JDK 26.0.2.1 x64 as Boot JDK")
+        print(f"patched {args.formula}: Intel may install OpenJDK and uses JDK 26.0.2.1 x64 as Boot JDK")
     else:
         print(f"already has a macOS Intel Boot JDK: {args.formula}")
 
