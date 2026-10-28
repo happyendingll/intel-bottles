@@ -38,6 +38,19 @@ python3 "$REPO_DIR/scripts/patch_openjdk_boot_jdk.py" "$CORE_REPO/Formula/o/open
 brew ruby -- -c "$CORE_REPO/Formula/o/openjdk.rb"
 git diff --check -- Formula/o/openjdk.rb
 
+# These two upstream source references are broken as of 2026-10-28. Apply each
+# override only while both its versioned URL and checksum still match that exact
+# upstream Formula. A later upstream correction or version bump takes precedence.
+for formula in jfrog-cli roadrunner; do
+  case "$formula" in
+    jfrog-cli) formula_path="Formula/j/jfrog-cli.rb" ;;
+    roadrunner) formula_path="Formula/r/roadrunner.rb" ;;
+  esac
+  python3 "$REPO_DIR/scripts/patch_known_upstream_sources.py" "$formula" "$CORE_REPO/$formula_path"
+  brew ruby -- -c "$CORE_REPO/$formula_path"
+  git diff --check -- "$formula_path"
+done
+
 # Pin .github to whatever the fork already has, so our commits never touch workflow
 # files. FORK_TOKEN deliberately has only contents:write, and GitHub refuses a push
 # where a PAT without `workflow` scope creates or updates .github/workflows/*. Before
