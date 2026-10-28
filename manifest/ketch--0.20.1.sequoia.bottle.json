@@ -1,32 +1,32 @@
 {
-  "keploy": {
+  "ketch": {
     "formula": {
-      "name": "keploy",
-      "pkg_version": "3.6.165",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/k/keploy.rb",
-      "tap_git_path": "Formula/k/keploy.rb",
-      "tap_git_revision": "fc565513c6b54b1de0a10b06c85fa6886ce7e511",
+      "name": "ketch",
+      "pkg_version": "0.20.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/k/ketch.rb",
+      "tap_git_path": "Formula/k/ketch.rb",
+      "tap_git_revision": "88df29b84848582b3e554fbfae8c5c0b80beadbe",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Testing Toolkit creates test-cases and data mocks from API calls, DB queries",
-      "license": "Apache-2.0",
-      "homepage": "https://keploy.io"
+      "desc": "Web search and scraping for agents",
+      "license": "MIT",
+      "homepage": "https://github.com/1broseidon/ketch"
     },
     "bottle": {
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-27T03:10:41Z",
+      "date": "2026-10-28T10:17:25Z",
       "tags": {
         "sequoia": {
-          "filename": "keploy-3.6.165.sequoia.bottle.tar.gz",
-          "local_filename": "keploy--3.6.165.sequoia.bottle.tar.gz",
-          "sha256": "fbd39a74725150424699cfc2feac94c2d6dcdb87af8b87f55491f16f2c2241c6",
+          "filename": "ketch-0.20.1.sequoia.bottle.tar.gz",
+          "local_filename": "ketch--0.20.1.sequoia.bottle.tar.gz",
+          "sha256": "c66a2345a892af59d9a03f41c22f10e61f5cd8d128b29027fefccee47872fc4b",
           "tab": {
             "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1793029710,
+            "source_modified_time": 1793167153,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -62,22 +62,27 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-keploy-src"
+                "relatedSpdxElement": "SPDXRef-Archive-ketch-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/keploy"
+            "bin/ketch"
           ],
           "all_files": [
-            ".brew/keploy.rb",
+            ".brew/ketch.rb",
+            "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
-            "bin/keploy",
-            "sbom.spdx.json"
+            "bin/ketch",
+            "etc/bash_completion.d/ketch",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/ketch.fish",
+            "share/pwsh/completions/_ketch.ps1",
+            "share/zsh/site-functions/_ketch"
           ],
-          "installed_size": 68153567
+          "installed_size": 22423325
         }
       }
     }

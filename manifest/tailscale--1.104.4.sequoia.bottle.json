@@ -1,34 +1,40 @@
 {
-  "spiffe-helper": {
+  "tailscale": {
     "formula": {
-      "name": "spiffe-helper",
-      "pkg_version": "0.12.2",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/spiffe-helper.rb",
-      "tap_git_path": "Formula/s/spiffe-helper.rb",
-      "tap_git_revision": "2e736d3ea76f6195fd8671a85721cbaf904728ba",
+      "name": "tailscale",
+      "pkg_version": "1.104.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/tailscale.rb",
+      "tap_git_path": "Formula/t/tailscale.rb",
+      "tap_git_revision": "88df29b84848582b3e554fbfae8c5c0b80beadbe",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Tool that can be used to retrieve and manage SVIDs on behalf of a workload",
-      "license": "Apache-2.0",
-      "homepage": "https://github.com/spiffe/spiffe-helper"
+      "desc": "Easiest, most secure way to use WireGuard and 2FA",
+      "license": "BSD-3-Clause",
+      "homepage": "https://tailscale.com"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-10T02:41:12Z",
+      "date": "2026-10-28T10:36:20Z",
       "tags": {
         "sequoia": {
-          "filename": "spiffe-helper-0.12.2.sequoia.bottle.tar.gz",
-          "local_filename": "spiffe-helper--0.12.2.sequoia.bottle.tar.gz",
-          "sha256": "f820523c4637eb2caa4af5d3575deff83bb188b3ad72c9fa5bbd8e205dd3611e",
+          "filename": "tailscale-1.104.4.sequoia.bottle.tar.gz",
+          "local_filename": "tailscale--1.104.4.sequoia.bottle.tar.gz",
+          "sha256": "14c34d6e8988c354ca9003d5bf9aa3954caa15eded5c4a6a91a2520bfa0e739d",
           "tab": {
-            "homebrew_version": "7.0.9",
-            "changed_files": [],
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              "sh.brew.tailscale.plist",
+              "sh.brew.tailscale.service"
+            ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1791176340,
+            "source_modified_time": 1793141161,
             "compiler": "clang",
             "runtime_dependencies": [],
+            "source": {
+              "scm_revision": "27047635f237d1f3e0b08c0f487674757f30d2f7"
+            },
             "arch": "x86_64",
             "built_on": {
               "os": "Macintosh",
@@ -62,22 +68,30 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-spiffe-helper-src"
+                "relatedSpdxElement": "SPDXRef-Archive-tailscale-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/spiffe-helper"
+            "bin/tailscale",
+            "bin/tailscaled"
           ],
           "all_files": [
-            ".brew/spiffe-helper.rb",
+            ".brew/tailscale.rb",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
-            "bin/spiffe-helper",
-            "sbom.spdx.json"
+            "bin/tailscale",
+            "bin/tailscaled",
+            "etc/bash_completion.d/tailscale",
+            "sbom.spdx.json",
+            "sh.brew.tailscale.plist",
+            "sh.brew.tailscale.service",
+            "share/fish/vendor_completions.d/tailscale.fish",
+            "share/pwsh/completions/_tailscale.ps1",
+            "share/zsh/site-functions/_tailscale"
           ],
-          "installed_size": 17607103
+          "installed_size": 42996609
         }
       }
     }
