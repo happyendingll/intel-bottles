@@ -1,0 +1,266 @@
+{
+  "samtools": {
+    "formula": {
+      "name": "samtools",
+      "pkg_version": "1.25",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/samtools.rb",
+      "tap_git_path": "Formula/s/samtools.rb",
+      "tap_git_revision": "48066540ea29fa2cd54235dc7365677aab423230",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Tools for manipulating next-generation sequencing data",
+      "license": "MIT",
+      "homepage": "https://www.htslib.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-28T06:43:57Z",
+      "tags": {
+        "sequoia": {
+          "filename": "samtools-1.25.sequoia.bottle.tar.gz",
+          "local_filename": "samtools--1.25.sequoia.bottle.tar.gz",
+          "sha256": "89150cafd226da131ce593ff0c80a49a75c5856254c8b4d11c029faa347d4ffc",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/ace2sam",
+              "bin/md5fa",
+              "bin/md5sum-lite",
+              "bin/samtools",
+              "bin/wgsim"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1793088707,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libdeflate",
+                "version": "1.26",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.26",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "htslib",
+                "version": "1.25",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.25",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-htslib-1.2e.25",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-htslib-1.2e.25",
+                "name": "htslib",
+                "versionInfo": "1.25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/htslib-1.25.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "735e8ed00ca013dd61d58d97518fb71556ceb8a8b47155e8510d75e06d109b6b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/htslib@1.25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-samtools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-htslib-1.2e.25",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-samtools"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-samtools-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/interpolate_sam.pl",
+            "bin/seq_cache_populate.py",
+            "bin/seq_cache_populate.pl",
+            "bin/ace2sam",
+            "bin/samtools.pl",
+            "bin/export2sam.pl",
+            "bin/blast2sam.pl",
+            "bin/maq2sam-short",
+            "bin/zoom2sam.pl",
+            "bin/plot-bamstats",
+            "bin/wgsim_eval.pl",
+            "bin/md5sum-lite",
+            "bin/soap2sam.pl",
+            "bin/sam2vcf.pl",
+            "bin/wgsim",
+            "bin/md5fa",
+            "bin/bowtie2sam.pl",
+            "bin/maq2sam-long",
+            "bin/novo2sam.pl",
+            "bin/psl2sam.pl",
+            "bin/samtools",
+            "bin/plot-ampliconstats",
+            "bin/fasta-sanitize.pl"
+          ],
+          "all_files": [
+            ".brew/samtools.rb",
+            "AUTHORS",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NEWS.md",
+            "README",
+            "bin/ace2sam",
+            "bin/blast2sam.pl",
+            "bin/bowtie2sam.pl",
+            "bin/export2sam.pl",
+            "bin/fasta-sanitize.pl",
+            "bin/interpolate_sam.pl",
+            "bin/maq2sam-long",
+            "bin/maq2sam-short",
+            "bin/md5fa",
+            "bin/md5sum-lite",
+            "bin/novo2sam.pl",
+            "bin/plot-ampliconstats",
+            "bin/plot-bamstats",
+            "bin/psl2sam.pl",
+            "bin/sam2vcf.pl",
+            "bin/samtools",
+            "bin/samtools.pl",
+            "bin/seq_cache_populate.pl",
+            "bin/seq_cache_populate.py",
+            "bin/soap2sam.pl",
+            "bin/wgsim",
+            "bin/wgsim_eval.pl",
+            "bin/zoom2sam.pl",
+            "sbom.spdx.json",
+            "share/man/man1/samtools-addreplacerg.1",
+            "share/man/man1/samtools-ampliconclip.1",
+            "share/man/man1/samtools-ampliconstats.1",
+            "share/man/man1/samtools-bedcov.1",
+            "share/man/man1/samtools-calmd.1",
+            "share/man/man1/samtools-cat.1",
+            "share/man/man1/samtools-checksum.1",
+            "share/man/man1/samtools-collate.1",
+            "share/man/man1/samtools-consensus.1",
+            "share/man/man1/samtools-coverage.1",
+            "share/man/man1/samtools-cram-size.1",
+            "share/man/man1/samtools-depad.1",
+            "share/man/man1/samtools-depth.1",
+            "share/man/man1/samtools-dict.1",
+            "share/man/man1/samtools-faidx.1",
+            "share/man/man1/samtools-fasta.1",
+            "share/man/man1/samtools-fastq.1",
+            "share/man/man1/samtools-fixmate.1",
+            "share/man/man1/samtools-flags.1",
+            "share/man/man1/samtools-flagstat.1",
+            "share/man/man1/samtools-fqidx.1",
+            "share/man/man1/samtools-head.1",
+            "share/man/man1/samtools-idxstats.1",
+            "share/man/man1/samtools-import.1",
+            "share/man/man1/samtools-index.1",
+            "share/man/man1/samtools-markdup.1",
+            "share/man/man1/samtools-merge.1",
+            "share/man/man1/samtools-mpileup.1",
+            "share/man/man1/samtools-phase.1",
+            "share/man/man1/samtools-quickcheck.1",
+            "share/man/man1/samtools-reference.1",
+            "share/man/man1/samtools-reheader.1",
+            "share/man/man1/samtools-reset.1",
+            "share/man/man1/samtools-rmdup.1",
+            "share/man/man1/samtools-samples.1",
+            "share/man/man1/samtools-sort.1",
+            "share/man/man1/samtools-split.1",
+            "share/man/man1/samtools-stats.1",
+            "share/man/man1/samtools-targetcut.1",
+            "share/man/man1/samtools-tview.1",
+            "share/man/man1/samtools-view.1",
+            "share/man/man1/samtools.1",
+            "share/man/man1/wgsim.1"
+          ],
+          "installed_size": 1529104
+        }
+      }
+    }
+  }
+}

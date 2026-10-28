@@ -1,0 +1,190 @@
+{
+  "siege": {
+    "formula": {
+      "name": "siege",
+      "pkg_version": "4.2.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/siege.rb",
+      "tap_git_path": "Formula/s/siege.rb",
+      "tap_git_revision": "48066540ea29fa2cd54235dc7365677aab423230",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "HTTP regression testing and benchmarking utility",
+      "license": "GPL-3.0-or-later",
+      "homepage": "https://www.joedog.org/siege"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-28T06:45:05Z",
+      "tags": {
+        "sequoia": {
+          "filename": "siege-4.2.2.sequoia.bottle.tar.gz",
+          "local_filename": "siege--4.2.2.sequoia.bottle.tar.gz",
+          "sha256": "cded3d2c31b0d885d341d12feb6f6005ffea83f8eaba8946be77b332ee094f0f",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/siege"
+            ],
+            "binary_relocation_files": [
+              "bin/siege"
+            ],
+            "source_modified_time": 1793128633,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-10-20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-10-20",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.1.0",
+                "declared_directly": true
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/siege",
+              "string": "/usr/local/Cellar/siege/4.2.2/etc/siegerc",
+              "offset": 102714
+            },
+            {
+              "path": "bin/siege",
+              "string": "/usr/local/Cellar/siege/4.2.2/etc/urls.txt",
+              "offset": 102937
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "name": "ca-certificates",
+                "versionInfo": "2026-10-20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "name": "openssl@4",
+                "versionInfo": "4.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-siege"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-siege"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-siege-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/bombardment",
+            "bin/siege.config",
+            "bin/siege",
+            "bin/siege2csv.pl"
+          ],
+          "all_files": [
+            ".brew/siege.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/bombardment",
+            "bin/siege",
+            "bin/siege.config",
+            "bin/siege2csv.pl",
+            "etc/siegerc",
+            "etc/urls.txt",
+            "sbom.spdx.json",
+            "share/man/man1/bombardment.1",
+            "share/man/man1/siege.1",
+            "share/man/man1/siege.config.1",
+            "share/man/man1/siege2csv.1"
+          ],
+          "installed_size": 323338
+        }
+      }
+    }
+  }
+}
