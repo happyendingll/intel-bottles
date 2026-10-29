@@ -1,0 +1,1615 @@
+{
+  "qemu": {
+    "formula": {
+      "name": "qemu",
+      "pkg_version": "11.1.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/q/qemu.rb",
+      "tap_git_path": "Formula/q/qemu.rb",
+      "tap_git_revision": "abda4eb3d1a7ed14d2f6e9f15dcb0cce2386e553",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Generic machine emulator and virtualizer",
+      "license": "GPL-2.0-only",
+      "homepage": "https://www.qemu.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-29T22:30:17Z",
+      "tags": {
+        "sequoia": {
+          "filename": "qemu-11.1.3.sequoia.bottle.tar.gz",
+          "local_filename": "qemu--11.1.3.sequoia.bottle.tar.gz",
+          "sha256": "a42431fe4e15609c61d26c5b781383a0bd16dc4f58bd9e87258ecf16775fe347",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              "share/qemu/firmware/50-edk2-i386-secure.json",
+              "share/qemu/firmware/50-edk2-x86_64-secure.json",
+              "share/qemu/firmware/60-edk2-aarch64.json",
+              "share/qemu/firmware/60-edk2-arm.json",
+              "share/qemu/firmware/60-edk2-i386.json",
+              "share/qemu/firmware/60-edk2-loongarch64.json",
+              "share/qemu/firmware/60-edk2-riscv64.json",
+              "share/qemu/firmware/60-edk2-x86_64.json"
+            ],
+            "linkage_files": [
+              "bin/elf2dmp",
+              "bin/qemu-edid",
+              "bin/qemu-img",
+              "bin/qemu-io",
+              "bin/qemu-nbd",
+              "bin/qemu-storage-daemon",
+              "bin/qemu-system-aarch64",
+              "bin/qemu-system-alpha",
+              "bin/qemu-system-arm",
+              "bin/qemu-system-avr",
+              "bin/qemu-system-hexagon",
+              "bin/qemu-system-hppa",
+              "bin/qemu-system-i386",
+              "bin/qemu-system-loongarch64",
+              "bin/qemu-system-m68k",
+              "bin/qemu-system-microblaze",
+              "bin/qemu-system-mips",
+              "bin/qemu-system-mips64",
+              "bin/qemu-system-mips64el",
+              "bin/qemu-system-mipsel",
+              "bin/qemu-system-or1k",
+              "bin/qemu-system-ppc",
+              "bin/qemu-system-ppc64",
+              "bin/qemu-system-riscv32",
+              "bin/qemu-system-riscv64",
+              "bin/qemu-system-rx",
+              "bin/qemu-system-s390x",
+              "bin/qemu-system-sh4",
+              "bin/qemu-system-sh4eb",
+              "bin/qemu-system-sparc",
+              "bin/qemu-system-sparc64",
+              "bin/qemu-system-tricore",
+              "bin/qemu-system-x86_64",
+              "bin/qemu-system-xtensa",
+              "bin/qemu-system-xtensaeb"
+            ],
+            "binary_relocation_files": [
+              "bin/qemu-edid",
+              "bin/qemu-img",
+              "bin/qemu-io",
+              "bin/qemu-nbd",
+              "bin/qemu-storage-daemon",
+              "bin/qemu-system-aarch64",
+              "bin/qemu-system-alpha",
+              "bin/qemu-system-arm",
+              "bin/qemu-system-avr",
+              "bin/qemu-system-hexagon",
+              "bin/qemu-system-hppa",
+              "bin/qemu-system-i386",
+              "bin/qemu-system-loongarch64",
+              "bin/qemu-system-m68k",
+              "bin/qemu-system-microblaze",
+              "bin/qemu-system-mips",
+              "bin/qemu-system-mips64",
+              "bin/qemu-system-mips64el",
+              "bin/qemu-system-mipsel",
+              "bin/qemu-system-or1k",
+              "bin/qemu-system-ppc",
+              "bin/qemu-system-ppc64",
+              "bin/qemu-system-riscv32",
+              "bin/qemu-system-riscv64",
+              "bin/qemu-system-rx",
+              "bin/qemu-system-s390x",
+              "bin/qemu-system-sh4",
+              "bin/qemu-system-sh4eb",
+              "bin/qemu-system-sparc",
+              "bin/qemu-system-sparc64",
+              "bin/qemu-system-tricore",
+              "bin/qemu-system-x86_64",
+              "bin/qemu-system-xtensa",
+              "bin/qemu-system-xtensaeb"
+            ],
+            "source_modified_time": 1793217765,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "json-c",
+                "version": "0.19",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.19",
+                "declared_directly": false
+              },
+              {
+                "full_name": "libunistring",
+                "version": "1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gettext",
+                "version": "1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "capstone",
+                "version": "5.0.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.0.9",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libyaml",
+                "version": "0.2.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.2.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "dtc",
+                "version": "1.8.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.8.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pcre2",
+                "version": "10.49",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "10.49",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "glib",
+                "version": "2.90.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.90.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-10-20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-10-20",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libidn2",
+                "version": "2.3.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtasn1",
+                "version": "4.21.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.21.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "nettle",
+                "version": "4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "p11-kit",
+                "version": "0.26.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.26.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gnutls",
+                "version": "3.8.13",
+                "revision": 2,
+                "bottle_rebuild": 1,
+                "pkg_version": "3.8.13_2",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "jpeg-turbo",
+                "version": "3.2.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libpng",
+                "version": "1.6.59",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.59",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libslirp",
+                "version": "4.9.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.9.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libssh",
+                "version": "0.12.2",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.12.2_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libusb",
+                "version": "1.0.30",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.30",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": true
+              },
+              {
+                "full_name": "ncurses",
+                "version": "6.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pixman",
+                "version": "0.46.4",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "0.46.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "snappy",
+                "version": "1.3.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "vde",
+                "version": "2.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.3.3",
+                "declared_directly": true
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.10.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.10.0",
+                "declared_directly": false
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/qemu-system-alpha",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 4628425
+            },
+            {
+              "path": "bin/qemu-system-alpha",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5434006
+            },
+            {
+              "path": "bin/qemu-system-alpha",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5434165
+            },
+            {
+              "path": "bin/qemu-system-alpha",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5437175
+            },
+            {
+              "path": "bin/qemu-system-sparc",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 3495995
+            },
+            {
+              "path": "bin/qemu-system-sparc",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 4100971
+            },
+            {
+              "path": "bin/qemu-system-sparc",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 4101130
+            },
+            {
+              "path": "bin/qemu-system-sparc",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 4104140
+            },
+            {
+              "path": "bin/qemu-storage-daemon",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 1536945
+            },
+            {
+              "path": "bin/qemu-storage-daemon",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 1537104
+            },
+            {
+              "path": "bin/qemu-system-sh4",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 4620660
+            },
+            {
+              "path": "bin/qemu-system-sh4",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5431052
+            },
+            {
+              "path": "bin/qemu-system-sh4",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5431211
+            },
+            {
+              "path": "bin/qemu-system-sh4",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5434221
+            },
+            {
+              "path": "bin/qemu-img",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 1331854
+            },
+            {
+              "path": "bin/qemu-img",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 1332013
+            },
+            {
+              "path": "bin/qemu-system-xtensa",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5101238
+            },
+            {
+              "path": "bin/qemu-system-xtensa",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5978992
+            },
+            {
+              "path": "bin/qemu-system-xtensa",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5979151
+            },
+            {
+              "path": "bin/qemu-system-xtensa",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5982161
+            },
+            {
+              "path": "bin/qemu-system-avr",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 3335613
+            },
+            {
+              "path": "bin/qemu-system-avr",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 3890883
+            },
+            {
+              "path": "bin/qemu-system-avr",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 3891042
+            },
+            {
+              "path": "bin/qemu-system-avr",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 3894052
+            },
+            {
+              "path": "bin/qemu-system-sparc64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 4710295
+            },
+            {
+              "path": "bin/qemu-system-sparc64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5521105
+            },
+            {
+              "path": "bin/qemu-system-sparc64",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5521264
+            },
+            {
+              "path": "bin/qemu-system-sparc64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5524274
+            },
+            {
+              "path": "bin/qemu-system-riscv32",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5749622
+            },
+            {
+              "path": "bin/qemu-system-riscv32",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6639591
+            },
+            {
+              "path": "bin/qemu-system-riscv32",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6639750
+            },
+            {
+              "path": "bin/qemu-system-riscv32",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6642760
+            },
+            {
+              "path": "bin/qemu-system-m68k",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 3855580
+            },
+            {
+              "path": "bin/qemu-system-m68k",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 4509754
+            },
+            {
+              "path": "bin/qemu-system-m68k",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 4509913
+            },
+            {
+              "path": "bin/qemu-system-m68k",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 4512923
+            },
+            {
+              "path": "bin/qemu-system-tricore",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 3437853
+            },
+            {
+              "path": "bin/qemu-system-tricore",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 3981790
+            },
+            {
+              "path": "bin/qemu-system-tricore",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 3981949
+            },
+            {
+              "path": "bin/qemu-system-tricore",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 3984959
+            },
+            {
+              "path": "bin/qemu-system-microblaze",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 3414713
+            },
+            {
+              "path": "bin/qemu-system-microblaze",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 3992537
+            },
+            {
+              "path": "bin/qemu-system-microblaze",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 3992696
+            },
+            {
+              "path": "bin/qemu-system-microblaze",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 3995706
+            },
+            {
+              "path": "bin/qemu-system-mipsel",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5288853
+            },
+            {
+              "path": "bin/qemu-system-mipsel",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6129391
+            },
+            {
+              "path": "bin/qemu-system-mipsel",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6129550
+            },
+            {
+              "path": "bin/qemu-system-mipsel",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6132560
+            },
+            {
+              "path": "bin/qemu-system-sh4eb",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 4620676
+            },
+            {
+              "path": "bin/qemu-system-sh4eb",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5431066
+            },
+            {
+              "path": "bin/qemu-system-sh4eb",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5431225
+            },
+            {
+              "path": "bin/qemu-system-sh4eb",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5434235
+            },
+            {
+              "path": "bin/qemu-system-aarch64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 8897351
+            },
+            {
+              "path": "bin/qemu-system-aarch64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 10087104
+            },
+            {
+              "path": "bin/qemu-system-aarch64",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 10087263
+            },
+            {
+              "path": "bin/qemu-system-aarch64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 10090273
+            },
+            {
+              "path": "bin/qemu-nbd",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 1383022
+            },
+            {
+              "path": "bin/qemu-nbd",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 1383181
+            },
+            {
+              "path": "bin/qemu-edid",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 328305
+            },
+            {
+              "path": "bin/qemu-edid",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 328464
+            },
+            {
+              "path": "bin/qemu-system-loongarch64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5223522
+            },
+            {
+              "path": "bin/qemu-system-loongarch64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6059219
+            },
+            {
+              "path": "bin/qemu-system-loongarch64",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6059378
+            },
+            {
+              "path": "bin/qemu-system-loongarch64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6062388
+            },
+            {
+              "path": "bin/qemu-system-ppc",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5618793
+            },
+            {
+              "path": "bin/qemu-system-ppc",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6534087
+            },
+            {
+              "path": "bin/qemu-system-ppc",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6534246
+            },
+            {
+              "path": "bin/qemu-system-ppc",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6537256
+            },
+            {
+              "path": "bin/qemu-system-hppa",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 4713562
+            },
+            {
+              "path": "bin/qemu-system-hppa",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5523839
+            },
+            {
+              "path": "bin/qemu-system-hppa",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5523998
+            },
+            {
+              "path": "bin/qemu-system-hppa",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5527008
+            },
+            {
+              "path": "bin/qemu-system-mips64el",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5517839
+            },
+            {
+              "path": "bin/qemu-system-mips64el",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6385573
+            },
+            {
+              "path": "bin/qemu-system-mips64el",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6385732
+            },
+            {
+              "path": "bin/qemu-system-mips64el",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6388742
+            },
+            {
+              "path": "bin/qemu-system-or1k",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 4551453
+            },
+            {
+              "path": "bin/qemu-system-or1k",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5349496
+            },
+            {
+              "path": "bin/qemu-system-or1k",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5349655
+            },
+            {
+              "path": "bin/qemu-system-or1k",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5352665
+            },
+            {
+              "path": "bin/qemu-system-i386",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5534865
+            },
+            {
+              "path": "bin/qemu-system-i386",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6464344
+            },
+            {
+              "path": "bin/qemu-system-i386",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6464503
+            },
+            {
+              "path": "bin/qemu-system-i386",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6467513
+            },
+            {
+              "path": "bin/qemu-system-mips64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5357077
+            },
+            {
+              "path": "bin/qemu-system-mips64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6202326
+            },
+            {
+              "path": "bin/qemu-system-mips64",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6202485
+            },
+            {
+              "path": "bin/qemu-system-mips64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6205495
+            },
+            {
+              "path": "bin/qemu-system-rx",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 3366669
+            },
+            {
+              "path": "bin/qemu-system-rx",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 3914480
+            },
+            {
+              "path": "bin/qemu-system-rx",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 3914639
+            },
+            {
+              "path": "bin/qemu-system-rx",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 3917649
+            },
+            {
+              "path": "bin/qemu-system-riscv64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5818630
+            },
+            {
+              "path": "bin/qemu-system-riscv64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 6715896
+            },
+            {
+              "path": "bin/qemu-system-riscv64",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 6716055
+            },
+            {
+              "path": "bin/qemu-system-riscv64",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 6719065
+            },
+            {
+              "path": "bin/qemu-system-xtensaeb",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/icons/hicolor/512x512/apps/qemu.png",
+              "offset": 5089526
+            },
+            {
+              "path": "bin/qemu-system-xtensaeb",
+              "string": "/usr/local/Cellar/qemu/11.1.3/bin",
+              "offset": 5967182
+            },
+            {
+              "path": "bin/qemu-system-xtensaeb",
+              "string": "/usr/local/Cellar/qemu/11.1.3",
+              "offset": 5967341
+            },
+            {
+              "path": "bin/qemu-system-xtensaeb",
+              "string": "/usr/local/Cellar/qemu/11.1.3/share/qemu",
+              "offset": 5970351
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-libslirp-4.2e.9.2e.6",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-libssh-0.2e.12.2e.2.5f.1",
+              "SPDXRef-Package-SPDXRef-snappy-1.2e.3.2e.1",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "name": "json-c",
+                "versionInfo": "0.19",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/json-c-0.19.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "54b1ea4e838b1bc38454e736f8755ef2505463386ba4bc0ce504a16616db42ce"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/json-c@0.19",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "name": "libunistring",
+                "versionInfo": "1.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libunistring-1.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8854773975603bc6243e11dc7d95fb33bba3e348337d95c44411052ef8870097"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "name": "gettext",
+                "versionInfo": "1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gettext-1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a1518c28813e4af65411fd389efbe936dceb50fa4e99750d6a9c72e0918176f3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gettext@1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "name": "pcre2",
+                "versionInfo": "10.49",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/pcre2-10.49.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a15c4625444924cb9c0c52dc427dfc576a8433855527a2fb1a6be2bff6751567"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pcre2@10.49",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+                "name": "glib",
+                "versionInfo": "2.90.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/glib-2.90.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c278516bcbe698fdd998d76e4b796661a8e612122732435a1736cd5b8b9d7481"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "name": "ca-certificates",
+                "versionInfo": "2026-10-20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "name": "p11-kit",
+                "versionInfo": "0.26.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/p11-kit-0.26.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ee01fce79642e0693fd6bb9024aeb3e684bddfcf797ad6cb9ba8907c24742162"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/p11-kit@0.26.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
+                "name": "jpeg-turbo",
+                "versionInfo": "3.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/jpeg-turbo-3.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "08604a4526542209098e03ace1ee6ae9344016b3e17796431e3a4d23f4948e7b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "name": "libpng",
+                "versionInfo": "1.6.59",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libpng-1.6.59.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "0af47c587a33d8f7f6aebdf4653f35897ec0f223104e5186edaef52dc2e17caa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libslirp-4.2e.9.2e.6",
+                "name": "libslirp",
+                "versionInfo": "4.9.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/libslirp-4.9.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5c5f5752f932e0ad7f5d3606e4021c6cbee3fe1632b0dc33e4f45b11706c7fc"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libslirp@4.9.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "name": "openssl@4",
+                "versionInfo": "4.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libssh-0.2e.12.2e.2.5f.1",
+                "name": "libssh",
+                "versionInfo": "0.12.2_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libssh-0.12.2_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1ff8d67b968d52c3839a7d0a57784ae040d0bd0e681aace4e095551a0fda1e03"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libssh@0.12.2_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-snappy-1.2e.3.2e.1",
+                "name": "snappy",
+                "versionInfo": "1.3.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/snappy-1.3.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "72b0b0928c9a5cfd99e13d06cd67048d6a75e89bdd295fc1056017a3945e3d6d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/snappy@1.3.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.10.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libslirp-4.2e.9.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libssh-0.2e.12.2e.2.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-snappy-1.2e.3.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-qemu"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-qemu-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/qemu-system-alpha",
+            "bin/qemu-system-sparc",
+            "bin/qemu-storage-daemon",
+            "bin/qemu-system-sh4",
+            "bin/qemu-img",
+            "bin/qemu-system-xtensa",
+            "bin/qemu-system-avr",
+            "bin/qemu-system-sparc64",
+            "bin/qemu-system-riscv32",
+            "bin/qemu-system-m68k",
+            "bin/qemu-system-tricore",
+            "bin/qemu-system-microblaze",
+            "bin/qemu-system-mipsel",
+            "bin/qemu-system-sh4eb",
+            "bin/qemu-system-aarch64",
+            "bin/qemu-nbd",
+            "bin/qemu-edid",
+            "bin/qemu-system-loongarch64",
+            "bin/qemu-system-ppc",
+            "bin/qemu-system-hppa",
+            "bin/qemu-system-mips64el",
+            "bin/qemu-system-or1k",
+            "bin/qemu-system-i386",
+            "bin/elf2dmp",
+            "bin/qemu-system-mips64",
+            "bin/qemu-system-rx",
+            "bin/qemu-system-riscv64",
+            "bin/qemu-system-xtensaeb",
+            "bin/qemu-system-mips",
+            "bin/qemu-system-x86_64",
+            "bin/qemu-system-s390x",
+            "bin/qemu-system-hexagon",
+            "bin/qemu-io",
+            "bin/qemu-system-arm",
+            "bin/qemu-system-ppc64"
+          ],
+          "all_files": [
+            ".brew/qemu.rb",
+            "COPYING",
+            "COPYING.LIB",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.rst",
+            "bin/elf2dmp",
+            "bin/qemu-edid",
+            "bin/qemu-img",
+            "bin/qemu-io",
+            "bin/qemu-nbd",
+            "bin/qemu-storage-daemon",
+            "bin/qemu-system-aarch64",
+            "bin/qemu-system-alpha",
+            "bin/qemu-system-arm",
+            "bin/qemu-system-avr",
+            "bin/qemu-system-hexagon",
+            "bin/qemu-system-hppa",
+            "bin/qemu-system-i386",
+            "bin/qemu-system-loongarch64",
+            "bin/qemu-system-m68k",
+            "bin/qemu-system-microblaze",
+            "bin/qemu-system-mips",
+            "bin/qemu-system-mips64",
+            "bin/qemu-system-mips64el",
+            "bin/qemu-system-mipsel",
+            "bin/qemu-system-or1k",
+            "bin/qemu-system-ppc",
+            "bin/qemu-system-ppc64",
+            "bin/qemu-system-riscv32",
+            "bin/qemu-system-riscv64",
+            "bin/qemu-system-rx",
+            "bin/qemu-system-s390x",
+            "bin/qemu-system-sh4",
+            "bin/qemu-system-sh4eb",
+            "bin/qemu-system-sparc",
+            "bin/qemu-system-sparc64",
+            "bin/qemu-system-tricore",
+            "bin/qemu-system-x86_64",
+            "bin/qemu-system-xtensa",
+            "bin/qemu-system-xtensaeb",
+            "include/qemu-plugin.h",
+            "sbom.spdx.json",
+            "share/applications/qemu.desktop",
+            "share/icons/hicolor/128x128/apps/qemu.png",
+            "share/icons/hicolor/16x16/apps/qemu.png",
+            "share/icons/hicolor/24x24/apps/qemu.png",
+            "share/icons/hicolor/256x256/apps/qemu.png",
+            "share/icons/hicolor/32x32/apps/qemu.bmp",
+            "share/icons/hicolor/32x32/apps/qemu.png",
+            "share/icons/hicolor/48x48/apps/qemu.png",
+            "share/icons/hicolor/512x512/apps/qemu.png",
+            "share/icons/hicolor/64x64/apps/qemu.png",
+            "share/icons/hicolor/scalable/apps/qemu.svg",
+            "share/qemu/QEMU,cgthree.bin",
+            "share/qemu/QEMU,tcx.bin",
+            "share/qemu/ast27x0_bootrom.bin",
+            "share/qemu/bios-256k.bin",
+            "share/qemu/bios-microvm.bin",
+            "share/qemu/bios.bin",
+            "share/qemu/dtb/bamboo.dtb",
+            "share/qemu/dtb/canyonlands.dtb",
+            "share/qemu/dtb/pegasos1.dtb",
+            "share/qemu/dtb/pegasos2.dtb",
+            "share/qemu/dtb/petalogix-ml605.dtb",
+            "share/qemu/dtb/petalogix-s3adsp1800.dtb",
+            "share/qemu/edk2-aarch64-code.fd",
+            "share/qemu/edk2-arm-code.fd",
+            "share/qemu/edk2-arm-vars.fd",
+            "share/qemu/edk2-i386-code.fd",
+            "share/qemu/edk2-i386-secure-code.fd",
+            "share/qemu/edk2-i386-vars.fd",
+            "share/qemu/edk2-licenses.txt",
+            "share/qemu/edk2-loongarch64-code.fd",
+            "share/qemu/edk2-loongarch64-vars.fd",
+            "share/qemu/edk2-riscv-code.fd",
+            "share/qemu/edk2-riscv-vars.fd",
+            "share/qemu/edk2-x86_64-code.fd",
+            "share/qemu/edk2-x86_64-secure-code.fd",
+            "share/qemu/efi-e1000.rom",
+            "share/qemu/efi-e1000e.rom",
+            "share/qemu/efi-eepro100.rom",
+            "share/qemu/efi-ne2k_pci.rom",
+            "share/qemu/efi-pcnet.rom",
+            "share/qemu/efi-rtl8139.rom",
+            "share/qemu/efi-virtio.rom",
+            "share/qemu/efi-vmxnet3.rom",
+            "share/qemu/firmware/50-edk2-i386-secure.json",
+            "share/qemu/firmware/50-edk2-x86_64-secure.json",
+            "share/qemu/firmware/60-edk2-aarch64.json",
+            "share/qemu/firmware/60-edk2-arm.json",
+            "share/qemu/firmware/60-edk2-i386.json",
+            "share/qemu/firmware/60-edk2-loongarch64.json",
+            "share/qemu/firmware/60-edk2-riscv64.json",
+            "share/qemu/firmware/60-edk2-x86_64.json",
+            "share/qemu/hppa-firmware.img",
+            "share/qemu/hppa-firmware64.img",
+            "share/qemu/keymaps/ar",
+            "share/qemu/keymaps/bepo",
+            "share/qemu/keymaps/cz",
+            "share/qemu/keymaps/da",
+            "share/qemu/keymaps/de",
+            "share/qemu/keymaps/de-ch",
+            "share/qemu/keymaps/en-gb",
+            "share/qemu/keymaps/en-us",
+            "share/qemu/keymaps/es",
+            "share/qemu/keymaps/et",
+            "share/qemu/keymaps/fi",
+            "share/qemu/keymaps/fo",
+            "share/qemu/keymaps/fr",
+            "share/qemu/keymaps/fr-be",
+            "share/qemu/keymaps/fr-ca",
+            "share/qemu/keymaps/fr-ch",
+            "share/qemu/keymaps/hr",
+            "share/qemu/keymaps/hu",
+            "share/qemu/keymaps/is",
+            "share/qemu/keymaps/it",
+            "share/qemu/keymaps/ja",
+            "share/qemu/keymaps/lt",
+            "share/qemu/keymaps/lv",
+            "share/qemu/keymaps/mk",
+            "share/qemu/keymaps/nl",
+            "share/qemu/keymaps/no",
+            "share/qemu/keymaps/pl",
+            "share/qemu/keymaps/pt",
+            "share/qemu/keymaps/pt-br",
+            "share/qemu/keymaps/ru",
+            "share/qemu/keymaps/sl",
+            "share/qemu/keymaps/sv",
+            "share/qemu/keymaps/th",
+            "share/qemu/keymaps/tr",
+            "share/qemu/kvmvapic.bin",
+            "share/qemu/linuxboot_dma.bin",
+            "share/qemu/multiboot_dma.bin",
+            "share/qemu/npcm7xx_bootrom.bin",
+            "share/qemu/npcm8xx_bootrom.bin",
+            "share/qemu/openbios-ppc",
+            "share/qemu/openbios-sparc32",
+            "share/qemu/openbios-sparc64",
+            "share/qemu/opensbi-riscv32-generic-fw_dynamic.bin",
+            "share/qemu/opensbi-riscv64-generic-fw_dynamic.bin",
+            "share/qemu/palcode-clipper",
+            "share/qemu/pnv-pnor.bin",
+            "share/qemu/pvh.bin",
+            "share/qemu/pxe-e1000.rom",
+            "share/qemu/pxe-eepro100.rom",
+            "share/qemu/pxe-ne2k_pci.rom",
+            "share/qemu/pxe-pcnet.rom",
+            "share/qemu/pxe-rtl8139.rom",
+            "share/qemu/pxe-virtio.rom",
+            "share/qemu/qboot.rom",
+            "share/qemu/qemu-nsis.bmp",
+            "share/qemu/qemu_vga.ndrv",
+            "share/qemu/s390-ccw.img",
+            "share/qemu/skiboot.lid",
+            "share/qemu/slof.bin",
+            "share/qemu/trace-events-all",
+            "share/qemu/u-boot-sam460.bin",
+            "share/qemu/u-boot.e500",
+            "share/qemu/vgabios-ati.bin",
+            "share/qemu/vgabios-bochs-display.bin",
+            "share/qemu/vgabios-cirrus.bin",
+            "share/qemu/vgabios-qxl.bin",
+            "share/qemu/vgabios-ramfb.bin",
+            "share/qemu/vgabios-stdvga.bin",
+            "share/qemu/vgabios-virtio.bin",
+            "share/qemu/vgabios-vmware.bin",
+            "share/qemu/vgabios.bin",
+            "share/qemu/vof-nvram.bin",
+            "share/qemu/vof.bin"
+          ],
+          "installed_size": 716012082
+        }
+      }
+    }
+  }
+}
