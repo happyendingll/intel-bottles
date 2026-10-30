@@ -1,32 +1,38 @@
 {
-  "mongodb-atlas-cli": {
+  "agent-browser": {
     "formula": {
-      "name": "mongodb-atlas-cli",
-      "pkg_version": "1.59.3",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mongodb-atlas-cli.rb",
-      "tap_git_path": "Formula/m/mongodb-atlas-cli.rb",
-      "tap_git_revision": "ec15b974c06304e4842a55a5787a9e588421060e",
+      "name": "agent-browser",
+      "pkg_version": "0.41.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/a/agent-browser.rb",
+      "tap_git_path": "Formula/a/agent-browser.rb",
+      "tap_git_revision": "d8e65b665d00ec5ffa13b026f5693ebddd275326",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Atlas CLI enables you to manage your MongoDB Atlas",
+      "desc": "Browser automation CLI for AI agents",
       "license": "Apache-2.0",
-      "homepage": "https://www.mongodb.com/docs/atlas/cli/stable/"
+      "homepage": "https://agent-browser.dev/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-19T22:48:15Z",
+      "date": "2026-10-30T05:17:22Z",
       "tags": {
         "sequoia": {
-          "filename": "mongodb-atlas-cli-1.59.3.sequoia.bottle.tar.gz",
-          "local_filename": "mongodb-atlas-cli--1.59.3.sequoia.bottle.tar.gz",
-          "sha256": "976ccf68fc173d8f77a017ce6b715403747763a97a4b41222470b77f4652d18a",
+          "filename": "agent-browser-0.41.0.sequoia.bottle.tar.gz",
+          "local_filename": "agent-browser--0.41.0.sequoia.bottle.tar.gz",
+          "sha256": "b5fd0dfe3520f838afc2a2b12eb94e00784947a764132610b65156c45bf2eaba",
           "tab": {
-            "homebrew_version": "7.0.10",
-            "changed_files": [],
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              "libexec/lib/node_modules/agent-browser/bin/agent-browser.js",
+              "libexec/lib/node_modules/agent-browser/scripts/check-version-sync.js",
+              "libexec/lib/node_modules/agent-browser/scripts/copy-native.js",
+              "libexec/lib/node_modules/agent-browser/scripts/postinstall.js",
+              "libexec/lib/node_modules/agent-browser/scripts/sync-version.js"
+            ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792404721,
+            "source_modified_time": 1793241477,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -48,20 +54,20 @@
                 "compatibility_version": 2
               },
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "simdutf",
-                "version": "9.3.2",
+                "version": "9.3.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "9.3.2",
+                "pkg_version": "9.3.3",
                 "declared_directly": false,
                 "compatibility_version": 7
               },
@@ -76,19 +82,19 @@
               },
               {
                 "full_name": "brotli",
-                "version": "1.2.0",
+                "version": "1.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.2.0",
+                "pkg_version": "1.2.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "c-ares",
-                "version": "1.34.8",
+                "version": "1.34.9",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.34.8",
+                "pkg_version": "1.34.9",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -155,27 +161,28 @@
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
-                "declared_directly": false
+                "pkg_version": "4.1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "simdjson",
-                "version": "5.0.5",
+                "version": "5.0.6",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.0.5",
+                "pkg_version": "5.0.6",
                 "declared_directly": false
               },
               {
@@ -242,20 +249,11 @@
               },
               {
                 "full_name": "node",
-                "version": "26.12.0",
+                "version": "26.13.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.12.0",
-                "declared_directly": false
-              },
-              {
-                "full_name": "mongosh",
-                "version": "2.13.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "2.13.0",
-                "declared_directly": true,
-                "compatibility_version": 1
+                "pkg_version": "26.13.0",
+                "declared_directly": true
               }
             ],
             "arch": "x86_64",
@@ -271,44 +269,69 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.3",
               "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-c-ares-1.2e.34.2e.9",
               "SPDXRef-Package-SPDXRef-hdrhistogram.5f.c-0.2e.12.2e.1",
               "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
               "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
               "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.4",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
-              "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.5",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.6",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.0",
-              "SPDXRef-Package-SPDXRef-mongosh-2.2e.13.2e.0",
+              "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2",
-                "name": "simdutf",
-                "versionInfo": "9.3.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0 OR MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/simdutf-9.3.2.sequoia.bottle.tar.gz",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "933b8a70d91a76c8ed7778e6fd3378e9c5cca5f41623e2d6fc3165becd0c0329"
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdutf@9.3.2",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.3",
+                "name": "simdutf",
+                "versionInfo": "9.3.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 OR MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/simdutf-9.3.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6191f05778011965ee98554702d30563a59a141c81c678af0ac835f950d3eb19"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/simdutf@9.3.3",
                     "referenceType": "purl"
                   }
                 ]
@@ -332,6 +355,52 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/ada-url@4.0.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "name": "brotli",
+                "versionInfo": "1.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/brotli-1.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3727ba1da30425c234290f9665d73aa41a6684b5cf795d364d9526382f3580b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/brotli@1.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-c-ares-1.2e.34.2e.9",
+                "name": "c-ares",
+                "versionInfo": "1.34.9",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/c-ares-1.34.9.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1eb6108a6d08280ea1c020721d5f6bcc36f4d81d675320186a6432524d1f91d5"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/c-ares@1.34.9",
                     "referenceType": "purl"
                   }
                 ]
@@ -429,70 +498,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.6",
                 "name": "simdjson",
-                "versionInfo": "5.0.5",
+                "versionInfo": "5.0.6",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/simdjson-5.0.5.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/simdjson-5.0.6.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "1a311cd6de85730c10f52d36ea0e52ff5e016c99c74a3ae427a362bbdab2a328"
+                    "checksumValue": "77cbf2d13b0d873c0f9950c1900fc1da330f4948e4650671a9bee5797c6df00d"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdjson@5.0.5",
+                    "referenceLocator": "pkg:brew/simdjson@5.0.6",
                     "referenceType": "purl"
                   }
                 ]
@@ -613,47 +682,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0",
                 "name": "node",
-                "versionInfo": "26.12.0",
+                "versionInfo": "26.13.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/node-26.12.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/node-26.13.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "92a0467cd9d9de13c08a68e6f34252a63d3ccf5a07cd7340c073823f49b7983b"
+                    "checksumValue": "a18ae26fd7ade86e01df8dac105093d2a15c851686d26ca9ba56f95cca43be0d"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/node@26.12.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mongosh-2.2e.13.2e.0",
-                "name": "mongosh",
-                "versionInfo": "2.13.0",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/mongosh-2.13.0.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "aad319412649e5fc4ed309b61b2016ca88a56cf787d4d277ce72cfc53b17bb2c"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/mongosh@2.13.0",
+                    "referenceLocator": "pkg:brew/node@26.13.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -673,109 +719,155 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-c-ares-1.2e.34.2e.9",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-hdrhistogram.5f.c-0.2e.12.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mongosh-2.2e.13.2e.0",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-mongodb-atlas-cli"
+                "relatedSpdxElement": "SPDXRef-Bottle-agent-browser"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-mongodb-atlas-cli-src"
+                "relatedSpdxElement": "SPDXRef-Archive-agent-browser-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/atlas"
+            "bin/agent-browser"
           ],
           "all_files": [
-            ".brew/mongodb-atlas-cli.rb",
+            ".brew/agent-browser.rb",
             "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
-            "bin/atlas",
-            "etc/bash_completion.d/atlas",
-            "sbom.spdx.json",
-            "share/fish/vendor_completions.d/atlas.fish",
-            "share/pwsh/completions/_atlas.ps1",
-            "share/zsh/site-functions/_atlas"
+            "bin/agent-browser",
+            "libexec/bin/agent-browser",
+            "libexec/lib/node_modules/agent-browser/LICENSE",
+            "libexec/lib/node_modules/agent-browser/README.md",
+            "libexec/lib/node_modules/agent-browser/bin/agent-browser-darwin-x64",
+            "libexec/lib/node_modules/agent-browser/bin/agent-browser.js",
+            "libexec/lib/node_modules/agent-browser/cli/src/native/a11y/LICENSE-axe-core-THIRD-PARTY.txt",
+            "libexec/lib/node_modules/agent-browser/cli/src/native/a11y/LICENSE-axe-core.txt",
+            "libexec/lib/node_modules/agent-browser/package.json",
+            "libexec/lib/node_modules/agent-browser/scripts/build-all-platforms.sh",
+            "libexec/lib/node_modules/agent-browser/scripts/check-version-sync.js",
+            "libexec/lib/node_modules/agent-browser/scripts/copy-native.js",
+            "libexec/lib/node_modules/agent-browser/scripts/postinstall.js",
+            "libexec/lib/node_modules/agent-browser/scripts/sync-version.js",
+            "libexec/lib/node_modules/agent-browser/skill-data/agentcore/SKILL.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/SKILL.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/references/authentication.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/references/commands.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/references/profiling.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/references/proxy-support.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/references/session-management.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/references/snapshot-refs.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/references/streaming.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/references/trust-boundaries.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/references/video-recording.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/references/webgpu.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/templates/authenticated-session.sh",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/templates/capture-workflow.sh",
+            "libexec/lib/node_modules/agent-browser/skill-data/core/templates/form-automation.sh",
+            "libexec/lib/node_modules/agent-browser/skill-data/derive-client/SKILL.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/dogfood/SKILL.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/dogfood/references/issue-taxonomy.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/dogfood/templates/dogfood-report-template.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/electron/SKILL.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/protected-vercel-deployments/SKILL.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/slack/SKILL.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/slack/references/slack-tasks.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/slack/templates/slack-report-template.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/vercel-sandbox/SKILL.md",
+            "libexec/lib/node_modules/agent-browser/skill-data/webmcp-gen/SKILL.md",
+            "libexec/lib/node_modules/agent-browser/skills/agent-browser/SKILL.md",
+            "sbom.spdx.json"
           ],
-          "installed_size": 60912985
+          "installed_size": 15798135
         }
       }
     }

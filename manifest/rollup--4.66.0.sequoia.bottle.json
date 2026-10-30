@@ -1,34 +1,33 @@
 {
-  "fern-api": {
+  "rollup": {
     "formula": {
-      "name": "fern-api",
-      "pkg_version": "5.181.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/fern-api.rb",
-      "tap_git_path": "Formula/f/fern-api.rb",
-      "tap_git_revision": "453e040b10c5ee3715387b5cb16f6e625234a38e",
+      "name": "rollup",
+      "pkg_version": "4.66.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rollup.rb",
+      "tap_git_path": "Formula/r/rollup.rb",
+      "tap_git_revision": "d8e65b665d00ec5ffa13b026f5693ebddd275326",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Stripe-level SDKs and Docs for your API",
-      "license": "Apache-2.0",
-      "homepage": "https://buildwithfern.com/"
+      "desc": "Next-generation ES module bundler",
+      "license": "ISC AND MIT",
+      "homepage": "https://rollupjs.org/"
     },
     "bottle": {
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-28T20:45:29Z",
+      "date": "2026-10-30T06:13:33Z",
       "tags": {
         "sequoia": {
-          "filename": "fern-api-5.181.0.sequoia.bottle.tar.gz",
-          "local_filename": "fern-api--5.181.0.sequoia.bottle.tar.gz",
-          "sha256": "ce8c68b96538963dc2c17d3ceaeb61d6ca15ade26f98816fd9ccf22a56cd80b3",
+          "filename": "rollup-4.66.0.sequoia.bottle.tar.gz",
+          "local_filename": "rollup--4.66.0.sequoia.bottle.tar.gz",
+          "sha256": "226232d91775884aa044be495871b090b2962319953a51aaba9227accc76f020",
           "tab": {
             "homebrew_version": "7.0.11",
             "changed_files": [
-              "libexec/lib/node_modules/fern-api/cli.cjs",
-              "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/cli.js"
+              "libexec/lib/node_modules/rollup/dist/bin/rollup"
             ],
             "linkage_files": [
-              "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml-darwin-x64/baml.darwin-x64.node"
+              "libexec/lib/node_modules/rollup/node_modules/@rollup/rollup-darwin-x64/rollup.darwin-x64.node"
             ],
             "binary_relocation_files": [],
             "source_modified_time": 499162500,
@@ -173,7 +172,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "4.1.0",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "simdjson",
@@ -247,10 +247,10 @@
               },
               {
                 "full_name": "node",
-                "version": "26.12.1",
-                "revision": 1,
+                "version": "26.13.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.12.1_1",
+                "pkg_version": "26.13.0",
                 "declared_directly": true
               }
             ],
@@ -284,7 +284,7 @@
               "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.1.5f.1",
+              "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -680,24 +680,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.1.5f.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0",
                 "name": "node",
-                "versionInfo": "26.12.1_1",
+                "versionInfo": "26.13.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/node-26.12.1_1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/node-26.13.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "b55dbd78c32e1fbf63b91ec5334d9c929a45fa2146f4249c65da3948a36d813a"
+                    "checksumValue": "a18ae26fd7ade86e01df8dac105093d2a15c851686d26ca9ba56f95cca43be0d"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/node@26.12.1_1",
+                    "referenceLocator": "pkg:brew/node@26.13.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -719,146 +719,155 @@
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-c-ares-1.2e.34.2e.9",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-hdrhistogram.5f.c-0.2e.12.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.12.2e.1.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+                "relatedSpdxElement": "SPDXRef-Bottle-rollup"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-fern-api-src"
+                "relatedSpdxElement": "SPDXRef-Archive-rollup-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/fern"
+            "bin/rollup"
           ],
           "all_files": [
-            ".brew/fern-api.rb",
+            ".brew/rollup.rb",
             "INSTALL_RECEIPT.json",
-            "LICENSE",
-            "bin/fern",
-            "libexec/bin/fern",
-            "libexec/lib/node_modules/fern-api/LICENSE",
-            "libexec/lib/node_modules/fern-api/cli.cjs",
-            "libexec/lib/node_modules/fern-api/node_modules/.bin/baml",
-            "libexec/lib/node_modules/fern-api/node_modules/.bin/baml-cli",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/LICENSE",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/README.md",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/async_context_vars.d.ts",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/async_context_vars.js",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/browser.d.ts",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/browser.js",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/cli.js",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/errors.d.ts",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/errors.js",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/index.d.ts",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/index.js",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/logging.d.ts",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/logging.js",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/native.d.ts",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/native.js",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/package.json",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/safe_imports.d.ts",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/safe_imports.js",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/stream.d.ts",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/stream.js",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/type_builder.d.ts",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/type_builder.js",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml-darwin-x64/README.md",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml-darwin-x64/baml.darwin-x64.node",
-            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml-darwin-x64/package.json",
-            "libexec/lib/node_modules/fern-api/node_modules/@scarf/scarf/LICENSE",
-            "libexec/lib/node_modules/fern-api/node_modules/@scarf/scarf/README.md",
-            "libexec/lib/node_modules/fern-api/node_modules/@scarf/scarf/package.json",
-            "libexec/lib/node_modules/fern-api/node_modules/@scarf/scarf/report.js",
-            "libexec/lib/node_modules/fern-api/package.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/rollup",
+            "libexec/bin/rollup",
+            "libexec/lib/node_modules/rollup/LICENSE.md",
+            "libexec/lib/node_modules/rollup/README.md",
+            "libexec/lib/node_modules/rollup/dist/bin/rollup",
+            "libexec/lib/node_modules/rollup/dist/es/getLogFilter.js",
+            "libexec/lib/node_modules/rollup/dist/es/package.json",
+            "libexec/lib/node_modules/rollup/dist/es/parseAst.js",
+            "libexec/lib/node_modules/rollup/dist/es/rollup.js",
+            "libexec/lib/node_modules/rollup/dist/es/shared/node-entry.js",
+            "libexec/lib/node_modules/rollup/dist/es/shared/parseAst.js",
+            "libexec/lib/node_modules/rollup/dist/es/shared/watch.js",
+            "libexec/lib/node_modules/rollup/dist/getLogFilter.d.ts",
+            "libexec/lib/node_modules/rollup/dist/getLogFilter.js",
+            "libexec/lib/node_modules/rollup/dist/loadConfigFile.d.ts",
+            "libexec/lib/node_modules/rollup/dist/loadConfigFile.js",
+            "libexec/lib/node_modules/rollup/dist/native.js",
+            "libexec/lib/node_modules/rollup/dist/parseAst.d.ts",
+            "libexec/lib/node_modules/rollup/dist/parseAst.js",
+            "libexec/lib/node_modules/rollup/dist/rollup.d.ts",
+            "libexec/lib/node_modules/rollup/dist/rollup.js",
+            "libexec/lib/node_modules/rollup/dist/shared/fsevents-importer.js",
+            "libexec/lib/node_modules/rollup/dist/shared/index.js",
+            "libexec/lib/node_modules/rollup/dist/shared/loadConfigFile.js",
+            "libexec/lib/node_modules/rollup/dist/shared/node-entry.js",
+            "libexec/lib/node_modules/rollup/dist/shared/parseAst.js",
+            "libexec/lib/node_modules/rollup/dist/shared/rollup.js",
+            "libexec/lib/node_modules/rollup/dist/shared/watch-cli.js",
+            "libexec/lib/node_modules/rollup/dist/shared/watch.js",
+            "libexec/lib/node_modules/rollup/node_modules/@rollup/rollup-darwin-x64/README.md",
+            "libexec/lib/node_modules/rollup/node_modules/@rollup/rollup-darwin-x64/package.json",
+            "libexec/lib/node_modules/rollup/node_modules/@rollup/rollup-darwin-x64/rollup.darwin-x64.node",
+            "libexec/lib/node_modules/rollup/node_modules/@types/estree/LICENSE",
+            "libexec/lib/node_modules/rollup/node_modules/@types/estree/README.md",
+            "libexec/lib/node_modules/rollup/node_modules/@types/estree/flow.d.ts",
+            "libexec/lib/node_modules/rollup/node_modules/@types/estree/index.d.ts",
+            "libexec/lib/node_modules/rollup/node_modules/@types/estree/package.json",
+            "libexec/lib/node_modules/rollup/node_modules/fsevents/LICENSE",
+            "libexec/lib/node_modules/rollup/node_modules/fsevents/README.md",
+            "libexec/lib/node_modules/rollup/node_modules/fsevents/fsevents.d.ts",
+            "libexec/lib/node_modules/rollup/node_modules/fsevents/fsevents.js",
+            "libexec/lib/node_modules/rollup/node_modules/fsevents/fsevents.node",
+            "libexec/lib/node_modules/rollup/node_modules/fsevents/package.json",
+            "libexec/lib/node_modules/rollup/package.json",
             "sbom.spdx.json"
           ],
-          "installed_size": 74275520
+          "installed_size": 5151536
         }
       }
     }
