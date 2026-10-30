@@ -1,0 +1,135 @@
+{
+  "pandoc-crossref": {
+    "formula": {
+      "name": "pandoc-crossref",
+      "pkg_version": "0.3.26a",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pandoc-crossref.rb",
+      "tap_git_path": "Formula/p/pandoc-crossref.rb",
+      "tap_git_revision": "8ce00965922468dfe4d83dc63420426599acda98",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Pandoc filter for numbering and cross-referencing",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://lierdakil.github.io/pandoc-crossref/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-10-30T02:25:18Z",
+      "tags": {
+        "sequoia": {
+          "filename": "pandoc-crossref-0.3.26a.sequoia.bottle.tar.gz",
+          "local_filename": "pandoc-crossref--0.3.26a.sequoia.bottle.tar.gz",
+          "sha256": "f971220b58bb85e2d9370df917dbc26c906b078119591b28faa6eafb5d2d1222",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/pandoc-crossref"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1793270906,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pandoc",
+                "version": "3.13",
+                "revision": 0,
+                "pkg_version": "3.13",
+                "declared_directly": true,
+                "compatibility_version": 10
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-pandoc-crossref"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-pandoc-crossref-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/pandoc-crossref"
+          ],
+          "all_files": [
+            ".brew/pandoc-crossref.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/pandoc-crossref",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 55829456
+        }
+      }
+    }
+  }
+}
