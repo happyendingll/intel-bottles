@@ -1,0 +1,287 @@
+{
+  "lldpd": {
+    "formula": {
+      "name": "lldpd",
+      "pkg_version": "1.0.23",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/l/lldpd.rb",
+      "tap_git_path": "Formula/l/lldpd.rb",
+      "tap_git_revision": "a5b7916af50fa7ea6910c941c583fb581bed4de0",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Implementation of IEEE 802.1ab (LLDP)",
+      "license": "ISC",
+      "homepage": "https://lldpd.github.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-30T22:48:16Z",
+      "tags": {
+        "sequoia": {
+          "filename": "lldpd-1.0.23.sequoia.bottle.tar.gz",
+          "local_filename": "lldpd--1.0.23.sequoia.bottle.tar.gz",
+          "sha256": "1070c7b7bbdc82611d09607be3c5bdcdf68d8863b9cbf56d92e951e7732e1c1d",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              "lib/pkgconfig/lldpctl.pc",
+              "sh.brew.lldpd.plist",
+              "sh.brew.lldpd.service",
+              "share/man/man8/lldpcli.8",
+              "share/man/man8/lldpd.8"
+            ],
+            "linkage_files": [
+              "lib/liblldpctl.4.dylib",
+              "sbin/lldpcli",
+              "sbin/lldpd"
+            ],
+            "binary_relocation_files": [
+              "sbin/lldpd"
+            ],
+            "source_modified_time": 1792938184,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-10-20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-10-20",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libevent",
+                "version": "2.1.13",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.1.13_1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "sbin/lldpd",
+              "string": "/usr/local/Cellar/lldpd/1.0.23/sbin/lldpcli",
+              "offset": 95501
+            },
+            {
+              "path": "sbin/lldpd",
+              "string": "/usr/local/etc/lldpd.d",
+              "offset": 99663
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "name": "ca-certificates",
+                "versionInfo": "2026-10-20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "name": "openssl@4",
+                "versionInfo": "4.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "name": "libevent",
+                "versionInfo": "2.1.13_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libevent-2.1.13_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "633c29ac9023fd7a922d4204f529f117d0c3bb96bb70279a75cbabe4e6f3655e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libevent@2.1.13_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-lldpd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-lldpd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-lldpd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-lldpd"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-lldpd-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "sbin/lldpd",
+            "sbin/lldpctl",
+            "sbin/lldpcli"
+          ],
+          "all_files": [
+            ".bottle/etc/lldpd.d/README.conf",
+            ".brew/lldpd.rb",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NEWS",
+            "README.md",
+            "include/lldp-const.h",
+            "include/lldpctl.h",
+            "include/lldpctl.hpp",
+            "lib/liblldpctl.4.dylib",
+            "lib/liblldpctl.a",
+            "lib/liblldpctl.dylib",
+            "lib/pkgconfig/lldpctl.pc",
+            "sbin/lldpcli",
+            "sbin/lldpctl",
+            "sbin/lldpd",
+            "sbom.spdx.json",
+            "sh.brew.lldpd.plist",
+            "sh.brew.lldpd.service",
+            "share/bash-completion/completions/lldpcli",
+            "share/doc/lldpd/CONTRIBUTE.md",
+            "share/doc/lldpd/ChangeLog",
+            "share/doc/lldpd/LICENSE",
+            "share/doc/lldpd/NEWS",
+            "share/doc/lldpd/README.md",
+            "share/man/man8/lldpcli.8",
+            "share/man/man8/lldpctl.8",
+            "share/man/man8/lldpd.8",
+            "share/zsh/site-functions/_lldpcli"
+          ],
+          "installed_size": 1164204
+        }
+      }
+    }
+  }
+}
