@@ -1,0 +1,359 @@
+{
+  "squid": {
+    "formula": {
+      "name": "squid",
+      "pkg_version": "7.8",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/squid.rb",
+      "tap_git_path": "Formula/s/squid.rb",
+      "tap_git_revision": "422d39f26472c08bcae4d9e8dc39be630abfdfa1",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Advanced proxy caching server for HTTP, HTTPS, FTP, and Gopher",
+      "license": "GPL-2.0-or-later",
+      "homepage": "https://www.squid-cache.org/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-10-31T10:59:27Z",
+      "tags": {
+        "sequoia": {
+          "filename": "squid-7.8.sequoia.bottle.tar.gz",
+          "local_filename": "squid--7.8.sequoia.bottle.tar.gz",
+          "sha256": "8b38673c52b97c393f7d2da99d45b7f3d8984f6723e20b4a5c1e7f96f2bea478",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              ".bottle/etc/squid.conf.documented",
+              "sh.brew.squid.plist",
+              "sh.brew.squid.service",
+              "share/man/man8/security_file_certgen.8",
+              "share/man/man8/squid.8"
+            ],
+            "linkage_files": [
+              "libexec/basic_ncsa_auth",
+              "libexec/basic_radius_auth",
+              "libexec/digest_file_auth",
+              "libexec/security_file_certgen",
+              "sbin/squid"
+            ],
+            "binary_relocation_files": [
+              "libexec/basic_smb_auth",
+              "sbin/squid"
+            ],
+            "source_modified_time": 1793380801,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-10-20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-10-20",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@3",
+                "version": "3.5.9",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.5.9",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "libexec/basic_smb_auth",
+              "string": "/usr/local/Cellar/squid/7.8/libexec/basic_smb_auth.sh",
+              "offset": 9508
+            },
+            {
+              "path": "sbin/squid",
+              "string": "/usr/local/Cellar/squid/7.8/share/errors",
+              "offset": 3263332
+            },
+            {
+              "path": "sbin/squid",
+              "string": "/usr/local/etc/squid.conf",
+              "offset": 3286903
+            },
+            {
+              "path": "sbin/squid",
+              "string": "/usr/local/var/run/squid",
+              "offset": 3459838
+            },
+            {
+              "path": "sbin/squid",
+              "string": "/usr/local/var/run/squid/",
+              "offset": 3777568
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.5.2e.9",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "name": "ca-certificates",
+                "versionInfo": "2026-10-20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.5.2e.9",
+                "name": "openssl@3",
+                "versionInfo": "3.5.9",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/openssl%403-3.5.9.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7ac8149f4cd1fc10ef386c00a3c422228fabe7d4d0da461e641622eb7cd49b68"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%403@3.5.9",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-squid"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.3-3.2e.5.2e.9",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-squid"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-squid-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "sbin/squid"
+          ],
+          "all_files": [
+            ".bottle/etc/errorpage.css",
+            ".bottle/etc/errorpage.css.default",
+            ".bottle/etc/mime.conf",
+            ".bottle/etc/mime.conf.default",
+            ".bottle/etc/squid.conf",
+            ".bottle/etc/squid.conf.default",
+            ".bottle/etc/squid.conf.documented",
+            ".brew/squid.rb",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "libexec/basic_db_auth",
+            "libexec/basic_fake_auth",
+            "libexec/basic_getpwnam_auth",
+            "libexec/basic_ncsa_auth",
+            "libexec/basic_pam_auth",
+            "libexec/basic_pop3_auth",
+            "libexec/basic_radius_auth",
+            "libexec/basic_smb_auth",
+            "libexec/basic_smb_auth.sh",
+            "libexec/digest_file_auth",
+            "libexec/diskd",
+            "libexec/ext_delayer_acl",
+            "libexec/ext_file_userip_acl",
+            "libexec/ext_kerberos_sid_group_acl",
+            "libexec/ext_sql_session_acl",
+            "libexec/ext_unix_group_acl",
+            "libexec/ext_wbinfo_group_acl",
+            "libexec/helper-mux",
+            "libexec/log_db_daemon",
+            "libexec/log_file_daemon",
+            "libexec/negotiate_wrapper_auth",
+            "libexec/ntlm_fake_auth",
+            "libexec/security_fake_certverify",
+            "libexec/security_file_certgen",
+            "libexec/storeid_file_rewrite",
+            "libexec/unlinkd",
+            "libexec/url_fake_rewrite",
+            "libexec/url_fake_rewrite.sh",
+            "libexec/url_lfs_rewrite",
+            "sbin/squid",
+            "sbom.spdx.json",
+            "sh.brew.squid.plist",
+            "sh.brew.squid.service",
+            "share/errors/COPYRIGHT",
+            "share/errors/TRANSLATORS",
+            "share/errors/templates/ERR_ACCESS_DENIED",
+            "share/errors/templates/ERR_ACL_TIME_QUOTA_EXCEEDED",
+            "share/errors/templates/ERR_AGENT_CONFIGURE",
+            "share/errors/templates/ERR_AGENT_WPAD",
+            "share/errors/templates/ERR_CACHE_ACCESS_DENIED",
+            "share/errors/templates/ERR_CACHE_MGR_ACCESS_DENIED",
+            "share/errors/templates/ERR_CANNOT_FORWARD",
+            "share/errors/templates/ERR_CONFLICT_HOST",
+            "share/errors/templates/ERR_CONNECT_FAIL",
+            "share/errors/templates/ERR_DIR_LISTING",
+            "share/errors/templates/ERR_DNS_FAIL",
+            "share/errors/templates/ERR_ESI",
+            "share/errors/templates/ERR_FORWARDING_DENIED",
+            "share/errors/templates/ERR_FTP_DISABLED",
+            "share/errors/templates/ERR_FTP_FAILURE",
+            "share/errors/templates/ERR_FTP_FORBIDDEN",
+            "share/errors/templates/ERR_FTP_NOT_FOUND",
+            "share/errors/templates/ERR_FTP_PUT_CREATED",
+            "share/errors/templates/ERR_FTP_PUT_ERROR",
+            "share/errors/templates/ERR_FTP_PUT_MODIFIED",
+            "share/errors/templates/ERR_FTP_UNAVAILABLE",
+            "share/errors/templates/ERR_GATEWAY_FAILURE",
+            "share/errors/templates/ERR_ICAP_FAILURE",
+            "share/errors/templates/ERR_INVALID_REQ",
+            "share/errors/templates/ERR_INVALID_RESP",
+            "share/errors/templates/ERR_INVALID_URL",
+            "share/errors/templates/ERR_LIFETIME_EXP",
+            "share/errors/templates/ERR_NO_RELAY",
+            "share/errors/templates/ERR_ONLY_IF_CACHED_MISS",
+            "share/errors/templates/ERR_PRECONDITION_FAILED",
+            "share/errors/templates/ERR_PROTOCOL_UNKNOWN",
+            "share/errors/templates/ERR_READ_ERROR",
+            "share/errors/templates/ERR_READ_TIMEOUT",
+            "share/errors/templates/ERR_SECURE_CONNECT_FAIL",
+            "share/errors/templates/ERR_SHUTTING_DOWN",
+            "share/errors/templates/ERR_SOCKET_FAILURE",
+            "share/errors/templates/ERR_TOO_BIG",
+            "share/errors/templates/ERR_UNSUP_HTTPVERSION",
+            "share/errors/templates/ERR_UNSUP_REQ",
+            "share/errors/templates/ERR_URN_RESOLVE",
+            "share/errors/templates/ERR_WRITE_ERROR",
+            "share/errors/templates/ERR_ZERO_SIZE_OBJECT",
+            "share/errors/templates/error-details.txt",
+            "share/icons/SN.png",
+            "share/icons/silk/application.png",
+            "share/icons/silk/arrow_up.png",
+            "share/icons/silk/bomb.png",
+            "share/icons/silk/box.png",
+            "share/icons/silk/bricks.png",
+            "share/icons/silk/bullet_red.png",
+            "share/icons/silk/cd.png",
+            "share/icons/silk/chart_line.png",
+            "share/icons/silk/compress.png",
+            "share/icons/silk/computer_link.png",
+            "share/icons/silk/css.png",
+            "share/icons/silk/cup.png",
+            "share/icons/silk/database.png",
+            "share/icons/silk/database_table.png",
+            "share/icons/silk/drive_disk.png",
+            "share/icons/silk/film.png",
+            "share/icons/silk/film_key.png",
+            "share/icons/silk/folder.png",
+            "share/icons/silk/folder_table.png",
+            "share/icons/silk/image.png",
+            "share/icons/silk/information.png",
+            "share/icons/silk/layers.png",
+            "share/icons/silk/layout.png",
+            "share/icons/silk/link.png",
+            "share/icons/silk/music.png",
+            "share/icons/silk/package.png",
+            "share/icons/silk/package_go.png",
+            "share/icons/silk/page_code.png",
+            "share/icons/silk/page_excel.png",
+            "share/icons/silk/page_green.png",
+            "share/icons/silk/page_white.png",
+            "share/icons/silk/page_white_acrobat.png",
+            "share/icons/silk/page_white_c.png",
+            "share/icons/silk/page_white_cplusplus.png",
+            "share/icons/silk/page_white_flash.png",
+            "share/icons/silk/page_white_magnify.png",
+            "share/icons/silk/page_white_picture.png",
+            "share/icons/silk/page_white_powerpoint.png",
+            "share/icons/silk/page_white_stack.png",
+            "share/icons/silk/page_white_text.png",
+            "share/icons/silk/page_white_word.png",
+            "share/icons/silk/page_white_zip.png",
+            "share/icons/silk/page_world.png",
+            "share/icons/silk/photo.png",
+            "share/icons/silk/picture.png",
+            "share/icons/silk/plugin.png",
+            "share/icons/silk/plugin_add.png",
+            "share/icons/silk/script.png",
+            "share/icons/silk/script_gear.png",
+            "share/icons/silk/script_palette.png",
+            "share/man/man8/basic_db_auth.8",
+            "share/man/man8/basic_getpwnam_auth.8",
+            "share/man/man8/basic_ncsa_auth.8",
+            "share/man/man8/basic_pam_auth.8",
+            "share/man/man8/basic_pop3_auth.8",
+            "share/man/man8/basic_radius_auth.8",
+            "share/man/man8/digest_file_auth.8",
+            "share/man/man8/ext_delayer_acl.8",
+            "share/man/man8/ext_file_userip_acl.8",
+            "share/man/man8/ext_kerberos_sid_group_acl.8",
+            "share/man/man8/ext_sql_session_acl.8",
+            "share/man/man8/ext_unix_group_acl.8",
+            "share/man/man8/ext_wbinfo_group_acl.8",
+            "share/man/man8/helper-mux.8",
+            "share/man/man8/log_db_daemon.8",
+            "share/man/man8/security_fake_certverify.8",
+            "share/man/man8/security_file_certgen.8",
+            "share/man/man8/squid.8",
+            "share/man/man8/storeid_file_rewrite.8",
+            "share/man/man8/url_lfs_rewrite.8",
+            "share/mib.txt"
+          ],
+          "installed_size": 8061772
+        }
+      }
+    }
+  }
+}
