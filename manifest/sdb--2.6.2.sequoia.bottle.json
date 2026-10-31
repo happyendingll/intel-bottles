@@ -2,36 +2,36 @@
   "sdb": {
     "formula": {
       "name": "sdb",
-      "pkg_version": "2.5.8",
+      "pkg_version": "2.6.2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sdb.rb",
       "tap_git_path": "Formula/s/sdb.rb",
-      "tap_git_revision": "5bf4e537c16d6646b2db46dd39765c4d838fb720",
+      "tap_git_revision": "414b0afcfadfa332f0ff7458d9b8a23e12b88c65",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Ondisk/memory hashtable based on CDB",
       "license": "MIT",
       "homepage": "https://www.radare.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-04T22:53:23Z",
+      "date": "2026-10-31T05:14:47Z",
       "tags": {
         "sequoia": {
-          "filename": "sdb-2.5.8.sequoia.bottle.tar.gz",
-          "local_filename": "sdb--2.5.8.sequoia.bottle.tar.gz",
-          "sha256": "4b8bfa10cd517a28159409d8a262b2c8b2ffdc1e36b9930e654a0e74ef0062e3",
+          "filename": "sdb-2.6.2.sequoia.bottle.tar.gz",
+          "local_filename": "sdb--2.6.2.sequoia.bottle.tar.gz",
+          "sha256": "a8bc95ee9693956cb31d2126d0d36885d52e15a44c269131fc22c473a039566c",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "lib/pkgconfig/sdb.pc"
             ],
             "linkage_files": [
               "bin/sdb",
-              "lib/libsdb.2.5.8.dylib"
+              "lib/libsdb.2.6.2.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791106107,
+            "source_modified_time": 1793357407,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -49,14 +49,15 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "0.19",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -71,10 +72,10 @@
               },
               {
                 "full_name": "glib",
-                "version": "2.90.0",
+                "version": "2.90.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.90.0",
+                "pkg_version": "2.90.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -92,16 +93,16 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-pcre2-10.49",
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
-              "SPDXRef-Package-SPDXRef-gettext-1.0",
-              "SPDXRef-Package-SPDXRef-glib-2.90.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.49",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "name": "pcre2",
                 "versionInfo": "10.49",
                 "filesAnalyzed": false,
@@ -124,7 +125,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -147,30 +148,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libunistring-1.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                    "checksumValue": "8854773975603bc6243e11dc7d95fb33bba3e348337d95c44411052ef8870097"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "name": "gettext",
                 "versionInfo": "1.0",
                 "filesAnalyzed": false,
@@ -193,24 +194,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "name": "glib",
-                "versionInfo": "2.90.0",
+                "versionInfo": "2.90.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/glib-2.90.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/glib-2.90.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "285fda7b55475ba96d27f32af3233dc1d7799740abae01269117d192e8108f51"
+                    "checksumValue": "c278516bcbe698fdd998d76e4b796661a8e612122732435a1736cd5b8b9d7481"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/glib@2.90.0",
+                    "referenceLocator": "pkg:brew/glib@2.90.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -230,27 +231,27 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.49",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-sdb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-sdb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-sdb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-sdb"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.90.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-sdb"
               },
@@ -296,13 +297,13 @@
             "include/sdb/types.h",
             "include/sdb/version.h",
             "lib/liblibsdb_static.a",
-            "lib/libsdb.2.5.8.dylib",
+            "lib/libsdb.2.6.2.dylib",
             "lib/libsdb.a",
             "lib/libsdb.dylib",
             "lib/pkgconfig/sdb.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 853118
+          "installed_size": 858949
         }
       }
     }

@@ -2,33 +2,33 @@
   "libyojimbo": {
     "formula": {
       "name": "libyojimbo",
-      "pkg_version": "1.14.0",
+      "pkg_version": "1.15.2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libyojimbo.rb",
       "tap_git_path": "Formula/lib/libyojimbo.rb",
-      "tap_git_revision": "f9fc6d55471172814dc42b9c534b2214b4727535",
+      "tap_git_revision": "414b0afcfadfa332f0ff7458d9b8a23e12b88c65",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Secure client/server network protocol library for multiplayer games",
       "license": "BSD-3-Clause",
       "homepage": "https://github.com/mas-bandwidth/yojimbo"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-16T22:01:52Z",
+      "date": "2026-10-31T04:56:55Z",
       "tags": {
         "sequoia": {
-          "filename": "libyojimbo-1.14.0.sequoia.bottle.tar.gz",
-          "local_filename": "libyojimbo--1.14.0.sequoia.bottle.tar.gz",
-          "sha256": "d55b7bcb7842c2da46724a898323be3d8c72916eb79133ed762fceebd8e8bf71",
+          "filename": "libyojimbo-1.15.2.sequoia.bottle.tar.gz",
+          "local_filename": "libyojimbo--1.15.2.sequoia.bottle.tar.gz",
+          "sha256": "3d0ab8a0f9fecab668fba26939c22c4bfc1c9f40e0ec86e40fe062dcd7faf99c",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [
-              "lib/libyojimbo.1.14.0.dylib"
+              "lib/libyojimbo.1.15.2.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792156183,
+            "source_modified_time": 1793289498,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -42,11 +42,12 @@
               },
               {
                 "full_name": "netcode",
-                "version": "1.4.8",
+                "version": "1.4.9",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.8",
-                "declared_directly": true
+                "pkg_version": "1.4.9",
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "reliable",
@@ -54,15 +55,17 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.4.5",
-                "declared_directly": true
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "serialize",
-                "version": "1.17.0",
+                "version": "2.1.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.17.0",
-                "declared_directly": true
+                "pkg_version": "2.1.3",
+                "declared_directly": true,
+                "compatibility_version": 1
               }
             ],
             "arch": "x86_64",
@@ -78,31 +81,31 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-netcode-1.2e.4.2e.8",
+              "SPDXRef-Package-SPDXRef-netcode-1.2e.4.2e.9",
               "SPDXRef-Package-SPDXRef-reliable-1.2e.4.2e.5",
-              "SPDXRef-Package-SPDXRef-serialize-1.2e.17.2e.0",
+              "SPDXRef-Package-SPDXRef-serialize-2.2e.1.2e.3",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-netcode-1.2e.4.2e.8",
+                "SPDXID": "SPDXRef-Package-SPDXRef-netcode-1.2e.4.2e.9",
                 "name": "netcode",
-                "versionInfo": "1.4.8",
+                "versionInfo": "1.4.9",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/netcode-1.4.8.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/netcode-1.4.9.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "dbeccb0b8f6dccf6a171834a3990c003595bb456860ba450e24ae61b6c5771a0"
+                    "checksumValue": "fe550a0b8ef7f95a96d930b466480d4259a8544e9ab38692063b13ca0e2e6f0c"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/netcode@1.4.8",
+                    "referenceLocator": "pkg:brew/netcode@1.4.9",
                     "referenceType": "purl"
                   }
                 ]
@@ -131,24 +134,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-serialize-1.2e.17.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-serialize-2.2e.1.2e.3",
                 "name": "serialize",
-                "versionInfo": "1.17.0",
+                "versionInfo": "2.1.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/serialize/blobs/sha256:33cbadc42bfb4a33191b6b53440906063a85e2f11bfd711bd5400224e1fa4b90",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/serialize/blobs/sha256:90ce4b107b46ad984f6759513b7778aa629bc1bf9baf0f2977e0abf81461b9e5",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "33cbadc42bfb4a33191b6b53440906063a85e2f11bfd711bd5400224e1fa4b90"
+                    "checksumValue": "90ce4b107b46ad984f6759513b7778aa629bc1bf9baf0f2977e0abf81461b9e5"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/serialize@1.17.0",
+                    "referenceLocator": "pkg:brew/serialize@2.1.3",
                     "referenceType": "purl"
                   }
                 ]
@@ -168,7 +171,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-netcode-1.2e.4.2e.8",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-netcode-1.2e.4.2e.9",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libyojimbo"
               },
@@ -178,7 +181,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-libyojimbo"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-serialize-1.2e.17.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-serialize-2.2e.1.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libyojimbo"
               },
@@ -228,12 +231,12 @@
             "lib/cmake/Yojimbo/YojimboTargets-release.cmake",
             "lib/cmake/Yojimbo/YojimboTargets.cmake",
             "lib/cmake/Yojimbo/dependencies.manifest",
-            "lib/libyojimbo.1.14.0.dylib",
+            "lib/libyojimbo.1.15.2.dylib",
             "lib/libyojimbo.1.dylib",
             "lib/libyojimbo.dylib",
             "sbom.spdx.json"
           ],
-          "installed_size": 390293
+          "installed_size": 390528
         }
       }
     }

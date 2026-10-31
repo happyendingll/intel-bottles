@@ -2,27 +2,27 @@
   "librcsc": {
     "formula": {
       "name": "librcsc",
-      "pkg_version": "2026_1",
+      "pkg_version": "2026_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/librcsc.rb",
       "tap_git_path": "Formula/lib/librcsc.rb",
-      "tap_git_revision": "6d88ab673b2a408911f2dc6090a61459f302fed6",
+      "tap_git_revision": "414b0afcfadfa332f0ff7458d9b8a23e12b88c65",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "RoboCup Soccer Simulator library",
       "license": "LGPL-3.0-or-later",
       "homepage": "https://github.com/helios-base/librcsc"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-06T09:43:22Z",
+      "date": "2026-10-31T04:59:23Z",
       "tags": {
         "sequoia": {
-          "filename": "librcsc-2026_1.sequoia.bottle.tar.gz",
-          "local_filename": "librcsc--2026_1.sequoia.bottle.tar.gz",
-          "sha256": "fd665af034c7e3547a19a6c84135810a87e257cf0594fb17c60243fcc730183b",
+          "filename": "librcsc-2026_2.sequoia.bottle.tar.gz",
+          "local_filename": "librcsc--2026_2.sequoia.bottle.tar.gz",
+          "sha256": "f361fa3c09189356e463adb9f189a7548157e7efb5a8c309a0359488f0065406",
           "tab": {
-            "homebrew_version": "7.0.8",
+            "homebrew_version": "7.0.11",
             "changed_files": [
               "bin/librcsc-config",
               "bin/librcscenv",
@@ -45,11 +45,12 @@
             "runtime_dependencies": [
               {
                 "full_name": "simdjson",
-                "version": "5.0.2",
+                "version": "5.0.7",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.0.2",
-                "declared_directly": true
+                "pkg_version": "5.0.7",
+                "declared_directly": true,
+                "compatibility_version": 1
               }
             ],
             "arch": "x86_64",
@@ -65,29 +66,29 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.2",
+              "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.7",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.7",
                 "name": "simdjson",
-                "versionInfo": "5.0.2",
+                "versionInfo": "5.0.7",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/simdjson-5.0.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/simdjson-5.0.7.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "62b1d49296d369bbcddffb8a49bcba2afbde600df1eb58f80f2619c94f411823"
+                    "checksumValue": "611b771cf0ce7df532190e486947284f0bfdaecbae818e6b42e0575fc526d6cf"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdjson@5.0.2",
+                    "referenceLocator": "pkg:brew/simdjson@5.0.7",
                     "referenceType": "purl"
                   }
                 ]
@@ -107,7 +108,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.7",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-librcsc"
               },
@@ -318,7 +319,7 @@
             "lib/pkgconfig/librcsc.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 5146686
+          "installed_size": 5138457
         }
       }
     }
