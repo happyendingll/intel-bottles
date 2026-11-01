@@ -2,27 +2,27 @@
   "ttyd": {
     "formula": {
       "name": "ttyd",
-      "pkg_version": "1.7.7_14",
+      "pkg_version": "1.7.7_15",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/t/ttyd.rb",
       "tap_git_path": "Formula/t/ttyd.rb",
-      "tap_git_revision": "fbd9c7ccc75439ed80525d2a5f1f1bebcb50dcd1",
+      "tap_git_revision": "e3051c46eb8c540a033e47f8079ef9938bf086a9",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Command-line tool for sharing terminal over the web",
       "license": "MIT",
       "homepage": "https://tsl0922.github.io/ttyd/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-10T08:46:05Z",
+      "date": "2026-11-01T01:34:38Z",
       "tags": {
         "sequoia": {
-          "filename": "ttyd-1.7.7_14.sequoia.bottle.tar.gz",
-          "local_filename": "ttyd--1.7.7_14.sequoia.bottle.tar.gz",
-          "sha256": "e58b953bf24d157d390288507b62cc18d87d49b401e3255705065d186fd596cb",
+          "filename": "ttyd-1.7.7_15.sequoia.bottle.tar.gz",
+          "local_filename": "ttyd--1.7.7_15.sequoia.bottle.tar.gz",
+          "sha256": "12224908191dce096318b2f34d9fcd89abaee993276b2a01ca0a6ec942cbaeea",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.11",
             "changed_files": [],
             "linkage_files": [
               "bin/ttyd"
@@ -39,24 +39,26 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "0.19",
-                "declared_directly": true
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
-                "declared_directly": true
+                "pkg_version": "4.1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libevent",
@@ -78,12 +80,12 @@
               },
               {
                 "full_name": "libwebsockets",
-                "version": "5.0.0",
-                "revision": 2,
+                "version": "5.1.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.0.0_2",
+                "pkg_version": "5.1.0",
                 "declared_directly": true,
-                "compatibility_version": 6
+                "compatibility_version": 7
               }
             ],
             "arch": "x86_64",
@@ -99,18 +101,18 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/ttyd",
-              "string": "/usr/local/Cellar/libwebsockets/5.0.0_2/lib",
-              "offset": 353142
+              "string": "/usr/local/Cellar/libwebsockets/5.1.0/lib",
+              "offset": 668662
             }
           ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
               "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
-              "SPDXRef-Package-SPDXRef-libwebsockets-5.2e.0.2e.0.5f.2",
+              "SPDXRef-Package-SPDXRef-libwebsockets-5.2e.1.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -138,47 +140,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -230,24 +232,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libwebsockets-5.2e.0.2e.0.5f.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libwebsockets-5.2e.1.2e.0",
                 "name": "libwebsockets",
-                "versionInfo": "5.0.0_2",
+                "versionInfo": "5.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libwebsockets-5.0.0_2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/libwebsockets-5.1.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d4d18df4b299d5554558ba48b16f51480391db580f3f93f4ea000a16407c354c"
+                    "checksumValue": "5060cb905d9ade8bfb74dff46d548cf2e049d4734162a24aed1216cfe7c256db"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libwebsockets@5.0.0_2",
+                    "referenceLocator": "pkg:brew/libwebsockets@5.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -272,12 +274,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-ttyd"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ttyd"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ttyd"
               },
@@ -292,7 +294,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-ttyd"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libwebsockets-5.2e.0.2e.0.5f.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libwebsockets-5.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ttyd"
               },
@@ -315,7 +317,7 @@
             "sbom.spdx.json",
             "share/man/man1/ttyd.1"
           ],
-          "installed_size": 695147
+          "installed_size": 1137496
         }
       }
     }
