@@ -1,0 +1,180 @@
+{
+  "mpfi": {
+    "formula": {
+      "name": "mpfi",
+      "pkg_version": "1.5.5",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mpfi.rb",
+      "tap_git_path": "Formula/m/mpfi.rb",
+      "tap_git_revision": "5ba76af5cc2cd9517a0634610edac116ba311059",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Multiple precision interval arithmetic library",
+      "license": "GPL-3.0-or-later AND LGPL-2.1-or-later",
+      "homepage": "https://perso.ens-lyon.fr/nathalie.revol/software.html"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-01T05:26:04Z",
+      "tags": {
+        "sequoia": {
+          "filename": "mpfi-1.5.5.sequoia.bottle.tar.gz",
+          "local_filename": "mpfi--1.5.5.sequoia.bottle.tar.gz",
+          "sha256": "6246e3bbf679028e8e500b389ee291a436057ed713525a4b9143f0ee56b1436d",
+          "tab": {
+            "homebrew_version": "7.0.11",
+            "changed_files": [
+              "lib/pkgconfig/mpfi.pc"
+            ],
+            "linkage_files": [
+              "lib/libmpfi.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1790525749,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpfr",
+                "version": "4.2.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.2.2",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+                "name": "mpfr",
+                "versionInfo": "4.2.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/mpfr/blobs/sha256:ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpfr@4.2.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpfi"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-mpfi"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-mpfi-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/mpfi.rb",
+            "AUTHORS",
+            "COPYING",
+            "COPYING.LESSER",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "TODO",
+            "include/mpfi.h",
+            "include/mpfi_io.h",
+            "lib/libmpfi.0.dylib",
+            "lib/libmpfi.a",
+            "lib/libmpfi.dylib",
+            "lib/pkgconfig/mpfi.pc",
+            "sbom.spdx.json",
+            "share/doc/mpfi/AUTHORS",
+            "share/doc/mpfi/COPYING",
+            "share/doc/mpfi/COPYING.LESSER",
+            "share/doc/mpfi/NEWS",
+            "share/doc/mpfi/TODO",
+            "share/info/mpfi.info"
+          ],
+          "installed_size": 514238
+        }
+      }
+    }
+  }
+}
