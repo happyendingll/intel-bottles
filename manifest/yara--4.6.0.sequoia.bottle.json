@@ -1,0 +1,315 @@
+{
+  "yara": {
+    "formula": {
+      "name": "yara",
+      "pkg_version": "4.6.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/y/yara.rb",
+      "tap_git_path": "Formula/y/yara.rb",
+      "tap_git_revision": "4276b27f7697cdd092438ad59d4b9e5225a56c74",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Malware identification and classification tool",
+      "license": "BSD-3-Clause",
+      "homepage": "https://virustotal.github.io/yara/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-03T04:33:36Z",
+      "tags": {
+        "sequoia": {
+          "filename": "yara-4.6.0.sequoia.bottle.tar.gz",
+          "local_filename": "yara--4.6.0.sequoia.bottle.tar.gz",
+          "sha256": "0dd6b3876f5af485e30abd13ebce07fd97fbcaf3cf10fe624935e9c2ef9c423d",
+          "tab": {
+            "homebrew_version": "7.0.12",
+            "changed_files": [
+              "lib/pkgconfig/yara.pc"
+            ],
+            "linkage_files": [
+              "bin/yara",
+              "bin/yarac",
+              "lib/libyara.10.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1793102013,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "jansson",
+                "version": "2.15.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.15.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libmagic",
+                "version": "5.48",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.48",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-10-20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-10-20",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "abseil",
+                "version": "20260817.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "20260817.0",
+                "declared_directly": false,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "protobuf",
+                "version": "36.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "36.2",
+                "declared_directly": false,
+                "compatibility_version": 7
+              },
+              {
+                "full_name": "protobuf-c",
+                "version": "1.5.2",
+                "revision": 20,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.2_20",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+              "SPDXRef-Package-SPDXRef-protobuf-c-1.2e.5.2e.2.5f.20",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "name": "ca-certificates",
+                "versionInfo": "2026-10-20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "name": "openssl@4",
+                "versionInfo": "4.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "name": "protobuf",
+                "versionInfo": "36.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-36.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "23c1b997672d8c907b7493086a0a785b885dcaf68851cd6d2a1e96d9f116314a"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf@36.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-protobuf-c-1.2e.5.2e.2.5f.20",
+                "name": "protobuf-c",
+                "versionInfo": "1.5.2_20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/protobuf-c-1.5.2_20.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "89692fd803a65686cb530cd300e7e7553dd1a4bfd46e8dcb91927b942163f0d2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/protobuf-c@1.5.2_20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-yara"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-yara"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-36.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-yara"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-protobuf-c-1.2e.5.2e.2.5f.20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-yara"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-yara-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/yara",
+            "bin/yarac"
+          ],
+          "all_files": [
+            ".brew/yara.rb",
+            "AUTHORS",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/yara",
+            "bin/yarac",
+            "include/yara/ahocorasick.h",
+            "include/yara/arena.h",
+            "include/yara/atoms.h",
+            "include/yara/base64.h",
+            "include/yara/bitmask.h",
+            "include/yara/compiler.h",
+            "include/yara/error.h",
+            "include/yara/exec.h",
+            "include/yara/exefiles.h",
+            "include/yara/filemap.h",
+            "include/yara/hash.h",
+            "include/yara/integers.h",
+            "include/yara/libyara.h",
+            "include/yara/limits.h",
+            "include/yara/mem.h",
+            "include/yara/modules.h",
+            "include/yara/notebook.h",
+            "include/yara/object.h",
+            "include/yara/parser.h",
+            "include/yara/proc.h",
+            "include/yara/re.h",
+            "include/yara/rules.h",
+            "include/yara/scan.h",
+            "include/yara/scanner.h",
+            "include/yara/simple_str.h",
+            "include/yara/sizedstr.h",
+            "include/yara/stack.h",
+            "include/yara/stopwatch.h",
+            "include/yara/stream.h",
+            "include/yara/strutils.h",
+            "include/yara/threading.h",
+            "include/yara/types.h",
+            "include/yara/unaligned.h",
+            "include/yara/utils.h",
+            "include/yara.h",
+            "lib/libyara.10.dylib",
+            "lib/libyara.a",
+            "lib/libyara.dylib",
+            "lib/pkgconfig/yara.pc",
+            "sbom.spdx.json",
+            "share/man/man1/yara.1",
+            "share/man/man1/yarac.1"
+          ],
+          "installed_size": 2221054
+        }
+      }
+    }
+  }
+}

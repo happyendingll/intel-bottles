@@ -1,0 +1,91 @@
+{
+  "rust-analyzer": {
+    "formula": {
+      "name": "rust-analyzer",
+      "pkg_version": "2026-11-02",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/r/rust-analyzer.rb",
+      "tap_git_path": "Formula/r/rust-analyzer.rb",
+      "tap_git_revision": "4276b27f7697cdd092438ad59d4b9e5225a56c74",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Experimental Rust compiler front-end for IDEs",
+      "license": "Apache-2.0 OR MIT",
+      "homepage": "https://rust-analyzer.github.io/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-11-03T03:16:54Z",
+      "tags": {
+        "sequoia": {
+          "filename": "rust-analyzer-2026-11-02.sequoia.bottle.tar.gz",
+          "local_filename": "rust-analyzer--2026-11-02.sequoia.bottle.tar.gz",
+          "sha256": "3ff9a110b7b8c619b82e7f6c98eaab65bbbad2bfd1db740b2327c9ebd539af81",
+          "tab": {
+            "homebrew_version": "7.0.12",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1793555524,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "source": {
+              "scm_revision": "b98172d80f0da12bbde3d6733c274e17cb6417aa"
+            },
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-rust-analyzer-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/rust-analyzer"
+          ],
+          "all_files": [
+            ".brew/rust-analyzer.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "INSTALL_RECEIPT.json",
+            "LICENSE-APACHE",
+            "LICENSE-MIT",
+            "README.md",
+            "bin/rust-analyzer",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 50621583
+        }
+      }
+    }
+  }
+}
