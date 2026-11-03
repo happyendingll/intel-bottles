@@ -2,27 +2,27 @@
   "libvirt-python": {
     "formula": {
       "name": "libvirt-python",
-      "pkg_version": "12.8.0_1",
+      "pkg_version": "12.9.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libvirt-python.rb",
       "tap_git_path": "Formula/lib/libvirt-python.rb",
-      "tap_git_revision": "4577d0ca36f5b1bdeb364a40bd1c9d119bf68171",
+      "tap_git_revision": "df94d795b09a887dc35d0176f155515f5d96970b",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Libvirt virtualization API python binding",
       "license": "LGPL-2.1-or-later",
       "homepage": "https://www.libvirt.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-15T21:52:14Z",
+      "date": "2026-11-03T05:31:42Z",
       "tags": {
         "sequoia": {
-          "filename": "libvirt-python-12.8.0_1.sequoia.bottle.tar.gz",
-          "local_filename": "libvirt-python--12.8.0_1.sequoia.bottle.tar.gz",
-          "sha256": "04fcff7868d195ad7daaf6f70f26aecafc6904720b41d09bb8a76a5625923baf",
+          "filename": "libvirt-python-12.9.0.sequoia.bottle.tar.gz",
+          "local_filename": "libvirt-python--12.9.0.sequoia.bottle.tar.gz",
+          "sha256": "9eece9a38a88689d735d2df032a0fce252a5986c13bc951a6ecf7795b747568e",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.12",
             "changed_files": [],
             "linkage_files": [
               "lib/python3.14/site-packages/libvirtmod.cpython-314-darwin.so",
@@ -33,25 +33,26 @@
               "lib/python3.15/site-packages/libvirtmod_qemu.cpython-315-darwin.so"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1790845574,
+            "source_modified_time": 1793617623,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-10-20",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-10-20",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
-                "declared_directly": false
+                "pkg_version": "4.1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "krb5",
@@ -66,8 +67,10 @@
                 "full_name": "cyrus-sasl",
                 "version": "2.1.28",
                 "revision": 4,
+                "bottle_rebuild": 0,
                 "pkg_version": "2.1.28_4",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "pcre2",
@@ -84,14 +87,15 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "0.19",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -173,7 +177,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "2.1-3",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libiscsi",
@@ -181,7 +186,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.20.3",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libssh2",
@@ -203,10 +209,10 @@
               },
               {
                 "full_name": "libvirt",
-                "version": "12.8.0",
+                "version": "12.9.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "12.8.0",
+                "pkg_version": "12.9.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -224,64 +230,65 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
+              "SPDXRef-Package-SPDXRef-cyrus-sasl-2.2e.1.2e.28.5f.4",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
               "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
               "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
               "SPDXRef-Package-SPDXRef-libssh2-1.2e.11.2e.1.5f.7",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
-              "SPDXRef-Package-SPDXRef-libvirt-12.2e.8.2e.0",
+              "SPDXRef-Package-SPDXRef-libvirt-12.2e.9.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-10-20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -305,6 +312,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/krb5@1.22.2_2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cyrus-sasl-2.2e.1.2e.28.5f.4",
+                "name": "cyrus-sasl",
+                "versionInfo": "2.1.28_4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause-Attribution",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/cyrus-sasl-2.1.28_4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2621e9e25ae7b4cb66f7e0cd9f9142e275d989cdf93ecc59374eceef3c047547"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/cyrus-sasl@2.1.28_4",
                     "referenceType": "purl"
                   }
                 ]
@@ -356,24 +386,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libunistring-1.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                    "checksumValue": "8854773975603bc6243e11dc7d95fb33bba3e348337d95c44411052ef8870097"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -517,24 +547,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libvirt-12.2e.8.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libvirt-12.2e.9.2e.0",
                 "name": "libvirt",
-                "versionInfo": "12.8.0",
+                "versionInfo": "12.9.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-2.1-or-later AND GPL-2.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libvirt-12.8.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/libvirt-12.9.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "36305d68a021dde8fa1ec630ccaf70c3d79297ac57f525792595923500a90da2"
+                    "checksumValue": "403363403d22d666aa784718c427791da471017b7d0f7a729bd3b4ca88d9c88f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libvirt@12.8.0",
+                    "referenceLocator": "pkg:brew/libvirt@12.9.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -554,17 +584,22 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libvirt-python"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libvirt-python"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-krb5-1.2e.22.2e.2.5f.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libvirt-python"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cyrus-sasl-2.2e.1.2e.28.5f.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libvirt-python"
               },
@@ -579,7 +614,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-libvirt-python"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.4.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libvirt-python"
               },
@@ -614,7 +649,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-libvirt-python"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libvirt-12.2e.8.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libvirt-12.2e.9.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libvirt-python"
               },
@@ -635,12 +670,12 @@
             "README",
             "lib/python3.14/site-packages/libvirt.py",
             "lib/python3.14/site-packages/libvirt_lxc.py",
-            "lib/python3.14/site-packages/libvirt_python-12.8.0.dist-info/INSTALLER",
-            "lib/python3.14/site-packages/libvirt_python-12.8.0.dist-info/METADATA",
-            "lib/python3.14/site-packages/libvirt_python-12.8.0.dist-info/REQUESTED",
-            "lib/python3.14/site-packages/libvirt_python-12.8.0.dist-info/WHEEL",
-            "lib/python3.14/site-packages/libvirt_python-12.8.0.dist-info/licenses/COPYING",
-            "lib/python3.14/site-packages/libvirt_python-12.8.0.dist-info/top_level.txt",
+            "lib/python3.14/site-packages/libvirt_python-12.9.0.dist-info/INSTALLER",
+            "lib/python3.14/site-packages/libvirt_python-12.9.0.dist-info/METADATA",
+            "lib/python3.14/site-packages/libvirt_python-12.9.0.dist-info/REQUESTED",
+            "lib/python3.14/site-packages/libvirt_python-12.9.0.dist-info/WHEEL",
+            "lib/python3.14/site-packages/libvirt_python-12.9.0.dist-info/licenses/COPYING",
+            "lib/python3.14/site-packages/libvirt_python-12.9.0.dist-info/top_level.txt",
             "lib/python3.14/site-packages/libvirt_qemu.py",
             "lib/python3.14/site-packages/libvirtaio.py",
             "lib/python3.14/site-packages/libvirtmod.cpython-314-darwin.so",
@@ -648,12 +683,12 @@
             "lib/python3.14/site-packages/libvirtmod_qemu.cpython-314-darwin.so",
             "lib/python3.15/site-packages/libvirt.py",
             "lib/python3.15/site-packages/libvirt_lxc.py",
-            "lib/python3.15/site-packages/libvirt_python-12.8.0.dist-info/INSTALLER",
-            "lib/python3.15/site-packages/libvirt_python-12.8.0.dist-info/METADATA",
-            "lib/python3.15/site-packages/libvirt_python-12.8.0.dist-info/REQUESTED",
-            "lib/python3.15/site-packages/libvirt_python-12.8.0.dist-info/WHEEL",
-            "lib/python3.15/site-packages/libvirt_python-12.8.0.dist-info/licenses/COPYING",
-            "lib/python3.15/site-packages/libvirt_python-12.8.0.dist-info/top_level.txt",
+            "lib/python3.15/site-packages/libvirt_python-12.9.0.dist-info/INSTALLER",
+            "lib/python3.15/site-packages/libvirt_python-12.9.0.dist-info/METADATA",
+            "lib/python3.15/site-packages/libvirt_python-12.9.0.dist-info/REQUESTED",
+            "lib/python3.15/site-packages/libvirt_python-12.9.0.dist-info/WHEEL",
+            "lib/python3.15/site-packages/libvirt_python-12.9.0.dist-info/licenses/COPYING",
+            "lib/python3.15/site-packages/libvirt_python-12.9.0.dist-info/top_level.txt",
             "lib/python3.15/site-packages/libvirt_qemu.py",
             "lib/python3.15/site-packages/libvirtaio.py",
             "lib/python3.15/site-packages/libvirtmod.cpython-315-darwin.so",
@@ -661,7 +696,7 @@
             "lib/python3.15/site-packages/libvirtmod_qemu.cpython-315-darwin.so",
             "sbom.spdx.json"
           ],
-          "installed_size": 2227372
+          "installed_size": 2227868
         }
       }
     }
