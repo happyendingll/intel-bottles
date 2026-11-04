@@ -1,0 +1,102 @@
+{
+  "titus": {
+    "formula": {
+      "name": "titus",
+      "pkg_version": "1.3.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/t/titus.rb",
+      "tap_git_path": "Formula/t/titus.rb",
+      "tap_git_revision": "c10e2192c3a9dd838a983f034033205b07ece5f3",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "High-performance secrets scanner",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/praetorian-inc/titus"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-04T01:24:11Z",
+      "tags": {
+        "sequoia": {
+          "filename": "titus-1.3.0.sequoia.bottle.tar.gz",
+          "local_filename": "titus--1.3.0.sequoia.bottle.tar.gz",
+          "sha256": "28aea5ca3269fb05cb419879711b86905f6a82ec652d45b65d234a467a7a19cb",
+          "tab": {
+            "homebrew_version": "7.0.12",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/titus"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1793643676,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "vectorscan",
+                "version": "5.4.13",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.4.13",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-titus-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/titus"
+          ],
+          "all_files": [
+            ".brew/titus.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NOTICE",
+            "README.md",
+            "bin/titus",
+            "etc/bash_completion.d/titus",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/titus.fish",
+            "share/pwsh/completions/_titus.ps1",
+            "share/zsh/site-functions/_titus"
+          ],
+          "installed_size": 57057183
+        }
+      }
+    }
+  }
+}
