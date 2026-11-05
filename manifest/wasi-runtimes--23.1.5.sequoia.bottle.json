@@ -2,27 +2,27 @@
   "wasi-runtimes": {
     "formula": {
       "name": "wasi-runtimes",
-      "pkg_version": "23.1.4",
+      "pkg_version": "23.1.5",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/w/wasi-runtimes.rb",
       "tap_git_path": "Formula/w/wasi-runtimes.rb",
-      "tap_git_revision": "aa023bea964772fe4708b9a3e865b1d48a4c49eb",
+      "tap_git_revision": "bc7eafcfbc55732d6d911fe1295e02a984f965c6",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Compiler-RT and libc++ runtimes for WASI",
       "license": "Apache-2.0 WITH LLVM-exception",
       "homepage": "https://wasi.dev"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-22T12:41:49Z",
+      "date": "2026-11-05T11:29:00Z",
       "tags": {
         "sequoia": {
-          "filename": "wasi-runtimes-23.1.4.sequoia.bottle.tar.gz",
-          "local_filename": "wasi-runtimes--23.1.4.sequoia.bottle.tar.gz",
-          "sha256": "55ce3322832a82905007341c01f1810f822ce8884d0145ba79774fb9dadb97c9",
+          "filename": "wasi-runtimes-23.1.5.sequoia.bottle.tar.gz",
+          "local_filename": "wasi-runtimes--23.1.5.sequoia.bottle.tar.gz",
+          "sha256": "dc22c3d1b490ccb8571f9418d8289925926f0213c03c7c9b2a076282fb5649e5",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.12",
             "changed_files": [
               ".bottle/etc/clang/wasm32-unknown-wasip1-threads.cfg",
               ".bottle/etc/clang/wasm32-unknown-wasip1.cfg",
@@ -31,16 +31,17 @@
             ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792454232,
+            "source_modified_time": 1793616315,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "lz4",
-                "version": "1.10.0",
+                "version": "1.11.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.10.0",
-                "declared_directly": false
+                "pkg_version": "1.11.0",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "xz",
@@ -62,19 +63,19 @@
               },
               {
                 "full_name": "z3",
-                "version": "5.3.1",
+                "version": "5.3.3",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.3.1",
+                "pkg_version": "5.3.3",
                 "declared_directly": false,
                 "compatibility_version": 5
               },
               {
                 "full_name": "llvm",
-                "version": "23.1.4",
+                "version": "23.1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "23.1.4",
+                "pkg_version": "23.1.5",
                 "declared_directly": true,
                 "compatibility_version": 2
               }
@@ -92,33 +93,33 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
-              "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.4",
+              "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.3",
+              "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.5",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
                 "name": "lz4",
-                "versionInfo": "1.10.0",
+                "versionInfo": "1.11.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                    "checksumValue": "1a8800bdf6873ede4bb7b871370e10e70708984b86b40bc7e50e3b2818585e92"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -170,47 +171,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.3",
                 "name": "z3",
-                "versionInfo": "5.3.1",
+                "versionInfo": "5.3.3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/z3-5.3.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/z3-5.3.3.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "adf1fbda79934289b5dc91f45e2645d2c6357f8346012a26dff625bc645d5071"
+                    "checksumValue": "c1829cfc0f7028d08240e8349f742092a7601a1450c2c7bcc391f9c37e30ef2b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/z3@5.3.1",
+                    "referenceLocator": "pkg:brew/z3@5.3.3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.5",
                 "name": "llvm",
-                "versionInfo": "23.1.4",
+                "versionInfo": "23.1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/llvm-23.1.4.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/llvm-23.1.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "4524cd064a98068c4fc26124c0b214e4ef30a72806f18ed4ab43665f23e746c3"
+                    "checksumValue": "fb9a4dc5d43058a09460bbc9222730113e17f98064a88e1df3e635ed1e2f2e56"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/llvm@23.1.4",
+                    "referenceLocator": "pkg:brew/llvm@23.1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -230,7 +231,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-wasi-runtimes"
               },
@@ -245,12 +246,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-wasi-runtimes"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-wasi-runtimes"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-wasi-runtimes"
               },
@@ -7514,7 +7515,7 @@
             "share/wasi-sysroot/share/libc++/v1/std.compat.cppm",
             "share/wasi-sysroot/share/libc++/v1/std.cppm"
           ],
-          "installed_size": 63822880
+          "installed_size": 63822914
         }
       }
     }
