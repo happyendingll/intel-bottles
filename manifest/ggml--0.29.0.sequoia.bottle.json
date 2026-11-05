@@ -2,34 +2,34 @@
   "ggml": {
     "formula": {
       "name": "ggml",
-      "pkg_version": "0.28.0",
+      "pkg_version": "0.29.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/ggml.rb",
       "tap_git_path": "Formula/g/ggml.rb",
-      "tap_git_revision": "453e040b10c5ee3715387b5cb16f6e625234a38e",
+      "tap_git_revision": "ec013b0d363089afe988e3f80e115bc881233966",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Tensor library for machine learning",
       "license": "MIT",
       "homepage": "https://github.com/ggml-org/ggml"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-28T20:57:57Z",
+      "date": "2026-11-04T23:29:16Z",
       "tags": {
         "sequoia": {
-          "filename": "ggml-0.28.0.sequoia.bottle.tar.gz",
-          "local_filename": "ggml--0.28.0.sequoia.bottle.tar.gz",
-          "sha256": "206709a162aff29ec5b63ddd26b3324c0fcca5acd3e1c9371e33e68cdcf3aac5",
+          "filename": "ggml-0.29.0.sequoia.bottle.tar.gz",
+          "local_filename": "ggml--0.29.0.sequoia.bottle.tar.gz",
+          "sha256": "5706af219aa2d8f333831809b12972c306f415ba08221b42ff08972db51f89d5",
           "tab": {
-            "homebrew_version": "7.0.11",
+            "homebrew_version": "7.0.12",
             "changed_files": [
               "lib/cmake/ggml/ggml-config.cmake",
               "lib/pkgconfig/ggml.pc"
             ],
             "linkage_files": [
-              "lib/libggml-base.0.28.0.dylib",
-              "lib/libggml.0.28.0.dylib",
+              "lib/libggml-base.0.29.0.dylib",
+              "lib/libggml.0.29.0.dylib",
               "libexec/libggml-cpu-alderlake.so",
               "libexec/libggml-cpu-cannonlake.so",
               "libexec/libggml-cpu-cascadelake.so",
@@ -45,17 +45,17 @@
               "libexec/libggml-cpu-zen4.so"
             ],
             "binary_relocation_files": [
-              "lib/libggml.0.28.0.dylib"
+              "lib/libggml.0.29.0.dylib"
             ],
-            "source_modified_time": 1793183094,
+            "source_modified_time": 1793784464,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "libomp",
-                "version": "23.1.4",
+                "version": "23.1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "23.1.4",
+                "pkg_version": "23.1.5",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -72,36 +72,36 @@
           },
           "binary_relocation_diagnostics": [
             {
-              "path": "lib/libggml.0.28.0.dylib",
-              "string": "/usr/local/Cellar/ggml/0.28.0/libexec",
+              "path": "lib/libggml.0.29.0.dylib",
+              "string": "/usr/local/Cellar/ggml/0.29.0/libexec",
               "offset": 18730
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.4",
+              "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
                 "name": "libomp",
-                "versionInfo": "23.1.4",
+                "versionInfo": "23.1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libomp-23.1.4.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/libomp-23.1.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a602dbde3d3aa941266f91dcd70adfc5154f644ab5c7c35dcd5ca7387a75cc6f"
+                    "checksumValue": "cc9c95bbc0ed067ea4f8a7fa6edac5b280e54c4c4e3cac6b98c560323b225912"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libomp@23.1.4",
+                    "referenceLocator": "pkg:brew/libomp@23.1.5",
                     "referenceType": "purl"
                   }
                 ]
@@ -121,7 +121,7 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-ggml"
               },
@@ -159,10 +159,10 @@
             "include/gguf.h",
             "lib/cmake/ggml/ggml-config-version.cmake",
             "lib/cmake/ggml/ggml-config.cmake",
-            "lib/libggml-base.0.28.0.dylib",
+            "lib/libggml-base.0.29.0.dylib",
             "lib/libggml-base.0.dylib",
             "lib/libggml-base.dylib",
-            "lib/libggml.0.28.0.dylib",
+            "lib/libggml.0.29.0.dylib",
             "lib/libggml.0.dylib",
             "lib/libggml.dylib",
             "lib/pkgconfig/ggml.pc",
@@ -182,7 +182,7 @@
             "libexec/libggml-cpu-zen4.so",
             "sbom.spdx.json"
           ],
-          "installed_size": 10121617
+          "installed_size": 10388631
         }
       }
     }

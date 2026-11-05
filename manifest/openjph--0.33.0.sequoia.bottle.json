@@ -2,45 +2,45 @@
   "openjph": {
     "formula": {
       "name": "openjph",
-      "pkg_version": "0.32.0",
+      "pkg_version": "0.33.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openjph.rb",
       "tap_git_path": "Formula/o/openjph.rb",
-      "tap_git_revision": "ae0f9eecd7688198ca1c83b3c6e2f8ae291036cf",
+      "tap_git_revision": "ec013b0d363089afe988e3f80e115bc881233966",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Open-source implementation of JPEG2000 Part-15 (or JPH or HTJ2K)",
       "license": "BSD-2-Clause",
       "homepage": "https://github.com/aous72/OpenJPH"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-18T10:10:03Z",
+      "date": "2026-11-04T23:41:31Z",
       "tags": {
         "sequoia": {
-          "filename": "openjph-0.32.0.sequoia.bottle.tar.gz",
-          "local_filename": "openjph--0.32.0.sequoia.bottle.tar.gz",
-          "sha256": "118e82db7425aaa68f11577813d3a1e8d6ad131b5c0a607fee11585cbb4e8199",
+          "filename": "openjph-0.33.0.sequoia.bottle.tar.gz",
+          "local_filename": "openjph--0.33.0.sequoia.bottle.tar.gz",
+          "sha256": "47038cae2d338ac2ea554613001416d3c18fefbd4eb81b0a55dc89798dce503c",
           "tab": {
-            "homebrew_version": "7.0.4",
+            "homebrew_version": "7.0.12",
             "changed_files": [
               "lib/pkgconfig/openjph.pc"
             ],
             "linkage_files": [
               "bin/ojph_compress",
               "bin/ojph_expand",
-              "lib/libopenjph.0.32.0.dylib"
+              "lib/libopenjph.0.33.0.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1789602504,
+            "source_modified_time": 1793570239,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "jpeg-turbo",
-                "version": "3.2.0",
+                "version": "3.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.2.0",
+                "pkg_version": "3.2.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -55,10 +55,10 @@
               },
               {
                 "full_name": "libpng",
-                "version": "1.6.58",
+                "version": "1.6.59",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.6.58",
+                "pkg_version": "1.6.59",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -82,11 +82,12 @@
               },
               {
                 "full_name": "lz4",
-                "version": "1.10.0",
+                "version": "1.11.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.10.0",
-                "declared_directly": false
+                "pkg_version": "1.11.0",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "zstd",
@@ -120,39 +121,111 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
-              "SPDXRef-Package-SPDXRef-xz-5.8.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
-              "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+              "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
+              "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+              "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
                 "name": "jpeg-turbo",
-                "versionInfo": "3.2.0",
+                "versionInfo": "3.2.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "IJG AND Zlib AND BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/jpeg-turbo-3.2.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/jpeg-turbo-3.2.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "ab6e54c4ceaa0b1535994c00b64471b2b5f531b8267ef1ae27f399e3e1c0f587"
+                    "checksumValue": "08604a4526542209098e03ace1ee6ae9344016b3e17796431e3a4d23f4948e7b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.0",
+                    "referenceLocator": "pkg:brew/jpeg-turbo@3.2.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
+                "name": "giflib",
+                "versionInfo": "6.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/giflib-6.1.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f67ea26714be587a58ae9b9ff427a1afa0c082cbec177192514f179983ff2352"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/giflib@6.1.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
+                "name": "libpng",
+                "versionInfo": "1.6.59",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "libpng-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libpng-1.6.59.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "0af47c587a33d8f7f6aebdf4653f35897ec0f223104e5186edaef52dc2e17caa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libpng@1.6.59",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
+                "name": "webp",
+                "versionInfo": "1.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/webp-1.6.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "76a57f341e4dda8eb186c486f67e84b5ef173a8f9b0d475668100365177355eb"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/webp@1.6.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
                 "versionInfo": "5.8.4",
                 "filesAnalyzed": false,
@@ -175,30 +248,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
                 "name": "lz4",
-                "versionInfo": "1.10.0",
+                "versionInfo": "1.11.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                    "checksumValue": "1a8800bdf6873ede4bb7b871370e10e70708984b86b40bc7e50e3b2818585e92"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "name": "zstd",
                 "versionInfo": "1.5.7_1",
                 "filesAnalyzed": false,
@@ -221,7 +294,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
                 "name": "libtiff",
                 "versionInfo": "4.7.2",
                 "filesAnalyzed": false,
@@ -258,27 +331,42 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-openjph"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.8.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-openjph"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-openjph"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.5.7_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-openjph"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.7.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openjph"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openjph"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-openjph"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-openjph"
               },
@@ -314,13 +402,13 @@
             "lib/cmake/openjph/openjph-config.cmake",
             "lib/cmake/openjph/openjph-targets-release.cmake",
             "lib/cmake/openjph/openjph-targets.cmake",
-            "lib/libopenjph.0.32.0.dylib",
-            "lib/libopenjph.0.32.dylib",
+            "lib/libopenjph.0.33.0.dylib",
+            "lib/libopenjph.0.33.dylib",
             "lib/libopenjph.dylib",
             "lib/pkgconfig/openjph.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 693620
+          "installed_size": 706427
         }
       }
     }

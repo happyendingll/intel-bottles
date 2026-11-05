@@ -2,41 +2,41 @@
   "delly": {
     "formula": {
       "name": "delly",
-      "pkg_version": "2.7.0",
+      "pkg_version": "2.8.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/d/delly.rb",
       "tap_git_path": "Formula/d/delly.rb",
-      "tap_git_revision": "6d88ab673b2a408911f2dc6090a61459f302fed6",
+      "tap_git_revision": "ec013b0d363089afe988e3f80e115bc881233966",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Structural variant discovery by paired-end and split-read analysis",
       "license": "BSD-3-Clause",
       "homepage": "https://github.com/dellytools/delly"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-06T09:31:09Z",
+      "date": "2026-11-04T23:23:26Z",
       "tags": {
         "sequoia": {
-          "filename": "delly-2.7.0.sequoia.bottle.tar.gz",
-          "local_filename": "delly--2.7.0.sequoia.bottle.tar.gz",
-          "sha256": "a45e60b2faa7123f9ef8befc25c72feda1d143e6572dabf963da227abe342c3a",
+          "filename": "delly-2.8.1.sequoia.bottle.tar.gz",
+          "local_filename": "delly--2.8.1.sequoia.bottle.tar.gz",
+          "sha256": "3f32269d36364cda0a89968fc84f550b96eeb4c2f023beaf03dbebeab95a565d",
           "tab": {
-            "homebrew_version": "7.0.8",
+            "homebrew_version": "7.0.12",
             "changed_files": [],
             "linkage_files": [
               "bin/delly"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1791209241,
+            "source_modified_time": 1793804465,
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -51,11 +51,12 @@
               },
               {
                 "full_name": "lz4",
-                "version": "1.10.0",
+                "version": "1.11.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.10.0",
-                "declared_directly": false
+                "pkg_version": "1.11.0",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "zstd",
@@ -69,9 +70,9 @@
               {
                 "full_name": "boost",
                 "version": "1.92.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.92.0",
+                "pkg_version": "1.92.0_1",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
@@ -86,10 +87,10 @@
               },
               {
                 "full_name": "htslib",
-                "version": "1.24",
+                "version": "1.25",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.24",
+                "pkg_version": "1.25",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -107,12 +108,38 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-htslib-1.2e.25",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
@@ -137,24 +164,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
                 "name": "lz4",
-                "versionInfo": "1.10.0",
+                "versionInfo": "1.11.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                    "checksumValue": "1a8800bdf6873ede4bb7b871370e10e70708984b86b40bc7e50e3b2818585e92"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -183,6 +210,52 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+                "name": "boost",
+                "versionInfo": "1.92.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSL-1.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/boost-1.92.0_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "83df3d2e7a39c19ac12d3405209bdaa598cacbc3ad0f2f1d869ab7835cf7a3a7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/boost@1.92.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-htslib-1.2e.25",
+                "name": "htslib",
+                "versionInfo": "1.25",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT AND BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/htslib-1.25.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "735e8ed00ca013dd61d58d97518fb71556ceb8a8b47155e8510d75e06d109b6b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/htslib@1.25",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "16.4",
@@ -197,17 +270,32 @@
             ],
             "relationships": [
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-delly"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-delly"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-delly"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-delly"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-delly"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-htslib-1.2e.25",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-delly"
               },
@@ -241,7 +329,7 @@
             "share/delly/scripts/__init.py__",
             "share/delly/scripts/delly2bnd.py"
           ],
-          "installed_size": 5649963
+          "installed_size": 5787321
         }
       }
     }
