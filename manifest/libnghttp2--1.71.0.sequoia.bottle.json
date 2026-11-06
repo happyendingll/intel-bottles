@@ -1,36 +1,36 @@
 {
-  "libnghttp3": {
+  "libnghttp2": {
     "formula": {
-      "name": "libnghttp3",
-      "pkg_version": "1.18.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libnghttp3.rb",
-      "tap_git_path": "Formula/lib/libnghttp3.rb",
-      "tap_git_revision": "ed7e41bc1d4ea55f28020f29d9ce7dccdb2a867c",
+      "name": "libnghttp2",
+      "pkg_version": "1.71.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libnghttp2.rb",
+      "tap_git_path": "Formula/lib/libnghttp2.rb",
+      "tap_git_revision": "dcfb5a45fd82dba77984e26d06d4498b9a95b993",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "HTTP/3 library written in C",
+      "desc": "HTTP/2 C Library",
       "license": "MIT",
-      "homepage": "https://nghttp2.org/nghttp3/"
+      "homepage": "https://nghttp2.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-09-22T09:48:40Z",
+      "date": "2026-11-06T08:56:29Z",
       "tags": {
         "sequoia": {
-          "filename": "libnghttp3-1.18.0.sequoia.bottle.tar.gz",
-          "local_filename": "libnghttp3--1.18.0.sequoia.bottle.tar.gz",
-          "sha256": "99daad5920440a02496a48925640e934f112b12081c4bda4887fe525eaf6c479",
+          "filename": "libnghttp2-1.71.0.sequoia.bottle.tar.gz",
+          "local_filename": "libnghttp2--1.71.0.sequoia.bottle.tar.gz",
+          "sha256": "35a0ce7c8e243e44749a6df2c510a85fc50fdfe03cf48d830a31edbf2b962d7e",
           "tab": {
-            "homebrew_version": "7.0.6",
+            "homebrew_version": "7.0.12",
             "changed_files": [
-              "lib/pkgconfig/libnghttp3.pc"
+              "lib/pkgconfig/libnghttp2.pc"
             ],
             "linkage_files": [
-              "lib/libnghttp3.9.9.0.dylib"
+              "lib/libnghttp2.14.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1785050965,
+            "source_modified_time": 1793624663,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -66,34 +66,28 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-libnghttp3-src"
+                "relatedSpdxElement": "SPDXRef-Archive-libnghttp2-src"
               }
             ]
           },
           "path_exec_files": [],
           "all_files": [
-            ".brew/libnghttp3.rb",
+            ".brew/libnghttp2.rb",
             "AUTHORS",
             "COPYING",
             "ChangeLog",
             "INSTALL_RECEIPT.json",
             "README",
             "README.rst",
-            "include/nghttp3/nghttp3.h",
-            "include/nghttp3/version.h",
-            "lib/cmake/nghttp3/nghttp3Config.cmake",
-            "lib/cmake/nghttp3/nghttp3ConfigVersion.cmake",
-            "lib/cmake/nghttp3/nghttp3Targets-release.cmake",
-            "lib/cmake/nghttp3/nghttp3Targets.cmake",
-            "lib/libnghttp3.9.9.0.dylib",
-            "lib/libnghttp3.9.dylib",
-            "lib/libnghttp3.a",
-            "lib/libnghttp3.dylib",
-            "lib/pkgconfig/libnghttp3.pc",
-            "sbom.spdx.json",
-            "share/doc/nghttp3/README.rst"
+            "include/nghttp2/nghttp2.h",
+            "include/nghttp2/nghttp2ver.h",
+            "lib/libnghttp2.14.dylib",
+            "lib/libnghttp2.a",
+            "lib/libnghttp2.dylib",
+            "lib/pkgconfig/libnghttp2.pc",
+            "sbom.spdx.json"
           ],
-          "installed_size": 579497
+          "installed_size": 753353
         }
       }
     }
