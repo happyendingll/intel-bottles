@@ -1,0 +1,101 @@
+{
+  "yara-x": {
+    "formula": {
+      "name": "yara-x",
+      "pkg_version": "1.23.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/y/yara-x.rb",
+      "tap_git_path": "Formula/y/yara-x.rb",
+      "tap_git_revision": "4edf94de3e3f10de7c1e72f7d8a906937c0fa96e",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Tool to do pattern matching for malware research",
+      "license": "BSD-3-Clause",
+      "homepage": "https://virustotal.github.io/yara-x/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-06T02:58:13Z",
+      "tags": {
+        "sequoia": {
+          "filename": "yara-x-1.23.0.sequoia.bottle.tar.gz",
+          "local_filename": "yara-x--1.23.0.sequoia.bottle.tar.gz",
+          "sha256": "2fb912c4544808d88312ed40b211f3abfc8676a4096128171633b819854c50fb",
+          "tab": {
+            "homebrew_version": "7.0.12",
+            "changed_files": [
+              "lib/pkgconfig/yara_x_capi.pc"
+            ],
+            "linkage_files": [
+              "lib/libyara_x_capi.1.23.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1793873564,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-yara-x-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/yr"
+          ],
+          "all_files": [
+            ".brew/yara-x.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "AUTHORS",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/yr",
+            "etc/bash_completion.d/yr",
+            "include/yara_x.h",
+            "lib/libyara_x_capi.1.23.0.dylib",
+            "lib/libyara_x_capi.1.dylib",
+            "lib/libyara_x_capi.a",
+            "lib/libyara_x_capi.dylib",
+            "lib/pkgconfig/yara_x_capi.pc",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/yr.fish",
+            "share/zsh/site-functions/_yr"
+          ],
+          "installed_size": 169879010
+        }
+      }
+    }
+  }
+}
