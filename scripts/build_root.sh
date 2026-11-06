@@ -76,11 +76,11 @@ print(json.load(sys.stdin)["formulae"][0]["urls"]["stable"]["checksum"])
 fetch_with_limit() {
   local limit="$1" formula="$2"
   if command -v gtimeout >/dev/null 2>&1; then
-    gtimeout "$limit" brew fetch --build-bottle --retry "$formula"
+    gtimeout "$limit" brew fetch --deps --build-bottle --retry "$formula"
   elif command -v timeout >/dev/null 2>&1; then
-    timeout "$limit" brew fetch --build-bottle --retry "$formula"
+    timeout "$limit" brew fetch --deps --build-bottle --retry "$formula"
   else
-    brew fetch --build-bottle --retry "$formula" &
+    brew fetch --deps --build-bottle --retry "$formula" &
     local pid=$! rc=0
     ( sleep "$limit"; kill -TERM "$pid" 2>/dev/null ) >/dev/null 2>&1 &
     local watchdog=$!
@@ -159,7 +159,9 @@ for formula in $TODO; do
 
   prefetch_gnu_source "$formula"
 
-  # Download and verify every source before uninstalling the runner's existing formula.
+  # Download and verify the formula source plus every dependency source/bottle before
+  # uninstalling the runner's existing formula. `brew install` may still need to fetch a
+  # missing or updated build dependency even after the root source itself is cached.
   # Some preinstalled tools are linked to formulae we rebuild: Homebrew's curl depends on
   # libnghttp2, libnghttp3, and libngtcp2. Removing one before `brew fetch` makes curl fail
   # to start with a missing dylib and causes every downstream root to repeat the failure.
