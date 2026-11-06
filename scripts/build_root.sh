@@ -157,17 +157,14 @@ for formula in $TODO; do
   echo "::group::build $formula"
   df -h / | tail -1
 
-  # `brew reinstall` has no --build-bottle flag, so anything already present (GitHub's
-  # runner image ships a fair few formulae preinstalled) has to be removed first --
-  # otherwise `brew install` no-ops and `brew bottle` then refuses the formula.
-  if brew list --formula --versions "$formula" >/dev/null 2>&1; then
-    echo "    already installed; removing so it can be rebuilt for bottling"
-    brew uninstall --ignore-dependencies --force "$formula"
-  fi
-
   prefetch_gnu_source "$formula"
 
-  # Download sources first, under a hard wall-clock limit.
+  # Download and verify every source before uninstalling the runner's existing formula.
+  # Some preinstalled tools are linked to formulae we rebuild: Homebrew's curl depends on
+  # libnghttp2, libnghttp3, and libngtcp2. Removing one before `brew fetch` makes curl fail
+  # to start with a missing dylib and causes every downstream root to repeat the failure.
+  # Keeping the old keg through fetch also leaves the runner usable when all retries fail.
+  # Apply a hard wall-clock limit to each attempt.
   #
   # This loop previously had no time bound and nearly destroyed a whole run: gmp's
   # mirrors stalled, each `brew fetch --retry` sat for ~2.5 hours before failing, and
@@ -201,6 +198,16 @@ for formula in $TODO; do
   if [ "$fetched" != 1 ]; then
     echo "    could not download sources for $formula" >&2
     exit 1
+  fi
+
+  # `brew reinstall` has no --build-bottle flag, so anything already present (GitHub's
+  # runner image ships a fair few formulae preinstalled) has to be removed before install;
+  # otherwise `brew install` no-ops and `brew bottle` refuses the formula. Do this only
+  # after fetch has populated and verified Homebrew's cache so removing a networking
+  # library cannot break the download that is needed to rebuild it.
+  if brew list --formula --versions "$formula" >/dev/null 2>&1; then
+    echo "    sources cached; removing installed formula so it can be rebuilt for bottling"
+    brew uninstall --ignore-dependencies --force "$formula"
   fi
 
   # GitHub's macOS image ships its own Python and friends in /usr/local, so pouring a
