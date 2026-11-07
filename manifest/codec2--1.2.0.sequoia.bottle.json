@@ -1,0 +1,113 @@
+{
+  "codec2": {
+    "formula": {
+      "name": "codec2",
+      "pkg_version": "1.2.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/c/codec2.rb",
+      "tap_git_path": "Formula/c/codec2.rb",
+      "tap_git_revision": "4b5f9cb1a4b1fe7e4db9f23cc154cd805cbd6e7c",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Open source speech codec",
+      "license": "LGPL-2.1-only",
+      "homepage": "https://github.com/drowe67/codec2"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-07T06:23:27Z",
+      "tags": {
+        "sequoia": {
+          "filename": "codec2-1.2.0.sequoia.bottle.tar.gz",
+          "local_filename": "codec2--1.2.0.sequoia.bottle.tar.gz",
+          "sha256": "aba3d4f5d94951c1ead9524a5145e8941cb820e3f25daa461808578b64b04bb6",
+          "tab": {
+            "homebrew_version": "7.0.12",
+            "changed_files": [
+              "lib/pkgconfig/codec2.pc"
+            ],
+            "linkage_files": [
+              "lib/libcodec2.1.2.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1689809388,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-codec2-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/c2dec",
+            "bin/c2enc",
+            "bin/c2sim",
+            "bin/c2demo"
+          ],
+          "all_files": [
+            ".brew/codec2.rb",
+            "COPYING",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/c2dec",
+            "bin/c2demo",
+            "bin/c2enc",
+            "bin/c2sim",
+            "include/codec2/codec2.h",
+            "include/codec2/codec2_cohpsk.h",
+            "include/codec2/codec2_fdmdv.h",
+            "include/codec2/codec2_fifo.h",
+            "include/codec2/codec2_fm.h",
+            "include/codec2/codec2_math.h",
+            "include/codec2/codec2_ofdm.h",
+            "include/codec2/comp.h",
+            "include/codec2/freedv_api.h",
+            "include/codec2/fsk.h",
+            "include/codec2/modem_stats.h",
+            "include/codec2/reliable_text.h",
+            "include/codec2/version.h",
+            "lib/cmake/codec2/codec2-config-release.cmake",
+            "lib/cmake/codec2/codec2-config.cmake",
+            "lib/libcodec2.1.2.dylib",
+            "lib/libcodec2.dylib",
+            "lib/pkgconfig/codec2.pc",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 1515680
+        }
+      }
+    }
+  }
+}
