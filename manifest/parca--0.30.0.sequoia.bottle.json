@@ -1,37 +1,32 @@
 {
-  "prometheus": {
+  "parca": {
     "formula": {
-      "name": "prometheus",
-      "pkg_version": "3.15.1",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/prometheus.rb",
-      "tap_git_path": "Formula/p/prometheus.rb",
-      "tap_git_revision": "af531c75684d13a72c7714aa5fae8dc831b9dcde",
+      "name": "parca",
+      "pkg_version": "0.30.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/parca.rb",
+      "tap_git_path": "Formula/p/parca.rb",
+      "tap_git_revision": "d2892b8c70ae36a19e528c2139e9240b3f52897a",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Service monitoring system and time series database",
+      "desc": "Continuous profiling for analysis of CPU and memory usage",
       "license": "Apache-2.0",
-      "homepage": "https://prometheus.io/"
+      "homepage": "https://www.parca.dev/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-22T08:19:24Z",
+      "date": "2026-11-07T06:12:08Z",
       "tags": {
         "sequoia": {
-          "filename": "prometheus-3.15.1.sequoia.bottle.tar.gz",
-          "local_filename": "prometheus--3.15.1.sequoia.bottle.tar.gz",
-          "sha256": "60c82a8c358e450a5c529eeebb332d48634f92f9c976d12cd0b94129756f6c34",
+          "filename": "parca-0.30.0.sequoia.bottle.tar.gz",
+          "local_filename": "parca--0.30.0.sequoia.bottle.tar.gz",
+          "sha256": "b4703e8c9707f2239a4d3e7f4584bf9f6f76600bd3571f26b4c333805c6cc8b9",
           "tab": {
-            "homebrew_version": "7.0.10",
-            "changed_files": [
-              "bin/prometheus_brew_services",
-              ".bottle/etc/prometheus.args",
-              "sh.brew.prometheus.plist",
-              "sh.brew.prometheus.service"
-            ],
+            "homebrew_version": "7.0.12",
+            "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792589043,
+            "source_modified_time": 1793955769,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -67,32 +62,22 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-prometheus-src"
+                "relatedSpdxElement": "SPDXRef-Archive-parca-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/prometheus_brew_services",
-            "bin/prometheus",
-            "bin/promtool"
+            "bin/parca"
           ],
           "all_files": [
-            ".bottle/etc/prometheus.args",
-            ".bottle/etc/prometheus.yml",
-            ".brew/prometheus.rb",
-            "CHANGELOG.md",
+            ".brew/parca.rb",
             "INSTALL_RECEIPT.json",
             "LICENSE",
-            "NOTICE",
             "README.md",
-            "bin/prometheus",
-            "bin/prometheus_brew_services",
-            "bin/promtool",
-            "sbom.spdx.json",
-            "sh.brew.prometheus.plist",
-            "sh.brew.prometheus.service"
+            "bin/parca",
+            "sbom.spdx.json"
           ],
-          "installed_size": 272993217
+          "installed_size": 202918918
         }
       }
     }
