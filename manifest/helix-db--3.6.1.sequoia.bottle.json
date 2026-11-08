@@ -1,0 +1,1094 @@
+{
+  "helix-db": {
+    "formula": {
+      "name": "helix-db",
+      "pkg_version": "3.6.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/h/helix-db.rb",
+      "tap_git_path": "Formula/h/helix-db.rb",
+      "tap_git_revision": "ab953f47e4d476ccf668c1e591c9bed750c72f79",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Open-source graph-vector database built from scratch in Rust",
+      "license": "Apache-2.0",
+      "homepage": "https://helix-db.com"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
+      "cellar": "/usr/local/Cellar",
+      "rebuild": 0,
+      "date": "2026-11-07T23:08:56Z",
+      "tags": {
+        "sequoia": {
+          "filename": "helix-db-3.6.1.sequoia.bottle.tar.gz",
+          "local_filename": "helix-db--3.6.1.sequoia.bottle.tar.gz",
+          "sha256": "d2f478734112cd9da8a153ea3678728c34f54bb29494203827bbebb0baef296d",
+          "tab": {
+            "homebrew_version": "7.0.12",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [
+              "bin/helix"
+            ],
+            "source_modified_time": 1793957536,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-11-05",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-11-05",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openssl@4",
+                "version": "4.1.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.1.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libssh2",
+                "version": "1.11.1",
+                "revision": 7,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.11.1_7",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "llhttp",
+                "version": "9.4.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "9.4.3",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libgit2",
+                "version": "1.9.7",
+                "revision": 2,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.9.7_2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.11.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.11.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "z3",
+                "version": "5.3.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.3.3",
+                "declared_directly": false,
+                "compatibility_version": 5
+              },
+              {
+                "full_name": "llvm",
+                "version": "23.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.5",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "pkgconf",
+                "version": "3.0.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.10",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.54.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "rust",
+                "version": "1.99.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.99.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/string.rs",
+              "offset": 9841252
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/node.rs",
+              "offset": 9842426
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/navigate.rs",
+              "offset": 9842521
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/map.rs",
+              "offset": 9842620
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/map/entry.rs",
+              "offset": 9842887
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/string.rs",
+              "offset": 9843359
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/slice.rs",
+              "offset": 9846177
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/ops/function.rs",
+              "offset": 9846791
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/string.rs",
+              "offset": 9847024
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/vec_deque/mod.rs",
+              "offset": 9847289
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/env.rs",
+              "offset": 9847743
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/slice/index.rs",
+              "offset": 9847817
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/write.rs",
+              "offset": 9848163
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/str/pattern.rs",
+              "offset": 9848379
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/write.rs",
+              "offset": 9848462
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/string.rs",
+              "offset": 9848804
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/thread/local.rs",
+              "offset": 9849160
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/str.rs",
+              "offset": 9849763
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/io/read.rs",
+              "offset": 9850400
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/string.rs",
+              "offset": 9851351
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/slice/sort/stable/quicksort.rs",
+              "offset": 9851811
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/num/wrapping.rs",
+              "offset": 9852252
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/navigate.rs",
+              "offset": 9853150
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/cell/once.rs",
+              "offset": 9853638
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/char/methods.rs",
+              "offset": 9853719
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/node.rs",
+              "offset": 9853934
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/thread/local.rs",
+              "offset": 9854917
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/node.rs",
+              "offset": 9855258
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/string.rs",
+              "offset": 9855554
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/string.rs",
+              "offset": 9858922
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/navigate.rs",
+              "offset": 9859001
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/map.rs",
+              "offset": 9859100
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/sync/once.rs",
+              "offset": 9861926
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/string.rs",
+              "offset": 9862430
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/write.rs",
+              "offset": 9862633
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/io/read.rs",
+              "offset": 9862865
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/slice.rs",
+              "offset": 9862945
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/sys/sync/once/queue.rs",
+              "offset": 9863023
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/thread/local.rs",
+              "offset": 9863704
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/write.rs",
+              "offset": 9864717
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/ops/function.rs",
+              "offset": 9866185
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/string.rs",
+              "offset": 9867928
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/sync/once.rs",
+              "offset": 9868532
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/slice.rs",
+              "offset": 9868996
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/navigate.rs",
+              "offset": 9869074
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/map.rs",
+              "offset": 9869173
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/slice/index.rs",
+              "offset": 9869267
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/write.rs",
+              "offset": 9869350
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/node.rs",
+              "offset": 9869430
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/borrow.rs",
+              "offset": 9870851
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/str/mod.rs",
+              "offset": 9871065
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/time.rs",
+              "offset": 9871399
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/time.rs",
+              "offset": 9871609
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/sys/sync/once/queue.rs",
+              "offset": 9871685
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/sys/sync/once/queue.rs",
+              "offset": 9871775
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/thread/lifecycle.rs",
+              "offset": 9872123
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/sync.rs",
+              "offset": 9872210
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/sync/once.rs",
+              "offset": 9872287
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/time.rs",
+              "offset": 9872367
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/slice.rs",
+              "offset": 9872443
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/write.rs",
+              "offset": 9872521
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/thread/functions.rs",
+              "offset": 9872601
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/sync/once.rs",
+              "offset": 9873075
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/node.rs",
+              "offset": 9875020
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/navigate.rs",
+              "offset": 9875115
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/borrowed_buf.rs",
+              "offset": 9875908
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/write.rs",
+              "offset": 9876384
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/raw_vec/mod.rs",
+              "offset": 9879148
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/slice/index.rs",
+              "offset": 9887083
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/node.rs",
+              "offset": 9887967
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/navigate.rs",
+              "offset": 9889064
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/slice/index.rs",
+              "offset": 9896500
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/time.rs",
+              "offset": 9897120
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/sys/sync/once/queue.rs",
+              "offset": 9897196
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/navigate.rs",
+              "offset": 9897286
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/map.rs",
+              "offset": 9897385
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/node.rs",
+              "offset": 9897479
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/slice.rs",
+              "offset": 9897574
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/write.rs",
+              "offset": 9897652
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/sys/sync/once/queue.rs",
+              "offset": 9897732
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/sync/once.rs",
+              "offset": 9897822
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/thread/lifecycle.rs",
+              "offset": 9897902
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/node.rs",
+              "offset": 9898397
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/navigate.rs",
+              "offset": 9898492
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/write.rs",
+              "offset": 9898764
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/string.rs",
+              "offset": 9899043
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/string.rs",
+              "offset": 9899425
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/write.rs",
+              "offset": 9899867
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/vec_deque/mod.rs",
+              "offset": 9900603
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/io/read.rs",
+              "offset": 9901242
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/node.rs",
+              "offset": 9901348
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/num/mod.rs",
+              "offset": 9901641
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/navigate.rs",
+              "offset": 9901915
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/collections/btree/map/entry.rs",
+              "offset": 9902014
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/string.rs",
+              "offset": 9902478
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/alloc/src/borrow.rs",
+              "offset": 9902867
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/std/src/thread/local.rs",
+              "offset": 9905485
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/write.rs",
+              "offset": 9905568
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/borrowed_buf.rs",
+              "offset": 9905859
+            },
+            {
+              "path": "bin/helix",
+              "string": "/usr/local/Cellar/rust/1.99.1/lib/rustlib/src/rust/library/core/src/io/io_slice.rs",
+              "offset": 9906077
+            }
+          ],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-libssh2-1.2e.11.2e.1.5f.7",
+              "SPDXRef-Package-SPDXRef-libgit2-1.2e.9.2e.7.5f.2",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.3",
+              "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.5",
+              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.10",
+              "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
+              "SPDXRef-Package-SPDXRef-rust-1.2e.99.2e.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+                "name": "ca-certificates",
+                "versionInfo": "2026-11-05",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "name": "openssl@4",
+                "versionInfo": "4.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libssh2-1.2e.11.2e.1.5f.7",
+                "name": "libssh2",
+                "versionInfo": "1.11.1_7",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libssh2-1.11.1_7.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "070b6bb87f5b2f1987997d2cb07c571e6177cc50b2eac318790227957f3a2a24"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libssh2@1.11.1_7",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libgit2-1.2e.9.2e.7.5f.2",
+                "name": "libgit2",
+                "versionInfo": "1.9.7_2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-only WITH GCC-exception-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libgit2-1.9.7_2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6ae8a393322765b076a5d946f44a81c4b2d3933281ac16c5b9c9235c9a00da61"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libgit2@1.9.7_2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+                "name": "lz4",
+                "versionInfo": "1.11.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1a8800bdf6873ede4bb7b871370e10e70708984b86b40bc7e50e3b2818585e92"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.11.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.3",
+                "name": "z3",
+                "versionInfo": "5.3.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/z3-5.3.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c1829cfc0f7028d08240e8349f742092a7601a1450c2c7bcc391f9c37e30ef2b"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/z3@5.3.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.5",
+                "name": "llvm",
+                "versionInfo": "23.1.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/llvm-23.1.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fb9a4dc5d43058a09460bbc9222730113e17f98064a88e1df3e635ed1e2f2e56"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/llvm@23.1.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.10",
+                "name": "pkgconf",
+                "versionInfo": "3.0.10",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/pkgconf-3.0.10.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "0f92d5c53ca172b1d2504063ec1bbe78c9f5cec35195eeb5c8f610107514f007"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pkgconf@3.0.10",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "name": "readline",
+                "versionInfo": "8.3.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/readline-8.3.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "63172070efacae8212b05aea606cd080383aa34dacd50b7333fa44ac3d33de46"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
+                "name": "sqlite",
+                "versionInfo": "3.54.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/sqlite-3.54.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "46c164b4911c47b4b8a09c691146a1f863b9b5fea973c4907e179d92113d31b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-rust-1.2e.99.2e.1",
+                "name": "rust",
+                "versionInfo": "1.99.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0 OR MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/rust-1.99.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6f6f4fd0204137d82e53f45465991db11ed7098ed037ebe5256fe1a2d996ef12"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/rust@1.99.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libssh2-1.2e.11.2e.1.5f.7",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libgit2-1.2e.9.2e.7.5f.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-llvm-23.2e.1.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.10",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-rust-1.2e.99.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-helix-db"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-helix-db-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/helix"
+          ],
+          "all_files": [
+            ".brew/helix-db.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/helix",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 14394899
+        }
+      }
+    }
+  }
+}
