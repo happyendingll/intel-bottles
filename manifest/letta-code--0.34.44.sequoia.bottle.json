@@ -2,10 +2,10 @@
   "letta-code": {
     "formula": {
       "name": "letta-code",
-      "pkg_version": "0.34.42",
+      "pkg_version": "0.34.44",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/l/letta-code.rb",
       "tap_git_path": "Formula/l/letta-code.rb",
-      "tap_git_revision": "ab953f47e4d476ccf668c1e591c9bed750c72f79",
+      "tap_git_revision": "bc7e6f79f0364dac3ce41afde534124c0f251bf6",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Memory-first coding agent",
       "license": "Apache-2.0",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-11-08T00:16:01Z",
+      "date": "2026-11-08T23:04:32Z",
       "tags": {
         "sequoia": {
-          "filename": "letta-code-0.34.42.sequoia.bottle.tar.gz",
-          "local_filename": "letta-code--0.34.42.sequoia.bottle.tar.gz",
-          "sha256": "f95421d83bcf392c9bca6b7b9479a10b49133b227a39ad1ab6a439c4f45cf806",
+          "filename": "letta-code-0.34.44.sequoia.bottle.tar.gz",
+          "local_filename": "letta-code--0.34.44.sequoia.bottle.tar.gz",
+          "sha256": "30023a8325df2e1b4de17dcf0a262c4844f82828c916a9c1be27d9f0053e895e",
           "tab": {
             "homebrew_version": "7.0.12",
             "changed_files": [
@@ -137,10 +137,10 @@
               },
               {
                 "full_name": "fmt",
-                "version": "12.2.0",
+                "version": "12.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "12.2.0",
+                "pkg_version": "12.2.1",
                 "declared_directly": false,
                 "compatibility_version": 2
               },
@@ -1121,7 +1121,7 @@
           "binary_relocation_diagnostics": [
             {
               "path": "libexec/lib/node_modules/@letta-ai/letta-code/node_modules/node-pty/build/Release/spawn-helper",
-              "string": "/usr/local/Cellar/letta-code/0.34.42/libexec/lib/node_modules/@letta-ai/letta-code/node_modules/node-pty/build/../src/unix/",
+              "string": "/usr/local/Cellar/letta-code/0.34.44/libexec/lib/node_modules/@letta-ai/letta-code/node_modules/node-pty/build/../src/unix/",
               "offset": 12920
             }
           ],
@@ -1132,6 +1132,7 @@
               "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
               "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
               "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
+              "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
               "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.3",
               "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
@@ -1313,6 +1314,29 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/glib@2.90.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
+                "name": "fmt",
+                "versionInfo": "12.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/fmt-12.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "298737f4fd0e34b47f2e3dcc56eea957f8e1a4358c3b3a292b0e481eb3dc5f51"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/fmt@12.2.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -2898,6 +2922,11 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-letta-code"
               },
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-letta-code"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-letta-code"
@@ -4061,6 +4090,14 @@
             "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-coding-agent.d.ts.map",
             "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-fork-context.d.ts",
             "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-fork-context.d.ts.map",
+            "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-llm-trace-launch.d.ts",
+            "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-llm-trace-launch.d.ts.map",
+            "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-llm-trace-payload.d.ts",
+            "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-llm-trace-payload.d.ts.map",
+            "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-llm-trace-proxy.d.ts",
+            "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-llm-trace-proxy.d.ts.map",
+            "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-llm-trace-session.d.ts",
+            "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-llm-trace-session.d.ts.map",
             "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-tool-call.d.ts",
             "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/external-tool-call.d.ts.map",
             "libexec/lib/node_modules/@letta-ai/letta-code/dist/types/tools/impl/foreground-sleep.d.ts",
@@ -4505,6 +4542,7 @@
             "libexec/lib/node_modules/@letta-ai/letta-code/docs/examples/mods/learning/memory-citations.env.json",
             "libexec/lib/node_modules/@letta-ai/letta-code/docs/examples/mods/learning/uv-pip-install.env.json",
             "libexec/lib/node_modules/@letta-ai/letta-code/docs/examples/mods/memory-citations.ts",
+            "libexec/lib/node_modules/@letta-ai/letta-code/docs/external-agent-traces.md",
             "libexec/lib/node_modules/@letta-ai/letta-code/docs/nix.md",
             "libexec/lib/node_modules/@letta-ai/letta-code/docs/plans/discord-channel-policy-consolidation.md",
             "libexec/lib/node_modules/@letta-ai/letta-code/docs/plans/resume-tail-fast-path.md",
@@ -34235,7 +34273,6 @@
             "libexec/lib/node_modules/@letta-ai/letta-code/skills/managing-agent-webhooks/SKILL.md",
             "libexec/lib/node_modules/@letta-ai/letta-code/skills/managing-agent-webhooks/scripts/manage-agent-webhooks.mjs",
             "libexec/lib/node_modules/@letta-ai/letta-code/skills/managing-shared-memory/SKILL.md",
-            "libexec/lib/node_modules/@letta-ai/letta-code/skills/messaging-agents/SKILL.md",
             "libexec/lib/node_modules/@letta-ai/letta-code/skills/music-generation/LICENSE",
             "libexec/lib/node_modules/@letta-ai/letta-code/skills/music-generation/SKILL.md",
             "libexec/lib/node_modules/@letta-ai/letta-code/skills/scheduling-tasks/SKILL.md",
@@ -34261,6 +34298,7 @@
             "libexec/lib/node_modules/@letta-ai/letta-code/skills/workflow-authoring/SKILL.md",
             "libexec/lib/node_modules/@letta-ai/letta-code/skills/working-across-computers/SKILL.md",
             "libexec/lib/node_modules/@letta-ai/letta-code/skills/working-across-computers/references/connect-a-computer-for-remote-access.md",
+            "libexec/lib/node_modules/@letta-ai/letta-code/vendor/AGENTS.md",
             "libexec/lib/node_modules/@letta-ai/letta-code/vendor/ink/build/components/App.js",
             "libexec/lib/node_modules/@letta-ai/letta-code/vendor/ink/build/devtools.js",
             "libexec/lib/node_modules/@letta-ai/letta-code/vendor/ink/build/hooks/use-input.js",
@@ -34271,7 +34309,7 @@
             "libexec/lib/node_modules/@letta-ai/letta-code/vendor/ink-text-input/build/index.js",
             "sbom.spdx.json"
           ],
-          "installed_size": 234975277
+          "installed_size": 234992532
         }
       }
     }
