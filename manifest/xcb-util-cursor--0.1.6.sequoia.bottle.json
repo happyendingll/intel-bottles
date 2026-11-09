@@ -1,0 +1,187 @@
+{
+  "xcb-util-cursor": {
+    "formula": {
+      "name": "xcb-util-cursor",
+      "pkg_version": "0.1.6",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/x/xcb-util-cursor.rb",
+      "tap_git_path": "Formula/x/xcb-util-cursor.rb",
+      "tap_git_revision": "75b69e862866d9ccc86f1afd29004694979576d5",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "XCB cursor library (replacement for libXcursor)",
+      "license": "X11",
+      "homepage": "https://xcb.freedesktop.org"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-09T01:03:32Z",
+      "tags": {
+        "sequoia": {
+          "filename": "xcb-util-cursor-0.1.6.sequoia.bottle.tar.gz",
+          "local_filename": "xcb-util-cursor--0.1.6.sequoia.bottle.tar.gz",
+          "sha256": "6c964e73f65087130975db03e9eb222a1b36442005c4903546f6a3ee39e7c7ea",
+          "tab": {
+            "homebrew_version": "7.0.12",
+            "changed_files": [
+              "lib/pkgconfig/xcb-cursor.pc"
+            ],
+            "linkage_files": [
+              "lib/libxcb-cursor.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1756766685,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "xorgproto",
+                "version": "2026.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxau",
+                "version": "1.0.12",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.12",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxdmcp",
+                "version": "1.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxcb",
+                "version": "1.17.0",
+                "revision": 0,
+                "bottle_rebuild": 1,
+                "pkg_version": "1.17.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xcb-util",
+                "version": "0.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.4.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xcb-util-image",
+                "version": "0.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.4.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xcb-util-renderutil",
+                "version": "0.3.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.3.10",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "name": "xorgproto",
+                "versionInfo": "2026.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/xorgproto-2026.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "0d98eefb40005082d7c0bdc684951f1221d9caaba753a44034a0e930bbe7d9b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xorgproto@2026.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xcb-util-cursor"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-xcb-util-cursor-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/xcb-util-cursor.rb",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README.md",
+            "include/xcb/xcb_cursor.h",
+            "lib/libxcb-cursor.0.dylib",
+            "lib/libxcb-cursor.a",
+            "lib/libxcb-cursor.dylib",
+            "lib/pkgconfig/xcb-cursor.pc",
+            "sbom.spdx.json",
+            "share/icons/.keepme.xcb-util-cursor"
+          ],
+          "installed_size": 80894
+        }
+      }
+    }
+  }
+}
