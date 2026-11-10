@@ -2,27 +2,27 @@
   "fluent-bit": {
     "formula": {
       "name": "fluent-bit",
-      "pkg_version": "5.1.5",
+      "pkg_version": "5.2.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/f/fluent-bit.rb",
       "tap_git_path": "Formula/f/fluent-bit.rb",
-      "tap_git_revision": "257b265f000f3e8a0bb8d28509226932b3effe11",
+      "tap_git_revision": "16f9158eddeb50847e06ff541bc326c2080db4eb",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Fast and Lightweight Logs and Metrics processor",
       "license": "Apache-2.0",
       "homepage": "https://fluentbit.io"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-21T22:40:24Z",
+      "date": "2026-11-10T05:33:30Z",
       "tags": {
         "sequoia": {
-          "filename": "fluent-bit-5.1.5.sequoia.bottle.tar.gz",
-          "local_filename": "fluent-bit--5.1.5.sequoia.bottle.tar.gz",
-          "sha256": "642bc7f433bd88ef4c32c446585154ca2920f75953898c78b336876c5c876152",
+          "filename": "fluent-bit-5.2.0.sequoia.bottle.tar.gz",
+          "local_filename": "fluent-bit--5.2.0.sequoia.bottle.tar.gz",
+          "sha256": "8cebad229d33ea978cb084d26c7431c0285ec3662e42b773a19d70ecbacce4cf",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.13",
             "changed_files": [
               "include/fluent-bit/tls/flb_tls_info.h"
             ],
@@ -31,7 +31,7 @@
               "lib/fluent-bit/libfluent-bit.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792554706,
+            "source_modified_time": 1794188397,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -45,29 +45,30 @@
               },
               {
                 "full_name": "luajit",
-                "version": "2.1.1792527110",
+                "version": "2.1.1794214635",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.1.1792527110",
+                "pkg_version": "2.1.1794214635",
                 "declared_directly": true,
-                "compatibility_version": 34
+                "compatibility_version": 38
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-10-20",
+                "version": "2026-11-05",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-10-20",
+                "pkg_version": "2026-11-05",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
-                "declared_directly": true
+                "pkg_version": "4.1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "zstd",
@@ -92,78 +93,78 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-luajit-2.2e.1.2e.1792527110",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-luajit-2.2e.1.2e.1794214635",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-luajit-2.2e.1.2e.1792527110",
+                "SPDXID": "SPDXRef-Package-SPDXRef-luajit-2.2e.1.2e.1794214635",
                 "name": "luajit",
-                "versionInfo": "2.1.1792527110",
+                "versionInfo": "2.1.1794214635",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/luajit-2.1.1792527110.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/luajit-2.1.1794214635.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "9a6ecdbb7dccdff379bfee716083b263366b2407057e00d1b7cfbc71fa3ce5a8"
+                    "checksumValue": "c13b1c5df442ee1c6c49b5027e9a534bf9a688ffa178cef468ac1e3870e25ae1"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/luajit@2.1.1792527110",
+                    "referenceLocator": "pkg:brew/luajit@2.1.1794214635",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "name": "ca-certificates",
-                "versionInfo": "2026-10-20",
+                "versionInfo": "2026-11-05",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -206,17 +207,17 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-luajit-2.2e.1.2e.1792527110",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-luajit-2.2e.1.2e.1794214635",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-fluent-bit"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-fluent-bit"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-fluent-bit"
               },
@@ -304,6 +305,7 @@
             "include/fluent-bit/flb_http_client_http1.h",
             "include/fluent-bit/flb_http_client_http2.h",
             "include/fluent-bit/flb_http_common.h",
+            "include/fluent-bit/flb_http_retry_after.h",
             "include/fluent-bit/flb_http_server.h",
             "include/fluent-bit/flb_info.h",
             "include/fluent-bit/flb_input.h",
@@ -320,6 +322,7 @@
             "include/fluent-bit/flb_io.h",
             "include/fluent-bit/flb_jsmn.h",
             "include/fluent-bit/flb_json.h",
+            "include/fluent-bit/flb_json_tree.h",
             "include/fluent-bit/flb_kafka.h",
             "include/fluent-bit/flb_kernel.h",
             "include/fluent-bit/flb_kv.h",
@@ -356,6 +359,7 @@
             "include/fluent-bit/flb_output.h",
             "include/fluent-bit/flb_output_plugin.h",
             "include/fluent-bit/flb_output_thread.h",
+            "include/fluent-bit/flb_output_throttle.h",
             "include/fluent-bit/flb_pack.h",
             "include/fluent-bit/flb_pack_json.h",
             "include/fluent-bit/flb_parser.h",
@@ -421,6 +425,7 @@
             "include/fluent-bit/unicode/flb_conv.h",
             "include/fluent-bit/unicode/flb_wchar.h",
             "include/fluent-bit/wasm/flb_wasm.h",
+            "include/fluent-bit/wasm/flb_wasm_http.h",
             "include/fluent-bit.h",
             "include/libco.h",
             "include/monkey/mk_core/mk_dep_unistd.h",
@@ -454,7 +459,7 @@
             "lib/fluent-bit/libfluent-bit.dylib",
             "sbom.spdx.json"
           ],
-          "installed_size": 22817452
+          "installed_size": 23649624
         }
       }
     }
