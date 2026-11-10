@@ -2,10 +2,10 @@
   "zpaqfranz": {
     "formula": {
       "name": "zpaqfranz",
-      "pkg_version": "65.18",
+      "pkg_version": "65.19",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/z/zpaqfranz.rb",
       "tap_git_path": "Formula/z/zpaqfranz.rb",
-      "tap_git_revision": "3918a427643646936240b05cd348bab6ab96fa48",
+      "tap_git_revision": "69afbaef2630161594475570a6eefdffe53f3f73",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Deduplicating command-line archiver and backup tool",
       "license": "LicenseRef-Homebrew-public-domain AND MIT AND Zlib AND Unlicense AND BSD-2-Clause AND Apache-2.0",
@@ -13,20 +13,22 @@
     },
     "bottle": {
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
-      "cellar": "any_skip_relocation",
+      "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-11-08T22:20:59Z",
+      "date": "2026-11-10T22:05:51Z",
       "tags": {
         "sequoia": {
-          "filename": "zpaqfranz-65.18.sequoia.bottle.tar.gz",
-          "local_filename": "zpaqfranz--65.18.sequoia.bottle.tar.gz",
-          "sha256": "e4c0f66b4700baa67c62b0bb058dfb963c8e23587a078fb0789c85efcf5926de",
+          "filename": "zpaqfranz-65.19.sequoia.bottle.tar.gz",
+          "local_filename": "zpaqfranz--65.19.sequoia.bottle.tar.gz",
+          "sha256": "7423b5c3c41b46e1f327e69d07788c6e2673967ab86256e32570e14711b631ea",
           "tab": {
-            "homebrew_version": "7.0.12",
+            "homebrew_version": "7.0.13",
             "changed_files": [],
             "linkage_files": [],
-            "binary_relocation_files": [],
-            "source_modified_time": 1794062705,
+            "binary_relocation_files": [
+              "bin/zpaqfranz"
+            ],
+            "source_modified_time": 1794223325,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -39,7 +41,13 @@
               "preferred_perl": "5.34"
             }
           },
-          "binary_relocation_diagnostics": [],
+          "binary_relocation_diagnostics": [
+            {
+              "path": "bin/zpaqfranz",
+              "string": "/usr/local/Cellar/curl",
+              "offset": 4851034
+            }
+          ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Compiler"
@@ -67,7 +75,8 @@
             ]
           },
           "path_exec_files": [
-            "bin/zpaqfranz"
+            "bin/zpaqfranz",
+            "bin/dir"
           ],
           "all_files": [
             ".brew/zpaqfranz.rb",
@@ -77,11 +86,12 @@
             "LICENSE",
             "README.md",
             "TODO.md",
+            "bin/dir",
             "bin/zpaqfranz",
             "sbom.spdx.json",
             "share/man/man1/zpaqfranz.1.gz"
           ],
-          "installed_size": 6071834
+          "installed_size": 5693366
         }
       }
     }
