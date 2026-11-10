@@ -1,0 +1,131 @@
+{
+  "xgrammar": {
+    "formula": {
+      "name": "xgrammar",
+      "pkg_version": "0.2.9",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/x/xgrammar.rb",
+      "tap_git_path": "Formula/x/xgrammar.rb",
+      "tap_git_revision": "5061c866ceaea7007e3197ac5400c0aba09374c1",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Structured generation and reasoning engine for LLMs",
+      "license": "Apache-2.0",
+      "homepage": "https://xgrammar.mlc.ai/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-11-10T04:06:53Z",
+      "tags": {
+        "sequoia": {
+          "filename": "xgrammar-0.2.9.sequoia.bottle.tar.gz",
+          "local_filename": "xgrammar--0.2.9.sequoia.bottle.tar.gz",
+          "sha256": "02fb5cd52eb46cd301c6a09b7f48c55bbe3dcc89b3510656dc3909e2afb2a2f7",
+          "tab": {
+            "homebrew_version": "7.0.13",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1794025080,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "dlpack",
+                "version": "1.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-dlpack-1.2e.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-dlpack-1.2e.4",
+                "name": "dlpack",
+                "versionInfo": "1.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/dlpack/blobs/sha256:7a4bb23794feb82ebbb1f9707114f0bf02893d5d3fc6378172e6393a42409a58",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7a4bb23794feb82ebbb1f9707114f0bf02893d5d3fc6378172e6393a42409a58"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/dlpack@1.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-dlpack-1.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-xgrammar"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-xgrammar-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/xgrammar.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "NOTICE",
+            "README.md",
+            "include/xgrammar/compiler.h",
+            "include/xgrammar/config.h",
+            "include/xgrammar/exception.h",
+            "include/xgrammar/grammar.h",
+            "include/xgrammar/matcher.h",
+            "include/xgrammar/object.h",
+            "include/xgrammar/tokenizer_info.h",
+            "include/xgrammar/xgrammar.h",
+            "lib/libxgrammar.a",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 9965625
+        }
+      }
+    }
+  }
+}
