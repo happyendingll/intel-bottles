@@ -1,0 +1,276 @@
+{
+  "libtcod": {
+    "formula": {
+      "name": "libtcod",
+      "pkg_version": "2.3.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libtcod.rb",
+      "tap_git_path": "Formula/lib/libtcod.rb",
+      "tap_git_revision": "e8f97a37996d2bbe88ab794428eab0e0c77ff504",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "API for roguelike developers",
+      "license": "BSD-3-Clause AND Zlib AND (MIT AND Unicode-DFS-2015) AND (MIT OR Unlicense)",
+      "homepage": "https://github.com/libtcod/libtcod"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-11T05:32:20Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libtcod-2.3.1.sequoia.bottle.tar.gz",
+          "local_filename": "libtcod--2.3.1.sequoia.bottle.tar.gz",
+          "sha256": "c35bda7deb234e292af7522f4e4b6d34706daa10406b9c08f2750d608b344fdc",
+          "tab": {
+            "homebrew_version": "7.0.13",
+            "changed_files": [
+              "lib/pkgconfig/libtcod.pc",
+              "share/libtcod/libtcodTargets.cmake"
+            ],
+            "linkage_files": [
+              "lib/libtcod.2.3.1.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1794303898,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "sdl3",
+                "version": "3.4.20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.20",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "utf8proc",
+                "version": "2.12.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.12.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.20",
+              "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.20",
+                "name": "sdl3",
+                "versionInfo": "3.4.20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/sdl3-3.4.20.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5d955511da5f18ae1932a1eed03819716758f9d93f91bfa99fc9d25138b015ac"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl3@3.4.20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
+                "name": "utf8proc",
+                "versionInfo": "2.12.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT AND Unicode-DFS-2015",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/utf8proc-2.12.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "9cae6e2bd8bf05ce345e9014a14a4572a37637fb77842abe5e7391787568f602"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/utf8proc@2.12.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libtcod"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libtcod"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libtcod-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libtcod.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.txt",
+            "README.md",
+            "include/libtcod/bresenham.h",
+            "include/libtcod/bresenham.hpp",
+            "include/libtcod/bsp.h",
+            "include/libtcod/bsp.hpp",
+            "include/libtcod/color.h",
+            "include/libtcod/color.hpp",
+            "include/libtcod/config.h",
+            "include/libtcod/console.h",
+            "include/libtcod/console.hpp",
+            "include/libtcod/console_drawing.h",
+            "include/libtcod/console_etc.h",
+            "include/libtcod/console_init.h",
+            "include/libtcod/console_printing.h",
+            "include/libtcod/console_printing.hpp",
+            "include/libtcod/console_rexpaint.h",
+            "include/libtcod/console_rexpaint.hpp",
+            "include/libtcod/console_types.h",
+            "include/libtcod/console_types.hpp",
+            "include/libtcod/context.h",
+            "include/libtcod/context.hpp",
+            "include/libtcod/context_init.h",
+            "include/libtcod/context_viewport.h",
+            "include/libtcod/error.h",
+            "include/libtcod/error.hpp",
+            "include/libtcod/fov.h",
+            "include/libtcod/fov.hpp",
+            "include/libtcod/fov_types.h",
+            "include/libtcod/globals.h",
+            "include/libtcod/gui/button.hpp",
+            "include/libtcod/gui/container.hpp",
+            "include/libtcod/gui/flatlist.hpp",
+            "include/libtcod/gui/gui.hpp",
+            "include/libtcod/gui/hbox.hpp",
+            "include/libtcod/gui/image.hpp",
+            "include/libtcod/gui/label.hpp",
+            "include/libtcod/gui/radiobutton.hpp",
+            "include/libtcod/gui/slider.hpp",
+            "include/libtcod/gui/statusbar.hpp",
+            "include/libtcod/gui/textbox.hpp",
+            "include/libtcod/gui/togglebutton.hpp",
+            "include/libtcod/gui/toolbar.hpp",
+            "include/libtcod/gui/vbox.hpp",
+            "include/libtcod/gui/widget.hpp",
+            "include/libtcod/heapq.h",
+            "include/libtcod/heightmap.h",
+            "include/libtcod/heightmap.hpp",
+            "include/libtcod/image.h",
+            "include/libtcod/image.hpp",
+            "include/libtcod/lex.h",
+            "include/libtcod/lex.hpp",
+            "include/libtcod/libtcod.h",
+            "include/libtcod/libtcod.hpp",
+            "include/libtcod/libtcod_int.h",
+            "include/libtcod/list.h",
+            "include/libtcod/list.hpp",
+            "include/libtcod/logging.h",
+            "include/libtcod/matrix.hpp",
+            "include/libtcod/mersenne.h",
+            "include/libtcod/mersenne.hpp",
+            "include/libtcod/mersenne_types.h",
+            "include/libtcod/mouse.h",
+            "include/libtcod/mouse.hpp",
+            "include/libtcod/mouse_types.h",
+            "include/libtcod/namegen.h",
+            "include/libtcod/namegen.hpp",
+            "include/libtcod/noise.h",
+            "include/libtcod/noise.hpp",
+            "include/libtcod/noise_defaults.h",
+            "include/libtcod/parser.h",
+            "include/libtcod/parser.hpp",
+            "include/libtcod/path.h",
+            "include/libtcod/path.hpp",
+            "include/libtcod/pathfinder.h",
+            "include/libtcod/pathfinder_frontier.h",
+            "include/libtcod/portability.h",
+            "include/libtcod/random.h",
+            "include/libtcod/renderer_sdl2.h",
+            "include/libtcod/renderer_xterm.h",
+            "include/libtcod/sdl2/event.h",
+            "include/libtcod/sys.h",
+            "include/libtcod/sys.hpp",
+            "include/libtcod/tileset.h",
+            "include/libtcod/tileset.hpp",
+            "include/libtcod/tileset_bdf.h",
+            "include/libtcod/tileset_bdf.hpp",
+            "include/libtcod/tileset_fallback.h",
+            "include/libtcod/tileset_fallback.hpp",
+            "include/libtcod/tileset_render.h",
+            "include/libtcod/tileset_truetype.h",
+            "include/libtcod/timer.h",
+            "include/libtcod/timer.hpp",
+            "include/libtcod/tree.h",
+            "include/libtcod/tree.hpp",
+            "include/libtcod/txtfield.h",
+            "include/libtcod/txtfield.hpp",
+            "include/libtcod/utility.h",
+            "include/libtcod/version.h",
+            "include/libtcod/wrappers.h",
+            "include/libtcod/zip.h",
+            "include/libtcod/zip.hpp",
+            "include/libtcod.h",
+            "include/libtcod.hpp",
+            "lib/libtcod.2.3.1.dylib",
+            "lib/libtcod.2.dylib",
+            "lib/libtcod.dylib",
+            "lib/pkgconfig/libtcod.pc",
+            "sbom.spdx.json",
+            "share/libtcod/copyright",
+            "share/libtcod/libtcodConfig.cmake",
+            "share/libtcod/libtcodConfigVersion.cmake",
+            "share/libtcod/libtcodTargets-release.cmake",
+            "share/libtcod/libtcodTargets.cmake"
+          ],
+          "installed_size": 1504506
+        }
+      }
+    }
+  }
+}
