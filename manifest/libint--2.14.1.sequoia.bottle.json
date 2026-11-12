@@ -1,0 +1,676 @@
+{
+  "libint": {
+    "formula": {
+      "name": "libint",
+      "pkg_version": "2.14.1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libint.rb",
+      "tap_git_path": "Formula/lib/libint.rb",
+      "tap_git_revision": "9ac27d72919992c282f42d16880581bc51c3dbb9",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Library for computing electron repulsion integrals efficiently",
+      "license": "LGPL-3.0-only",
+      "homepage": "https://github.com/evaleev/libint"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-12T14:42:30Z",
+      "tags": {
+        "sequoia": {
+          "filename": "libint-2.14.1.sequoia.bottle.tar.gz",
+          "local_filename": "libint--2.14.1.sequoia.bottle.tar.gz",
+          "sha256": "71adc709a8b3ae8ecded5f000b8a278b62ed9124cbc1245b4fbcccff480c6a57",
+          "tab": {
+            "homebrew_version": "7.0.13",
+            "changed_files": [
+              "include/libint2/basis.h"
+            ],
+            "linkage_files": [
+              "lib/libint2-cxx.dylib",
+              "lib/libint2.3.dylib",
+              "lib/libint2_f.3.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1794367340,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@79",
+                "version": "79.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "79.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.11.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.11.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "boost",
+                "version": "1.92.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.92.0_1",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "eigen",
+                "version": "5.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.0.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "isl",
+                "version": "0.28",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.28",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpfr",
+                "version": "4.2.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.2.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libmpc",
+                "version": "1.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gcc",
+                "version": "16.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "16.2.0",
+                "declared_directly": true,
+                "compatibility_version": 2
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-eigen-5.2e.0.2e.1",
+              "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-isl-0.2e.28",
+              "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+              "SPDXRef-Package-SPDXRef-libmpc-1.2e.4.2e.1",
+              "SPDXRef-Package-SPDXRef-gcc-16.2e.2.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+                "name": "lz4",
+                "versionInfo": "1.11.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "61fd55fe974e1d83b53032a92715d5ccd7d7eb5dce6bb98f7b082aa51fc9a63f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+                "name": "boost",
+                "versionInfo": "1.92.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSL-1.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/boost-1.92.0_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "83df3d2e7a39c19ac12d3405209bdaa598cacbc3ad0f2f1d869ab7835cf7a3a7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/boost@1.92.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-eigen-5.2e.0.2e.1",
+                "name": "eigen",
+                "versionInfo": "5.0.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0 AND Apache-2.0 AND BSD-3-Clause AND Minpack",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/eigen/blobs/sha256:563e391400dc4eab1a9cf164c14082db589cd39d0546b454a8b4f7ec56237be6",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "563e391400dc4eab1a9cf164c14082db589cd39d0546b454a8b4f7ec56237be6"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/eigen@5.0.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-isl-0.2e.28",
+                "name": "isl",
+                "versionInfo": "0.28",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/isl/blobs/sha256:dca49213f0e9bccffe590c7477de4455a0dfbb65ab542854b1c1f52abfa10213",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "dca49213f0e9bccffe590c7477de4455a0dfbb65ab542854b1c1f52abfa10213"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/isl@0.28",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+                "name": "mpfr",
+                "versionInfo": "4.2.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/mpfr/blobs/sha256:ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpfr@4.2.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libmpc-1.2e.4.2e.1",
+                "name": "libmpc",
+                "versionInfo": "1.4.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/libmpc/blobs/sha256:6c035aa0556baf634ceda0edc4415b6f03d675568873b6ffec4b8c6146639f44",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6c035aa0556baf634ceda0edc4415b6f03d675568873b6ffec4b8c6146639f44"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libmpc@1.4.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gcc-16.2e.2.2e.0",
+                "name": "gcc",
+                "versionInfo": "16.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later WITH GCC-exception-3.1",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gcc-16.2.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "927eeebb4f263103ae248ea2350e3f48211b747d3ea96e74a798b89a661eda77"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gcc@16.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-eigen-5.2e.0.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-isl-0.2e.28",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libmpc-1.2e.4.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gcc-16.2e.2.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libint"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-libint-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/libint.rb",
+            "CHANGES",
+            "COPYING",
+            "COPYING.LESSER",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "include/libint2/atom.h",
+            "include/libint2/basis.h",
+            "include/libint2/boys.h",
+            "include/libint2/boys_cheb7.h",
+            "include/libint2/boys_cheb7_v2.h",
+            "include/libint2/boys_fwd.h",
+            "include/libint2/braket.h",
+            "include/libint2/cartesian.h",
+            "include/libint2/cgshell_ordering.h",
+            "include/libint2/cgshellinfo.h",
+            "include/libint2/chemistry/elements.h",
+            "include/libint2/chemistry/sto3g_atomic_density.h",
+            "include/libint2/config.h",
+            "include/libint2/config2.h",
+            "include/libint2/cxxapi.h",
+            "include/libint2/deriv_iter.h",
+            "include/libint2/deriv_map.h",
+            "include/libint2/dfbs_generator.h",
+            "include/libint2/diis.h",
+            "include/libint2/engine.h",
+            "include/libint2/engine.impl.h",
+            "include/libint2/fortran/fortran_incldefs.h",
+            "include/libint2/fortran/libint2_types_f.h",
+            "include/libint2/initialize.h",
+            "include/libint2/lcao/molden.h",
+            "include/libint2/libint2_iface.h",
+            "include/libint2/libint2_params.h",
+            "include/libint2/libint2_types.h",
+            "include/libint2/numeric.h",
+            "include/libint2/pivoted_cholesky.h",
+            "include/libint2/shell.h",
+            "include/libint2/shgshell_ordering.h",
+            "include/libint2/soad_fock.h",
+            "include/libint2/solidharmonics.h",
+            "include/libint2/statics_definition.h",
+            "include/libint2/tenno_cheb.h",
+            "include/libint2/tenno_cheb15.h",
+            "include/libint2/tensor.h",
+            "include/libint2/truncated_coulomb.h",
+            "include/libint2/util/any.h",
+            "include/libint2/util/array_adaptor.h",
+            "include/libint2/util/compressed_pair.h",
+            "include/libint2/util/configuration.h",
+            "include/libint2/util/cxxstd.h",
+            "include/libint2/util/deprecated.h",
+            "include/libint2/util/generated/libint2_iface.h",
+            "include/libint2/util/generated/libint2_params.h",
+            "include/libint2/util/generated/libint2_types.h",
+            "include/libint2/util/intpart_iter.h",
+            "include/libint2/util/intrinsic_operations.h",
+            "include/libint2/util/intrinsic_types.h",
+            "include/libint2/util/math_constants.h",
+            "include/libint2/util/memory.h",
+            "include/libint2/util/optional.h",
+            "include/libint2/util/singleton.h",
+            "include/libint2/util/small_vector.h",
+            "include/libint2/util/timer.h",
+            "include/libint2/util/type_traits.h",
+            "include/libint2/util/vector.h",
+            "include/libint2/util/vector_ppc.h",
+            "include/libint2/util/vector_x86.h",
+            "include/libint2.h",
+            "include/libint2.hpp",
+            "include/libint_f.mod",
+            "lib/cmake/libint2/FindEigen3.cmake",
+            "lib/cmake/libint2/libint2-config-version.cmake",
+            "lib/cmake/libint2/libint2-config.cmake",
+            "lib/cmake/libint2/libint2-targets-release.cmake",
+            "lib/cmake/libint2/libint2-targets.cmake",
+            "lib/libint2-cxx.dylib",
+            "lib/libint2.3.dylib",
+            "lib/libint2.dylib",
+            "lib/libint2_f.3.dylib",
+            "lib/libint2_f.dylib",
+            "sbom.spdx.json",
+            "share/libint/2.14.1/basis/3-21g.g94",
+            "share/libint/2.14.1/basis/6-311g**.g94",
+            "share/libint/2.14.1/basis/6-311gss.g94",
+            "share/libint/2.14.1/basis/6-31g**.g94",
+            "share/libint/2.14.1/basis/6-31g*.g94",
+            "share/libint/2.14.1/basis/6-31g.g94",
+            "share/libint/2.14.1/basis/6-31gs.g94",
+            "share/libint/2.14.1/basis/6-31gss.g94",
+            "share/libint/2.14.1/basis/ano-rcc-mb.g94",
+            "share/libint/2.14.1/basis/ano-rcc.g94",
+            "share/libint/2.14.1/basis/aug-cc-pv5z-cabs.g94",
+            "share/libint/2.14.1/basis/aug-cc-pvdz-cabs.g94",
+            "share/libint/2.14.1/basis/aug-cc-pvqz-cabs.g94",
+            "share/libint/2.14.1/basis/aug-cc-pvtz-cabs.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pv5z-jkfit.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pv5z-ri.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pv5z.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pv6z-ri.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pv6z.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pv7z.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pvdz-jkfit.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pvdz-ri.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pvdz.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pvqz-jkfit.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pvqz-ri.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pvqz.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pvtz-jkfit.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pvtz-ri.g94",
+            "share/libint/2.14.1/basis/augmentation-cc-pvtz.g94",
+            "share/libint/2.14.1/basis/cc-pv5z-jkfit.g94",
+            "share/libint/2.14.1/basis/cc-pv5z-ri.g94",
+            "share/libint/2.14.1/basis/cc-pv5z.g94",
+            "share/libint/2.14.1/basis/cc-pv6z-ri.g94",
+            "share/libint/2.14.1/basis/cc-pv6z.g94",
+            "share/libint/2.14.1/basis/cc-pv7z.g94",
+            "share/libint/2.14.1/basis/cc-pvdz-f12-cabs.g94",
+            "share/libint/2.14.1/basis/cc-pvdz-f12.g94",
+            "share/libint/2.14.1/basis/cc-pvdz-jkfit.g94",
+            "share/libint/2.14.1/basis/cc-pvdz-ri.g94",
+            "share/libint/2.14.1/basis/cc-pvdz.g94",
+            "share/libint/2.14.1/basis/cc-pvqz-f12-cabs.g94",
+            "share/libint/2.14.1/basis/cc-pvqz-f12.g94",
+            "share/libint/2.14.1/basis/cc-pvqz-jkfit.g94",
+            "share/libint/2.14.1/basis/cc-pvqz-ri.g94",
+            "share/libint/2.14.1/basis/cc-pvqz.g94",
+            "share/libint/2.14.1/basis/cc-pvtz-f12-cabs.g94",
+            "share/libint/2.14.1/basis/cc-pvtz-f12.g94",
+            "share/libint/2.14.1/basis/cc-pvtz-jkfit.g94",
+            "share/libint/2.14.1/basis/cc-pvtz-mini.g94",
+            "share/libint/2.14.1/basis/cc-pvtz-ri.g94",
+            "share/libint/2.14.1/basis/cc-pvtz.g94",
+            "share/libint/2.14.1/basis/def2-qzvp-c.g94",
+            "share/libint/2.14.1/basis/def2-qzvp-j.g94",
+            "share/libint/2.14.1/basis/def2-qzvp-jk.g94",
+            "share/libint/2.14.1/basis/def2-qzvp.g94",
+            "share/libint/2.14.1/basis/def2-qzvpd.g94",
+            "share/libint/2.14.1/basis/def2-qzvpp-c.g94",
+            "share/libint/2.14.1/basis/def2-qzvpp-j.g94",
+            "share/libint/2.14.1/basis/def2-qzvpp-jk.g94",
+            "share/libint/2.14.1/basis/def2-qzvpp.g94",
+            "share/libint/2.14.1/basis/def2-qzvppd-c.g94",
+            "share/libint/2.14.1/basis/def2-qzvppd.g94",
+            "share/libint/2.14.1/basis/def2-sv(p)-c.g94",
+            "share/libint/2.14.1/basis/def2-sv(p)-j.g94",
+            "share/libint/2.14.1/basis/def2-sv(p)-jk.g94",
+            "share/libint/2.14.1/basis/def2-sv(p).g94",
+            "share/libint/2.14.1/basis/def2-sv.g94",
+            "share/libint/2.14.1/basis/def2-svp-c.g94",
+            "share/libint/2.14.1/basis/def2-svp-j.g94",
+            "share/libint/2.14.1/basis/def2-svp-jk.g94",
+            "share/libint/2.14.1/basis/def2-svp.g94",
+            "share/libint/2.14.1/basis/def2-svpd-c.g94",
+            "share/libint/2.14.1/basis/def2-svpd.g94",
+            "share/libint/2.14.1/basis/def2-tzvp-c.g94",
+            "share/libint/2.14.1/basis/def2-tzvp-j.g94",
+            "share/libint/2.14.1/basis/def2-tzvp-jk.g94",
+            "share/libint/2.14.1/basis/def2-tzvp.g94",
+            "share/libint/2.14.1/basis/def2-tzvpd-c.g94",
+            "share/libint/2.14.1/basis/def2-tzvpd.g94",
+            "share/libint/2.14.1/basis/def2-tzvpp-c.g94",
+            "share/libint/2.14.1/basis/def2-tzvpp-j.g94",
+            "share/libint/2.14.1/basis/def2-tzvpp-jk.g94",
+            "share/libint/2.14.1/basis/def2-tzvpp.g94",
+            "share/libint/2.14.1/basis/def2-tzvppd-c.g94",
+            "share/libint/2.14.1/basis/def2-tzvppd.g94",
+            "share/libint/2.14.1/basis/mini.g94",
+            "share/libint/2.14.1/basis/sap_grasp_large.g94",
+            "share/libint/2.14.1/basis/sap_helfem_large.g94",
+            "share/libint/2.14.1/basis/sto-3g.g94",
+            "share/libint/2.14.1/basis/sto-6g.g94",
+            "share/libint/h2o.xyz",
+            "share/libint/hartree-fock.cc"
+          ],
+          "installed_size": 83519676
+        }
+      }
+    }
+  }
+}
