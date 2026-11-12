@@ -2,33 +2,33 @@
   "git-svn": {
     "formula": {
       "name": "git-svn",
-      "pkg_version": "2.56.0",
+      "pkg_version": "2.56.1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/git-svn.rb",
       "tap_git_path": "Formula/g/git-svn.rb",
-      "tap_git_revision": "383cb397a26a97f88ee2ca044b1ba2c3117f9b79",
+      "tap_git_revision": "628197610fd341448904cdc98fdf3a831ffd7afd",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Bidirectional operation between a Subversion repository and Git",
       "license": "GPL-2.0-or-later",
       "homepage": "https://git-scm.com"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-09-30T01:18:41Z",
+      "date": "2026-11-12T01:34:26Z",
       "tags": {
         "sequoia": {
-          "filename": "git-svn-2.56.0.sequoia.bottle.tar.gz",
-          "local_filename": "git-svn--2.56.0.sequoia.bottle.tar.gz",
-          "sha256": "266501f719d8c1daa5fbc8a7b8cc87e83dd4a35847c5957651935b9f9e37fa4b",
+          "filename": "git-svn-2.56.1.sequoia.bottle.tar.gz",
+          "local_filename": "git-svn--2.56.1.sequoia.bottle.tar.gz",
+          "sha256": "f37cc4dd292a81002d65267339755e02e985e543de2010ed57690dbfa56a56b2",
           "tab": {
-            "homebrew_version": "7.0.7",
+            "homebrew_version": "7.0.13",
             "changed_files": [
               "libexec/git-core/git-svn"
             ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1790569855,
+            "source_modified_time": 1794284256,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -46,14 +46,15 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "0.19",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "libunistring",
-                "version": "1.4.2",
+                "version": "1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.4.2",
+                "pkg_version": "1.5",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -68,10 +69,10 @@
               },
               {
                 "full_name": "git",
-                "version": "2.56.0",
+                "version": "2.56.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2.56.0",
+                "pkg_version": "2.56.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -86,45 +87,48 @@
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-11-05",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-11-05",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
-                "full_name": "openssl@3",
-                "version": "3.6.4",
-                "revision": 1,
+                "full_name": "openssl@4",
+                "version": "4.1.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.6.4_1",
+                "pkg_version": "4.1.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "apr-util",
-                "version": "1.6.5",
+                "version": "1.6.6",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.6.5",
-                "declared_directly": false
+                "pkg_version": "1.6.6",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "apache-serf",
                 "version": "1.3.10",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.3.10",
-                "declared_directly": false
+                "pkg_version": "1.3.10_1",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "lz4",
-                "version": "1.10.0",
+                "version": "1.11.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.10.0",
-                "declared_directly": false
+                "pkg_version": "1.11.1",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "utf8proc",
@@ -137,10 +141,10 @@
               },
               {
                 "full_name": "subversion",
-                "version": "1.14.5",
-                "revision": 4,
-                "bottle_rebuild": 1,
-                "pkg_version": "1.14.5_4",
+                "version": "1.15.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.15.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -158,20 +162,23 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-pcre2-10.49",
-              "SPDXRef-Package-SPDXRef-json-c-0.19",
-              "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
-              "SPDXRef-Package-SPDXRef-gettext-1.0",
-              "SPDXRef-Package-SPDXRef-git-2.56.0",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
-              "SPDXRef-Package-SPDXRef-lz4-1.10.0",
-              "SPDXRef-Package-SPDXRef-utf8proc-2.12.0",
+              "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
+              "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
+              "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
+              "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
+              "SPDXRef-Package-SPDXRef-git-2.2e.56.2e.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-apr-util-1.2e.6.2e.6",
+              "SPDXRef-Package-SPDXRef-apache-serf-1.2e.3.2e.10.5f.1",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+              "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
+              "SPDXRef-Package-SPDXRef-subversion-1.2e.15.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.49",
+                "SPDXID": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "name": "pcre2",
                 "versionInfo": "10.49",
                 "filesAnalyzed": false,
@@ -194,7 +201,7 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "SPDXID": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "name": "json-c",
                 "versionInfo": "0.19",
                 "filesAnalyzed": false,
@@ -217,30 +224,30 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "name": "libunistring",
-                "versionInfo": "1.4.2",
+                "versionInfo": "1.5",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-or-later OR LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libunistring-1.4.2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libunistring-1.5.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7ffc80feb6e1b01164a958d84e73e78e1bede9c1deb243fc2aef8ee5bf236f9b"
+                    "checksumValue": "8854773975603bc6243e11dc7d95fb33bba3e348337d95c44411052ef8870097"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libunistring@1.4.2",
+                    "referenceLocator": "pkg:brew/libunistring@1.5",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "name": "gettext",
                 "versionInfo": "1.0",
                 "filesAnalyzed": false,
@@ -263,99 +270,145 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-git-2.56.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-git-2.2e.56.2e.1",
                 "name": "git",
-                "versionInfo": "2.56.0",
+                "versionInfo": "2.56.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-only AND GPL-2.0-or-later AND LGPL-2.1-or-later AND BSD-3-Clause AND MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/git-2.56.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/git-2.56.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a60fd5a12906c452978d72233286bcaf3f4408e9db21bc9fa12a301dbba3153c"
+                    "checksumValue": "3aec9fd2db17d570a7f8feb59d620434db0e5b1059e2a7133e4a44e7fbaafadf"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/git@2.56.0",
+                    "referenceLocator": "pkg:brew/git@2.56.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-11-05",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
-                "name": "openssl@3",
-                "versionInfo": "3.6.4_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "name": "openssl@4",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%403-3.6.4_1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "d63b0bbe503c00db050f52f5f2172deba5e0233a30cbd0059622bf53ce9be9c3"
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%403@3.6.4_1",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-apr-util-1.2e.6.2e.6",
+                "name": "apr-util",
+                "versionInfo": "1.6.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/apr-util-1.6.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d041e665c9fd4f1370531af2fc35a86fa3c9c699a53e68a476b67eebd84439e7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/apr-util@1.6.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-apache-serf-1.2e.3.2e.10.5f.1",
+                "name": "apache-serf",
+                "versionInfo": "1.3.10_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/apache-serf-1.3.10_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "59e483a0c14654cf7f7a9ada179ba39926f2fe37e85bc07fcb947e3f506e4ce5"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/apache-serf@1.3.10_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "name": "lz4",
-                "versionInfo": "1.10.0",
+                "versionInfo": "1.11.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                    "checksumValue": "61fd55fe974e1d83b53032a92715d5ccd7d7eb5dce6bb98f7b082aa51fc9a63f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-utf8proc-2.12.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
                 "name": "utf8proc",
                 "versionInfo": "2.12.0",
                 "filesAnalyzed": false,
@@ -378,6 +431,29 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-subversion-1.2e.15.2e.0",
+                "name": "subversion",
+                "versionInfo": "1.15.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/subversion-1.15.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "dfcb98549453d51dcb60772306f1a395b2fb4a4027fab5e3cd6a7d74cba80df3"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/subversion@1.15.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Compiler",
                 "name": "clang",
                 "versionInfo": "16.4",
@@ -392,47 +468,62 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.49",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git-svn"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.19",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git-svn"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.4.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git-svn"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git-svn"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-git-2.56.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-git-2.2e.56.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git-svn"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git-svn"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl@3-3.6.4_1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git-svn"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.10.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-apr-util-1.2e.6.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git-svn"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-utf8proc-2.12.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-apache-serf-1.2e.3.2e.10.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-git-svn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-git-svn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-utf8proc-2.2e.12.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-git-svn"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-subversion-1.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-git-svn"
               },
@@ -455,7 +546,7 @@
             "libexec/git-core/git-svn",
             "sbom.spdx.json"
           ],
-          "installed_size": 94295
+          "installed_size": 94426
         }
       }
     }

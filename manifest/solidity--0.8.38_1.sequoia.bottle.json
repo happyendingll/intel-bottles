@@ -2,27 +2,27 @@
   "solidity": {
     "formula": {
       "name": "solidity",
-      "pkg_version": "0.8.38",
+      "pkg_version": "0.8.38_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/s/solidity.rb",
       "tap_git_path": "Formula/s/solidity.rb",
-      "tap_git_revision": "6c6bc37c958ec466c18b69557731fea7c97c3f08",
+      "tap_git_revision": "628197610fd341448904cdc98fdf3a831ffd7afd",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Contract-oriented programming language",
       "license": "GPL-3.0-or-later AND MIT AND BSD-3-Clause AND Apache-2.0 AND CC0-1.0",
       "homepage": "https://soliditylang.org"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-23T00:25:24Z",
+      "date": "2026-11-12T01:52:43Z",
       "tags": {
         "sequoia": {
-          "filename": "solidity-0.8.38.sequoia.bottle.tar.gz",
-          "local_filename": "solidity--0.8.38.sequoia.bottle.tar.gz",
-          "sha256": "52a8c3203788ed25ee46e4b8d3af5e00bc933c7978314b53ed8250d610e3d6f9",
+          "filename": "solidity-0.8.38_1.sequoia.bottle.tar.gz",
+          "local_filename": "solidity--0.8.38_1.sequoia.bottle.tar.gz",
+          "sha256": "31db9370871e2b72215f6f9726cef1dee0e5723b2fc3e31f745e46a6be63cbaa",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.13",
             "changed_files": [],
             "linkage_files": [
               "bin/solc",
@@ -33,11 +33,11 @@
             "compiler": "clang",
             "runtime_dependencies": [
               {
-                "full_name": "icu4c@78",
-                "version": "78.3",
+                "full_name": "icu4c@79",
+                "version": "79.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "78.3",
+                "pkg_version": "79.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -52,11 +52,12 @@
               },
               {
                 "full_name": "lz4",
-                "version": "1.10.0",
+                "version": "1.11.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.10.0",
-                "declared_directly": false
+                "pkg_version": "1.11.1",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "zstd",
@@ -70,20 +71,20 @@
               {
                 "full_name": "boost",
                 "version": "1.92.0",
-                "revision": 0,
+                "revision": 1,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.92.0",
+                "pkg_version": "1.92.0_1",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
               {
                 "full_name": "z3",
-                "version": "5.3.1",
+                "version": "5.4.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.3.1",
+                "pkg_version": "5.4.1",
                 "declared_directly": true,
-                "compatibility_version": 5
+                "compatibility_version": 6
               }
             ],
             "arch": "x86_64",
@@ -99,13 +100,38 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
+              "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-z3-5.2e.4.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "name": "xz",
@@ -130,24 +156,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "name": "lz4",
-                "versionInfo": "1.10.0",
+                "versionInfo": "1.11.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                    "checksumValue": "61fd55fe974e1d83b53032a92715d5ccd7d7eb5dce6bb98f7b082aa51fc9a63f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -176,24 +202,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
-                "name": "z3",
-                "versionInfo": "5.3.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+                "name": "boost",
+                "versionInfo": "1.92.0_1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/z3-5.3.1.sequoia.bottle.tar.gz",
+                "licenseConcluded": "BSL-1.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/boost-1.92.0_1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "adf1fbda79934289b5dc91f45e2645d2c6357f8346012a26dff625bc645d5071"
+                    "checksumValue": "83df3d2e7a39c19ac12d3405209bdaa598cacbc3ad0f2f1d869ab7835cf7a3a7"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/z3@5.3.1",
+                    "referenceLocator": "pkg:brew/boost@1.92.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-z3-5.2e.4.2e.1",
+                "name": "z3",
+                "versionInfo": "5.4.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/z3-5.4.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ebb61fc1ddca597765309491aadd00d82a75afcbdf66cb125bc4e440c13d9b00"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/z3@5.4.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -213,12 +262,17 @@
             ],
             "relationships": [
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-solidity"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-solidity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-solidity"
               },
@@ -228,7 +282,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-solidity"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-z3-5.2e.3.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-solidity"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-z3-5.2e.4.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-solidity"
               },
@@ -253,7 +312,7 @@
             "bin/yul-phaser",
             "sbom.spdx.json"
           ],
-          "installed_size": 21354398
+          "installed_size": 21354470
         }
       }
     }
