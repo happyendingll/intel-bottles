@@ -1,34 +1,49 @@
 {
-  "geeqie": {
+  "vips": {
     "formula": {
-      "name": "geeqie",
-      "pkg_version": "3.4",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/g/geeqie.rb",
-      "tap_git_path": "Formula/g/geeqie.rb",
-      "tap_git_revision": "4276b27f7697cdd092438ad59d4b9e5225a56c74",
+      "name": "vips",
+      "pkg_version": "8.18.7_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/v/vips.rb",
+      "tap_git_path": "Formula/v/vips.rb",
+      "tap_git_revision": "f4c1c69a89df3d7a1d2b0a2cf4076dc8dc4d3660",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Lightweight Gtk+ based image viewer",
-      "license": "GPL-2.0-or-later",
-      "homepage": "https://www.geeqie.org/"
+      "desc": "Image processing library",
+      "license": "LGPL-2.1-or-later",
+      "homepage": "https://github.com/libvips/libvips"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
-      "cellar": "any",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
+      "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-11-03T01:13:18Z",
+      "date": "2026-11-13T08:32:18Z",
       "tags": {
         "sequoia": {
-          "filename": "geeqie-3.4.sequoia.bottle.tar.gz",
-          "local_filename": "geeqie--3.4.sequoia.bottle.tar.gz",
-          "sha256": "f2649a3a3a67886a33df0c86f508693a372130af24bfde7abb3daad43aaf1bdf",
+          "filename": "vips-8.18.7_1.sequoia.bottle.tar.gz",
+          "local_filename": "vips--8.18.7_1.sequoia.bottle.tar.gz",
+          "sha256": "2bc4e3bf30a6e3225e7c17be3b504c749a81d3e7c2658bcee775dbbec715abaf",
           "tab": {
-            "homebrew_version": "7.0.12",
-            "changed_files": [],
-            "linkage_files": [
-              "bin/geeqie"
+            "homebrew_version": "7.0.13",
+            "changed_files": [
+              "lib/pkgconfig/vips-cpp.pc",
+              "lib/pkgconfig/vips.pc"
             ],
-            "binary_relocation_files": [],
-            "source_modified_time": 1793552420,
+            "linkage_files": [
+              "bin/vips",
+              "bin/vipsedit",
+              "bin/vipsheader",
+              "bin/vipsthumbnail",
+              "lib/libvips-cpp.42.dylib",
+              "lib/libvips.42.dylib",
+              "lib/vips-modules-8.18/vips-heif.dylib",
+              "lib/vips-modules-8.18/vips-jxl.dylib",
+              "lib/vips-modules-8.18/vips-magick.dylib",
+              "lib/vips-modules-8.18/vips-openslide.dylib",
+              "lib/vips-modules-8.18/vips-poppler.dylib"
+            ],
+            "binary_relocation_files": [
+              "lib/libvips.42.dylib"
+            ],
+            "source_modified_time": 1790422156,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -46,7 +61,7 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.6.59",
-                "declared_directly": false,
+                "declared_directly": true,
                 "compatibility_version": 1
               },
               {
@@ -91,7 +106,7 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "2.18.3",
-                "declared_directly": false,
+                "declared_directly": true,
                 "compatibility_version": 1
               },
               {
@@ -203,12 +218,84 @@
                 "compatibility_version": 1
               },
               {
+                "full_name": "cfitsio",
+                "version": "4.7.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.7.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "cgif",
+                "version": "0.5.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.5.4",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libomp",
+                "version": "23.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.5",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "fftw",
+                "version": "3.3.11",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.3.11",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "highway",
+                "version": "1.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
                 "full_name": "jpeg-turbo",
                 "version": "3.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "3.2.1",
-                "declared_directly": true,
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libvmaf",
+                "version": "3.2.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "aom",
+                "version": "3.15.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.15.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libde265",
+                "version": "1.1.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.3",
+                "declared_directly": false,
                 "compatibility_version": 1
               },
               {
@@ -240,10 +327,10 @@
               },
               {
                 "full_name": "lz4",
-                "version": "1.10.0",
+                "version": "1.11.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.10.0",
+                "pkg_version": "1.11.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -266,12 +353,237 @@
                 "compatibility_version": 1
               },
               {
+                "full_name": "x265",
+                "version": "4.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.3",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libheif",
+                "version": "1.23.7",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.23.7",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "m4",
+                "version": "1.4.21",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.21",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libtool",
+                "version": "2.6.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.6.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "little-cms2",
+                "version": "2.20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.20",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "imagemagick",
+                "version": "7.1.2-35",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "7.1.2-35",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "imath",
+                "version": "3.2.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.2.3",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libdeflate",
+                "version": "1.26",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.26",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openjph",
+                "version": "0.33.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.33.0",
+                "declared_directly": false,
+                "compatibility_version": 8
+              },
+              {
+                "full_name": "openexr",
+                "version": "3.5.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.5.4",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "jpeg-xl",
+                "version": "0.13.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.13.0",
+                "declared_directly": true,
+                "compatibility_version": 3
+              },
+              {
+                "full_name": "libb2",
+                "version": "0.98.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.98.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libarchive",
+                "version": "3.8.11",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.8.11",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libexif",
+                "version": "0.6.26",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.6.26",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libimagequant",
+                "version": "4.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.4.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gmp",
+                "version": "6.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "6.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "isl",
+                "version": "0.28",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.28",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "mpfr",
+                "version": "4.2.2",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.2.2",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libmpc",
+                "version": "1.4.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.4.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "gcc",
+                "version": "16.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "16.2.0",
+                "declared_directly": false,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "libaec",
+                "version": "1.1.8",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.1.8",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "pkgconf",
+                "version": "3.0.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.10",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "hdf5",
+                "version": "2.2.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.2.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libmatio",
+                "version": "1.6.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.6.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libraw",
+                "version": "0.22.3",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "0.22.3",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
                 "full_name": "gdk-pixbuf",
                 "version": "2.44.8",
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "2.44.8",
-                "declared_directly": true,
+                "declared_directly": false,
                 "compatibility_version": 1
               },
               {
@@ -294,10 +606,10 @@
               },
               {
                 "full_name": "harfbuzz",
-                "version": "15.0.0",
-                "revision": 1,
+                "version": "15.1.0",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "15.0.0_1",
+                "pkg_version": "15.1.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -343,465 +655,26 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "2.63.4",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "adwaita-icon-theme",
-                "version": "51.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "51.0",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
               {
-                "full_name": "djvulibre",
-                "version": "3.5.30",
+                "full_name": "libultrahdr",
+                "version": "2.0.2",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.5.30",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "inih",
-                "version": "63",
-                "revision": 0,
-                "pkg_version": "63",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "ca-certificates",
-                "version": "2026-10-20",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "2026-10-20",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "openssl@4",
-                "version": "4.1.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "4.1.0",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libssh",
-                "version": "0.12.2",
-                "revision": 1,
-                "bottle_rebuild": 0,
-                "pkg_version": "0.12.2_1",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "exiv2",
-                "version": "0.28.9",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "0.28.9",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "dav1d",
-                "version": "1.5.4",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.5.4",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "mpg123",
-                "version": "1.33.7",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.33.7",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "lame",
-                "version": "4.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "4.0",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libvmaf",
-                "version": "3.2.1",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.2.1",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libvpx",
-                "version": "1.17.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.17.0",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "opus",
-                "version": "1.6.1",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.6.1",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "sdl3",
-                "version": "3.4.18",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.4.18",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "sdl2-compat",
-                "version": "2.32.74",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "2.32.74",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "svt-av1",
-                "version": "4.3.0",
-                "revision": 0,
-                "pkg_version": "4.3.0",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "x264",
-                "version": "r3222",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "r3222",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "x265",
-                "version": "4.3",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "4.3",
-                "declared_directly": false,
-                "compatibility_version": 2
-              },
-              {
-                "full_name": "ffmpeg",
-                "version": "9.0.2",
-                "revision": 1,
-                "bottle_rebuild": 0,
-                "pkg_version": "9.0.2_1",
-                "declared_directly": true,
-                "compatibility_version": 3
-              },
-              {
-                "full_name": "ffmpegthumbnailer",
-                "version": "2.4.1",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "2.4.1",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "graphene",
-                "version": "1.10.8",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.10.8",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "dbus",
-                "version": "1.16.2",
-                "revision": 1,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.16.2_1",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libxfixes",
-                "version": "6.0.2",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "6.0.2",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libxi",
-                "version": "1.8.4",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.8.4",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libxtst",
-                "version": "1.2.6",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.2.6",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "at-spi2-core",
-                "version": "2.62.1",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "2.62.1",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "aspell",
-                "version": "0.60.8.3",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "0.60.8.3",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "enchant",
-                "version": "2.8.21",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "2.8.21",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "gsettings-desktop-schemas",
-                "version": "51.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "51.0",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "hicolor-icon-theme",
-                "version": "0.18",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "0.18",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libepoxy",
-                "version": "1.5.10",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.5.10",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "gtk+3",
-                "version": "3.24.52",
-                "revision": 1,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.24.52_1",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "gspell",
-                "version": "1.14.5",
-                "revision": 1,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.14.5_1",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "gtk4",
-                "version": "4.24.1",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "4.24.1",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "aom",
-                "version": "3.15.3",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.15.3",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libde265",
-                "version": "1.1.3",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.1.3",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libheif",
-                "version": "1.23.7",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.23.7",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "m4",
-                "version": "1.4.21",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.4.21",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libtool",
-                "version": "2.6.2",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "2.6.2",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "little-cms2",
-                "version": "2.19.1",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "2.19.1",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "imagemagick",
-                "version": "7.1.2-35",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "7.1.2-35",
-                "declared_directly": true,
-                "compatibility_version": 3
-              },
-              {
-                "full_name": "imath",
-                "version": "3.2.3",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.2.3",
-                "declared_directly": true,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "highway",
-                "version": "1.4.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.4.0",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libdeflate",
-                "version": "1.26",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.26",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "openjph",
-                "version": "0.32.0",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "0.32.0",
-                "declared_directly": false,
-                "compatibility_version": 7
-              },
-              {
-                "full_name": "openexr",
-                "version": "3.5.3",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.5.3",
+                "pkg_version": "2.0.2",
                 "declared_directly": true,
                 "compatibility_version": 2
               },
               {
-                "full_name": "jpeg-xl",
-                "version": "0.12.0",
-                "revision": 1,
-                "bottle_rebuild": 0,
-                "pkg_version": "0.12.0_1",
-                "declared_directly": true,
-                "compatibility_version": 2
-              },
-              {
-                "full_name": "libb2",
-                "version": "0.98.1",
+                "full_name": "mozjpeg",
+                "version": "4.1.5",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.98.1",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libarchive",
-                "version": "3.8.11",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "3.8.11",
+                "pkg_version": "4.1.5",
                 "declared_directly": true,
                 "compatibility_version": 1
-              },
-              {
-                "full_name": "libomp",
-                "version": "23.1.4",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "23.1.4",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
-                "full_name": "libraw",
-                "version": "0.22.3",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "0.22.3",
-                "declared_directly": true,
-                "compatibility_version": 2
               },
               {
                 "full_name": "openjpeg",
@@ -813,11 +686,65 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "gmp",
-                "version": "6.3.0",
+                "full_name": "uthash",
+                "version": "2.4.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "6.3.0",
+                "pkg_version": "2.4.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libdicom",
+                "version": "1.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.3.0",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "readline",
+                "version": "8.3.6",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "8.3.6",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libxml2",
+                "version": "2.15.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.15.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sqlite",
+                "version": "3.54.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.54.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "openslide",
+                "version": "4.0.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "4.0.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "ca-certificates",
+                "version": "2026-11-05",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2026-11-05",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -850,10 +777,10 @@
               },
               {
                 "full_name": "p11-kit",
-                "version": "0.26.5",
+                "version": "0.26.6",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.26.5",
+                "pkg_version": "0.26.6",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -930,15 +857,6 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "readline",
-                "version": "8.3.6",
-                "revision": 0,
-                "bottle_rebuild": 0,
-                "pkg_version": "8.3.6",
-                "declared_directly": false,
-                "compatibility_version": 1
-              },
-              {
                 "full_name": "gnupg",
                 "version": "2.5.24",
                 "revision": 1,
@@ -976,21 +894,21 @@
               },
               {
                 "full_name": "nss",
-                "version": "3.132",
+                "version": "3.133",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.132",
+                "pkg_version": "3.133",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "poppler",
-                "version": "26.10.0",
+                "version": "26.11.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.10.0",
+                "pkg_version": "26.11.0",
                 "declared_directly": true,
-                "compatibility_version": 8
+                "compatibility_version": 9
               }
             ],
             "arch": "x86_64",
@@ -1003,7 +921,18 @@
               "preferred_perl": "5.34"
             }
           },
-          "binary_relocation_diagnostics": [],
+          "binary_relocation_diagnostics": [
+            {
+              "path": "lib/libvips.42.dylib",
+              "string": "/usr/local/Cellar/vips/8.18.7_1",
+              "offset": 1491966
+            },
+            {
+              "path": "lib/libvips.42.dylib",
+              "string": "/usr/local/Cellar/vips/8.18.7_1/lib",
+              "offset": 1492015
+            }
+          ],
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
@@ -1018,64 +947,55 @@
               "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
               "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
               "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
+              "SPDXRef-Package-SPDXRef-cgif-0.2e.5.2e.4",
+              "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.3",
+              "SPDXRef-Package-SPDXRef-libde265-1.2e.1.2e.3",
               "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
               "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
-              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
-              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
-              "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0.5f.1",
-              "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.18",
-              "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
-              "SPDXRef-Package-SPDXRef-librsvg-2.2e.63.2e.4",
-              "SPDXRef-Package-SPDXRef-adwaita-icon-theme-51.2e.0",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
-              "SPDXRef-Package-SPDXRef-libssh-0.2e.12.2e.2.5f.1",
-              "SPDXRef-Package-SPDXRef-exiv2-0.2e.28.2e.9",
-              "SPDXRef-Package-SPDXRef-mpg123-1.2e.33.2e.7",
-              "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
-              "SPDXRef-Package-SPDXRef-libvpx-1.2e.17.2e.0",
-              "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.18",
-              "SPDXRef-Package-SPDXRef-sdl2-compat-2.2e.32.2e.74",
               "SPDXRef-Package-SPDXRef-x265-4.2e.3",
-              "SPDXRef-Package-SPDXRef-ffmpeg-9.2e.0.2e.2.5f.1",
-              "SPDXRef-Package-SPDXRef-ffmpegthumbnailer-2.2e.4.2e.1",
-              "SPDXRef-Package-SPDXRef-libxi-1.2e.8.2e.4",
-              "SPDXRef-Package-SPDXRef-libxtst-1.2e.2.2e.6",
-              "SPDXRef-Package-SPDXRef-at-spi2-core-2.2e.62.2e.1",
-              "SPDXRef-Package-SPDXRef-aspell-0.2e.60.2e.8.2e.3",
-              "SPDXRef-Package-SPDXRef-enchant-2.2e.8.2e.21",
-              "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
-              "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.2e.18",
-              "SPDXRef-Package-SPDXRef-gtk.2b.3-3.2e.24.2e.52.5f.1",
-              "SPDXRef-Package-SPDXRef-gspell-1.2e.14.2e.5.5f.1",
-              "SPDXRef-Package-SPDXRef-gtk4-4.2e.24.2e.1",
-              "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.3",
-              "SPDXRef-Package-SPDXRef-libde265-1.2e.1.2e.3",
               "SPDXRef-Package-SPDXRef-libheif-1.2e.23.2e.7",
               "SPDXRef-Package-SPDXRef-m4-1.2e.4.2e.21",
               "SPDXRef-Package-SPDXRef-libtool-2.2e.6.2e.2",
-              "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
+              "SPDXRef-Package-SPDXRef-little-cms2-2.2e.20",
               "SPDXRef-Package-SPDXRef-imagemagick-7.2e.1.2e.2-35",
-              "SPDXRef-Package-SPDXRef-openjph-0.2e.32.2e.0",
-              "SPDXRef-Package-SPDXRef-openexr-3.2e.5.2e.3",
-              "SPDXRef-Package-SPDXRef-jpeg-xl-0.2e.12.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-openjph-0.2e.33.2e.0",
+              "SPDXRef-Package-SPDXRef-openexr-3.2e.5.2e.4",
+              "SPDXRef-Package-SPDXRef-jpeg-xl-0.2e.13.2e.0",
               "SPDXRef-Package-SPDXRef-libarchive-3.2e.8.2e.11",
-              "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.4",
-              "SPDXRef-Package-SPDXRef-libraw-0.2e.22.2e.3",
-              "SPDXRef-Package-SPDXRef-openjpeg-2.2e.5.2e.4.5f.1",
               "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
-              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
-              "SPDXRef-Package-SPDXRef-libgcrypt-1.2e.12.2e.4",
+              "SPDXRef-Package-SPDXRef-isl-0.2e.28",
+              "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+              "SPDXRef-Package-SPDXRef-libmpc-1.2e.4.2e.1",
+              "SPDXRef-Package-SPDXRef-gcc-16.2e.2.2e.0",
+              "SPDXRef-Package-SPDXRef-libaec-1.2e.1.2e.8",
+              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.10",
+              "SPDXRef-Package-SPDXRef-libmatio-1.2e.6.2e.0",
+              "SPDXRef-Package-SPDXRef-libraw-0.2e.22.2e.3",
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.1.2e.0",
+              "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.18",
+              "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
+              "SPDXRef-Package-SPDXRef-librsvg-2.2e.63.2e.4",
+              "SPDXRef-Package-SPDXRef-openjpeg-2.2e.5.2e.4.5f.1",
+              "SPDXRef-Package-SPDXRef-uthash-2.2e.4.2e.0",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
+              "SPDXRef-Package-SPDXRef-libxml2-2.2e.15.2e.4",
+              "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+              "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.6",
+              "SPDXRef-Package-SPDXRef-libgcrypt-1.2e.12.2e.4",
               "SPDXRef-Package-SPDXRef-gnupg-2.2e.5.2e.24.5f.1",
               "SPDXRef-Package-SPDXRef-gpgme-2.2e.2.2e.0",
               "SPDXRef-Package-SPDXRef-gpgmepp-2.2e.2.2e.0",
-              "SPDXRef-Package-SPDXRef-nss-3.2e.132",
-              "SPDXRef-Package-SPDXRef-poppler-26.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-nss-3.2e.133",
+              "SPDXRef-Package-SPDXRef-poppler-26.2e.11.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -1356,6 +1276,52 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-cgif-0.2e.5.2e.4",
+                "name": "cgif",
+                "versionInfo": "0.5.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/cgif-0.5.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4c167d5f76b6c2d2fd3d79a3fbdb805dd318fd18b850a624dd11f401ebc9c496"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/cgif@0.5.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
+                "name": "libomp",
+                "versionInfo": "23.1.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/libomp-23.1.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "cc9c95bbc0ed067ea4f8a7fa6edac5b280e54c4c4e3cac6b98c560323b225912"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libomp@23.1.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
                 "name": "jpeg-turbo",
                 "versionInfo": "3.2.1",
@@ -1374,6 +1340,75 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/jpeg-turbo@3.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
+                "name": "libvmaf",
+                "versionInfo": "3.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause-Patent",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libvmaf-3.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "628f2126275ef110c999b952c3575ff3cc854e80c68d57e1381b50805f1eb9bc"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libvmaf@3.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.3",
+                "name": "aom",
+                "versionInfo": "3.15.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/aom-3.15.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "fda68eb8be0a58a50cceda741ec1f2a1863b3719ea20f5b43bb66b486b8c1782"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/aom@3.15.3",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libde265-1.2e.1.2e.3",
+                "name": "libde265",
+                "versionInfo": "1.1.3",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libde265-1.1.3.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "918d94833f729359a4c21cf065858b6e936c513d57b4fc314ce3931f3fd06d84"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libde265@1.1.3",
                     "referenceType": "purl"
                   }
                 ]
@@ -1448,24 +1483,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "name": "lz4",
-                "versionInfo": "1.10.0",
+                "versionInfo": "1.11.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                    "checksumValue": "61fd55fe974e1d83b53032a92715d5ccd7d7eb5dce6bb98f7b082aa51fc9a63f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -1517,351 +1552,6 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
-                "name": "icu4c@79",
-                "versionInfo": "79.1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Unicode-3.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0.5f.1",
-                "name": "harfbuzz",
-                "versionInfo": "15.0.0_1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/harfbuzz-15.0.0_1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "24ee9682885be9613afff8c4c75f86f7d3c9e83c5e710b289dad80acad007055"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/harfbuzz@15.0.0_1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.18",
-                "name": "fribidi",
-                "versionInfo": "1.0.18",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/fribidi-1.0.18.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "3762eb080ce44d79897dfdb3882ce1618923fb17f7d0e658f9e56b4ca512ed7e"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/fribidi@1.0.18",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
-                "name": "pango",
-                "versionInfo": "1.58.2",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-2.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/pango-1.58.2.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "e1a2a7c108ccc388d51ace3e6cfedbf8c9563b33e6b6bfd9170101a39965be36"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/pango@1.58.2",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-librsvg-2.2e.63.2e.4",
-                "name": "librsvg",
-                "versionInfo": "2.63.4",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/librsvg-2.63.4.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "f4945ac93c49fcda7148863ddd7e9683614a6c4106d9b862a9ccf5a27839d1fd"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/librsvg@2.63.4",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-adwaita-icon-theme-51.2e.0",
-                "name": "adwaita-icon-theme",
-                "versionInfo": "51.0",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-3.0-or-later OR CC-BY-SA-3.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/adwaita-icon-theme/blobs/sha256:f40942bda19569a8dfc6b9c89c2fc7b7e1d89231fa2f0e0478166b08a91b23fa",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "f40942bda19569a8dfc6b9c89c2fc7b7e1d89231fa2f0e0478166b08a91b23fa"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/adwaita-icon-theme@51.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
-                "name": "ca-certificates",
-                "versionInfo": "2026-10-20",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
-                "name": "openssl@4",
-                "versionInfo": "4.1.0",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libssh-0.2e.12.2e.2.5f.1",
-                "name": "libssh",
-                "versionInfo": "0.12.2_1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libssh-0.12.2_1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "1ff8d67b968d52c3839a7d0a57784ae040d0bd0e681aace4e095551a0fda1e03"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libssh@0.12.2_1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-exiv2-0.2e.28.2e.9",
-                "name": "exiv2",
-                "versionInfo": "0.28.9",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "GPL-2.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/exiv2-0.28.9.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "38e2ddd0d3eb19f51ad2bc5c9a7328b0ba8dae257bde52fdbf207cfc3ada1d31"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/exiv2@0.28.9",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-mpg123-1.2e.33.2e.7",
-                "name": "mpg123",
-                "versionInfo": "1.33.7",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-2.1-only",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/mpg123-1.33.7.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "2c28d89f9273aa311b9649a6b5376c9c208928652e9e1a049360be28f698053b"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/mpg123@1.33.7",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
-                "name": "libvmaf",
-                "versionInfo": "3.2.1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-2-Clause-Patent",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libvmaf-3.2.1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "628f2126275ef110c999b952c3575ff3cc854e80c68d57e1381b50805f1eb9bc"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libvmaf@3.2.1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libvpx-1.2e.17.2e.0",
-                "name": "libvpx",
-                "versionInfo": "1.17.0",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/libvpx-1.17.0.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "18e587374cebdaa75f473aaac3d54422e492c0cddd92cc54df348626e99753e6"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libvpx@1.17.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.18",
-                "name": "sdl3",
-                "versionInfo": "3.4.18",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Zlib",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/sdl3-3.4.18.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "6376f2cb500dc8cfc4872e04033b807f1ab511659a36982bf83d3172560c143f"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sdl3@3.4.18",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.2e.32.2e.74",
-                "name": "sdl2-compat",
-                "versionInfo": "2.32.74",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Zlib",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/sdl2-compat-2.32.74.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "255e0727c8838c55d895e6a3eb19d023049f4b4e3b624fbddc49ca8ee081c55d"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/sdl2-compat@2.32.74",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-x265-4.2e.3",
                 "name": "x265",
                 "versionInfo": "4.3",
@@ -1880,328 +1570,6 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/x265@4.3",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ffmpeg-9.2e.0.2e.2.5f.1",
-                "name": "ffmpeg",
-                "versionInfo": "9.0.2_1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "GPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/ffmpeg-9.0.2_1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "2a750eaae1be62a64f3aecd088d9ca707e6bf5923afd9505a154c9571f5fc3c0"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ffmpeg@9.0.2_1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ffmpegthumbnailer-2.2e.4.2e.1",
-                "name": "ffmpegthumbnailer",
-                "versionInfo": "2.4.1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "GPL-2.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/ffmpegthumbnailer-2.4.1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "627ddcce416d0f96f63802f0e6f0eb528a809cbaba002c94dc90cc87f61bbbf1"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ffmpegthumbnailer@2.4.1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libxi-1.2e.8.2e.4",
-                "name": "libxi",
-                "versionInfo": "1.8.4",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libxi-1.8.4.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "d7ea47f7d9f7a9acdace1b0b28163cf2d056974c6aec220a23b13a183db4b7d2"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libxi@1.8.4",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libxtst-1.2e.2.2e.6",
-                "name": "libxtst",
-                "versionInfo": "1.2.6",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libxtst-1.2.6.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "1a0f185786e3879335b4c71ffc56cf60e9a1af902296b0d125102b8f900739eb"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libxtst@1.2.6",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-at-spi2-core-2.2e.62.2e.1",
-                "name": "at-spi2-core",
-                "versionInfo": "2.62.1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/at-spi2-core-2.62.1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "5e4151187902099a8277c495b86b149cc14e50eded096f4b902ab92d66c97305"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/at-spi2-core@2.62.1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-aspell-0.2e.60.2e.8.2e.3",
-                "name": "aspell",
-                "versionInfo": "0.60.8.3",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-2.1-only",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/aspell-0.60.8.3.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "d844528ee64646623a48460e6de68139c7d95e8c89f1ba007733ee91a64d95db"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/aspell@0.60.8.3",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-enchant-2.2e.8.2e.21",
-                "name": "enchant",
-                "versionInfo": "2.8.21",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/enchant-2.8.21.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "41f16811d94a197c1c06175e2a933314177837b00ad3eb597fee3cf69fe22bde"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/enchant@2.8.21",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
-                "name": "gsettings-desktop-schemas",
-                "versionInfo": "51.0",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/gsettings-desktop-schemas-51.0.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "4b5f1b4531aaa888a79425886afba1864dbb5565e233445ec3fe9dc851fe16e3"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/gsettings-desktop-schemas@51.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.2e.18",
-                "name": "hicolor-icon-theme",
-                "versionInfo": "0.18",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "GPL-2.0-only",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/hicolor-icon-theme/blobs/sha256:76779247990b538d304e98b042fde85677491e428d0381a59383264ce8ef199f",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "76779247990b538d304e98b042fde85677491e428d0381a59383264ce8ef199f"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/hicolor-icon-theme@0.18",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gtk.2b.3-3.2e.24.2e.52.5f.1",
-                "name": "gtk+3",
-                "versionInfo": "3.24.52_1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-2.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/gtk%2B3-3.24.52_1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "fbef811cf105a77849f684f1e8c64a3ef0ed121227b229512ca1a7df10e6dcc4"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/gtk%2B3@3.24.52_1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gspell-1.2e.14.2e.5.5f.1",
-                "name": "gspell",
-                "versionInfo": "1.14.5_1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/gspell-1.14.5_1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "f40786748ebf6a23ed9ee083ee9f9c0adec3153dcfb38da7b2e6bac8f6a308c5"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/gspell@1.14.5_1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gtk4-4.2e.24.2e.1",
-                "name": "gtk4",
-                "versionInfo": "4.24.1",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gtk4-4.24.1.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "6c548b6a7a42c4bf77dccfccc91d825ad604582127fc6806d5752ba7d38a35c1"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/gtk4@4.24.1",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.3",
-                "name": "aom",
-                "versionInfo": "3.15.3",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/aom-3.15.3.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "fda68eb8be0a58a50cceda741ec1f2a1863b3719ea20f5b43bb66b486b8c1782"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/aom@3.15.3",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libde265-1.2e.1.2e.3",
-                "name": "libde265",
-                "versionInfo": "1.1.3",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-3.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libde265-1.1.3.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "918d94833f729359a4c21cf065858b6e936c513d57b4fc314ce3931f3fd06d84"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libde265@1.1.3",
                     "referenceType": "purl"
                   }
                 ]
@@ -2276,24 +1644,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.20",
                 "name": "little-cms2",
-                "versionInfo": "2.19.1",
+                "versionInfo": "2.20",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/little-cms2-2.19.1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/little-cms2-2.20.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "3c8e8dc49c3067141aa5d264c5ee9af2b2f0fc5b3905915fe629cd79ac2bfd57"
+                    "checksumValue": "aa079d01b28b59b3700f48856ef693c84bf67bb4e2c3cdcdf4e4a580d58cd1d6"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/little-cms2@2.19.1",
+                    "referenceLocator": "pkg:brew/little-cms2@2.20",
                     "referenceType": "purl"
                   }
                 ]
@@ -2322,70 +1690,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openjph-0.2e.32.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openjph-0.2e.33.2e.0",
                 "name": "openjph",
-                "versionInfo": "0.32.0",
+                "versionInfo": "0.33.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openjph-0.32.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/openjph-0.33.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "118e82db7425aaa68f11577813d3a1e8d6ad131b5c0a607fee11585cbb4e8199"
+                    "checksumValue": "47038cae2d338ac2ea554613001416d3c18fefbd4eb81b0a55dc89798dce503c"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openjph@0.32.0",
+                    "referenceLocator": "pkg:brew/openjph@0.33.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openexr-3.2e.5.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openexr-3.2e.5.2e.4",
                 "name": "openexr",
-                "versionInfo": "3.5.3",
+                "versionInfo": "3.5.4",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/openexr-3.5.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/openexr-3.5.4.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "ee318f318610b5615cc3fabb2efa317b80ab3af8967cc39c93403fe7f61dc3b8"
+                    "checksumValue": "32ab80b743551ba637e6a976f602a5d84343f412fe0b9095ddc112a5d63e1b8e"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openexr@3.5.3",
+                    "referenceLocator": "pkg:brew/openexr@3.5.4",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-xl-0.2e.12.2e.0.5f.1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-jpeg-xl-0.2e.13.2e.0",
                 "name": "jpeg-xl",
-                "versionInfo": "0.12.0_1",
+                "versionInfo": "0.13.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/jpeg-xl-0.12.0_1.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/jpeg-xl-0.13.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "0c5ab54ce432b67ce356a887da6c5a4616727031b7f6118b26892e5161cabbeb"
+                    "checksumValue": "9c3e57ff7faefa85f2a9527a80a4570631ac4ccefb004b47acc3979d5152db37"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/jpeg-xl@0.12.0_1",
+                    "referenceLocator": "pkg:brew/jpeg-xl@0.13.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -2414,24 +1782,185 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.4",
-                "name": "libomp",
-                "versionInfo": "23.1.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
+                "name": "gmp",
+                "versionInfo": "6.3.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libomp-23.1.4.sequoia.bottle.tar.gz",
+                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a602dbde3d3aa941266f91dcd70adfc5154f644ab5c7c35dcd5ca7387a75cc6f"
+                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libomp@23.1.4",
+                    "referenceLocator": "pkg:brew/gmp@6.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-isl-0.2e.28",
+                "name": "isl",
+                "versionInfo": "0.28",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/isl/blobs/sha256:dca49213f0e9bccffe590c7477de4455a0dfbb65ab542854b1c1f52abfa10213",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "dca49213f0e9bccffe590c7477de4455a0dfbb65ab542854b1c1f52abfa10213"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/isl@0.28",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
+                "name": "mpfr",
+                "versionInfo": "4.2.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/mpfr/blobs/sha256:ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ba4a1b8388386e6618de7c7e27199ae8de473373330f5773e2095567a71d76fd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mpfr@4.2.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libmpc-1.2e.4.2e.1",
+                "name": "libmpc",
+                "versionInfo": "1.4.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-3.0-or-later",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/libmpc/blobs/sha256:6c035aa0556baf634ceda0edc4415b6f03d675568873b6ffec4b8c6146639f44",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "6c035aa0556baf634ceda0edc4415b6f03d675568873b6ffec4b8c6146639f44"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libmpc@1.4.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-gcc-16.2e.2.2e.0",
+                "name": "gcc",
+                "versionInfo": "16.2.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-3.0-or-later WITH GCC-exception-3.1",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gcc-16.2.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "927eeebb4f263103ae248ea2350e3f48211b747d3ea96e74a798b89a661eda77"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/gcc@16.2.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libaec-1.2e.1.2e.8",
+                "name": "libaec",
+                "versionInfo": "1.1.8",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/libaec-1.1.8.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "c9684283159167c4282b1b98bfc692b3fb2725c8dceb75758c3160696fd43453"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libaec@1.1.8",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.10",
+                "name": "pkgconf",
+                "versionInfo": "3.0.10",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/pkgconf-3.0.10.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "0f92d5c53ca172b1d2504063ec1bbe78c9f5cec35195eeb5c8f610107514f007"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pkgconf@3.0.10",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libmatio-1.2e.6.2e.0",
+                "name": "libmatio",
+                "versionInfo": "1.6.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/libmatio-1.6.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "a607a08b219fda9ffaba6fd0c38a50122caced3b0f6db516299e90da541372f2"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libmatio@1.6.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -2460,6 +1989,121 @@
                 ]
               },
               {
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.1.2e.0",
+                "name": "harfbuzz",
+                "versionInfo": "15.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/harfbuzz-15.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "193232e2a8a034adb83e1825594e871f45a7b44af393337c19bf4da26bb4df10"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/harfbuzz@15.1.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.18",
+                "name": "fribidi",
+                "versionInfo": "1.0.18",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "GPL-2.0-or-later AND LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/fribidi-1.0.18.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3762eb080ce44d79897dfdb3882ce1618923fb17f7d0e658f9e56b4ca512ed7e"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/fribidi@1.0.18",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
+                "name": "pango",
+                "versionInfo": "1.58.2",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/pango-1.58.2.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "e1a2a7c108ccc388d51ace3e6cfedbf8c9563b33e6b6bfd9170101a39965be36"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pango@1.58.2",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-librsvg-2.2e.63.2e.4",
+                "name": "librsvg",
+                "versionInfo": "2.63.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/librsvg-2.63.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "f4945ac93c49fcda7148863ddd7e9683614a6c4106d9b862a9ccf5a27839d1fd"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/librsvg@2.63.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
                 "SPDXID": "SPDXRef-Package-SPDXRef-openjpeg-2.2e.5.2e.4.5f.1",
                 "name": "openjpeg",
                 "versionInfo": "2.5.4_1",
@@ -2483,70 +2127,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
-                "name": "gmp",
-                "versionInfo": "6.3.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-uthash-2.2e.4.2e.0",
+                "name": "uthash",
+                "versionInfo": "2.4.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-3.0-or-later OR GPL-2.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/gmp-6.3.0.sequoia.bottle.tar.gz",
+                "licenseConcluded": "BSD-1-Clause",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/uthash/blobs/sha256:5ccdd063c00f0d308b33f2ddecd943e15d4ee9bfbdd8ad1e1bad30a334aec8ec",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7e41871db2870f22ca46d68c902d6b4858f2c079dea3fcf588fc3b6f9ce9110c"
+                    "checksumValue": "5ccdd063c00f0d308b33f2ddecd943e15d4ee9bfbdd8ad1e1bad30a334aec8ec"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/gmp@6.3.0",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
-                "name": "p11-kit",
-                "versionInfo": "0.26.5",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/p11-kit-0.26.5.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "ee01fce79642e0693fd6bb9024aeb3e684bddfcf797ad6cb9ba8907c24742162"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/p11-kit@0.26.5",
-                    "referenceType": "purl"
-                  }
-                ]
-              },
-              {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libgcrypt-1.2e.12.2e.4",
-                "name": "libgcrypt",
-                "versionInfo": "1.12.4",
-                "filesAnalyzed": false,
-                "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "LGPL-2.1-or-later AND GPL-2.0-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libgcrypt-1.12.4.sequoia.bottle.tar.gz",
-                "copyrightText": "NOASSERTION",
-                "checksums": [
-                  {
-                    "algorithm": "SHA256",
-                    "checksumValue": "5f792fbf2ed9926dca457f3cc8144e3cd46588ac3653daf82d80ffbbb8bd35e4"
-                  }
-                ],
-                "externalRefs": [
-                  {
-                    "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libgcrypt@1.12.4",
+                    "referenceLocator": "pkg:brew/uthash@2.4.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -2570,6 +2168,121 @@
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
                     "referenceLocator": "pkg:brew/readline@8.3.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libxml2-2.2e.15.2e.4",
+                "name": "libxml2",
+                "versionInfo": "2.15.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libxml2-2.15.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1e057faeea57ce4cf9ec27c0b80f44e241ca971b3c2770d91a1e0a58ddf08716"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libxml2@2.15.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
+                "name": "sqlite",
+                "versionInfo": "3.54.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "blessing",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/sqlite-3.54.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "46c164b4911c47b4b8a09c691146a1f863b9b5fea973c4907e179d92113d31b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sqlite@3.54.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+                "name": "ca-certificates",
+                "versionInfo": "2026-11-05",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.6",
+                "name": "p11-kit",
+                "versionInfo": "0.26.6",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/p11-kit-0.26.6.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2f7a77fc35df9a6ac73227c78f434671076372a7f5c679516fbe50cbf47ef2fa"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/p11-kit@0.26.6",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libgcrypt-1.2e.12.2e.4",
+                "name": "libgcrypt",
+                "versionInfo": "1.12.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "LGPL-2.1-or-later AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-1/libgcrypt-1.12.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5f792fbf2ed9926dca457f3cc8144e3cd46588ac3653daf82d80ffbbb8bd35e4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libgcrypt@1.12.4",
                     "referenceType": "purl"
                   }
                 ]
@@ -2644,47 +2357,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-nss-3.2e.132",
+                "SPDXID": "SPDXRef-Package-SPDXRef-nss-3.2e.133",
                 "name": "nss",
-                "versionInfo": "3.132",
+                "versionInfo": "3.133",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/nss-3.132.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/nss-3.133.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "ba1473e34bd252c86aa49dba13a011132a0f7094e7251f29a2c64aa7617ae1a4"
+                    "checksumValue": "9a3b55fb56b26dcd47cf116a4efbcc189cb23e8a0f5d21a5140514fe5e8c2719"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/nss@3.132",
+                    "referenceLocator": "pkg:brew/nss@3.133",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-poppler-26.2e.10.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-poppler-26.2e.11.2e.0",
                 "name": "poppler",
-                "versionInfo": "26.10.0",
+                "versionInfo": "26.11.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "GPL-2.0-only OR GPL-3.0-only",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/poppler-26.10.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/poppler-26.11.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "6f7fb179b2a4e01c94483afeedfaa3cf376359da35c3228593f380c285953f54"
+                    "checksumValue": "7f11808a1afb44515d67595fe5446b861a8faa1e10d0571015caa38071900d49"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/poppler@26.10.0",
+                    "referenceLocator": "pkg:brew/poppler@26.11.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -2706,451 +2419,407 @@
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libpng-1.2e.6.2e.59",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-freetype-2.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-json-c-0.2e.19",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libunistring-1.2e.5",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gettext-1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-glib-2.2e.90.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-cairo-1.2e.18.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-cgif-0.2e.5.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.0.2e.0.5f.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.18",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-librsvg-2.2e.63.2e.4",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-adwaita-icon-theme-51.2e.0",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libssh-0.2e.12.2e.2.5f.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-exiv2-0.2e.28.2e.9",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-mpg123-1.2e.33.2e.7",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libvmaf-3.2e.2.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libvpx-1.2e.17.2e.0",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.18",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.2e.32.2e.74",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-x265-4.2e.3",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ffmpeg-9.2e.0.2e.2.5f.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ffmpegthumbnailer-2.2e.4.2e.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libxi-1.2e.8.2e.4",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libxtst-1.2e.2.2e.6",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-at-spi2-core-2.2e.62.2e.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-aspell-0.2e.60.2e.8.2e.3",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-enchant-2.2e.8.2e.21",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gsettings-desktop-schemas-51.2e.0",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-hicolor-icon-theme-0.2e.18",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gtk.2b.3-3.2e.24.2e.52.5f.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gspell-1.2e.14.2e.5.5f.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-gtk4-4.2e.24.2e.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-aom-3.2e.15.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libde265-1.2e.1.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-giflib-6.2e.1.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-webp-1.2e.6.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libtiff-4.2e.7.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-x265-4.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libheif-1.2e.23.2e.7",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-m4-1.2e.4.2e.21",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libtool-2.2e.6.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.19.2e.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-little-cms2-2.2e.20",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-imagemagick-7.2e.1.2e.2-35",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openjph-0.2e.32.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openjph-0.2e.33.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openexr-3.2e.5.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openexr-3.2e.5.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-xl-0.2e.12.2e.0.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-jpeg-xl-0.2e.13.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libarchive-3.2e.8.2e.11",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.4",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libraw-0.2e.22.2e.3",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
-              },
-              {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openjpeg-2.2e.5.2e.4.5f.1",
-                "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gmp-6.2e.3.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-isl-0.2e.28",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libgcrypt-1.2e.12.2e.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mpfr-4.2e.2.2e.2",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libmpc-1.2e.4.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-gcc-16.2e.2.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libaec-1.2e.1.2e.8",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.10",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libmatio-1.2e.6.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libraw-0.2e.22.2e.3",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-harfbuzz-15.2e.1.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fribidi-1.2e.0.2e.18",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pango-1.2e.58.2e.2",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-librsvg-2.2e.63.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openjpeg-2.2e.5.2e.4.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-uthash-2.2e.4.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libxml2-2.2e.15.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-p11-kit-0.2e.26.2e.6",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libgcrypt-1.2e.12.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gnupg-2.2e.5.2e.24.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gpgme-2.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-gpgmepp-2.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-nss-3.2e.132",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-nss-3.2e.133",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-poppler-26.2e.10.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-poppler-26.2e.11.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-geeqie"
+                "relatedSpdxElement": "SPDXRef-Bottle-vips"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-geeqie-src"
+                "relatedSpdxElement": "SPDXRef-Archive-vips-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/geeqie"
+            "bin/vipsheader",
+            "bin/vipsthumbnail",
+            "bin/vipsedit",
+            "bin/vips"
           ],
           "all_files": [
-            ".brew/geeqie.rb",
-            "COPYING",
+            ".brew/vips.rb",
+            "ChangeLog",
             "INSTALL_RECEIPT.json",
-            "NEWS",
+            "LICENSE",
             "README.md",
-            "bin/geeqie",
-            "lib/geeqie/downsize",
-            "lib/geeqie/geeqie-camera-import",
-            "lib/geeqie/geeqie-camera-import-hook-script",
-            "lib/geeqie/geeqie-convert-image.sh",
-            "lib/geeqie/geeqie-exif-datetime-to-file",
-            "lib/geeqie/geeqie-export-jpeg",
-            "lib/geeqie/geeqie-random-image",
-            "lib/geeqie/geeqie-resize-image",
-            "lib/geeqie/geeqie-rotate",
-            "lib/geeqie/geeqie-symlink",
-            "lib/geeqie/geeqie-tethered-photography",
-            "lib/geeqie/geeqie-tethered-photography-hook-script",
-            "lib/geeqie/geocode-parameters.awk",
-            "lib/geeqie/lensID",
-            "lib/geeqie/resize-help.sh",
+            "bin/vips",
+            "bin/vipsedit",
+            "bin/vipsheader",
+            "bin/vipsthumbnail",
+            "include/vips/VConnection8.h",
+            "include/vips/VError8.h",
+            "include/vips/VImage8.h",
+            "include/vips/VInterpolate8.h",
+            "include/vips/VRegion8.h",
+            "include/vips/almostdeprecated.h",
+            "include/vips/arithmetic.h",
+            "include/vips/basic.h",
+            "include/vips/buf.h",
+            "include/vips/colour.h",
+            "include/vips/connection.h",
+            "include/vips/conversion.h",
+            "include/vips/convolution.h",
+            "include/vips/create.h",
+            "include/vips/dbuf.h",
+            "include/vips/debug.h",
+            "include/vips/deprecated.h",
+            "include/vips/dispatch.h",
+            "include/vips/draw.h",
+            "include/vips/enumtypes.h",
+            "include/vips/error.h",
+            "include/vips/foreign.h",
+            "include/vips/format.h",
+            "include/vips/freqfilt.h",
+            "include/vips/gate.h",
+            "include/vips/generate.h",
+            "include/vips/header.h",
+            "include/vips/histogram.h",
+            "include/vips/image.h",
+            "include/vips/interpolate.h",
+            "include/vips/intl.h",
+            "include/vips/mask.h",
+            "include/vips/memory.h",
+            "include/vips/morphology.h",
+            "include/vips/mosaicing.h",
+            "include/vips/object.h",
+            "include/vips/operation.h",
+            "include/vips/private.h",
+            "include/vips/rect.h",
+            "include/vips/region.h",
+            "include/vips/resample.h",
+            "include/vips/sbuf.h",
+            "include/vips/semaphore.h",
+            "include/vips/thread.h",
+            "include/vips/threadpool.h",
+            "include/vips/transform.h",
+            "include/vips/type.h",
+            "include/vips/util.h",
+            "include/vips/vector.h",
+            "include/vips/version.h",
+            "include/vips/video.h",
+            "include/vips/vips.h",
+            "include/vips/vips7compat.h",
+            "include/vips/vips8",
+            "lib/girepository-1.0/Vips-8.0.typelib",
+            "lib/libvips-cpp.42.dylib",
+            "lib/libvips-cpp.dylib",
+            "lib/libvips.42.dylib",
+            "lib/libvips.dylib",
+            "lib/pkgconfig/vips-cpp.pc",
+            "lib/pkgconfig/vips.pc",
+            "lib/vips-modules-8.18/vips-heif.dylib",
+            "lib/vips-modules-8.18/vips-jxl.dylib",
+            "lib/vips-modules-8.18/vips-magick.dylib",
+            "lib/vips-modules-8.18/vips-openslide.dylib",
+            "lib/vips-modules-8.18/vips-poppler.dylib",
             "sbom.spdx.json",
-            "share/applications/org.geeqie.Geeqie.desktop",
-            "share/bash-completion/completions/geeqie",
-            "share/doc/geeqie/COPYING",
-            "share/doc/geeqie/INSTALL.md",
-            "share/doc/geeqie/README.md",
-            "share/doc/geeqie/icon-fallbacks/COPYING.Adwaita",
-            "share/doc/geeqie/icon-fallbacks/COPYING.GPL-3",
-            "share/doc/geeqie/icon-fallbacks/COPYING.LGPL-3",
-            "share/doc/geeqie/icon-fallbacks/README.md",
-            "share/geeqie/applications/org.geeqie.camera-import.desktop",
-            "share/geeqie/applications/org.geeqie.convert-image.desktop",
-            "share/geeqie/applications/org.geeqie.exif-datetime-to-file.desktop",
-            "share/geeqie/applications/org.geeqie.export-jpeg.desktop",
-            "share/geeqie/applications/org.geeqie.open-with.desktop",
-            "share/geeqie/applications/org.geeqie.random-image.desktop",
-            "share/geeqie/applications/org.geeqie.resize-image.desktop",
-            "share/geeqie/applications/org.geeqie.rotate.desktop",
-            "share/geeqie/applications/org.geeqie.symlink.desktop",
-            "share/geeqie/applications/org.geeqie.tethered-photography.desktop",
-            "share/geeqie/applications/org.geeqie.video-player.desktop",
-            "share/geeqie/org.geeqie.template.desktop",
-            "share/icons/hicolor/scalable/apps/geeqie.svg",
-            "share/icons/hicolor/scalable/apps/org.geeqie.Geeqie.svg",
-            "share/locale/ar/LC_MESSAGES/geeqie.mo",
-            "share/locale/be/LC_MESSAGES/geeqie.mo",
-            "share/locale/bg/LC_MESSAGES/geeqie.mo",
-            "share/locale/ca/LC_MESSAGES/geeqie.mo",
-            "share/locale/cs/LC_MESSAGES/geeqie.mo",
-            "share/locale/da/LC_MESSAGES/geeqie.mo",
-            "share/locale/de/LC_MESSAGES/geeqie.mo",
-            "share/locale/el/LC_MESSAGES/geeqie.mo",
-            "share/locale/en_GB/LC_MESSAGES/geeqie.mo",
-            "share/locale/eo/LC_MESSAGES/geeqie.mo",
-            "share/locale/es/LC_MESSAGES/geeqie.mo",
-            "share/locale/et/LC_MESSAGES/geeqie.mo",
-            "share/locale/eu/LC_MESSAGES/geeqie.mo",
-            "share/locale/fi/LC_MESSAGES/geeqie.mo",
-            "share/locale/fr/LC_MESSAGES/geeqie.mo",
-            "share/locale/hu/LC_MESSAGES/geeqie.mo",
-            "share/locale/id/LC_MESSAGES/geeqie.mo",
-            "share/locale/it/LC_MESSAGES/geeqie.mo",
-            "share/locale/ja/LC_MESSAGES/geeqie.mo",
-            "share/locale/ko/LC_MESSAGES/geeqie.mo",
-            "share/locale/nb/LC_MESSAGES/geeqie.mo",
-            "share/locale/nl/LC_MESSAGES/geeqie.mo",
-            "share/locale/pl/LC_MESSAGES/geeqie.mo",
-            "share/locale/pt_BR/LC_MESSAGES/geeqie.mo",
-            "share/locale/ro/LC_MESSAGES/geeqie.mo",
-            "share/locale/ru/LC_MESSAGES/geeqie.mo",
-            "share/locale/sk/LC_MESSAGES/geeqie.mo",
-            "share/locale/sl/LC_MESSAGES/geeqie.mo",
-            "share/locale/sr/LC_MESSAGES/geeqie.mo",
-            "share/locale/sr@latin/LC_MESSAGES/geeqie.mo",
-            "share/locale/sv/LC_MESSAGES/geeqie.mo",
-            "share/locale/th/LC_MESSAGES/geeqie.mo",
-            "share/locale/tlh/LC_MESSAGES/geeqie.mo",
-            "share/locale/tr/LC_MESSAGES/geeqie.mo",
-            "share/locale/uk/LC_MESSAGES/geeqie.mo",
-            "share/locale/vi/LC_MESSAGES/geeqie.mo",
-            "share/locale/zh_CN/LC_MESSAGES/geeqie.mo",
-            "share/locale/zh_TW/LC_MESSAGES/geeqie.mo",
-            "share/man/man1/geeqie.1",
-            "share/metainfo/org.geeqie.Geeqie.metainfo.xml"
+            "share/gir-1.0/Vips-8.0.gir",
+            "share/locale/de/LC_MESSAGES/vips8.18.mo",
+            "share/locale/en_GB/LC_MESSAGES/vips8.18.mo",
+            "share/man/man1/vips.1",
+            "share/man/man1/vipsedit.1",
+            "share/man/man1/vipsheader.1",
+            "share/man/man1/vipsthumbnail.1"
           ],
-          "installed_size": 5836505
+          "installed_size": 6065441
         }
       }
     }
