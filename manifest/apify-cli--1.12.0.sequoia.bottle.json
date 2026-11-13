@@ -2,27 +2,27 @@
   "apify-cli": {
     "formula": {
       "name": "apify-cli",
-      "pkg_version": "1.11.0",
+      "pkg_version": "1.12.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/apify-cli.rb",
       "tap_git_path": "Formula/a/apify-cli.rb",
-      "tap_git_revision": "d8e65b665d00ec5ffa13b026f5693ebddd275326",
+      "tap_git_revision": "51a85ae4935a5984aa83f08216cfd711c5968041",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Apify command-line interface",
       "license": "Apache-2.0",
       "homepage": "https://docs.apify.com/cli/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-30T05:06:14Z",
+      "date": "2026-11-13T06:12:43Z",
       "tags": {
         "sequoia": {
-          "filename": "apify-cli-1.11.0.sequoia.bottle.tar.gz",
-          "local_filename": "apify-cli--1.11.0.sequoia.bottle.tar.gz",
-          "sha256": "5797e87e4a5c4a850a333426caf565775a2a2f9424a3e09882eb9df61a61f3fd",
+          "filename": "apify-cli-1.12.0.sequoia.bottle.tar.gz",
+          "local_filename": "apify-cli--1.12.0.sequoia.bottle.tar.gz",
+          "sha256": "70e06e612431c369049ad71fabfc7ac38fbd410281657c240577d5dcf5af2fbd",
           "tab": {
-            "homebrew_version": "7.0.11",
+            "homebrew_version": "7.0.13",
             "changed_files": [
               "libexec/lib/node_modules/apify-cli/dist/actor.js",
               "libexec/lib/node_modules/apify-cli/dist/apify.js",
@@ -57,6 +57,7 @@
             ],
             "linkage_files": [
               "libexec/lib/node_modules/apify-cli/node_modules/@napi-rs/keyring-darwin-x64/keyring.darwin-x64.node",
+              "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/prebuilds/darwin-x64/bare-buffer.bare",
               "libexec/lib/node_modules/apify-cli/node_modules/bare-fs/prebuilds/darwin-x64/bare-fs.bare",
               "libexec/lib/node_modules/apify-cli/node_modules/bare-path/prebuilds/darwin-x64/bare-path.bare",
               "libexec/lib/node_modules/apify-cli/node_modules/bare-url/prebuilds/darwin-x64/bare-url.bare"
@@ -76,10 +77,10 @@
               },
               {
                 "full_name": "fmt",
-                "version": "12.2.0",
+                "version": "12.2.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "12.2.0",
+                "pkg_version": "12.2.1",
                 "declared_directly": false,
                 "compatibility_version": 2
               },
@@ -148,10 +149,10 @@
               },
               {
                 "full_name": "libnghttp2",
-                "version": "1.70.0",
+                "version": "1.71.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.70.0",
+                "pkg_version": "1.71.0",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -179,7 +180,8 @@
                 "revision": 4,
                 "bottle_rebuild": 0,
                 "pkg_version": "1.2.2_4",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "nbytes",
@@ -187,14 +189,15 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "0.1.4",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-10-20",
+                "version": "2026-11-05",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-10-20",
+                "pkg_version": "2026-11-05",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -209,11 +212,12 @@
               },
               {
                 "full_name": "simdjson",
-                "version": "5.0.6",
+                "version": "5.1.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.0.6",
-                "declared_directly": false
+                "pkg_version": "5.1.1",
+                "declared_directly": false,
+                "compatibility_version": 2
               },
               {
                 "full_name": "readline",
@@ -244,11 +248,12 @@
               },
               {
                 "full_name": "lz4",
-                "version": "1.10.0",
+                "version": "1.11.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.10.0",
-                "declared_directly": false
+                "pkg_version": "1.11.1",
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "xz",
@@ -279,11 +284,12 @@
               },
               {
                 "full_name": "node",
-                "version": "26.13.0",
+                "version": "26.13.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.13.0",
-                "declared_directly": true
+                "pkg_version": "26.13.1",
+                "declared_directly": true,
+                "compatibility_version": 1
               }
             ],
             "arch": "x86_64",
@@ -299,27 +305,51 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
               "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.3",
               "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-c-ares-1.2e.34.2e.9",
               "SPDXRef-Package-SPDXRef-hdrhistogram.5f.c-0.2e.12.2e.1",
-              "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
+              "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.71.2e.0",
               "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
               "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.4",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
               "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
-              "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.6",
+              "SPDXRef-Package-SPDXRef-simdjson-5.2e.1.2e.1",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
-              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0",
+              "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
+                "name": "fmt",
+                "versionInfo": "12.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/fmt-12.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "298737f4fd0e34b47f2e3dcc56eea957f8e1a4358c3b3a292b0e481eb3dc5f51"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/fmt@12.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "name": "icu4c@79",
@@ -459,24 +489,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.71.2e.0",
                 "name": "libnghttp2",
-                "versionInfo": "1.70.0",
+                "versionInfo": "1.71.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/libnghttp2-1.70.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/libnghttp2-1.71.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "5fc34d9e93ddb24b1c2cbb83a0beee5e3524a0d96c18b4a64cf32762681b2b65"
+                    "checksumValue": "35a0ce7c8e243e44749a6df2c510a85fc50fdfe03cf48d830a31edbf2b962d7e"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libnghttp2@1.70.0",
+                    "referenceLocator": "pkg:brew/libnghttp2@1.71.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -528,24 +558,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "name": "ca-certificates",
-                "versionInfo": "2026-10-20",
+                "versionInfo": "2026-11-05",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "8589f4e61b3afcc5ea375aab11af1c891ec4c94421c699c2a5a4765078de4443"
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-10-20",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
                     "referenceType": "purl"
                   }
                 ]
@@ -574,24 +604,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.6",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.1.2e.1",
                 "name": "simdjson",
-                "versionInfo": "5.0.6",
+                "versionInfo": "5.1.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/simdjson-5.0.6.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/simdjson-5.1.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "77cbf2d13b0d873c0f9950c1900fc1da330f4948e4650671a9bee5797c6df00d"
+                    "checksumValue": "00d32cc60f0753198a7dc39d45326419d32ea4d6a4465f1d620dbbccf95e5ac6"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdjson@5.0.6",
+                    "referenceLocator": "pkg:brew/simdjson@5.1.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -643,24 +673,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "name": "lz4",
-                "versionInfo": "1.10.0",
+                "versionInfo": "1.11.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                    "checksumValue": "61fd55fe974e1d83b53032a92715d5ccd7d7eb5dce6bb98f7b082aa51fc9a63f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -712,24 +742,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.1",
                 "name": "node",
-                "versionInfo": "26.13.0",
+                "versionInfo": "26.13.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/node-26.13.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/node-26.13.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a18ae26fd7ade86e01df8dac105093d2a15c851686d26ca9ba56f95cca43be0d"
+                    "checksumValue": "dbfbfc27cf616ca7782fa36ec646f649d9e6edceccff4b58a466db9e085ec027"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/node@26.13.0",
+                    "referenceLocator": "pkg:brew/node@26.13.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -748,6 +778,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-apify-cli"
+              },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
@@ -779,7 +814,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-apify-cli"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.70.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.71.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-apify-cli"
               },
@@ -794,7 +829,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-apify-cli"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-10-20",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-apify-cli"
               },
@@ -804,7 +839,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-apify-cli"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.6",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.1.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-apify-cli"
               },
@@ -819,7 +854,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-apify-cli"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-apify-cli"
               },
@@ -834,7 +869,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-apify-cli"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-apify-cli"
               },
@@ -863,8 +898,8 @@
             "libexec/bin/apify-cli",
             "libexec/lib/node_modules/apify-cli/LICENSE.md",
             "libexec/lib/node_modules/apify-cli/README.md",
-            "libexec/lib/node_modules/apify-cli/dist/_register-CQux2VAB.js",
-            "libexec/lib/node_modules/apify-cli/dist/_register-CQux2VAB.js.map",
+            "libexec/lib/node_modules/apify-cli/dist/_register-S9yh5NHm.js",
+            "libexec/lib/node_modules/apify-cli/dist/_register-S9yh5NHm.js.map",
             "libexec/lib/node_modules/apify-cli/dist/actor.js",
             "libexec/lib/node_modules/apify-cli/dist/actor.js.map",
             "libexec/lib/node_modules/apify-cli/dist/apify.js",
@@ -1538,6 +1573,11 @@
             "libexec/lib/node_modules/apify-cli/node_modules/@inquirer/ansi/dist/index.d.ts",
             "libexec/lib/node_modules/apify-cli/node_modules/@inquirer/ansi/dist/index.js",
             "libexec/lib/node_modules/apify-cli/node_modules/@inquirer/ansi/package.json",
+            "libexec/lib/node_modules/apify-cli/node_modules/@inquirer/checkbox/LICENSE",
+            "libexec/lib/node_modules/apify-cli/node_modules/@inquirer/checkbox/README.md",
+            "libexec/lib/node_modules/apify-cli/node_modules/@inquirer/checkbox/dist/index.d.ts",
+            "libexec/lib/node_modules/apify-cli/node_modules/@inquirer/checkbox/dist/index.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/@inquirer/checkbox/package.json",
             "libexec/lib/node_modules/apify-cli/node_modules/@inquirer/core/LICENSE",
             "libexec/lib/node_modules/apify-cli/node_modules/@inquirer/core/README.md",
             "libexec/lib/node_modules/apify-cli/node_modules/@inquirer/core/dist/index.d.ts",
@@ -3145,6 +3185,8 @@
             "libexec/lib/node_modules/apify-cli/node_modules/apify-client/dist/resource_clients/actor_env_var.js",
             "libexec/lib/node_modules/apify-cli/node_modules/apify-client/dist/resource_clients/actor_env_var_collection.d.ts",
             "libexec/lib/node_modules/apify-cli/node_modules/apify-client/dist/resource_clients/actor_env_var_collection.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/apify-client/dist/resource_clients/actor_server.d.ts",
+            "libexec/lib/node_modules/apify-cli/node_modules/apify-client/dist/resource_clients/actor_server.js",
             "libexec/lib/node_modules/apify-cli/node_modules/apify-client/dist/resource_clients/actor_version.d.ts",
             "libexec/lib/node_modules/apify-cli/node_modules/apify-client/dist/resource_clients/actor_version.js",
             "libexec/lib/node_modules/apify-cli/node_modules/apify-client/dist/resource_clients/actor_version_collection.d.ts",
@@ -3582,6 +3624,27 @@
             "libexec/lib/node_modules/apify-cli/node_modules/balanced-match/dist/esm/index.js.map",
             "libexec/lib/node_modules/apify-cli/node_modules/balanced-match/dist/esm/package.json",
             "libexec/lib/node_modules/apify-cli/node_modules/balanced-match/package.json",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/CMakeLists.txt",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/LICENSE",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/README.md",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/binding.c",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/binding.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/global.d.ts",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/global.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/index.d.ts",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/index.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/lib/ascii.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/lib/base64.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/lib/base64url.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/lib/checked.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/lib/constants.d.ts",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/lib/constants.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/lib/hex.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/lib/latin1.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/lib/utf16le.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/lib/utf8.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/package.json",
+            "libexec/lib/node_modules/apify-cli/node_modules/bare-buffer/prebuilds/darwin-x64/bare-buffer.bare",
             "libexec/lib/node_modules/apify-cli/node_modules/bare-events/LICENSE",
             "libexec/lib/node_modules/apify-cli/node_modules/bare-events/README.md",
             "libexec/lib/node_modules/apify-cli/node_modules/bare-events/global.d.ts",
@@ -9547,6 +9610,7 @@
             "libexec/lib/node_modules/apify-cli/node_modules/semver/internal/lrucache.js",
             "libexec/lib/node_modules/apify-cli/node_modules/semver/internal/parse-options.js",
             "libexec/lib/node_modules/apify-cli/node_modules/semver/internal/re.js",
+            "libexec/lib/node_modules/apify-cli/node_modules/semver/internal/trim-comparator-whitespace.js",
             "libexec/lib/node_modules/apify-cli/node_modules/semver/package.json",
             "libexec/lib/node_modules/apify-cli/node_modules/semver/preload.js",
             "libexec/lib/node_modules/apify-cli/node_modules/semver/range.bnf",
@@ -10903,7 +10967,7 @@
             "libexec/lib/node_modules/apify-cli/skills/apify/SKILL.md",
             "sbom.spdx.json"
           ],
-          "installed_size": 65763497
+          "installed_size": 67825686
         }
       }
     }

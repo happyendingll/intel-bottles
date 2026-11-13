@@ -2,27 +2,27 @@
   "nx": {
     "formula": {
       "name": "nx",
-      "pkg_version": "24.0.5",
+      "pkg_version": "24.0.6",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/n/nx.rb",
       "tap_git_path": "Formula/n/nx.rb",
-      "tap_git_revision": "3918a427643646936240b05cd348bab6ab96fa48",
+      "tap_git_revision": "51a85ae4935a5984aa83f08216cfd711c5968041",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Smart, Fast and Extensible Build System",
       "license": "MIT",
       "homepage": "https://nx.dev"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-08T20:58:28Z",
+      "date": "2026-11-13T07:17:22Z",
       "tags": {
         "sequoia": {
-          "filename": "nx-24.0.5.sequoia.bottle.tar.gz",
-          "local_filename": "nx--24.0.5.sequoia.bottle.tar.gz",
-          "sha256": "596420a30e2a390751a03cc6e56be3e94a0b6140371f51af44fe3d93f1d32551",
+          "filename": "nx-24.0.6.sequoia.bottle.tar.gz",
+          "local_filename": "nx--24.0.6.sequoia.bottle.tar.gz",
+          "sha256": "9b935f108fe9a64f9fb08183e15ab8d0c441063172bc105a7431299ca055b1c3",
           "tab": {
-            "homebrew_version": "7.0.12",
+            "homebrew_version": "7.0.13",
             "changed_files": [
               "libexec/lib/node_modules/nx/dist/bin/nx-cloud.d.ts",
               "libexec/lib/node_modules/nx/dist/bin/nx-cloud.js",
@@ -55,6 +55,7 @@
                 "full_name": "fmt",
                 "version": "12.2.1",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "12.2.1",
                 "declared_directly": false,
                 "compatibility_version": 2
@@ -223,10 +224,10 @@
               },
               {
                 "full_name": "lz4",
-                "version": "1.11.0",
+                "version": "1.11.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.11.0",
+                "pkg_version": "1.11.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -259,10 +260,10 @@
               },
               {
                 "full_name": "node",
-                "version": "26.13.0",
-                "revision": 2,
+                "version": "26.13.1",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.13.0_2",
+                "pkg_version": "26.13.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -280,6 +281,7 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
               "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.3",
               "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
@@ -294,13 +296,36 @@
               "SPDXRef-Package-SPDXRef-simdjson-5.2e.1.2e.1",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
-              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0.5f.2",
+              "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
+                "name": "fmt",
+                "versionInfo": "12.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/fmt-12.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "298737f4fd0e34b47f2e3dcc56eea957f8e1a4358c3b3a292b0e481eb3dc5f51"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/fmt@12.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "name": "icu4c@79",
@@ -624,24 +649,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "name": "lz4",
-                "versionInfo": "1.11.0",
+                "versionInfo": "1.11.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "1a8800bdf6873ede4bb7b871370e10e70708984b86b40bc7e50e3b2818585e92"
+                    "checksumValue": "61fd55fe974e1d83b53032a92715d5ccd7d7eb5dce6bb98f7b082aa51fc9a63f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.11.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -693,24 +718,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0.5f.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.1",
                 "name": "node",
-                "versionInfo": "26.13.0_2",
+                "versionInfo": "26.13.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/node-26.13.0_2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/node-26.13.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e65dbf195b34d36c336b54aee99e99efc9da0bbcc836437b75e6d195040a2c0c"
+                    "checksumValue": "dbfbfc27cf616ca7782fa36ec646f649d9e6edceccff4b58a466db9e085ec027"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/node@26.13.0_2",
+                    "referenceLocator": "pkg:brew/node@26.13.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -729,6 +754,11 @@
               }
             ],
             "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-nx"
+              },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
@@ -800,7 +830,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-nx"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nx"
               },
@@ -815,7 +845,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-nx"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0.5f.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-nx"
               },
@@ -851,6 +881,8 @@
             "libexec/lib/node_modules/nx/dist/bin/post-install.js",
             "libexec/lib/node_modules/nx/dist/bin/run-executor.d.ts",
             "libexec/lib/node_modules/nx/dist/bin/run-executor.js",
+            "libexec/lib/node_modules/nx/dist/bin/workspace-env.d.ts",
+            "libexec/lib/node_modules/nx/dist/bin/workspace-env.js",
             "libexec/lib/node_modules/nx/dist/nx-cloud-internals.d.ts",
             "libexec/lib/node_modules/nx/dist/nx-cloud-internals.js",
             "libexec/lib/node_modules/nx/dist/plugins/package-json.d.ts",
@@ -3669,7 +3701,7 @@
             "libexec/lib/node_modules/nx/schemas/workspace-schema.json",
             "sbom.spdx.json"
           ],
-          "installed_size": 63558495
+          "installed_size": 63674782
         }
       }
     }

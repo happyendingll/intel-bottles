@@ -1,36 +1,35 @@
 {
-  "node-sass": {
+  "fern-api": {
     "formula": {
-      "name": "node-sass",
-      "pkg_version": "1.108.1",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/n/node-sass.rb",
-      "tap_git_path": "Formula/n/node-sass.rb",
-      "tap_git_revision": "3918a427643646936240b05cd348bab6ab96fa48",
+      "name": "fern-api",
+      "pkg_version": "5.205.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/fern-api.rb",
+      "tap_git_path": "Formula/f/fern-api.rb",
+      "tap_git_revision": "51a85ae4935a5984aa83f08216cfd711c5968041",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "JavaScript implementation of a Sass compiler",
-      "license": "MIT",
-      "homepage": "https://github.com/sass/dart-sass"
+      "desc": "Stripe-level SDKs and Docs for your API",
+      "license": "Apache-2.0",
+      "homepage": "https://buildwithfern.com/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
-      "cellar": "any_skip_relocation",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
+      "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-08T20:59:45Z",
+      "date": "2026-11-13T06:39:38Z",
       "tags": {
         "sequoia": {
-          "filename": "node-sass-1.108.1.sequoia.bottle.tar.gz",
-          "local_filename": "node-sass--1.108.1.sequoia.bottle.tar.gz",
-          "sha256": "aa9d13747575ee80e1f6c9a85811fe4833ef71d5c704a5390ffbc61d7e9120c3",
+          "filename": "fern-api-5.205.2.sequoia.bottle.tar.gz",
+          "local_filename": "fern-api--5.205.2.sequoia.bottle.tar.gz",
+          "sha256": "6a30d905d281de2c1d8a9e93a581cf798f360ca0f8a5de9e2003e9a02ea5951c",
           "tab": {
-            "homebrew_version": "7.0.12",
+            "homebrew_version": "7.0.13",
             "changed_files": [
-              "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/scripts/build-from-source.js",
-              "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/clang-format.js",
-              "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/conversion.js",
-              "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/eslint-format.js",
-              "libexec/lib/node_modules/sass/sass.js"
+              "libexec/lib/node_modules/fern-api/cli.cjs",
+              "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/cli.js"
             ],
-            "linkage_files": [],
+            "linkage_files": [
+              "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml-darwin-x64/baml.darwin-x64.node"
+            ],
             "binary_relocation_files": [],
             "source_modified_time": 499162500,
             "compiler": "clang",
@@ -48,6 +47,7 @@
                 "full_name": "fmt",
                 "version": "12.2.1",
                 "revision": 0,
+                "bottle_rebuild": 0,
                 "pkg_version": "12.2.1",
                 "declared_directly": false,
                 "compatibility_version": 2
@@ -216,10 +216,10 @@
               },
               {
                 "full_name": "lz4",
-                "version": "1.11.0",
+                "version": "1.11.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.11.0",
+                "pkg_version": "1.11.1",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
@@ -252,10 +252,10 @@
               },
               {
                 "full_name": "node",
-                "version": "26.13.0",
-                "revision": 2,
+                "version": "26.13.1",
+                "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "26.13.0_2",
+                "pkg_version": "26.13.1",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -273,6 +273,7 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
               "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
               "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.3",
               "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
@@ -287,13 +288,36 @@
               "SPDXRef-Package-SPDXRef-simdjson-5.2e.1.2e.1",
               "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
               "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
-              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0.5f.2",
+              "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.1",
               "SPDXRef-Compiler"
             ],
             "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
+                "name": "fmt",
+                "versionInfo": "12.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/fmt-12.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "298737f4fd0e34b47f2e3dcc56eea957f8e1a4358c3b3a292b0e481eb3dc5f51"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/fmt@12.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
               {
                 "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "name": "icu4c@79",
@@ -617,24 +641,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "name": "lz4",
-                "versionInfo": "1.11.0",
+                "versionInfo": "1.11.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "1a8800bdf6873ede4bb7b871370e10e70708984b86b40bc7e50e3b2818585e92"
+                    "checksumValue": "61fd55fe974e1d83b53032a92715d5ccd7d7eb5dce6bb98f7b082aa51fc9a63f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.11.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -686,24 +710,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0.5f.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.1",
                 "name": "node",
-                "versionInfo": "26.13.0_2",
+                "versionInfo": "26.13.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MIT",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/node-26.13.0_2.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/node-26.13.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "e65dbf195b34d36c336b54aee99e99efc9da0bbcc836437b75e6d195040a2c0c"
+                    "checksumValue": "dbfbfc27cf616ca7782fa36ec646f649d9e6edceccff4b58a466db9e085ec027"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/node@26.13.0_2",
+                    "referenceLocator": "pkg:brew/node@26.13.1",
                     "referenceType": "purl"
                   }
                 ]
@@ -723,284 +747,153 @@
             ],
             "relationships": [
               {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
+              },
+              {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-simdutf-9.2e.3.2e.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ada-url-4.2e.0.2e.0.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-c-ares-1.2e.34.2e.9",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-hdrhistogram.5f.c-0.2e.12.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libnghttp2-1.2e.71.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-libuv-1.2e.53.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-merve-1.2e.2.2e.2.5f.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.1.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-readline-8.2e.3.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-sqlite-3.2e.54.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.0.5f.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-node-26.2e.13.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-node-sass"
+                "relatedSpdxElement": "SPDXRef-Bottle-fern-api"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-node-sass-src"
+                "relatedSpdxElement": "SPDXRef-Archive-fern-api-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/sass"
+            "bin/fern"
           ],
           "all_files": [
-            ".brew/node-sass.rb",
+            ".brew/fern-api.rb",
             "INSTALL_RECEIPT.json",
             "LICENSE",
-            "README.md",
-            "bin/sass",
-            "libexec/bin/sass",
-            "libexec/lib/node_modules/sass/LICENSE",
-            "libexec/lib/node_modules/sass/README.md",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/LICENSE",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/README.md",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/binding.gyp",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/index.d.ts",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/index.js",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/index.js.flow",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/package.json",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/scripts/build-from-source.js",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Backend.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Backend.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Debounce.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Debounce.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/DirTree.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/DirTree.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Event.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Glob.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Glob.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/PromiseRunner.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Signal.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Watcher.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/Watcher.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/binding.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/kqueue/KqueueBackend.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/kqueue/KqueueBackend.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/linux/InotifyBackend.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/linux/InotifyBackend.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/macos/FSEventsBackend.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/macos/FSEventsBackend.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/shared/BruteForceBackend.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/shared/BruteForceBackend.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/unix/fts.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/unix/legacy.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/wasm/WasmBackend.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/wasm/WasmBackend.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/wasm/include.h",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/watchman/BSER.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/watchman/BSER.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/watchman/IPC.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/watchman/WatchmanBackend.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/watchman/WatchmanBackend.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/windows/WindowsBackend.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/windows/WindowsBackend.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/windows/win_utils.cc",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/src/windows/win_utils.hh",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher/wrapper.js",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher-darwin-x64/LICENSE",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher-darwin-x64/README.md",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher-darwin-x64/package.json",
-            "libexec/lib/node_modules/sass/node_modules/@parcel/watcher-darwin-x64/watcher.node",
-            "libexec/lib/node_modules/sass/node_modules/chokidar/LICENSE",
-            "libexec/lib/node_modules/sass/node_modules/chokidar/README.md",
-            "libexec/lib/node_modules/sass/node_modules/chokidar/handler.d.ts",
-            "libexec/lib/node_modules/sass/node_modules/chokidar/handler.js",
-            "libexec/lib/node_modules/sass/node_modules/chokidar/index.d.ts",
-            "libexec/lib/node_modules/sass/node_modules/chokidar/index.js",
-            "libexec/lib/node_modules/sass/node_modules/chokidar/package.json",
-            "libexec/lib/node_modules/sass/node_modules/detect-libc/LICENSE",
-            "libexec/lib/node_modules/sass/node_modules/detect-libc/README.md",
-            "libexec/lib/node_modules/sass/node_modules/detect-libc/index.d.ts",
-            "libexec/lib/node_modules/sass/node_modules/detect-libc/lib/detect-libc.js",
-            "libexec/lib/node_modules/sass/node_modules/detect-libc/lib/elf.js",
-            "libexec/lib/node_modules/sass/node_modules/detect-libc/lib/filesystem.js",
-            "libexec/lib/node_modules/sass/node_modules/detect-libc/lib/process.js",
-            "libexec/lib/node_modules/sass/node_modules/detect-libc/package.json",
-            "libexec/lib/node_modules/sass/node_modules/immutable/LICENSE",
-            "libexec/lib/node_modules/sass/node_modules/immutable/README.md",
-            "libexec/lib/node_modules/sass/node_modules/immutable/dist/immutable.d.ts",
-            "libexec/lib/node_modules/sass/node_modules/immutable/dist/immutable.es.js",
-            "libexec/lib/node_modules/sass/node_modules/immutable/dist/immutable.js",
-            "libexec/lib/node_modules/sass/node_modules/immutable/dist/immutable.js.flow",
-            "libexec/lib/node_modules/sass/node_modules/immutable/dist/immutable.min.js",
-            "libexec/lib/node_modules/sass/node_modules/immutable/package.json",
-            "libexec/lib/node_modules/sass/node_modules/is-extglob/LICENSE",
-            "libexec/lib/node_modules/sass/node_modules/is-extglob/README.md",
-            "libexec/lib/node_modules/sass/node_modules/is-extglob/index.js",
-            "libexec/lib/node_modules/sass/node_modules/is-extglob/package.json",
-            "libexec/lib/node_modules/sass/node_modules/is-glob/LICENSE",
-            "libexec/lib/node_modules/sass/node_modules/is-glob/README.md",
-            "libexec/lib/node_modules/sass/node_modules/is-glob/index.js",
-            "libexec/lib/node_modules/sass/node_modules/is-glob/package.json",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/LICENSE.md",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/README.md",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/common.gypi",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/except.gypi",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/index.js",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/napi-inl.deprecated.h",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/napi-inl.h",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/napi.h",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/node_addon_api.gyp",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/node_api.gyp",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/noexcept.gypi",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/nothing.c",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/package-support.json",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/package.json",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/README.md",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/check-napi.js",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/clang-format.js",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/conversion.js",
-            "libexec/lib/node_modules/sass/node_modules/node-addon-api/tools/eslint-format.js",
-            "libexec/lib/node_modules/sass/node_modules/picomatch/LICENSE",
-            "libexec/lib/node_modules/sass/node_modules/picomatch/README.md",
-            "libexec/lib/node_modules/sass/node_modules/picomatch/index.js",
-            "libexec/lib/node_modules/sass/node_modules/picomatch/lib/constants.js",
-            "libexec/lib/node_modules/sass/node_modules/picomatch/lib/parse.js",
-            "libexec/lib/node_modules/sass/node_modules/picomatch/lib/picomatch.js",
-            "libexec/lib/node_modules/sass/node_modules/picomatch/lib/scan.js",
-            "libexec/lib/node_modules/sass/node_modules/picomatch/lib/utils.js",
-            "libexec/lib/node_modules/sass/node_modules/picomatch/package.json",
-            "libexec/lib/node_modules/sass/node_modules/picomatch/posix.js",
-            "libexec/lib/node_modules/sass/node_modules/readdirp/LICENSE",
-            "libexec/lib/node_modules/sass/node_modules/readdirp/README.md",
-            "libexec/lib/node_modules/sass/node_modules/readdirp/index.d.ts",
-            "libexec/lib/node_modules/sass/node_modules/readdirp/index.js",
-            "libexec/lib/node_modules/sass/node_modules/readdirp/package.json",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/LICENSE",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/README.md",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/array-set.js",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/base64-vlq.js",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/base64.js",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/binary-search.js",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/mapping-list.js",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/quick-sort.js",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/source-map-consumer.d.ts",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/source-map-consumer.js",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/source-map-generator.d.ts",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/source-map-generator.js",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/source-node.d.ts",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/source-node.js",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/lib/util.js",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/package.json",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/source-map.d.ts",
-            "libexec/lib/node_modules/sass/node_modules/source-map-js/source-map.js",
-            "libexec/lib/node_modules/sass/package.json",
-            "libexec/lib/node_modules/sass/sass.dart.js",
-            "libexec/lib/node_modules/sass/sass.default.cjs",
-            "libexec/lib/node_modules/sass/sass.default.js",
-            "libexec/lib/node_modules/sass/sass.js",
-            "libexec/lib/node_modules/sass/sass.node.js",
-            "libexec/lib/node_modules/sass/sass.node.mjs",
-            "libexec/lib/node_modules/sass/types/compile.d.ts",
-            "libexec/lib/node_modules/sass/types/deprecations.d.ts",
-            "libexec/lib/node_modules/sass/types/exception.d.ts",
-            "libexec/lib/node_modules/sass/types/importer.d.ts",
-            "libexec/lib/node_modules/sass/types/index.d.ts",
-            "libexec/lib/node_modules/sass/types/legacy/exception.d.ts",
-            "libexec/lib/node_modules/sass/types/legacy/function.d.ts",
-            "libexec/lib/node_modules/sass/types/legacy/importer.d.ts",
-            "libexec/lib/node_modules/sass/types/legacy/options.d.ts",
-            "libexec/lib/node_modules/sass/types/legacy/plugin_this.d.ts",
-            "libexec/lib/node_modules/sass/types/legacy/render.d.ts",
-            "libexec/lib/node_modules/sass/types/logger/index.d.ts",
-            "libexec/lib/node_modules/sass/types/logger/source_location.d.ts",
-            "libexec/lib/node_modules/sass/types/logger/source_span.d.ts",
-            "libexec/lib/node_modules/sass/types/options.d.ts",
-            "libexec/lib/node_modules/sass/types/util/promise_or.d.ts",
-            "libexec/lib/node_modules/sass/types/value/argument_list.d.ts",
-            "libexec/lib/node_modules/sass/types/value/boolean.d.ts",
-            "libexec/lib/node_modules/sass/types/value/calculation.d.ts",
-            "libexec/lib/node_modules/sass/types/value/color.d.ts",
-            "libexec/lib/node_modules/sass/types/value/function.d.ts",
-            "libexec/lib/node_modules/sass/types/value/index.d.ts",
-            "libexec/lib/node_modules/sass/types/value/list.d.ts",
-            "libexec/lib/node_modules/sass/types/value/map.d.ts",
-            "libexec/lib/node_modules/sass/types/value/mixin.d.ts",
-            "libexec/lib/node_modules/sass/types/value/module.d.ts",
-            "libexec/lib/node_modules/sass/types/value/number.d.ts",
-            "libexec/lib/node_modules/sass/types/value/string.d.ts",
+            "bin/fern",
+            "libexec/bin/fern",
+            "libexec/lib/node_modules/fern-api/LICENSE",
+            "libexec/lib/node_modules/fern-api/cli.cjs",
+            "libexec/lib/node_modules/fern-api/node_modules/.bin/baml",
+            "libexec/lib/node_modules/fern-api/node_modules/.bin/baml-cli",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/LICENSE",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/README.md",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/async_context_vars.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/async_context_vars.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/browser.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/browser.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/cli.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/errors.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/errors.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/index.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/index.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/logging.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/logging.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/native.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/native.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/package.json",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/safe_imports.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/safe_imports.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/stream.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/stream.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/type_builder.d.ts",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml/type_builder.js",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml-darwin-x64/README.md",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml-darwin-x64/baml.darwin-x64.node",
+            "libexec/lib/node_modules/fern-api/node_modules/@boundaryml/baml-darwin-x64/package.json",
+            "libexec/lib/node_modules/fern-api/node_modules/@scarf/scarf/LICENSE",
+            "libexec/lib/node_modules/fern-api/node_modules/@scarf/scarf/README.md",
+            "libexec/lib/node_modules/fern-api/node_modules/@scarf/scarf/package.json",
+            "libexec/lib/node_modules/fern-api/node_modules/@scarf/scarf/report.js",
+            "libexec/lib/node_modules/fern-api/package.json",
             "sbom.spdx.json"
           ],
-          "installed_size": 8182607
+          "installed_size": 73445198
         }
       }
     }

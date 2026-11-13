@@ -2,10 +2,10 @@
   "precice": {
     "formula": {
       "name": "precice",
-      "pkg_version": "3.5.0",
+      "pkg_version": "3.5.0_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/p/precice.rb",
       "tap_git_path": "Formula/p/precice.rb",
-      "tap_git_revision": "88d4657651a620f50e05b5b14c59a08e5ec8a3d9",
+      "tap_git_revision": "51a85ae4935a5984aa83f08216cfd711c5968041",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Coupling library for partitioned multi-physics simulations",
       "license": "LGPL-3.0-or-later",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-12T00:23:00Z",
+      "date": "2026-11-13T07:34:10Z",
       "tags": {
         "sequoia": {
-          "filename": "precice-3.5.0.sequoia.bottle.tar.gz",
-          "local_filename": "precice--3.5.0.sequoia.bottle.tar.gz",
-          "sha256": "b0de8283bfedebca45914cc2849798adcdfbfefc7158ee2b89f4a7adf8aea3bb",
+          "filename": "precice-3.5.0_1.sequoia.bottle.tar.gz",
+          "local_filename": "precice--3.5.0_1.sequoia.bottle.tar.gz",
+          "sha256": "8413c6d87d4c4c29996e89d70f6cefc886b1b6e45d4701ff8f55c223493586c7",
           "tab": {
             "homebrew_version": "7.0.13",
             "changed_files": [
@@ -223,13 +223,22 @@
                 "compatibility_version": 1
               },
               {
-                "full_name": "kokkos",
-                "version": "5.2.2",
+                "full_name": "mdspan",
+                "version": "5.3.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.2.2",
-                "declared_directly": true,
+                "pkg_version": "5.3.0",
+                "declared_directly": false,
                 "compatibility_version": 1
+              },
+              {
+                "full_name": "kokkos",
+                "version": "5.3.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.3.0",
+                "declared_directly": true,
+                "compatibility_version": 2
               },
               {
                 "full_name": "openblas",
@@ -379,7 +388,8 @@
               "SPDXRef-Package-SPDXRef-libevent-2.2e.1.2e.13.5f.1",
               "SPDXRef-Package-SPDXRef-open-mpi-5.2e.0.2e.11",
               "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
-              "SPDXRef-Package-SPDXRef-kokkos-5.2e.2.2e.2",
+              "SPDXRef-Package-SPDXRef-mdspan-5.2e.3.2e.0",
+              "SPDXRef-Package-SPDXRef-kokkos-5.2e.3.2e.0",
               "SPDXRef-Package-SPDXRef-numpy-2.2e.5.2e.4",
               "SPDXRef-Package-SPDXRef-libaec-1.2e.1.2e.8",
               "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.10",
@@ -784,24 +794,47 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-kokkos-5.2e.2.2e.2",
-                "name": "kokkos",
-                "versionInfo": "5.2.2",
+                "SPDXID": "SPDXRef-Package-SPDXRef-mdspan-5.2e.3.2e.0",
+                "name": "mdspan",
+                "versionInfo": "5.3.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-2/kokkos-5.2.2.sequoia.bottle.tar.gz",
+                "licenseConcluded": "Apache-2.0 WITH LLVM-exception",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/mdspan/blobs/sha256:3d399e86060ce7fb382eab770752f8d56408da0b30bf2d3d0b80b235d23b4315",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "a0374c17a4ead148a6e87cd460fb640f32ac90e0ab8042e9a0022f40b630ee57"
+                    "checksumValue": "3d399e86060ce7fb382eab770752f8d56408da0b30bf2d3d0b80b235d23b4315"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/kokkos@5.2.2",
+                    "referenceLocator": "pkg:brew/mdspan@5.3.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-kokkos-5.2e.3.2e.0",
+                "name": "kokkos",
+                "versionInfo": "5.3.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/kokkos-5.3.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "ae1395c114dc240b020e097283dc7d22f00fb62575e05fd9ab37ffb64e1d1688"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/kokkos@5.3.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -1113,7 +1146,12 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-precice"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-kokkos-5.2e.2.2e.2",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mdspan-5.2e.3.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-precice"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-kokkos-5.2e.3.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-precice"
               },
@@ -1225,7 +1263,7 @@
             "share/precice/examples/solverdummies/fortran/solverdummy.f90",
             "share/precice/examples/solverdummies/precice-config.xml"
           ],
-          "installed_size": 6331153
+          "installed_size": 6323503
         }
       }
     }
