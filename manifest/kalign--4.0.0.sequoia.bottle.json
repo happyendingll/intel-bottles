@@ -1,0 +1,137 @@
+{
+  "kalign": {
+    "formula": {
+      "name": "kalign",
+      "pkg_version": "4.0.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/k/kalign.rb",
+      "tap_git_path": "Formula/k/kalign.rb",
+      "tap_git_revision": "218d5a1517b85ee0fd135bed96a25fb74d628e8f",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Fast multiple sequence alignment program for biological sequences",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/TimoLassmann/kalign"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-14T14:30:45Z",
+      "tags": {
+        "sequoia": {
+          "filename": "kalign-4.0.0.sequoia.bottle.tar.gz",
+          "local_filename": "kalign--4.0.0.sequoia.bottle.tar.gz",
+          "sha256": "76be3b66c1acae0e7429481bead16d15879e4cdd5fc627d4fd6356ce2491f7d1",
+          "tab": {
+            "homebrew_version": "7.0.13",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libkalign.4.0.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1794521668,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "libomp",
+                "version": "23.1.5",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "23.1.5",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
+                "name": "libomp",
+                "versionInfo": "23.1.5",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/libomp-23.1.5.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "cc9c95bbc0ed067ea4f8a7fa6edac5b280e54c4c4e3cac6b98c560323b225912"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/libomp@23.1.5",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libomp-23.2e.1.2e.5",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-kalign"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-kalign-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/kalign"
+          ],
+          "all_files": [
+            ".brew/kalign.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README.md",
+            "bin/kalign",
+            "include/kalign/kalign.h",
+            "include/kalign/kalign_export.h",
+            "lib/cmake/kalign/kalignConfig.cmake",
+            "lib/cmake/kalign/kalignConfigVersion.cmake",
+            "lib/cmake/kalign/kalignTargets-release.cmake",
+            "lib/cmake/kalign/kalignTargets.cmake",
+            "lib/libkalign.4.0.0.dylib",
+            "lib/libkalign.4.dylib",
+            "lib/libkalign.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 749267
+        }
+      }
+    }
+  }
+}
