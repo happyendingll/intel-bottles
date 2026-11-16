@@ -1,46 +1,46 @@
 {
-  "fvm": {
+  "dart-sass": {
     "formula": {
-      "name": "fvm",
-      "pkg_version": "4.3.2",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/f/fvm.rb",
-      "tap_git_path": "Formula/f/fvm.rb",
-      "tap_git_revision": "f9fc6d55471172814dc42b9c534b2214b4727535",
+      "name": "dart-sass",
+      "pkg_version": "1.108.2_1",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dart-sass.rb",
+      "tap_git_path": "Formula/d/dart-sass.rb",
+      "tap_git_revision": "799cacfd04041cfed739d5f1ad9bcf34aea669f6",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Manage Flutter SDK versions per project",
+      "desc": "Reference implementation of Sass, written in Dart",
       "license": "MIT",
-      "homepage": "https://fvm.app"
+      "homepage": "https://sass-lang.com/dart-sass"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-16T20:41:02Z",
+      "date": "2026-11-16T00:16:16Z",
       "tags": {
         "sequoia": {
-          "filename": "fvm-4.3.2.sequoia.bottle.tar.gz",
-          "local_filename": "fvm--4.3.2.sequoia.bottle.tar.gz",
-          "sha256": "48f02d1860184e864cdfaa03e26c364ad8a90e99cb1c03105aa01f53027082de",
+          "filename": "dart-sass-1.108.2_1.sequoia.bottle.tar.gz",
+          "local_filename": "dart-sass--1.108.2_1.sequoia.bottle.tar.gz",
+          "sha256": "3a2d1ed282d194c3572b0926696c4aaa9cb0e5897a3152265d9b0df1495cf935",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.13",
             "changed_files": [
-              "bin/fvm"
+              "bin/sass"
             ],
             "linkage_files": [
-              "libexec/fvm.aot"
+              "libexec/sass.aot"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1792079717,
+            "source_modified_time": 1794360953,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "dartaotruntime",
-                "version": "3.13.5",
+                "version": "3.14.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "3.13.5",
+                "pkg_version": "3.14.0",
                 "declared_directly": true,
-                "compatibility_version": 3
+                "compatibility_version": 4
               }
             ],
             "arch": "x86_64",
@@ -56,29 +56,29 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-dartaotruntime-3.2e.13.2e.5",
+              "SPDXRef-Package-SPDXRef-dartaotruntime-3.2e.14.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-dartaotruntime-3.2e.13.2e.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-dartaotruntime-3.2e.14.2e.0",
                 "name": "dartaotruntime",
-                "versionInfo": "3.13.5",
+                "versionInfo": "3.14.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-3-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/dartaotruntime-3.13.5.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/dartaotruntime-3.14.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "31acf239e9210638d540fb8a084010ecfb71dfc5a7587d1c37e829adb2ba40a8"
+                    "checksumValue": "0fcf2c67ee352490f5954337c9bb6090ab6f0765fd2611529b563c58e7d8eb83"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/dartaotruntime@3.13.5",
+                    "referenceLocator": "pkg:brew/dartaotruntime@3.14.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -98,31 +98,32 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-dartaotruntime-3.2e.13.2e.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-dartaotruntime-3.2e.14.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
-                "relatedSpdxElement": "SPDXRef-Bottle-fvm"
+                "relatedSpdxElement": "SPDXRef-Bottle-dart-sass"
               },
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-fvm-src"
+                "relatedSpdxElement": "SPDXRef-Archive-dart-sass-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/fvm"
+            "bin/sass"
           ],
           "all_files": [
-            ".brew/fvm.rb",
+            ".brew/dart-sass.rb",
+            "AUTHORS",
             "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
-            "bin/fvm",
-            "libexec/fvm.aot",
+            "bin/sass",
+            "libexec/sass.aot",
             "sbom.spdx.json"
           ],
-          "installed_size": 4663018
+          "installed_size": 5961041
         }
       }
     }
