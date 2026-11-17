@@ -2,10 +2,10 @@
   "freerdp": {
     "formula": {
       "name": "freerdp",
-      "pkg_version": "3.33.1",
+      "pkg_version": "3.33.1_1",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/f/freerdp.rb",
       "tap_git_path": "Formula/f/freerdp.rb",
-      "tap_git_revision": "88d4657651a620f50e05b5b14c59a08e5ec8a3d9",
+      "tap_git_revision": "429a7882f29a37001850e304522d8b4436768499",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "X11 implementation of the Remote Desktop Protocol (RDP)",
       "license": "Apache-2.0",
@@ -15,14 +15,14 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-11-11T23:10:40Z",
+      "date": "2026-11-17T15:27:43Z",
       "tags": {
         "sequoia": {
-          "filename": "freerdp-3.33.1.sequoia.bottle.tar.gz",
-          "local_filename": "freerdp--3.33.1.sequoia.bottle.tar.gz",
-          "sha256": "a5cfa903a2e241de55e178682b55be34a929bdc8346e2b176434f98013392387",
+          "filename": "freerdp-3.33.1_1.sequoia.bottle.tar.gz",
+          "local_filename": "freerdp--3.33.1_1.sequoia.bottle.tar.gz",
+          "sha256": "18d2c81a784e0ba0f0f5cdc445115a26f035864f648f9cbae5148712f5768fca",
           "tab": {
-            "homebrew_version": "7.0.13",
+            "homebrew_version": "7.0.14",
             "changed_files": [
               "include/freerdp3/freerdp/build-config.h",
               "include/winpr3/winpr/build-config.h",
@@ -220,19 +220,18 @@
               },
               {
                 "full_name": "libcbor",
-                "version": "0.14.0",
+                "version": "0.15.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.14.0",
+                "pkg_version": "0.15.0",
                 "declared_directly": true,
-                "compatibility_version": 2
+                "compatibility_version": 3
               },
               {
                 "full_name": "libfido2",
                 "version": "1.17.0",
-                "revision": 1,
-                "bottle_rebuild": 0,
-                "pkg_version": "1.17.0_1",
+                "revision": 2,
+                "pkg_version": "1.17.0_2",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -529,23 +528,23 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/sfreerdp-server",
-              "string": "/usr/local/Cellar/freerdp/3.33.1/share/FreeRDP/images",
+              "string": "/usr/local/Cellar/freerdp/3.33.1_1/share/FreeRDP/images",
               "offset": 23416
             },
             {
               "path": "lib/libfreerdp-server-proxy3.3.33.1.dylib",
-              "string": "/usr/local/Cellar/freerdp/3.33.1",
+              "string": "/usr/local/Cellar/freerdp/3.33.1_1",
               "offset": 115397
             },
             {
               "path": "lib/libfreerdp3.3.33.1.dylib",
-              "string": "/usr/local/Cellar/freerdp/3.33.1",
+              "string": "/usr/local/Cellar/freerdp/3.33.1_1",
               "offset": 1677081
             },
             {
               "path": "lib/libfreerdp-client3.3.33.1.dylib",
-              "string": "/usr/local/Cellar/freerdp/3.33.1",
-              "offset": 572020
+              "string": "/usr/local/Cellar/freerdp/3.33.1_1",
+              "offset": 572916
             }
           ],
           "sbom": {
@@ -562,7 +561,7 @@
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-ffmpeg-9.2e.0.2e.2.5f.1",
               "SPDXRef-Package-SPDXRef-jpeg-turbo-3.2e.2.2e.1",
-              "SPDXRef-Package-SPDXRef-libfido2-1.2e.17.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-libcbor-0.2e.15.2e.0",
               "SPDXRef-Package-SPDXRef-xorgproto-2026.2e.1",
               "SPDXRef-Package-SPDXRef-libx11-1.2e.8.2e.14",
               "SPDXRef-Package-SPDXRef-libxrender-0.2e.9.2e.13",
@@ -860,24 +859,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-libfido2-1.2e.17.2e.0.5f.1",
-                "name": "libfido2",
-                "versionInfo": "1.17.0_1",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libcbor-0.2e.15.2e.0",
+                "name": "libcbor",
+                "versionInfo": "0.15.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/libfido2-1.17.0_1.sequoia.bottle.tar.gz",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/libcbor-0.15.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "f85b9f80196515a93f0a047c4df4076a07fe88b49059e03249c04c1e1871344a"
+                    "checksumValue": "1b10d360b5abee3e36844c2955836c292bb73d3542a654e655d08f6c530d95ae"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/libfido2@1.17.0_1",
+                    "referenceLocator": "pkg:brew/libcbor@0.15.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -1348,7 +1347,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-freerdp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-libfido2-1.2e.17.2e.0.5f.1",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libcbor-0.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-freerdp"
               },
@@ -1805,7 +1804,7 @@
             "share/FreeRDP/images/test_icon.png",
             "share/FreeRDP/images/test_icon.webp"
           ],
-          "installed_size": 9685258
+          "installed_size": 9685280
         }
       }
     }

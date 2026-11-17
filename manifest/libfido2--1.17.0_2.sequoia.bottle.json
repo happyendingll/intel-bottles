@@ -2,27 +2,27 @@
   "libfido2": {
     "formula": {
       "name": "libfido2",
-      "pkg_version": "1.17.0_1",
+      "pkg_version": "1.17.0_2",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libfido2.rb",
       "tap_git_path": "Formula/lib/libfido2.rb",
-      "tap_git_revision": "2e736d3ea76f6195fd8671a85721cbaf904728ba",
+      "tap_git_revision": "429a7882f29a37001850e304522d8b4436768499",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Provides library functionality for FIDO U2F & FIDO 2.0, including USB",
       "license": "BSD-2-Clause",
       "homepage": "https://developers.yubico.com/libfido2/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-10-10T01:12:57Z",
+      "date": "2026-11-17T15:21:41Z",
       "tags": {
         "sequoia": {
-          "filename": "libfido2-1.17.0_1.sequoia.bottle.tar.gz",
-          "local_filename": "libfido2--1.17.0_1.sequoia.bottle.tar.gz",
-          "sha256": "f85b9f80196515a93f0a047c4df4076a07fe88b49059e03249c04c1e1871344a",
+          "filename": "libfido2-1.17.0_2.sequoia.bottle.tar.gz",
+          "local_filename": "libfido2--1.17.0_2.sequoia.bottle.tar.gz",
+          "sha256": "cc9137d4cd5bf20365c8d7d3a1eabd2fbb8eadcd926561c724158e7209083079",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.14",
             "changed_files": [
               "lib/pkgconfig/libfido2.pc"
             ],
@@ -38,29 +38,30 @@
             "runtime_dependencies": [
               {
                 "full_name": "libcbor",
-                "version": "0.14.0",
+                "version": "0.15.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.14.0",
+                "pkg_version": "0.15.0",
                 "declared_directly": true,
-                "compatibility_version": 2
+                "compatibility_version": 3
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-11-05",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-11-05",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
-                "declared_directly": true
+                "pkg_version": "4.1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
               }
             ],
             "arch": "x86_64",
@@ -76,53 +77,77 @@
           "binary_relocation_diagnostics": [],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-libcbor-0.2e.15.2e.0",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-                "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-libcbor-0.2e.15.2e.0",
+                "name": "libcbor",
+                "versionInfo": "0.15.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/libcbor-0.15.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "1b10d360b5abee3e36844c2955836c292bb73d3542a654e655d08f6c530d95ae"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/libcbor@0.15.0",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
-                "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+                "name": "ca-certificates",
+                "versionInfo": "2026-11-05",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
-                "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "licenseConcluded": "MPL-2.0",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
+                "name": "openssl@4",
+                "versionInfo": "4.1.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Apache-2.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -142,12 +167,17 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-libcbor-0.2e.15.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libfido2"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-libfido2"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-libfido2"
               },
@@ -791,7 +821,7 @@
             "share/man/man3/rs256_pk_new.3.gz",
             "share/man/man3/rs256_pk_to_EVP_PKEY.3.gz"
           ],
-          "installed_size": 1215943
+          "installed_size": 1215841
         }
       }
     }

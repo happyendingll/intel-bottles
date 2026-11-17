@@ -1,32 +1,35 @@
 {
-  "supabase": {
+  "pocket-id": {
     "formula": {
-      "name": "supabase",
-      "pkg_version": "3.1.0",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/supabase.rb",
-      "tap_git_path": "Formula/s/supabase.rb",
-      "tap_git_revision": "5061c866ceaea7007e3197ac5400c0aba09374c1",
+      "name": "pocket-id",
+      "pkg_version": "2.19.3",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pocket-id.rb",
+      "tap_git_path": "Formula/p/pocket-id.rb",
+      "tap_git_revision": "429a7882f29a37001850e304522d8b4436768499",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "Postgres development platform",
-      "license": "MIT",
-      "homepage": "https://supabase.com/docs/reference/cli/about"
+      "desc": "Open-source identity provider for secure user authentication",
+      "license": "BSD-2-Clause",
+      "homepage": "https://pocket-id.org"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-11-10T03:37:04Z",
+      "date": "2026-11-17T20:22:17Z",
       "tags": {
         "sequoia": {
-          "filename": "supabase-3.1.0.sequoia.bottle.tar.gz",
-          "local_filename": "supabase--3.1.0.sequoia.bottle.tar.gz",
-          "sha256": "b7884616f6d179f0a2788ccbb1ea0cee8c052968907047b7ad4bb48b5777e51d",
+          "filename": "pocket-id-2.19.3.sequoia.bottle.tar.gz",
+          "local_filename": "pocket-id--2.19.3.sequoia.bottle.tar.gz",
+          "sha256": "7df0f803ecfe8253240d9fc14d1cef3f7828adaa2bf745a0cf1eb9ba91f8b933",
           "tab": {
-            "homebrew_version": "7.0.13",
-            "changed_files": [],
+            "homebrew_version": "7.0.14",
+            "changed_files": [
+              "sh.brew.pocket-id.plist",
+              "sh.brew.pocket-id.service"
+            ],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1794224247,
+            "source_modified_time": 1794769442,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -62,22 +65,25 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-supabase-src"
+                "relatedSpdxElement": "SPDXRef-Archive-pocket-id-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/supabase"
+            "bin/pocket-id"
           ],
           "all_files": [
-            ".brew/supabase.rb",
+            ".brew/pocket-id.rb",
+            "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
-            "bin/supabase",
-            "sbom.spdx.json"
+            "bin/pocket-id",
+            "sbom.spdx.json",
+            "sh.brew.pocket-id.plist",
+            "sh.brew.pocket-id.service"
           ],
-          "installed_size": 121403902
+          "installed_size": 81986372
         }
       }
     }
