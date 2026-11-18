@@ -2,27 +2,27 @@
   "mariadb@12.3": {
     "formula": {
       "name": "mariadb@12.3",
-      "pkg_version": "12.3.3_1",
+      "pkg_version": "12.3.4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mariadb@12.3.rb",
       "tap_git_path": "Formula/m/mariadb@12.3.rb",
-      "tap_git_revision": "b4e1f962992053f5d5320967e2bbf555823d07dd",
+      "tap_git_revision": "98d5a23ebb84bc2edb8a7fd013f7bce728c0a64f",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Drop-in replacement for MySQL",
       "license": "GPL-2.0-only",
       "homepage": "https://mariadb.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-10-15T01:02:48Z",
+      "date": "2026-11-18T09:28:41Z",
       "tags": {
         "sequoia": {
-          "filename": "mariadb%4012.3-12.3.3_1.sequoia.bottle.tar.gz",
-          "local_filename": "mariadb@12.3--12.3.3_1.sequoia.bottle.tar.gz",
-          "sha256": "355ed579fea7d230593b16b3ec4a9ffd9cb6acf2bf1bce8d0978bb657ad0d1b2",
+          "filename": "mariadb%4012.3-12.3.4.sequoia.bottle.tar.gz",
+          "local_filename": "mariadb@12.3--12.3.4.sequoia.bottle.tar.gz",
+          "sha256": "7bac02da6191710f01a7e3e21f6e9399e09d18987abe6978016b414a2b4c23df",
           "tab": {
-            "homebrew_version": "7.0.9",
+            "homebrew_version": "7.0.14",
             "changed_files": [
               ".bottle/etc/init.d/mysql",
               "bin/mariadb-access",
@@ -39,7 +39,6 @@
               ".bottle/etc/logrotate.d/mariadb",
               "include/mysql/mariadb_version.h",
               "include/mysql/server/my_config.h",
-              "include/mysql/server/private/config.h",
               "lib/pkgconfig/libmariadb.pc",
               "lib/pkgconfig/mariadb.pc",
               "sh.brew.mariadb@12.3.plist",
@@ -128,16 +127,17 @@
               "lib/libmariadb.3.dylib",
               "lib/libmariadbclient.a"
             ],
-            "source_modified_time": 1787207616,
+            "source_modified_time": 1794255265,
             "compiler": "clang",
             "runtime_dependencies": [
               {
                 "full_name": "lz4",
-                "version": "1.10.0",
+                "version": "1.11.1",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "1.10.0",
-                "declared_directly": true
+                "pkg_version": "1.11.1",
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "mecab",
@@ -145,7 +145,8 @@
                 "revision": 0,
                 "bottle_rebuild": 6,
                 "pkg_version": "0.996",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "mecab-ipadic",
@@ -153,7 +154,8 @@
                 "revision": 0,
                 "bottle_rebuild": 1,
                 "pkg_version": "2.7.0-20070801",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "msgpack",
@@ -161,7 +163,8 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "7.0.2",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "onigmo",
@@ -169,15 +172,17 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "6.2.0",
-                "declared_directly": false
+                "declared_directly": false,
+                "compatibility_version": 1
               },
               {
                 "full_name": "simdjson",
-                "version": "5.0.4",
+                "version": "5.2.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.0.4",
-                "declared_directly": false
+                "pkg_version": "5.2.0",
+                "declared_directly": false,
+                "compatibility_version": 3
               },
               {
                 "full_name": "xz",
@@ -199,10 +204,10 @@
               },
               {
                 "full_name": "groonga",
-                "version": "16.1.3",
-                "revision": 0,
+                "version": "16.1.5",
+                "revision": 3,
                 "bottle_rebuild": 0,
-                "pkg_version": "16.1.3",
+                "pkg_version": "16.1.5_3",
                 "declared_directly": true,
                 "compatibility_version": 1
               },
@@ -212,24 +217,26 @@
                 "revision": 0,
                 "bottle_rebuild": 0,
                 "pkg_version": "2.10",
-                "declared_directly": true
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "ca-certificates",
-                "version": "2026-09-25",
+                "version": "2026-11-05",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "2026-09-25",
+                "pkg_version": "2026-11-05",
                 "declared_directly": false,
                 "compatibility_version": 1
               },
               {
                 "full_name": "openssl@4",
-                "version": "4.0.3",
+                "version": "4.1.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "4.0.3",
-                "declared_directly": true
+                "pkg_version": "4.1.0",
+                "declared_directly": true,
+                "compatibility_version": 1
               },
               {
                 "full_name": "pcre2",
@@ -263,505 +270,505 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/mariadb-check",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 449115
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 453273
             },
             {
               "path": "bin/mariadb-check",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 449679
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 453835
             },
             {
               "path": "bin/mariadb-check",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 449731
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 453885
             },
             {
               "path": "bin/aria_chk",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 955883
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 961867
             },
             {
               "path": "bin/aria_chk",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 955935
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 961917
             },
             {
               "path": "bin/mariadb-migrate-config-file",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 355900
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 358503
             },
             {
               "path": "bin/mariadb-migrate-config-file",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 355952
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 358553
             },
             {
               "path": "bin/aria_pack",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 4250920
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 4256936
             },
             {
               "path": "bin/aria_pack",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 4250972
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 4256986
             },
             {
               "path": "bin/mariadb-show",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 443339
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 447481
             },
             {
               "path": "bin/mariadb-show",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 443903
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 448043
             },
             {
               "path": "bin/mariadb-show",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 443955
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 448093
             },
             {
               "path": "bin/mariadbd-safe-helper",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 272415
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 274895
             },
             {
               "path": "bin/mariadbd-safe-helper",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 272467
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 274945
             },
             {
               "path": "bin/mariadb-waitpid",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 291741
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 294253
             },
             {
               "path": "bin/mariadb-waitpid",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 291793
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 294303
             },
             {
               "path": "bin/resolveip",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 292191
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 294703
             },
             {
               "path": "bin/resolveip",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 292243
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 294753
             },
             {
               "path": "bin/aria_s3_copy",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 686154
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 688122
             },
             {
               "path": "bin/aria_s3_copy",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 686206
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 688172
             },
             {
               "path": "bin/mariadb",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 3934987
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 3939289
             },
             {
               "path": "bin/mariadb",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 3935551
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 3939851
             },
             {
               "path": "bin/mariadb",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 3935603
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 3939901
             },
             {
               "path": "bin/mariadb-conv",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 315227
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 317867
             },
             {
               "path": "bin/mariadb-conv",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 315279
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 317917
             },
             {
               "path": "bin/my_print_defaults",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 292584
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 295096
             },
             {
               "path": "bin/my_print_defaults",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 292636
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 295146
             },
             {
               "path": "bin/resolve_stack_dump",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 293787
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 296299
             },
             {
               "path": "bin/resolve_stack_dump",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 293839
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 296349
             },
             {
               "path": "bin/mariadb-plugin",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 302630
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 305142
             },
             {
               "path": "bin/mariadb-plugin",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 302682
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 305192
             },
             {
               "path": "bin/mariadb-client-test",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 4307131
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 4326265
             },
             {
               "path": "bin/mariadb-client-test",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 4307692
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 4326824
             },
             {
               "path": "bin/mariadb-client-test",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 4307744
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 4326874
             },
             {
               "path": "bin/mariadb-dump",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 531899
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 536057
             },
             {
               "path": "bin/mariadb-dump",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 532460
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 536616
             },
             {
               "path": "bin/mariadb-dump",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 532512
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 536666
             },
             {
               "path": "bin/mariadbd",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 14003079
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 14032357
             },
             {
               "path": "bin/mariadbd",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 14003419
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 14032695
             },
             {
               "path": "bin/mariadbd",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 14003470
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 14032744
             },
             {
               "path": "bin/mbstream",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 313403
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 316091
             },
             {
               "path": "bin/mbstream",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 313455
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 316141
             },
             {
               "path": "bin/mariadb-test",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 4112886
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 4119412
             },
             {
               "path": "bin/mariadb-test",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 4113433
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 4119957
             },
             {
               "path": "bin/mariadb-test",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 4113485
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 4120007
             },
             {
               "path": "bin/mariadb-slap",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 455513
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 459671
             },
             {
               "path": "bin/mariadb-slap",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 456077
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 460233
             },
             {
               "path": "bin/mariadb-slap",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 456129
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 460283
             },
             {
               "path": "bin/aria_read_log",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 920907
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 926907
             },
             {
               "path": "bin/aria_read_log",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 920959
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 926957
             },
             {
               "path": "bin/mariadb-admin",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 452043
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 456185
             },
             {
               "path": "bin/mariadb-admin",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 452607
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 456747
             },
             {
               "path": "bin/mariadb-admin",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 452659
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 456797
             },
             {
               "path": "bin/perror",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 411420
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 413932
             },
             {
               "path": "bin/perror",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 411472
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 413982
             },
             {
               "path": "bin/mariadb_config",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
               "offset": 4450
             },
             {
               "path": "bin/myisamchk",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 4019359
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 4021599
             },
             {
               "path": "bin/myisamchk",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 4019411
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 4021649
             },
             {
               "path": "bin/mariadb-upgrade",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 730987
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 731563
             },
             {
               "path": "bin/mariadb-upgrade",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 731039
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 731613
             },
             {
               "path": "bin/myisampack",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 3940660
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 3942964
             },
             {
               "path": "bin/myisampack",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 3940712
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 3943014
             },
             {
               "path": "bin/mariadb-binlog",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 4052713
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 4054359
             },
             {
               "path": "bin/mariadb-binlog",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 4053260
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 4054904
             },
             {
               "path": "bin/mariadb-binlog",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 4053312
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 4054954
             },
             {
               "path": "bin/mariadb-ldb",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 7359820
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 7362252
             },
             {
               "path": "bin/mariadb-ldb",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 7359872
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 7362302
             },
             {
               "path": "bin/myisamlog",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 3905231
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 3907535
             },
             {
               "path": "bin/myisamlog",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 3905283
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 3907585
             },
             {
               "path": "bin/mariadb-import",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 3922955
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 3927113
             },
             {
               "path": "bin/mariadb-import",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 3923519
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 3927675
             },
             {
               "path": "bin/mariadb-import",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 3923571
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 3927725
             },
             {
               "path": "bin/mariadb-tzinfo-to-sql",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 3722261
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 3724773
             },
             {
               "path": "bin/mariadb-tzinfo-to-sql",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 3722313
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 3724823
             },
             {
               "path": "bin/mariadb-backup",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 14285910
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 14315262
             },
             {
               "path": "bin/mariadb-backup",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 14286250
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 14315600
             },
             {
               "path": "bin/mariadb-backup",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 14286301
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 14315649
             },
             {
               "path": "bin/replace",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 3700377
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 3702857
             },
             {
               "path": "bin/replace",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 3700429
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 3702907
             },
             {
               "path": "bin/aria_dump_log",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 791267
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 797251
             },
             {
               "path": "bin/aria_dump_log",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 791319
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 797301
             },
             {
               "path": "bin/myisam_ftdump",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 3914812
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 3917180
             },
             {
               "path": "bin/myisam_ftdump",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 3914864
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 3917230
             },
             {
               "path": "bin/innochecksum",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 3742819
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 3745379
             },
             {
               "path": "bin/innochecksum",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 3742871
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 3745429
             },
             {
               "path": "bin/aria_ftdump",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/share/mysql",
-              "offset": 4229331
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/share/mysql",
+              "offset": 4235347
             },
             {
               "path": "bin/aria_ftdump",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1",
-              "offset": 4229383
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4",
+              "offset": 4235397
             },
             {
               "path": "lib/libmariadbclient.a",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 316367
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 317871
             },
             {
               "path": "lib/libmariadb.3.dylib",
-              "string": "/usr/local/Cellar/mariadb@12.3/12.3.3_1/lib/plugin",
-              "offset": 167764
+              "string": "/usr/local/Cellar/mariadb@12.3/12.3.4/lib/plugin",
+              "offset": 168706
             }
           ],
           "sbom": {
             "documentDescribes": [
-              "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
-              "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+              "SPDXRef-Package-SPDXRef-simdjson-5.2e.2.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
-              "SPDXRef-Package-SPDXRef-groonga-16.2e.1.2e.3",
-              "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
-              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+              "SPDXRef-Package-SPDXRef-groonga-16.2e.1.2e.5.5f.3",
+              "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
+              "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
               "SPDXRef-Package-SPDXRef-pcre2-10.2e.49",
               "SPDXRef-Compiler"
             ],
             "packages": [
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "name": "lz4",
-                "versionInfo": "1.10.0",
+                "versionInfo": "1.11.1",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "BSD-2-Clause",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/lz4-1.10.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.1.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "c84d653155571488c94bf002adf7adf3a2d161c795a2c5bde77232e79a5b0629"
+                    "checksumValue": "61fd55fe974e1d83b53032a92715d5ccd7d7eb5dce6bb98f7b082aa51fc9a63f"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/lz4@1.10.0",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.4",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.2.2e.0",
                 "name": "simdjson",
-                "versionInfo": "5.0.4",
+                "versionInfo": "5.2.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/simdjson-5.0.4.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/simdjson-5.2.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "7a629c33cade53d75e63f5b8314f82e5ed04b3a0744704cfe6b2e63fc6a68a6a"
+                    "checksumValue": "027ecf0de0e441046d44759b47489a88afd2f6166ae767e2cac4c4189af368e1"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdjson@5.0.4",
+                    "referenceLocator": "pkg:brew/simdjson@5.2.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -813,70 +820,70 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-groonga-16.2e.1.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-groonga-16.2e.1.2e.5.5f.3",
                 "name": "groonga",
-                "versionInfo": "16.1.3",
+                "versionInfo": "16.1.5_3",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "LGPL-2.1-or-later",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/groonga-16.1.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/groonga-16.1.5_3.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "0ac5fdb561f581e78053dd69da61fa1c4df1655524d1a6c7489ec96dc075348a"
+                    "checksumValue": "90efb26db25cdc79d643d2742710e5782d34b60af08ba9bd56ac132034e2c677"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/groonga@16.1.3",
+                    "referenceLocator": "pkg:brew/groonga@16.1.5_3",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "SPDXID": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "name": "ca-certificates",
-                "versionInfo": "2026-09-25",
+                "versionInfo": "2026-11-05",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "MPL-2.0",
-                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/ca-certificates/blobs/sha256:8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "81804ad8a70a7a8d2a0a964d106765ff88716b310decaeffb4b4895a3252186a"
+                    "checksumValue": "8a5a35e1a3223e6bc6ca7c853e0ac3d2568de2cc329b61688682bdf57165dab9"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/ca-certificates@2026-09-25",
+                    "referenceLocator": "pkg:brew/ca-certificates@2026-11-05",
                     "referenceType": "purl"
                   }
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "SPDXID": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "name": "openssl@4",
-                "versionInfo": "4.0.3",
+                "versionInfo": "4.1.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/openssl%404-4.0.3.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/openssl%404-4.1.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "10a582b518d61c9f6c16e4090277f6aa8b2a6222b38b6c855041213a47fb1b82"
+                    "checksumValue": "b71a557c18e08e7936de46e9605814faee8228581d0dfdf40b0d74050a3bb559"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/openssl%404@4.0.3",
+                    "referenceLocator": "pkg:brew/openssl%404@4.1.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -919,12 +926,12 @@
             ],
             "relationships": [
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.10.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mariadb.40.12.2e.3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.0.2e.4",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.2.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mariadb.40.12.2e.3"
               },
@@ -939,17 +946,17 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-mariadb.40.12.2e.3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-groonga-16.2e.1.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-groonga-16.2e.1.2e.5.5f.3",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mariadb.40.12.2e.3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-09-25",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-ca-certificates-2026-11-05",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mariadb.40.12.2e.3"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.0.2e.3",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-openssl.40.4-4.2e.1.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-mariadb.40.12.2e.3"
               },
@@ -1185,14 +1192,12 @@
             "include/mysql/mysql_com.h",
             "include/mysql/mysql_version.h",
             "include/mysql/mysqld_error.h",
-            "include/mysql/server/big_endian.h",
             "include/mysql/server/decimal.h",
             "include/mysql/server/errmsg.h",
             "include/mysql/server/handler_ername.h",
             "include/mysql/server/handler_state.h",
             "include/mysql/server/json_lib.h",
             "include/mysql/server/keycache.h",
-            "include/mysql/server/little_endian.h",
             "include/mysql/server/m_ctype.h",
             "include/mysql/server/m_string.h",
             "include/mysql/server/ma_dyncol.h",
@@ -1293,7 +1298,6 @@
             "include/mysql/server/private/charset_collations.h",
             "include/mysql/server/private/client_settings.h",
             "include/mysql/server/private/compat56.h",
-            "include/mysql/server/private/config.h",
             "include/mysql/server/private/contributors.h",
             "include/mysql/server/private/create_options.h",
             "include/mysql/server/private/create_tmp_table.h",
@@ -1634,8 +1638,46 @@
             "include/mysql/server/private/welcome_copyright_notice.h",
             "include/mysql/server/private/winservice.h",
             "include/mysql/server/private/wqueue.h",
+            "include/mysql/server/private/wsrep/allowlist_service.hpp",
+            "include/mysql/server/private/wsrep/atomic.hpp",
+            "include/mysql/server/private/wsrep/buffer.hpp",
+            "include/mysql/server/private/wsrep/chrono.hpp",
+            "include/mysql/server/private/wsrep/client_id.hpp",
+            "include/mysql/server/private/wsrep/client_service.hpp",
+            "include/mysql/server/private/wsrep/client_state.hpp",
+            "include/mysql/server/private/wsrep/compiler.hpp",
+            "include/mysql/server/private/wsrep/condition_variable.hpp",
+            "include/mysql/server/private/wsrep/connection_monitor_service.hpp",
+            "include/mysql/server/private/wsrep/encryption_service.hpp",
+            "include/mysql/server/private/wsrep/event_service.hpp",
+            "include/mysql/server/private/wsrep/exception.hpp",
+            "include/mysql/server/private/wsrep/gtid.hpp",
+            "include/mysql/server/private/wsrep/high_priority_service.hpp",
+            "include/mysql/server/private/wsrep/id.hpp",
+            "include/mysql/server/private/wsrep/key.hpp",
+            "include/mysql/server/private/wsrep/lock.hpp",
+            "include/mysql/server/private/wsrep/logger.hpp",
+            "include/mysql/server/private/wsrep/mutex.hpp",
+            "include/mysql/server/private/wsrep/provider.hpp",
+            "include/mysql/server/private/wsrep/provider_options.hpp",
+            "include/mysql/server/private/wsrep/reporter.hpp",
+            "include/mysql/server/private/wsrep/seqno.hpp",
+            "include/mysql/server/private/wsrep/server_service.hpp",
+            "include/mysql/server/private/wsrep/server_state.hpp",
+            "include/mysql/server/private/wsrep/sr_key_set.hpp",
+            "include/mysql/server/private/wsrep/storage_service.hpp",
+            "include/mysql/server/private/wsrep/streaming_context.hpp",
+            "include/mysql/server/private/wsrep/thread.hpp",
+            "include/mysql/server/private/wsrep/thread_service.hpp",
+            "include/mysql/server/private/wsrep/tls_service.hpp",
+            "include/mysql/server/private/wsrep/transaction.hpp",
+            "include/mysql/server/private/wsrep/transaction_id.hpp",
+            "include/mysql/server/private/wsrep/version.hpp",
+            "include/mysql/server/private/wsrep/view.hpp",
+            "include/mysql/server/private/wsrep/xid.hpp",
             "include/mysql/server/private/wsrep.h",
             "include/mysql/server/private/wsrep_allowlist_service.h",
+            "include/mysql/server/private/wsrep_api.h",
             "include/mysql/server/private/wsrep_applier.h",
             "include/mysql/server/private/wsrep_binlog.h",
             "include/mysql/server/private/wsrep_client_service.h",
@@ -1722,6 +1764,8 @@
             "lib/plugin/mysql_clear_password.so",
             "lib/plugin/parsec.so",
             "lib/plugin/password_reuse_check.so",
+            "lib/plugin/plugin_name_ascii.so",
+            "lib/plugin/plugin_name_non_ascii.so",
             "lib/plugin/provider_bzip2.so",
             "lib/plugin/provider_lz4.so",
             "lib/plugin/provider_lzma.so",
@@ -1750,6 +1794,10 @@
             "sh.brew.mariadb@12.3.plist",
             "sh.brew.mariadb@12.3.service",
             "share/aclocal/mysql.m4",
+            "share/cmake/mariadb-plugin/mariadb-plugin-config.cmake",
+            "share/cmake/mariadb-plugin/mariadb-plugin-defines.cmake",
+            "share/cmake/mariadb-plugin/mariadb-plugin-targets-release.cmake",
+            "share/cmake/mariadb-plugin/mariadb-plugin-targets.cmake",
             "share/doc/mariadb@12.3/hashicorp_key_management.txt",
             "share/man/man1/aria_chk.1",
             "share/man/man1/aria_dump_log.1",
@@ -2059,7 +2107,7 @@
             "support-files/wsrep.cnf",
             "support-files/wsrep_notify"
           ],
-          "installed_size": 262069598
+          "installed_size": 263726386
         }
       }
     }
