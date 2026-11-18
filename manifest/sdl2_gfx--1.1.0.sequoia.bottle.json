@@ -1,0 +1,171 @@
+{
+  "sdl2_gfx": {
+    "formula": {
+      "name": "sdl2_gfx",
+      "pkg_version": "1.1.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/sdl2_gfx.rb",
+      "tap_git_path": "Formula/s/sdl2_gfx.rb",
+      "tap_git_revision": "56a232af5a951548727d337a07942bafe917c2de",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "SDL2 graphics drawing primitives and other support functions",
+      "license": "Zlib",
+      "homepage": "https://www.ferzkopp.net/wordpress/2016/01/02/sdl_gfx-sdl2_gfx/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-18T11:03:09Z",
+      "tags": {
+        "sequoia": {
+          "filename": "sdl2_gfx-1.1.0.sequoia.bottle.tar.gz",
+          "local_filename": "sdl2_gfx--1.1.0.sequoia.bottle.tar.gz",
+          "sha256": "cad243fb24bd2925f1639a4362c65e1bb6a6abcf7960dce5a5ccfca65b8a7a5a",
+          "tab": {
+            "homebrew_version": "7.0.14",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/libSDL2_gfx-1.0.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1382974331,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "sdl3",
+                "version": "3.4.20",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.20",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "sdl2-compat",
+                "version": "2.32.74",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.32.74",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.20",
+              "SPDXRef-Package-SPDXRef-sdl2-compat-2.2e.32.2e.74",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.20",
+                "name": "sdl3",
+                "versionInfo": "3.4.20",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/sdl3-3.4.20.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5d955511da5f18ae1932a1eed03819716758f9d93f91bfa99fc9d25138b015ac"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl3@3.4.20",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-sdl2-compat-2.2e.32.2e.74",
+                "name": "sdl2-compat",
+                "versionInfo": "2.32.74",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Zlib",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-2/sdl2-compat-2.32.74.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "255e0727c8838c55d895e6a3eb19d023049f4b4e3b624fbddc49ca8ee081c55d"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/sdl2-compat@2.32.74",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl3-3.2e.4.2e.20",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sdl2.5f.gfx"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-sdl2-compat-2.2e.32.2e.74",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-sdl2.5f.gfx"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-sdl2.5f.gfx-src"
+              }
+            ]
+          },
+          "path_exec_files": [],
+          "all_files": [
+            ".brew/sdl2_gfx.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "NEWS",
+            "README",
+            "include/SDL2/SDL2_framerate.h",
+            "include/SDL2/SDL2_gfxPrimitives.h",
+            "include/SDL2/SDL2_imageFilter.h",
+            "include/SDL2/SDL2_rotozoom.h",
+            "lib/libSDL2_gfx-1.0.0.dylib",
+            "lib/libSDL2_gfx.a",
+            "lib/libSDL2_gfx.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 598822
+        }
+      }
+    }
+  }
+}
