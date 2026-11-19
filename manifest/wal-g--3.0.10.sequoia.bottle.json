@@ -1,0 +1,164 @@
+{
+  "wal-g": {
+    "formula": {
+      "name": "wal-g",
+      "pkg_version": "3.0.10",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/w/wal-g.rb",
+      "tap_git_path": "Formula/w/wal-g.rb",
+      "tap_git_revision": "67315b95ccb0f309cb521c273b2a5cab8a1e0b4f",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Archival restoration tool for databases",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/wal-g/wal-g"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-19T14:29:51Z",
+      "tags": {
+        "sequoia": {
+          "filename": "wal-g-3.0.10.sequoia.bottle.tar.gz",
+          "local_filename": "wal-g--3.0.10.sequoia.bottle.tar.gz",
+          "sha256": "ed9b6f7cab4099465a677be9a86ea51735dece7cf8ee3d1fb7d4e80f61eaea1b",
+          "tab": {
+            "homebrew_version": "7.0.15",
+            "changed_files": [],
+            "linkage_files": [
+              "bin/wal-g-etcd",
+              "bin/wal-g-fdb",
+              "bin/wal-g-gp",
+              "bin/wal-g-mongo",
+              "bin/wal-g-mysql",
+              "bin/wal-g-pg",
+              "bin/wal-g-redis",
+              "bin/wal-g-sqlserver"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1794918911,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "brotli",
+                "version": "1.2.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.2.1",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "libsodium",
+                "version": "1.0.22",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.0.22",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lzo",
+                "version": "2.10",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "2.10",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "name": "brotli",
+                "versionInfo": "1.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-3/brotli-1.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "3727ba1da30425c234290f9665d73aa41a6684b5cf795d364d9526382f3580b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/brotli@1.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-brotli-1.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-wal-g"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-wal-g-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/wal-g-mysql",
+            "bin/wal-g-sqlserver",
+            "bin/wal-g-mongo",
+            "bin/wal-g-gp",
+            "bin/wal-g-redis",
+            "bin/wal-g-etcd",
+            "bin/wal-g-pg",
+            "bin/wal-g-fdb"
+          ],
+          "all_files": [
+            ".brew/wal-g.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "bin/wal-g-etcd",
+            "bin/wal-g-fdb",
+            "bin/wal-g-gp",
+            "bin/wal-g-mongo",
+            "bin/wal-g-mysql",
+            "bin/wal-g-pg",
+            "bin/wal-g-redis",
+            "bin/wal-g-sqlserver",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 531995560
+        }
+      }
+    }
+  }
+}
