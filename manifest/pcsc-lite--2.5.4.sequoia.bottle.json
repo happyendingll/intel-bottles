@@ -1,0 +1,119 @@
+{
+  "pcsc-lite": {
+    "formula": {
+      "name": "pcsc-lite",
+      "pkg_version": "2.5.4",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/p/pcsc-lite.rb",
+      "tap_git_path": "Formula/p/pcsc-lite.rb",
+      "tap_git_revision": "4090d160f23b0a790894411f4eb1a5a4abb2c7f2",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Middleware to access a smart card using SCard API",
+      "license": "BSD-3-Clause AND BSD-2-Clause AND GPL-3.0-or-later AND ISC",
+      "homepage": "https://pcsclite.apdu.fr/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-19T00:53:02Z",
+      "tags": {
+        "sequoia": {
+          "filename": "pcsc-lite-2.5.4.sequoia.bottle.tar.gz",
+          "local_filename": "pcsc-lite--2.5.4.sequoia.bottle.tar.gz",
+          "sha256": "0496a5cef1e1c6089d61b81b761e939e49e816339d236924bff47c2e54fa1b11",
+          "tab": {
+            "homebrew_version": "7.0.14",
+            "changed_files": [
+              "lib/pkgconfig/libpcsclite.pc",
+              "lib/systemd/user/pcscd.service"
+            ],
+            "linkage_files": [
+              "lib/libpcsclite.1.dylib",
+              "lib/libpcsclite_real.1.dylib",
+              "lib/libpcscspy.0.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1795003020,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-pcsc-lite-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/pcsc-spy",
+            "sbin/pcscd"
+          ],
+          "all_files": [
+            ".bottle/etc/default/pcscd",
+            ".brew/pcsc-lite.rb",
+            "AUTHORS",
+            "COPYING",
+            "ChangeLog",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "README.md",
+            "bin/pcsc-spy",
+            "include/PCSC/debuglog.h",
+            "include/PCSC/ifdhandler.h",
+            "include/PCSC/pcsclite.h",
+            "include/PCSC/reader.h",
+            "include/PCSC/winscard.h",
+            "include/PCSC/wintypes.h",
+            "lib/libpcsclite.1.dylib",
+            "lib/libpcsclite.dylib",
+            "lib/libpcsclite_real.1.dylib",
+            "lib/libpcsclite_real.dylib",
+            "lib/libpcscspy.0.dylib",
+            "lib/libpcscspy.dylib",
+            "lib/pkgconfig/libpcsclite.pc",
+            "lib/systemd/user/pcscd.service",
+            "lib/systemd/user/pcscd.socket",
+            "sbin/pcscd",
+            "sbom.spdx.json",
+            "share/doc/pcsc-lite/setup_spy.sh",
+            "share/man/man1/pcsc-spy.1",
+            "share/man/man5/reader.conf.5",
+            "share/man/man8/pcscd.8",
+            "share/metainfo/fr.apdu.pcsclite.metainfo.xml",
+            "sysusers.d/pcscd-sysusers.conf"
+          ],
+          "installed_size": 441260
+        }
+      }
+    }
+  }
+}
