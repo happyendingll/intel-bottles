@@ -1,32 +1,32 @@
 {
-  "openlist": {
+  "mdcat": {
     "formula": {
-      "name": "openlist",
-      "pkg_version": "4.2.9",
-      "path": "Library/Taps/homebrew/homebrew-core/Formula/o/openlist.rb",
-      "tap_git_path": "Formula/o/openlist.rb",
-      "tap_git_revision": "080495aaed34a5763f36ed75581527b1c60a57f4",
+      "name": "mdcat",
+      "pkg_version": "2.20.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/m/mdcat.rb",
+      "tap_git_path": "Formula/m/mdcat.rb",
+      "tap_git_revision": "9159de69c1b0b18eb4c7885099d1588e5ff3a50c",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
-      "desc": "New AList fork addressing anti-trust issues",
-      "license": "AGPL-3.0-only",
-      "homepage": "https://doc.oplist.org/"
+      "desc": "Show markdown documents on text terminals",
+      "license": "MPL-2.0",
+      "homepage": "https://github.com/BIRSAx2/mdcat"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
       "cellar": "any_skip_relocation",
       "rebuild": 0,
-      "date": "2026-10-26T08:20:50Z",
+      "date": "2026-11-20T06:30:26Z",
       "tags": {
         "sequoia": {
-          "filename": "openlist-4.2.9.sequoia.bottle.tar.gz",
-          "local_filename": "openlist--4.2.9.sequoia.bottle.tar.gz",
-          "sha256": "0f76216b86d1cbcee721ea35d8ad1a359b63b3b333ca63b51ca73253aa60d81c",
+          "filename": "mdcat-2.20.2.sequoia.bottle.tar.gz",
+          "local_filename": "mdcat--2.20.2.sequoia.bottle.tar.gz",
+          "sha256": "2b5d51907450bab0661becbc4ec6ea72fd8d95cd5e4df575805d108ec2849198",
           "tab": {
-            "homebrew_version": "7.0.10",
+            "homebrew_version": "7.0.15",
             "changed_files": [],
             "linkage_files": [],
             "binary_relocation_files": [],
-            "source_modified_time": 1792857523,
+            "source_modified_time": 1795077296,
             "compiler": "clang",
             "runtime_dependencies": [],
             "arch": "x86_64",
@@ -62,22 +62,29 @@
               {
                 "spdxElementId": "SPDXRef-Compiler",
                 "relationshipType": "BUILD_TOOL_OF",
-                "relatedSpdxElement": "SPDXRef-Archive-openlist-src"
+                "relatedSpdxElement": "SPDXRef-Archive-mdcat-src"
               }
             ]
           },
           "path_exec_files": [
-            "bin/openlist"
+            "bin/mdcat"
           ],
           "all_files": [
-            ".brew/openlist.rb",
+            ".brew/mdcat.rb",
+            ".crates.toml",
+            ".crates2.json",
+            "CHANGELOG.md",
             "INSTALL_RECEIPT.json",
             "LICENSE",
             "README.md",
-            "bin/openlist",
-            "sbom.spdx.json"
+            "bin/mdcat",
+            "etc/bash_completion.d/mdcat",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/mdcat.fish",
+            "share/man/man1/mdcat.1.gz",
+            "share/zsh/site-functions/_mdcat"
           ],
-          "installed_size": 155527734
+          "installed_size": 37341492
         }
       }
     }
