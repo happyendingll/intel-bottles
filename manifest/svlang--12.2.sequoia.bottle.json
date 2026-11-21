@@ -1,0 +1,548 @@
+{
+  "svlang": {
+    "formula": {
+      "name": "svlang",
+      "pkg_version": "12.2",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/s/svlang.rb",
+      "tap_git_path": "Formula/s/svlang.rb",
+      "tap_git_revision": "19a57cf762930d59bacfc182d28fe54433c2436f",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "SystemVerilog compiler and language services",
+      "license": "MIT",
+      "homepage": "https://sv-lang.com/"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-21T02:22:27Z",
+      "tags": {
+        "sequoia": {
+          "filename": "svlang-12.2.sequoia.bottle.tar.gz",
+          "local_filename": "svlang--12.2.sequoia.bottle.tar.gz",
+          "sha256": "25d86a5e8f5b6d00f4a7655e2ab36f404482f51c77ef3c2a5413a0ee20b9be2f",
+          "tab": {
+            "homebrew_version": "7.0.15",
+            "changed_files": [
+              "share/pkgconfig/sv-lang.pc"
+            ],
+            "linkage_files": [
+              "bin/slang",
+              "bin/slang-hier",
+              "bin/slang-reflect",
+              "bin/slang-tidy",
+              "bin/slang-unifdef"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1795186165,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "icu4c@79",
+                "version": "79.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "79.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "xz",
+                "version": "5.8.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "5.8.4",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "lz4",
+                "version": "1.11.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.11.1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "zstd",
+                "version": "1.5.7",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.5.7_1",
+                "declared_directly": false,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "boost",
+                "version": "1.92.0",
+                "revision": 1,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.92.0_1",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "fmt",
+                "version": "12.2.1",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "12.2.1",
+                "declared_directly": true,
+                "compatibility_version": 2
+              },
+              {
+                "full_name": "mimalloc",
+                "version": "3.7.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.7.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              },
+              {
+                "full_name": "tomlplusplus",
+                "version": "3.4.0",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.4.0",
+                "declared_directly": true,
+                "compatibility_version": 1
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+              "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+              "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+              "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+              "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+              "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
+              "SPDXRef-Package-SPDXRef-mimalloc-3.2e.7.2e.0",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "name": "icu4c@79",
+                "versionInfo": "79.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "Unicode-3.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/icu4c%4079-79.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "d5e808844a4af5a8546e95d717f1c9e835dfbdf08e3cd1fcfabf2b1ba2e6ab0c"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/icu4c%4079@79.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "name": "xz",
+                "versionInfo": "5.8.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "0BSD AND GPL-2.0-or-later",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles/xz-5.8.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "1fdd8b21a8500839cdb78688605ec95cd885923fecbd87c12e89ac330cdf44b8"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/xz@5.8.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+                "name": "lz4",
+                "versionInfo": "1.11.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-2-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/lz4-1.11.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "61fd55fe974e1d83b53032a92715d5ccd7d7eb5dce6bb98f7b082aa51fc9a63f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/lz4@1.11.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "name": "zstd",
+                "versionInfo": "1.5.7_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "(BSD-3-Clause OR GPL-2.0-only) AND BSD-2-Clause AND MIT",
+                "downloadLocation": "https://ghcr.io/v2/homebrew/core/zstd/blobs/sha256:8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "8b2443dfa62b9d28cf0321e0e670bb096b2680fe72739999228291f36018311f"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/zstd@1.5.7_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+                "name": "boost",
+                "versionInfo": "1.92.0_1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSL-1.0",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-4/boost-1.92.0_1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "83df3d2e7a39c19ac12d3405209bdaa598cacbc3ad0f2f1d869ab7835cf7a3a7"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/boost@1.92.0_1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
+                "name": "fmt",
+                "versionInfo": "12.2.1",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/fmt-12.2.1.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "298737f4fd0e34b47f2e3dcc56eea957f8e1a4358c3b3a292b0e481eb3dc5f51"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/fmt@12.2.1",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-mimalloc-3.2e.7.2e.0",
+                "name": "mimalloc",
+                "versionInfo": "3.7.0",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "MIT",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/mimalloc-3.7.0.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "2a14eabe22051d3a89bbd25d61ba788a3e9637dc93531aca050ebdac702869e4"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/mimalloc@3.7.0",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-icu4c.40.79-79.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-svlang"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-svlang"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-svlang"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-svlang"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-boost-1.2e.92.2e.0.5f.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-svlang"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-fmt-12.2e.2.2e.1",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-svlang"
+              },
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-mimalloc-3.2e.7.2e.0",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-svlang"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-svlang-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/slang-hier",
+            "bin/slang",
+            "bin/slang-tidy",
+            "bin/slang-unifdef",
+            "bin/slang-reflect"
+          ],
+          "all_files": [
+            ".brew/svlang.rb",
+            "CHANGELOG.md",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/slang",
+            "bin/slang-hier",
+            "bin/slang-reflect",
+            "bin/slang-tidy",
+            "bin/slang-unifdef",
+            "include/BS_thread_pool.hpp",
+            "include/expected.hpp",
+            "include/ieee1800/sv_vpi_user.h",
+            "include/ieee1800/svdpi.h",
+            "include/ieee1800/vpi_compatibility.h",
+            "include/ieee1800/vpi_user.h",
+            "include/slang/analysis/AbstractFlowAnalysis.h",
+            "include/slang/analysis/AnalysisManager.h",
+            "include/slang/analysis/AnalysisOptions.h",
+            "include/slang/analysis/AnalyzedAssertion.h",
+            "include/slang/analysis/AnalyzedProcedure.h",
+            "include/slang/analysis/CaseDecisionDag.h",
+            "include/slang/analysis/ClockInference.h",
+            "include/slang/analysis/DFAResults.h",
+            "include/slang/analysis/DataFlowAnalysis.h",
+            "include/slang/analysis/DriverTracker.h",
+            "include/slang/analysis/ValueDriver.h",
+            "include/slang/ast/ASTContext.h",
+            "include/slang/ast/ASTDiagMap.h",
+            "include/slang/ast/ASTSerializer.h",
+            "include/slang/ast/ASTVisitor.h",
+            "include/slang/ast/Bitstream.h",
+            "include/slang/ast/Compilation.h",
+            "include/slang/ast/Constraints.h",
+            "include/slang/ast/EvalContext.h",
+            "include/slang/ast/EvaluatedDimension.h",
+            "include/slang/ast/Expression.h",
+            "include/slang/ast/HierarchicalReference.h",
+            "include/slang/ast/InstanceCacheKey.h",
+            "include/slang/ast/LValue.h",
+            "include/slang/ast/Lookup.h",
+            "include/slang/ast/OpaqueInstancePath.h",
+            "include/slang/ast/Patterns.h",
+            "include/slang/ast/SFormat.h",
+            "include/slang/ast/Scope.h",
+            "include/slang/ast/ScriptSession.h",
+            "include/slang/ast/SemanticFacts.h",
+            "include/slang/ast/Statement.h",
+            "include/slang/ast/Symbol.h",
+            "include/slang/ast/SystemSubroutine.h",
+            "include/slang/ast/TimingControl.h",
+            "include/slang/ast/TypeProvider.h",
+            "include/slang/ast/ValuePath.h",
+            "include/slang/ast/expressions/AssertionExpr.h",
+            "include/slang/ast/expressions/AssignmentExpressions.h",
+            "include/slang/ast/expressions/CallExpression.h",
+            "include/slang/ast/expressions/ConversionExpression.h",
+            "include/slang/ast/expressions/LiteralExpressions.h",
+            "include/slang/ast/expressions/MiscExpressions.h",
+            "include/slang/ast/expressions/Operator.h",
+            "include/slang/ast/expressions/OperatorExpressions.h",
+            "include/slang/ast/expressions/SelectExpressions.h",
+            "include/slang/ast/statements/ConditionalStatements.h",
+            "include/slang/ast/statements/LoopStatements.h",
+            "include/slang/ast/statements/MiscStatements.h",
+            "include/slang/ast/symbols/AttributeSymbol.h",
+            "include/slang/ast/symbols/BlockSymbols.h",
+            "include/slang/ast/symbols/CheckerSymbols.h",
+            "include/slang/ast/symbols/ClassSymbols.h",
+            "include/slang/ast/symbols/CompilationUnitSymbols.h",
+            "include/slang/ast/symbols/CoverSymbols.h",
+            "include/slang/ast/symbols/InstanceSymbols.h",
+            "include/slang/ast/symbols/MemberSymbols.h",
+            "include/slang/ast/symbols/ParameterSymbols.h",
+            "include/slang/ast/symbols/PortSymbols.h",
+            "include/slang/ast/symbols/SpecifySymbols.h",
+            "include/slang/ast/symbols/SubroutineSymbols.h",
+            "include/slang/ast/symbols/SymbolBuilders.h",
+            "include/slang/ast/symbols/ValueSymbol.h",
+            "include/slang/ast/symbols/VariableSymbols.h",
+            "include/slang/ast/types/AllTypes.h",
+            "include/slang/ast/types/DeclaredType.h",
+            "include/slang/ast/types/NetType.h",
+            "include/slang/ast/types/Type.h",
+            "include/slang/ast/types/TypePrinter.h",
+            "include/slang/diagnostics/AllDiags.h",
+            "include/slang/diagnostics/AnalysisDiags.h",
+            "include/slang/diagnostics/CompilationDiags.h",
+            "include/slang/diagnostics/ConstEvalDiags.h",
+            "include/slang/diagnostics/DeclarationsDiags.h",
+            "include/slang/diagnostics/DiagArgFormatter.h",
+            "include/slang/diagnostics/DiagnosticClient.h",
+            "include/slang/diagnostics/DiagnosticEngine.h",
+            "include/slang/diagnostics/Diagnostics.h",
+            "include/slang/diagnostics/DriverDiags.h",
+            "include/slang/diagnostics/ExpressionsDiags.h",
+            "include/slang/diagnostics/GeneralDiags.h",
+            "include/slang/diagnostics/JsonDiagnosticClient.h",
+            "include/slang/diagnostics/LexerDiags.h",
+            "include/slang/diagnostics/LookupDiags.h",
+            "include/slang/diagnostics/MetaDiags.h",
+            "include/slang/diagnostics/NumericDiags.h",
+            "include/slang/diagnostics/ParserDiags.h",
+            "include/slang/diagnostics/PreprocessorDiags.h",
+            "include/slang/diagnostics/StatementsDiags.h",
+            "include/slang/diagnostics/StderrDiagnosticClient.h",
+            "include/slang/diagnostics/SysFuncsDiags.h",
+            "include/slang/diagnostics/TextDiagnosticClient.h",
+            "include/slang/diagnostics/TypesDiags.h",
+            "include/slang/diagnostics/WaiverManager.h",
+            "include/slang/driver/CompatSettings.h",
+            "include/slang/driver/Driver.h",
+            "include/slang/driver/MemoryStats.h",
+            "include/slang/driver/SourceLoader.h",
+            "include/slang/driver/UserDefinedSubroutine.h",
+            "include/slang/numeric/ConstantValue.h",
+            "include/slang/numeric/MathUtils.h",
+            "include/slang/numeric/SVInt.h",
+            "include/slang/numeric/Time.h",
+            "include/slang/parsing/KnownSystemName.h",
+            "include/slang/parsing/Lexer.h",
+            "include/slang/parsing/LexerFacts.h",
+            "include/slang/parsing/NumberParser.h",
+            "include/slang/parsing/Parser.h",
+            "include/slang/parsing/ParserBase.h",
+            "include/slang/parsing/ParserMetadata.h",
+            "include/slang/parsing/Preprocessor.h",
+            "include/slang/parsing/PreprocessorMetadata.h",
+            "include/slang/parsing/Token.h",
+            "include/slang/parsing/TokenKind.h",
+            "include/slang/slang_export.h",
+            "include/slang/syntax/AllSyntax.h",
+            "include/slang/syntax/CSTSerializer.h",
+            "include/slang/syntax/SyntaxFacts.h",
+            "include/slang/syntax/SyntaxFwd.h",
+            "include/slang/syntax/SyntaxKind.h",
+            "include/slang/syntax/SyntaxListInfo.h",
+            "include/slang/syntax/SyntaxNode.h",
+            "include/slang/syntax/SyntaxPrinter.h",
+            "include/slang/syntax/SyntaxRewriter.h",
+            "include/slang/syntax/SyntaxTree.h",
+            "include/slang/syntax/SyntaxVisitor.h",
+            "include/slang/text/CharInfo.h",
+            "include/slang/text/Glob.h",
+            "include/slang/text/Json.h",
+            "include/slang/text/SourceLocation.h",
+            "include/slang/text/SourceManager.h",
+            "include/slang/text/SourceSnippet.h",
+            "include/slang/util/Bag.h",
+            "include/slang/util/BumpAllocator.h",
+            "include/slang/util/CommandLine.h",
+            "include/slang/util/ConcurrentMap.h",
+            "include/slang/util/CopyPtr.h",
+            "include/slang/util/Enum.h",
+            "include/slang/util/FlatMap.h",
+            "include/slang/util/Function.h",
+            "include/slang/util/Hash.h",
+            "include/slang/util/IntervalMap.h",
+            "include/slang/util/Iterator.h",
+            "include/slang/util/LanguageVersion.h",
+            "include/slang/util/OS.h",
+            "include/slang/util/PointerIntPair.h",
+            "include/slang/util/PoolAllocator.h",
+            "include/slang/util/Random.h",
+            "include/slang/util/ScopeGuard.h",
+            "include/slang/util/SmallMap.h",
+            "include/slang/util/SmallVector.h",
+            "include/slang/util/String.h",
+            "include/slang/util/TextStyle.h",
+            "include/slang/util/ThreadPool.h",
+            "include/slang/util/TimeTrace.h",
+            "include/slang/util/TypeTraits.h",
+            "include/slang/util/Util.h",
+            "include/slang/util/VersionInfo.h",
+            "lib/cmake/slang/slangConfig.cmake",
+            "lib/cmake/slang/slangConfigVersion.cmake",
+            "lib/cmake/slang/slangTargets-release.cmake",
+            "lib/cmake/slang/slangTargets.cmake",
+            "lib/libsvlang.a",
+            "sbom.spdx.json",
+            "share/pkgconfig/sv-lang.pc"
+          ],
+          "installed_size": 60020864
+        }
+      }
+    }
+  }
+}
