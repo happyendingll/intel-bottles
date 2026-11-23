@@ -2,27 +2,27 @@
   "libpq": {
     "formula": {
       "name": "libpq",
-      "pkg_version": "18.7",
+      "pkg_version": "19.0",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/libpq.rb",
       "tap_git_path": "Formula/lib/libpq.rb",
-      "tap_git_revision": "5e8d36b4ae893458ae5650ded8e98360a6d65b86",
+      "tap_git_revision": "318f854d6ed01a853904611d126cefb9b05d271f",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Postgres C API library",
       "license": "PostgreSQL",
       "homepage": "https://www.postgresql.org/docs/current/libpq.html"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-7",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-11-13T00:31:33Z",
+      "date": "2026-11-23T13:46:20Z",
       "tags": {
         "sequoia": {
-          "filename": "libpq-18.7.sequoia.bottle.tar.gz",
-          "local_filename": "libpq--18.7.sequoia.bottle.tar.gz",
-          "sha256": "cec6107d0709376279b909e6ca28f764b1bdce40fdf2c3dcc515ac01e0abf476",
+          "filename": "libpq-19.0.sequoia.bottle.tar.gz",
+          "local_filename": "libpq--19.0.sequoia.bottle.tar.gz",
+          "sha256": "5f0d105b89e2a8619c08af375e6ad007eac4b9245add6b17dbba2afea1dff6fc",
           "tab": {
-            "homebrew_version": "7.0.13",
+            "homebrew_version": "7.0.16",
             "changed_files": [
               "include/pg_config.h",
               "include/postgresql/server/pg_config.h",
@@ -58,7 +58,7 @@
               "lib/libecpg.6.dylib",
               "lib/libecpg_compat.3.dylib",
               "lib/libpgtypes.3.dylib",
-              "lib/libpq-oauth-18.dylib",
+              "lib/libpq-oauth.dylib",
               "lib/libpq.5.dylib"
             ],
             "binary_relocation_files": [
@@ -103,7 +103,7 @@
               "lib/libpgport_shlib.a",
               "lib/libpq.5.dylib"
             ],
-            "source_modified_time": 1794254969,
+            "source_modified_time": 1794859378,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -166,502 +166,502 @@
             {
               "path": "bin/pg_rewind",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 93996
+              "offset": 95084
             },
             {
               "path": "bin/pg_rewind",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 94112
+              "offset": 95200
             },
             {
               "path": "bin/ecpg",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 840450
+              "offset": 850130
             },
             {
               "path": "bin/ecpg",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 840566
+              "offset": 850246
             },
             {
               "path": "bin/pg_basebackup",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 123520
+              "offset": 123863
             },
             {
               "path": "bin/pg_basebackup",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 123636
+              "offset": 123979
             },
             {
               "path": "bin/pg_restore",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 137938
+              "offset": 138454
             },
             {
               "path": "bin/pg_restore",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 138054
+              "offset": 138570
             },
             {
               "path": "bin/pg_isready",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 42555
+              "offset": 42379
             },
             {
               "path": "bin/pg_isready",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 42671
+              "offset": 42495
             },
             {
               "path": "bin/createuser",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 48211
+              "offset": 48035
             },
             {
               "path": "bin/createuser",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 48327
+              "offset": 48151
             },
             {
               "path": "bin/pg_config",
-              "string": "'--disable-debug' '--prefix=/usr/local/Cellar/libpq/18.7' '--with-gssapi' '--with-libcurl' '--with-openssl' '--libdir=/usr/local/opt/libpq/lib' '--includedir=/usr/local/opt/libpq/include' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib' 'CPPFLAGS=-I/usr/local/opt/readline/include' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@79/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/krb5/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
-              "offset": 23552
+              "string": "'--disable-debug' '--prefix=/usr/local/Cellar/libpq/19.0' '--with-gssapi' '--with-libcurl' '--with-openssl' '--libdir=/usr/local/opt/libpq/lib' '--includedir=/usr/local/opt/libpq/include' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib' 'CPPFLAGS=-I/usr/local/opt/readline/include' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@79/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/krb5/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
+              "offset": 23548
             },
             {
               "path": "bin/pg_config",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 25989
+              "offset": 26036
             },
             {
               "path": "bin/pg_config",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 26105
+              "offset": 26152
             },
             {
               "path": "bin/pg_dumpall",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 178758
+              "offset": 179034
             },
             {
               "path": "bin/pg_dumpall",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 178874
+              "offset": 179150
             },
             {
               "path": "bin/pg_createsubscriber",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 67810
+              "offset": 72898
             },
             {
               "path": "bin/pg_createsubscriber",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 67926
+              "offset": 73014
             },
             {
               "path": "bin/pg_test_fsync",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 28810
+              "offset": 29066
             },
             {
               "path": "bin/pg_test_fsync",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 28926
+              "offset": 29182
             },
             {
               "path": "bin/pg_walsummary",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 35211
+              "offset": 36391
             },
             {
               "path": "bin/pg_walsummary",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 35327
+              "offset": 36507
             },
             {
               "path": "bin/pg_combinebackup",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 83263
+              "offset": 84326
             },
             {
               "path": "bin/pg_combinebackup",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 83379
+              "offset": 84442
             },
             {
               "path": "bin/initdb",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 96280
+              "offset": 96285
             },
             {
               "path": "bin/initdb",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 96396
+              "offset": 96401
             },
             {
               "path": "bin/pg_waldump",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 69400
+              "offset": 92047
             },
             {
               "path": "bin/pg_waldump",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 69516
+              "offset": 92163
             },
             {
               "path": "bin/createdb",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 46323
+              "offset": 46147
             },
             {
               "path": "bin/createdb",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 46439
+              "offset": 46263
             },
             {
               "path": "bin/reindexdb",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 51955
+              "offset": 51779
             },
             {
               "path": "bin/reindexdb",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 52071
+              "offset": 51895
             },
             {
               "path": "bin/pg_verifybackup",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 71094
+              "offset": 74056
             },
             {
               "path": "bin/pg_verifybackup",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 71210
+              "offset": 74172
             },
             {
               "path": "bin/pg_receivewal",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 60298
+              "offset": 61175
             },
             {
               "path": "bin/pg_receivewal",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 60414
+              "offset": 61291
             },
             {
               "path": "bin/pg_amcheck",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 66147
+              "offset": 65955
             },
             {
               "path": "bin/pg_amcheck",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 66263
+              "offset": 66071
             },
             {
               "path": "bin/dropdb",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 43643
+              "offset": 43451
             },
             {
               "path": "bin/dropdb",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 43759
+              "offset": 43567
             },
             {
               "path": "bin/psql",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 474373
+              "offset": 489263
             },
             {
               "path": "bin/psql",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 474489
+              "offset": 489379
             },
             {
               "path": "bin/pg_checksums",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 49911
+              "offset": 50193
             },
             {
               "path": "bin/pg_checksums",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 50027
+              "offset": 50309
             },
             {
               "path": "bin/clusterdb",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 45283
+              "offset": 45091
             },
             {
               "path": "bin/clusterdb",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 45399
+              "offset": 45207
             },
             {
               "path": "bin/pg_archivecleanup",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 25344
+              "offset": 25640
             },
             {
               "path": "bin/pg_archivecleanup",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 25460
+              "offset": 25756
             },
             {
               "path": "bin/dropuser",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 43403
+              "offset": 43227
             },
             {
               "path": "bin/dropuser",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 43519
+              "offset": 43343
             },
             {
               "path": "bin/pg_controldata",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 29913
+              "offset": 31195
             },
             {
               "path": "bin/pg_controldata",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 30029
+              "offset": 31311
             },
             {
               "path": "bin/pg_recvlogical",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 59053
+              "offset": 59725
             },
             {
               "path": "bin/pg_recvlogical",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 59169
+              "offset": 59841
             },
             {
               "path": "bin/pg_test_timing",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 21539
+              "offset": 26290
             },
             {
               "path": "bin/pg_test_timing",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 21655
+              "offset": 26406
             },
             {
               "path": "bin/pg_upgrade",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 135520
+              "offset": 144803
             },
             {
               "path": "bin/pg_upgrade",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 135636
+              "offset": 144919
             },
             {
               "path": "bin/pg_ctl",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 39233
+              "offset": 40171
             },
             {
               "path": "bin/pg_ctl",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 39349
+              "offset": 40287
             },
             {
               "path": "bin/vacuumdb",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 59395
+              "offset": 59731
             },
             {
               "path": "bin/vacuumdb",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 59511
+              "offset": 59847
             },
             {
               "path": "bin/pgbench",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 159659
+              "offset": 165273
             },
             {
               "path": "bin/pgbench",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 159775
+              "offset": 165389
             },
             {
               "path": "bin/pg_resetwal",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 39109
+              "offset": 41106
             },
             {
               "path": "bin/pg_resetwal",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 39225
+              "offset": 41222
             },
             {
               "path": "bin/pg_dump",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 369200
+              "offset": 377604
             },
             {
               "path": "bin/pg_dump",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 369316
+              "offset": 377720
             },
             {
               "path": "lib/libpgcommon.a",
-              "string": "'--disable-debug' '--prefix=/usr/local/Cellar/libpq/18.7' '--with-gssapi' '--with-libcurl' '--with-openssl' '--libdir=/usr/local/opt/libpq/lib' '--includedir=/usr/local/opt/libpq/include' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib' 'CPPFLAGS=-I/usr/local/opt/readline/include' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@79/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/krb5/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
-              "offset": 35048
+              "string": "'--disable-debug' '--prefix=/usr/local/Cellar/libpq/19.0' '--with-gssapi' '--with-libcurl' '--with-openssl' '--libdir=/usr/local/opt/libpq/lib' '--includedir=/usr/local/opt/libpq/include' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib' 'CPPFLAGS=-I/usr/local/opt/readline/include' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@79/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/krb5/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
+              "offset": 35992
             },
             {
               "path": "lib/libpq.5.dylib",
-              "string": "/usr/local/opt/libpq/lib/libpq-oauth-18.dylib",
-              "offset": 170840
+              "string": "/usr/local/opt/libpq/lib/libpq-oauth.dylib",
+              "offset": 172006
             },
             {
               "path": "lib/libecpg.6.dylib",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 64495
+              "offset": 64623
             },
             {
               "path": "lib/libecpg.6.dylib",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 64611
+              "offset": 64739
             },
             {
               "path": "lib/libpgcommon_shlib.a",
-              "string": "'--disable-debug' '--prefix=/usr/local/Cellar/libpq/18.7' '--with-gssapi' '--with-libcurl' '--with-openssl' '--libdir=/usr/local/opt/libpq/lib' '--includedir=/usr/local/opt/libpq/include' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib' 'CPPFLAGS=-I/usr/local/opt/readline/include' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@79/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/krb5/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
-              "offset": 34320
+              "string": "'--disable-debug' '--prefix=/usr/local/Cellar/libpq/19.0' '--with-gssapi' '--with-libcurl' '--with-openssl' '--libdir=/usr/local/opt/libpq/lib' '--includedir=/usr/local/opt/libpq/include' 'CC=clang' 'LDFLAGS=-L/usr/local/opt/readline/lib' 'CPPFLAGS=-I/usr/local/opt/readline/include' 'CXX=clang++' 'PKG_CONFIG_PATH=/usr/local/opt/pkgconf/lib/pkgconfig:/usr/local/opt/icu4c@79/lib/pkgconfig:/usr/local/opt/openssl@4/lib/pkgconfig:/usr/local/opt/krb5/lib/pkgconfig:/usr/local/opt/readline/lib/pkgconfig' 'PKG_CONFIG_LIBDIR=/usr/lib/pkgconfig:/usr/local/Homebrew/Library/Homebrew/os/mac/pkgconfig/15'",
+              "offset": 35200
             },
             {
               "path": "lib/libpgport_shlib.a",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 20424
+              "offset": 19720
             },
             {
               "path": "lib/libpgport_shlib.a",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 20540
+              "offset": 19836
             },
             {
               "path": "lib/libpgport.a",
               "string": "/usr/local/opt/libpq/include",
-              "offset": 20368
+              "offset": 19672
             },
             {
               "path": "lib/libpgport.a",
               "string": "/usr/local/opt/libpq/lib",
-              "offset": 20484
+              "offset": 19788
             },
             {
               "path": "bin/pg_rewind",
-              "string": "/usr/local/Cellar/libpq/18.7/share/postgresql",
-              "offset": 93873
+              "string": "/usr/local/Cellar/libpq/19.0/share/postgresql",
+              "offset": 94961
             },
             {
               "path": "bin/pg_rewind",
-              "string": "/usr/local/Cellar/libpq/18.7/bin",
-              "offset": 93919
+              "string": "/usr/local/Cellar/libpq/19.0/bin",
+              "offset": 95007
             },
             {
               "path": "bin/pg_rewind",
-              "string": "/usr/local/Cellar/libpq/18.7/share/doc//postgresql",
-              "offset": 94215
+              "string": "/usr/local/Cellar/libpq/19.0/share/doc//postgresql",
+              "offset": 95303
             },
             {
               "path": "bin/pg_rewind",
-              "string": "/usr/local/Cellar/libpq/18.7/share/man",
-              "offset": 94266
+              "string": "/usr/local/Cellar/libpq/19.0/share/man",
+              "offset": 95354
             },
             {
               "path": "bin/ecpg",
-              "string": "/usr/local/Cellar/libpq/18.7/share/postgresql",
-              "offset": 840327
+              "string": "/usr/local/Cellar/libpq/19.0/share/postgresql",
+              "offset": 850007
             },
             {
               "path": "bin/ecpg",
-              "string": "/usr/local/Cellar/libpq/18.7/bin",
-              "offset": 840373
+              "string": "/usr/local/Cellar/libpq/19.0/bin",
+              "offset": 850053
             },
             {
               "path": "bin/ecpg",
-              "string": "/usr/local/Cellar/libpq/18.7/share/doc//postgresql",
-              "offset": 840669
+              "string": "/usr/local/Cellar/libpq/19.0/share/doc//postgresql",
+              "offset": 850349
             },
             {
               "path": "bin/ecpg",
-              "string": "/usr/local/Cellar/libpq/18.7/share/man",
-              "offset": 840720
+              "string": "/usr/local/Cellar/libpq/19.0/share/man",
+              "offset": 850400
             },
             {
               "path": "bin/pg_basebackup",
-              "string": "/usr/local/Cellar/libpq/18.7/share/postgresql",
-              "offset": 123397
+              "string": "/usr/local/Cellar/libpq/19.0/share/postgresql",
+              "offset": 123740
             },
             {
               "path": "bin/pg_basebackup",
-              "string": "/usr/local/Cellar/libpq/18.7/bin",
-              "offset": 123443
+              "string": "/usr/local/Cellar/libpq/19.0/bin",
+              "offset": 123786
             },
             {
               "path": "bin/pg_basebackup",
-              "string": "/usr/local/Cellar/libpq/18.7/share/doc//postgresql",
-              "offset": 123739
+              "string": "/usr/local/Cellar/libpq/19.0/share/doc//postgresql",
+              "offset": 124082
             },
             {
               "path": "bin/pg_basebackup",
-              "string": "/usr/local/Cellar/libpq/18.7/share/man",
-              "offset": 123790
+              "string": "/usr/local/Cellar/libpq/19.0/share/man",
+              "offset": 124133
             },
             {
               "path": "bin/pg_restore",
-              "string": "/usr/local/Cellar/libpq/18.7/share/postgresql",
-              "offset": 137815
+              "string": "/usr/local/Cellar/libpq/19.0/share/postgresql",
+              "offset": 138331
             },
             {
               "path": "bin/pg_restore",
-              "string": "/usr/local/Cellar/libpq/18.7/bin",
-              "offset": 137861
+              "string": "/usr/local/Cellar/libpq/19.0/bin",
+              "offset": 138377
             },
             {
               "path": "bin/pg_restore",
-              "string": "/usr/local/Cellar/libpq/18.7/share/doc//postgresql",
-              "offset": 138157
+              "string": "/usr/local/Cellar/libpq/19.0/share/doc//postgresql",
+              "offset": 138673
             },
             {
               "path": "bin/pg_restore",
-              "string": "/usr/local/Cellar/libpq/18.7/share/man",
-              "offset": 138208
+              "string": "/usr/local/Cellar/libpq/19.0/share/man",
+              "offset": 138724
             },
             {
               "path": "bin/pg_isready",
-              "string": "/usr/local/Cellar/libpq/18.7/share/postgresql",
-              "offset": 42432
+              "string": "/usr/local/Cellar/libpq/19.0/share/postgresql",
+              "offset": 42256
             },
             {
               "path": "bin/pg_isready",
-              "string": "/usr/local/Cellar/libpq/18.7/bin",
-              "offset": 42478
+              "string": "/usr/local/Cellar/libpq/19.0/bin",
+              "offset": 42302
             },
             {
               "path": "bin/pg_isready",
-              "string": "/usr/local/Cellar/libpq/18.7/share/doc//postgresql",
-              "offset": 42774
+              "string": "/usr/local/Cellar/libpq/19.0/share/doc//postgresql",
+              "offset": 42598
             },
             {
               "path": "bin/pg_isready",
-              "string": "/usr/local/Cellar/libpq/18.7/share/man",
-              "offset": 42825
+              "string": "/usr/local/Cellar/libpq/19.0/share/man",
+              "offset": 42649
             },
             {
               "path": "bin/createuser",
-              "string": "/usr/local/Cellar/libpq/18.7/share/postgresql",
-              "offset": 48088
+              "string": "/usr/local/Cellar/libpq/19.0/share/postgresql",
+              "offset": 47912
             },
             {
               "path": "bin/createuser",
-              "string": "/usr/local/Cellar/libpq/18.7/bin",
-              "offset": 48134
+              "string": "/usr/local/Cellar/libpq/19.0/bin",
+              "offset": 47958
             }
           ],
           "sbom": {
@@ -977,6 +977,7 @@
             "include/postgresql/server/access/htup_details.h",
             "include/postgresql/server/access/itup.h",
             "include/postgresql/server/access/multixact.h",
+            "include/postgresql/server/access/multixact_internal.h",
             "include/postgresql/server/access/nbtree.h",
             "include/postgresql/server/access/nbtxlog.h",
             "include/postgresql/server/access/parallel.h",
@@ -1032,6 +1033,7 @@
             "include/postgresql/server/access/xlogrecovery.h",
             "include/postgresql/server/access/xlogstats.h",
             "include/postgresql/server/access/xlogutils.h",
+            "include/postgresql/server/access/xlogwait.h",
             "include/postgresql/server/archive/archive_module.h",
             "include/postgresql/server/archive/shell_archive.h",
             "include/postgresql/server/bootstrap/bootstrap.h",
@@ -1186,7 +1188,6 @@
             "include/postgresql/server/catalog/toasting.h",
             "include/postgresql/server/commands/alter.h",
             "include/postgresql/server/commands/async.h",
-            "include/postgresql/server/commands/cluster.h",
             "include/postgresql/server/commands/collationcmds.h",
             "include/postgresql/server/commands/comment.h",
             "include/postgresql/server/commands/conversioncmds.h",
@@ -1212,9 +1213,12 @@
             "include/postgresql/server/commands/proclang.h",
             "include/postgresql/server/commands/progress.h",
             "include/postgresql/server/commands/publicationcmds.h",
+            "include/postgresql/server/commands/repack.h",
+            "include/postgresql/server/commands/repack_internal.h",
             "include/postgresql/server/commands/schemacmds.h",
             "include/postgresql/server/commands/seclabel.h",
             "include/postgresql/server/commands/sequence.h",
+            "include/postgresql/server/commands/sequence_xlog.h",
             "include/postgresql/server/commands/subscriptioncmds.h",
             "include/postgresql/server/commands/tablecmds.h",
             "include/postgresql/server/commands/tablespace.h",
@@ -1223,6 +1227,7 @@
             "include/postgresql/server/commands/user.h",
             "include/postgresql/server/commands/vacuum.h",
             "include/postgresql/server/commands/view.h",
+            "include/postgresql/server/commands/wait.h",
             "include/postgresql/server/common/archive.h",
             "include/postgresql/server/common/base64.h",
             "include/postgresql/server/common/blkreftable.h",
@@ -1285,6 +1290,7 @@
             "include/postgresql/server/executor/functions.h",
             "include/postgresql/server/executor/hashjoin.h",
             "include/postgresql/server/executor/instrument.h",
+            "include/postgresql/server/executor/instrument_node.h",
             "include/postgresql/server/executor/nodeAgg.h",
             "include/postgresql/server/executor/nodeAppend.h",
             "include/postgresql/server/executor/nodeBitmapAnd.h",
@@ -1349,6 +1355,7 @@
             "include/postgresql/server/fe_utils/recovery_gen.h",
             "include/postgresql/server/fe_utils/simple_list.h",
             "include/postgresql/server/fe_utils/string_utils.h",
+            "include/postgresql/server/fe_utils/version.h",
             "include/postgresql/server/fmgr.h",
             "include/postgresql/server/foreign/fdwapi.h",
             "include/postgresql/server/foreign/foreign.h",
@@ -1381,6 +1388,7 @@
             "include/postgresql/server/libpq/hba.h",
             "include/postgresql/server/libpq/ifaddr.h",
             "include/postgresql/server/libpq/libpq-be-fe-helpers.h",
+            "include/postgresql/server/libpq/libpq-be-fe.h",
             "include/postgresql/server/libpq/libpq-be.h",
             "include/postgresql/server/libpq/libpq-fs.h",
             "include/postgresql/server/libpq/libpq.h",
@@ -1424,6 +1432,7 @@
             "include/postgresql/server/optimizer/appendinfo.h",
             "include/postgresql/server/optimizer/clauses.h",
             "include/postgresql/server/optimizer/cost.h",
+            "include/postgresql/server/optimizer/extendplan.h",
             "include/postgresql/server/optimizer/geqo.h",
             "include/postgresql/server/optimizer/geqo_copy.h",
             "include/postgresql/server/optimizer/geqo_gene.h",
@@ -1482,13 +1491,13 @@
             "include/postgresql/server/pgstat.h",
             "include/postgresql/server/pgtar.h",
             "include/postgresql/server/pgtime.h",
+            "include/postgresql/server/port/aix.h",
             "include/postgresql/server/port/atomics/arch-arm.h",
             "include/postgresql/server/port/atomics/arch-ppc.h",
             "include/postgresql/server/port/atomics/arch-x86.h",
             "include/postgresql/server/port/atomics/fallback.h",
             "include/postgresql/server/port/atomics/generic-gcc.h",
             "include/postgresql/server/port/atomics/generic-msvc.h",
-            "include/postgresql/server/port/atomics/generic-sunpro.h",
             "include/postgresql/server/port/atomics/generic.h",
             "include/postgresql/server/port/atomics.h",
             "include/postgresql/server/port/cygwin.h",
@@ -1499,7 +1508,9 @@
             "include/postgresql/server/port/openbsd.h",
             "include/postgresql/server/port/pg_bitutils.h",
             "include/postgresql/server/port/pg_bswap.h",
+            "include/postgresql/server/port/pg_cpu.h",
             "include/postgresql/server/port/pg_crc32c.h",
+            "include/postgresql/server/port/pg_getopt_ctx.h",
             "include/postgresql/server/port/pg_iovec.h",
             "include/postgresql/server/port/pg_lfind.h",
             "include/postgresql/server/port/pg_numa.h",
@@ -1542,6 +1553,7 @@
             "include/postgresql/server/postmaster/interrupt.h",
             "include/postgresql/server/postmaster/pgarch.h",
             "include/postgresql/server/postmaster/postmaster.h",
+            "include/postgresql/server/postmaster/proctypelist.h",
             "include/postgresql/server/postmaster/startup.h",
             "include/postgresql/server/postmaster/syslogger.h",
             "include/postgresql/server/postmaster/walsummarizer.h",
@@ -1554,6 +1566,7 @@
             "include/postgresql/server/replication/conflict.h",
             "include/postgresql/server/replication/decode.h",
             "include/postgresql/server/replication/logical.h",
+            "include/postgresql/server/replication/logicalctl.h",
             "include/postgresql/server/replication/logicallauncher.h",
             "include/postgresql/server/replication/logicalproto.h",
             "include/postgresql/server/replication/logicalrelation.h",
@@ -1580,13 +1593,13 @@
             "include/postgresql/server/rewrite/rewriteSearchCycle.h",
             "include/postgresql/server/rewrite/rewriteSupport.h",
             "include/postgresql/server/rewrite/rowsecurity.h",
-            "include/postgresql/server/snowball/header.h",
             "include/postgresql/server/snowball/libstemmer/api.h",
-            "include/postgresql/server/snowball/libstemmer/header.h",
+            "include/postgresql/server/snowball/libstemmer/snowball_runtime.h",
             "include/postgresql/server/snowball/libstemmer/stem_ISO_8859_1_basque.h",
             "include/postgresql/server/snowball/libstemmer/stem_ISO_8859_1_catalan.h",
             "include/postgresql/server/snowball/libstemmer/stem_ISO_8859_1_danish.h",
             "include/postgresql/server/snowball/libstemmer/stem_ISO_8859_1_dutch.h",
+            "include/postgresql/server/snowball/libstemmer/stem_ISO_8859_1_dutch_porter.h",
             "include/postgresql/server/snowball/libstemmer/stem_ISO_8859_1_english.h",
             "include/postgresql/server/snowball/libstemmer/stem_ISO_8859_1_finnish.h",
             "include/postgresql/server/snowball/libstemmer/stem_ISO_8859_1_french.h",
@@ -1600,6 +1613,7 @@
             "include/postgresql/server/snowball/libstemmer/stem_ISO_8859_1_spanish.h",
             "include/postgresql/server/snowball/libstemmer/stem_ISO_8859_1_swedish.h",
             "include/postgresql/server/snowball/libstemmer/stem_ISO_8859_2_hungarian.h",
+            "include/postgresql/server/snowball/libstemmer/stem_ISO_8859_2_polish.h",
             "include/postgresql/server/snowball/libstemmer/stem_KOI8_R_russian.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_arabic.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_armenian.h",
@@ -1607,7 +1621,9 @@
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_catalan.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_danish.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_dutch.h",
+            "include/postgresql/server/snowball/libstemmer/stem_UTF_8_dutch_porter.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_english.h",
+            "include/postgresql/server/snowball/libstemmer/stem_UTF_8_esperanto.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_estonian.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_finnish.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_french.h",
@@ -1621,6 +1637,7 @@
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_lithuanian.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_nepali.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_norwegian.h",
+            "include/postgresql/server/snowball/libstemmer/stem_UTF_8_polish.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_porter.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_portuguese.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_romanian.h",
@@ -1631,9 +1648,11 @@
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_tamil.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_turkish.h",
             "include/postgresql/server/snowball/libstemmer/stem_UTF_8_yiddish.h",
+            "include/postgresql/server/snowball/snowball_runtime.h",
             "include/postgresql/server/statistics/extended_stats_internal.h",
             "include/postgresql/server/statistics/stat_utils.h",
             "include/postgresql/server/statistics/statistics.h",
+            "include/postgresql/server/statistics/statistics_format.h",
             "include/postgresql/server/storage/aio.h",
             "include/postgresql/server/storage/aio_internal.h",
             "include/postgresql/server/storage/aio_subsys.h",
@@ -1647,6 +1666,7 @@
             "include/postgresql/server/storage/bufpage.h",
             "include/postgresql/server/storage/bulk_write.h",
             "include/postgresql/server/storage/checksum.h",
+            "include/postgresql/server/storage/checksum_block_internal.h",
             "include/postgresql/server/storage/checksum_impl.h",
             "include/postgresql/server/storage/condition_variable.h",
             "include/postgresql/server/storage/copydir.h",
@@ -1660,7 +1680,6 @@
             "include/postgresql/server/storage/indexfsm.h",
             "include/postgresql/server/storage/io_worker.h",
             "include/postgresql/server/storage/ipc.h",
-            "include/postgresql/server/storage/item.h",
             "include/postgresql/server/storage/itemid.h",
             "include/postgresql/server/storage/itemptr.h",
             "include/postgresql/server/storage/large_object.h",
@@ -1668,6 +1687,7 @@
             "include/postgresql/server/storage/lmgr.h",
             "include/postgresql/server/storage/lock.h",
             "include/postgresql/server/storage/lockdefs.h",
+            "include/postgresql/server/storage/locktag.h",
             "include/postgresql/server/storage/lwlock.h",
             "include/postgresql/server/storage/lwlocklist.h",
             "include/postgresql/server/storage/lwlocknames.h",
@@ -1692,12 +1712,15 @@
             "include/postgresql/server/storage/shm_mq.h",
             "include/postgresql/server/storage/shm_toc.h",
             "include/postgresql/server/storage/shmem.h",
+            "include/postgresql/server/storage/shmem_internal.h",
             "include/postgresql/server/storage/sinval.h",
             "include/postgresql/server/storage/sinvaladt.h",
             "include/postgresql/server/storage/smgr.h",
             "include/postgresql/server/storage/spin.h",
             "include/postgresql/server/storage/standby.h",
             "include/postgresql/server/storage/standbydefs.h",
+            "include/postgresql/server/storage/subsystemlist.h",
+            "include/postgresql/server/storage/subsystems.h",
             "include/postgresql/server/storage/sync.h",
             "include/postgresql/server/storage/waiteventset.h",
             "include/postgresql/server/tcop/backend_startup.h",
@@ -1734,7 +1757,6 @@
             "include/postgresql/server/utils/datetime.h",
             "include/postgresql/server/utils/datum.h",
             "include/postgresql/server/utils/dsa.h",
-            "include/postgresql/server/utils/dynahash.h",
             "include/postgresql/server/utils/elog.h",
             "include/postgresql/server/utils/errcodes.h",
             "include/postgresql/server/utils/evtcache.h",
@@ -1773,6 +1795,7 @@
             "include/postgresql/server/utils/partcache.h",
             "include/postgresql/server/utils/pg_crc.h",
             "include/postgresql/server/utils/pg_locale.h",
+            "include/postgresql/server/utils/pg_locale_c.h",
             "include/postgresql/server/utils/pg_lsn.h",
             "include/postgresql/server/utils/pg_rusage.h",
             "include/postgresql/server/utils/pgstat_internal.h",
@@ -1838,8 +1861,8 @@
             "lib/libpgtypes.3.dylib",
             "lib/libpgtypes.a",
             "lib/libpgtypes.dylib",
-            "lib/libpq-oauth-18.dylib",
             "lib/libpq-oauth.a",
+            "lib/libpq-oauth.dylib",
             "lib/libpq.5.dylib",
             "lib/libpq.a",
             "lib/libpq.dylib",
@@ -2080,6 +2103,7 @@
             "share/doc/postgresql/html/ddl-rowsecurity.html",
             "share/doc/postgresql/html/ddl-schemas.html",
             "share/doc/postgresql/html/ddl-system-columns.html",
+            "share/doc/postgresql/html/ddl-temporal-tables.html",
             "share/doc/postgresql/html/ddl.html",
             "share/doc/postgresql/html/default-roles.html",
             "share/doc/postgresql/html/dict-int.html",
@@ -2196,6 +2220,7 @@
             "share/doc/postgresql/html/functions-string.html",
             "share/doc/postgresql/html/functions-subquery.html",
             "share/doc/postgresql/html/functions-textsearch.html",
+            "share/doc/postgresql/html/functions-tid.html",
             "share/doc/postgresql/html/functions-trigger.html",
             "share/doc/postgresql/html/functions-uuid.html",
             "share/doc/postgresql/html/functions-window.html",
@@ -2378,12 +2403,14 @@
             "share/doc/postgresql/html/logical-replication-restrictions.html",
             "share/doc/postgresql/html/logical-replication-row-filter.html",
             "share/doc/postgresql/html/logical-replication-security.html",
+            "share/doc/postgresql/html/logical-replication-sequences.html",
             "share/doc/postgresql/html/logical-replication-subscription.html",
             "share/doc/postgresql/html/logical-replication-upgrade.html",
             "share/doc/postgresql/html/logical-replication.html",
             "share/doc/postgresql/html/logicaldecoding-catalogs.html",
             "share/doc/postgresql/html/logicaldecoding-example.html",
             "share/doc/postgresql/html/logicaldecoding-explanation.html",
+            "share/doc/postgresql/html/logicaldecoding-output-plugin-writing.html",
             "share/doc/postgresql/html/logicaldecoding-output-plugin.html",
             "share/doc/postgresql/html/logicaldecoding-sql.html",
             "share/doc/postgresql/html/logicaldecoding-streaming.html",
@@ -2418,6 +2445,7 @@
             "share/doc/postgresql/html/notation.html",
             "share/doc/postgresql/html/oauth-validator-callbacks.html",
             "share/doc/postgresql/html/oauth-validator-design.html",
+            "share/doc/postgresql/html/oauth-validator-hba.html",
             "share/doc/postgresql/html/oauth-validator-init.html",
             "share/doc/postgresql/html/oauth-validators.html",
             "share/doc/postgresql/html/oid2name.html",
@@ -2438,8 +2466,10 @@
             "share/doc/postgresql/html/pgfreespacemap.html",
             "share/doc/postgresql/html/pglogicalinspect.html",
             "share/doc/postgresql/html/pgoverexplain.html",
+            "share/doc/postgresql/html/pgplanadvice.html",
             "share/doc/postgresql/html/pgprewarm.html",
             "share/doc/postgresql/html/pgrowlocks.html",
+            "share/doc/postgresql/html/pgstashadvice.html",
             "share/doc/postgresql/html/pgstatstatements.html",
             "share/doc/postgresql/html/pgstattuple.html",
             "share/doc/postgresql/html/pgsurgery.html",
@@ -2483,6 +2513,7 @@
             "share/doc/postgresql/html/plpython-database.html",
             "share/doc/postgresql/html/plpython-do.html",
             "share/doc/postgresql/html/plpython-envar.html",
+            "share/doc/postgresql/html/plpython-event-trigger.html",
             "share/doc/postgresql/html/plpython-funcs.html",
             "share/doc/postgresql/html/plpython-python23.html",
             "share/doc/postgresql/html/plpython-sharing.html",
@@ -2543,13 +2574,7 @@
             "share/doc/postgresql/html/regress-tap.html",
             "share/doc/postgresql/html/regress-variant.html",
             "share/doc/postgresql/html/regress.html",
-            "share/doc/postgresql/html/release-18-1.html",
-            "share/doc/postgresql/html/release-18-2.html",
-            "share/doc/postgresql/html/release-18-3.html",
-            "share/doc/postgresql/html/release-18-4.html",
-            "share/doc/postgresql/html/release-18-6.html",
-            "share/doc/postgresql/html/release-18-7.html",
-            "share/doc/postgresql/html/release-18.html",
+            "share/doc/postgresql/html/release-19.html",
             "share/doc/postgresql/html/release-prior.html",
             "share/doc/postgresql/html/release.html",
             "share/doc/postgresql/html/replication-origins.html",
@@ -2824,6 +2849,7 @@
             "share/doc/postgresql/html/sql-refreshmaterializedview.html",
             "share/doc/postgresql/html/sql-reindex.html",
             "share/doc/postgresql/html/sql-release-savepoint.html",
+            "share/doc/postgresql/html/sql-repack.html",
             "share/doc/postgresql/html/sql-reset.html",
             "share/doc/postgresql/html/sql-revoke.html",
             "share/doc/postgresql/html/sql-rollback-prepared.html",
@@ -2848,6 +2874,7 @@
             "share/doc/postgresql/html/sql-update.html",
             "share/doc/postgresql/html/sql-vacuum.html",
             "share/doc/postgresql/html/sql-values.html",
+            "share/doc/postgresql/html/sql-wait.html",
             "share/doc/postgresql/html/sql.html",
             "share/doc/postgresql/html/ssh-tunnels.html",
             "share/doc/postgresql/html/ssl-tcp.html",
@@ -2871,6 +2898,8 @@
             "share/doc/postgresql/html/tablesample-method.html",
             "share/doc/postgresql/html/tablesample-support-functions.html",
             "share/doc/postgresql/html/tcn.html",
+            "share/doc/postgresql/html/temporal-entities.svg",
+            "share/doc/postgresql/html/temporal-references.svg",
             "share/doc/postgresql/html/test-decoding.html",
             "share/doc/postgresql/html/textsearch-configuration.html",
             "share/doc/postgresql/html/textsearch-controls.html",
@@ -2939,6 +2968,7 @@
             "share/doc/postgresql/html/view-pg-backend-memory-contexts.html",
             "share/doc/postgresql/html/view-pg-config.html",
             "share/doc/postgresql/html/view-pg-cursors.html",
+            "share/doc/postgresql/html/view-pg-dsm-registry-allocations.html",
             "share/doc/postgresql/html/view-pg-file-settings.html",
             "share/doc/postgresql/html/view-pg-group.html",
             "share/doc/postgresql/html/view-pg-hba-file-rules.html",
@@ -2949,6 +2979,7 @@
             "share/doc/postgresql/html/view-pg-policies.html",
             "share/doc/postgresql/html/view-pg-prepared-statements.html",
             "share/doc/postgresql/html/view-pg-prepared-xacts.html",
+            "share/doc/postgresql/html/view-pg-publication-sequences.html",
             "share/doc/postgresql/html/view-pg-publication-tables.html",
             "share/doc/postgresql/html/view-pg-replication-origin-status.html",
             "share/doc/postgresql/html/view-pg-replication-slots.html",
@@ -3275,6 +3306,7 @@
             "share/man/man7/REFRESH_MATERIALIZED_VIEW.7",
             "share/man/man7/REINDEX.7",
             "share/man/man7/RELEASE_SAVEPOINT.7",
+            "share/man/man7/REPACK.7",
             "share/man/man7/RESET.7",
             "share/man/man7/REVOKE.7",
             "share/man/man7/ROLLBACK.7",
@@ -3297,13 +3329,14 @@
             "share/man/man7/UPDATE.7",
             "share/man/man7/VACUUM.7",
             "share/man/man7/VALUES.7",
+            "share/man/man7/WAIT.7",
             "share/man/man7/WITH.7",
             "share/postgresql/pg_service.conf.sample",
             "share/postgresql/postgres.bki",
             "share/postgresql/psqlrc.sample",
             "share/postgresql/system_constraints.sql"
           ],
-          "installed_size": 34295930
+          "installed_size": 34865176
         }
       }
     }
