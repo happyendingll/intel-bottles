@@ -1,0 +1,154 @@
+{
+  "dub": {
+    "formula": {
+      "name": "dub",
+      "pkg_version": "1.43.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/d/dub.rb",
+      "tap_git_path": "Formula/d/dub.rb",
+      "tap_git_revision": "420a89643ba00d8133d7ef75253dcbd9b410aff8",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Build tool for D projects",
+      "license": "MIT",
+      "homepage": "https://code.dlang.org/getting_started"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-11-23T14:25:46Z",
+      "tags": {
+        "sequoia": {
+          "filename": "dub-1.43.0.sequoia.bottle.tar.gz",
+          "local_filename": "dub--1.43.0.sequoia.bottle.tar.gz",
+          "sha256": "1efebefe310238c712a35edc92fb524c3e5595610cf69ce513e0ac2c58720f22",
+          "tab": {
+            "homebrew_version": "7.0.16",
+            "changed_files": [
+              "share/zsh/site-functions/_dub"
+            ],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1793459517,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "pkgconf",
+                "version": "3.0.11",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "3.0.11",
+                "declared_directly": true,
+                "compatibility_version": 3
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.11",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.11",
+                "name": "pkgconf",
+                "versionInfo": "3.0.11",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "ISC",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/pkgconf-3.0.11.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "5c77e2d1fbc35b9243e8b562e5cd1fd43f0e46ffc874352e65fa7b3475d9d120"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/pkgconf@3.0.11",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-pkgconf-3.2e.0.2e.11",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-dub"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-dub-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/dub"
+          ],
+          "all_files": [
+            ".brew/dub.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE",
+            "README.md",
+            "bin/dub",
+            "etc/bash_completion.d/dub",
+            "sbom.spdx.json",
+            "share/fish/vendor_completions.d/dub.fish",
+            "share/man/man1/dub-add-local.1",
+            "share/man/man1/dub-add-override.1",
+            "share/man/man1/dub-add-path.1",
+            "share/man/man1/dub-add.1",
+            "share/man/man1/dub-build.1",
+            "share/man/man1/dub-clean-caches.1",
+            "share/man/man1/dub-clean.1",
+            "share/man/man1/dub-convert.1",
+            "share/man/man1/dub-describe.1",
+            "share/man/man1/dub-dustmite.1",
+            "share/man/man1/dub-fetch.1",
+            "share/man/man1/dub-generate.1",
+            "share/man/man1/dub-init.1",
+            "share/man/man1/dub-lint.1",
+            "share/man/man1/dub-list-overrides.1",
+            "share/man/man1/dub-list.1",
+            "share/man/man1/dub-remove-local.1",
+            "share/man/man1/dub-remove-override.1",
+            "share/man/man1/dub-remove-path.1",
+            "share/man/man1/dub-remove.1",
+            "share/man/man1/dub-run.1",
+            "share/man/man1/dub-search.1",
+            "share/man/man1/dub-test.1",
+            "share/man/man1/dub-upgrade.1",
+            "share/man/man1/dub.1",
+            "share/zsh/site-functions/_dub"
+          ],
+          "installed_size": 9638600
+        }
+      }
+    }
+  }
+}
