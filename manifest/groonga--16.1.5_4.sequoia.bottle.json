@@ -2,27 +2,27 @@
   "groonga": {
     "formula": {
       "name": "groonga",
-      "pkg_version": "16.1.5_3",
+      "pkg_version": "16.1.5_4",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/g/groonga.rb",
       "tap_git_path": "Formula/g/groonga.rb",
-      "tap_git_revision": "07e9febdcbdc284eaa23290bb27d9094c221eb54",
+      "tap_git_revision": "7758c7c3e41e11476463d11ac9e268bea39b615b",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "Fulltext search engine and column store",
       "license": "LGPL-2.1-or-later",
       "homepage": "https://groonga.org/"
     },
     "bottle": {
-      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6",
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-7",
       "cellar": "/usr/local/Cellar",
       "rebuild": 0,
-      "date": "2026-11-18T03:48:37Z",
+      "date": "2026-11-24T08:42:23Z",
       "tags": {
         "sequoia": {
-          "filename": "groonga-16.1.5_3.sequoia.bottle.tar.gz",
-          "local_filename": "groonga--16.1.5_3.sequoia.bottle.tar.gz",
-          "sha256": "90efb26db25cdc79d643d2742710e5782d34b60af08ba9bd56ac132034e2c677",
+          "filename": "groonga-16.1.5_4.sequoia.bottle.tar.gz",
+          "local_filename": "groonga--16.1.5_4.sequoia.bottle.tar.gz",
+          "sha256": "b8e555729eaa311bcf0f361cda0d7eb6df3949396807f20cc8c101be96f57adb",
           "tab": {
-            "homebrew_version": "7.0.14",
+            "homebrew_version": "7.0.16",
             "changed_files": [
               "lib/pkgconfig/groonga.pc"
             ],
@@ -98,12 +98,12 @@
               },
               {
                 "full_name": "simdjson",
-                "version": "5.2.0",
+                "version": "5.3.0",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "5.2.0",
+                "pkg_version": "5.3.0",
                 "declared_directly": true,
-                "compatibility_version": 3
+                "compatibility_version": 4
               },
               {
                 "full_name": "xz",
@@ -137,13 +137,13 @@
           "binary_relocation_diagnostics": [
             {
               "path": "bin/groonga",
-              "string": "/usr/local/Cellar/groonga/16.1.5_3/share/groonga/html/admin",
+              "string": "/usr/local/Cellar/groonga/16.1.5_4/share/groonga/html/admin",
               "offset": 47098
             },
             {
               "path": "lib/libgroonga.0.0.0.dylib",
-              "string": "/usr/local/Cellar/groonga/16.1.5_3/lib/groonga/plugins",
-              "offset": 4286441
+              "string": "/usr/local/Cellar/groonga/16.1.5_4/lib/groonga/plugins",
+              "offset": 4287657
             },
             {
               "path": "bin/groonga",
@@ -159,7 +159,7 @@
           "sbom": {
             "documentDescribes": [
               "SPDXRef-Package-SPDXRef-lz4-1.2e.11.2e.1",
-              "SPDXRef-Package-SPDXRef-simdjson-5.2e.2.2e.0",
+              "SPDXRef-Package-SPDXRef-simdjson-5.2e.3.2e.0",
               "SPDXRef-Package-SPDXRef-xz-5.2e.8.2e.4",
               "SPDXRef-Package-SPDXRef-zstd-1.2e.5.2e.7.5f.1",
               "SPDXRef-Compiler"
@@ -189,24 +189,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.2.2e.0",
+                "SPDXID": "SPDXRef-Package-SPDXRef-simdjson-5.2e.3.2e.0",
                 "name": "simdjson",
-                "versionInfo": "5.2.0",
+                "versionInfo": "5.3.0",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/simdjson-5.2.0.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-7/simdjson-5.3.0.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "027ecf0de0e441046d44759b47489a88afd2f6166ae767e2cac4c4189af368e1"
+                    "checksumValue": "2550b22a2553bc9491e5debfb2060b25382b382d31226ef9b566869861c53268"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/simdjson@5.2.0",
+                    "referenceLocator": "pkg:brew/simdjson@5.3.0",
                     "referenceType": "purl"
                   }
                 ]
@@ -277,7 +277,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-groonga"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.2.2e.0",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-simdjson-5.2e.3.2e.0",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-groonga"
               },
@@ -474,7 +474,7 @@
             "share/groonga/html/admin/index.html",
             "share/groonga/html/admin/index.ja.html"
           ],
-          "installed_size": 21630420
+          "installed_size": 21630686
         }
       }
     }
