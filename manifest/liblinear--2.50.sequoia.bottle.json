@@ -1,0 +1,92 @@
+{
+  "liblinear": {
+    "formula": {
+      "name": "liblinear",
+      "pkg_version": "2.50",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/lib/liblinear.rb",
+      "tap_git_path": "Formula/lib/liblinear.rb",
+      "tap_git_revision": "dbbdd403623b5117d0515ffe395e2426c38f8af8",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Library for large linear classification",
+      "license": "BSD-3-Clause",
+      "homepage": "https://github.com/cjlin1/liblinear"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any",
+      "rebuild": 0,
+      "date": "2026-11-25T14:25:34Z",
+      "tags": {
+        "sequoia": {
+          "filename": "liblinear-2.50.sequoia.bottle.tar.gz",
+          "local_filename": "liblinear--2.50.sequoia.bottle.tar.gz",
+          "sha256": "1426da49cc4128340739633253ec1121d10bb933fb17564470df0e6b1e13e9ea",
+          "tab": {
+            "homebrew_version": "7.0.16",
+            "changed_files": [],
+            "linkage_files": [
+              "lib/liblinear.6.dylib"
+            ],
+            "binary_relocation_files": [],
+            "source_modified_time": 1766110301,
+            "compiler": "clang",
+            "runtime_dependencies": [],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-liblinear-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/predict",
+            "bin/train"
+          ],
+          "all_files": [
+            ".brew/liblinear.rb",
+            "COPYRIGHT",
+            "INSTALL_RECEIPT.json",
+            "README",
+            "bin/predict",
+            "bin/train",
+            "include/linear.h",
+            "lib/liblinear.6.dylib",
+            "lib/liblinear.dylib",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 250563
+        }
+      }
+    }
+  }
+}
