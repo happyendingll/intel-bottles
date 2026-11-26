@@ -2,10 +2,10 @@
   "aws-sdk-cpp": {
     "formula": {
       "name": "aws-sdk-cpp",
-      "pkg_version": "1.11.936",
+      "pkg_version": "1.11.937",
       "path": "Library/Taps/homebrew/homebrew-core/Formula/a/aws-sdk-cpp.rb",
       "tap_git_path": "Formula/a/aws-sdk-cpp.rb",
-      "tap_git_revision": "ffac24a56528938c29c205443c11985dc4ba988d",
+      "tap_git_revision": "1b1ea0e159416576de9c1c70290c559edee943eb",
       "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
       "desc": "AWS SDK for C++",
       "license": "Apache-2.0",
@@ -15,12 +15,12 @@
       "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-7",
       "cellar": "any",
       "rebuild": 0,
-      "date": "2026-11-25T08:15:14Z",
+      "date": "2026-11-26T02:40:13Z",
       "tags": {
         "sequoia": {
-          "filename": "aws-sdk-cpp-1.11.936.sequoia.bottle.tar.gz",
-          "local_filename": "aws-sdk-cpp--1.11.936.sequoia.bottle.tar.gz",
-          "sha256": "6d085d1d503546cbb0a831ff2b6d06c8c79e9b13675f7da66e607dba93ca49e2",
+          "filename": "aws-sdk-cpp-1.11.937.sequoia.bottle.tar.gz",
+          "local_filename": "aws-sdk-cpp--1.11.937.sequoia.bottle.tar.gz",
+          "sha256": "74f090a8f568621a978f3000c37ef3665d5f0124508fe75346df50ae027a3fa7",
           "tab": {
             "homebrew_version": "7.0.16",
             "changed_files": [],
@@ -483,7 +483,7 @@
               "lib/libaws-cpp-sdk-xray.dylib"
             ],
             "binary_relocation_files": [],
-            "source_modified_time": 1795465570,
+            "source_modified_time": 1795560874,
             "compiler": "clang",
             "runtime_dependencies": [
               {
@@ -614,10 +614,10 @@
               },
               {
                 "full_name": "aws-crt-cpp",
-                "version": "0.44.5",
+                "version": "0.44.6",
                 "revision": 0,
                 "bottle_rebuild": 0,
-                "pkg_version": "0.44.5",
+                "pkg_version": "0.44.6",
                 "declared_directly": true,
                 "compatibility_version": 1
               }
@@ -649,7 +649,7 @@
               "SPDXRef-Package-SPDXRef-aws-c-event-stream-1.2e.0.2e.0.5f.1",
               "SPDXRef-Package-SPDXRef-aws-c-s3-1.2e.5.2e.2.5f.3",
               "SPDXRef-Package-SPDXRef-aws-c-mqtt-1.2e.1.2e.4",
-              "SPDXRef-Package-SPDXRef-aws-crt-cpp-0.2e.44.2e.5",
+              "SPDXRef-Package-SPDXRef-aws-crt-cpp-0.2e.44.2e.6",
               "SPDXRef-Compiler"
             ],
             "packages": [
@@ -976,24 +976,24 @@
                 ]
               },
               {
-                "SPDXID": "SPDXRef-Package-SPDXRef-aws-crt-cpp-0.2e.44.2e.5",
+                "SPDXID": "SPDXRef-Package-SPDXRef-aws-crt-cpp-0.2e.44.2e.6",
                 "name": "aws-crt-cpp",
-                "versionInfo": "0.44.5",
+                "versionInfo": "0.44.6",
                 "filesAnalyzed": false,
                 "licenseDeclared": "NOASSERTION",
                 "licenseConcluded": "Apache-2.0",
-                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-6/aws-crt-cpp-0.44.5.sequoia.bottle.tar.gz",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-7/aws-crt-cpp-0.44.6.sequoia.bottle.tar.gz",
                 "copyrightText": "NOASSERTION",
                 "checksums": [
                   {
                     "algorithm": "SHA256",
-                    "checksumValue": "468a399ebd17ca7dc233854cf4bcd88a9da285ae57f4e3b68f1870124a686916"
+                    "checksumValue": "2564e45c2d0246fe3ae3dc9f38aa04e5c8e3ae6380c84a28caccf77b3b4c948b"
                   }
                 ],
                 "externalRefs": [
                   {
                     "referenceCategory": "PACKAGE-MANAGER",
-                    "referenceLocator": "pkg:brew/aws-crt-cpp@0.44.5",
+                    "referenceLocator": "pkg:brew/aws-crt-cpp@0.44.6",
                     "referenceType": "purl"
                   }
                 ]
@@ -1083,7 +1083,7 @@
                 "relatedSpdxElement": "SPDXRef-Bottle-aws-sdk-cpp"
               },
               {
-                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-crt-cpp-0.2e.44.2e.5",
+                "spdxElementId": "SPDXRef-Package-SPDXRef-aws-crt-cpp-0.2e.44.2e.6",
                 "relationshipType": "RUNTIME_DEPENDENCY_OF",
                 "relatedSpdxElement": "SPDXRef-Bottle-aws-sdk-cpp"
               },
@@ -10379,6 +10379,7 @@
             "include/aws/bedrock-agentcore/model/ViewPort.h",
             "include/aws/bedrock-agentcore/model/WebSearchFilters.h",
             "include/aws/bedrock-agentcore/model/WebSearchResult.h",
+            "include/aws/bedrock-agentcore/model/WebSearchUserLocation.h",
             "include/aws/bedrock-agentcore-control/BedrockAgentCoreControlClient.h",
             "include/aws/bedrock-agentcore-control/BedrockAgentCoreControlClientPagination.h",
             "include/aws/bedrock-agentcore-control/BedrockAgentCoreControlEndpointProvider.h",
@@ -93144,7 +93145,7 @@
             "lib/pkgconfig/aws-cpp-sdk-xray.pc",
             "sbom.spdx.json"
           ],
-          "installed_size": 713168403
+          "installed_size": 713174692
         }
       }
     }
