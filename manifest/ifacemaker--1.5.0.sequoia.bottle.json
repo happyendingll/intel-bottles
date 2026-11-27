@@ -1,0 +1,124 @@
+{
+  "ifacemaker": {
+    "formula": {
+      "name": "ifacemaker",
+      "pkg_version": "1.5.0",
+      "path": "Library/Taps/homebrew/homebrew-core/Formula/i/ifacemaker.rb",
+      "tap_git_path": "Formula/i/ifacemaker.rb",
+      "tap_git_revision": "cf461e5076679b94a064f7ef3d0094f0981d28fc",
+      "tap_git_remote": "https://github.com/happyendingll/homebrew-core",
+      "desc": "Generate interfaces from structure methods",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/vburenin/ifacemaker"
+    },
+    "bottle": {
+      "root_url": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-warm-3",
+      "cellar": "any_skip_relocation",
+      "rebuild": 0,
+      "date": "2026-11-27T02:19:59Z",
+      "tags": {
+        "sequoia": {
+          "filename": "ifacemaker-1.5.0.sequoia.bottle.tar.gz",
+          "local_filename": "ifacemaker--1.5.0.sequoia.bottle.tar.gz",
+          "sha256": "b9e204b3ca539c2e938a20661d77f1f69e8ed086bece229f6fc4292b2ecb2dc8",
+          "tab": {
+            "homebrew_version": "7.0.16",
+            "changed_files": [],
+            "linkage_files": [],
+            "binary_relocation_files": [],
+            "source_modified_time": 1795614281,
+            "compiler": "clang",
+            "runtime_dependencies": [
+              {
+                "full_name": "go",
+                "version": "1.27.4",
+                "revision": 0,
+                "bottle_rebuild": 0,
+                "pkg_version": "1.27.4",
+                "declared_directly": true,
+                "compatibility_version": 14
+              }
+            ],
+            "arch": "x86_64",
+            "built_on": {
+              "os": "Macintosh",
+              "os_version": "macOS 15.7",
+              "cpu_family": "ivybridge",
+              "xcode": "16.4",
+              "clt": "16.4.0.0.1.1747106510",
+              "preferred_perl": "5.34"
+            }
+          },
+          "binary_relocation_diagnostics": [],
+          "sbom": {
+            "documentDescribes": [
+              "SPDXRef-Package-SPDXRef-go-1.2e.27.2e.4",
+              "SPDXRef-Compiler"
+            ],
+            "packages": [
+              {
+                "SPDXID": "SPDXRef-Package-SPDXRef-go-1.2e.27.2e.4",
+                "name": "go",
+                "versionInfo": "1.27.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "BSD-3-Clause",
+                "downloadLocation": "https://github.com/happyendingll/intel-bottles/releases/download/bottles-5/go-1.27.4.sequoia.bottle.tar.gz",
+                "copyrightText": "NOASSERTION",
+                "checksums": [
+                  {
+                    "algorithm": "SHA256",
+                    "checksumValue": "4bc6591569d8257ec714e9d04c452a8be4741d084d2836e3339fae230382e376"
+                  }
+                ],
+                "externalRefs": [
+                  {
+                    "referenceCategory": "PACKAGE-MANAGER",
+                    "referenceLocator": "pkg:brew/go@1.27.4",
+                    "referenceType": "purl"
+                  }
+                ]
+              },
+              {
+                "SPDXID": "SPDXRef-Compiler",
+                "name": "clang",
+                "versionInfo": "16.4",
+                "filesAnalyzed": false,
+                "licenseDeclared": "NOASSERTION",
+                "licenseConcluded": "NOASSERTION",
+                "copyrightText": "NOASSERTION",
+                "downloadLocation": "NOASSERTION",
+                "checksums": [],
+                "externalRefs": []
+              }
+            ],
+            "relationships": [
+              {
+                "spdxElementId": "SPDXRef-Package-SPDXRef-go-1.2e.27.2e.4",
+                "relationshipType": "RUNTIME_DEPENDENCY_OF",
+                "relatedSpdxElement": "SPDXRef-Bottle-ifacemaker"
+              },
+              {
+                "spdxElementId": "SPDXRef-Compiler",
+                "relationshipType": "BUILD_TOOL_OF",
+                "relatedSpdxElement": "SPDXRef-Archive-ifacemaker-src"
+              }
+            ]
+          },
+          "path_exec_files": [
+            "bin/ifacemaker"
+          ],
+          "all_files": [
+            ".brew/ifacemaker.rb",
+            "INSTALL_RECEIPT.json",
+            "LICENSE.md",
+            "README.md",
+            "bin/ifacemaker",
+            "sbom.spdx.json"
+          ],
+          "installed_size": 6506411
+        }
+      }
+    }
+  }
+}
