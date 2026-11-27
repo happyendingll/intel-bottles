@@ -33,6 +33,19 @@ mkdir -p "$OUT_DIR"
 # timeout(1), so use coreutils' when present and a watchdog otherwise.
 FETCH_LIMIT_SECONDS="${FETCH_LIMIT_SECONDS:-1200}"
 
+restore_curl_runtime_fallback() {
+  if [ "${CURL_RUNTIME_FALLBACK_ACTIVE:-0}" != 1 ]; then
+    return 0
+  fi
+
+  if [ -n "${CURL_RUNTIME_PREVIOUS_FALLBACK:-}" ]; then
+    export DYLD_FALLBACK_LIBRARY_PATH="$CURL_RUNTIME_PREVIOUS_FALLBACK"
+  else
+    unset DYLD_FALLBACK_LIBRARY_PATH
+  fi
+  CURL_RUNTIME_FALLBACK_ACTIVE=0
+}
+
 prefetch_gnu_source() {
   local formula="$1" metadata direct_url expected cache_path partial actual
 
@@ -208,6 +221,21 @@ for formula in $TODO; do
   # after fetch has populated and verified Homebrew's cache so removing a networking
   # library cannot break the download that is needed to rebuild it.
   if brew list --formula --versions "$formula" >/dev/null 2>&1; then
+    # Homebrew normally selects its newest curl, which on the Intel runner is the
+    # brewed curl rather than /usr/bin/curl. If the formula being rebuilt supplies
+    # one of that curl's dylibs (zstd 1.6.0 exposed this), uninstalling it makes curl
+    # itself unable to start. The initial fetch cannot guarantee that install will
+    # need no more downloads: --build-bottle can add test/build resources later.
+    # Keep copies of the affected formula's dylibs in dyld's fallback directory only
+    # while its normal opt path is absent. Once install recreates the opt path, drop
+    # the fallback so subsequent builds cannot accidentally use the old ABI.
+    curl_runtime_dir="$("$SCRIPT_DIR/preserve_curl_runtime.sh" "$formula")"
+    if [ -n "$curl_runtime_dir" ]; then
+      CURL_RUNTIME_PREVIOUS_FALLBACK="${DYLD_FALLBACK_LIBRARY_PATH:-}"
+      export DYLD_FALLBACK_LIBRARY_PATH="$curl_runtime_dir${CURL_RUNTIME_PREVIOUS_FALLBACK:+:$CURL_RUNTIME_PREVIOUS_FALLBACK}"
+      CURL_RUNTIME_FALLBACK_ACTIVE=1
+      echo "    preserving brewed curl runtime while rebuilding $formula"
+    fi
     echo "    sources cached; removing installed formula so it can be rebuilt for bottling"
     brew uninstall --ignore-dependencies --force "$formula"
   fi
@@ -224,6 +252,8 @@ for formula in $TODO; do
     done
     brew install --build-bottle --display-times "$formula"
   fi
+
+  restore_curl_runtime_fallback
 
   brew bottle --json --no-rebuild --root-url "$BOTTLE_ROOT_URL" "$formula"
   echo "::endgroup::"
