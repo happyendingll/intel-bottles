@@ -131,7 +131,8 @@ if [ "${CI:-}" = true ]; then
   # Keep downloads independent of the Homebrew libraries being rebuilt.
   python3 "$SCRIPT_DIR/patch_brew_system_curl.py" \
     "$(brew --repository)/Library/Homebrew/utils/curl.sh"
-  export INTEL_BOTTLES_SYSTEM_CURL=1
+  # bin/brew filters the environment before running the curl selector.
+  export HOMEBREW_INTEL_BOTTLES_SYSTEM_CURL=1
   BOTTLE_BUILD_CURL=/usr/bin/curl
   # The runner's unrelated preinstalled packages are outside this build chain.
   export HOMEBREW_NO_INSTALLED_DEPENDENTS_CHECK=1

@@ -8,7 +8,7 @@ SELECTOR = """  select_tool curl "${HOMEBREW_MINIMUM_CURL_VERSION}" "${HOMEBREW_
     /usr/bin/curl "${HOMEBREW_CURL_PATH}" "${HOMEBREW_FORCE_BREWED_CURL}"
 """
 
-PATCHED_SELECTOR = """  if [[ "${INTEL_BOTTLES_SYSTEM_CURL:-}" == 1 ]]
+PATCHED_SELECTOR = """  if [[ "${HOMEBREW_INTEL_BOTTLES_SYSTEM_CURL:-}" == 1 ]]
   then
     HOMEBREW_BREWED_CURL_PATH=/usr/bin/curl
     select_tool curl "${HOMEBREW_MINIMUM_CURL_VERSION}" "" /usr/bin/curl "" ""

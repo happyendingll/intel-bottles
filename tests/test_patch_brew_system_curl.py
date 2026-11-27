@@ -29,7 +29,7 @@ class SystemCurlPatchTests(unittest.TestCase):
                         ],
                         env={
                             **os.environ,
-                            "INTEL_BOTTLES_SYSTEM_CURL": opt_in,
+                            "HOMEBREW_INTEL_BOTTLES_SYSTEM_CURL": opt_in,
                             "HOMEBREW_MINIMUM_CURL_VERSION": "7.41.0",
                             "HOMEBREW_BREWED_CURL_PATH": "/opt/curl",
                             "HOMEBREW_CURL_PATH": "/custom/curl",
